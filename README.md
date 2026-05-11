@@ -111,6 +111,26 @@ The backtest includes a simulated distribution shift at index 3367 (out of 4209 
 | **Comparison** | Cross-ticker comparison view |
 | **Model Health** | Model registry, drift events timeline, anomaly rate trends, detector agreement |
 
+### Home
+
+![Home](Figure/dashboard_home.png)
+
+### Price Chart
+
+![Price Chart](Figure/dashboard_price_chart.png)
+
+### Sentiment Feed
+
+![Sentiment Feed](Figure/dashboard_sentiment.png)
+
+### Anomaly Alerts
+
+![Anomaly Alerts](Figure/dashboard_anomaly_alerts.png)
+
+### Model Health
+
+![Model Health](Figure/dashboard_model_health.png)
+
 ---
 
 ## Tech Stack
