@@ -20,6 +20,7 @@ pg_data/
 *.png
 !docs/*.png
 !docs/figures/*.png
+!Figure/*.png
 data/models/*.pt
 data/models/*.npz
 node_modules/

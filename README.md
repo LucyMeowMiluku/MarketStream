@@ -30,12 +30,12 @@ Instead of relying on a single algorithm, the system combines four detection met
 
 | Detector | Type | Weight | What it catches |
 |----------|------|--------|----------------|
-| **EWMA** | Statistical | 0.2 | Sudden single-feature spikes (z-score based) |
-| **Half-Space Trees** | Streaming ML | 0.3 | Multivariate anomalies, adapts to distribution shifts in real time |
-| **Isolation Forest** | Batch ML | 0.3 | Global outliers based on historical patterns |
-| **LSTM Autoencoder** | Deep Learning | 0.2 | Temporal sequence anomalies (unusual trends over time) |
+| **EWMA** | Statistical | 0.40 | Sudden single-feature spikes (z-score based) |
+| **Half-Space Trees** | Streaming ML | 0.05 | Multivariate anomalies, adapts to distribution shifts in real time |
+| **Isolation Forest** | Batch ML | 0.45 | Global outliers based on historical patterns (with StandardScaler) |
+| **LSTM Autoencoder** | Deep Learning | 0.10 | Temporal sequence anomalies (unusual trends over time) |
 
-The ensemble score is a weighted average of all detector scores. If the score falls below -0.3, the observation is flagged as an anomaly.
+All detectors normalize their scores to the [-1, 0] range (0 = normal, -1 = maximum anomaly). The ensemble score is a weighted average. If the score falls below -0.28, the observation is flagged as an anomaly.
 
 ---
 
@@ -51,53 +51,52 @@ The ensemble score is a weighted average of all detector scores. If the score fa
 
 We evaluated the ensemble on 60 days of historical data with 5% synthetic anomaly injection (price spikes, volume surges, sentiment crashes, multi-feature events, and subtle drift).
 
-### Detection Performance
+### Backtest 1 — Before Optimization
+
+The initial ensemble was dysfunctional: detectors produced incompatible score scales (EWMA: [-40, 0], LSTM: [-100, 0], IF: [+0.1, +0.2], HST: [-0.3, 0]). EWMA's unbounded z-scores dominated the average, resulting in near-100% recall but massive false positive flooding.
+
+![Backtest 1 — Before Optimization](Figure/backtest1_before.png)
 
 | Metric | Value |
 |--------|-------|
-| **Recall** | 98.67% |
-| **Precision** | 8.34% |
+| **Precision** | 8.35% |
+| **Recall** | 100% |
 | **F1 Score** | 0.154 |
-| **True Positives** | 222 / 225 |
-| **False Positives** | 2441 |
-| **False Negatives** | 3 |
+| **False Positives** | 2,469 |
+| **FP Rate** | 62% |
+| **Cohen's d** | 0.51 |
 
-The high recall (98.67%) means the system catches nearly all injected anomalies. The low precision is expected — the system is tuned for safety (don't miss real anomalies), and the threshold can be adjusted to trade recall for fewer false alarms.
+### Backtest 2 — After Optimization
 
-### Per-Type Recall
+We normalized all detector scores to [-1, 0], added StandardScaler for Isolation Forest, and tuned weights to favor the strongest detectors (EWMA + IF = 85% weight).
 
-| Anomaly Type | Recall |
-|-------------|--------|
-| Price Spike | 100% |
-| Volume Surge | 100% |
-| Sentiment Crash | 100% |
-| Multi-Feature | 100% |
-| Subtle Drift | 80% |
+![Backtest 2 — After Optimization](Figure/backtest2_after.png)
 
-### Per-Detector Breakdown
+| Metric | Value |
+|--------|-------|
+| **Precision** | 50.67% |
+| **Recall** | 67.11% |
+| **F1 Score** | 0.577 |
+| **False Positives** | 147 |
+| **FP Rate** | 3.69% |
+| **Cohen's d** | 1.78 |
 
-| Detector | Precision | Recall | Detections |
-|----------|-----------|--------|------------|
-| EWMA | 5.4% | 100% | 4182 |
-| LSTM Autoencoder | 6.0% | 60.9% | 2290 |
-| Half-Space Trees | 2.7% | 3.1% | 260 |
-| Isolation Forest | 0% | 0% | 0 |
+### Before vs After Comparison
 
-EWMA is the most sensitive (catches everything), while HST and Isolation Forest are more conservative. The ensemble balances these tendencies through weighted voting.
+![Ensemble Optimization — Before vs After](Figure/comparison.png)
+
+| Metric | Before | After | Improvement |
+|--------|--------|-------|-------------|
+| **Precision** | 8.35% | 50.67% | 6.1x |
+| **F1 Score** | 0.154 | 0.577 | 3.7x |
+| **FP Rate** | 62.0% | 3.69% | 16.8x reduction |
+| **Cohen's d** | 0.51 | 1.78 | 3.5x |
+| **IF Recall** | 0% | 45% | Was dead, now functional |
+| **HST Recall** | 3% | 22% | 7.3x |
 
 ### Drift Detection
 
 The backtest includes a simulated distribution shift at index 3367 (out of 4209 data points). ADWIN detected 37 drift events during the replay, with detection latencies of 88 windows for volume features and 182 windows for sentiment features.
-
-### Score Separation
-
-| Metric | Value |
-|--------|-------|
-| Normal score (mean) | -0.55 |
-| Anomaly score (mean) | -1.99 |
-| Cohen's d | 0.53 |
-
-The anomaly scores are clearly separated from normal scores, confirming that the ensemble produces meaningful differentiation.
 
 ---
 
@@ -185,6 +184,6 @@ bash scripts/start_all.sh
 ## Testing
 
 ```bash
-uv run pytest tests/ -v     # 50 tests
+uv run pytest tests/ -v     # 62 tests
 uv run ruff check .         # Lint
 ```
