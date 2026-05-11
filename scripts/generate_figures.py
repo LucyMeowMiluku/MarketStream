@@ -494,8 +494,6 @@ def plot_comparison():
             change_str = f"{ratio:.1f}x"
             color = GREEN if ratio > 1 else RED
 
-        arrow = "+" if (higher_is_better and after > before) or (not higher_is_better and after < before) else "-"
-
         ax.text(0.03, y, label, transform=ax.transAxes, color=DIM, fontsize=11, va="center")
         ax.text(0.55, y, f"{before:.1%}" if before <= 1 else f"{before:.2f}",
                 transform=ax.transAxes, color=RED, fontsize=10, va="center", ha="center")
