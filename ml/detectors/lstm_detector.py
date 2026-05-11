@@ -77,7 +77,7 @@ class LSTMDetector(BaseDetector):
             reconstructed = self._model(x)
             mse = float(nn.functional.mse_loss(reconstructed, x).item())
 
-        return -mse
+        return -min(mse, 2.0) / 2.0
 
     def update(self, features: dict) -> None:
         key = features.get("ticker", "_default")

@@ -41,7 +41,7 @@ class EWMADetector(BaseDetector):
         if not z_scores:
             return 0.0
 
-        return -max(z_scores)
+        return -min(max(z_scores), 8.0) / 8.0
 
     def update(self, features: dict) -> None:
         key = self._get_key(features)

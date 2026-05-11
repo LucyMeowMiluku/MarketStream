@@ -31,7 +31,7 @@ class HSTDetector(BaseDetector):
     def score(self, features: dict) -> float:
         x = self._extract(features)
         raw = self._model.score_one(x)
-        return -(raw)
+        return -min(raw * 3.0, 1.0)
 
     def update(self, features: dict) -> None:
         x = self._extract(features)
