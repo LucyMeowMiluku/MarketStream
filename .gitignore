@@ -20,7 +20,9 @@ pg_data/
 *.png
 !docs/*.png
 !docs/figures/*.png
-!Figure/*.png
+!Figure/backtest*.png
+!Figure/comparison.png
+!Figure/dashboard_*.png
 data/models/*.pt
 data/models/*.npz
 node_modules/
