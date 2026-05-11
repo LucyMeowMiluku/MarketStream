@@ -6,7 +6,7 @@ from storage.models import Base
 
 log = get_logger("init_db")
 
-HYPERTABLES = ["price_ticks", "sentiment_scores", "feature_vectors"]
+HYPERTABLES = ["price_ticks", "sentiment_scores", "feature_vectors", "drift_events"]
 
 
 def init_database():
@@ -22,9 +22,11 @@ def init_database():
             try:
                 conn.execute(
                     text(
-                        f"SELECT create_hypertable('{table}', by_range('time' , INTERVAL '1 day'), if_not_exists => TRUE)"
-                        if table != "feature_vectors"
-                        else f"SELECT create_hypertable('{table}', by_range('window_end', INTERVAL '1 day'), if_not_exists => TRUE)"
+                        f"SELECT create_hypertable('{table}', by_range('window_end', INTERVAL '1 day'), if_not_exists => TRUE)"
+                        if table == "feature_vectors"
+                        else f"SELECT create_hypertable('{table}', by_range('detected_at', INTERVAL '1 day'), if_not_exists => TRUE)"
+                        if table == "drift_events"
+                        else f"SELECT create_hypertable('{table}', by_range('time' , INTERVAL '1 day'), if_not_exists => TRUE)"
                     )
                 )
                 conn.commit()
