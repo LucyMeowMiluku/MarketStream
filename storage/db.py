@@ -11,6 +11,10 @@ def get_engine():
     return create_engine(settings.database_url, pool_pre_ping=True, pool_size=5)
 
 
+@lru_cache
+def _session_factory():
+    return sessionmaker(bind=get_engine())
+
+
 def get_session() -> Session:
-    factory = sessionmaker(bind=get_engine())
-    return factory()
+    return _session_factory()()
