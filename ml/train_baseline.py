@@ -23,8 +23,9 @@ def main():
     detector.save(MODEL_PATH)
     log.info("model_saved", path=MODEL_PATH)
 
-    scores = detector.model.decision_function(X)
-    predictions = detector.model.predict(X)
+    X_scaled = detector._scaler.transform(X) if detector._scaler else X
+    scores = detector.model.decision_function(X_scaled)
+    predictions = detector.model.predict(X_scaled)
     n_anomalies = int((predictions == -1).sum())
     log.info(
         "training_summary",

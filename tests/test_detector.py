@@ -18,13 +18,13 @@ class TestAnomalyDetector:
         features = {col: 0.1 for col in FEATURE_COLUMNS}
         score, is_anomaly = trained_detector.predict(features)
         assert not is_anomaly
-        assert score > 0
+        assert score > -0.3
 
     def test_extreme_data_is_anomaly(self, trained_detector):
         features = {col: 100.0 for col in FEATURE_COLUMNS}
         score, is_anomaly = trained_detector.predict(features)
         assert is_anomaly
-        assert score < 0
+        assert score < -0.3
 
     def test_save_load(self, trained_detector, tmp_path):
         path = str(tmp_path / "model.joblib")

@@ -20,19 +20,19 @@ class MockDetector(BaseDetector):
 
 
 def test_weighted_average():
-    d1 = MockDetector("a", -0.5)
-    d2 = MockDetector("b", 0.5)
+    d1 = MockDetector("a", -0.8)
+    d2 = MockDetector("b", -0.2)
     e = EnsembleDetector([d1, d2], weights=[0.6, 0.4])
     score, per = e.score({})
-    expected = 0.6 * (-0.5) + 0.4 * 0.5
+    expected = 0.6 * (-0.8) + 0.4 * (-0.2)
     assert abs(score - expected) < 1e-6
-    assert per == {"a": -0.5, "b": 0.5}
+    assert per == {"a": -0.8, "b": -0.2}
 
 
 def test_is_anomaly():
-    d = MockDetector("x", -0.5)
-    e = EnsembleDetector([d], threshold=-0.3)
-    assert e.is_anomaly(-0.5)
+    d = MockDetector("x", -0.6)
+    e = EnsembleDetector([d], threshold=-0.5)
+    assert e.is_anomaly(-0.6)
     assert not e.is_anomaly(-0.1)
 
 
@@ -46,8 +46,8 @@ def test_update_propagates():
 
 
 def test_equal_weights_by_default():
-    d1 = MockDetector("a", -1.0)
-    d2 = MockDetector("b", 1.0)
+    d1 = MockDetector("a", -0.8)
+    d2 = MockDetector("b", -0.2)
     e = EnsembleDetector([d1, d2])
     score, _ = e.score({})
-    assert abs(score - 0.0) < 1e-6
+    assert abs(score - (-0.5)) < 1e-6

@@ -21,11 +21,11 @@ class Settings(BaseSettings):
     anomaly_price_threshold: float = 0.02
     anomaly_volume_threshold: int = 1_000_000
     anomaly_sentiment_threshold: float = 0.3
-    anomaly_severity_threshold: float = -0.3
+    anomaly_severity_threshold: float = -0.7
 
     # Ensemble
-    ensemble_weights: list[float] = [0.2, 0.3, 0.3, 0.2]
-    ensemble_threshold: float = -0.3
+    ensemble_weights: list[float] = [0.40, 0.05, 0.45, 0.10]
+    ensemble_threshold: float = -0.28
 
     # EWMA
     ewma_span: int = 20

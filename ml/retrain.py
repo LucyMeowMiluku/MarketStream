@@ -34,8 +34,9 @@ def retrain(period: str = "30d") -> None:
     detector = AnomalyDetector()
     detector.fit(X)
 
-    scores = detector.model.decision_function(X)
-    predictions = detector.model.predict(X)
+    X_scaled = detector._scaler.transform(X) if detector._scaler else X
+    scores = detector.model.decision_function(X_scaled)
+    predictions = detector.model.predict(X_scaled)
     n_anomalies = int((predictions == -1).sum())
     anomaly_rate = n_anomalies / len(X)
 

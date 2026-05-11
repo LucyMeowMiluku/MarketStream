@@ -145,8 +145,9 @@ def train_models(train_df: pd.DataFrame, model_dir: Path) -> dict:
     detector = AnomalyDetector()
     detector.fit(X)
     detector.save(str(model_dir / "isolation_forest.joblib"))
-    scores = detector.model.decision_function(X)
-    preds = detector.model.predict(X)
+    X_scaled = detector._scaler.transform(X) if detector._scaler else X
+    scores = detector.model.decision_function(X_scaled)
+    preds = detector.model.predict(X_scaled)
     n_anom = int((preds == -1).sum())
     summary["isolation_forest"] = {
         "samples": len(X),
