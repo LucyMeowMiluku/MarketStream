@@ -1,0 +1,25 @@
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv
+
+.env
+data/models/*.joblib
+data/samples/*.csv
+
+.DS_Store
+state/
+.playwright-mcp/
+.claude/
+
+# Additional
+pg_data/
+*.png
+!docs/*.png
+data/models/*.pt
+data/models/*.npz
+node_modules/
+*.docx

@@ -1,0 +1,29 @@
+[project]
+name = "marketstream"
+version = "0.1.0"
+description = "Multi-Source Streaming Analytics Platform for Financial Trends and Anomaly Detection"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "quixstreams>=3.0",
+    "confluent-kafka>=2.6",
+    "yfinance>=0.2",
+    "scikit-learn>=1.5",
+    "transformers>=4.40",
+    "torch>=2.3",
+    "joblib>=1.4",
+    "sqlalchemy>=2.0",
+    "psycopg[binary]>=3.2",
+    "streamlit>=1.37",
+    "plotly>=5.20",
+    "pydantic-settings>=2.4",
+    "structlog>=24.0",
+    "pandas>=2.2",
+    "numpy>=1.26",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.5",
+]
