@@ -10,7 +10,7 @@ A real-time streaming platform that detects financial market anomalies by combin
 
 ## System Architecture
 
-![System Architecture](docs/figures/框架图.png)
+![System Architecture](docs/figures/Architecture.png)
 
 The system consists of five independently-running Python processes connected by Apache Kafka:
 

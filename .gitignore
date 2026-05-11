@@ -27,3 +27,4 @@ data/models/*.pt
 data/models/*.npz
 node_modules/
 *.docx
+!docs/*.docx
