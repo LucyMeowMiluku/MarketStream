@@ -48,6 +48,7 @@ class FeatureVector(Base):
     headline_count: Mapped[int] = mapped_column(Integer, default=0)
     anomaly_score: Mapped[float] = mapped_column(Float, nullable=True)
     is_anomaly: Mapped[bool] = mapped_column(Boolean, default=False)
+    detector_scores: Mapped[dict | None] = mapped_column(JSON, nullable=True)
 
 
 class AnomalyAlert(Base):
@@ -59,3 +60,33 @@ class AnomalyAlert(Base):
     anomaly_score: Mapped[float] = mapped_column(Float)
     features: Mapped[dict] = mapped_column(JSON)
     reason: Mapped[str] = mapped_column(Text)
+    detector_scores: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+
+
+class ModelVersion(Base):
+    __tablename__ = "model_versions"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    model_name: Mapped[str] = mapped_column(String(100), index=True)
+    version: Mapped[int] = mapped_column(Integer)
+    trained_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    training_data_start: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    training_data_end: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    sample_count: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    anomaly_rate: Mapped[float | None] = mapped_column(Float, nullable=True)
+    score_mean: Mapped[float | None] = mapped_column(Float, nullable=True)
+    score_std: Mapped[float | None] = mapped_column(Float, nullable=True)
+    model_path: Mapped[str] = mapped_column(String(500))
+    is_active: Mapped[bool] = mapped_column(Boolean, default=False)
+    metadata_: Mapped[dict | None] = mapped_column("metadata", JSON, nullable=True)
+
+
+class DriftEvent(Base):
+    __tablename__ = "drift_events"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    detected_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), index=True)
+    ticker: Mapped[str] = mapped_column(String(10), index=True)
+    feature_name: Mapped[str] = mapped_column(String(100))
+    drift_type: Mapped[str] = mapped_column(String(50), default="adwin")
+    details: Mapped[dict | None] = mapped_column(JSON, nullable=True)
