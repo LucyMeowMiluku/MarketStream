@@ -28,9 +28,17 @@ from cep.patterns import build_default_automata
 from config.settings import settings
 from ml.base_detector import BaseDetector
 
+PATTERN_PREFIX = "PATTERN:"
+
 
 class CEPDetector(BaseDetector):
-    """Complex-event-processing anomaly detector (point rules + automata)."""
+    """Complex-event-processing anomaly detector (point rules + automata).
+
+    Supports **hierarchical composition**: base automata run first, and any
+    that reach their accept state emit a synthetic ``PATTERN:<name>`` event.
+    Meta-automata then run on the enriched event set, enabling higher-order
+    patterns that consume sub-pattern completions as inputs.
+    """
 
     def __init__(
         self,
@@ -38,6 +46,7 @@ class CEPDetector(BaseDetector):
         point_severity: float | None = None,
         max_gap: int | None = None,
         automata: list | None = None,
+        meta_automata: list | None = None,
     ):
         self._events = EventDetector(
             thresholds
@@ -50,20 +59,19 @@ class CEPDetector(BaseDetector):
                 min_volume_obs=settings.cep_min_volume_obs,
             )
         )
-        self._automata = (
-            automata
-            if automata is not None
-            else build_default_automata(
-                max_gap=max_gap if max_gap is not None else settings.cep_max_gap
-            )
-        )
+        gap = max_gap if max_gap is not None else settings.cep_max_gap
+        if automata is not None:
+            self._automata = automata
+            self._meta_automata: list = meta_automata or []
+        else:
+            base, meta = build_default_automata(max_gap=gap)
+            self._automata = base
+            self._meta_automata = meta
         self._point_severity = (
             point_severity
             if point_severity is not None
             else settings.cep_point_severity
         )
-        # Most recent match per ticker — for the dashboard and the future
-        # mixed-mode hook (CEP fires -> trigger heavier ML confirmation).
         self._last_match: dict[str, str] = {}
 
     @property
@@ -76,14 +84,27 @@ class CEPDetector(BaseDetector):
 
         best_sev = 0.0
         best_name = ""
+
+        # Pass 1: base automata
+        fired: set[str] = set()
         for automaton in self._automata:
-            sev = automaton.step(ticker, events)
+            sev = automaton.step(ticker, events, features=features)
+            if sev > 0:
+                fired.add(f"{PATTERN_PREFIX}{automaton.name}")
             if sev > best_sev:
                 best_sev = sev
                 best_name = automaton.name
 
-        # No full sequence completed, but a lone primitive is still a (weak)
-        # anomaly under the simple-rule layer (disabled when point_severity == 0).
+        # Pass 2: meta-automata consume synthetic PATTERN:* events.
+        # Use >= so meta-patterns win ties (they are more specific).
+        if self._meta_automata:
+            enriched = events | fired
+            for meta in self._meta_automata:
+                sev = meta.step(ticker, enriched, features=features)
+                if sev > 0 and sev >= best_sev:
+                    best_sev = sev
+                    best_name = meta.name
+
         if best_sev == 0.0 and events and self._point_severity > 0.0:
             best_sev = self._point_severity
             best_name = "point:" + "+".join(sorted(events))

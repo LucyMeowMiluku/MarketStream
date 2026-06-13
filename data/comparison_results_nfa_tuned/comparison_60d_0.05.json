@@ -1,0 +1,146 @@
+{
+  "config": {
+    "period": "60d",
+    "train_ratio": 0.7,
+    "injection_rate": 0.05,
+    "seed": 42,
+    "tickers": [
+      "AAPL",
+      "TSLA",
+      "NVDA"
+    ],
+    "test_windows": 4209,
+    "ground_truth": 225
+  },
+  "methods": [
+    {
+      "name": "ML ensemble",
+      "metrics": {
+        "precision": 0.5719,
+        "recall": 0.7244,
+        "f1": 0.6392,
+        "false_positive_rate": 0.030622,
+        "detection_latency_mean": 0.06,
+        "detection_latency_median": 0,
+        "total_detections": 285,
+        "total_ground_truth": 225,
+        "true_positives": 163,
+        "false_positives": 122,
+        "false_negatives": 62,
+        "per_type_recall": {
+          "sentiment_crash": 1.0,
+          "volume_surge": 0.7963,
+          "price_spike": 0.6056,
+          "multi_feature": 0.6486,
+          "subtle_drift": 0.3333
+        },
+        "per_detector_metrics": {
+          "ewma": {
+            "precision": 0.296,
+            "recall": 0.8222,
+            "f1": 0.4353,
+            "detections": 625
+          },
+          "hst": {
+            "precision": 0.0369,
+            "recall": 0.2311,
+            "f1": 0.0636,
+            "detections": 1410
+          },
+          "isolation_forest": {
+            "precision": 0.6082,
+            "recall": 0.4622,
+            "f1": 0.5253,
+            "detections": 171
+          },
+          "lstm_ae": {
+            "precision": 0.0566,
+            "recall": 0.3067,
+            "f1": 0.0955,
+            "detections": 1220
+          }
+        }
+      },
+      "latency": {
+        "mean_ms": 4.5135,
+        "median_ms": 4.4791,
+        "p99_ms": 5.119,
+        "max_ms": 6.273
+      }
+    },
+    {
+      "name": "CEP (full)",
+      "metrics": {
+        "precision": 0.7541,
+        "recall": 0.8178,
+        "f1": 0.7846,
+        "false_positive_rate": 0.01506,
+        "detection_latency_mean": 0.04,
+        "detection_latency_median": 0.0,
+        "total_detections": 244,
+        "total_ground_truth": 225,
+        "true_positives": 184,
+        "false_positives": 60,
+        "false_negatives": 41,
+        "per_type_recall": {
+          "sentiment_crash": 1.0,
+          "volume_surge": 0.9815,
+          "price_spike": 0.5775,
+          "multi_feature": 0.7838,
+          "subtle_drift": 0.8667
+        },
+        "per_detector_metrics": {
+          "cep": {
+            "precision": 0.75,
+            "recall": 0.8133,
+            "f1": 0.7804,
+            "detections": 244
+          }
+        }
+      },
+      "latency": {
+        "mean_ms": 0.0033,
+        "median_ms": 0.003,
+        "p99_ms": 0.008,
+        "max_ms": 0.0342
+      }
+    },
+    {
+      "name": "CEP (automata-only)",
+      "metrics": {
+        "precision": 0.6111,
+        "recall": 0.0489,
+        "f1": 0.0905,
+        "false_positive_rate": 0.001757,
+        "detection_latency_mean": 0.18,
+        "detection_latency_median": 0,
+        "total_detections": 18,
+        "total_ground_truth": 225,
+        "true_positives": 11,
+        "false_positives": 7,
+        "false_negatives": 214,
+        "per_type_recall": {
+          "sentiment_crash": 0.0208,
+          "volume_surge": 0.0,
+          "price_spike": 0.0,
+          "multi_feature": 0.2703,
+          "subtle_drift": 0.0
+        },
+        "per_detector_metrics": {
+          "cep": {
+            "precision": 0.5556,
+            "recall": 0.0444,
+            "f1": 0.0823,
+            "detections": 18
+          }
+        }
+      },
+      "latency": {
+        "mean_ms": 0.0033,
+        "median_ms": 0.003,
+        "p99_ms": 0.0094,
+        "max_ms": 0.082
+      }
+    }
+  ]
+}
