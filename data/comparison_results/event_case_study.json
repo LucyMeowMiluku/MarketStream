@@ -1,0 +1,250 @@
+[
+  {
+    "ticker": "NVDA",
+    "description": "Q4 FY24 earnings beat",
+    "event_date": "2024-02-22",
+    "event_return": 0.164009,
+    "cep": {
+      "flag": true,
+      "score": -0.8,
+      "pattern": "flash_reversal"
+    },
+    "ml": {
+      "flag": true,
+      "score": -0.8675
+    },
+    "window": [
+      {
+        "date": "2024-02-20",
+        "ret": -0.043532,
+        "cep_score": -0.55,
+        "cep_pattern": "point:price_jump_down",
+        "cep_flag": true,
+        "ml_score": -0.3057,
+        "ml_flag": true
+      },
+      {
+        "date": "2024-02-21",
+        "ret": -0.028509,
+        "cep_score": -0.55,
+        "cep_pattern": "point:price_jump_down",
+        "cep_flag": true,
+        "ml_score": -0.0803,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-02-22",
+        "ret": 0.164009,
+        "cep_score": -0.8,
+        "cep_pattern": "flash_reversal",
+        "cep_flag": true,
+        "ml_score": -0.8675,
+        "ml_flag": true
+      },
+      {
+        "date": "2024-02-23",
+        "ret": 0.003552,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.2788,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-02-26",
+        "ret": 0.003489,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.0281,
+        "ml_flag": false
+      }
+    ]
+  },
+  {
+    "ticker": "NVDA",
+    "description": "DeepSeek-driven sell-off",
+    "event_date": "2025-01-27",
+    "event_return": -0.169682,
+    "cep": {
+      "flag": true,
+      "score": -0.85,
+      "pattern": "volume_led_breakout"
+    },
+    "ml": {
+      "flag": true,
+      "score": -0.9403
+    },
+    "window": [
+      {
+        "date": "2025-01-23",
+        "ret": 0.00102,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.0701,
+        "ml_flag": false
+      },
+      {
+        "date": "2025-01-24",
+        "ret": -0.031246,
+        "cep_score": -0.55,
+        "cep_pattern": "point:price_jump_down",
+        "cep_flag": true,
+        "ml_score": -0.0776,
+        "ml_flag": false
+      },
+      {
+        "date": "2025-01-27",
+        "ret": -0.169682,
+        "cep_score": -0.85,
+        "cep_pattern": "volume_led_breakout",
+        "cep_flag": true,
+        "ml_score": -0.9403,
+        "ml_flag": true
+      },
+      {
+        "date": "2025-01-28",
+        "ret": 0.089259,
+        "cep_score": -0.8,
+        "cep_pattern": "flash_reversal",
+        "cep_flag": true,
+        "ml_score": -0.6063,
+        "ml_flag": true
+      },
+      {
+        "date": "2025-01-29",
+        "ret": -0.041011,
+        "cep_score": -0.55,
+        "cep_pattern": "point:price_jump_down",
+        "cep_flag": true,
+        "ml_score": -0.1593,
+        "ml_flag": false
+      }
+    ]
+  },
+  {
+    "ticker": "TSLA",
+    "description": "Q3 2024 earnings pop",
+    "event_date": "2024-10-24",
+    "event_return": 0.21919,
+    "cep": {
+      "flag": true,
+      "score": -0.55,
+      "pattern": "point:price_jump_up"
+    },
+    "ml": {
+      "flag": true,
+      "score": -0.9758
+    },
+    "window": [
+      {
+        "date": "2024-10-22",
+        "ret": -0.004021,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.0674,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-10-23",
+        "ret": -0.019819,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.0324,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-10-24",
+        "ret": 0.21919,
+        "cep_score": -0.55,
+        "cep_pattern": "point:price_jump_up",
+        "cep_flag": true,
+        "ml_score": -0.9758,
+        "ml_flag": true
+      },
+      {
+        "date": "2024-10-25",
+        "ret": 0.033438,
+        "cep_score": -0.55,
+        "cep_pattern": "point:price_jump_up",
+        "cep_flag": true,
+        "ml_score": -0.0996,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-10-28",
+        "ret": -0.024815,
+        "cep_score": -0.8,
+        "cep_pattern": "flash_reversal",
+        "cep_flag": true,
+        "ml_score": -0.036,
+        "ml_flag": false
+      }
+    ]
+  },
+  {
+    "ticker": "AAPL",
+    "description": "global risk-off sell-off",
+    "event_date": "2024-08-05",
+    "event_return": -0.048167,
+    "cep": {
+      "flag": true,
+      "score": -0.55,
+      "pattern": "point:price_jump_down"
+    },
+    "ml": {
+      "flag": true,
+      "score": -0.3918
+    },
+    "window": [
+      {
+        "date": "2024-08-01",
+        "ret": -0.016751,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.0688,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-08-02",
+        "ret": 0.006869,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.1362,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-08-05",
+        "ret": -0.048167,
+        "cep_score": -0.55,
+        "cep_pattern": "point:price_jump_down",
+        "cep_flag": true,
+        "ml_score": -0.3918,
+        "ml_flag": true
+      },
+      {
+        "date": "2024-08-06",
+        "ret": -0.009748,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.0144,
+        "ml_flag": false
+      },
+      {
+        "date": "2024-08-07",
+        "ret": 0.012498,
+        "cep_score": -0.0,
+        "cep_pattern": "",
+        "cep_flag": false,
+        "ml_score": -0.0543,
+        "ml_flag": false
+      }
+    ]
+  }
+]

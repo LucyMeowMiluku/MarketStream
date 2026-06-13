@@ -44,5 +44,18 @@ class Settings(BaseSettings):
     drift_detection_enabled: bool = True
     drift_sensitivity: float = 0.002
 
+    # CEP (Complex Event Processing)
+    # Primitive-event thresholds — the "simple indicators" the automata consume.
+    cep_price_jump: float = 0.02        # |price_change_rate| >= this is a price jump
+    cep_volume_surge_ratio: float = 3.0  # total_volume / baseline >= this is a surge
+    cep_sentiment_shift: float = 0.3     # |sentiment_shift| >= this is a sentiment move
+    cep_sentiment_floor: float = -0.5    # avg_sentiment <= this also counts as a drop
+    cep_volume_ewma_span: int = 20       # span of the adaptive per-ticker volume baseline
+    cep_min_volume_obs: int = 3          # warm-up windows before a volume surge can fire
+    # Automaton + scoring knobs.
+    cep_max_gap: int = 3                 # max windows between matched events before reset
+    cep_point_severity: float = 0.55     # severity of a lone primitive (simple-rule layer)
+    cep_threshold: float = -0.5          # score below this flags an anomaly (CEP-only mode)
+
 
 settings = Settings()
