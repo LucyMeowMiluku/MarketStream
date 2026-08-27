@@ -12,7 +12,7 @@ Two implementations share the same ``Transition`` dataclass:
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Callable
 
 Guard = Callable[[dict], bool]
@@ -269,7 +269,10 @@ class NFAEventAutomaton:
                     inst.repeat_counter += 1
                     inst.age = 0
                     repeat_consumed.add(rep.event)
-                    if rep.max_count is not None and inst.repeat_counter > rep.max_count:
+                    if (
+                        rep.max_count is not None
+                        and inst.repeat_counter > rep.max_count
+                    ):
                         continue  # exceeded max -> drop
                     next_instances.append(inst)
                     continue  # consumed by repeat, don't try normal transitions

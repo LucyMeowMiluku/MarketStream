@@ -23,21 +23,36 @@ bash scripts/create_topics.sh
 echo "[3/5] Initializing database..."
 uv run python -m storage.init_db
 
-echo "[4/5] Starting pipeline components..."
-uv run python -m producers.price_producer &
-PID_PRICE=$!
-uv run python -m producers.news_producer &
-PID_NEWS=$!
-uv run python -m processing.stream_app &
-PID_STREAM=$!
-uv run python -m ml.online_scorer &
-PID_SCORER=$!
+echo "[4/5] Starting backend-first pipeline..."
+PIDS=()
 
-echo "Pipeline PIDs: price=$PID_PRICE news=$PID_NEWS stream=$PID_STREAM scorer=$PID_SCORER"
+if [[ "${MARKETSTREAM_SOURCE:-live}" == "replay" ]]; then
+    if [[ -z "${MARKETSTREAM_REPLAY_PATH:-}" ]]; then
+        echo "MARKETSTREAM_REPLAY_PATH is required when MARKETSTREAM_SOURCE=replay" >&2
+        exit 2
+    fi
+    scripts/run_component.sh replay "$MARKETSTREAM_REPLAY_PATH" --speed "${MARKETSTREAM_REPLAY_SPEED:-1}" &
+else
+    scripts/run_component.sh data-source &
+fi
+PIDS+=("$!")
+
+scripts/run_component.sh factor-engine &
+PIDS+=("$!")
+scripts/run_component.sh cep &
+PIDS+=("$!")
+
+if [[ "${ML_SHADOW_ENABLED:-false}" == "true" ]]; then
+    scripts/run_component.sh ml-shadow &
+    PIDS+=("$!")
+fi
+
+echo "Backend PIDs: ${PIDS[*]}"
 
 echo "[5/5] Starting Streamlit dashboard..."
 uv run streamlit run dashboard/app.py --server.port 8501 &
 PID_DASH=$!
+PIDS+=("$PID_DASH")
 
 echo ""
 echo "=== MarketStream is running ==="
@@ -48,7 +63,7 @@ echo "Press Ctrl+C to stop all components."
 
 cleanup() {
     echo "Stopping all components..."
-    kill $PID_PRICE $PID_NEWS $PID_STREAM $PID_SCORER $PID_DASH 2>/dev/null || true
+    kill "${PIDS[@]}" 2>/dev/null || true
     echo "Stopping Docker services..."
     docker-compose down
     echo "Done."
