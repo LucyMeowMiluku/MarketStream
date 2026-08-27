@@ -1,6 +1,6 @@
-from datetime import datetime
+from datetime import datetime, timezone
 
-from sqlalchemy import Float, Integer, String, Text, Boolean, DateTime, JSON, PrimaryKeyConstraint
+from sqlalchemy import Boolean, DateTime, Float, Integer, JSON, PrimaryKeyConstraint, String, Text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
 
@@ -19,6 +19,20 @@ class PriceTick(Base):
     low: Mapped[float] = mapped_column(Float)
     close: Mapped[float] = mapped_column(Float)
     volume: Mapped[int] = mapped_column(Integer)
+
+
+class MarketEventRecord(Base):
+    __tablename__ = "market_events"
+
+    event_id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    source: Mapped[str] = mapped_column(String(50))
+    feed: Mapped[str] = mapped_column(String(50))
+    event_type: Mapped[str] = mapped_column(String(20))
+    ticker: Mapped[str] = mapped_column(String(10), index=True)
+    event_time: Mapped[datetime] = mapped_column(DateTime(timezone=True), index=True)
+    received_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    payload: Mapped[dict] = mapped_column(JSON)
+    quality_flags: Mapped[list] = mapped_column(JSON)
 
 
 class SentimentScore(Base):
@@ -51,16 +65,46 @@ class FeatureVector(Base):
     detector_scores: Mapped[dict | None] = mapped_column(JSON, nullable=True)
 
 
+class FactorSnapshotRecord(Base):
+    __tablename__ = "factor_snapshots"
+    __table_args__ = (PrimaryKeyConstraint("event_time", "ticker", "cadence"),)
+
+    event_time: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    window_start: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    ticker: Mapped[str] = mapped_column(String(10))
+    cadence: Mapped[str] = mapped_column(String(8))
+    factor_values: Mapped[dict] = mapped_column(JSON)
+    factor_states: Mapped[dict] = mapped_column(JSON)
+    baseline_version: Mapped[str] = mapped_column(String(100))
+    data_quality: Mapped[dict] = mapped_column(JSON)
+    warmup_status: Mapped[str] = mapped_column(String(20))
+    source_event_ids: Mapped[list] = mapped_column(JSON)
+    legacy_features: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+
+
 class AnomalyAlert(Base):
     __tablename__ = "anomaly_alerts"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     detected_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), index=True)
+    persisted_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), default=lambda: datetime.now(timezone.utc), index=True
+    )
     ticker: Mapped[str] = mapped_column(String(10), index=True)
     anomaly_score: Mapped[float] = mapped_column(Float)
     features: Mapped[dict] = mapped_column(JSON)
     reason: Mapped[str] = mapped_column(Text)
     detector_scores: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+    pattern_name: Mapped[str | None] = mapped_column(String(100), nullable=True, index=True)
+    direction: Mapped[str | None] = mapped_column(String(10), nullable=True)
+    severity: Mapped[str | None] = mapped_column(String(20), nullable=True)
+    event_start: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    event_end: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    first_detected_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    factor_evidence: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+    trigger_event_ids: Mapped[list | None] = mapped_column(JSON, nullable=True)
+    data_quality: Mapped[dict | None] = mapped_column(JSON, nullable=True)
+    dedupe_key: Mapped[str | None] = mapped_column(String(64), nullable=True, unique=True)
 
 
 class ModelVersion(Base):

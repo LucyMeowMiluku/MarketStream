@@ -2,11 +2,18 @@ from sqlalchemy import text
 
 from config.logging_config import get_logger
 from storage.db import get_engine
+from storage.migrations import run_migrations
 from storage.models import Base
 
 log = get_logger("init_db")
 
-HYPERTABLES = ["price_ticks", "sentiment_scores", "feature_vectors", "drift_events"]
+HYPERTABLES = {
+    "price_ticks": "time",
+    "sentiment_scores": "time",
+    "feature_vectors": "window_end",
+    "factor_snapshots": "event_time",
+    "drift_events": "detected_at",
+}
 
 
 def init_database():
@@ -16,17 +23,15 @@ def init_database():
 
     with engine.connect() as conn:
         conn.execute(text("CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE"))
+        run_migrations(conn)
         conn.commit()
 
-        for table in HYPERTABLES:
+        for table, time_column in HYPERTABLES.items():
             try:
                 conn.execute(
                     text(
-                        f"SELECT create_hypertable('{table}', by_range('window_end', INTERVAL '1 day'), if_not_exists => TRUE)"
-                        if table == "feature_vectors"
-                        else f"SELECT create_hypertable('{table}', by_range('detected_at', INTERVAL '1 day'), if_not_exists => TRUE)"
-                        if table == "drift_events"
-                        else f"SELECT create_hypertable('{table}', by_range('time' , INTERVAL '1 day'), if_not_exists => TRUE)"
+                        f"SELECT create_hypertable('{table}', "
+                        f"by_range('{time_column}', INTERVAL '1 day'), if_not_exists => TRUE)"
                     )
                 )
                 conn.commit()
