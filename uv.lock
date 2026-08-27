@@ -771,6 +771,7 @@ dependencies = [
     { name = "structlog" },
     { name = "torch" },
     { name = "transformers" },
+    { name = "websockets" },
     { name = "yfinance" },
 ]
 
@@ -799,6 +800,7 @@ requires-dist = [
     { name = "structlog", specifier = ">=24.0" },
     { name = "torch", specifier = ">=2.3" },
     { name = "transformers", specifier = ">=4.40" },
+    { name = "websockets", specifier = ">=12.0" },
     { name = "yfinance", specifier = ">=0.2" },
 ]
 
