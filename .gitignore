@@ -25,6 +25,7 @@ pg_data/
 !Figure/dashboard_*.png
 data/models/*.pt
 data/models/*.npz
+data/replay/raw/
 node_modules/
 *.docx
 !docs/*.docx
