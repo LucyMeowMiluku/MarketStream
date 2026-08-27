@@ -20,7 +20,7 @@ from cep.events import (
     EventDetector,
     EventThresholds,
 )
-from cep.guards import feature_abs_gt, feature_gt, feature_lt
+from cep.guards import feature_abs_gt, feature_gt
 from ml.ensemble import EnsembleDetector
 
 
@@ -150,7 +150,9 @@ def test_lone_primitive_fires_point_layer():
 
 def test_automata_only_ignores_lone_primitive():
     d = CEPDetector(point_severity=0.0)
-    assert d.score(_window(price_change_rate=0.05)) == 0.0  # 0 -> 1, no accept, no point
+    assert (
+        d.score(_window(price_change_rate=0.05)) == 0.0
+    )  # 0 -> 1, no accept, no point
 
 
 def test_volume_led_breakout_sequence():
@@ -244,9 +246,11 @@ def test_nfa_instance_eviction():
 
 def test_nfa_gap_expiry_per_instance():
     a = _nfa_ab(max_gap=1)
-    a.step("k", {"A"})   # instance at state 1
-    a.step("k", set())   # age = 1 -> expires at next step
-    assert a.step("k", {"B"}) == 0.0  # instance expired, B from fresh start goes nowhere
+    a.step("k", {"A"})  # instance at state 1
+    a.step("k", set())  # age = 1 -> expires at next step
+    assert (
+        a.step("k", {"B"}) == 0.0
+    )  # instance expired, B from fresh start goes nowhere
 
 
 def test_nfa_simultaneous_multi_hop():
@@ -284,8 +288,8 @@ def test_per_edge_gap_tight_leg():
         severity=0.9,
         max_gap=5,  # automaton default is loose
     )
-    a.step("k", {"A"})   # state 1
-    a.step("k", set())   # age=1 -> hits per-edge limit
+    a.step("k", {"A"})  # state 1
+    a.step("k", set())  # age=1 -> hits per-edge limit
     assert a.step("k", {"B"}) == 0.0  # expired
 
 
@@ -399,9 +403,9 @@ def test_guard_with_nfa_overlapping():
         severity=0.9,
         max_gap=5,
     )
-    a.step("k", {"A"})                                 # instance 1
-    a.step("k", {"B"}, features={"val": 5})            # guard fails, no completion
-    a.step("k", {"A"})                                 # instance 2
+    a.step("k", {"A"})  # instance 1
+    a.step("k", {"B"}, features={"val": 5})  # guard fails, no completion
+    a.step("k", {"A"})  # instance 2
     assert a.step("k", {"B"}, features={"val": 15}) == 0.9  # guard passes
 
 
@@ -450,7 +454,7 @@ def test_panic_compound_partial_timeout():
         d.update(_window())
     # Now sentiment drop arrives too late
     d.score(_window(sentiment_shift=-0.5))
-    score = d.score(_window(price_change_rate=-0.05))
+    d.score(_window(price_change_rate=-0.05))
     assert d.last_match("AAPL") != "panic_compound"
 
 
@@ -467,30 +471,32 @@ def _negation_ab(timeout=3):
         accept_state=2,
         severity=0.7,
         max_gap=timeout + 1,
-        negations=[NegationEdge(from_state=1, absent_event="B", to_state=2, timeout=timeout)],
+        negations=[
+            NegationEdge(from_state=1, absent_event="B", to_state=2, timeout=timeout)
+        ],
     )
 
 
 def test_negation_fires_on_absence():
     a = _negation_ab(timeout=2)
-    a.step("k", {"A"})    # state 1
-    a.step("k", set())    # absent +1
+    a.step("k", {"A"})  # state 1
+    a.step("k", set())  # absent +1
     assert a.step("k", set()) == 0.7  # absent +2 >= timeout -> accept
 
 
 def test_negation_reset_on_event_appearance():
     a = _negation_ab(timeout=2)
-    a.step("k", {"A"})    # state 1
-    a.step("k", set())    # absent +1
-    a.step("k", {"B"})    # B appeared -> negation counter reset
+    a.step("k", {"A"})  # state 1
+    a.step("k", set())  # absent +1
+    a.step("k", {"B"})  # B appeared -> negation counter reset
     assert a.step("k", set()) == 0.0  # counter was reset, not yet at timeout
 
 
 def test_negation_timeout_boundary():
     """Negation fires exactly at timeout, not before."""
     a = _negation_ab(timeout=3)
-    a.step("k", {"A"})    # state 1
-    a.step("k", set())    # absent +1
+    a.step("k", {"A"})  # state 1
+    a.step("k", set())  # absent +1
     assert a.step("k", set()) == 0.0  # absent +2, not yet
     assert a.step("k", set()) == 0.7  # absent +3 = timeout -> accept
 
@@ -498,8 +504,8 @@ def test_negation_timeout_boundary():
 def test_negation_with_overlapping_nfa():
     """Multiple instances can independently track negation."""
     a = _negation_ab(timeout=2)
-    a.step("k", {"A"})    # instance 1 at state 1
-    a.step("k", set())    # inst1 absent +1
+    a.step("k", {"A"})  # instance 1 at state 1
+    a.step("k", set())  # inst1 absent +1
     # "A" again: inst1 absent +2 -> fires this window; inst2 spawns at state 1
     assert a.step("k", {"A"}) == 0.7
     # inst2 still needs 2 absent windows
@@ -536,7 +542,7 @@ def test_sustained_selloff_pattern():
     d = CEPDetector()
     d.score(_window(price_change_rate=-0.05))  # price down -> state 1
     d.score(_window())  # no rebound, absent +1
-    score = d.score(_window())  # absent +2 -> sustained_selloff fires
+    d.score(_window())  # absent +2 -> sustained_selloff fires
     assert d.last_match("AAPL") == "sustained_selloff"
 
 
@@ -556,57 +562,59 @@ def _repeat_ab(min_count=3, max_count=None):
         accept_state=2,
         severity=0.9,
         max_gap=min_count + 3,
-        repeats=[RepeatEdge(state=1, event="A", min_count=min_count, max_count=max_count)],
+        repeats=[
+            RepeatEdge(state=1, event="A", min_count=min_count, max_count=max_count)
+        ],
     )
 
 
 def test_repeat_fires_after_min_count():
     a = _repeat_ab(min_count=3)
     # First "A" transitions 0->1 via normal Transition; repeat counter starts at 0.
-    a.step("k", {"A"})    # state 1, repeat_counter = 0
-    a.step("k", {"A"})    # repeat_counter = 1
-    a.step("k", {"A"})    # repeat_counter = 2
-    a.step("k", {"A"})    # repeat_counter = 3 >= min
+    a.step("k", {"A"})  # state 1, repeat_counter = 0
+    a.step("k", {"A"})  # repeat_counter = 1
+    a.step("k", {"A"})  # repeat_counter = 2
+    a.step("k", {"A"})  # repeat_counter = 3 >= min
     assert a.step("k", {"B"}) == 0.9  # threshold met, B fires
 
 
 def test_repeat_blocks_before_min_count():
     a = _repeat_ab(min_count=3)
-    a.step("k", {"A"})    # transition 0->1, counter = 0
-    a.step("k", {"A"})    # counter = 1
-    a.step("k", {"A"})    # counter = 2
+    a.step("k", {"A"})  # transition 0->1, counter = 0
+    a.step("k", {"A"})  # counter = 1
+    a.step("k", {"A"})  # counter = 2
     assert a.step("k", {"B"}) == 0.0  # counter = 2 < 3, B blocked
 
 
 def test_repeat_max_count_eviction():
     a = _repeat_ab(min_count=2, max_count=4)
-    a.step("k", {"A"})    # transition 0->1, counter = 0
-    a.step("k", {"A"})    # counter = 1
-    a.step("k", {"A"})    # counter = 2
-    a.step("k", {"A"})    # counter = 3
-    a.step("k", {"A"})    # counter = 4
-    a.step("k", {"A"})    # counter = 5 > max(4) -> instance dropped
+    a.step("k", {"A"})  # transition 0->1, counter = 0
+    a.step("k", {"A"})  # counter = 1
+    a.step("k", {"A"})  # counter = 2
+    a.step("k", {"A"})  # counter = 3
+    a.step("k", {"A"})  # counter = 4
+    a.step("k", {"A"})  # counter = 5 > max(4) -> instance dropped
     assert a.step("k", {"B"}) == 0.0  # no instance to fire
 
 
 def test_repeat_counter_resets_on_new_instance():
     a = _repeat_ab(min_count=2)
-    a.step("k", {"A"})    # transition 0->1, counter = 0
+    a.step("k", {"A"})  # transition 0->1, counter = 0
     assert a.step("k", {"B"}) == 0.0  # counter < min, B blocked
     # Start fresh
-    a.step("k", {"A"})    # new instance, transition 0->1, counter = 0
-    a.step("k", {"A"})    # counter = 1
-    a.step("k", {"A"})    # counter = 2
+    a.step("k", {"A"})  # new instance, transition 0->1, counter = 0
+    a.step("k", {"A"})  # counter = 1
+    a.step("k", {"A"})  # counter = 2
     assert a.step("k", {"B"}) == 0.9  # threshold met
 
 
 def test_repeat_idle_windows_age_instance():
     """Idle windows between repeats age the instance normally."""
     a = _repeat_ab(min_count=2)
-    a.step("k", {"A"})    # transition 0->1, counter = 0
-    a.step("k", {"A"})    # counter = 1
-    a.step("k", set())    # idle, age increases
-    a.step("k", {"A"})    # counter = 2
+    a.step("k", {"A"})  # transition 0->1, counter = 0
+    a.step("k", {"A"})  # counter = 1
+    a.step("k", set())  # idle, age increases
+    a.step("k", {"A"})  # counter = 2
     assert a.step("k", {"B"}) == 0.9  # threshold met despite gap
 
 
@@ -623,7 +631,7 @@ def test_sustained_accumulation_pattern():
         d.score(_window(total_volume=20000.0))
         d.update(_window(total_volume=20000.0))
     # Price jump completes (sustained_accumulation severity 0.90 > breakout 0.85)
-    score = d.score(_window(price_change_rate=0.05))
+    d.score(_window(price_change_rate=0.05))
     assert d.last_match("AAPL") == "sustained_accumulation"
 
 
@@ -638,7 +646,7 @@ def test_meta_automaton_reversal_confirmed():
     for _ in range(5):
         d.update(_window(total_volume=1000.0))
     # Flash reversal: up then down
-    d.score(_window(price_change_rate=0.05))   # price up
+    d.score(_window(price_change_rate=0.05))  # price up
     d.score(_window(price_change_rate=-0.05))  # price down -> flash_reversal fires
     # Volume surge within 5 windows -> reversal_confirmed fires
     score = d.score(_window(total_volume=6000.0))
@@ -652,11 +660,11 @@ def test_meta_automaton_pump_and_dump():
     for _ in range(5):
         d.update(_window(total_volume=1000.0))
     # Phase 1: volume_led_breakout
-    d.score(_window(total_volume=6000.0))      # volume surge
+    d.score(_window(total_volume=6000.0))  # volume surge
     d.update(_window(total_volume=6000.0))
-    d.score(_window(price_change_rate=0.05))   # price up -> breakout fires
+    d.score(_window(price_change_rate=0.05))  # price up -> breakout fires
     # Phase 2: news_driven_selloff
-    d.score(_window(sentiment_shift=-0.5))     # sentiment drop
+    d.score(_window(sentiment_shift=-0.5))  # sentiment drop
     score = d.score(_window(price_change_rate=-0.05))  # price down -> selloff fires
     # pump_and_dump = PATTERN:breakout -> PATTERN:selloff, severity 1.0
     assert d.last_match("AAPL") == "pump_and_dump"
@@ -691,7 +699,7 @@ def test_hierarchy_two_pass_ordering():
     d = CEPDetector(automata=[a_base], meta_automata=[a_meta], point_severity=0.0)
     features = _window()
     # "X" completes base_x -> emits PATTERN:base_x -> meta_y fires same window
-    score = d.score({**features, "_inject_events": {"X"}})
+    d.score({**features, "_inject_events": {"X"}})
     # But CEPDetector uses EventDetector, not raw events, so we test via pattern directly
     # Instead, test at the automaton level directly:
     assert a_base.step("k", {"X"}) == 0.5
