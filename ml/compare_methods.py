@@ -214,6 +214,9 @@ def main() -> None:
     print_comparison(rows)
 
     out = {
+        "data_kind": "real_ohlcv_with_synthetic_injections",
+        "ground_truth_kind": "programmatic_anomaly_injection",
+        "metric_scope": "controlled_pipeline_comparison_only",
         "config": {
             "period": args.period,
             "train_ratio": args.train_ratio,

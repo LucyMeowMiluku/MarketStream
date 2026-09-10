@@ -112,11 +112,11 @@ with st.container(border=True):
 with st.container(border=True):
     st.markdown("#### Architecture")
     st.code(
-        "yfinance → Kafka → Quix Streams (5-min windows) → IsolationForest → TimescaleDB → Streamlit",
+        "Alpaca IEX / replay → MarketEvent → Kafka → lightweight factors (10s/1m/5m) → CEP → TimescaleDB → Streamlit",
         language=None,
     )
     tech = st.columns(4)
-    tech[0].markdown("**Ingestion**\n\nyfinance + FinBERT")
-    tech[1].markdown("**Streaming**\n\nKafka + Quix Streams")
-    tech[2].markdown("**ML**\n\nIsolation Forest")
+    tech[0].markdown("**Ingestion**\n\nAlpaca IEX + timestamped news")
+    tech[1].markdown("**Streaming**\n\nKafka + unified MarketEvent")
+    tech[2].markdown("**Detection**\n\nRobust factors + stateful CEP")
     tech[3].markdown("**Storage**\n\nTimescaleDB")

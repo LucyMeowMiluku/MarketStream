@@ -33,9 +33,8 @@ from ml.ensemble import EnsembleDetector
 
 log = get_logger("case_study")
 
-# (ticker, approximate event date, description). The script picks the largest
-# absolute daily move within +/-2 sessions of the date as the event session, so
-# being a day off (e.g. an after-close earnings print) is fine.
+# Pre-registered (ticker, event date, description). Dates are fixed before data
+# inspection; after-close events map to the first session on or after the date.
 EVENTS = [
     ("NVDA", "2024-02-22", "Q4 FY24 earnings beat"),
     ("NVDA", "2025-01-27", "DeepSeek-driven sell-off"),
@@ -96,10 +95,10 @@ def build_ml_reference(warmup_df: pd.DataFrame) -> EnsembleDetector:
 
 def locate_event(feats: pd.DataFrame, date_str: str) -> int:
     target = pd.Timestamp(date_str)
-    dist = (feats["timestamp"] - target).abs()
-    center = int(dist.idxmin())
-    lo, hi = max(0, center - 2), min(len(feats) - 1, center + 2)
-    return int(feats.loc[lo:hi, "price_change_rate"].abs().idxmax())
+    on_or_after = feats[feats["timestamp"] >= target]
+    if not on_or_after.empty:
+        return int(on_or_after.index[0])
+    return int(feats.index[-1])
 
 
 def run_event(ticker: str, date_str: str, desc: str) -> dict | None:
@@ -147,6 +146,9 @@ def run_event(ticker: str, date_str: str, desc: str) -> dict | None:
     event = per_row[event_idx]
     window = per_row[max(0, event_idx - 2) : min(len(per_row), event_idx + 3)]
     return {
+        "data_kind": "real_historical_qualitative",
+        "metric_eligible": False,
+        "limitations": "daily OHLCV with neutral sentiment placeholder; not reviewed event-level ground truth",
         "ticker": ticker,
         "description": desc,
         "event_date": event["date"],

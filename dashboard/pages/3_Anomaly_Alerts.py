@@ -65,26 +65,53 @@ def alerts_panel():
     with st.container(border=True):
         st.markdown("#### Recent Alerts")
         for _, row in df.iterrows():
-            severity = "🔴" if row["anomaly_score"] < settings.anomaly_severity_threshold else "🟡"
+            severity_name = row.get("severity") or (
+                "high" if row["anomaly_score"] < settings.anomaly_severity_threshold else "medium"
+            )
+            severity = "🔴" if severity_name in {"critical", "high"} else "🟡"
+            pattern = row.get("pattern_name") or "legacy_model_alert"
+            direction = row.get("direction") or "n/a"
             with st.expander(
-                f"{severity} {row['ticker']} — {row['detected_at'].strftime('%Y-%m-%d %H:%M:%S')} — Score: {row['anomaly_score']:.4f}"
+                f"{severity} {row['ticker']} — {pattern} ({direction}) — "
+                f"{row['detected_at'].strftime('%Y-%m-%d %H:%M:%S')}"
             ):
                 st.write(f"**Reason:** {row['reason']}")
                 if row["features"]:
                     features = row["features"] if isinstance(row["features"], dict) else {}
-                    fcols = st.columns(4)
+                    fcols = st.columns(3)
                     with fcols[0]:
-                        st.metric("Price Change", f"{features.get('price_change_rate', 0):.2%}")
+                        st.metric("CEP Score", f"{row['anomaly_score']:.4f}")
                     with fcols[1]:
-                        st.metric("Volume", f"{features.get('total_volume', 0):,}")
+                        st.metric("Price Change", f"{features.get('price_change_rate', 0):.2%}")
                     with fcols[2]:
-                        st.metric("Avg Sentiment", f"{features.get('avg_sentiment', 0):.3f}")
-                    with fcols[3]:
-                        st.metric("Sentiment Shift", f"{features.get('sentiment_shift', 0):.3f}")
+                        st.metric("Volume", f"{features.get('total_volume', 0):,}")
+
+                evidence = row.get("factor_evidence")
+                if evidence and isinstance(evidence, dict):
+                    st.markdown("**Factor Evidence**")
+                    evidence_rows = [
+                        {
+                            "factor": name,
+                            "group": values.get("group"),
+                            "direction": values.get("direction"),
+                            "value": values.get("value"),
+                            "robust_z": values.get("robust_z"),
+                            "state": values.get("state"),
+                        }
+                        for name, values in evidence.items()
+                    ]
+                    st.dataframe(evidence_rows, hide_index=True, use_container_width=True)
+
+                quality = row.get("data_quality")
+                if quality and isinstance(quality, dict):
+                    st.caption(
+                        f"Data quality: {quality.get('status', 'unknown')} | "
+                        f"flags: {', '.join(quality.get('flags', [])) or 'none'}"
+                    )
 
                 ds = row.get("detector_scores")
                 if ds and isinstance(ds, dict):
-                    st.markdown("**Per-Detector Scores**")
+                    st.markdown("**Detection Scores (CEP / optional shadow)**")
                     dcols = st.columns(len(ds))
                     for i, (name, val) in enumerate(ds.items()):
                         with dcols[i]:

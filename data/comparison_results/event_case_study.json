@@ -1,5 +1,8 @@
 [
   {
+    "data_kind": "real_historical_qualitative",
+    "metric_eligible": false,
+    "limitations": "daily OHLCV with neutral sentiment placeholder; not reviewed event-level ground truth",
     "ticker": "NVDA",
     "description": "Q4 FY24 earnings beat",
     "event_date": "2024-02-22",
@@ -62,6 +65,9 @@
     ]
   },
   {
+    "data_kind": "real_historical_qualitative",
+    "metric_eligible": false,
+    "limitations": "daily OHLCV with neutral sentiment placeholder; not reviewed event-level ground truth",
     "ticker": "NVDA",
     "description": "DeepSeek-driven sell-off",
     "event_date": "2025-01-27",
@@ -124,6 +130,9 @@
     ]
   },
   {
+    "data_kind": "real_historical_qualitative",
+    "metric_eligible": false,
+    "limitations": "daily OHLCV with neutral sentiment placeholder; not reviewed event-level ground truth",
     "ticker": "TSLA",
     "description": "Q3 2024 earnings pop",
     "event_date": "2024-10-24",
@@ -186,6 +195,9 @@
     ]
   },
   {
+    "data_kind": "real_historical_qualitative",
+    "metric_eligible": false,
+    "limitations": "daily OHLCV with neutral sentiment placeholder; not reviewed event-level ground truth",
     "ticker": "AAPL",
     "description": "global risk-off sell-off",
     "event_date": "2024-08-05",

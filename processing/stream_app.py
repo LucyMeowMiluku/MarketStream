@@ -1,3 +1,8 @@
+"""
+连接Kafka,在滚动窗口里积攒close和volume,
+窗口结束时调用window_compute计算窗口内features,最后写到stream.features
+"""
+
 from datetime import timedelta
 
 from quixstreams import Application
@@ -65,7 +70,9 @@ def main():
     sdf_windowed = sdf_windowed.apply(build_features)
     sdf_windowed.to_topic(features_topic)
 
-    log.info("starting_stream_processor", window_minutes=settings.window_duration_minutes)
+    log.info(
+        "starting_stream_processor", window_minutes=settings.window_duration_minutes
+    )
     app.run()
 
 

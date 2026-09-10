@@ -58,7 +58,9 @@ def fetch_anomaly_data(ticker_filter: str) -> pd.DataFrame:
     params = {"ticker": ticker_filter} if ticker_filter != "All" else {}
     query = f"""
         WITH recent_alerts AS (
-            SELECT detected_at, ticker, anomaly_score, reason, features, detector_scores
+            SELECT detected_at, ticker, anomaly_score, reason, features, detector_scores,
+                   pattern_name, direction, severity, event_start, event_end,
+                   factor_evidence, trigger_event_ids, data_quality, dedupe_key
             FROM anomaly_alerts {where}
             ORDER BY detected_at DESC
             LIMIT 50
