@@ -1,0 +1,24 @@
+{
+  "run_id": "soak-61164fa173",
+  "generated_at": "2026-08-06T08:16:22.673027+00:00",
+  "provenance": "synthetic events explicitly marked mode=soak; not live Alpaca data",
+  "path": "MarketEvent -> Kafka -> factor engine -> Kafka -> CEP -> PostgreSQL",
+  "sample": {
+    "input_events": 150,
+    "persisted_events": 150,
+    "persisted_alerts": 15
+  },
+  "receipt_to_alert_persistence_seconds": {
+    "p50": 1.163553,
+    "p95": 1.4842509,
+    "p99": 1.4880493799999999
+  },
+  "gates": {
+    "all_events_persisted": true,
+    "expected_alert_sample": false,
+    "p95_le_15_seconds": true,
+    "no_duplicate_alerts": true,
+    "all_alerts_traceable": true,
+    "kafka_to_database_soak": false
+  }
+}

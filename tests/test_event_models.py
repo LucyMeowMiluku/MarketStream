@@ -58,6 +58,6 @@ def test_factor_snapshot_round_trip():
         warmup_status="ready",
         source_event_ids=["one"],
         window_start=NOW,
-        legacy_features={"price_change_rate": 0.01},
+        input_summary={"last_price": 100.0},
     )
     assert FactorSnapshot.from_dict(snapshot.to_dict()).to_dict() == snapshot.to_dict()

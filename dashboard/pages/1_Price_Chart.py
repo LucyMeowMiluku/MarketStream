@@ -80,7 +80,7 @@ with cols[1]:
                 )
 
             fig.update_layout(
-                title=f"{ticker} — 5-Min Window Average Close",
+                title=f"{ticker} — 5-Minute Factor Window",
                 xaxis_title="Time",
                 yaxis_title="Price ($)",
                 height=420,
@@ -97,16 +97,14 @@ with cols[1]:
                 st.metric("Current Price", price)
         with metric_cols[1]:
             with st.container(border=True):
-                rate = latest["price_change_rate"]
+                rate = latest["return_surprise"]
                 st.metric(
-                    "Price Change Rate",
-                    f"{rate:.2%}" if pd.notna(rate) else "N/A",
-                    delta=f"{rate:.2%}" if pd.notna(rate) else None,
+                    "Return Surprise",
+                    f"{rate:.2f}" if pd.notna(rate) else "N/A",
                 )
         with metric_cols[2]:
             with st.container(border=True):
-                score = latest["anomaly_score"]
-                st.metric("Anomaly Score", f"{score:.4f}" if pd.notna(score) else "N/A")
+                st.metric("Alert", "Yes" if latest["is_anomaly"] else "No")
 
         with st.container(border=True):
             st.markdown("#### Volume")

@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-08-14T09:39:16.439016+00:00",
+  "status": "failed",
+  "error_type": "TimeoutError",
+  "error": "",
+  "gates": {
+    "alpaca_live_stream": false
+  }
+}

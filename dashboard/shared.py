@@ -30,12 +30,23 @@ def engine():
 @st.cache_data(ttl=30)
 def fetch_price_data(ticker: str, lookback: int) -> pd.DataFrame:
     query = """
-        SELECT window_end, avg_close, price_change_rate, total_volume,
-               anomaly_score, is_anomaly
-        FROM feature_vectors
+        SELECT
+            event_time AS window_end,
+            NULLIF(input_summary->>'last_price', '')::double precision AS avg_close,
+            NULLIF(factor_values->>'return_surprise', '')::double precision AS return_surprise,
+            COALESCE(NULLIF(input_summary->>'trade_volume', '')::double precision, 0)
+              + COALESCE(NULLIF(input_summary->>'bar_volume', '')::double precision, 0)
+              AS total_volume,
+            EXISTS (
+                SELECT 1 FROM anomaly_alerts alert
+                WHERE alert.ticker = factor_snapshots.ticker
+                  AND alert.event_end = factor_snapshots.event_time
+            ) AS is_anomaly
+        FROM factor_snapshots
         WHERE ticker = %(ticker)s
-          AND window_end > NOW() - %(lookback)s * INTERVAL '1 hour'
-        ORDER BY window_end
+          AND cadence = '5m'
+          AND event_time > NOW() - %(lookback)s * INTERVAL '1 hour'
+        ORDER BY event_time
     """
     return pd.read_sql(query, engine(), params={"ticker": ticker, "lookback": lookback})
 
@@ -73,58 +84,3 @@ def fetch_anomaly_data(ticker_filter: str) -> pd.DataFrame:
     """
     return pd.read_sql(query, engine(), params=params)
 
-
-@st.cache_data(ttl=30)
-def fetch_model_versions() -> pd.DataFrame:
-    query = """
-        SELECT id, model_name, version, trained_at, sample_count,
-               anomaly_rate, score_mean, score_std, model_path, is_active
-        FROM model_versions
-        ORDER BY trained_at DESC
-        LIMIT 20
-    """
-    return pd.read_sql(query, engine())
-
-
-@st.cache_data(ttl=30)
-def fetch_drift_events(hours: int = 24) -> pd.DataFrame:
-    query = """
-        SELECT detected_at, ticker, feature_name, drift_type, details
-        FROM drift_events
-        WHERE detected_at > NOW() - %(hours)s * INTERVAL '1 hour'
-        ORDER BY detected_at DESC
-    """
-    return pd.read_sql(query, engine(), params={"hours": hours})
-
-
-@st.cache_data(ttl=30)
-def fetch_detector_scores(ticker_filter: str, hours: int = 6) -> pd.DataFrame:
-    where = "AND ticker = %(ticker)s" if ticker_filter != "All" else ""
-    params = {"hours": hours}
-    if ticker_filter != "All":
-        params["ticker"] = ticker_filter
-    query = f"""
-        SELECT window_end, ticker, anomaly_score, is_anomaly, detector_scores
-        FROM feature_vectors
-        WHERE window_end > NOW() - %(hours)s * INTERVAL '1 hour'
-          {where}
-          AND detector_scores IS NOT NULL
-        ORDER BY window_end
-    """
-    return pd.read_sql(query, engine(), params=params)
-
-
-@st.cache_data(ttl=30)
-def fetch_anomaly_rate(hours: int = 24) -> pd.DataFrame:
-    query = """
-        SELECT
-            date_trunc('hour', window_end) as hour,
-            ticker,
-            COUNT(*) as total,
-            SUM(CASE WHEN is_anomaly THEN 1 ELSE 0 END) as anomalies
-        FROM feature_vectors
-        WHERE window_end > NOW() - %(hours)s * INTERVAL '1 hour'
-        GROUP BY hour, ticker
-        ORDER BY hour
-    """
-    return pd.read_sql(query, engine(), params={"hours": hours})

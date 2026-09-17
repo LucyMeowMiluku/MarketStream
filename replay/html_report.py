@@ -132,7 +132,7 @@ function applyFilters(){
 }
 function renderTimeline(){
   const x=visibleSteps.map(s=>s.event_time);
-  const price=visibleSteps.map(s=>s.legacy_features?.avg_close ?? s.input_summary?.last_price ?? null);
+  const price=visibleSteps.map(s=>s.input_summary?.last_price ?? null);
   const bid=visibleSteps.map(s=>s.input_summary?.bid_price ?? null), ask=visibleSteps.map(s=>s.input_summary?.ask_price ?? null);
   const volume=visibleSteps.map(s=>(s.input_summary?.trade_volume||0)+(s.input_summary?.bar_volume||0));
   const score=visibleSteps.map(s=>s.detection.score);
@@ -146,9 +146,9 @@ function renderTimeline(){
   const factors=['return_surprise','volatility_burst','relative_volume','spread_stress','quote_imbalance','signed_trade_imbalance','market_residual','news_shock'];
   factors.forEach(name=>{const first=visibleSteps.find(s=>s.factor_states?.[name]);const group=first?.factor_states?.[name]?.group||'price';traces.push({x,y:visibleSteps.map(s=>s.factor_states?.[name]?.robust_z ?? null),name,mode:'lines',line:{color:groupColors[group],width:1.2,dash:factorDash[name]},yaxis:'y2',visible:'legendonly'});});
   const alerts=visibleSteps.filter(s=>s.detection.is_alert);
-  traces.push({x:alerts.map(s=>s.event_time),y:alerts.map(s=>s.legacy_features?.avg_close ?? s.input_summary?.last_price ?? null),name:'Alerts',mode:'markers',marker:{size:9,color:alerts.map(s=>s.match_status==='tp'?'#3568c0':'#d76b27'),symbol:alerts.map(s=>s.match_status==='tp'?'diamond':'x')},text:alerts.map(s=>`${s.match_status.toUpperCase()} · ${s.detection.patterns.filter(p=>p.status==='completed').map(p=>p.name).join(', ')}`),hovertemplate:'%{x}<br>%{text}<extra></extra>',yaxis:'y'});
+  traces.push({x:alerts.map(s=>s.event_time),y:alerts.map(s=>s.input_summary?.last_price ?? null),name:'Alerts',mode:'markers',marker:{size:9,color:alerts.map(s=>s.match_status==='tp'?'#3568c0':'#d76b27'),symbol:alerts.map(s=>s.match_status==='tp'?'diamond':'x')},text:alerts.map(s=>`${s.match_status.toUpperCase()} · ${s.detection.patterns.filter(p=>p.status==='completed').map(p=>p.name).join(', ')}`),hovertemplate:'%{x}<br>%{text}<extra></extra>',yaxis:'y'});
   const news=visibleSteps.filter(s=>(s.input_summary?.news_count||0)>0);
-  traces.push({x:news.map(s=>s.event_time),y:news.map(s=>s.legacy_features?.avg_close ?? s.input_summary?.last_price ?? null),name:'News',mode:'markers',marker:{size:10,color:'#6e7f35',symbol:'triangle-up'},text:news.map(s=>(s.input_summary?.news_headlines||[]).join('<br>')),hovertemplate:'%{x}<br>%{text}<extra></extra>',yaxis:'y'});
+  traces.push({x:news.map(s=>s.event_time),y:news.map(s=>s.input_summary?.last_price ?? null),name:'News',mode:'markers',marker:{size:10,color:'#6e7f35',symbol:'triangle-up'},text:news.map(s=>(s.input_summary?.news_headlines||[]).join('<br>')),hovertemplate:'%{x}<br>%{text}<extra></extra>',yaxis:'y'});
   const visibleIntervalIds=new Set(visibleSteps.map(s=>s.interval_id));
   const shapes=report.intervals.filter(i=>visibleIntervalIds.has(i.interval_id)).map(i=>({type:'rect',xref:'x',yref:'paper',x0:i.started_at,x1:i.ended_at,y0:0,y1:1,fillcolor:i.kind==='anomaly'?'rgba(53,104,192,.08)':'rgba(102,112,133,.05)',line:{color:i.kind==='anomaly'?'rgba(53,104,192,.28)':'rgba(102,112,133,.18)',width:1},layer:'below',label:{text:i.kind==='anomaly'?'Ground truth':'Normal control',font:{size:9,color:'#667085'}}}));
   const layout={height:720,margin:{l:58,r:35,t:18,b:45},paper_bgcolor:'#fff',plot_bgcolor:'#fff',hovermode:'x unified',legend:{orientation:'h',y:1.08},shapes,xaxis:{gridcolor:'#eef0f3'},yaxis:{domain:[.74,1],title:'Price',gridcolor:'#eef0f3'},yaxis2:{domain:[.40,.68],title:'Robust z',gridcolor:'#eef0f3'},yaxis3:{domain:[.20,.34],title:'CEP score',gridcolor:'#eef0f3'},yaxis4:{domain:[0,.14],title:'Volume',gridcolor:'#eef0f3'},bargap:.1};

@@ -1,0 +1,3 @@
+[2m2026-08-06T08:15:17.933480Z[0m [[32m[1minfo     [0m] [1mstarted                       [0m [36mcadences[0m=[35m[10][0m [36mtickers[0m=[35m['AAPL', 'TSLA', 'NVDA', 'QQQ', 'SPY'][0m
+[2m2026-08-06T08:16:21.519727Z[0m [[32m[1minfo     [0m] [1mshutting_down                 [0m [36msignal[0m=[35m2[0m
+[2m2026-08-06T08:16:21.526804Z[0m [[32m[1minfo     [0m] [1mstopped                       [0m [36mstate[0m=[35m{'tickers': 3, 'windows': 3, 'baselines': 72}[0m

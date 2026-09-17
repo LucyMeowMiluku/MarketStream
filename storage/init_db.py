@@ -8,11 +8,8 @@ from storage.models import Base
 log = get_logger("init_db")
 
 HYPERTABLES = {
-    "price_ticks": "time",
     "sentiment_scores": "time",
-    "feature_vectors": "window_end",
     "factor_snapshots": "event_time",
-    "drift_events": "detected_at",
 }
 
 

@@ -6,6 +6,7 @@ from sqlalchemy import Connection, text
 
 
 MIGRATIONS = (
+    "ALTER TABLE factor_snapshots ADD COLUMN IF NOT EXISTS input_summary JSONB",
     "ALTER TABLE anomaly_alerts ADD COLUMN IF NOT EXISTS pattern_name VARCHAR(100)",
     "ALTER TABLE anomaly_alerts ADD COLUMN IF NOT EXISTS direction VARCHAR(10)",
     "ALTER TABLE anomaly_alerts ADD COLUMN IF NOT EXISTS severity VARCHAR(20)",

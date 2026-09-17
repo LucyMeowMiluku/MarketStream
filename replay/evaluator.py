@@ -20,10 +20,11 @@ from collections import Counter, OrderedDict
 from dataclasses import replace
 from datetime import timedelta
 from pathlib import Path
-from typing import Any, Iterator
+from typing import Any
 
 from cep.cep_detector import CEPDetector, PATTERN_SEVERITY
-from ml.event_metrics import (
+from evaluation.comparison import isolation_forest_detections
+from evaluation.metrics import (
     DetectedEvent,
     GroundTruthEvent,
     bootstrap_confidence_intervals,
@@ -31,39 +32,11 @@ from ml.event_metrics import (
     match_events,
 )
 from processing.data_quality import EventQualityGate
-from processing.event_models import DetectionResult, FactorSnapshot, MarketEvent
+from processing.event_models import FACTOR_GROUPS, DetectionResult, FactorSnapshot
 from processing.factor_engine import LightweightFactorEngine
 from replay.html_report import write_replay_html
-from replay.labels import LabelRegistry, load_label_registry
 from replay.models import ReplayRunConfig, ReplayStep, canonical_sha256, file_sha256
-
-
-def _resolve_artifact(manifest_path: Path, value: str) -> Path:
-    path = Path(value)
-    if path.is_absolute() or path.exists():
-        return path
-    candidate = manifest_path.parent / path
-    if candidate.exists():
-        return candidate
-    raise FileNotFoundError(value)
-
-
-def _iter_events(path: Path) -> Iterator[MarketEvent]:
-    # 目标：保证 replay 输入顺序与真实事件时间一致。
-    # 解决的问题：在评估器中静默重排会掩盖数据集生成错误；因此发现乱序时直接拒绝运行。
-    previous: tuple | None = None  # 上一条事件的 (event_time, event_id)
-    with path.open() as source:
-        for line_number, line in enumerate(source, start=1):
-            if not line.strip():
-                continue
-            event = MarketEvent.from_dict(json.loads(line))
-            key = (event.event_time, event.event_id)  # 相同时间时用 ID 稳定排序
-            if previous is not None and key < previous:
-                raise ValueError(
-                    f"{path}:{line_number}: events are not chronologically sorted"
-                )
-            previous = key
-            yield event
+from replay.validation import iter_events, resolve_artifact, validate_replay_inputs
 
 
 def _primary_pattern(result: DetectionResult):
@@ -103,58 +76,8 @@ class RealReplayEvaluator:
     def __init__(self, config: ReplayRunConfig) -> None:
         self.config = config
 
-    def _validate_inputs(self) -> tuple[dict[str, Any], LabelRegistry]:
-        # 目标：正式运行前确认数据、标签和采集工件属于同一个可复现实验
-        # 关键设计：同时检查真实来源、IEX 覆盖、baseline 天数、tags摘要、区间和分页完整性
-        manifest = json.loads(self.config.dataset_manifest.read_text())  # 采集工件清单
-        if manifest.get("schema_version") != "marketstream-real-replay-dataset-v1":
-            raise ValueError("unsupported replay dataset manifest")
-        if manifest.get("data_kind") != "real_historical":
-            raise ValueError("real evaluation refuses non-real dataset manifests")
-        if manifest.get("provider") != "alpaca" or manifest.get("feed") != "iex":
-            raise ValueError("v1 real replay requires Alpaca IEX")
-        if int(manifest.get("baseline_days", 0)) != self.config.baseline_days:
-            raise ValueError("dataset baseline_days does not match ReplayRunConfig")
-        registry = load_label_registry(self.config.labels_path)  # 独立审阅标签
-        registry.validate(
-            require_frozen=self.config.require_frozen_labels,
-            expected_anomalies=12,
-            expected_normals=12,
-        )
-        if manifest.get("dataset_id") != registry.dataset_id:
-            raise ValueError("dataset_id differs between manifest and labels")
-        if manifest.get("labels_sha256") != registry.digest:
-            # 数据采集后标签有变化时，旧数据集不能继续用于正式评测。
-            raise ValueError(
-                "labels changed after data collection; recollect or restore frozen labels"
-            )
-        manifest_ids = {item["interval_id"] for item in manifest.get("intervals", [])}
-        label_ids = {item.interval_id for item in registry.intervals}
-        if manifest_ids != label_ids:
-            raise ValueError("dataset and label interval sets differ")
-        for item in manifest["intervals"]:
-            requests = item.get("requests")
-            if not requests or any(
-                request.get("complete") is not True for request in requests
-            ):
-                # 任一 API 分页未完成，都可能造成某个区间缺少事件。
-                raise ValueError(
-                    f"interval {item['interval_id']}: pagination manifest is missing or incomplete"
-                )
-            for phase in ("baseline", "evaluation"):
-                artifact = item.get(phase, {})
-                if not artifact.get("path") or not artifact.get("sha256"):
-                    raise ValueError(
-                        f"interval {item['interval_id']}: {phase} artifact metadata is incomplete"
-                    )
-                if (
-                    not isinstance(artifact.get("events"), int)
-                    or artifact["events"] <= 0
-                ):
-                    raise ValueError(
-                        f"interval {item['interval_id']}: {phase} event count is invalid"
-                    )
-        return manifest, registry
+    def _validate_inputs(self):
+        return validate_replay_inputs(self.config)
 
     def _train_baseline(
         self,
@@ -163,7 +86,7 @@ class RealReplayEvaluator:
         *,
         dataset_id: str,
         interval_id: str,
-    ) -> tuple[dict[str, Any], dict[str, Any]]:
+    ) -> tuple[dict[str, Any], dict[str, Any], list[FactorSnapshot]]:
         # 目标：只用事件发生前的历史数据建立正常 baseline
         # 关键设计：复用生产质量门和因子引擎，但训练期不运行 CEP，也不使用目标区间标签调参
         quality = EventQualityGate()
@@ -173,8 +96,9 @@ class RealReplayEvaluator:
             baseline_days=self.config.baseline_days,
         )
         counts: Counter[str] = Counter()  # 各事件类型输入数量
+        training_snapshots: list[FactorSnapshot] = []
         maximum = None  # baseline 中最后一个事件时间
-        for event in _iter_events(path):
+        for event in iter_events(path):
             # 解决的问题：合成、soak 或其他区间的数据不能被混入真实 baseline。
             # 解决方法：逐条核对 source、mode、dataset、interval 和 phase，并拒绝 synthetic/soak ID。
             if event.source != "alpaca" or event.mode != "replay_real":
@@ -198,12 +122,12 @@ class RealReplayEvaluator:
                 raise ValueError("baseline contains a synthetic/soak event identifier")
             event = replace(event, run_id=self.config.run_id)
             assessed = quality.assess(event, mode="replay", now=event.event_time)
-            engine.process(assessed)
+            training_snapshots.extend(engine.process(assessed))
             counts[event.event_type.value] += 1
             maximum = (
                 event.event_time if maximum is None else max(maximum, event.event_time)
             )
-        engine.flush()
+        training_snapshots.extend(engine.flush())
         if maximum is None:
             raise ValueError(f"baseline file is empty: {path}")
         # 参考：[R08：TSB-AD；R09：Towards Unbiased Evaluation】主要参考了时间切分与评测偏差的概念方法
@@ -219,7 +143,8 @@ class RealReplayEvaluator:
             "event_types": dict(sorted(counts.items())),
             "last_event_time": maximum.isoformat(),
             "baseline_sha256": canonical_sha256(state),
-        }
+            "snapshots": len(training_snapshots),
+        }, training_snapshots
 
     def _evaluate_interval(
         self,
@@ -244,7 +169,7 @@ class RealReplayEvaluator:
         trace_resolution: dict[int, tuple[int, int]] = {}
         counts: Counter[str] = Counter()
         recent: OrderedDict[str, None] = OrderedDict()  # 核对 source_event_ids
-        for event in _iter_events(path):
+        for event in iter_events(path):
             if event.source != "alpaca" or event.mode != "replay_real":
                 raise ValueError(
                     f"evaluation contains non-real source: {event.source}/{event.mode}"
@@ -388,14 +313,15 @@ class RealReplayEvaluator:
         manifest_by_id = {item["interval_id"]: item for item in manifest["intervals"]}
         all_steps: list[ReplayStep] = []
         detections: list[DetectedEvent] = []
+        isolation_forest_results: list[DetectedEvent] = []
         baseline_summaries = []
         interval_summaries = []
         for interval in registry.intervals:
             interval_manifest = manifest_by_id[interval.interval_id]
-            baseline_path = _resolve_artifact(
+            baseline_path = resolve_artifact(
                 self.config.dataset_manifest, interval_manifest["baseline"]["path"]
             )
-            evaluation_path = _resolve_artifact(
+            evaluation_path = resolve_artifact(
                 self.config.dataset_manifest, interval_manifest["evaluation"]["path"]
             )
             for name, path, expected in (
@@ -412,7 +338,7 @@ class RealReplayEvaluator:
                     raise ValueError(
                         f"interval {interval.interval_id}: {name} checksum mismatch"
                     )
-            baseline_state, baseline_summary = self._train_baseline(
+            baseline_state, baseline_summary, training_snapshots = self._train_baseline(
                 baseline_path,
                 interval.started_at,
                 dataset_id=manifest["dataset_id"],
@@ -423,6 +349,10 @@ class RealReplayEvaluator:
                 evaluation_path,
                 baseline_state,
                 dataset_id=manifest["dataset_id"],
+            )
+            _, interval_if_detections = isolation_forest_detections(
+                training_snapshots,
+                [step.snapshot for step in steps],
             )
             if baseline_summary["events"] != interval_manifest["baseline"]["events"]:
                 raise ValueError(
@@ -440,6 +370,7 @@ class RealReplayEvaluator:
             )
             all_steps.extend(steps)
             detections.extend(interval_detections)
+            isolation_forest_results.extend(interval_if_detections)
 
         truth: list[GroundTruthEvent] = [
             item.to_ground_truth()
@@ -457,6 +388,12 @@ class RealReplayEvaluator:
             require_pattern=False,
             cooldown=timedelta(minutes=5),
         )
+        isolation_forest_metrics = compute_event_metrics(
+            truth,
+            isolation_forest_results,
+            require_pattern=False,
+            cooldown=timedelta(minutes=5),
+        )
         confidence = bootstrap_confidence_intervals(
             truth,
             detections,
@@ -469,6 +406,9 @@ class RealReplayEvaluator:
         )
         metrics.alerts_per_ticker_hour = (
             len(detections) / reviewed_hours if reviewed_hours else 0.0
+        )
+        isolation_forest_metrics.alerts_per_ticker_hour = (
+            len(isolation_forest_results) / reviewed_hours if reviewed_hours else 0.0
         )
         matched_detection_ids = {item.detection.detection_id for item in matches}
         false_detection_ids = {item.detection_id for item in false_positives}
@@ -553,6 +493,20 @@ class RealReplayEvaluator:
             "baseline_sha256": canonical_sha256(baseline_summaries),
             "detector_version": self.config.detector_version,
             "metrics": metrics.to_dict(),
+            "comparison": {
+                "data_kind": "real_historical",
+                "labels_frozen": registry.frozen,
+                "feature_contract": list(FACTOR_GROUPS),
+                "config": {
+                    "contamination": 0.05,
+                    "random_state": 42,
+                    "protocol": "per-interval baseline fit; shared evaluation snapshots",
+                },
+                "methods": {
+                    "factor_cep": metrics.to_dict(),
+                    "isolation_forest": isolation_forest_metrics.to_dict(),
+                },
+            },
             "bootstrap_95_ci": {
                 name: list(values) for name, values in confidence.items()
             },
@@ -595,9 +549,11 @@ class RealReplayEvaluator:
         output_dir.mkdir(parents=True, exist_ok=True)
         metrics_path = output_dir / "metrics.json"
         trace_path = output_dir / "trace.jsonl"
+        comparison_path = output_dir / "detector_comparison.json"
         run_manifest_path = output_dir / "run_manifest.json"
         html_path = output_dir / "replay_report.html"
         metrics_path.write_text(json.dumps(result, indent=2) + "\n")
+        comparison_path.write_text(json.dumps(result["comparison"], indent=2) + "\n")
         with trace_path.open("w") as destination:
             for step in all_steps:
                 destination.write(
@@ -616,6 +572,10 @@ class RealReplayEvaluator:
                     "sha256": file_sha256(metrics_path),
                 },
                 "trace": {"path": str(trace_path), "sha256": file_sha256(trace_path)},
+                "comparison": {
+                    "path": str(comparison_path),
+                    "sha256": file_sha256(comparison_path),
+                },
                 "html": {"path": str(html_path)},
             },
         }
@@ -626,6 +586,7 @@ class RealReplayEvaluator:
             "run_manifest": str(run_manifest_path),
             "metrics": str(metrics_path),
             "trace": str(trace_path),
+            "comparison": str(comparison_path),
             "html": str(html_path),
         }
         return result

@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-08-14T09:41:10.441256+00:00",
+  "status": "failed",
+  "error_type": "RuntimeError",
+  "error": "stocks: Alpaca error 409: insufficient subscription",
+  "gates": {
+    "alpaca_live_stream": false
+  }
+}

@@ -208,7 +208,6 @@ class FactorSnapshot:
     warmup_status: str  # ready 或 warming_up
     source_event_ids: list[str] = field(default_factory=list)  # 原始事件引用
     window_start: datetime | None = None  # 窗口开始时间
-    legacy_features: dict[str, Any] = field(default_factory=dict)
     input_summary: dict[str, Any] = field(default_factory=dict)
     run_id: str | None = None
     dataset_id: str | None = None

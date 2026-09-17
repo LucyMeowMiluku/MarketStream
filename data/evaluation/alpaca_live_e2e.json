@@ -1,0 +1,43 @@
+{
+  "run_id": "alpaca-live-20260819T144908Z",
+  "data_kind": "real_live_soak",
+  "metric_eligible": false,
+  "metric_limitation": "warm-up-only run without frozen reviewed ground truth; proves transport and factor-chain operation, not detection precision/recall",
+  "generated_at": "2026-08-19T14:50:42Z",
+  "coverage": "Alpaca IEX only; not consolidated SIP",
+  "path": "Alpaca WebSocket -> MarketEvent -> raw.market_events Kafka -> factor engine -> PostgreSQL",
+  "window": {
+    "first_received_at": "2026-08-19T14:49:10.204889+00:00",
+    "last_received_at": "2026-08-19T14:50:38.494241+00:00"
+  },
+  "persisted_market_events": {
+    "total": 48734,
+    "tickers": 5,
+    "event_types": {
+      "bar": 5,
+      "quote": 48283,
+      "trade": 446
+    },
+    "clean_quality_flags": 48729,
+    "feed_gap_flags": 5,
+    "stale_bar_flags": 0
+  },
+  "persisted_factor_snapshots": {
+    "10s": 40,
+    "1m": 5,
+    "5m": 5,
+    "tickers_per_cadence": 5
+  },
+  "gates": {
+    "iex_websocket_authenticated": true,
+    "iex_websocket_subscribed": true,
+    "news_websocket_authenticated": true,
+    "news_websocket_subscribed": true,
+    "real_iex_event_received": true,
+    "all_five_tickers_persisted": true,
+    "trade_quote_bar_persisted": true,
+    "factor_snapshots_all_cadences": true,
+    "minute_bars_not_falsely_stale": true,
+    "alpaca_live_end_to_end": true
+  }
+}

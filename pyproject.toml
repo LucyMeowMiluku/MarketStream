@@ -5,13 +5,8 @@ description = "Multi-Source Streaming Analytics Platform for Financial Trends an
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "quixstreams>=3.0",
     "confluent-kafka>=2.6",
-    "yfinance>=0.2",
     "scikit-learn>=1.5",
-    "transformers>=4.40",
-    "torch>=2.3",
-    "joblib>=1.4",
     "sqlalchemy>=2.0",
     "psycopg[binary]>=3.2",
     "streamlit>=1.37",
@@ -20,8 +15,7 @@ dependencies = [
     "structlog>=24.0",
     "pandas>=2.2",
     "numpy>=1.26",
-    "river>=0.21",
-    "matplotlib>=3.10.9",
+    "pyarrow>=17.0",
     "websockets>=12.0",
 ]
 

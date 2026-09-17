@@ -1,0 +1,47 @@
+{
+  "started_at": "2026-08-14T09:46:19.067702+00:00",
+  "completed_at": "2026-08-14T09:46:29.314697+00:00",
+  "symbols": [
+    "AAPL",
+    "TSLA",
+    "NVDA",
+    "QQQ",
+    "SPY"
+  ],
+  "stock_feed": "iex",
+  "coverage": "IEX only; not consolidated SIP",
+  "probes": {
+    "stocks": {
+      "name": "stocks",
+      "url": "wss://stream.data.alpaca.markets/v2/iex",
+      "authenticated": true,
+      "subscribed": true,
+      "data_messages": 0,
+      "parsed_market_events": 0,
+      "message_types": [
+        "subscription",
+        "success"
+      ],
+      "timed_out_waiting_for_data": true
+    },
+    "news": {
+      "name": "news",
+      "url": "wss://stream.data.alpaca.markets/v1beta1/news",
+      "authenticated": true,
+      "subscribed": true,
+      "data_messages": 0,
+      "parsed_market_events": 0,
+      "message_types": [
+        "subscription",
+        "success"
+      ],
+      "timed_out_waiting_for_data": false
+    }
+  },
+  "status": "failed",
+  "gates": {
+    "alpaca_control_plane": true,
+    "alpaca_websocket_protocol": false,
+    "alpaca_live_stream": false
+  }
+}

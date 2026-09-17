@@ -64,11 +64,7 @@ def _persist_alert(snapshot: FactorSnapshot, result: DetectionResult) -> bool:
                 detected_at=result.detected_at,
                 ticker=result.ticker,
                 anomaly_score=result.score,
-                features={
-                    **snapshot.legacy_features,
-                    "factor_values": snapshot.factor_values,
-                    "cadence": snapshot.cadence,
-                },
+                features={"factor_values": snapshot.factor_values, "cadence": snapshot.cadence},
                 reason=result.explanation,
                 detector_scores={"cep": result.score},
                 pattern_name=primary.name,
@@ -122,10 +118,7 @@ def main() -> None:
             )  # 调用cep detector
             if _persist_alert(snapshot, result):
                 payload = result.to_dict()
-                payload["features"] = {
-                    **snapshot.legacy_features,
-                    "factor_values": snapshot.factor_values,
-                }
+                payload["features"] = {"factor_values": snapshot.factor_values}
                 payload["reason"] = result.explanation
                 producer.produce(
                     settings.anomalies_topic,

@@ -1,0 +1,360 @@
+{
+  "cross_asset_shock": [
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "down",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "down",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": "a49476019e7a150b466c2a9701a178c9",
+      "direction": "down",
+      "is_alert": true,
+      "patterns": [
+        {
+          "completed_at": "2025-01-06T15:00:00+00:00",
+          "direction": "down",
+          "evidence": [
+            "return_surprise:AAPL",
+            "return_surprise:SPY",
+            "return_surprise:TSLA"
+          ],
+          "name": "cross_asset_shock",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "completed"
+        },
+        {
+          "completed_at": null,
+          "direction": "down",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.95
+    }
+  ],
+  "flash_reversal": [
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": "def0cdaa1d1dc6eb8b1dca9c16bd0f1e",
+      "direction": "down",
+      "is_alert": true,
+      "patterns": [
+        {
+          "completed_at": "2025-01-06T15:00:10+00:00",
+          "direction": "down",
+          "evidence": [
+            "return_surprise:up",
+            "return_surprise:down"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "completed"
+        }
+      ],
+      "score": -0.86
+    }
+  ],
+  "liquidity_pressure_move": [
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "spread_stress",
+            "quote_imbalance"
+          ],
+          "name": "liquidity_pressure_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": "a48ef2e3f701256c95e25ea8bfffc59a",
+      "direction": "up",
+      "is_alert": true,
+      "patterns": [
+        {
+          "completed_at": "2025-01-06T15:00:10+00:00",
+          "direction": "up",
+          "evidence": [
+            "spread_stress",
+            "quote_imbalance",
+            "return_surprise"
+          ],
+          "name": "liquidity_pressure_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "completed"
+        },
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:10+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.88
+    }
+  ],
+  "news_confirmed_move": [
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "down",
+          "evidence": [
+            "news_shock"
+          ],
+          "name": "news_confirmed_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": "eed2c07fc18142b951485d60bb12b834",
+      "direction": "down",
+      "is_alert": true,
+      "patterns": [
+        {
+          "completed_at": "2025-01-06T15:00:10+00:00",
+          "direction": "down",
+          "evidence": [
+            "news_shock",
+            "return_surprise"
+          ],
+          "name": "news_confirmed_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "completed"
+        },
+        {
+          "completed_at": null,
+          "direction": "down",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:10+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.9
+    }
+  ],
+  "stock_specific_dislocation": [
+    {
+      "dedupe_key": "88fdf402af21a620c2871a2cf4cc2546",
+      "direction": "up",
+      "is_alert": true,
+      "patterns": [
+        {
+          "completed_at": "2025-01-06T15:00:00+00:00",
+          "direction": "up",
+          "evidence": [
+            "return_surprise",
+            "market_residual"
+          ],
+          "name": "stock_specific_dislocation",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "completed"
+        },
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.82
+    }
+  ],
+  "sustained_pressure": [
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "signed_trade_imbalance"
+          ],
+          "name": "liquidity_pressure_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "signed_trade_imbalance",
+            "signed_trade_imbalance"
+          ],
+          "name": "liquidity_pressure_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "signed_trade_imbalance"
+          ],
+          "name": "sustained_pressure",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": null,
+      "direction": null,
+      "is_alert": false,
+      "patterns": [
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "signed_trade_imbalance",
+            "signed_trade_imbalance",
+            "signed_trade_imbalance"
+          ],
+          "name": "liquidity_pressure_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "signed_trade_imbalance"
+          ],
+          "name": "sustained_pressure",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.0
+    },
+    {
+      "dedupe_key": "6475f6411f96ed463e8c7bf8568cdf30",
+      "direction": "up",
+      "is_alert": true,
+      "patterns": [
+        {
+          "completed_at": "2025-01-06T15:00:30+00:00",
+          "direction": "up",
+          "evidence": [
+            "return_surprise",
+            "signed_trade_imbalance"
+          ],
+          "name": "sustained_pressure",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "completed"
+        },
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "signed_trade_imbalance",
+            "signed_trade_imbalance",
+            "signed_trade_imbalance"
+          ],
+          "name": "liquidity_pressure_move",
+          "started_at": "2025-01-06T15:00:00+00:00",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "direction": "up",
+          "evidence": [
+            "return_surprise"
+          ],
+          "name": "flash_reversal",
+          "started_at": "2025-01-06T15:00:30+00:00",
+          "status": "in_progress"
+        }
+      ],
+      "score": -0.92
+    }
+  ]
+}

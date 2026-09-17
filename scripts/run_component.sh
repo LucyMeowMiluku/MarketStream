@@ -10,11 +10,11 @@ case "$component" in
   factor-engine)
     exec uv run python -m processing.factor_stream
     ;;
+  factor-engine-replay)
+    exec uv run python -m processing.replay_factor_stream
+    ;;
   cep)
     exec uv run python -m cep.online_scorer
-    ;;
-  ml-shadow)
-    exec uv run python -m ml.online_scorer
     ;;
   replay)
     if [[ $# -lt 2 ]]; then
@@ -40,7 +40,7 @@ case "$component" in
     exec uv run streamlit run dashboard/app.py --server.port 8501
     ;;
   *)
-    echo "Usage: scripts/run_component.sh {data-source|factor-engine|cep|ml-shadow|replay|replay-labels|collect-reviewed-replay|evaluate-reviewed-replay|dashboard}" >&2
+    echo "Usage: scripts/run_component.sh {data-source|factor-engine|factor-engine-replay|cep|replay|replay-labels|collect-reviewed-replay|evaluate-reviewed-replay|dashboard}" >&2
     exit 2
     ;;
 esac

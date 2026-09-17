@@ -5,7 +5,7 @@ import numpy as np
 import pytest
 
 from cep.cep_detector import CEPDetector
-from ml.sequence_anomalies import NEGATIVE_CONTROLS, PATTERNS, generate_scenario
+from evaluation.synthetic_scenarios import NEGATIVE_CONTROLS, PATTERNS, generate_scenario
 
 
 @pytest.mark.parametrize("pattern", PATTERNS)

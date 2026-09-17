@@ -32,20 +32,21 @@ if [[ "${MARKETSTREAM_SOURCE:-live}" == "replay" ]]; then
         exit 2
     fi
     scripts/run_component.sh replay "$MARKETSTREAM_REPLAY_PATH" --speed "${MARKETSTREAM_REPLAY_SPEED:-1}" &
+    FACTOR_COMPONENT="factor-engine-replay"
 else
+    if [[ -z "${FACTOR_BASELINE_STARTUP_MODE:-}" ]]; then
+        echo "FACTOR_BASELINE_STARTUP_MODE is required for live startup" >&2
+        exit 2
+    fi
     scripts/run_component.sh data-source &
+    FACTOR_COMPONENT="factor-engine"
 fi
 PIDS+=("$!")
 
-scripts/run_component.sh factor-engine &
+scripts/run_component.sh "$FACTOR_COMPONENT" &
 PIDS+=("$!")
 scripts/run_component.sh cep &
 PIDS+=("$!")
-
-if [[ "${ML_SHADOW_ENABLED:-false}" == "true" ]]; then
-    scripts/run_component.sh ml-shadow &
-    PIDS+=("$!")
-fi
 
 echo "Backend PIDs: ${PIDS[*]}"
 

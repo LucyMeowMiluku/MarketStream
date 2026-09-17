@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta, timezone
 
 from cep.cep_detector import CEPDetector
-from ml.sequence_anomalies import PATTERNS, generate_scenario
+from evaluation.synthetic_scenarios import PATTERNS, generate_scenario
 from processing.data_quality import EventQualityGate
 from processing.event_models import MarketEvent
 from processing.factor_engine import LightweightFactorEngine

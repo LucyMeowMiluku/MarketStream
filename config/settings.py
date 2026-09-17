@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from pydantic import SecretStr
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -18,10 +20,6 @@ class Settings(BaseSettings):
         "postgresql+psycopg://marketstream:marketstream@localhost:5432/marketstream"
     )
 
-    price_poll_interval_seconds: int = 60
-    news_poll_interval_seconds: int = 120
-    window_duration_minutes: int = 5
-
     # Live market data. Credentials are environment-only and SecretStr prevents
     # accidental plaintext representation in logs and tracebacks.
     alpaca_api_key: SecretStr | None = None
@@ -39,51 +37,30 @@ class Settings(BaseSettings):
     factor_stale_after_seconds: int = 30
     factor_gap_after_seconds: int = 90
 
+    # Baseline startup is deliberately explicit.  Keeping this optional at
+    # settings-import time lets offline tools run; baseline.startup rejects a
+    # missing value before the live consumer subscribes.
+    factor_baseline_startup_mode: str | None = None
+    factor_baseline_epoch_id: str | None = None
+    factor_baseline_algorithm_version: str = "rolling-mad-v2"
+    factor_engine_version: str = "marketstream-0.1.0"
+    factor_baseline_manifest: Path | None = None
+    factor_baseline_manifest_sha256: str | None = None
+    factor_baseline_activation_cutoff: str | None = None
+    factor_baseline_replaces_epoch_id: str | None = None
+    factor_baseline_recovery_reason: str | None = None
+    factor_checkpoint_dir: Path = Path("data/baseline_checkpoints")
+    factor_checkpoint_retention: int = 7
+    factor_persistence_queue_max: int = 5_000
+    factor_persistence_batch_size: int = 100
+    factor_persistence_flush_ms: int = 250
+    factor_persistence_shutdown_seconds: int = 30
+
     sentiment_recent_limit: int = 20
-    sentiment_split_index: int = 10
-    anomaly_price_threshold: float = 0.02
-    anomaly_volume_threshold: int = 1_000_000
-    anomaly_sentiment_threshold: float = 0.3
-    anomaly_severity_threshold: float = -0.7
 
-    # Ensemble
-    ensemble_weights: list[float] = [0.40, 0.05, 0.45, 0.10]
-    ensemble_threshold: float = -0.28
-
-    # EWMA
-    ewma_span: int = 20
-
-    # Half-Space Trees
-    hst_n_trees: int = 25
-    hst_height: int = 6
-    hst_window_size: int = 50
-
-    # LSTM Autoencoder
-    lstm_sequence_length: int = 12
-    lstm_hidden_dim: int = 32
-    lstm_model_path: str = "data/models/lstm_autoencoder.pt"
-
-    # Drift detection
-    drift_detection_enabled: bool = True
-    drift_sensitivity: float = 0.002
-
-    # CEP (Complex Event Processing)
-    # Primitive-event thresholds — the "simple indicators" the automata consume.
-    cep_price_jump: float = 0.02  # |price_change_rate| >= this is a price jump
-    cep_volume_surge_ratio: float = 3.0  # total_volume / baseline >= this is a surge
-    cep_sentiment_shift: float = 0.3  # |sentiment_shift| >= this is a sentiment move
-    cep_sentiment_floor: float = -0.5  # avg_sentiment <= this also counts as a drop
-    cep_volume_ewma_span: int = 20  # span of the adaptive per-ticker volume baseline
-    cep_min_volume_obs: int = 3  # warm-up windows before a volume surge can fire
-    # Automaton + scoring knobs.
-    cep_max_gap: int = 3  # max windows between matched events before reset
-    cep_point_severity: float = 0.55  # severity of a lone primitive (simple-rule layer)
-    cep_threshold: float = -0.5  # score below this flags an anomaly (CEP-only mode)
+    # Six explicit factor state machines.
     cep_cooldown_seconds: int = 300
     cep_max_factor_frames: int = 64
-
-    # The legacy four-model path is opt-in and does not block CEP production.
-    ml_shadow_enabled: bool = False
 
 
 settings = Settings()

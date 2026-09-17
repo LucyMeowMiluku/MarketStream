@@ -1,5 +1,9 @@
 # MarketStream Changelog
 
+> Historical record. The four-model ensemble described below was removed from
+> the active branch on 2026-09-10 and remains available in
+> `codex/pre-simplification-snapshot`.
+
 ## 2026-05-09 — Ensemble Detection + MLOps + Documentation
 
 ### Summary

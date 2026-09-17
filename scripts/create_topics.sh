@@ -7,9 +7,6 @@ topics=(
   "raw.market_events"
   "stream.factor_snapshots"
   "stream.anomalies"
-  "raw.prices"
-  "raw.news_sentiment"
-  "stream.features"
 )
 
 for topic in "${topics[@]}"; do

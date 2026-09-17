@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta, timezone
 
-from ml.event_metrics import (
+from evaluation.metrics import (
     DetectedEvent,
     GroundTruthEvent,
     bootstrap_confidence_intervals,

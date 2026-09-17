@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from ml.event_metrics import GroundTruthEvent
+from evaluation.metrics import GroundTruthEvent
 from processing.event_models import DetectionResult, FactorSnapshot, as_utc
 
 
@@ -177,7 +177,6 @@ class ReplayStep:
             "baseline_version": self.snapshot.baseline_version,
             "warmup_status": self.snapshot.warmup_status,
             "source_event_ids": self.snapshot.source_event_ids,
-            "legacy_features": self.snapshot.legacy_features,
             "detection": self.detection.to_dict(),
             "truth_kind": self.truth_kind,
             "truth_event_id": self.truth_event_id,
