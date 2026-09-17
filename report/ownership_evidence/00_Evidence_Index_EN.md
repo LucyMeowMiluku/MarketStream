@@ -3,6 +3,7 @@
 Prepared: 17 September 2026  
 Working branch: `codex/core-simplification`  
 Base commit: `bb0df67fad42ef6cf4c544b5e3711d57cd32f3fd`  
+Evidence snapshot commit: `6bcdd04d42f266c820eebb6e0c28099cd288265f`  
 Project stage: research prototype and technical validation
 
 ## Purpose
@@ -101,8 +102,9 @@ are outside the evidence-package scope.
 
 - The supervisor has not yet stated whether this evidence format is sufficient.
 - The real-event label registry is still a draft and is not frozen.
-- The current working tree contains a large simplification and baseline-persistence
-  change after the base commit. The final evidence snapshot hash must be inserted
-  here after the package review.
+- The evidence snapshot records the core simplification, baseline-persistence work,
+  current tests, selected experiment artifacts, and this package. Large historical
+  datasets, model binaries, presentation drafts, and unrelated local browser files
+  remain outside the snapshot.
 - A new Kafka/database soak needs a running Docker or compatible local service stack.
 - ChatGPT account data export may arrive after this first package version.
