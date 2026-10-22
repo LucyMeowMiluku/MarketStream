@@ -104,4 +104,48 @@ ones. Thresholds are never relaxed to reach 12 + 12.
 
 ## 7. Base rates on a disjoint period (informative only)
 
-(Filled in after this proposal is committed; see below.)
+Run after the proposal above was committed: `scripts/labeling_base_rates.py`, SIP split-adjusted
+minute bars, 64 sessions (2023-08-14 to 2023-11-10) × 5 tickers × 2 windows = 640
+ticker-windows, each against its own 20 prior sessions. Only the market-data rules can be
+applied automatically (A1, A2, A4, A5; N1, N2, N3, N6); A3, N4 and N5 need a person.
+Outputs: `report/ownership_evidence/reproduction_outputs/labeling_base_rates_2023/`.
+
+| Group (market-data rules only) | Windows | Share |
+|---|---:|---:|
+| Anomaly rules A1+A2+A4+A5 | 4 | 0.6% |
+| Normal rules N1+N2+N3+N6 | 308 | 48.1% |
+| Grey zone (excluded) | 328 | 51.3% |
+| A1 magnitude alone | 26 | 4.1% |
+
+The four anomaly-eligible windows are recognisable events of that period: AAPL on 2023-09-07
+(down), QQQ 14:00–15:30 on 2023-09-20 (down, FOMC day), NVDA on 2023-10-17 (down, export-rule
+day), QQQ 14:00–15:30 on 2023-11-01 (up, FOMC day).
+
+Checks against known events of the same period:
+
+| Day, ticker | Context | Move ratio | Volume ratio | Result |
+|---|---|---:|---:|---|
+| 2023-10-19 TSLA | earnings after previous close, −8.8% | 6.8 | 1.5 | grey: fails **A2 only** |
+| 2023-08-24 NVDA | earnings, opened up then faded | 1.0 | 3.1 | grey: fails A1 and A4 (as intended) |
+| 2023-11-03 AAPL | earnings, modest reaction | 2.0 | 2.0 | grey: fails A1 |
+| 2023-09-13, 2023-10-12 SPY | CPI release 08:30 | 0.8, 0.1 | 0.9, 0.7 | pass N1–N3; **N5 must exclude them** |
+
+## 8. Open decision before approval: is volume required for an anomaly?
+
+The base rates show that A2 (volume ≥ 2× typical) excludes a textbook earnings reaction
+(TSLA 2023-10-19: −8.8%, 6.8× its usual move, volume 1.5×). After overnight news much of the
+repricing happens before the open, so regular-session volume does not necessarily double.
+
+- **Option 1 — keep A2 as proposed.** Very strict: 0.6% of ordinary windows qualify on market
+  data; clear gap reactions without doubled volume are excluded.
+- **Option 2 — volume becomes supporting evidence (recommended).** Anomaly = A1 + A3 + A4 + A5;
+  volume is recorded and the 0.9 confidence level additionally requires `r_V ≥ 2`. On market
+  data 15 of 640 windows (2.3%) qualify before the documented-cause check A3, which then
+  removes moves without a public cause.
+
+Clarification proposed with either option: A3 accepts any documented public cause, including a
+major analyst rating change, provided it became public after the reference time; N4 still
+ignores routine analyst notes, because a move large enough to matter already fails N1.
+
+The project lead chooses an option; the chosen text then replaces Section 3 and the status
+line becomes *APPROVED* with the date.

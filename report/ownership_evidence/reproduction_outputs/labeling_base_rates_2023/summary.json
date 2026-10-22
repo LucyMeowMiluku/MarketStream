@@ -1,0 +1,115 @@
+{
+  "period": {
+    "fetched": [
+      "2023-07-10",
+      "2023-11-10"
+    ],
+    "measured_from": "2023-08-14",
+    "sessions_measured": 64
+  },
+  "feed": "sip",
+  "adjustment": "split",
+  "thresholds": {
+    "anomaly_move_ratio": 4.0,
+    "anomaly_volume_ratio": 2.0,
+    "normal_ratio": 1.5,
+    "gap_retrace": 0.5,
+    "min_coverage": 0.95
+  },
+  "not_applied": [
+    "A3 documented cause",
+    "N4 company news",
+    "N5 macro calendar"
+  ],
+  "counts": {
+    "grey": 328,
+    "A1_only_magnitude": 26,
+    "total": 640,
+    "normal_market_data": 308,
+    "anomaly_market_data": 4
+  },
+  "shares": {
+    "anomaly_market_data": 0.00625,
+    "normal_market_data": 0.48125,
+    "grey": 0.5125,
+    "A1_only_magnitude": 0.040625
+  },
+  "anomaly_market_data_cases": [
+    {
+      "date": "2023-09-07",
+      "window": "09:30-11:00",
+      "ticker": "AAPL",
+      "group": "anomaly_market_data",
+      "A1": true,
+      "A2": true,
+      "A4": true,
+      "A5": true,
+      "N1": false,
+      "N2": false,
+      "N3": false,
+      "N6": true,
+      "move_ratio": 4.32367084045925,
+      "volume_ratio": 3.3417148161526544,
+      "range_ratio": 1.992255228684361,
+      "total_move": 0.033898851831601906,
+      "direction": "down"
+    },
+    {
+      "date": "2023-09-20",
+      "window": "14:00-15:30",
+      "ticker": "QQQ",
+      "group": "anomaly_market_data",
+      "A1": true,
+      "A2": true,
+      "A4": true,
+      "A5": true,
+      "N1": false,
+      "N2": false,
+      "N3": false,
+      "N6": true,
+      "move_ratio": 9.42313636990807,
+      "volume_ratio": 2.684508553749249,
+      "range_ratio": 2.7230351188428594,
+      "total_move": 0.007545434876676693,
+      "direction": "down"
+    },
+    {
+      "date": "2023-10-17",
+      "window": "09:30-11:00",
+      "ticker": "NVDA",
+      "group": "anomaly_market_data",
+      "A1": true,
+      "A2": true,
+      "A4": true,
+      "A5": true,
+      "N1": false,
+      "N2": false,
+      "N3": true,
+      "N6": true,
+      "move_ratio": 4.18822263364241,
+      "volume_ratio": 2.483628324401071,
+      "range_ratio": 1.9612587359675155,
+      "total_move": 0.04577999566066404,
+      "direction": "down"
+    },
+    {
+      "date": "2023-11-01",
+      "window": "14:00-15:30",
+      "ticker": "QQQ",
+      "group": "anomaly_market_data",
+      "A1": true,
+      "A2": true,
+      "A4": true,
+      "A5": true,
+      "N1": false,
+      "N2": false,
+      "N3": false,
+      "N6": true,
+      "move_ratio": 5.2054233824925795,
+      "volume_ratio": 2.1294472214328266,
+      "range_ratio": 2.543585210772677,
+      "total_move": 0.008622151862950123,
+      "direction": "up"
+    }
+  ]
+}
