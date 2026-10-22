@@ -1,0 +1,988 @@
+{
+  "interval_id": "aapl-apple-intelligence-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "AAPL",
+  "started_at": "2024-06-11T13:30:00Z",
+  "ended_at": "2024-06-11T15:00:00Z",
+  "local_start": "2024-06-11T09:30:00-04:00",
+  "local_end": "2024-06-11T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-06-10T19:59:00Z",
+      "prior_close": 193.15,
+      "first_minute": "2024-06-11T13:30:00Z",
+      "last_minute": "2024-06-11T14:59:00Z",
+      "first_open": 193.66,
+      "last_close": 203.23,
+      "gap_pct": 0.2640434895159194,
+      "end_vs_prior_pct": 5.218741910432301,
+      "window_return_pct": 4.941650314985013,
+      "window_range_pct": 5.106888361045123,
+      "volume": 1145368,
+      "raw_artifact": "raw/aapl-apple-intelligence-reaction/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 86,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-06-11T13:41:00+00:00",
+        "2024-06-11T13:49:00+00:00",
+        "2024-06-11T13:53:00+00:00",
+        "2024-06-11T14:45:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-06-10T19:59:00Z",
+      "prior_close": 464.87,
+      "first_minute": "2024-06-11T13:30:00Z",
+      "last_minute": "2024-06-11T14:59:00Z",
+      "first_open": 463.53,
+      "last_close": 465.365,
+      "gap_pct": -0.28825262976747146,
+      "end_vs_prior_pct": 0.10648138189170986,
+      "window_return_pct": 0.39587513213816816,
+      "window_range_pct": 0.7184001035531646,
+      "volume": 108972,
+      "raw_artifact": "raw/aapl-apple-intelligence-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 84,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-06-11T14:01:00+00:00",
+        "2024-06-11T14:08:00+00:00",
+        "2024-06-11T14:23:00+00:00",
+        "2024-06-11T14:49:00+00:00",
+        "2024-06-11T14:56:00+00:00",
+        "2024-06-11T14:57:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-06-10T19:59:00Z",
+      "prior_close": 535.705,
+      "first_minute": "2024-06-11T13:30:00Z",
+      "last_minute": "2024-06-11T14:59:00Z",
+      "first_open": 534.08,
+      "last_close": 534.65,
+      "gap_pct": -0.30333859120225126,
+      "end_vs_prior_pct": -0.19693674690361984,
+      "window_return_pct": 0.10672558418214351,
+      "window_range_pct": 0.4746479928100599,
+      "volume": 126857,
+      "raw_artifact": "raw/aapl-apple-intelligence-reaction/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 39263502,
+      "headline": "Ming-Chi Kuo Says Apple's Intelligence Showcases iPhone Makers 'Strengths In Ecosystem Integration And Interface Design' But Investors Want More",
+      "created_at": "2024-06-11T04:30:58Z",
+      "updated_at": "2024-06-11T04:30:59Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39263502/ming-chi-kuo-says-apples-intelligence-showcases-iphone-makers-strengths-in-ecosystem-integration-and",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39263538,
+      "headline": "Nvidia, Apple Could Be At The Receiving End Of Global Chip Industry Disruption Spurred By Taiwan Energy Crisis",
+      "created_at": "2024-06-11T04:36:55Z",
+      "updated_at": "2024-06-11T04:36:56Z",
+      "symbols": [
+        "AAPL",
+        "NVDA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/06/39263538/nvidia-apple-could-be-at-the-receiving-end-of-global-chip-industry-disruption-spurred-by-taiwan-ener",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39263855,
+      "headline": "Grok-Investor Pierre Ferragu Plans To Put Apple's Newly Announced Genmoji To The 'Test' After Putting Elon Musk's AI-Chatbot Through The Same 'Benchmark'",
+      "created_at": "2024-06-11T05:54:40Z",
+      "updated_at": "2024-06-11T05:54:40Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39263855/grok-investor-pierre-ferragu-plans-to-put-apples-newly-announced-genmoji-to-the-test-after-putting-e",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39264180,
+      "headline": "Jim Cramer Bullish On Apple After AI Breakthroughs At WWDC 2024: 'Beginning Of Generative AI For Personal Use, Not Corporate Use'",
+      "created_at": "2024-06-11T06:48:35Z",
+      "updated_at": "2024-06-11T06:48:35Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/06/39264180/jim-cramer-bullish-on-apple-after-ai-breakthroughs-at-wwdc-2024-beginning-of-generative-ai-for-p",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39264599,
+      "headline": "If You Invested $1000 In Bitcoin When Apple CEO Tim Cook Said He Holds Crypto, Here's How Much It'd Be Worth Today",
+      "created_at": "2024-06-11T07:29:21Z",
+      "updated_at": "2024-06-11T07:29:22Z",
+      "symbols": [
+        "AAPL",
+        "BTCUSD"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/06/39264599/if-you-invested-1000-in-bitcoin-when-apple-ceo-tim-cook-said-he-holds-crypto-heres-how-muc",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39264633,
+      "headline": "As Elon Musk Blasts Apple's Partnership With ChatGPT-Parent OpenAI, Analysts Say There's Definitely 'An Unanswered Question'",
+      "created_at": "2024-06-11T07:36:56Z",
+      "updated_at": "2024-06-11T07:36:57Z",
+      "symbols": [
+        "AAPL",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39264633/as-elon-musk-blasts-apples-partnership-with-chatgpt-parent-openai-analysts-say-theres-definitely-an",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39265937,
+      "headline": "May NFIB Small Business Optimism 90.5 vs 89.8 Est",
+      "created_at": "2024-06-11T10:00:34Z",
+      "updated_at": "2024-06-11T10:00:35Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39265937/may-nfib-small-business-optimism-90-5-vs-89-8-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39266330,
+      "headline": "Needham Reiterates Buy on Apple, Maintains $220 Price Target",
+      "created_at": "2024-06-11T10:22:19Z",
+      "updated_at": "2024-06-11T10:22:20Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39266330/needham-reiterates-buy-on-apple-maintains-220-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39266348,
+      "headline": "JP Morgan Reiterates Overweight on Apple, Maintains $225 Price Target",
+      "created_at": "2024-06-11T10:23:39Z",
+      "updated_at": "2024-06-11T10:23:39Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39266348/jp-morgan-reiterates-overweight-on-apple-maintains-225-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39266883,
+      "headline": "Asia Markets Mixed, Europe Dips, While Dollar Advances - Global Markets Today While US Slept",
+      "created_at": "2024-06-11T10:59:40Z",
+      "updated_at": "2024-06-11T10:59:41Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/06/39266883/asia-markets-mixed-europe-dips-while-dollar-advances-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39266190,
+      "headline": "Tim Cook's New AI Push To Bring In New Customers For Apple? Analyst Says It 'Isn't Enough'",
+      "created_at": "2024-06-11T10:21:13Z",
+      "updated_at": "2024-06-11T11:08:50Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39266190/tim-cooks-new-ai-push-to-bring-in-new-customers-for-apple-analyst-says-it-isnt-enough",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39267138,
+      "headline": "Rosenblatt Reiterates Neutral on Apple, Maintains $196 Price Target",
+      "created_at": "2024-06-11T11:09:36Z",
+      "updated_at": "2024-06-11T11:09:37Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39267138/rosenblatt-reiterates-neutral-on-apple-maintains-196-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39267314,
+      "headline": "Will Your iPhone Support New Apple Intelligence Features? Here's What You Need To Know",
+      "created_at": "2024-06-11T11:19:12Z",
+      "updated_at": "2024-06-11T11:19:13Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39267314/will-your-iphone-support-new-apple-intelligence-features-heres-what-you-need-to-know",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39267351,
+      "headline": "Morgan Stanley Maintains Overweight on Apple, Maintains $216 Price Target",
+      "created_at": "2024-06-11T11:21:34Z",
+      "updated_at": "2024-06-11T11:21:34Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39267351/morgan-stanley-maintains-overweight-on-apple-maintains-216-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39267456,
+      "headline": "UBS Maintains Neutral on Apple, Maintains $190 Price Target",
+      "created_at": "2024-06-11T11:22:59Z",
+      "updated_at": "2024-06-11T11:23:00Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39267456/ubs-maintains-neutral-on-apple-maintains-190-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39267511,
+      "headline": "Wall Street Holds Breath After Record Close For Fed Decision, CPI Data: Why This Analyst Sees Positive Inflation Trends Ahead",
+      "created_at": "2024-06-11T11:26:06Z",
+      "updated_at": "2024-06-11T11:26:07Z",
+      "symbols": [
+        "APO",
+        "BTCUSD",
+        "CASY",
+        "DXC",
+        "KD",
+        "ORCL",
+        "QQQ",
+        "SPY",
+        "YEXT"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/06/39267511/wall-street-holds-breath-after-record-close-for-fed-decision-cpi-data-why-this-analyst-sees-positiv",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39270393,
+      "headline": "Apple Announces Affirm Payment Products To Be Available For Apple Pay Users In US Later This Year, Enabling Pay Over Time Options On iPhone And iPad; Affirm Expects No Material Impact On Revenue Or Gross Merchandise Volume In FY 2025",
+      "created_at": "2024-06-11T13:07:20Z",
+      "updated_at": "2024-06-11T13:07:20Z",
+      "symbols": [
+        "AAPL",
+        "AFRM"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39270393/apple-announces-affirm-payment-products-to-be-available-for-apple-pay-users-in-us-later-this-year-en",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39270576,
+      "headline": "From Home Screen Customization To Call Recording And More: Did Apple Take Inspiration From These Long-Available Android Features For iOS 18?",
+      "created_at": "2024-06-11T13:14:33Z",
+      "updated_at": "2024-06-11T13:14:34Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39270576/from-home-screen-customization-to-call-recording-and-more-did-apple-take-inspiration-from-these-long",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39270778,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of June 11, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-06-11T13:16:52Z",
+      "updated_at": "2024-06-11T13:16:53Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "AMD",
+        "CORN",
+        "GME",
+        "HIMS",
+        "LOT",
+        "NVDA",
+        "TSLA",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/06/39270778/top-10-trending-stocks-on-wallstreetbets-as-of-june-11-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39271211,
+      "headline": "Barclays Reiterates Underweight on Apple, Maintains $164 Price Target",
+      "created_at": "2024-06-11T13:31:23Z",
+      "updated_at": "2024-06-11T13:31:24Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39271211/barclays-reiterates-underweight-on-apple-maintains-164-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39271265,
+      "headline": "Bitcoin, Ethereum, And Dogecoin Are Volatile, With Predictions Of A 2X-10X Rise For Bitcoin This Cycle; Analyst Doubts Tim Cook's AI Strategy Will Significantly Boost Apple's Customer Base - Top Headlines Today While US Slept",
+      "created_at": "2024-06-11T13:33:38Z",
+      "updated_at": "2024-06-11T13:33:38Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39271265/bitcoin-ethereum-and-dogecoin-are-volatile-with-predictions-of-a-2x-10x-rise-for-bitcoin-this-cycle",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39271592,
+      "headline": "Apple May Introduce Google Gemini AI Model For iPhone, Mac And iPad, Says Craig Federighi",
+      "created_at": "2024-06-11T13:49:50Z",
+      "updated_at": "2024-06-11T13:49:51Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL",
+        "MSFT"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39271592/apple-may-introduce-google-gemini-ai-model-for-iphone-mac-and-ipad-says-craig-federighi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39272100,
+      "headline": "Needham Analysts Laura Martin and Dan Medina Say Apple's WWDC Keynote Unlikely To Accelerate iPhone Sales Beyond Current Projections",
+      "created_at": "2024-06-11T14:10:56Z",
+      "updated_at": "2024-06-11T14:10:56Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39272100/needham-analysts-laura-martin-and-dan-medina-say-apples-wwdc-keynote-unlikely-to-accelerate-iphone-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39272106,
+      "headline": "Affirm Soars After Apple Partnership Announcement: What It Means For  Users",
+      "created_at": "2024-06-11T14:11:30Z",
+      "updated_at": "2024-06-11T14:11:31Z",
+      "symbols": [
+        "AAPL",
+        "AFRM",
+        "BBSC"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/06/39272106/affirm-soars-after-apple-partnership-announcement-what-it-means-for-users",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39272243,
+      "headline": "DA Davidson Upgrades Apple to Buy, Raises Price Target to $230",
+      "created_at": "2024-06-11T14:13:40Z",
+      "updated_at": "2024-06-11T14:13:41Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39272243/da-davidson-upgrades-apple-to-buy-raises-price-target-to-230",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39272352,
+      "headline": "Shoals Technologies, Affirm Holdings, Apple And Other Big Stocks Moving Higher On Tuesday",
+      "created_at": "2024-06-11T14:17:34Z",
+      "updated_at": "2024-06-11T14:17:35Z",
+      "symbols": [
+        "AAPL",
+        "AFRM",
+        "ASTS",
+        "CRBP",
+        "CVGW",
+        "FMAO",
+        "GOOG",
+        "GOOGL",
+        "LPA",
+        "OLPX",
+        "PERI",
+        "PHAR",
+        "SHLS",
+        "VFC"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39272352/shoals-technologies-affirm-holdings-apple-and-other-big-stocks-moving-higher-on-tuesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39272382,
+      "headline": "Cigna CFO Says Cumulative Effect Of Elevated Interest Rates, Fiscal Activity Will Lead To Some Level Of Disruption In U.S. Employment Market",
+      "created_at": "2024-06-11T14:20:21Z",
+      "updated_at": "2024-06-11T14:20:22Z",
+      "symbols": [
+        "CI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39272382/cigna-cfo-says-cumulative-effect-of-elevated-interest-rates-fiscal-activity-will-lead-to-some-level",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39273468,
+      "headline": "Apple Stock Is Surging Tuesday: What's Going On?",
+      "created_at": "2024-06-11T15:06:00Z",
+      "updated_at": "2024-06-11T15:06:01Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39273468/apple-stock-is-surging-tuesday-whats-going-on",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274000,
+      "headline": "7 Apple Analysts Mixed On WWDC 2024: iPhone Upgrade Cycle Coming, But When?",
+      "created_at": "2024-06-11T15:26:42Z",
+      "updated_at": "2024-06-11T15:26:42Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/06/39274000/7-apple-analysts-mixed-on-wwdc-2024-iphone-upgrade-cycle-coming-but-when",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274201,
+      "headline": "Citron Research Posts On X \"$GRMN Negative. While the street is buzzing about $AAPL's new AI integration, the real loser from their developer conference seems to be $GRMN. Despite $GRMN trading at historically high multiples, its core fitness products just took a hit. With the new Apple Watch OS11 making Apple Watch the top fitness accessory, including satellite messaging, training load features, and comprehensive vitals tracking, Garmin's fitness products have become less relevant....\"",
+      "created_at": "2024-06-11T15:33:06Z",
+      "updated_at": "2024-06-11T15:33:07Z",
+      "symbols": [
+        "AAPL",
+        "GRMN"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39274201/citron-research-posts-on-x-grmn-negative-while-the-street-is-buzzing-about-aapls-new-ai-integration",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274302,
+      "headline": "What's Going On With Spotify Stock On Tuesday?",
+      "created_at": "2024-06-11T15:39:31Z",
+      "updated_at": "2024-06-11T15:39:32Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "IWF",
+        "IWP",
+        "SPOT"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39274302/whats-going-on-with-spotify-stock-on-tuesday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274383,
+      "headline": "Shopify Has Competitive Moat That Warrants Premium Valuation: JP Morgan Analyst",
+      "created_at": "2024-06-11T15:44:19Z",
+      "updated_at": "2024-06-11T15:44:20Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "SHOP",
+        "WMT"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/06/39274383/shopify-has-competitive-moat-that-warrants-premium-valuation-jp-morgan-analyst",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274660,
+      "headline": "President Biden Following Son Hunter's Guilty Verdict, Says I Accept The Outcome Of This Case; I Will Continue To Respect The Judicial Process As Hunter Considers An Appeal",
+      "created_at": "2024-06-11T15:59:54Z",
+      "updated_at": "2024-06-11T15:59:55Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39274660/president-biden-following-son-hunters-guilty-verdict-says-i-accept-the-outcome-of",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274874,
+      "headline": "U.S. EIA Now Expects U.S. Crude Oil Output To Rise To 13.24M Barrels In 2024, Vs 13.20M Forecast In May",
+      "created_at": "2024-06-11T16:10:48Z",
+      "updated_at": "2024-06-11T16:10:49Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39274874/u-s-eia-now-expects-u-s-crude-oil-output-to-rise-to-13-24m-barrels-in-2024-vs-13-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274898,
+      "headline": "EIA Forecasts U.S. Crude Oil Output To Rise By 310,000 Barrels/Day In 2024, Vs Previous Forecast For 270,000 Barrels/Day Increase",
+      "created_at": "2024-06-11T16:12:40Z",
+      "updated_at": "2024-06-11T16:12:41Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39274898/eia-forecasts-u-s-crude-oil-output-to-rise-by-310-000-barrelsday-in-2024-vs-previ",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39275102,
+      "headline": "EIA Forecasts U.S. Oil Output To Grow By 470,000 Barrels/Day In 2025, Vs Previous Forecast Of 530,000 Barrels/Day; Lowers U.S. Oil Production Forecast For 2025 To 13.71M Barrels/Day, Vs Previous Forecast Of 13.73M Barrels/Day",
+      "created_at": "2024-06-11T16:19:15Z",
+      "updated_at": "2024-06-11T16:19:16Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39275102/eia-forecasts-u-s-oil-output-to-grow-by-470-000-barrelsday-in-2025-vs-previous-fo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39275103,
+      "headline": "EIA Expects U.S. Petroleum And Other Liquid Fuels Consumption To Grow By 100,000 Barrels/Day In 2024 (Vs Previous Forecast Of 200,000 Barrels/Day Growth); Now Expects U.S. Petroleum And Other Liquids Consumption Growth Of 300,000 Barrels/Day In 2025 (Vs Previous Forecast Of 200,000 Barrels/Day Growth)",
+      "created_at": "2024-06-11T16:19:27Z",
+      "updated_at": "2024-06-11T16:19:28Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39275103/eia-expects-u-s-petroleum-and-other-liquid-fuels-consumption-to-grow-by-100-000-b",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39274908,
+      "headline": "May Inflation Report Clashes With Fed Meeting: Traders Brace For Volatile Wednesday",
+      "created_at": "2024-06-11T16:12:48Z",
+      "updated_at": "2024-06-11T16:40:45Z",
+      "symbols": [
+        "BTCUSD",
+        "GLD",
+        "QQQ",
+        "SPY",
+        "TLT",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/06/39274908/may-inflation-report-clashes-with-fed-meeting-traders-brace-for-volatile-wednesday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39275665,
+      "headline": "A Rare Data Day Ahead — Stock Market Has The Potential To Fly Or Fall",
+      "created_at": "2024-06-11T16:50:32Z",
+      "updated_at": "2024-06-11T16:51:42Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TLT",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/06/39275665/a-rare-data-day-ahead-stock-market-has-the-potential-to-fly-or-fall",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39275888,
+      "headline": "CNBC Halftime Report Final Trades: Uber Technologies, Apple, Meta Platforms, IShares U.S. Utilities ETF",
+      "created_at": "2024-06-11T17:00:07Z",
+      "updated_at": "2024-06-11T17:00:08Z",
+      "symbols": [
+        "AAPL",
+        "IDU",
+        "META",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39275888/cnbc-halftime-report-final-trades-uber-technologies-apple-meta-platforms-ishares-u-s-utilities-etf",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39275974,
+      "headline": "USA 10-Year Note Auction 4.438% Vs 4.483% Prior",
+      "created_at": "2024-06-11T17:03:23Z",
+      "updated_at": "2024-06-11T17:03:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39275974/usa-10-year-note-auction-4-438-vs-4-483-prior",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39276525,
+      "headline": "Trump And Biden Locked In Tight 2024 Presidential Race In Closely Watched 538 Prediction Forecast",
+      "created_at": "2024-06-11T17:27:34Z",
+      "updated_at": "2024-06-11T17:27:35Z",
+      "symbols": [
+        "INDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/politics/24/06/39276525/trump-and-biden-locked-in-tight-2024-presidential-race-in-closely-watched-538-prediction-forecas",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39276627,
+      "headline": "US Justice Department Says Four Additional States Join Lawsuit Against Apple For Monopolizing Smartphone Markets",
+      "created_at": "2024-06-11T17:30:44Z",
+      "updated_at": "2024-06-11T17:30:45Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39276627/us-justice-department-says-four-additional-states-join-lawsuit-against-apple-for-monopolizing-smartp",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39276688,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-06-11T17:35:12Z",
+      "updated_at": "2024-06-11T17:35:12Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "ARM",
+        "AVGO",
+        "FSLR",
+        "MSFT",
+        "MSTR",
+        "NVDA",
+        "PLTR",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/06/39276688/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39276691,
+      "headline": "Stocks Ease Ahead Of Wednesday's Key Events, Apple Jumps To Record Highs, Bitcoin Tumbles To $66,500: What's Driving Markets Tuesday?",
+      "created_at": "2024-06-11T17:35:41Z",
+      "updated_at": "2024-06-11T17:35:42Z",
+      "symbols": [
+        "AAPL",
+        "AFRM",
+        "BLK",
+        "BTCUSD",
+        "DIA",
+        "DXC",
+        "FMC",
+        "KRE",
+        "NEE",
+        "SPY",
+        "STT",
+        "XLE",
+        "XLF",
+        "XLK",
+        "XOP"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/06/39276691/stocks-ease-ahead-of-wednesdays-key-events-apple-jumps-to-record-highs-bitcoin-tumbles-to-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39276747,
+      "headline": "Google's AI Future Bright with Potential iOS Integration and Expense Management, Says BofA Analyst",
+      "created_at": "2024-06-11T17:39:13Z",
+      "updated_at": "2024-06-11T17:39:13Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/06/39276747/googles-ai-future-bright-with-potential-ios-integration-and-expense-management-says",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39276764,
+      "headline": "WHO Says Second Case Of Human Infection With Avian Influenza A(H9N2) Virus Detected In India, Child Resident Of West Bengal",
+      "created_at": "2024-06-11T17:42:12Z",
+      "updated_at": "2024-06-11T17:42:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/06/39276764/who-says-second-case-of-human-infection-with-avian-influenza-a-h9n2-virus-detected-in-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39277017,
+      "headline": "JPMorgan's Top Strategist Sticks To Bearish S&P 500 Forecast, Warns Of 2008-Like Crash: 'Equities Continue To Price In Little Downside Risk'",
+      "created_at": "2024-06-11T17:56:47Z",
+      "updated_at": "2024-06-11T17:56:48Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/06/39277017/jpmorgans-top-strategist-sticks-to-bearish-s-p-500-forecast-warns-of-2008-like-cras",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39277225,
+      "headline": "Why Is Satellite Communications Globalstar Stock Trading Higher On Tuesday?",
+      "created_at": "2024-06-11T18:08:42Z",
+      "updated_at": "2024-06-11T18:10:42Z",
+      "symbols": [
+        "AAPL",
+        "ASTS",
+        "GSAT",
+        "T",
+        "VZ"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39277225/why-is-satellite-communications-globalstar-stock-trading-higher-on-tuesday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39277372,
+      "headline": "Why Is Satellite Company AST SpaceMobile Stock Soaring On Tuesday?",
+      "created_at": "2024-06-11T18:15:58Z",
+      "updated_at": "2024-06-11T18:15:59Z",
+      "symbols": [
+        "AAPL",
+        "ASTS",
+        "GSAT",
+        "IWM",
+        "IWO",
+        "T",
+        "VZ"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39277372/why-is-satellite-company-ast-spacemobile-stock-soaring-on-tuesday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39277407,
+      "headline": "Senators Introduce Bipartisan Bill To Establish AI Guardrails For Federal Government, Ensuring Safe And Secure Adoption",
+      "created_at": "2024-06-11T18:18:20Z",
+      "updated_at": "2024-06-11T18:18:20Z",
+      "symbols": [
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39277407/senators-introduce-bipartisan-bill-to-establish-ai-guardrails-for-federal-government-ensuring-safe-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39277447,
+      "headline": "AI Will Save Time, Revolutionize Advertising, Says Cathie Wood's ARK Invest Report",
+      "created_at": "2024-06-11T18:19:59Z",
+      "updated_at": "2024-06-11T18:20:00Z",
+      "symbols": [
+        "AAPL",
+        "ARKK",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "QQQ",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/06/39277447/ai-will-save-time-revolutionize-advertising-says-cathie-woods-ark-invest-report",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39277611,
+      "headline": "Brad Gerstner Bought Nvidia Stock When 'Everybody Said Sell': Now He's Buying Apple Stock At All-Time Highs",
+      "created_at": "2024-06-11T18:31:33Z",
+      "updated_at": "2024-06-11T18:31:33Z",
+      "symbols": [
+        "AAPL",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/24/06/39277611/brad-gerstner-bought-nvidia-stock-when-everybody-said-sell-now-hes-buying-apple-stock-at",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39277735,
+      "headline": "President Biden Delivers Remarks at Everytown's Gun Sense University",
+      "created_at": "2024-06-11T18:39:38Z",
+      "updated_at": "2024-06-11T18:41:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/politics/24/06/39277735/president-biden-delivers-remarks-at-everytowns-gun-sense-university",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39279572,
+      "headline": "Benzinga Market Update: Nasdaq Closes Higher, Apple Rises On Upgrade, Market Awaits Wednesday Fed Decision",
+      "created_at": "2024-06-11T20:13:52Z",
+      "updated_at": "2024-06-11T20:13:52Z",
+      "symbols": [
+        "AAPL",
+        "QQQ"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39279572/benzinga-market-update-nasdaq-closes-higher-apple-rises-on-upgrade-market-awaits-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39280475,
+      "headline": "Israeli Official Says Hamas Rejects Hostage Release Proposal Presented By Biden",
+      "created_at": "2024-06-11T20:39:51Z",
+      "updated_at": "2024-06-11T20:39:52Z",
+      "symbols": [
+        "EIS",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/06/39280475/israeli-official-says-hamas-rejects-hostage-release-proposal-presented-by-biden",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39281949,
+      "headline": "Event Contract Trading Signals Uncertainty In Apple Monopoly Case During WWDC",
+      "created_at": "2024-06-11T21:58:31Z",
+      "updated_at": "2024-06-11T21:58:31Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39281949/event-contract-trading-signals-uncertainty-in-apple-monopoly-case-during-wwdc",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39283661,
+      "headline": "Elon Musk Drops OpenAI Lawsuit Involving Sam Altman, Greg Brockman A Day After Blasting Apple For Partnering With ChatGPT-Parent",
+      "created_at": "2024-06-12T01:46:09Z",
+      "updated_at": "2024-06-12T01:46:10Z",
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39283661/elon-musk-drops-openai-lawsuit-involving-sam-altman-greg-brockman-a-day-after-blasting-apple-for-par",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39283780,
+      "headline": "Bitcoin, Ethereum, Dogecoin Slip Ahead Of Fed's Interest Rate Decision: Analyst Says Correction Usual For King Crypto Before Uptrend Resumes",
+      "created_at": "2024-06-12T02:02:23Z",
+      "updated_at": "2024-06-12T02:02:24Z",
+      "symbols": [
+        "AAPL",
+        "BTCUSD",
+        "DOGEUSD",
+        "ETHUSD"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/06/39283780/bitcoin-ethereum-dogecoin-slip-ahead-of-feds-interest-rate-decision-analyst-says-correctio",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39283936,
+      "headline": "Apple, GameStock, Paramount Global, Oracle, Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-06-12T02:40:33Z",
+      "updated_at": "2024-06-12T02:40:34Z",
+      "symbols": [
+        "AAPL",
+        "GME",
+        "ORCL",
+        "PARA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/06/39283936/apple-gamestock-paramount-global-oracle-tesla-why-these-5-stocks-are-on-investors-radars-today",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39284068,
+      "headline": "Apple's AI-Powered Growth To Trigger 10% Revenue Surge By 2025, Predicts Gene Munster: 'This Is Just The Start Of Apple's Next Growth Chapter'",
+      "created_at": "2024-06-12T03:32:11Z",
+      "updated_at": "2024-06-12T03:32:12Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/06/39284068/apples-ai-powered-growth-to-trigger-10-revenue-surge-by-2025-predicts-gene-munster-this-is-just-",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

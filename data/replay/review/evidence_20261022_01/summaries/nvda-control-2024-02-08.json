@@ -1,0 +1,756 @@
+{
+  "interval_id": "nvda-control-2024-02-08",
+  "candidate_kind": "normal",
+  "ticker": "NVDA",
+  "started_at": "2024-02-08T14:30:00Z",
+  "ended_at": "2024-02-08T16:00:00Z",
+  "local_start": "2024-02-08T09:30:00-05:00",
+  "local_end": "2024-02-08T11:00:00-05:00",
+  "symbols": {
+    "NVDA": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-02-08T14:57:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-02-07T20:59:00Z",
+      "prior_close": 701.02,
+      "first_minute": "2024-02-08T14:30:00Z",
+      "last_minute": "2024-02-08T15:59:00Z",
+      "first_open": 700.755,
+      "last_close": 704.3,
+      "gap_pct": -0.03780205985564056,
+      "end_vs_prior_pct": 0.4678896465150739,
+      "window_return_pct": 0.5058829405427012,
+      "window_range_pct": 1.8037687922312344,
+      "volume": 162509,
+      "raw_artifact": "raw/nvda-control-2024-02-08/NVDA.minutes.json"
+    },
+    "QQQ": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-02-07T20:59:00Z",
+      "prior_close": 432.03,
+      "first_minute": "2024-02-08T14:30:00Z",
+      "last_minute": "2024-02-08T15:59:00Z",
+      "first_open": 432.28,
+      "last_close": 433.37,
+      "gap_pct": 0.05786635187370326,
+      "end_vs_prior_pct": 0.31016364604310454,
+      "window_return_pct": 0.2521513833626532,
+      "window_range_pct": 0.45803645785139685,
+      "volume": 131292,
+      "raw_artifact": "raw/nvda-control-2024-02-08/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-02-07T20:59:00Z",
+      "prior_close": 498.03,
+      "first_minute": "2024-02-08T14:30:00Z",
+      "last_minute": "2024-02-08T15:59:00Z",
+      "first_open": 498.16,
+      "last_close": 498.2,
+      "gap_pct": 0.026102845210140835,
+      "end_vs_prior_pct": 0.03413448989018075,
+      "window_return_pct": 0.008029548739352244,
+      "window_range_pct": 0.19672394411434443,
+      "volume": 216120,
+      "raw_artifact": "raw/nvda-control-2024-02-08/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 36999228,
+      "headline": "Cathie Wood's Ark Rose To Prominence with Tesla Bet in 2020, But Did ARKK Miss Out Big On Other 'Magnificent 7' Opportunities?",
+      "created_at": "2024-02-08T06:14:49Z",
+      "updated_at": "2024-02-08T06:14:49Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "ARKK",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NFLX",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "ZM"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/02/36999228/cathie-woods-ark-rose-to-prominence-with-tesla-bet-in-2020-but-did-arkk-miss-out-big-on-other-ma",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 36999785,
+      "headline": "US Imports From Mexico Surpass China For The First Time In 20 Years",
+      "created_at": "2024-02-08T07:27:00Z",
+      "updated_at": "2024-02-08T07:27:01Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/36999785/us-imports-from-mexico-surpass-china-for-the-first-time-in-20-years",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37002369,
+      "headline": "China's President Xi Told Russia's Putin Two Sides Should Collaborate Strategically, Defend The Sovereignty, Security And Development Interests Of Their Countries, Resolutely Oppose Interference In Internal Affairs By External Forces",
+      "created_at": "2024-02-08T10:44:24Z",
+      "updated_at": "2024-02-08T10:44:24Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37002369/chinas-president-xi-told-russias-putin-two-sides-should-collaborate-strategically-defend-the-soverei",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37004624,
+      "headline": "Asia Markets Mixed, Europe Gains, While Crude Oil Nears $75 - Global Market Overview While The US Slept",
+      "created_at": "2024-02-08T12:14:23Z",
+      "updated_at": "2024-02-08T12:14:24Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/02/37004624/asia-markets-mixed-europe-gains-while-crude-oil-nears-75-global-market-overview-while-the-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37005121,
+      "headline": "US Stocks On Backfoot Amid Overbought Levels, S&P 500 Eyes Break Above 5K: Analyst Sees 'Dramatically Higher' Market Surge From Rally This Year",
+      "created_at": "2024-02-08T12:34:59Z",
+      "updated_at": "2024-02-08T12:35:00Z",
+      "symbols": [
+        "AFRM",
+        "ARM",
+        "BYD",
+        "CFLT",
+        "CNQ",
+        "COP",
+        "CYBR",
+        "DIS",
+        "DUK",
+        "EXPE",
+        "GPRO",
+        "HOG",
+        "HSY",
+        "ILMN",
+        "LGF",
+        "LGF/A",
+        "MPWR",
+        "NET",
+        "NWS",
+        "ORLY",
+        "PINS",
+        "PM",
+        "PYPL",
+        "QQQ",
+        "RL",
+        "SAVE",
+        "SPGI",
+        "SPY",
+        "SYNA",
+        "TTWO",
+        "UA",
+        "VRSN",
+        "WYNN"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/02/37005121/us-stocks-on-backfoot-amid-overbought-levels-s-p-500-eyes-break-above-5k-analyst-sees-dramatically-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37005660,
+      "headline": "No Imminent AI Bubble Burst, Says Munster: 'We Are At The Start Of 3-5 Year Tech Run'",
+      "created_at": "2024-02-08T12:57:19Z",
+      "updated_at": "2024-02-08T12:57:20Z",
+      "symbols": [
+        "AMD",
+        "ARM",
+        "META",
+        "MSFT",
+        "NVDA",
+        "PLTR",
+        "QQQ"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/37005660/no-imminent-ai-bubble-burst-says-munster-we-are-at-the-start-of-3-5-year-tech-run",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37006735,
+      "headline": "US Initial Jobless Claims 218K vs 221K Est.",
+      "created_at": "2024-02-08T13:30:10Z",
+      "updated_at": "2024-02-08T13:30:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37006735/us-initial-jobless-claims-218k-vs-221k-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37006761,
+      "headline": "Continuing Jobless Claims 1.871M vs 1.878M Est.",
+      "created_at": "2024-02-08T13:30:22Z",
+      "updated_at": "2024-02-08T13:30:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37006761/continuing-jobless-claims-1-871m-vs-1-878m-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37007350,
+      "headline": "Red-Hot Nvidia Rally To Pause? What's Going On With The Stock",
+      "created_at": "2024-02-08T13:49:21Z",
+      "updated_at": "2024-02-08T13:49:47Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/02/37007350/red-hot-nvidia-rally-to-pause-whats-going-on-with-the-stock",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37008526,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of February 8, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-02-08T14:19:00Z",
+      "updated_at": "2024-02-08T14:19:00Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "ARM",
+        "BABA",
+        "DAY",
+        "DIS",
+        "NVDA",
+        "PLTR",
+        "PYPL",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/02/37008526/top-10-trending-stocks-on-wallstreetbets-as-of-february-8-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37008748,
+      "headline": "Bitcoin, Ethereum, Dogecoin Surge As NYCB Hits 1997 Levels Amid Small Banking Fears; Biden Vs. Trump: New Poll Projects Dead Heat But One Candidate Gains Decisive Lead Under This Condition - Top Headlines Today While US Was Sleeping",
+      "created_at": "2024-02-08T14:28:02Z",
+      "updated_at": "2024-02-08T14:28:03Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/02/37008748/bitcoin-ethereum-dogecoin-surge-as-nycb-hits-1997-levels-amid-small-banking-fears-biden-vs",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37009110,
+      "headline": "U.S. Treasury's Yellen Says Believes U.S. Needs To Reduce Deficits To Stay On A Fiscally Sustainable Path; Most Forecasters And CBO Suggest That Interest Rates Are Expected To Decline Somewhat",
+      "created_at": "2024-02-08T14:38:05Z",
+      "updated_at": "2024-02-08T14:38:06Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37009110/u-s-treasurys-yellen-says-believes-u-s-needs-to-reduce-deficits-to-stay-on-a-fisc",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37009130,
+      "headline": "Benzinga Opening Bell Update: S&P Futures Reach above 5,000, Initial Jobless Claims Come In Lower Than Expected; Arm And Disney Shares Gain Following Earnings",
+      "created_at": "2024-02-08T14:39:18Z",
+      "updated_at": "2024-02-08T14:39:18Z",
+      "symbols": [
+        "ARM",
+        "DIS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/24/02/37009130/benzinga-opening-bell-update-s-p-futures-reach-above-5-000-initial-jobless-claims-come-in-lower-than",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37009828,
+      "headline": "USA Wholesale Inventories (MoM) For December 0.4% Vs 0.4% Est.; -0.2% Prior",
+      "created_at": "2024-02-08T15:00:13Z",
+      "updated_at": "2024-02-08T15:00:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37009828/usa-wholesale-inventories-mom-for-december-0-4-vs-0-4-est-0-2-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37009845,
+      "headline": "USA Wholesale Trade Sales (MoM) For December 0.7% Vs -0.1% Prior",
+      "created_at": "2024-02-08T15:00:27Z",
+      "updated_at": "2024-02-08T15:00:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37009845/usa-wholesale-trade-sales-mom-for-december-0-7-vs-0-1-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37011903,
+      "headline": "U.S. Senate Commerce Committee Votes To Rejects Bid To Hike Airline Pilot Retirement Age To 67 From 65",
+      "created_at": "2024-02-08T16:07:25Z",
+      "updated_at": "2024-02-08T16:23:47Z",
+      "symbols": [
+        "AAL",
+        "ALK",
+        "BA",
+        "DAL",
+        "JBLU",
+        "LUV",
+        "SAVE",
+        "SPY",
+        "UAL",
+        "ULCC"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37011903/u-s-senate-commerce-committee-votes-to-rejects-bid-to-hike-airline-pilot-retirement-age-to-67-from-6",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37012458,
+      "headline": "U.S. Senate Commerce Committee Votes To Approve Bill To Boost FAA Aviation Safety Inspector And Air Traffic Control Staffing And Bar Airlines From Charging Families Fees To Sit Together",
+      "created_at": "2024-02-08T16:21:56Z",
+      "updated_at": "2024-02-08T16:23:57Z",
+      "symbols": [
+        "AAL",
+        "ALK",
+        "BA",
+        "DAL",
+        "JBLU",
+        "LUV",
+        "SAVE",
+        "SPY",
+        "UAL",
+        "ULCC"
+      ],
+      "url": "https://www.benzinga.com/government/24/02/37012458/u-s-senate-commerce-committee-votes-to-approve-bill-to-boost-faa-aviation-safety-inspector-and-air-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37012475,
+      "headline": "Senate Bill Approved By Committee Boosts Maximum Civil Penalties For Airline Consumer Violations From $25,000 Per Violation To $75,000",
+      "created_at": "2024-02-08T16:22:57Z",
+      "updated_at": "2024-02-08T16:24:07Z",
+      "symbols": [
+        "AAL",
+        "ALK",
+        "BA",
+        "DAL",
+        "JBLU",
+        "LUV",
+        "SAVE",
+        "SPY",
+        "UAL",
+        "ULCC"
+      ],
+      "url": "https://www.benzinga.com/government/24/02/37012475/senate-bill-approved-by-committee-boosts-maximum-civil-penalties-for-airline-consumer-violations-fro",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37010222,
+      "headline": "Market Clubhouse Morning Memo - February 8th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA)",
+      "created_at": "2024-02-08T15:11:33Z",
+      "updated_at": "2024-02-08T16:53:00Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/02/37010222/market-clubhouse-morning-memo-february-8th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-met",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 37013534,
+      "headline": "Surging Against The Odds - Nvidia's Astounding 41% Growth In 2024 Amidst Global Challenges",
+      "created_at": "2024-02-08T17:07:15Z",
+      "updated_at": "2024-02-08T17:08:44Z",
+      "symbols": [
+        "AMD",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/tech/24/02/37013534/surging-against-the-odds-nvidias-astounding-41-growth-in-2024-amidst-global-challenges",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 36912963,
+      "headline": "January's 'Wow' Jobs Report: 9 Economists On What's Next For Fed Rate Cuts, Stock Market",
+      "created_at": "2024-02-02T16:40:05Z",
+      "updated_at": "2024-02-08T17:11:32Z",
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "TLT"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/36912963/januarys-wow-jobs-report-top-economists-on-whats-next-for-fed-rate-cuts-stock-marke",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 37013638,
+      "headline": "Fed's Barkin Says Fed Can Take Time On Decision To Cut Rates; Needs To See More Data To Build Confidence Inflation Is Falling; No One Wants Inflation To Flare Up Again; Inflation Has Surprised To The Upside Before",
+      "created_at": "2024-02-08T17:11:44Z",
+      "updated_at": "2024-02-08T17:11:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37013638/feds-barkin-says-fed-can-take-time-on-decision-to-cut-rates-needs-to-see-more-dat",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37013644,
+      "headline": "Fed's Barkin Says Upcoming Inflation Data Is Likely To Be Favorable; Upside Inflation Risks Are Still Around; Recent Economic Data Has Been 'Remarkable'; Possible Path Back To 2% Inflation Will Be Bumpy",
+      "created_at": "2024-02-08T17:12:10Z",
+      "updated_at": "2024-02-08T17:12:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37013644/feds-barkin-says-upcoming-inflation-data-is-likely-to-be-favorable-upside-inflati",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37013661,
+      "headline": "Fed's Barkin Says Business Contacts Less Worried About Recession Risks; Firms More Stable On Employment, See Less Pricing Power",
+      "created_at": "2024-02-08T17:12:44Z",
+      "updated_at": "2024-02-08T17:12:45Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37013661/feds-barkin-says-business-contacts-less-worried-about-recession-risks-firms-more-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37013957,
+      "headline": "U.S. Supreme Court Adjourns Trump V Anderson Regarding Decision To Remove Candidacy From Colorado Ballot Until Friday, Feb. 16",
+      "created_at": "2024-02-08T17:26:28Z",
+      "updated_at": "2024-02-08T17:26:28Z",
+      "symbols": [
+        "DWAC",
+        "RUM",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37013957/u-s-supreme-court-adjourns-trump-v-anderson-regarding-decision-to-remove-candidacy-from-colorado-bal",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37013994,
+      "headline": "Fed's Barkin Has Confidence To Cut Will Be Driven By More Inflation Abatement; Says Will Learn A Lot About Inflation Over Next Six Months; If Inflation Goes Back To 2% Amid Strong Demand, Would Signal Higher Neutral Rate",
+      "created_at": "2024-02-08T17:29:37Z",
+      "updated_at": "2024-02-08T17:29:38Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37013994/feds-barkin-has-confidence-to-cut-will-be-driven-by-more-inflation-abatement-says",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37014175,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-02-08T17:35:16Z",
+      "updated_at": "2024-02-08T17:35:16Z",
+      "symbols": [
+        "AAPL",
+        "ARM",
+        "AVGO",
+        "CRWD",
+        "MARA",
+        "MSFT",
+        "NVDA",
+        "QCOM",
+        "SMCI",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/02/37014175/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37014528,
+      "headline": "Here Is What Is Likely To Happen After S&P Crosses $5000, Prices Drop At Fastest Rate Since 2009 In China",
+      "created_at": "2024-02-08T17:50:28Z",
+      "updated_at": "2024-02-08T17:52:45Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/02/37014528/here-is-what-is-likely-to-happen-after-s-p-crosses-5000-prices-drop-at-fastest-rate-since-2009-in-ch",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37015697,
+      "headline": "White House Says Having Discussions With Iraq Over U.S. Military Posture And Mission Going Forward",
+      "created_at": "2024-02-08T18:45:19Z",
+      "updated_at": "2024-02-08T18:45:19Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37015697/white-house-says-having-discussions-with-iraq-over-u-s-military-posture-and-missi",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37016116,
+      "headline": "S&P 500 Tests Resistance At 5,000, ARM Rockets, Oil Rebounds: What's Driving Markets Thursday?",
+      "created_at": "2024-02-08T19:05:27Z",
+      "updated_at": "2024-02-08T19:05:28Z",
+      "symbols": [
+        "ARM",
+        "BTCUSD",
+        "CFLT",
+        "DIA",
+        "DIS",
+        "DXCN",
+        "EXPE",
+        "HSY",
+        "ILMN",
+        "IWM",
+        "K",
+        "LITE",
+        "MPWR",
+        "QQQ",
+        "RL",
+        "SPY",
+        "VRSN",
+        "WYNN",
+        "XLE",
+        "XLK",
+        "XLU",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/37016116/s-p-500-tests-resistance-at-5-000-arm-rockets-oil-rebounds-whats-driving-markets-th",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37016915,
+      "headline": "U.S. Special Counsel Report Says No One Will Be Charged In Biden Classified Documents Investigation",
+      "created_at": "2024-02-08T19:56:26Z",
+      "updated_at": "2024-02-08T19:56:27Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37016915/u-s-special-counsel-report-says-no-one-will-be-charged-in-biden-classified-docume",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37017801,
+      "headline": "Nvidia's RTX 4090 Graphics Card Frenzy: Supply Crisis Hits Hard Amid Global Demand Surge and US Sanctions",
+      "created_at": "2024-02-08T20:37:12Z",
+      "updated_at": "2024-02-08T20:37:13Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/government/24/02/37017801/nvidias-rtx-4090-graphics-card-frenzy-supply-crisis-hits-hard-amid-global-demand-surge-and-us-sancti",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37018085,
+      "headline": "Is ARK Taking On Water? Cathie Wood's Firm Named Top 'Wealth Destroyer' By Morningstar Analyst",
+      "created_at": "2024-02-08T20:53:10Z",
+      "updated_at": "2024-02-08T20:53:46Z",
+      "symbols": [
+        "ARKK",
+        "BTCUSD",
+        "NVDA",
+        "SARK",
+        "TARK",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/etfs/sector-etfs/24/02/37018085/is-ark-taking-on-water-cathie-woods-firm-named-top-wealth-destroyer-by-morningstar-analyst",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37018143,
+      "headline": "Benzinga Closing Bell Update: S&P And Dow Relatively Flat, Arm And Disney Shares Surge Following Earnings, Bitcoin Above $45,000; Pinterest To Report After The Close",
+      "created_at": "2024-02-08T20:56:44Z",
+      "updated_at": "2024-02-08T20:56:45Z",
+      "symbols": [
+        "ARM",
+        "BTCUSD",
+        "DIA",
+        "DIS",
+        "PINS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37018143/benzinga-closing-bell-update-s-p-and-dow-relatively-flat-arm-and-disney-shares-su",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37020083,
+      "headline": "S&P 500 Hits 5,000 Milestone, Yet Concerns Of Overvaluation Versus Its Equal-Weight Counterpart Mount",
+      "created_at": "2024-02-08T21:33:09Z",
+      "updated_at": "2024-02-08T21:33:09Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "AVGO",
+        "BRK",
+        "GOOG",
+        "GOOGL",
+        "LLY",
+        "META",
+        "MSFT",
+        "NVDA",
+        "RSP",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/02/37020083/s-p-500-hits-5-000-milestone-yet-concerns-of-overvaluation-versus-its-equal-weight-counterpart-m",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37024300,
+      "headline": "Jim Cramer Says Investors Should Look Beyond Apple, Meta And Other Magnificent 7 Stocks: 'You Might Be Missing Out On Some Huge Gains'",
+      "created_at": "2024-02-09T02:34:01Z",
+      "updated_at": "2024-02-09T02:34:02Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "LLY",
+        "META",
+        "MPWR",
+        "MSFT",
+        "NVDA",
+        "RGNX",
+        "TSLA",
+        "WMS",
+        "XPO"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/37024300/jim-cramer-says-investors-should-look-beyond-apple-meta-and-other-magnificent-7-sto",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37024886,
+      "headline": "Donald Trump Projected Winner Of Nevada 2024 Republican Caucus",
+      "created_at": "2024-02-09T04:08:41Z",
+      "updated_at": "2024-02-09T04:08:41Z",
+      "symbols": [
+        "DWAC",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37024886/donald-trump-projected-winner-of-nevada-2024-republican-caucus",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37025140,
+      "headline": "Cathie Wood Trims Nvidia, Shopify Stakes To Pump Whopping $40M Into Pinterest Despite Q4 Revenue Miss",
+      "created_at": "2024-02-09T04:49:48Z",
+      "updated_at": "2024-02-09T04:49:48Z",
+      "symbols": [
+        "ARKF",
+        "ARKG",
+        "ARKK",
+        "ARKQ",
+        "ARKW",
+        "BEAM",
+        "NVDA",
+        "PACB",
+        "PINS",
+        "SHOP",
+        "TWLO",
+        "TWST"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/02/37025140/cathie-wood-trims-nvidia-shopify-stakes-to-pump-whopping-40m-into-pinterest-despite-q4-revenue-m",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

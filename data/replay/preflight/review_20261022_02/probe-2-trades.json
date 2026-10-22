@@ -1,0 +1,18 @@
+{
+  "next_page_token": "QUFQTHwxNzEzNTMzNDAwMTYwMDg2MDQ3fFZ8NzI=",
+  "symbol": "AAPL",
+  "trades": [
+    {
+      "c": [
+        "@",
+        "I"
+      ],
+      "i": 71,
+      "p": 166.2,
+      "s": 2,
+      "t": "2024-04-19T13:30:00.131304006Z",
+      "x": "V",
+      "z": "C"
+    }
+  ]
+}

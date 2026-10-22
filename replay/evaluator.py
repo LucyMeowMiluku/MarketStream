@@ -1,3 +1,6 @@
+# 来源归属（2026-10-22）：XI LU 主导方案选择与具体约束，AI 按确认方案生成／重构实现。
+# 本注释不声明全部代码由本人手写；逐项原日志与未确认范围见
+# docs/CORE_CODE_AUTHORSHIP_AND_REFERENCES_CN.md 及 report/ownership_evidence/08_Contribution_Attribution_Matrix_CN.md。
 # =================================================================================
 # function：使用真实的 Alpaca IEX 事件，确定性复用质量gate、factor engine和 CEP
 # 贡献：provenance/checksum 检查、baseline 冻结、追溯统计和评测tools

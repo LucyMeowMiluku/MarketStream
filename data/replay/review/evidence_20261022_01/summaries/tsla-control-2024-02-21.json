@@ -1,0 +1,664 @@
+{
+  "interval_id": "tsla-control-2024-02-21",
+  "candidate_kind": "normal",
+  "ticker": "TSLA",
+  "started_at": "2024-02-21T14:30:00Z",
+  "ended_at": "2024-02-21T16:00:00Z",
+  "local_start": "2024-02-21T09:30:00-05:00",
+  "local_end": "2024-02-21T11:00:00-05:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-02-21T15:54:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-02-20T20:59:00Z",
+      "prior_close": 427.31,
+      "first_minute": "2024-02-21T14:30:00Z",
+      "last_minute": "2024-02-21T15:59:00Z",
+      "first_open": 424.31,
+      "last_close": 423.92,
+      "gap_pct": -0.7020664154829048,
+      "end_vs_prior_pct": -0.7933350494956803,
+      "window_return_pct": -0.0919139308524386,
+      "window_range_pct": 0.4218613749381263,
+      "volume": 106482,
+      "raw_artifact": "raw/tsla-control-2024-02-21/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 87,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-02-21T15:28:00+00:00",
+        "2024-02-21T15:54:00+00:00",
+        "2024-02-21T15:57:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-02-20T20:59:00Z",
+      "prior_close": 496.745,
+      "first_minute": "2024-02-21T14:30:00Z",
+      "last_minute": "2024-02-21T15:59:00Z",
+      "first_open": 495.355,
+      "last_close": 495.28,
+      "gap_pct": -0.27982163886903777,
+      "end_vs_prior_pct": -0.2949199287360815,
+      "window_return_pct": -0.015140656700762811,
+      "window_range_pct": 0.22912860473801433,
+      "volume": 164816,
+      "raw_artifact": "raw/tsla-control-2024-02-21/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-02-20T20:59:00Z",
+      "prior_close": 193.74,
+      "first_minute": "2024-02-21T14:30:00Z",
+      "last_minute": "2024-02-21T15:59:00Z",
+      "first_open": 193.15,
+      "last_close": 194.9,
+      "gap_pct": -0.30453184680500067,
+      "end_vs_prior_pct": 0.5987405801589851,
+      "window_return_pct": 0.9060315816722841,
+      "window_range_pct": 3.2487703857105905,
+      "volume": 167046,
+      "raw_artifact": "raw/tsla-control-2024-02-21/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 37230245,
+      "headline": "Trees Trump Tesla In Germany: Locals Say 'Nein' To EV Giant's Berlin Gigafactory Expansion Plans",
+      "created_at": "2024-02-21T07:41:43Z",
+      "updated_at": "2024-02-21T07:41:44Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37230245/trees-trump-tesla-in-germany-locals-say-nein-to-ev-giants-berlin-gigafactory-expansion-plans",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37230412,
+      "headline": "Walmart's Solid Quarter Proves Tesla 'Uberbulls' Wrong? Fund Manager Explains Why High-Interest Rates, Dissatisfied Customers Aren't Hurting EV Maker",
+      "created_at": "2024-02-21T08:21:20Z",
+      "updated_at": "2024-02-21T08:21:20Z",
+      "symbols": [
+        "FFND",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/37230412/walmarts-solid-quarter-proves-tesla-uberbulls-wrong-fund-manager-explains-why-high-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37230744,
+      "headline": "Nvidia's Earnings Around The Corner: Can AI Stalwart Bulldoze Its Way To Another Superlative Quarterly Performance?",
+      "created_at": "2024-02-21T09:30:12Z",
+      "updated_at": "2024-02-21T09:30:12Z",
+      "symbols": [
+        "NVDA",
+        "QQQ",
+        "SOXX",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/02/37230744/nvidias-earnings-around-the-corner-can-ai-stalwart-bulldoze-its-way-to-another-superlative-quarterl",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37231836,
+      "headline": "Tesla Takes Aim At Toyota: Model Y Now Cheaper Than Prius PHEV In Germany",
+      "created_at": "2024-02-21T11:19:27Z",
+      "updated_at": "2024-02-21T11:19:28Z",
+      "symbols": [
+        "TM",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37231836/tesla-takes-aim-at-toyota-model-y-now-cheaper-than-prius-phev-in-germany",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37232374,
+      "headline": "Wall Street Waits With Bated Breath For Nvidia Earnings After Tech Selloff, Fed Minutes Eyed: Analyst Flags This As Biggest Risk For Market",
+      "created_at": "2024-02-21T11:51:21Z",
+      "updated_at": "2024-02-21T11:51:21Z",
+      "symbols": [
+        "ADI",
+        "BLCO",
+        "CAKE",
+        "CNQ",
+        "CRWD",
+        "CZR",
+        "EXAS",
+        "FIVN",
+        "FNF",
+        "GRMN",
+        "HST",
+        "JACK",
+        "LCID",
+        "LZB",
+        "MRO",
+        "MTTR",
+        "NDSN",
+        "NOVA",
+        "NVDA",
+        "PANW",
+        "QQQ",
+        "RGR",
+        "RIVN",
+        "RNG",
+        "RUN",
+        "SPY",
+        "TOL",
+        "WING",
+        "WIX",
+        "WK",
+        "WMT",
+        "WWW",
+        "ZS"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/02/37232374/wall-street-waits-with-bated-breath-for-nvidia-earnings-after-tech-selloff-fed-minutes-eyed-analyst",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37234455,
+      "headline": "Asia And Europe Markets Mixed, Crude Oil Hovers Around $77 - Global Market Overview While The US Slept",
+      "created_at": "2024-02-21T13:12:36Z",
+      "updated_at": "2024-02-21T13:12:36Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "NVDA",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/02/37234455/asia-and-europe-markets-mixed-crude-oil-hovers-around-77-global-market-overview-while-the-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37235473,
+      "headline": "USA Redbook (YoY) 3.0% Vs 2.5% Prior",
+      "created_at": "2024-02-21T13:55:48Z",
+      "updated_at": "2024-02-21T13:55:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37235473/usa-redbook-yoy-3-0-vs-2-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37235932,
+      "headline": "Ford's Signature EV Is In A Solar-Powered Treat",
+      "created_at": "2024-02-21T14:02:06Z",
+      "updated_at": "2024-02-21T14:04:29Z",
+      "symbols": [
+        "F",
+        "TSLA",
+        "WKSP"
+      ],
+      "url": "https://www.benzinga.com/markets/penny-stocks/24/02/37235932/fords-signature-ev-is-in-a-solar-powered-treat",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37236418,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of February 21, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-02-21T14:14:14Z",
+      "updated_at": "2024-02-21T14:14:14Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "AMD",
+        "ARM",
+        "LUNR",
+        "NVDA",
+        "PANW",
+        "RIVN",
+        "SMCI",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/02/37236418/top-10-trending-stocks-on-wallstreetbets-as-of-february-21-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37236436,
+      "headline": "Bitcoin, Ethereum, Dogecoin Trade Mixed As BTC ETF Activity Surges To Highest Levels Since Their Debut; Biden Forgives $1.2B In Student Debt For 150K Borrowers Hit By Specific Issues; Democrats Slam Capital One-Discover Merger - Top Headlines Today While US Was Sleeping",
+      "created_at": "2024-02-21T14:15:33Z",
+      "updated_at": "2024-02-21T14:15:34Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37236436/bitcoin-ethereum-dogecoin-trade-mixed-as-btc-etf-activity-surges-to-highest-levels-since-their-debut",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37237785,
+      "headline": "Amazon To Join Dow Jones Industrial Average: Does Venerable Index Membership Still Matter?",
+      "created_at": "2024-02-21T15:08:13Z",
+      "updated_at": "2024-02-21T15:09:34Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "CSCO",
+        "DIA",
+        "IBM",
+        "INTC",
+        "MSFT",
+        "TSLA",
+        "WBA",
+        "WMT"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/02/37237785/amazon-to-join-dow-jones-industrial-average-does-venerable-index-membership-still-matter",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37238328,
+      "headline": "Market Clubhouse Morning Memo - February 21st, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA)",
+      "created_at": "2024-02-21T15:23:20Z",
+      "updated_at": "2024-02-21T15:25:16Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/02/37238328/market-clubhouse-morning-memo-february-21st-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-me",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 37240052,
+      "headline": "'U.S. Targets China's Top Chipmaking Plant After Huawei Mate 60 Pro' - Reuters News",
+      "created_at": "2024-02-21T16:22:01Z",
+      "updated_at": "2024-02-21T16:24:20Z",
+      "symbols": [
+        "ENTG",
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37240052/u-s-targets-chinas-top-chipmaking-plant-after-huawei-mate-60-pro-reuters-news",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37240744,
+      "headline": "Cramer Celebrates 'National NVIDIA Day,' Compares CEO Jensen Huang To Taylor Swift",
+      "created_at": "2024-02-21T16:52:48Z",
+      "updated_at": "2024-02-21T16:52:49Z",
+      "symbols": [
+        "NVDA",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37240744/cramer-celebrates-national-nvidia-day-compares-ceo-jensen-huang-to-taylor-swift",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37240771,
+      "headline": "Cathie Wood's ARKK Grew By 70% In 2023, But Has Already Dropped 4% This Year. What Will The Rest Of 2024 Have In Store? How Can Bears And Bulls Maximize Their View Of ARKK?",
+      "created_at": "2024-02-21T16:54:36Z",
+      "updated_at": "2024-02-21T16:54:38Z",
+      "symbols": [
+        "ARKK",
+        "BTCUSD",
+        "COIN",
+        "SARK",
+        "TARK",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/24/02/37240771/cathie-woods-arkk-grew-by-70-in-2023-but-has-already-dropped-4-this-year-what-will-the-r",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37241485,
+      "headline": "Broadcom, The Magnificent 7 Stock In Waiting: Can The Chipmaker Replace EV Carmaker Tesla?",
+      "created_at": "2024-02-21T17:24:47Z",
+      "updated_at": "2024-02-21T17:24:48Z",
+      "symbols": [
+        "AVGO",
+        "NVDA",
+        "TSLA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/02/37241485/broadcom-the-magnificent-7-stock-in-waiting-can-the-chipmaker-replace-ev-carmaker-tesla",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37241752,
+      "headline": "10 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-02-21T17:35:21Z",
+      "updated_at": "2024-02-21T17:35:21Z",
+      "symbols": [
+        "ABNB",
+        "AMZN",
+        "BABA",
+        "CHWY",
+        "CZR",
+        "DASH",
+        "NKE",
+        "TCOM",
+        "TSLA",
+        "WING"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/02/37241752/10-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37241961,
+      "headline": "Nearly $1 Billion In Bitcoin Withdrawn Leaving Coinbase With Lowest Reserve Since 2015",
+      "created_at": "2024-02-21T17:49:38Z",
+      "updated_at": "2024-02-21T17:49:38Z",
+      "symbols": [
+        "ARKB",
+        "ARKK",
+        "COIN",
+        "ROKU",
+        "SARK",
+        "TARK",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/02/37241961/nearly-1-billion-in-bitcoin-withdrawn-leaving-coinbase-with-lowest-reserve-since-2015",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37242225,
+      "headline": "USA 20-Year Bond Auction 4.595% Vs 4.423% Prior",
+      "created_at": "2024-02-21T18:02:51Z",
+      "updated_at": "2024-02-21T18:02:51Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37242225/usa-20-year-bond-auction-4-595-vs-4-423-prior",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37242278,
+      "headline": "Wall Street Falters Ahead Of Fed Minutes, Nvidia Earnings, Cybersecurity Selloff: What's Driving Markets Wednesday?",
+      "created_at": "2024-02-21T18:04:32Z",
+      "updated_at": "2024-02-21T18:04:33Z",
+      "symbols": [
+        "ADI",
+        "ANSS",
+        "AR",
+        "BTCUSD",
+        "BUG",
+        "CRWD",
+        "CSGP",
+        "DIA",
+        "EQT",
+        "GRMN",
+        "MRO",
+        "NVDA",
+        "O",
+        "PANW",
+        "PSA",
+        "QQQ",
+        "RIVN",
+        "SNPS",
+        "SPY",
+        "TDOC",
+        "TPL",
+        "VRSK",
+        "XLE",
+        "XLK",
+        "XLP",
+        "ZS"
+      ],
+      "url": "https://www.benzinga.com/news/large-cap/24/02/37242278/wall-street-falters-ahead-of-fed-minutes-nvidia-earnings-cybersecurity-selloff-whats-driving-marke",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37242885,
+      "headline": "Fed's Bowman Says The Time For Lower Rates Is Certainly Not Now; The Housing Market Isn't Influencing The Fed Rate-Cut Decision; New U.S. Capital Rule Plans Would Hurt Lending",
+      "created_at": "2024-02-21T18:35:19Z",
+      "updated_at": "2024-02-21T18:35:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37242885/feds-bowman-says-the-time-for-lower-rates-is-certainly-not-now-the-housing-market",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37243741,
+      "headline": "Extreme Positioning In NVIDIA Takes A Hit, Fed Minutes Ahead",
+      "created_at": "2024-02-21T19:20:28Z",
+      "updated_at": "2024-02-21T19:22:47Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "PANW",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/02/37243741/extreme-positioning-in-nvidia-takes-a-hit-fed-minutes-ahead",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37243710,
+      "headline": "Fed Minutes Stress Inflation Vigilance, Push Back Earlier Rate Cut Moves: Officials Flag Commercial Real Estate Risks",
+      "created_at": "2024-02-21T19:18:29Z",
+      "updated_at": "2024-02-21T19:37:46Z",
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "TLT"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37243710/fed-minutes-stress-inflation-vigilance-push-back-earlier-rate-cut-moves-officials",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37242954,
+      "headline": "Tesla Makes Global Map, Other Improvements In Latest Software Update",
+      "created_at": "2024-02-21T19:47:46Z",
+      "updated_at": "2024-02-21T19:47:46Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37242954/tesla-makes-global-map-other-improvements-in-latest-software-update",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37244611,
+      "headline": "U.S. Rep Waters Says As Department Of Justice, Banking Regulators Review This Proposed Acquisition, I Call On Them To Move Quickly To Block It",
+      "created_at": "2024-02-21T20:16:08Z",
+      "updated_at": "2024-02-21T20:16:08Z",
+      "symbols": [
+        "COF",
+        "DFS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/m-a/24/02/37244611/u-s-rep-waters-says-as-department-of-justice-banking-regulators-review-this-proposed-acquisition-i-c",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37244585,
+      "headline": "U.S. Rep. Maxine Waters Says Deeply Opposed To Capital One's Announced Acquisition Of Discover; Capital One, Discover Merger Will Have Major Implications For Consumers And Small Businesses Everywhere",
+      "created_at": "2024-02-21T20:15:17Z",
+      "updated_at": "2024-02-21T20:16:26Z",
+      "symbols": [
+        "COF",
+        "DFS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/m-a/24/02/37244585/u-s-rep-maxine-waters-deeply-opposed-to-capital-ones-announced-acquisition-of-discover-capital-one-d",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37244643,
+      "headline": "FDA Says Do Not Use Smartwatches Or Smart Rings To Measure Blood Glucose Levels; FDA Has Not Authorized, Cleared, Or Approved Any Smartwatch Or Smart Ring That Is Intended To Measure Or Estimate Blood Glucose Values On Its Own",
+      "created_at": "2024-02-21T20:20:34Z",
+      "updated_at": "2024-02-21T20:20:35Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/02/37244643/fda-says-do-not-use-smartwatches-or-smart-rings-to-measure-blood-glucose-levels-fda-has-not-autho",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37247089,
+      "headline": "USA API Weekly Crude Oil Stock A Build Of 7.168M Vs A Build Of 4.298M Est.; Build Of 8.520M Prior",
+      "created_at": "2024-02-21T21:34:22Z",
+      "updated_at": "2024-02-21T21:34:23Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/02/37247089/usa-api-weekly-crude-oil-stock-a-build-of-7-168m-vs-a-build-of-4-298m-est-build-o",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37247746,
+      "headline": "Tesla Dominates California New Vehicle Sales In 2023: Here's How The EV Carmaker Compares To GM, Ford, Toyota",
+      "created_at": "2024-02-21T21:49:30Z",
+      "updated_at": "2024-02-21T21:49:31Z",
+      "symbols": [
+        "F",
+        "GM",
+        "HMC",
+        "TM",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37247746/tesla-dominates-california-new-vehicle-sales-in-2023-heres-how-the-ev-carmaker-compares-to-gm-ford-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37247922,
+      "headline": "Nvidia Q4 Earnings Highlights: Revenue Beat, EPS Beat, Q1 Guidance And More",
+      "created_at": "2024-02-21T21:54:18Z",
+      "updated_at": "2024-02-22T00:57:51Z",
+      "symbols": [
+        "NVDA",
+        "QQQ",
+        "SOXX",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/02/37247922/nvidia-q4-earnings-highlights-revenue-beat-eps-beat-q1-guidance-and-more",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37252391,
+      "headline": "Jim Cramer Evaluates Nvidia, Amazon And Other Magnificent 7 Earnings: 'The Seven Truly Did Acquit Themselves Well'",
+      "created_at": "2024-02-22T02:30:12Z",
+      "updated_at": "2024-02-22T02:30:13Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/02/37252391/jim-cramer-evaluates-nvidia-amazon-and-other-magnificent-7-earnings-the-seven-truly",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37252668,
+      "headline": "Nvidia, Rivian, Intuitive Machines, Etsy, Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-02-22T03:29:11Z",
+      "updated_at": "2024-02-22T03:29:12Z",
+      "symbols": [
+        "ETSY",
+        "LUNR",
+        "NVDA",
+        "RIVN",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/02/37252668/nvidia-rivian-intuitive-machines-etsy-tesla-why-these-5-stocks-are-on-investors-radars-today",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 37252904,
+      "headline": "Tesla Will Continue Expanding Giga Berlin Despite Local Vote Results: 'Zero Impact On Any Future Expansion'",
+      "created_at": "2024-02-22T03:56:39Z",
+      "updated_at": "2024-02-22T03:56:40Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/02/37252904/tesla-will-continue-expanding-giga-berlin-despite-local-vote-results-zero-impact-on-any-future-expan",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

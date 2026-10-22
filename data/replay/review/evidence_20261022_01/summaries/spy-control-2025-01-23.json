@@ -1,0 +1,599 @@
+{
+  "interval_id": "spy-control-2025-01-23",
+  "candidate_kind": "normal",
+  "ticker": "SPY",
+  "started_at": "2025-01-23T14:30:00Z",
+  "ended_at": "2025-01-23T16:00:00Z",
+  "local_start": "2025-01-23T09:30:00-05:00",
+  "local_end": "2025-01-23T11:00:00-05:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 79,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2025-01-23T14:39:00+00:00",
+        "2025-01-23T14:48:00+00:00",
+        "2025-01-23T14:50:00+00:00",
+        "2025-01-23T14:52:00+00:00",
+        "2025-01-23T15:14:00+00:00",
+        "2025-01-23T15:20:00+00:00",
+        "2025-01-23T15:29:00+00:00",
+        "2025-01-23T15:35:00+00:00",
+        "2025-01-23T15:43:00+00:00",
+        "2025-01-23T15:51:00+00:00",
+        "2025-01-23T15:52:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2025-01-22T20:59:00Z",
+      "prior_close": 531.515,
+      "first_minute": "2025-01-23T14:30:00Z",
+      "last_minute": "2025-01-23T15:59:00Z",
+      "first_open": 528.94,
+      "last_close": 530.055,
+      "gap_pct": -0.484464220200731,
+      "end_vs_prior_pct": -0.274686509317712,
+      "window_return_pct": 0.21079895640334634,
+      "window_range_pct": 0.3327409536053221,
+      "volume": 79118,
+      "raw_artifact": "raw/spy-control-2025-01-23/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2025-01-22T20:59:00Z",
+      "prior_close": 606.33,
+      "first_minute": "2025-01-23T14:30:00Z",
+      "last_minute": "2025-01-23T15:59:00Z",
+      "first_open": 605.79,
+      "last_close": 606.89,
+      "gap_pct": -0.08906041264659104,
+      "end_vs_prior_pct": 0.092358946448301,
+      "window_return_pct": 0.18158107595040995,
+      "window_range_pct": 0.22367487082982854,
+      "volume": 133292,
+      "raw_artifact": "raw/spy-control-2025-01-23/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 43155772,
+      "headline": "US Stock Futures Trade Mixed After Skirting Record Highs In Last Session: GE Aerospace, American Airlines, Union Pacific In Focus",
+      "created_at": "2025-01-23T11:59:35Z",
+      "updated_at": "2025-01-23T11:59:36Z",
+      "symbols": [
+        "AAL",
+        "ABT",
+        "GE",
+        "KNX",
+        "NFLX",
+        "PG",
+        "PLXS",
+        "QQQ",
+        "SPY",
+        "UNP",
+        "VNCE"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/25/01/43155772/us-stock-futures-trade-mixed-after-skirting-record-highs-in-last-session-ge-aerospace-american-airlines-union-pacific-in-focus",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 43156258,
+      "headline": "Asia And Europe Markets Mixed; Dollar Index Ticks Lower - Global Markets Today While US Slept",
+      "created_at": "2025-01-23T12:13:39Z",
+      "updated_at": "2025-01-23T12:13:46Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/forex/25/01/43156258/asia-and-europe-markets-mixed-dollar-index-ticks-lower-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 43158646,
+      "headline": "US Initial Jobless Claims 223K vs 221K Est.; Prior 217K",
+      "created_at": "2025-01-23T13:30:12Z",
+      "updated_at": "2025-01-23T13:30:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43158646/us-initial-jobless-claims-223k-vs-221k-est-prior-217k",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 43158662,
+      "headline": "US Continuing Jobless Claims 1.899M vs 1.86M Est.; Prior 1.853M",
+      "created_at": "2025-01-23T13:30:29Z",
+      "updated_at": "2025-01-23T13:30:30Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43158662/us-continuing-jobless-claims-1-899m-vs-1-86m-est-prior-1-853m",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 43162962,
+      "headline": "Bitcoin, Ethereum, And Dogecoin Fall As Stocks Rally And Sentiment Cools; Samsung And Google Join AR Glasses Race; Tesla Faces A Turbulent First Half – Top Headlines While The U.S. Slept",
+      "created_at": "2025-01-23T15:05:57Z",
+      "updated_at": "2025-01-23T15:05:57Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/01/43162962/bitcoin-ethereum-and-dogecoin-fall-as-stocks-rally-and-sentiment-cools-samsung-and-google-join-ar-glasses-race-tesla-faces-a-turbulent-first-half-top-headlines-while-the-u-s-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 43164586,
+      "headline": "USA Natural Gas Storage -223B Vs -270B Est.; -258B Prior",
+      "created_at": "2025-01-23T15:30:54Z",
+      "updated_at": "2025-01-23T15:30:55Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43164586/usa-natural-gas-storage-223b-vs-270b-est-258b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 43166447,
+      "headline": "President Trump Says U.S. Has Largest Amount Of Oil And Gas Of Any Country And We Are Going To Use It",
+      "created_at": "2025-01-23T16:11:25Z",
+      "updated_at": "2025-01-23T16:11:26Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43166447/president-trump-says-u-s-has-largest-amount-of-oil-and-gas-of-any-country-and-we-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43166478,
+      "headline": "President Trump Says Message To Business Is Make Your Product In America; If You Don't, You Will Have To Pay A Tariff; There Will Be No Better Place To Create Jobs And Build Factories Than U.S.",
+      "created_at": "2025-01-23T16:13:00Z",
+      "updated_at": "2025-01-23T16:13:00Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43166478/president-trump-says-message-to-business-is-make-your-product-in-america-if-you-d",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43166512,
+      "headline": "President Trump Says Will Be Asking Saudi Arabia And OPEC To Bring Down Cost Of Oil",
+      "created_at": "2025-01-23T16:14:55Z",
+      "updated_at": "2025-01-23T16:14:56Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43166512/president-trump-says-will-be-asking-saudi-arabia-and-opec-to-bring-down-cost-of-o",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43166723,
+      "headline": "President Trump Says Will Ask Saudi Prince To Increase U.S. Investment To $1 Trillion",
+      "created_at": "2025-01-23T16:16:18Z",
+      "updated_at": "2025-01-23T16:16:18Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43166723/president-trump-says-will-ask-saudi-prince-to-increase-u-s-investment-to-1-trilli",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43166810,
+      "headline": "President Trump Says Asking NATO Nations To Increase Defense Spending To 5% Of GDP",
+      "created_at": "2025-01-23T16:18:47Z",
+      "updated_at": "2025-01-23T16:18:48Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43166810/president-trump-says-asking-nato-nations-to-increase-defense-spending-to-5-of-gdp",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167010,
+      "headline": "President Trump Says I Will Demand That Interest Rates Drop Immediately",
+      "created_at": "2025-01-23T16:23:55Z",
+      "updated_at": "2025-01-23T16:24:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167010/president-trump-says-i-will-demand-that-interest-rates-drop-immediately",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167120,
+      "headline": "White House Says President Trump, Saudi Crown Prince Spoke About Efforts To Bring Stability To Middle East, Bolster Regional Security, And Combat Terrorism; They Spoke About Saudi Arabia's International Economic Ambitions Over Next Four Years As Well As Trade And Other Opportunities",
+      "created_at": "2025-01-23T16:26:32Z",
+      "updated_at": "2025-01-23T16:26:33Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167120/white-house-says-president-trump-saudi-crown-prince-spoke-about-efforts-to-bring-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167138,
+      "headline": "President Trump Says EU Treats U.S. Very Badly; EU Tariffs Make It Very Difficult To Bring Products Into Europe; EU Needs To Speed Up Regulatory Processes",
+      "created_at": "2025-01-23T16:27:14Z",
+      "updated_at": "2025-01-23T16:29:24Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167138/president-trump-says-eu-treats-u-s-very-badly-eu-tariffs-make-it-very-difficult-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167318,
+      "headline": "President Trump Says Would Agree To Guarantee Security Of Supplies To U.S. Energy To Europe",
+      "created_at": "2025-01-23T16:31:29Z",
+      "updated_at": "2025-01-23T16:31:29Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167318/president-trump-says-would-agree-to-guarantee-security-of-supplies-to-u-s-energy-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167407,
+      "headline": "President Trump Says We Need Double The Energy We Have In U.S. For AI To Be As Big As We Want It; Am Going To Give Emergency Declarations So Building Can Start; We Are Going To Allow Very Rapid Plant Building, They Can Fuel It With Anything They Want",
+      "created_at": "2025-01-23T16:34:39Z",
+      "updated_at": "2025-01-23T16:36:28Z",
+      "symbols": [
+        "AMZN",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "ORCL",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/25/01/43167407/president-trump-says-we-need-double-the-energy-we-have-in-u-s-for-ai-to-be-as-big-as-we-want-it-am-g",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167498,
+      "headline": "President Trump Says Will Bring Corporate Tax Rate To 15% If Product Is Made In U.S.; U.S. To Have The Lowest Corporate Tax Among Developed Countries",
+      "created_at": "2025-01-23T16:38:10Z",
+      "updated_at": "2025-01-23T16:38:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167498/president-trump-says-will-bring-corporate-tax-rate-to-15-if-product-is-made-in-u-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167531,
+      "headline": "President Trump Says Bank Of America Needs To Open To Conservatives",
+      "created_at": "2025-01-23T16:39:27Z",
+      "updated_at": "2025-01-23T16:39:28Z",
+      "symbols": [
+        "BAC",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167531/president-trump-says-bank-of-america-needs-to-open-to-conservatives",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167678,
+      "headline": "President Trump says We Are Going To Be Demanding Respect From Other Nations, Including Canada; I Say To Canada You Can Always Become A State",
+      "created_at": "2025-01-23T16:44:07Z",
+      "updated_at": "2025-01-23T16:44:08Z",
+      "symbols": [
+        "EWC",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167678/president-trump-says-we-are-going-to-be-demanding-respect-from-other-nations-incl",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167707,
+      "headline": "President Trump Says Would Really Like To Be Able To Meet Putin Soon; We Should Get That War Stopped",
+      "created_at": "2025-01-23T16:45:10Z",
+      "updated_at": "2025-01-23T16:45:10Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167707/president-trump-says-would-really-like-to-be-able-to-meet-putin-soon-we-should-ge",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167828,
+      "headline": "President Trump Says China's Xi Called Me; See Relationship Between U.S. And China As Very Good; Hopefully China Can Help Us Stop War In Ukraine",
+      "created_at": "2025-01-23T16:48:02Z",
+      "updated_at": "2025-01-23T16:48:02Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167828/president-trump-says-chinas-xi-called-me-see-relationship-between-u-s-and-china-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43167862,
+      "headline": "President Trump Says Putin Liked The Idea Of Cutting Way Back On Nuclear; Want To See Denuclearization And We Think That Is Very Possible",
+      "created_at": "2025-01-23T16:48:49Z",
+      "updated_at": "2025-01-23T16:48:49Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43167862/president-trump-says-putin-liked-the-idea-of-cutting-way-back-on-nuclear-want-to-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43168253,
+      "headline": "USA Crude Oil Inventories 1.017M\tBarrel Draw Vs 2.100M Barrel Draw Est.; 1.962M Barrel Draw Prior",
+      "created_at": "2025-01-23T17:00:56Z",
+      "updated_at": "2025-01-23T17:00:56Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43168253/usa-crude-oil-inventories-1-017m-barrel-draw-vs-2-100m-barrel-draw-est-1-962m-bar",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43168303,
+      "headline": "USA Gasoline Inventories 2.332M Barrel Build Vs 2.500M Barrel Build Est.; 5.852M Barrel Build Prior",
+      "created_at": "2025-01-23T17:01:29Z",
+      "updated_at": "2025-01-23T17:01:30Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43168303/usa-gasoline-inventories-2-332m-barrel-build-vs-2-500m-barrel-build-est-5-852m-ba",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43168283,
+      "headline": "EIA Weekly Distillates Stocks 3.070M Barrel Draw Vs 0.600M Barrel Build Est.; 3.077M Barrel Build Prior",
+      "created_at": "2025-01-23T17:01:13Z",
+      "updated_at": "2025-01-23T17:02:01Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/25/01/43168283/eia-weekly-distillates-stocks-3-070m-barrel-draw-vs-0-600m-barrel-build-est-3-077m-barrel-build-prio",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43168745,
+      "headline": "'Trump Team Considering Kyle Bass For A Treasury Or Defense Role' - Bloomberg News",
+      "created_at": "2025-01-23T17:13:18Z",
+      "updated_at": "2025-01-23T17:13:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43168745/trump-team-considering-kyle-bass-for-a-treasury-or-defense-role-bloomberg-news",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43169404,
+      "headline": "On CNBC, Bill Baruch Announces Sold QQQ ETF (Invesco QQQ Trust, Series 1) Position",
+      "created_at": "2025-01-23T17:30:15Z",
+      "updated_at": "2025-01-23T17:30:16Z",
+      "symbols": [
+        "QQQ"
+      ],
+      "url": "https://www.benzinga.com/news/25/01/43169404/on-cnbc-bill-baruch-announces-sold-qqq-etf-invesco-qqq-trust-series-1-position",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43171137,
+      "headline": "Benzinga Market Summary: S&P Rises, Oil Falls After Trump Indicates He Will Ask OPEC To Bring Costs Down, Chip Stocks On Watch Following Cautious Demand Outlook From SK Hynix",
+      "created_at": "2025-01-23T18:22:15Z",
+      "updated_at": "2025-01-23T18:22:15Z",
+      "symbols": [
+        "SMH",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43171137/benzinga-market-summary-s-p-rises-oil-falls-after-trump-indicates-he-will-ask-ope",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43172949,
+      "headline": "C-Suite Buy of the Week: Executive Moves from Biotech to Banking",
+      "created_at": "2025-01-23T19:19:58Z",
+      "updated_at": "2025-01-23T19:25:33Z",
+      "symbols": [
+        "INMB",
+        "NMR",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/opinion/25/01/43172949/c-suite-buy-of-the-week-executive-moves-from-biotech-to-banking",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43173759,
+      "headline": "Dow Jones Nears Records, Tech Pullbacks, Treasury Yields Rise Again: What's Driving Markets Thursday?",
+      "created_at": "2025-01-23T19:47:02Z",
+      "updated_at": "2025-01-23T19:47:03Z",
+      "symbols": [
+        "AA",
+        "AAL",
+        "ALK",
+        "ARM",
+        "BTCUSD",
+        "CSX",
+        "DFS",
+        "DIA",
+        "FCX",
+        "GE",
+        "ISRG",
+        "IWM",
+        "KMI",
+        "QQQ",
+        "SOXX",
+        "SPY",
+        "TXN",
+        "UNP",
+        "XLE",
+        "XLI",
+        "XLK",
+        "XLU"
+      ],
+      "url": "https://www.benzinga.com/25/01/43173759/dow-jones-nears-records-tech-pullbacks-treasury-yields-rise-again-whats-driving-markets-thursday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43174534,
+      "headline": "President Trump's Aide Says Trump Signing Order Related To AI; Trump Signing Order Related To Order Related To Crypto; Trump Signing Order Related To Establishing Commission On Science And Technology; Trump Signing Order Related To Recognition Of Tribe",
+      "created_at": "2025-01-23T20:15:53Z",
+      "updated_at": "2025-01-23T20:15:53Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43174534/president-trumps-aide-says-trump-signing-order-related-to-ai-trump-signing-order-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43174796,
+      "headline": "President Trump Says I'm Not Sure We Should Be Spending Anything On NATO; We're Protecting NATO But They're Not Protecting Us",
+      "created_at": "2025-01-23T20:22:54Z",
+      "updated_at": "2025-01-23T20:22:54Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43174796/president-trump-says-im-not-sure-we-should-be-spending-anything-on-nato-were-prot",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43174808,
+      "headline": "President Trump Says He Expects The Fed To Listen To Him On Interest Rates; He Would Consider Talking To Powell On Interest Rates",
+      "created_at": "2025-01-23T20:23:28Z",
+      "updated_at": "2025-01-23T20:23:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43174808/president-trump-says-he-expects-the-fed-to-listen-to-him-on-interest-rates-he-wou",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43174987,
+      "headline": "President Trump Says I Want To Meet Immediately With Russia's Putin; Trump Says Zelenskiy Told Him He's Ready To Make A Deal",
+      "created_at": "2025-01-23T20:30:16Z",
+      "updated_at": "2025-01-23T20:30:17Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43174987/president-trump-says-i-want-to-meet-immediately-with-russias-putin-trump-says-zel",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43175040,
+      "headline": "President Trump Says Would Be Nice If Issues With Iran Can Be Worked Out Without Israel Striking Military Facilities",
+      "created_at": "2025-01-23T20:31:27Z",
+      "updated_at": "2025-01-23T20:31:28Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/01/43175040/president-trump-says-would-be-nice-if-issues-with-iran-can-be-worked-out-without-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 43182640,
+      "headline": "Elizabeth Warren Lists Changes For Elon Musk's DOGE Department, Urges Guantanamo Closure Due To 'Hundreds of Millions' In Annual Costs",
+      "created_at": "2025-01-24T04:14:44Z",
+      "updated_at": "2025-01-24T04:14:46Z",
+      "symbols": [
+        "DOGEUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/01/43182640/elizabeth-warren-lists-changes-for-elon-musks-doge-department-urges-guantanamo-closure-due-to-hundreds-of-millions-in-annual-costs",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

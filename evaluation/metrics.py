@@ -1,3 +1,6 @@
+# 来源归属（2026-10-22）：XI LU 主导方案选择与具体约束，AI 按确认方案生成／重构实现。
+# 本注释不声明全部代码由本人手写；逐项原日志与未确认范围见
+# docs/CORE_CODE_AUTHORSHIP_AND_REFERENCES_CN.md 及 report/ownership_evidence/08_Contribution_Attribution_Matrix_CN.md。
 # =============================================================================
 # function：提供防泄漏的时间切分、事件匹配、延迟、告警负担和置信区间指标。
 # 贡献：面向 MarketStream 事件合同的一对一匹配规则、指标组合和数据结构。

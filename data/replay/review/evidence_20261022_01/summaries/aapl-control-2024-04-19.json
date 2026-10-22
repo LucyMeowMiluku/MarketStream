@@ -1,0 +1,785 @@
+{
+  "interval_id": "aapl-control-2024-04-19",
+  "candidate_kind": "normal",
+  "ticker": "AAPL",
+  "started_at": "2024-04-19T13:30:00Z",
+  "ended_at": "2024-04-19T15:00:00Z",
+  "local_start": "2024-04-19T09:30:00-04:00",
+  "local_end": "2024-04-19T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-18T19:59:00Z",
+      "prior_close": 167.03,
+      "first_minute": "2024-04-19T13:30:00Z",
+      "last_minute": "2024-04-19T14:59:00Z",
+      "first_open": 165.99,
+      "last_close": 165.585,
+      "gap_pct": -0.6226426390468776,
+      "end_vs_prior_pct": -0.86511405136801,
+      "window_return_pct": -0.2439906018434801,
+      "window_range_pct": 0.9368034218928891,
+      "volume": 242879,
+      "raw_artifact": "raw/aapl-control-2024-04-19/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-04-19T14:08:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-18T19:59:00Z",
+      "prior_close": 423.385,
+      "first_minute": "2024-04-19T13:30:00Z",
+      "last_minute": "2024-04-19T14:59:00Z",
+      "first_open": 422.12,
+      "last_close": 419.74,
+      "gap_pct": -0.2987824320653698,
+      "end_vs_prior_pct": -0.8609185493109073,
+      "window_return_pct": -0.5638207144887719,
+      "window_range_pct": 0.9724722827631995,
+      "volume": 285853,
+      "raw_artifact": "raw/aapl-control-2024-04-19/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-18T19:59:00Z",
+      "prior_close": 499.42,
+      "first_minute": "2024-04-19T13:30:00Z",
+      "last_minute": "2024-04-19T14:59:00Z",
+      "first_open": 499.44,
+      "last_close": 498.54,
+      "gap_pct": 0.0040046453886555256,
+      "end_vs_prior_pct": -0.17620439710063218,
+      "window_return_pct": -0.18020182604516766,
+      "window_range_pct": 0.5626301457632553,
+      "volume": 315792,
+      "raw_artifact": "raw/aapl-control-2024-04-19/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 38328610,
+      "headline": "TSMC Cautions Red-Hot Chip Industry Growth Could Cool Amid Declining Automotive Chip Demand",
+      "created_at": "2024-04-19T05:00:50Z",
+      "updated_at": "2024-04-19T05:00:50Z",
+      "symbols": [
+        "AAPL",
+        "NVDA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38328610/tsmc-cautions-red-hot-chip-industry-growth-could-cool-amid-declining-automotive-chip-demand",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38328967,
+      "headline": "Apple Bows To China's Security Concerns: Pulls 2 Meta Products From App Store",
+      "created_at": "2024-04-19T06:03:09Z",
+      "updated_at": "2024-04-19T06:03:10Z",
+      "symbols": [
+        "AAPL",
+        "META"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38328967/apple-bows-to-chinas-security-concerns-pulls-2-meta-products-from-app-store",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38329234,
+      "headline": "Buying The Dip? Jim Cramer And Tom Lee Warn Market Hasn't Hit Rock Bottom Yet: 'Quintessential Wrong Thing To Do'",
+      "created_at": "2024-04-19T06:47:23Z",
+      "updated_at": "2024-04-19T06:47:24Z",
+      "symbols": [
+        "AAPL",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38329234/buying-the-dip-jim-cramer-and-tom-lee-warn-market-hasnt-hit-rock-bottom-yet-quintessential-wrong",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38330069,
+      "headline": "How Taiwan's Dominance In AI And Semiconductor Industry Impacts The Global Market",
+      "created_at": "2024-04-19T08:39:17Z",
+      "updated_at": "2024-04-19T08:39:17Z",
+      "symbols": [
+        "AAPL",
+        "NVDA",
+        "TSMC"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38330069/how-taiwans-dominance-in-ai-and-semiconductor-industry-impacts-the-global-market",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38330468,
+      "headline": "President Biden Weighs More Than $1B in New Arms for Israel,  In Addition to Military Aid Bill Before the House",
+      "created_at": "2024-04-19T09:35:58Z",
+      "updated_at": "2024-04-19T09:35:58Z",
+      "symbols": [
+        "EIS",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38330468/president-biden-weighs-more-than-1b-in-new-arms-for-israel-in-addition-to-military-aid-bill-before-t",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38331303,
+      "headline": "Wall Street On Track For 6th Day Of Losses? Netflix, Geopolitical Tensions Drag Futures Down: Analyst Tells Why Next 2 Weeks Are Pivotal",
+      "created_at": "2024-04-19T10:48:22Z",
+      "updated_at": "2024-04-19T10:48:23Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "AXP",
+        "BTCUSD",
+        "COIN",
+        "FITB",
+        "GOOG",
+        "GOOGL",
+        "HBAN",
+        "ISRG",
+        "META",
+        "NFLX",
+        "NVDA",
+        "PARA",
+        "PG",
+        "QQQ",
+        "RF",
+        "SLB",
+        "SONY",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38331303/wall-street-on-track-for-6th-day-of-losses-netflix-geopolitical-tensions-drag-futures-down-analyst-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38331602,
+      "headline": "Google's DeepMind to Lead Unified AI Charge as Company Seeks to Outpace Microsoft",
+      "created_at": "2024-04-19T11:07:40Z",
+      "updated_at": "2024-04-19T11:07:40Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL",
+        "IXP",
+        "META",
+        "MSFT",
+        "VOX"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38331602/googles-deepmind-to-lead-unified-ai-charge-as-company-seeks-to-outpace-microsoft",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38331978,
+      "headline": "Alibaba and Lenovo Team Up to For AI PCs, Setting New Standards in Tech",
+      "created_at": "2024-04-19T11:30:31Z",
+      "updated_at": "2024-04-19T11:30:32Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "ARM",
+        "BABA",
+        "INTC",
+        "MSFT",
+        "QCOM"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38331978/alibaba-and-lenovo-team-up-to-for-ai-pcs-setting-new-standards-in-tech",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38332435,
+      "headline": "Bitcoin Halving Not Equivalent to Stock Split; Apple Yields to China's Security Demands - Top Headlines Today While US Slept",
+      "created_at": "2024-04-19T11:53:16Z",
+      "updated_at": "2024-04-19T11:53:17Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/04/38332435/bitcoin-halving-not-equivalent-to-stock-split-apple-yields-to-chinas-security-demands-top-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38334234,
+      "headline": "Alibaba's Taobao Launches 3D Shopping App for Apple's Vision Pro - A New Era for Online Retail in China",
+      "created_at": "2024-04-19T13:13:45Z",
+      "updated_at": "2024-04-19T13:13:45Z",
+      "symbols": [
+        "AAPL",
+        "BABA",
+        "CGRO",
+        "PGJ"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38334234/alibabas-taobao-launches-3d-shopping-app-for-apples-vision-pro-a-new-era-for-online-retail-in-china",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38334320,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of April 19, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-04-19T13:16:07Z",
+      "updated_at": "2024-04-19T13:16:08Z",
+      "symbols": [
+        "CORN",
+        "DJT",
+        "ES",
+        "GLD",
+        "HOOD",
+        "NFLX",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/04/38334320/top-10-trending-stocks-on-wallstreetbets-as-of-april-19-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38334831,
+      "headline": "Think Trading In Your iPhone Helps Keep Planet Green? Turns Out There Are Plenty Of Dirty Secrets, Report Reveals",
+      "created_at": "2024-04-19T13:40:34Z",
+      "updated_at": "2024-04-19T13:40:35Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38334831/think-trading-in-your-iphone-helps-keep-planet-green-turns-out-there-are-plenty-of-dirty-secrets-rep",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38334504,
+      "headline": "Israel Strikes Iranian Air Base: Tehran Downplays Attack As Blinken Calls For Calm; Oil Prices Stabilize After Initial Spike",
+      "created_at": "2024-04-19T13:26:23Z",
+      "updated_at": "2024-04-19T13:55:08Z",
+      "symbols": [
+        "BTCUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/04/38334504/israel-strikes-iranian-air-base-tehran-downplays-attack-as-blinken-calls-for-calm-oil-pric",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38335890,
+      "headline": "Fed's Goolsbee Says Progress On U.S. Inflation Has Stalled; 'Makes Sense To Wait' To Get More Clarity Before Moving; Fed's Current Restrictive Monetary Policy 'Appropriate'; Proper Fed Policy Going Forward Will Depend On The Data; Still Hopeful For Return To Improvement On Inflation In Months Ahead",
+      "created_at": "2024-04-19T14:31:36Z",
+      "updated_at": "2024-04-19T14:31:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38335890/feds-goolsbee-says-progress-on-u-s-inflation-has-stalled-makes-sense-to-wait-to-g",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38335960,
+      "headline": "Fed's Goolsbee Says Will Take Longer To Get Inflation Down To 2% Goal",
+      "created_at": "2024-04-19T14:33:59Z",
+      "updated_at": "2024-04-19T14:34:00Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38335960/feds-goolsbee-says-will-take-longer-to-get-inflation-down-to-2-goal",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38335892,
+      "headline": "Fed's Goolsbee Says Persistently High Housing Inflation Is Main Short-Run Problem; Sees More Space For Progress On Services Inflation From Labor Supply Increases; Need To Determine If Strong GDP, Jobs Numbers Are A Sign Of Overheating That Is Driving Up Inflation",
+      "created_at": "2024-04-19T14:31:41Z",
+      "updated_at": "2024-04-19T14:34:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38335892/feds-goolsbee-says-persistently-high-housing-inflation-is-main-short-run-problem-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336000,
+      "headline": "Fed's Goolsbee Says Not All Data Suggest Labor-Market Overheating; Fed Has To Recalibrate,'Wait And See' On Inflation",
+      "created_at": "2024-04-19T14:35:27Z",
+      "updated_at": "2024-04-19T14:35:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336000/feds-goolsbee-says-not-all-data-suggest-labor-market-overheating-fed-has-to-recal",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336061,
+      "headline": "Fed's Goolsbee Says the 'Golden Path' Is More Difficult For 2024",
+      "created_at": "2024-04-19T14:38:50Z",
+      "updated_at": "2024-04-19T14:38:51Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336061/feds-goolsbee-says-the-golden-path-is-more-difficult-for-2024",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336033,
+      "headline": "Market Clubhouse Morning Memo - April 19th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA)",
+      "created_at": "2024-04-19T14:37:03Z",
+      "updated_at": "2024-04-19T14:39:04Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/04/38336033/market-clubhouse-morning-memo-april-19th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336082,
+      "headline": "Fed's Goolsbee Says We Have Done Great On The Employment Mandate But We Have Not Succeeded On The Inflation Mandate",
+      "created_at": "2024-04-19T14:40:29Z",
+      "updated_at": "2024-04-19T14:40:30Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336082/feds-goolsbee-says-we-have-done-great-on-the-employment-mandate-but-we-have-not-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336097,
+      "headline": "Fed's Goolsbee Says If You Hold At This Level Of Restrictiveness For Too Long, You Will Have Start Thinking About The Impact On Jobs; The Policy Tradeoffs Are Harder This Year",
+      "created_at": "2024-04-19T14:41:19Z",
+      "updated_at": "2024-04-19T14:41:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336097/feds-goolsbee-says-if-you-hold-at-this-level-of-restrictiveness-for-too-long-you-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336135,
+      "headline": "Fed's Goolsbee Says We Will Get Inflation To 2% Over A 'Reasonable' Period Of Time",
+      "created_at": "2024-04-19T14:45:44Z",
+      "updated_at": "2024-04-19T14:45:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336135/feds-goolsbee-says-we-will-get-inflation-to-2-over-a-reasonable-period-of-time",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336175,
+      "headline": "Fed's Goolsbee Says Don't Know If Recent Inflation A Sign Of Overheating",
+      "created_at": "2024-04-19T14:47:07Z",
+      "updated_at": "2024-04-19T14:47:08Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336175/feds-goolsbee-says-dont-know-if-recent-inflation-a-sign-of-overheating",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336228,
+      "headline": "Fed's Goolsbee Says The Puzzle On Housing Inflation Is Why Official Data Is So Different From Market Rents Data; Asked About A Possible Rate Hike If Needed, Says 'Don't Think Anything Is Not On The Table'",
+      "created_at": "2024-04-19T14:51:14Z",
+      "updated_at": "2024-04-19T14:51:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336228/feds-goolsbee-says-the-puzzle-on-housing-inflation-is-why-official-data-is-so-dif",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336247,
+      "headline": "Fed's Goolsbee Says It's Not Productive To Speculate On Conditions For Raising, Or Cutting, Rates; Determining Policy Restrictiveness Will Depend On The Data",
+      "created_at": "2024-04-19T14:53:16Z",
+      "updated_at": "2024-04-19T14:53:17Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336247/feds-goolsbee-says-its-not-productive-to-speculate-on-conditions-for-raising-or-c",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38336357,
+      "headline": "House Has Enough Votes To Advance Ukraine Aid, TikTok Bills",
+      "created_at": "2024-04-19T15:00:16Z",
+      "updated_at": "2024-04-19T15:00:17Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38336357/house-has-enough-votes-to-advance-ukraine-aid-tiktok-bills",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38336819,
+      "headline": "Fed's Goolsbee Says I Believe Banks Have Adequate Capital; Balance Sheet Decisions Are Separate From Monetary Policy",
+      "created_at": "2024-04-19T15:07:58Z",
+      "updated_at": "2024-04-19T15:07:58Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336819/feds-goolsbee-says-i-believe-banks-have-adequate-capital-balance-sheet-decisions-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38336971,
+      "headline": "Fed's Goolsbee Says There Are Some Measures In The Economy That Historically Don't Portend Well, Including Rise In Delinquencies; Level Of Delinquencies However Doesn't Look That Different To Pre-Covid; We Don't Want To Be Late On Policy, We Are Forward Looking",
+      "created_at": "2024-04-19T15:15:20Z",
+      "updated_at": "2024-04-19T15:15:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336971/feds-goolsbee-says-there-are-some-measures-in-the-economy-that-historically-dont-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38336999,
+      "headline": "Majority Leader Of The U.S. Senate Chuck Schumer Says Senate Will Take Up Ukraine Aid Bill Quickly",
+      "created_at": "2024-04-19T15:16:10Z",
+      "updated_at": "2024-04-19T15:16:10Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38336999/majority-leader-of-the-u-s-senate-chuck-schumer-says-senate-will-take-up-ukraine-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38337078,
+      "headline": "Fed's Goolsbee Says There Is Nothing About Elections Or The Stock Market In The Fed's Mandate",
+      "created_at": "2024-04-19T15:17:42Z",
+      "updated_at": "2024-04-19T15:17:42Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38337078/feds-goolsbee-says-there-is-nothing-about-elections-or-the-stock-market-in-the-fe",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38337114,
+      "headline": "Ukraine's Zelenskiy Says Ukraine Needs A Minimum Of 7 More Patriot Or Similar Air Defence Systems; Ukrainian Troops Need Long-Range Missiles And Artillery Now; Several Russian Missiles Struck Port Facilities Owned By Ukraine And Singapore During Friday Attack On Odesa",
+      "created_at": "2024-04-19T15:19:27Z",
+      "updated_at": "2024-04-19T15:19:28Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38337114/ukraines-zelenskiy-says-ukraine-needs-a-minimum-of-7-more-patriot-or-similar-air-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38337197,
+      "headline": "Aggressive Stock Dip Buying – Iran Downplays Israeli Attack – Fed Official Talks Rate Hike",
+      "created_at": "2024-04-19T15:23:43Z",
+      "updated_at": "2024-04-19T15:24:59Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38337197/aggressive-stock-dip-buying-iran-downplays-israeli-attack-fed-official-talks-rate-hike",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38337568,
+      "headline": "Iran's Foreign Minister Amirabdollahian Says Mini Drones Did Not Cause Any Damage Or Casualties In Isfahan Despite Efforts By Pro-Israeli Media To Portray A Defeat As A Victory",
+      "created_at": "2024-04-19T15:46:58Z",
+      "updated_at": "2024-04-19T15:46:58Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38337568/irans-foreign-minister-amirabdollahian-says-mini-drones-did-not-cause-any-damage-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38338041,
+      "headline": "U.S. House Minority Leader Jeffries Says Democrats Will Provide A Majority Of Their Caucus' Votes On The Aid Bills",
+      "created_at": "2024-04-19T16:07:58Z",
+      "updated_at": "2024-04-19T16:07:59Z",
+      "symbols": [
+        "EIS",
+        "EWT",
+        "ISRA",
+        "SPY",
+        "USO",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38338041/u-s-house-minority-leader-jeffries-says-democrats-will-provide-a-majority-of-thei",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38338665,
+      "headline": "Apple's Offer To Open Up Mobile Payment Tech To Be Approved By EU Regulators Next Month; Apple Tweaked Proposal After Feedback From Rivals, Users, Sources Say",
+      "created_at": "2024-04-19T16:41:41Z",
+      "updated_at": "2024-04-19T16:41:42Z",
+      "symbols": [
+        "AAPL",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38338665/apples-offer-to-open-up-mobile-payment-tech-to-be-approved-by-eu-regulators-next-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38338854,
+      "headline": "New York State Agency Says Failed To Reach Final Contract Agreements With Three Offshore Wind Projects; New York Says General Electric Decision To Scrap 18 MW Turbine Caused Material Changes To Proposed Offshore Wind Projects",
+      "created_at": "2024-04-19T16:52:36Z",
+      "updated_at": "2024-04-19T16:52:37Z",
+      "symbols": [
+        "GM",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38338854/new-york-state-agency-says-failed-to-reach-final-contract-agreements-with-three-offshore-wind-projec",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38339230,
+      "headline": "\"Officials Plan To Float New Measure In Coming Days; Bank Regulators Revive Work On Dodd-Frank Bonus Rules, Sources Say\" - WSJ",
+      "created_at": "2024-04-19T17:06:08Z",
+      "updated_at": "2024-04-19T17:06:09Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38339230/officials-plan-to-float-new-measure-in-coming-days-bank-regulators-revive-work-on",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38339310,
+      "headline": "U.S. Baker Hughes Oil Rig Count +5 To 511; U.S. Baker Hughes Gas Rig Count -3 To 106; U.S. Baker Hughes Total Rig Count 619 Vs 617 Prior",
+      "created_at": "2024-04-19T17:09:19Z",
+      "updated_at": "2024-04-19T17:09:20Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38339310/u-s-baker-hughes-oil-rig-count-5-to-511-u-s-baker-hughes-gas-rig-count-3-to-106-u",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38339744,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-04-19T17:35:13Z",
+      "updated_at": "2024-04-19T17:35:14Z",
+      "symbols": [
+        "AAPL",
+        "ARM",
+        "FTNT",
+        "INTC",
+        "MARA",
+        "MSFT",
+        "NVDA",
+        "SMCI",
+        "SNOW",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/04/38339744/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38340405,
+      "headline": "White House Says It Has No Comment On Reports On Israel And Iran Overnight",
+      "created_at": "2024-04-19T18:09:28Z",
+      "updated_at": "2024-04-19T18:09:29Z",
+      "symbols": [
+        "EIS",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38340405/white-house-says-it-has-no-comment-on-reports-on-israel-and-iran-overnight",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38340434,
+      "headline": "White House Says Will Continue To Watch The Oil And Energy Markets Carefully; Do Not Want To See Conflict In The Middle East Escalate",
+      "created_at": "2024-04-19T18:12:58Z",
+      "updated_at": "2024-04-19T18:12:59Z",
+      "symbols": [
+        "EIS",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38340434/white-house-says-will-continue-to-watch-the-oil-and-energy-markets-carefully-do-n",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38340748,
+      "headline": "S&P 500 Nears 6-Day Slide, Nasdaq 100 Faces Worst Week Since Late 2022: What's Driving Markets Friday?",
+      "created_at": "2024-04-19T18:37:45Z",
+      "updated_at": "2024-04-19T18:37:46Z",
+      "symbols": [
+        "APO",
+        "AXP",
+        "BTCUSD",
+        "DIA",
+        "FITB",
+        "HBAN",
+        "NFLX",
+        "PARA",
+        "PG",
+        "QQQ",
+        "RF",
+        "SLB",
+        "SMCI",
+        "SMH",
+        "SONY",
+        "SPY",
+        "TSLA",
+        "XLC",
+        "XLE",
+        "XLK",
+        "XLU"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/04/38340748/s-p-500-nears-6-day-slide-nasdaq-100-faces-worst-week-since-late-2022-whats-driving-market",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38340849,
+      "headline": "Taylor Swift Teams Up With TikTok For 'The Tortured Poets Department': Exclusive Features",
+      "created_at": "2024-04-19T18:46:59Z",
+      "updated_at": "2024-04-19T18:48:56Z",
+      "symbols": [
+        "AAPL",
+        "SPOT",
+        "UMGNF"
+      ],
+      "url": "https://www.benzinga.com/general/entertainment/24/04/38340849/taylor-swift-teams-up-with-tiktok-for-the-tortured-poets-department-exclusive-features",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38341623,
+      "headline": "'Cannabis Seizures At Checkpoints By U.S.-Mexico Border Frustrates State-Authorized Pot Industry' - Audacy Citing AP",
+      "created_at": "2024-04-19T19:37:36Z",
+      "updated_at": "2024-04-19T19:37:37Z",
+      "symbols": [
+        "ACB",
+        "AKAN",
+        "CGC",
+        "CRON",
+        "EWW",
+        "GRWG",
+        "HUGE",
+        "IGC",
+        "IMCC",
+        "LFLY",
+        "MAPS",
+        "MJ",
+        "MSOS",
+        "SNDL",
+        "SPY",
+        "TLRY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38341623/cannabis-seizures-at-checkpoints-by-u-s-mexico-border-frustrates-state-authorized-pot-industry-audac",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38342737,
+      "headline": "Nasdaq 100 Notches Worst Day Since Late 2023, Worst Week Since Late 2022 As AI-Driven Chipmakers Tumble: Fed Can Take 'The Rest Of The Year Off'",
+      "created_at": "2024-04-19T20:29:51Z",
+      "updated_at": "2024-04-19T20:29:51Z",
+      "symbols": [
+        "ASML",
+        "NVDA",
+        "QQQ",
+        "SMH",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/large-cap/24/04/38342737/nasdaq-100-notches-worst-day-since-late-2023-worst-week-since-late-2022-as-ai-driven-chipmakers-tu",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38343376,
+      "headline": "Elizabeth Warren Attacks Apple Smartphone 'Monopoly': 'Green Texts On iPhones, They're Ruining Relationships'",
+      "created_at": "2024-04-19T20:57:45Z",
+      "updated_at": "2024-04-19T20:57:46Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/general/politics/24/04/38343376/elizabeth-warren-attacks-apple-smartphone-monopoly-green-texts-on-iphones-theyre-ruining-relatio",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

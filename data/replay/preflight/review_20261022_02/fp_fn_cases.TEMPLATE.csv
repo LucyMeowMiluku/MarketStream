@@ -1,0 +1,1 @@
+﻿run_id,method,case_id,FP_or_FN,interval_id,ticker,truth_event_id,detection_id,trace_lines,source_event_ids,raw_input_paths,factor_values,baseline_hash,thresholds,state_before,state_after,suppression_reason,matching_reason,root_cause,evidence,uncertainty,followup_on_holdout_only

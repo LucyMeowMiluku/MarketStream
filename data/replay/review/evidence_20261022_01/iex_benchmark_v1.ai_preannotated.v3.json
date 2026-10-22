@@ -1,0 +1,553 @@
+{
+  "schema_version": "marketstream-reviewed-labels-v1",
+  "dataset_id": "alpaca-iex-reviewed-benchmark-v1",
+  "data_kind": "real_historical",
+  "provider": "alpaca",
+  "feed": "iex",
+  "timezone": "America/New_York",
+  "frozen": false,
+  "frozen_at": null,
+  "notes": "AI-assisted pre-annotation v3 created from v2 on 2026-09-21. The third pass queried Alpaca IEX one-minute bars and the Alpaca/Benzinga news feed for every interval. Four v2 normal controls were rejected and replaced after exact-window review; anomaly directions were checked against the prior IEX session close so gap-and-reversal sessions are documented correctly. All 24 intervals remain proposed, the registry is not frozen, and this file is not formal ground truth until independent blinded reviewers approve every interval and freeze checksums.",
+  "intervals": [
+    {
+      "interval_id": "aapl-fy24-q2-reaction",
+      "kind": "anomaly",
+      "ticker": "AAPL",
+      "started_at": "2024-05-03T13:30:00Z",
+      "ended_at": "2024-05-03T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "aapl-2024-05-03-earnings",
+      "evidence_urls": [
+        "https://apnews.com/article/3da3918af2387f4921b212194559d610",
+        "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/"
+      ],
+      "confidence": 0.96,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results and buyback announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Unadjusted daily OHLCV cross-check: AAPL +5.98%, SPY +1.24%, residual +4.74%, volume 3.23x prior-20-session median; AP tied the move to the earnings, dividend, and $110 billion buyback. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +7.809%, end of window +6.810% versus prior close, while open-to-end was -0.927%. This confirms an up shock with a partial intrawindow reversal; direction is defined against the prior session close.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "aapl-apple-intelligence-reaction",
+      "kind": "anomaly",
+      "ticker": "AAPL",
+      "started_at": "2024-06-11T13:30:00Z",
+      "ended_at": "2024-06-11T15:00:00Z",
+      "direction": "up",
+      "pattern": "news_confirmed_move",
+      "event_id": "aapl-2024-06-11-apple-intelligence",
+      "evidence_urls": [
+        "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+        "https://www.axios.com/2024/06/11/apple-stock-generative-ai-wwdc"
+      ],
+      "confidence": 0.97,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate reaction window following the June 10 Apple Intelligence announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: AAPL +7.26%, SPY +0.24%, residual +7.02%, volume 3.34x; contemporaneous reporting described a 7.3% AI-related move. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +0.264%, end of window +5.167% versus prior close, open-to-end +4.890%. This confirms the up direction inside the reviewed window.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "aapl-global-risk-off",
+      "kind": "anomaly",
+      "ticker": "AAPL",
+      "started_at": "2024-08-05T13:30:00Z",
+      "ended_at": "2024-08-05T15:00:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "aapl-2024-08-05-risk-off",
+      "evidence_urls": [
+        "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+        "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+      ],
+      "confidence": 0.9,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT anomaly and down direction pending blinded human review, but causal pattern is confounded. Daily cross-check: AAPL -4.82%, SPY -2.91%, opening gap -9.45%, volume 2.29x. The global risk-off shock coincided with Berkshire Hathaway cutting its Apple stake, so cross_asset_shock is not a pure attribution. Exact interval requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -9.394%, end of window -4.763% versus prior close, while open-to-end rebounded +5.111%. This confirms a down opening shock followed by a large partial reversal; direction is defined against the prior session close.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "tsla-fy24-q1-reaction",
+      "kind": "anomaly",
+      "ticker": "TSLA",
+      "started_at": "2024-04-24T13:30:00Z",
+      "ended_at": "2024-04-24T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "tsla-2024-04-24-earnings",
+      "evidence_urls": [
+        "https://ir.tesla.com/press-release/tesla-releases-first-quarter-2024-financial-results",
+        "https://www.investing.com/news/stock-market-news/tesla-jumps-as-musks-promise-of-more-affordable-cars-eases-growth-fears-3392836"
+      ],
+      "confidence": 0.96,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after Q1 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +12.06%, SPY -0.05%, residual +12.11%, opening gap +12.55%, volume 1.88x; Reuters tied the surge to plans for more affordable models following results. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +12.618%, end of window +11.934% versus prior close, while open-to-end was -0.608%. This confirms an up earnings shock with mild post-open retracement.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "tsla-fy24-q2-reaction",
+      "kind": "anomaly",
+      "ticker": "TSLA",
+      "started_at": "2024-07-24T13:30:00Z",
+      "ended_at": "2024-07-24T15:00:00Z",
+      "direction": "down",
+      "pattern": "earnings_reaction",
+      "event_id": "tsla-2024-07-24-earnings",
+      "evidence_urls": [
+        "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2024-financial-results",
+        "https://www.investing.com/news/stock-market-news/tesla-slides-as-bleak-profit-margins-exposes-need-for-affordable-evs-3532970"
+      ],
+      "confidence": 0.97,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after Q2 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA -12.33%, SPY -2.27%, residual -10.07%, opening gap -8.51%; Reuters reported a 12% fall after weak margins and an earnings miss. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -8.632%, end of window -11.644% versus prior close, open-to-end -3.297%. This confirms the down direction.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "tsla-fy24-q3-reaction",
+      "kind": "anomaly",
+      "ticker": "TSLA",
+      "started_at": "2024-10-24T13:30:00Z",
+      "ended_at": "2024-10-24T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "tsla-2024-10-24-earnings",
+      "evidence_urls": [
+        "https://apnews.com/article/81c830cd6d465440f3d8f4bfc12d7487",
+        "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2024-financial-results"
+      ],
+      "confidence": 0.98,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after Q3 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +21.92%, SPY +0.22%, residual +21.70%, opening gap +14.52%, volume 2.94x; AP described one of Tesla's best trading days after results and growth guidance. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +14.459%, end of window +17.194% versus prior close, open-to-end +2.389%. This confirms the up direction.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "nvda-fy24-q4-reaction",
+      "kind": "anomaly",
+      "ticker": "NVDA",
+      "started_at": "2024-02-22T14:30:00Z",
+      "ended_at": "2024-02-22T16:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "nvda-2024-02-22-earnings",
+      "evidence_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024",
+        "https://www.axios.com/2024/02/22/nvidia-stock-price-earnings-ai-chips"
+      ],
+      "confidence": 0.98,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q4 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +16.40%, SPY +2.07%, residual +14.33%, opening gap +11.19%, volume 1.77x; contemporaneous reporting attributed the 16% move to earnings. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +11.301%, end of window +15.137% versus prior close, open-to-end +3.446%. This confirms the up direction.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "nvda-fy25-q1-reaction",
+      "kind": "anomaly",
+      "ticker": "NVDA",
+      "started_at": "2024-05-23T13:30:00Z",
+      "ended_at": "2024-05-23T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "nvda-2024-05-23-earnings",
+      "evidence_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025",
+        "https://www.investing.com/news/stock-market-news/nasdaq-sp-500-futures-pop-as-nvidia-fuels-chip-stocks-rally-3453619"
+      ],
+      "confidence": 0.98,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q1 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +9.32%, SPY -0.73%, residual +10.05%, opening gap +7.45%, volume 2.21x; Reuters tied the move to the revenue outlook, earnings, and stock split. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 90 bars; opening gap versus prior IEX close +7.540%, end of window +9.433% versus prior close, open-to-end +1.760%. This confirms the up direction.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "nvda-fy25-q2-reaction",
+      "kind": "anomaly",
+      "ticker": "NVDA",
+      "started_at": "2024-08-29T13:30:00Z",
+      "ended_at": "2024-08-29T15:00:00Z",
+      "direction": "down",
+      "pattern": "earnings_reaction",
+      "event_id": "nvda-2024-08-29-earnings",
+      "evidence_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025/",
+        "https://www.investing.com/news/stock-market-news/nvidias-forecast-dampens-ai-enthusiasm-in-other-tech-stocks-3592111"
+      ],
+      "confidence": 0.94,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results; direction must be confirmed during review. AI pre-annotation: ACCEPT candidate and down direction pending blinded human review. Daily cross-check: NVDA -6.38%, SPY +0.01%, residual -6.39%, opening gap -3.38%; Reuters reported a greater-than-6% decline because the outlook failed to meet elevated expectations. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -3.639%, end of window -2.724% versus prior close, while open-to-end rebounded +0.950%. This confirms a down earnings shock with a partial intrawindow reversal; direction is defined against the prior session close.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "spy-december-fomc-reaction",
+      "kind": "anomaly",
+      "ticker": "SPY",
+      "started_at": "2024-12-18T19:00:00Z",
+      "ended_at": "2024-12-18T20:30:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "spy-2024-12-18-fomc",
+      "evidence_urls": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+        "https://www.investing.com/news/economy-news/stocks-skid-after-fed-signals-it-will-slow-down-its-easing-3780547"
+      ],
+      "confidence": 0.99,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate FOMC statement and press-conference reaction window. AI pre-annotation: ACCEPT candidate pending blinded human review. The 19:00Z start aligns with the 2:00 p.m. ET FOMC decision. Daily cross-check: SPY -2.98%, intraday -2.93%, volume 2.96x; Reuters reported the S&P 500 lost about 2.96% after the Fed signaled fewer cuts. Intraday IEX review should confirm the precise reaction onset. Alpaca IEX 1-minute audit: 91 bars; opening level at interval start was +0.040% versus the prior IEX close, end of window -1.796%, and interval return -1.835%. The exact interval contains the rate decision and projection headlines, confirming the down FOMC reaction.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ]
+    },
+    {
+      "interval_id": "qqq-global-risk-off",
+      "kind": "anomaly",
+      "ticker": "QQQ",
+      "started_at": "2024-08-05T13:30:00Z",
+      "ended_at": "2024-08-05T15:00:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "qqq-2024-08-05-risk-off",
+      "evidence_urls": [
+        "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+        "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+      ],
+      "confidence": 0.94,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: QQQ -2.98%, SPY -2.91%, opening gap -5.36%, volume 2.14x; Reuters described a broad risk-off selloff led by recession fears. Because much of the loss was an opening gap followed by an intraday rebound, the exact 90-minute anomaly boundary requires IEX review. Alpaca IEX 1-minute audit: 89 bars; opening gap versus prior IEX close -5.363%, end of window -3.283% versus prior close, while open-to-end rebounded +2.197%. This confirms a down opening shock followed by a partial reversal; direction is defined against the prior session close.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "spy-reciprocal-tariff-reaction",
+      "kind": "anomaly",
+      "ticker": "SPY",
+      "started_at": "2025-04-03T13:30:00Z",
+      "ended_at": "2025-04-03T15:00:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "spy-2025-04-03-tariff",
+      "evidence_urls": [
+        "https://apnews.com/article/6f7c844f6fbdff738395b6f3eb795b40",
+        "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/"
+      ],
+      "confidence": 0.99,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "notes": "Candidate first 90 regular-session minutes after the April 2 reciprocal-tariff announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: SPY -4.93%, opening gap -3.44%, volume 1.85x; AP reported the S&P 500 fell 4.8% after the tariff announcement. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -3.454%, end of window -4.298% versus prior close, open-to-end -0.875%. This confirms the down direction.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ]
+    },
+    {
+      "interval_id": "aapl-control-2024-05-17",
+      "kind": "normal",
+      "ticker": "AAPL",
+      "started_at": "2024-05-17T13:30:00Z",
+      "ended_at": "2024-05-17T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for aapl-control-2024-04-19. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Unadjusted daily cross-check: AAPL +0.02%, SPY +0.14%, residual -0.13%, opening gap -0.17%, intraday +0.19%, volume 0.78x prior-20-session median. Apple’s official newsroom archive shows no same-day corporate release, and the first-pass macro/news screen found no clear material catalyst in the 09:30-11:00 ET window. Absence of material news is not proven without a complete archive. Alpaca IEX 1-minute audit: 86 bars, open-to-end +0.365%, high-low range 0.830%, max absolute 1-minute move 0.301%, max absolute 5-minute move 0.292%. The only AAPL-tagged item was a generic multi-ticker morning memo; no material firm-specific headline was found in-window.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.82,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/AAPL/history/",
+        "https://www.apple.com/newsroom/archive/?page=35",
+        "https://www.bls.gov/schedule/2024/"
+      ]
+    },
+    {
+      "interval_id": "aapl-control-2024-06-27",
+      "kind": "normal",
+      "ticker": "AAPL",
+      "started_at": "2024-06-27T13:30:00Z",
+      "ended_at": "2024-06-27T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for aapl-control-2024-05-29 after minute-level rejection of the prior candidate. AI third-pass screen: RETAIN with moderate confidence pending blinded human review. Daily cross-check: AAPL +0.40%, SPY +0.16%, residual +0.24%, volume 0.69x prior-20-session median. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.792%, high-low range 1.556%, max absolute 1-minute move 0.234%, max absolute 5-minute move 0.464%. The in-window Alpaca news feed contained broad technology headlines about TSMC and Amazon but no clear Apple-specific catalyst. A complete independent news review is still required.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.66,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/AAPL/history/",
+        "https://www.apple.com/newsroom/archive/",
+        "https://www.bls.gov/schedule/2024/"
+      ]
+    },
+    {
+      "interval_id": "aapl-control-2024-07-08",
+      "kind": "normal",
+      "ticker": "AAPL",
+      "started_at": "2024-07-08T13:30:00Z",
+      "ended_at": "2024-07-08T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for aapl-control-2024-07-22. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: AAPL +0.65%, SPY +0.12%, residual +0.54%, opening gap +0.33%, intraday +0.32%, volume 0.79x. Official BLS and Federal Reserve calendars show no major scheduled release or public Fed communication during the 09:30-11:00 ET interval; the Fed consumer-credit release was at 15:00 ET. No clear same-day Apple catalyst was found in the first-pass screen. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.720%, high-low range 1.814%, max absolute 1-minute move 0.375%, max absolute 5-minute move 1.039%. Only a generic multi-ticker morning memo was found; retain with moderate confidence because the 5-minute move is less quiet than the best controls.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.64,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/AAPL/history/",
+        "https://www.bls.gov/schedule/2024/",
+        "https://www.federalreserve.gov/newsevents/2024-july.htm"
+      ]
+    },
+    {
+      "interval_id": "tsla-control-2024-02-21",
+      "kind": "normal",
+      "ticker": "TSLA",
+      "started_at": "2024-02-21T14:30:00Z",
+      "ended_at": "2024-02-21T16:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for tsla-control-2024-04-10. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: TSLA +0.52%, SPY +0.09%, residual +0.43%, opening gap -0.21%, intraday +0.73%, volume 0.95x. Tesla’s investor-relations calendar shows no earnings or delivery release that day, and no clear material Tesla catalyst was identified. The FOMC minutes were released at 14:00 ET, after the 09:30-11:00 ET evaluation window. Alpaca IEX 1-minute audit: 91 bars, open-to-end +0.831%, high-low range 3.249%, max absolute 1-minute move 0.637%, max absolute 5-minute move 0.967%. No material TSLA-specific headline was found, but the range is large in absolute terms; retain only relative to TSLA's high-volatility baseline.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.62,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/TSLA/history/",
+        "https://ir.tesla.com/",
+        "https://www.bls.gov/schedule/2024/",
+        "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+      ]
+    },
+    {
+      "interval_id": "tsla-control-2024-07-10",
+      "kind": "normal",
+      "ticker": "TSLA",
+      "started_at": "2024-07-10T13:30:00Z",
+      "ended_at": "2024-07-10T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN only as a low-confidence normal candidate pending full news and intraday review. Daily cross-check: TSLA +0.35%, SPY +0.99%, residual -0.64%, volume 1.38x. The close-to-close move is ordinary, but the stock was in a high-volatility multi-session rally and the first-pass news screen cannot establish absence of a material catalyst. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.611%, high-low range 2.973%, max absolute 1-minute move 0.636%, max absolute 5-minute move 1.325%. No material TSLA-specific headline was found, but this remains the weakest high-volatility control and should receive priority human review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.5,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/TSLA/history/"
+      ]
+    },
+    {
+      "interval_id": "tsla-control-2024-10-15",
+      "kind": "normal",
+      "ticker": "TSLA",
+      "started_at": "2024-10-15T13:30:00Z",
+      "ended_at": "2024-10-15T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for tsla-control-2024-10-10. AI second-pass screen: RETAIN only as a lower-confidence normal candidate pending blinded human and intraday IEX review. Daily cross-check: TSLA +0.19%, SPY -0.78%, residual +0.96%, opening gap +0.39%, intraday -0.20%, volume 0.77x. This is several sessions after the robotaxi event and before the October 23 earnings release; contemporaneous coverage mentions routine EV-sales outlook and post-event debate but no clearly dominant same-day catalyst. Because event after-effects may persist, a human may still reject it. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.404%, high-low range 3.250%, max absolute 1-minute move 0.509%, max absolute 5-minute move 1.220%. No in-window TSLA headline was found after filtering provider timestamps, but event after-effects remain a concern.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.52,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/TSLA/history/",
+        "https://ir.tesla.com/press?page=4",
+        "https://www.zacks.com/stock/news/2350346/company-news-for-oct-15-2024"
+      ]
+    },
+    {
+      "interval_id": "nvda-control-2024-02-08",
+      "kind": "normal",
+      "ticker": "NVDA",
+      "started_at": "2024-02-08T14:30:00Z",
+      "ended_at": "2024-02-08T16:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -0.65%, SPY +0.04%, residual -0.70%, volume 0.87x. No clear same-day firm-specific or major macro catalyst was identified in the first-pass search, but absence of news is not yet proven. Alpaca IEX 1-minute audit: 90 bars, open-to-end +0.499%, high-low range 1.819%, max absolute 1-minute move 0.824%, max absolute 5-minute move 1.423%. No NVDA-tagged headline was found in the exact interval; retain with moderate confidence because short-horizon volatility is not minimal.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.68,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/NVDA/history/"
+      ]
+    },
+    {
+      "interval_id": "nvda-control-2024-09-13",
+      "kind": "normal",
+      "ticker": "NVDA",
+      "started_at": "2024-09-13T13:30:00Z",
+      "ended_at": "2024-09-13T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for nvda-control-2024-05-09 after minute-level rejection of the prior candidate. AI third-pass screen: RETAIN with moderate confidence pending blinded human review. Daily cross-check: NVDA -0.03%, SPY +0.54%, residual -0.56%, volume 0.73x prior-20-session median. Alpaca IEX 1-minute audit: 91 bars, open-to-end +0.446%, high-low range 1.973%, max absolute 1-minute move 0.580%, max absolute 5-minute move 1.074%; no NVDA-tagged headline appeared in the exact interval. Preliminary Michigan sentiment at 10:00 ET overlaps the window, so a human reviewer must decide whether this scheduled macro release disqualifies the control.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.62,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/NVDA/history/",
+        "https://nvidianews.nvidia.com/news/nvid-?page=92",
+        "https://www.bls.gov/schedule/2024/09_sched.htm",
+        "https://www.federalreserve.gov/newsevents/2024-september.htm"
+      ]
+    },
+    {
+      "interval_id": "nvda-control-2024-09-23",
+      "kind": "normal",
+      "ticker": "NVDA",
+      "started_at": "2024-09-23T13:30:00Z",
+      "ended_at": "2024-09-23T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for nvda-control-2024-08-15. AI second-pass screen: RETAIN with moderate confidence pending blinded human and intraday IEX review. Daily cross-check: NVDA +0.22%, SPY +0.25%, residual -0.03%, opening gap +0.47%, intraday -0.25%, volume 0.63x. The broad market was described as a quiet session. NVIDIA posted routine ecosystem/government-partnership newsroom items, and flash PMIs were released at 09:45 ET, but neither produced a material daily NVDA move. A human reviewer must decide whether the PMI overlap or company posts disqualify the exact interval. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.859%, high-low range 1.837%, max absolute 1-minute move 0.479%, max absolute 5-minute move 0.569%. Two broad/sector headlines appeared at 14:59Z near the interval end; retain with moderate confidence pending human review of the flash-PMI overlap.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.6,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/NVDA/history/",
+        "https://nvidianews.nvidia.com/news/nvid-?page=91",
+        "https://www.bls.gov/schedule/2024/09_sched.htm",
+        "https://apnews.com/article/efe102c3b9007cb9abff468aa006f995"
+      ]
+    },
+    {
+      "interval_id": "spy-control-2024-12-09",
+      "kind": "normal",
+      "ticker": "SPY",
+      "started_at": "2024-12-09T19:00:00Z",
+      "ended_at": "2024-12-09T20:30:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for spy-control-2024-12-05 after the prior candidate was found to overlap a California earthquake and tsunami warning. AI third-pass screen: RETAIN as a time-of-day-matched normal candidate pending blinded human review. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.245%, high-low range 0.272%, max absolute 1-minute move 0.053%, max absolute 5-minute move 0.078%; no SPY-tagged headline appeared in the exact 14:00-15:30 ET interval. The BLS calendar lists no major release on December 9, and the Federal Reserve Board calendar lists no public speech, Beige Book, or FOMC event in this window.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ],
+      "confidence": 0.9,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/SPY/history/",
+        "https://www.bls.gov/schedule/2024/12_sched_list.htm",
+        "https://www.federalreserve.gov/newsevents/2024-december.htm"
+      ]
+    },
+    {
+      "interval_id": "qqq-control-2024-07-08",
+      "kind": "normal",
+      "ticker": "QQQ",
+      "started_at": "2024-07-08T13:30:00Z",
+      "ended_at": "2024-07-08T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for qqq-control-2024-07-22. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: QQQ +0.24%, SPY +0.12%, residual +0.12%, opening gap +0.07%, intraday +0.16%, volume 0.85x. Official BLS and Federal Reserve calendars show no major scheduled release or public Fed communication during 09:30-11:00 ET; the Fed consumer-credit release was at 15:00 ET. The first-pass news screen found no broad shock in the candidate window. Alpaca IEX 1-minute audit: 80 bars, open-to-end -0.096%, high-low range 0.264%, max absolute 1-minute move 0.134%, max absolute 5-minute move 0.129%. Only a generic multi-ticker morning memo was found; this is one of the cleanest retained controls.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "SPY"
+      ],
+      "confidence": 0.86,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/QQQ/history/",
+        "https://www.bls.gov/schedule/2024/",
+        "https://www.federalreserve.gov/newsevents/2024-july.htm"
+      ]
+    },
+    {
+      "interval_id": "spy-control-2025-01-23",
+      "kind": "normal",
+      "ticker": "SPY",
+      "started_at": "2025-01-23T14:30:00Z",
+      "ended_at": "2025-01-23T16:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Replacement for spy-control-2025-02-18 after the prior candidate was found to overlap housing data and repeated Fed commentary. AI third-pass screen: RETAIN with moderate confidence pending blinded human review. Daily cross-check: SPY +0.55%. Alpaca IEX 1-minute audit: open-to-end +0.211%, high-low range 0.250%, max absolute 1-minute move 0.055%, max absolute 5-minute move 0.089%. The exact window contained only a broad overnight summary and a natural-gas storage release tagged to SPY; AP described the full session as relatively quiet. President Trump spoke later in the session, so review must confirm the 09:30-11:00 ET boundary is clean enough.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ],
+      "confidence": 0.7,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-21T01:20:54.742Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/SPY/history/",
+        "https://www.federalreserve.gov/newsevents/2025-january.htm",
+        "https://apnews.com/article/2467c80e341dc7c982c78f14d3ef6300",
+        "https://www.investing.com/news/economy-news/futures-subdued-after-previous-sessions-jump-data-earnings-on-tap-3826533"
+      ]
+    }
+  ]
+}

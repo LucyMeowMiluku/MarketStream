@@ -1,0 +1,535 @@
+{
+  "interval_id": "aapl-control-2024-07-22",
+  "candidate_kind": "normal",
+  "ticker": "AAPL",
+  "started_at": "2024-07-22T13:30:00Z",
+  "ended_at": "2024-07-22T15:00:00Z",
+  "local_start": "2024-07-22T09:30:00-04:00",
+  "local_end": "2024-07-22T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-22T13:51:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-19T19:59:00Z",
+      "prior_close": 224.44,
+      "first_minute": "2024-07-22T13:30:00Z",
+      "last_minute": "2024-07-22T14:59:00Z",
+      "first_open": 227.335,
+      "last_close": 225.99,
+      "gap_pct": 1.2898770272678606,
+      "end_vs_prior_pct": 0.6906077348066253,
+      "window_return_pct": -0.5916378912178111,
+      "window_range_pct": 0.9303450854465916,
+      "volume": 180521,
+      "raw_artifact": "raw/aapl-control-2024-07-22/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 84,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-22T13:34:00+00:00",
+        "2024-07-22T14:24:00+00:00",
+        "2024-07-22T14:37:00+00:00",
+        "2024-07-22T14:44:00+00:00",
+        "2024-07-22T14:47:00+00:00",
+        "2024-07-22T14:55:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-19T19:59:00Z",
+      "prior_close": 475.31,
+      "first_minute": "2024-07-22T13:30:00Z",
+      "last_minute": "2024-07-22T14:59:00Z",
+      "first_open": 481.14,
+      "last_close": 481.17,
+      "gap_pct": 1.2265679240916372,
+      "end_vs_prior_pct": 1.2328795943699955,
+      "window_return_pct": 0.0062351914203784276,
+      "window_range_pct": 0.6515775034293534,
+      "volume": 94713,
+      "raw_artifact": "raw/aapl-control-2024-07-22/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-22T14:37:00+00:00",
+        "2024-07-22T14:51:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-19T19:59:00Z",
+      "prior_close": 548.94,
+      "first_minute": "2024-07-22T13:30:00Z",
+      "last_minute": "2024-07-22T14:59:00Z",
+      "first_open": 552.97,
+      "last_close": 553.77,
+      "gap_pct": 0.7341421648996205,
+      "end_vs_prior_pct": 0.8798775822494109,
+      "window_return_pct": 0.1446733095827879,
+      "window_range_pct": 0.5497585764146271,
+      "volume": 183163,
+      "raw_artifact": "raw/aapl-control-2024-07-22/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 39877477,
+      "headline": "Microsoft Blames European Commission Agreement As Reason It Can't Secure Windows Like Apple Secures MacOS After CrowdStrike Outage",
+      "created_at": "2024-07-22T08:42:32Z",
+      "updated_at": "2024-07-22T08:42:33Z",
+      "symbols": [
+        "AAPL",
+        "CRWD",
+        "MSFT"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39877477/microsoft-blames-european-commission-agreement-as-reason-it-cant-secure-windows-like-apple-secures-m",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39878601,
+      "headline": "Reuters Reported  Nvidia Working On Version Of Its New Flagship AI Chips For The China Market, Compatible With U.S. Export Controls",
+      "created_at": "2024-07-22T10:11:16Z",
+      "updated_at": "2024-07-22T10:11:17Z",
+      "symbols": [
+        "FXI",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39878601/reuters-reported-nvidia-working-on-version-of-its-new-flagship-ai-chips-for-the-china-market-compati",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39878918,
+      "headline": "Asia Down, Europe Markets Advance; Dollar Retreats While Gold Holds Above $2,400 - Global Markets Today While US Slept",
+      "created_at": "2024-07-22T10:36:26Z",
+      "updated_at": "2024-07-22T10:36:27Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "CRWD",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/07/39878918/asia-down-europe-markets-advance-dollar-retreats-while-gold-holds-above-2-400-global-markets-today-w",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39879656,
+      "headline": "What's Going On With AI Chip Stocks Nvidia, AMD And Taiwan Semi On Monday?",
+      "created_at": "2024-07-22T11:07:17Z",
+      "updated_at": "2024-07-22T11:07:18Z",
+      "symbols": [
+        "AMD",
+        "FXI",
+        "NVDA",
+        "SPY",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/government/24/07/39879656/whats-going-on-with-ai-chip-stocks-nvidia-amd-and-taiwan-semi-on-monday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39880691,
+      "headline": "Wall Street Set To Rebound Amid Hopes Of Strong Earnings: 'Political Uncertainty' Caused By Biden Stepping Down Could Be 'Catalyst For Market Volatility,' Says Analyst",
+      "created_at": "2024-07-22T11:51:42Z",
+      "updated_at": "2024-07-22T11:51:43Z",
+      "symbols": [
+        "AGYS",
+        "BTCUSD",
+        "CLF",
+        "CRWD",
+        "GOOG",
+        "GOOGL",
+        "NUE",
+        "NVDA",
+        "NXPI",
+        "QQQ",
+        "SPY",
+        "TSLA",
+        "VZ"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39880691/wall-street-set-to-rebound-amid-hopes-of-strong-earnings-political-uncertainty-caused-by-biden-step",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39881734,
+      "headline": "Chicago Fed National Activity For June 0.05 Vs. -0.09; 0.23 Prior",
+      "created_at": "2024-07-22T12:30:20Z",
+      "updated_at": "2024-07-22T12:30:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39881734/chicago-fed-national-activity-for-june-0-05-vs-0-09-0-23-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39883138,
+      "headline": "Trump vs. Harris: First Poll Post-Biden Exit Shows Majority Approval; Potential Impact On Trump's Chances; US Cybersecurity Official Criticizes Crowdstrike's Faulty Microsoft Windows Update - Top Headlines Today While US Slept",
+      "created_at": "2024-07-22T12:48:59Z",
+      "updated_at": "2024-07-22T12:48:59Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/07/39883138/trump-vs-harris-first-poll-post-biden-exit-shows-majority-approval-potential-impact-on-tru",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39884072,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of July 22 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-07-22T13:19:58Z",
+      "updated_at": "2024-07-22T13:19:59Z",
+      "symbols": [
+        "AI",
+        "AMD",
+        "CRWD",
+        "DJT",
+        "LOT",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "TSM",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/07/39884072/top-10-trending-stocks-on-wallstreetbets-as-of-july-22-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39884415,
+      "headline": "Senator Dick Durbin Endorses Kamala Harris For President",
+      "created_at": "2024-07-22T13:36:06Z",
+      "updated_at": "2024-07-22T13:36:07Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39884415/senator-dick-durbin-endorses-kamala-harris-for-president",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39884731,
+      "headline": "Benzinga Market Summary: Biden Drops Out Of Race And Endorses Harris, Crowdstrike Shares Continue To Fall Following Global Outage, Israel's Netanyahu To Visit Washington, Verizon Slips On Revenue Miss",
+      "created_at": "2024-07-22T13:51:32Z",
+      "updated_at": "2024-07-22T13:51:32Z",
+      "symbols": [
+        "CRWD",
+        "EIS",
+        "SPY",
+        "VZ"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39884731/benzinga-market-summary-biden-drops-out-of-race-and-endorses-harris-crowdstrike-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39884825,
+      "headline": "Illinois Governor J.B. Pritzker Endorses Harris For President",
+      "created_at": "2024-07-22T13:59:10Z",
+      "updated_at": "2024-07-22T13:59:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39884825/illinois-governor-j-b-pritzker-endorses-harris-for-president",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39885391,
+      "headline": "Check Out What Whales Are Doing With AAPL",
+      "created_at": "2024-07-22T14:16:33Z",
+      "updated_at": "2024-07-22T14:16:34Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/07/39885391/check-out-what-whales-are-doing-with-aapl",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39885764,
+      "headline": "Evercore Founder Roger Altman Endorses Kamala Harris",
+      "created_at": "2024-07-22T14:32:08Z",
+      "updated_at": "2024-07-22T14:32:08Z",
+      "symbols": [
+        "EVR",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39885764/evercore-founder-roger-altman-endorses-kamala-harris",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39885896,
+      "headline": "Stock Market Game Plan For Investors After Biden Withdraws",
+      "created_at": "2024-07-22T14:39:14Z",
+      "updated_at": "2024-07-22T14:41:16Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/07/39885896/stock-market-game-plan-for-investors-after-biden-withdraws",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39886199,
+      "headline": "CrowdStrike Faces Downgrades Amid Concerns Over Pricing and Renewals Following Disruption",
+      "created_at": "2024-07-22T14:51:07Z",
+      "updated_at": "2024-07-22T14:51:08Z",
+      "symbols": [
+        "AAPL",
+        "CRWD",
+        "MSFT"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39886199/crowdstrike-faces-downgrades-amid-concerns-over-pricing-and-renewals-following-disruption",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39886297,
+      "headline": "Apple Slashes Hollywood Strategy, Pulls Back On Streaming Ambitions As Netflix Dominates: Report",
+      "created_at": "2024-07-22T14:57:10Z",
+      "updated_at": "2024-07-22T15:34:34Z",
+      "symbols": [
+        "AAPL",
+        "NFLX"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39886297/apple-adjusts-hollywood-approach-cuts-costs-on-original-shows-report",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 39888197,
+      "headline": "LIVE: Vice President Kamala Harris delivers remarks at NCAA event at the White House — 7/22/24",
+      "created_at": "2024-07-22T15:44:38Z",
+      "updated_at": "2024-07-22T15:44:38Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39888197/live-vice-president-kamala-harris-delivers-remarks-at-ncaa-event-at-the-white-house-72224",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39888275,
+      "headline": "U.S. Vice President Harris Says Biden Feeling Much Better, Recovering Fast From COVID; Biden's Legacy Of Accomplishment Is Unmatched In Modern History",
+      "created_at": "2024-07-22T15:48:44Z",
+      "updated_at": "2024-07-22T15:48:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39888275/u-s-vice-president-harris-says-biden-feeling-much-better-recovering-fast-from-covid-bidens-legacy-of",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39888629,
+      "headline": "Michigan Governor Whitmer Endorses Harris For President; Will Serve As Co-Chair Of Harris Campaign",
+      "created_at": "2024-07-22T16:03:18Z",
+      "updated_at": "2024-07-22T16:03:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39888629/michigan-governor-whitmer-endorses-harris-for-president-will-serve-as-co-chair-of-harris-campaign",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39889264,
+      "headline": "\"Apple TV+ Expenditure Has Crossed $20B, Making It Unsustainable; Company Executive Taking Various Measures To Bring Costs Down Considerably\" - WCCFtech",
+      "created_at": "2024-07-22T16:36:09Z",
+      "updated_at": "2024-07-22T16:36:09Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39889264/apple-tv-expenditure-has-crossed-20b-making-it-unsustainable-company-executive-taking-various-measur",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39889489,
+      "headline": "Federal Communications Commission Says AT&T Wireless Outage In February Blocked More Than 92M U.S. Calls, Prevented More Than 25,000 Attempts To Reach 911",
+      "created_at": "2024-07-22T16:46:23Z",
+      "updated_at": "2024-07-22T16:46:24Z",
+      "symbols": [
+        "SPY",
+        "T"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39889489/federal-communications-commission-says-at-t-wireless-outage-in-february-blocked-more-than-92m-u-s-ca",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39889704,
+      "headline": "EXCLUSIVE: Maryland Delegate Says State Democratic Party Unanimously Endorses Kamala Harris, Says Rules Committee Of DNC Will Be Meeting In Days Ahead, Expects Online Vote To Be Completed Prior To Aug. 7",
+      "created_at": "2024-07-22T17:00:00Z",
+      "updated_at": "2024-07-22T17:00:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39889704/exclusive-maryland-delegate-says-state-democratic-party-unanimously-endorses-kamala-harris-says-rule",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39890258,
+      "headline": "Former House Speaker Pelosi Endorses Harris For President",
+      "created_at": "2024-07-22T17:24:10Z",
+      "updated_at": "2024-07-22T17:24:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39890258/former-house-speaker-pelosi-endorses-harris-for-president",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39890431,
+      "headline": "10 Information Technology Stocks Whale Activity In Today's Session",
+      "created_at": "2024-07-22T17:35:14Z",
+      "updated_at": "2024-07-22T17:35:15Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "CRWD",
+        "DELL",
+        "IREN",
+        "MARA",
+        "NVDA",
+        "QCOM",
+        "RIOT",
+        "SMCI"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/07/39890431/10-information-technology-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39890449,
+      "headline": "US Stocks Rebound As Tech Surges, CrowdStrike Continues Selloff, Oil Hits 1-Month Lows: What's Driving Markets Monday?",
+      "created_at": "2024-07-22T17:36:57Z",
+      "updated_at": "2024-07-22T17:36:59Z",
+      "symbols": [
+        "BRO",
+        "BTCUSD",
+        "CDNS",
+        "CRWD",
+        "DIA",
+        "IQV",
+        "MAT",
+        "NUE",
+        "NVDA",
+        "NXPI",
+        "SMH",
+        "SOXX",
+        "SPY",
+        "TFC",
+        "TLT",
+        "USO",
+        "VZ",
+        "WRB",
+        "XLE",
+        "XLK",
+        "XLV"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39890449/us-stocks-rebound-as-tech-surges-crowdstrike-continues-selloff-oil-hits-1-month-lows-whats-drivi",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39891874,
+      "headline": "Harris Campaign Aims To Secure Enough Delegates For Nomination By End Of Wednesday",
+      "created_at": "2024-07-22T19:03:18Z",
+      "updated_at": "2024-07-22T19:03:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39891874/harris-campaign-aims-to-secure-enough-delegates-for-nomination-by-end-of-wednesday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39895656,
+      "headline": "President Biden Tells Campaign Staff In Phone Call \"Embrace\" Kamala; Says I'm Going To Be Out On The Campaign Trail For Kamala Harris; I Won't Be On The Ticket But I'm Going To Be Fully Engaged; We're Going To Keep Working To End The War In Gaza; I'll Be Doing Whatever Kamala Wants Me Or Needs Me To Do",
+      "created_at": "2024-07-22T21:54:04Z",
+      "updated_at": "2024-07-22T21:54:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39895656/president-biden-tells-campaign-staff-in-phone-call-embrace-kamala-says-im-going-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39897418,
+      "headline": "Reuters Reports Harris Campaign Secures Enough Delegates To Clinch Democratic Presidential Nomination, Citing Campaign Sources",
+      "created_at": "2024-07-23T01:47:22Z",
+      "updated_at": "2024-07-23T01:47:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39897418/reuters-reports-harris-campaign-secures-enough-delegates-to-clinch-democratic-presidential-nominatio",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

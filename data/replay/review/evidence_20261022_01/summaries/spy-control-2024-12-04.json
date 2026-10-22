@@ -1,0 +1,899 @@
+{
+  "interval_id": "spy-control-2024-12-04",
+  "candidate_kind": "normal",
+  "ticker": "SPY",
+  "started_at": "2024-12-04T19:00:00Z",
+  "ended_at": "2024-12-04T20:30:00Z",
+  "local_start": "2024-12-04T14:00:00-05:00",
+  "local_end": "2024-12-04T15:30:00-05:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 66,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-12-04T19:03:00+00:00",
+        "2024-12-04T19:04:00+00:00",
+        "2024-12-04T19:05:00+00:00",
+        "2024-12-04T19:06:00+00:00",
+        "2024-12-04T19:08:00+00:00",
+        "2024-12-04T19:09:00+00:00",
+        "2024-12-04T19:12:00+00:00",
+        "2024-12-04T19:13:00+00:00",
+        "2024-12-04T19:14:00+00:00",
+        "2024-12-04T19:15:00+00:00",
+        "2024-12-04T19:21:00+00:00",
+        "2024-12-04T19:39:00+00:00",
+        "2024-12-04T19:47:00+00:00",
+        "2024-12-04T19:48:00+00:00",
+        "2024-12-04T19:49:00+00:00",
+        "2024-12-04T19:54:00+00:00",
+        "2024-12-04T19:55:00+00:00",
+        "2024-12-04T19:56:00+00:00",
+        "2024-12-04T19:58:00+00:00",
+        "2024-12-04T19:59:00+00:00",
+        "2024-12-04T20:02:00+00:00",
+        "2024-12-04T20:16:00+00:00",
+        "2024-12-04T20:26:00+00:00",
+        "2024-12-04T20:27:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-12-03T20:59:00Z",
+      "prior_close": 516.95,
+      "first_minute": "2024-12-04T19:00:00Z",
+      "last_minute": "2024-12-04T20:29:00Z",
+      "first_open": 521.5,
+      "last_close": 522.81,
+      "gap_pct": 0.8801624915368844,
+      "end_vs_prior_pct": 1.1335719121771781,
+      "window_return_pct": 0.25119846596355355,
+      "window_range_pct": 0.27037392138062666,
+      "volume": 50763,
+      "raw_artifact": "raw/spy-control-2024-12-04/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-12-04T19:15:00+00:00",
+        "2024-12-04T19:17:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-12-03T20:59:00Z",
+      "prior_close": 603.87,
+      "first_minute": "2024-12-04T19:00:00Z",
+      "last_minute": "2024-12-04T20:29:00Z",
+      "first_open": 606.01,
+      "last_close": 607.315,
+      "gap_pct": 0.3543809097984685,
+      "end_vs_prior_pct": 0.5704870253531391,
+      "window_return_pct": 0.215342981138944,
+      "window_range_pct": 0.24339532350951681,
+      "volume": 146790,
+      "raw_artifact": "raw/spy-control-2024-12-04/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 42309028,
+      "headline": "S&P 500's Record-Breaking Streak In 2024 Could Signal Caution For Investors In 2025, Warn Analysts: 'Stocks Do Not Go Up Forever'",
+      "created_at": "2024-12-04T08:17:45Z",
+      "updated_at": "2024-12-04T08:17:45Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/24/12/42309028/sp-500s-record-breaking-streak-in-2024-could-signal-caution-for-investors-in-2025-warn-analysts-stocks-do-not-go-up-forever",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42310727,
+      "headline": "Oil Hits $70 In Supply Cut Hope, Dollar Gains, Asia And Europe Markets Mixed - Global Markets Today While US Slept",
+      "created_at": "2024-12-04T11:27:53Z",
+      "updated_at": "2024-12-04T11:27:54Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/forex/24/12/42310727/oil-hits-70-in-supply-cut-hope-dollar-gains-asia-and-europe-markets-mixed-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42310998,
+      "headline": "US Stocks Likely To Open Higher As Investors Gear Up For A Historically Strong Month: Wells Fargo Strategists See Trump Policies Setting A Backdrop Where 'Equities Continue To Rally'",
+      "created_at": "2024-12-04T11:38:45Z",
+      "updated_at": "2024-12-04T11:38:45Z",
+      "symbols": [
+        "AAPL",
+        "CRM",
+        "DLTR",
+        "HRL",
+        "MRVL",
+        "OKTA",
+        "PSTG",
+        "PVH",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/24/12/42310998/us-stocks-likely-to-open-higher-as-investors-gear-up-for-a-historically-strong-month-for-markets-wells-fargo-strategists-expect-trump-administrations-policies-set-a-backdrop-for-where-equities-continue-to-rally-in-2025",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42313592,
+      "headline": "USA ADP Nonfarm Employment Change For November 146K Vs 166K Est.; 184K Prior",
+      "created_at": "2024-12-04T13:15:22Z",
+      "updated_at": "2024-12-04T13:15:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42313592/usa-adp-nonfarm-employment-change-for-november-146k-vs-166k-est-184k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42314234,
+      "headline": "Private Employers Add Fewer November Jobs Than Expected: 'Manufacturing Was The Weakest We've Seen Since Spring'",
+      "created_at": "2024-12-04T13:35:28Z",
+      "updated_at": "2024-12-04T13:35:28Z",
+      "symbols": [
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42314234/private-employers-add-fewer-than-predicted-jobs-in-november-manufacturing-was-the-weakest-weve-seen-since-spring",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42314556,
+      "headline": "U.S. Was Not Aware Of South Korean President's Intention To Declare Martial Law",
+      "created_at": "2024-12-04T13:40:10Z",
+      "updated_at": "2024-12-04T13:40:11Z",
+      "symbols": [
+        "EWY",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/12/42314556/u-s-was-not-aware-of-south-korean-presidents-intention-to-declare-martial-law",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42314688,
+      "headline": "Fed's Musalem Says Time May Be Approaching To Slow Or Pause Interest Rate Cuts; Additional Policy Easing Likely Needed Over Time; Important To Keep Monetary Policy Options Open Amid Uncertainty; Expects Inflation To Move To 2% Target Over Next Two Years; There Is Uncertainty Over Neutral Rate, Could Be Between 3% To 4%; Fed's Policy Rate Is Currently Well Above Neutral Level; Too Much Policy Easing Carries Risks",
+      "created_at": "2024-12-04T13:45:22Z",
+      "updated_at": "2024-12-04T13:45:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42314688/feds-musalem-says-time-may-be-approaching-to-slow-or-pause-interest-rate-cuts-additional-policy-easi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42314694,
+      "headline": "Fed's Musalem Says Monetary Policy Is Well Positioned For What Lies Ahead; Labor Market No Longer Overheated, Source Of Inflation Risk; Expects Moderation In Economic Growth, Hiring",
+      "created_at": "2024-12-04T13:45:49Z",
+      "updated_at": "2024-12-04T13:45:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42314694/feds-musalem-says-monetary-policy-is-well-positioned-for-what-lies-ahead-labor-market-no-longer-over",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42314904,
+      "headline": "Fed's Musalem Says Possible To Pause On Cuts At Upcoming Fed Meetings; Keeping All Options Open For December Fed Meeting; Will Wait To See Data Before Deciding On December Fed Meeting; Expects Restrictive Monetary Policy Will Continue To Cool Inflation; Chances Of Labor Market Trouble Are Low Right Now; The Job Isn't Done Bring Inflation Back To Target",
+      "created_at": "2024-12-04T13:57:17Z",
+      "updated_at": "2024-12-04T13:57:17Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42314904/feds-musalem-says-possible-to-pause-on-cuts-at-upcoming-fed-meetings-keeping-all-options-open-for-de",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42315149,
+      "headline": "Fed's Musalem Says Monetary Policy Is 'Moderately' Restrictive; Uncertainty About Monetary Policy, Election Had Weighed On Economy",
+      "created_at": "2024-12-04T14:00:34Z",
+      "updated_at": "2024-12-04T14:00:35Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42315149/feds-musalem-says-monetary-policy-is-moderately-restrictive-uncertainty-about-monetary-policy-electi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42315528,
+      "headline": "Fed's Musalem Says Broader Government Policy Uncertainty Can't Stop Fed From Forecasting; St. Louis Fed Already Exploring How Tariffs Might Impact Economy; Textbook Economics Say Tariffs Boost Price Level, Reduce Demand; Fed Will Take In New Government Policies And React Accordingly",
+      "created_at": "2024-12-04T14:07:20Z",
+      "updated_at": "2024-12-04T14:07:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42315528/feds-musalem-says-broader-government-policy-uncertainty-cant-stop-fed-from-forecasting-st-louis-fed",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42315788,
+      "headline": "Fed's Musalem Says Very Committed To Getting Inflation Back To 2%; Inflation Has Been Higher Than Desired, Worries About Job Market Down; Risk Inflation Won't Cool Fast Enough Has Risen",
+      "created_at": "2024-12-04T14:11:04Z",
+      "updated_at": "2024-12-04T14:11:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42315788/feds-musalem-says-very-committed-to-getting-inflation-back-to-2-inflation-has-been-higher-than-desir",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42315808,
+      "headline": "Fed's Barkin Says Encouraged With Where Inflation Is Headed; I See Positives And Risks On Both Sides Of Fed's Mandates; Says Can't Ignore Oct Jobs Report, Also Inflation Still Above 2%",
+      "created_at": "2024-12-04T14:12:27Z",
+      "updated_at": "2024-12-04T14:12:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42315808/feds-barkin-says-encouraged-with-where-inflation-is-headed-i-see-positives-and-risks-on-both-sides-o",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316374,
+      "headline": "Fed's Barkin Says It's A Judgment Call For When You Are Done Recalibrating And Start Moving More Slowly To Normalize; In Next Couple Weeks Will Learn Alot More On Jobs, Inflation; We Want To Get To Somewhat Restrictive Policy; We Have Different Points Of View On What Is Somewhat Restrictive Enough; If Inflation Is High In Q1, That Would Be A Signal We Have A Lot More To Do; The Bar To Raising Prices In Lower Than It Was Before The Pandemic",
+      "created_at": "2024-12-04T14:29:22Z",
+      "updated_at": "2024-12-04T14:29:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42316374/feds-barkin-says-its-a-judgment-call-for-when-you-are-done-recalibrating-and-start-moving-more-slowl",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316378,
+      "headline": "Fed's Musalem Says As Part Of Framework Review, Good To Have Policy For Different Scenarios; Fed's Dot Plot Remains Useful; Fed Balance Sheet Has Been A Useful Tool Of Policy",
+      "created_at": "2024-12-04T14:29:50Z",
+      "updated_at": "2024-12-04T14:29:51Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42316378/feds-musalem-says-as-part-of-framework-review-good-to-have-policy-for-different-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316398,
+      "headline": "Fed's Barkin Says Right Now It's Very Hard To Capture Price; But If You Start To See Cost Pressures, There's Less Resistance To Raising Prices Than 5 Years Ago",
+      "created_at": "2024-12-04T14:30:12Z",
+      "updated_at": "2024-12-04T14:30:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42316398/feds-barkin-says-right-now-its-very-hard-to-capture-price-but-if-you-start-to-see-cost-pressures-the",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316422,
+      "headline": "Walmart Stock Is Up 13% Over The Past Month: What's Going On?",
+      "created_at": "2024-12-04T14:31:25Z",
+      "updated_at": "2024-12-04T14:31:25Z",
+      "symbols": [
+        "DIA",
+        "SPY",
+        "WMT"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42316422/walmart-stock-is-up-13-over-the-past-month-whats-going-on",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316435,
+      "headline": "Fed's Musalem Says Asset Valuations Are Elevated; Elevated Asset Prices Aren't Due To Fed Policy",
+      "created_at": "2024-12-04T14:32:09Z",
+      "updated_at": "2024-12-04T14:32:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42316435/feds-musalem-says-asset-valuations-are-elevated-elevated-asset-prices-arent-due-t",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316766,
+      "headline": "Citadel's Founder Ken Griffin Says He Will Do Whatever He Can To Help Support President-Elect Donald Trump; Independence Of The Federal Reserve Is Extraordinarily Important; Bond Market Should Get Rattled If We Don't Get Our House In Order",
+      "created_at": "2024-12-04T14:41:10Z",
+      "updated_at": "2024-12-04T14:41:10Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42316766/citadels-founder-ken-griffin-says-he-will-do-whatever-he-can-to-help-support-pres",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316845,
+      "headline": "Ethereum Soars 50% in a Month as Trader Forecasts a 'Legendary Breakout'; South Korean President Yoon Suk Yeol Faces Impeachment Calls Following a Short-Lived Martial Law - Top Headlines Today While US Slept",
+      "created_at": "2024-12-04T14:43:15Z",
+      "updated_at": "2024-12-04T14:43:16Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42316845/ethereum-soars-50-in-a-month-as-trader-forecasts-a-legendary-breakout-south-korean-president-yoon-suk-yeol-faces-impeachment-calls-following-a-short-lived-martial-law-top-headlines-today-while",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316891,
+      "headline": "USA S&P Global Services PMI For November 56.1 Vs 57.0 Est.; 55.0 Prior",
+      "created_at": "2024-12-04T14:45:10Z",
+      "updated_at": "2024-12-04T14:45:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42316891/usa-s-p-global-services-pmi-for-november-56-1-vs-57-0-est-55-0-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42316900,
+      "headline": "USA S&P Global Composite PMI For November 54.9 Vs 55.3 Est.; 54.1 Prior",
+      "created_at": "2024-12-04T14:45:20Z",
+      "updated_at": "2024-12-04T14:45:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42316900/usa-s-p-global-composite-pmi-for-november-54-9-vs-55-3-est-54-1-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42317192,
+      "headline": "Punchbowl News Jake Sherman Posts On X \"NEWS: Speaker Johnson told me that he believes the debt limit  will not come due until SUMMER 2025.\"",
+      "created_at": "2024-12-04T14:58:21Z",
+      "updated_at": "2024-12-04T14:58:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42317192/punchbowl-news-jake-sherman-posts-on-x-news-speaker-johnson-told-me-that-he-belie",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42317251,
+      "headline": "USA ISM Non-Manufacturing Prices For November 58.2 Vs 56.4 Est.; 58.1 Prior",
+      "created_at": "2024-12-04T15:00:08Z",
+      "updated_at": "2024-12-04T15:00:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42317251/usa-ism-non-manufacturing-prices-for-november-58-2-vs-56-4-est-58-1-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42317273,
+      "headline": "ISM Non-Manufacturing PMI For November 52.1 Vs 55.5 Est.; 56.0 Prior",
+      "created_at": "2024-12-04T15:00:13Z",
+      "updated_at": "2024-12-04T15:00:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42317273/ism-non-manufacturing-pmi-for-november-52-1-vs-55-5-est-56-0-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42317299,
+      "headline": "Durables Ex-Defense MoM For Oct. 0.5% Vs 0.4% Expected; 0.4% Prior",
+      "created_at": "2024-12-04T15:00:25Z",
+      "updated_at": "2024-12-04T15:00:26Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42317299/durables-ex-defense-mom-for-oct-0-5-vs-0-4-expected-0-4-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42317301,
+      "headline": "USA ISM Non-Manufacturing Employment For November 51.5 Vs. 53.0 Est.; 53.0 Prior",
+      "created_at": "2024-12-04T15:00:27Z",
+      "updated_at": "2024-12-04T15:00:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42317301/usa-ism-non-manufacturing-employment-for-november-51-5-vs-53-0-est-53-0-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42317302,
+      "headline": "USA Factory Orders (MoM) For October 0.2% Vs 0.3% Est.; -0.5% Prior (Revised To -0.2%)",
+      "created_at": "2024-12-04T15:00:28Z",
+      "updated_at": "2024-12-04T15:00:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42317302/usa-factory-orders-mom-for-october-0-2-vs-0-3-est-0-5-prior-revised-to-0-2",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42318445,
+      "headline": "USA Crude Oil Inventories A Draw Of 5.073M Barrels Vs A Draw Of 1.600M Barrels Est.; Draw Of 1.844M Barrels Prior",
+      "created_at": "2024-12-04T15:30:13Z",
+      "updated_at": "2024-12-04T15:30:13Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42318445/usa-crude-oil-inventories-a-draw-of-5-073m-barrels-vs-a-draw-of-1-600m-barrels-es",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42318448,
+      "headline": "EIA Weekly Distillates Stocks A Build Of 3.383M Barrels Vs A Build Of 0.416M Barrels Prior",
+      "created_at": "2024-12-04T15:30:21Z",
+      "updated_at": "2024-12-04T15:30:22Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42318448/eia-weekly-distillates-stocks-a-build-of-3-383m-barrels-vs-a-build-of-0-416m-barr",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42318457,
+      "headline": "USA Gasoline Inventories A Build Of 2.362M Barrels Vs A Build Of 3.314M Barrels Prior",
+      "created_at": "2024-12-04T15:30:31Z",
+      "updated_at": "2024-12-04T15:30:32Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42318457/usa-gasoline-inventories-a-build-of-2-362m-barrels-vs-a-build-of-3-314m-barrels-p",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42318715,
+      "headline": "US Services Sector Growth Cools More Than Expected In November As Businesses Show 'Cautionary Outlooks' On Tariffs",
+      "created_at": "2024-12-04T15:43:33Z",
+      "updated_at": "2024-12-04T15:43:34Z",
+      "symbols": [
+        "DIA",
+        "QQQ",
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42318715/us-services-sector-growth-cools-more-than-expected-in-november-as-businesses-show-cautionary-outlooks-on-tariffs",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42318826,
+      "headline": "Benzinga Market Summary: Salesforce And Pure Storage Rise On Earnings, Private Sector Employment Increased By 146K In Nov., S&P Rises",
+      "created_at": "2024-12-04T15:47:13Z",
+      "updated_at": "2024-12-04T15:47:14Z",
+      "symbols": [
+        "CRM",
+        "PSTG",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42318826/benzinga-market-summary-salesforce-and-pure-storage-rise-on-earnings-private-sect",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42318909,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am pleased to nominate Daniel P. Driscoll, from the Great State of North Carolina, to serve as the Secretary of the Army...\"",
+      "created_at": "2024-12-04T15:52:03Z",
+      "updated_at": "2024-12-04T15:52:04Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42318909/president-elect-donald-j-trump-posts-on-truth-i-am-pleased-to-nominate-daniel-p-d",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42318910,
+      "headline": "President-Elect Trump Picks Peter Navarro As Senior Counselor For Trade And Manufacturing",
+      "created_at": "2024-12-04T15:52:27Z",
+      "updated_at": "2024-12-04T15:52:28Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42318910/president-elect-trump-picks-peter-navarro-as-senior-counselor-for-trade-and-manufacturing",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42319019,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am pleased to announce that Adam Boehler will be my Special Presidential Envoy for Hostage Affairs, with the personal rank of Ambassador.\"",
+      "created_at": "2024-12-04T15:57:38Z",
+      "updated_at": "2024-12-04T15:57:38Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42319019/president-elect-donald-j-trump-posts-on-truth-i-am-pleased-to-announce-that-adam-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42320674,
+      "headline": "U.S. Army Orders Additional Boeing CH-47F Block II Chinooks; The Lot 3 Contract Award, Valued At $135M, Is A Part Of The U.S. Army's Ongoing Modernization Efforts",
+      "created_at": "2024-12-04T16:50:26Z",
+      "updated_at": "2024-12-04T16:50:27Z",
+      "symbols": [
+        "BA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42320674/u-s-army-orders-additional-boeing-ch-47f-block-ii-chinooks-the-lot-3-contract-award-valued-at-135m-i",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42321480,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am pleased to nominate Gail Slater as Assistant Attorney General for the Antitrust Division at the Department of Justice...\"",
+      "created_at": "2024-12-04T17:22:50Z",
+      "updated_at": "2024-12-04T17:22:50Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42321480/president-elect-donald-j-trump-posts-on-truth-i-am-pleased-to-nominate-gail-slate",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42321493,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am pleased to nominate Dr. Michael William Faulkender, of the Great State of Maryland, to serve as the Deputy Secretary of the United States Department of the Treasury...\"",
+      "created_at": "2024-12-04T17:23:43Z",
+      "updated_at": "2024-12-04T17:23:43Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42321493/president-elect-donald-j-trump-posts-on-truth-i-am-pleased-to-nominate-dr-michael",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42322205,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am delighted to announce the nomination of Paul Atkins to be the next Chairman of the Securities & Exchange Commission...\"",
+      "created_at": "2024-12-04T17:49:54Z",
+      "updated_at": "2024-12-04T17:49:55Z",
+      "symbols": [
+        "BTCUSD",
+        "DJT",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42322205/president-elect-donald-j-trump-posts-on-truth-i-am-delighted-to-announce-the-nomi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42322242,
+      "headline": "President-Elect Donald J. Trump Posts On Truth, \"I am honored to nominate Monica Elizabeth Crowley, Ph.D. to serve as Ambassador, Assistant Secretary of State, and Chief of Protocol of the United States of America…\"",
+      "created_at": "2024-12-04T17:51:43Z",
+      "updated_at": "2024-12-04T17:51:44Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42322242/president-elect-donald-j-trump-posts-on-truth-i-am-honored-to-nominate-monica-eli",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42322253,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am proud to announce the appointment of David A. Warrington to serve as Assistant to the President and Counsel to the President....\"",
+      "created_at": "2024-12-04T17:53:32Z",
+      "updated_at": "2024-12-04T17:53:33Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42322253/president-elect-donald-j-trump-posts-on-truth-i-am-proud-to-announce-the-appointm",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42319226,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am delighted to nominate Jared Isaacman, an accomplished business leader, philanthropist, pilot, and astronaut, as Administrator of the National Aeronautics and Space Administration (NASA)...\"",
+      "created_at": "2024-12-04T16:01:14Z",
+      "updated_at": "2024-12-04T18:18:02Z",
+      "symbols": [
+        "BA",
+        "BKSY",
+        "DJT",
+        "FOUR",
+        "IRDM",
+        "LMT",
+        "MNTS",
+        "NOC",
+        "RDW",
+        "RKLB",
+        "SPCE",
+        "SPIR",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42319226/president-elect-donald-j-trump-posts-on-truth-i-am-delighted-to-nominate-jared-is",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323280,
+      "headline": "Tech Stocks Extend Record Highs On AI Optimism, Marvell Rockets, Bitcoin Hovers Near $95,000: What's Driving Markets Wednesday?",
+      "created_at": "2024-12-04T18:40:39Z",
+      "updated_at": "2024-12-04T18:40:40Z",
+      "symbols": [
+        "AMZN",
+        "BTCUSD",
+        "CHWY",
+        "CPB",
+        "CRM",
+        "DIA",
+        "DLTR",
+        "FIVE",
+        "IWM",
+        "MRVL",
+        "OKTA",
+        "PSTG",
+        "PVH",
+        "QQQ",
+        "S",
+        "SNPS",
+        "SPY",
+        "XLC",
+        "XLE",
+        "XLI",
+        "XLK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42323280/tech-stocks-extend-record-highs-on-ai-optimism-marvell-rockets-bitcoin-hovers-near-95000-whats-driving-markets-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323464,
+      "headline": "Fed Chair Powell Independence Lets The Fed Make Decisions For All Americans, Not Any Political Party;  There Is Broad Support In Both Parties For An Independent Fed; Do Not Think There Is Risk Of Losing It; The U.S. Economy Is In Remarkably Good Shape; Feel Very Good About Where Monetary Policy Is; Do Not Think Appointment Of A \"Shadow\" Fed Chair Is On The Table",
+      "created_at": "2024-12-04T18:52:31Z",
+      "updated_at": "2024-12-04T18:52:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323464/fed-chair-powell-independence-lets-the-fed-make-decisions-for-all-americans-not-any-political-party",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323498,
+      "headline": "Fed Chair Powell Says Feel The Same Institutional Relationships Between The Fed And The Treasury Will Continue Under New Administration; Confident Of Having The Same Type Of Relationship With Bessent As With Other Treasury Secretaries",
+      "created_at": "2024-12-04T18:54:13Z",
+      "updated_at": "2024-12-04T18:54:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323498/fed-chair-powell-says-feel-the-same-institutional-relationships-between-the-fed-and-the-treasury-wil",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323544,
+      "headline": "Fed Chair Powell Says Trump Said The Same Things Privately In His First Administration As He Did Publicly; Asked About Influence Of New DOGE Program On The Central Banks, Says Part Of The Fed's Independence Is That It Is Self-Funded; Fed Tries To Be Good Stewards Of The Public's Money",
+      "created_at": "2024-12-04T18:56:08Z",
+      "updated_at": "2024-12-04T18:57:02Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323544/fed-chair-powell-says-trump-said-the-same-things-privately-in-his-first-administration-as-he-did-pub",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323615,
+      "headline": "Fed Chair Powell Says The Trend Toward Central Bank Transparency Has Been Constructive For Making Policy; Unemployment Still Very Low, And Making Progress On Inflation; Economy In Good Shape And No Reason That Can't Continue; On A Path To More Neutral Rates Over Time, Though Downside Risks Are Less Than Thought, Fed Can Afford To Be Cautious In Finding Neutral",
+      "created_at": "2024-12-04T19:00:26Z",
+      "updated_at": "2024-12-04T19:00:27Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323615/fed-chair-powell-says-the-trend-toward-central-bank-transparency-has-been-constructive-for-making-po",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323642,
+      "headline": "Fed Beige Book: Economic Activity Rose Slightly In Most Districts; The Rise In Electricity Demand Was Driven By Rapid Expansions In Data Centers And Was Report- Edly Planned To Be Met By Investments In Renewable Generation Capacity In Coming Years.; Prices Rose Only At A Modest Pace Across Federal Reserve Districts.",
+      "created_at": "2024-12-04T19:01:16Z",
+      "updated_at": "2024-12-04T19:01:17Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42323642/fed-beige-book-economic-activity-rose-slightly-in-most-districts-the-rise-in-elec",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323715,
+      "headline": "Fed Chair Powell Says Fed Is Trying To Be In A Middle Place Where Policy Is Less Restrictive So Inflation Can Fall, But Not Damage Labor Market; Likely That Lower Survey Response Levels Has Increased Volatility In Estimates Of Labor Market Data",
+      "created_at": "2024-12-04T19:04:04Z",
+      "updated_at": "2024-12-04T19:04:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323715/fed-chair-powell-says-fed-is-trying-to-be-in-a-middle-place-where-policy-is-less-restrictive-so-infl",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323808,
+      "headline": "Fed Chair Powell Says Regarding Tariffs, So Much Is Unknown The Fed Cannot Start Making Policy In Response; The Fed Does Not Have An Institutional View On The Proper Level Of Tariffs Or Immigration; Higher Immigration Is Part Of The Reason Growth Was Strong In 2023",
+      "created_at": "2024-12-04T19:06:27Z",
+      "updated_at": "2024-12-04T19:06:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323808/fed-chair-powell-says-regarding-tariffs-so-much-is-unknown-the-fed-cannot-start-making-policy-in-res",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323870,
+      "headline": "Fed Chair Powell Says Fed Does Not Comment On Dollar Policy, Which Is The Responsibility Of The Treasury",
+      "created_at": "2024-12-04T19:08:17Z",
+      "updated_at": "2024-12-04T19:08:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323870/fed-chair-powell-says-fed-does-not-comment-on-dollar-policy-which-is-the-responsibility-of-the-treas",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323898,
+      "headline": "Fed Chair Powell Says U.S. Budget Is On An Unsustainable Path; Revenue And Spending Need To Be Better Aligned",
+      "created_at": "2024-12-04T19:10:36Z",
+      "updated_at": "2024-12-04T19:10:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323898/fed-chair-powell-says-u-s-budget-is-on-an-unsustainable-path-revenue-and-spending-need-to-be-better",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42323977,
+      "headline": "Fed Chair Powell Says Central Bank Cannot Take Debt And Deficits Into Account In Setting Rates; Needs To Focus On Inflation; The Fed Is Far From A Situation Of Fiscal Dominance, Uses Its Tools To Achieve Mandate On Inflation And Jobs; Bitcoin Is Used As A Speculative Asset; It Is A Competitor With Gold Not The U.S. Dollar; Low And Moderate Income Families In The U.S. Are Under Pressure Even Though Aggregate Numbers Are Strong",
+      "created_at": "2024-12-04T19:14:04Z",
+      "updated_at": "2024-12-04T19:14:04Z",
+      "symbols": [
+        "BTCUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42323977/fed-chair-powell-says-central-bank-cannot-take-debt-and-deficits-into-account-in-setting-rates-needs",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42325140,
+      "headline": "Making Money From Crowd Stampede – Palantir Becomes Largest Defense Contractor In Blink Of An Eye",
+      "created_at": "2024-12-04T20:12:43Z",
+      "updated_at": "2024-12-04T20:12:44Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "CRM",
+        "GLD",
+        "GOOG",
+        "META",
+        "MRVL",
+        "MSFT",
+        "NVDA",
+        "PLTR",
+        "QQQ",
+        "RTX",
+        "SLV",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/12/42325140/making-money-from-crowd-stampede-palantir-becomes-largest-defense-contractor-in-blink-of-an-eye",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42325676,
+      "headline": "Global Asset Management To Reach $43.6 Trillion By 2029, Driven by Active ETFs",
+      "created_at": "2024-12-04T20:44:45Z",
+      "updated_at": "2024-12-04T20:44:46Z",
+      "symbols": [
+        "FBTC",
+        "SPY",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/24/12/42325676/long-term-aum-to-reach-436-trillion-by-2029-as-active-strategies-and-alternatives-seek-returns",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 42329075,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am pleased to announce that former Congressman Billy Long, of the Great State of Missouri, will be appointed to serve as the Commissioner of the Internal Revenue Service (IRS)...\"",
+      "created_at": "2024-12-04T22:39:35Z",
+      "updated_at": "2024-12-04T22:39:36Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42329075/president-elect-donald-j-trump-posts-on-truth-i-am-pleased-to-announce-that-forme",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 42329321,
+      "headline": "President-Elect Donald J. Trump Posts On Truth \"I am very pleased to nominate business leader and former U.S. Senator Kelly Loeffler, from the Great State of Georgia, to serve as Administrator of the Small Business Administration (SBA)...\"",
+      "created_at": "2024-12-04T23:00:54Z",
+      "updated_at": "2024-12-04T23:00:54Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42329321/president-elect-donald-j-trump-posts-on-truth-i-am-very-pleased-to-nominate-busin",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

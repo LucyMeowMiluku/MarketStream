@@ -1,0 +1,958 @@
+{
+  "interval_id": "tsla-control-2024-04-10",
+  "candidate_kind": "normal",
+  "ticker": "TSLA",
+  "started_at": "2024-04-10T13:30:00Z",
+  "ended_at": "2024-04-10T15:00:00Z",
+  "local_start": "2024-04-10T09:30:00-04:00",
+  "local_end": "2024-04-10T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-04-10T14:52:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-09T19:59:00Z",
+      "prior_close": 442.26,
+      "first_minute": "2024-04-10T13:30:00Z",
+      "last_minute": "2024-04-10T14:59:00Z",
+      "first_open": 436.9,
+      "last_close": 437.45,
+      "gap_pct": -1.2119567675123233,
+      "end_vs_prior_pct": -1.0875955320399755,
+      "window_return_pct": 0.12588693064774503,
+      "window_range_pct": 0.6706340123598094,
+      "volume": 236148,
+      "raw_artifact": "raw/tsla-control-2024-04-10/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-09T19:59:00Z",
+      "prior_close": 519.34,
+      "first_minute": "2024-04-10T13:30:00Z",
+      "last_minute": "2024-04-10T14:59:00Z",
+      "first_open": 513.43,
+      "last_close": 514.4,
+      "gap_pct": -1.1379828243540002,
+      "end_vs_prior_pct": -0.9512073015750855,
+      "window_return_pct": 0.1889254620883074,
+      "window_range_pct": 0.6729252283660949,
+      "volume": 247626,
+      "raw_artifact": "raw/tsla-control-2024-04-10/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-04-10T14:34:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-09T19:59:00Z",
+      "prior_close": 176.96,
+      "first_minute": "2024-04-10T13:30:00Z",
+      "last_minute": "2024-04-10T14:59:00Z",
+      "first_open": 173.03,
+      "last_close": 171.565,
+      "gap_pct": -2.2208408679927683,
+      "end_vs_prior_pct": -3.0487115732368952,
+      "window_return_pct": -0.8466739871698548,
+      "window_range_pct": 2.407097035196204,
+      "volume": 228871,
+      "raw_artifact": "raw/tsla-control-2024-04-10/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 38176458,
+      "headline": "Tesla Exec Says 'We Won't Be Shy' To Share Data To Prove FSD Is Safer Than Human Drivers",
+      "created_at": "2024-04-10T05:53:54Z",
+      "updated_at": "2024-04-10T05:53:55Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/government/24/04/38176458/tesla-exec-says-we-wont-be-shy-to-share-data-to-prove-fsd-is-safer-than-human-drivers",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38176265,
+      "headline": "Elon Musk Said To Be In Talks With India's Richest Man To Help Establish Tesla Factory",
+      "created_at": "2024-04-10T08:00:20Z",
+      "updated_at": "2024-04-10T08:02:06Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38176265/elon-musk-said-to-be-in-talks-with-indias-richest-man-to-help-take-tesla-to-india",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38177751,
+      "headline": "China's Xi Told Former Taiwan President Ma There Are No Issues That Cannot Be Discussed; Said No Force Can Separate US",
+      "created_at": "2024-04-10T09:16:31Z",
+      "updated_at": "2024-04-10T09:16:32Z",
+      "symbols": [
+        "EWT",
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38177751/chinas-xi-told-former-taiwan-president-ma-there-are-no-issues-that-cannot-be-discussed-said-no-force",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38177781,
+      "headline": "Reuters Reported Earlier: China March Vehicle Sales +9.9% YoY Vs -19.9% In Feb; March New Energy Vehicle Sales +35.3% YoY, Citing China Association of Automobile Manufacturers",
+      "created_at": "2024-04-10T09:19:55Z",
+      "updated_at": "2024-04-10T09:19:56Z",
+      "symbols": [
+        "BYDDF",
+        "FXI",
+        "LI",
+        "NIO",
+        "TSLA",
+        "XPEV"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38177781/reuters-reported-earlier-china-march-vehicle-sales-9-9-yoy-vs-19-9-in-feb-march-new-energy-vehicle-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38178109,
+      "headline": "Top-End Tesla Cybertruck Fetches Over Double Sticker Price At Auction Amid Resale Market Jitters, Quality Concerns",
+      "created_at": "2024-04-10T09:58:23Z",
+      "updated_at": "2024-04-10T09:58:24Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38178109/top-end-tesla-cybertruck-fetches-over-double-sticker-price-at-auction-amid-resale-market-jitters",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38178705,
+      "headline": "US Stock Futures Muted Hours Before Inflation Data Release: Analyst Sees S&P 500 Likely Retesting Highs On Milder CPI Reading",
+      "created_at": "2024-04-10T10:40:58Z",
+      "updated_at": "2024-04-10T10:41:00Z",
+      "symbols": [
+        "BA",
+        "BTCUSD",
+        "PSMT",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38178705/us-stock-futures-muted-hours-before-inflation-data-release-analyst-sees-s-p-500-likely-retesting-hi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38179136,
+      "headline": "Asia Markets Mixed, Europe Gains, Gold's Up Run Continues - Global Markets Today While US Slept",
+      "created_at": "2024-04-10T11:02:39Z",
+      "updated_at": "2024-04-10T11:02:40Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/04/38179136/asia-markets-mixed-europe-gains-golds-up-run-continues-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38179646,
+      "headline": "Piper Sandler Maintains Overweight on Tesla, Lowers Price Target to $205",
+      "created_at": "2024-04-10T11:23:27Z",
+      "updated_at": "2024-04-10T11:23:27Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38179646/piper-sandler-maintains-overweight-on-tesla-lowers-price-target-to-205",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38179834,
+      "headline": "'Underappreciated Point:' Tesla Investor Relations Head Chuffed By Survey Showing 'Super High' Retention Rate Of EV Giant's Customers",
+      "created_at": "2024-04-10T11:30:12Z",
+      "updated_at": "2024-04-10T11:30:12Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38179834/underappreciated-point-tesla-investor-relations-head-chuffed-by-survey-showing-super-high-retention",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38180718,
+      "headline": "Wall Street Analysts Adjust Targets For Nvidia And Tesla Amid Market Movements",
+      "created_at": "2024-04-10T12:14:39Z",
+      "updated_at": "2024-04-10T12:14:39Z",
+      "symbols": [
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38180718/wall-street-analysts-adjust-targets-for-nvidia-and-tesla-amid-market-movements",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38180747,
+      "headline": "Jefferies Maintains Hold on Tesla, Lowers Price Target to $165",
+      "created_at": "2024-04-10T12:15:50Z",
+      "updated_at": "2024-04-10T12:15:51Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38180747/jefferies-maintains-hold-on-tesla-lowers-price-target-to-165",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38180877,
+      "headline": "'President Biden Plans Order To Limit Southern Border Crossings By End Of Month' - Axios",
+      "created_at": "2024-04-10T12:21:47Z",
+      "updated_at": "2024-04-10T12:21:48Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38180877/president-biden-plans-order-to-limit-southern-border-crossings-by-end-of-month-ax",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38181155,
+      "headline": "US Core CPI (MoM) (Mar) +0.4% vs +0.3% Est.",
+      "created_at": "2024-04-10T12:30:09Z",
+      "updated_at": "2024-04-10T12:30:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38181155/us-core-cpi-mom-mar-0-4-vs-0-3-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38181160,
+      "headline": "USA CPI (YoY) For March 3.5% Vs 3.4% Est.; 3.2% Prior",
+      "created_at": "2024-04-10T12:30:10Z",
+      "updated_at": "2024-04-10T12:30:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38181160/usa-cpi-yoy-for-march-3-5-vs-3-4-est-3-2-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38181175,
+      "headline": "USA CPI (MoM) For March 0.4% Vs 0.3% Est.; 0.4% Prior",
+      "created_at": "2024-04-10T12:30:13Z",
+      "updated_at": "2024-04-10T12:30:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38181175/usa-cpi-mom-for-march-0-4-vs-0-3-est-0-4-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38181180,
+      "headline": "US Core CPI (YoY) (Mar) +3.8% vs +3.7% Est., Prior +3.8%",
+      "created_at": "2024-04-10T12:30:26Z",
+      "updated_at": "2024-04-10T12:30:26Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38181180/us-core-cpi-yoy-mar-3-8-vs-3-7-est-prior-3-8",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38181291,
+      "headline": "Tesla To $205? Here Are 10 Top Analyst Forecasts For Wednesday",
+      "created_at": "2024-04-10T12:34:56Z",
+      "updated_at": "2024-04-10T12:34:57Z",
+      "symbols": [
+        "COIN",
+        "DECK",
+        "EQT",
+        "FCFS",
+        "LII",
+        "MODN",
+        "OMI",
+        "SIMO",
+        "TSLA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38181291/tesla-to-205-here-are-10-top-analyst-forecasts-for-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38182696,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of April 10, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-04-10T13:15:47Z",
+      "updated_at": "2024-04-10T13:15:48Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "AMD",
+        "BA",
+        "INTC",
+        "NVDA",
+        "PAA",
+        "TSLA",
+        "TSM",
+        "WEN"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/04/38182696/top-10-trending-stocks-on-wallstreetbets-as-of-april-10-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38183358,
+      "headline": "President Biden Calls On Companies To Use Record Profits To Cut Prices",
+      "created_at": "2024-04-10T13:45:31Z",
+      "updated_at": "2024-04-10T13:45:32Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38183358/president-biden-calls-on-companies-to-use-record-profits-to-cut-prices",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38183473,
+      "headline": "Bitcoin, Ethereum, Dogecoin Fall Amid $250M in Crypto Liquidations, Fed Rate Cut Fears Loom; Apple Eyes Latin American Growth with New Coral Gables Office - Top Headlines Today While US Slept",
+      "created_at": "2024-04-10T13:49:10Z",
+      "updated_at": "2024-04-10T13:49:10Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38183473/bitcoin-ethereum-dogecoin-fall-amid-250m-in-crypto-liquidations-fed-rate-cut-fears-loom-apple-eyes-l",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38183705,
+      "headline": "USA Wholesale Inventories (MoM) For February 0.5% Vs 0.5% Est.; -0.3% Prior",
+      "created_at": "2024-04-10T14:00:13Z",
+      "updated_at": "2024-04-10T14:00:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38183705/usa-wholesale-inventories-mom-for-february-0-5-vs-0-5-est-0-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38183740,
+      "headline": "USA Wholesale Trade Sales (MoM) For February 2.3% Vs -1.4% Prior",
+      "created_at": "2024-04-10T14:00:41Z",
+      "updated_at": "2024-04-10T14:00:42Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38183740/usa-wholesale-trade-sales-mom-for-february-2-3-vs-1-4-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38184554,
+      "headline": "USA Crude Oil Inventories A Build Of 5.841M Vs A Build Of 0.900M Est.; Build Of 3.210M Prior",
+      "created_at": "2024-04-10T14:30:56Z",
+      "updated_at": "2024-04-10T14:30:56Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38184554/usa-crude-oil-inventories-a-build-of-5-841m-vs-a-build-of-0-900m-est-build-of-3-2",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38184564,
+      "headline": "EIA Weekly Distillates Stocks Build Of 1.659M  Vs A Draw Of 1.153M Est. Draw Of 1.268M Prior",
+      "created_at": "2024-04-10T14:31:13Z",
+      "updated_at": "2024-04-10T14:31:14Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38184564/eia-weekly-distillates-stocks-build-of-1-659m-vs-a-draw-of-1-153m-est-draw-of-1-2",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38184574,
+      "headline": "USA Gasoline Inventories Build Of 0.715M Vs A Draw Of 1.320M Est.; Draw Of 4.256M Prior",
+      "created_at": "2024-04-10T14:31:32Z",
+      "updated_at": "2024-04-10T14:31:33Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38184574/usa-gasoline-inventories-build-of-0-715m-vs-a-draw-of-1-320m-est-draw-of-4-256m-p",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38184834,
+      "headline": "Lucid's Record Deliveries Show How Putting Up A Hell Of A Fight Looks Like",
+      "created_at": "2024-04-10T14:45:35Z",
+      "updated_at": "2024-04-10T14:46:54Z",
+      "symbols": [
+        "LCID",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/penny-stocks/24/04/38184834/lucids-record-deliveries-show-how-putting-up-a-hell-of-a-fight-looks-like",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38185264,
+      "headline": "Cleveland CPI (MoM) For March 0.4% Vs 0.4% Prior",
+      "created_at": "2024-04-10T15:01:11Z",
+      "updated_at": "2024-04-10T15:01:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38185264/cleveland-cpi-mom-for-march-0-4-vs-0-4-prior",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38185599,
+      "headline": "Market Clubhouse Morning Memo - April 10th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA)",
+      "created_at": "2024-04-10T15:11:25Z",
+      "updated_at": "2024-04-10T15:13:34Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/24/04/38185599/market-clubhouse-morning-memo-april-10th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38186082,
+      "headline": "'This Puts The Fed In Quite A Tricky Position': 7 Economists Weigh In On March Inflation Report",
+      "created_at": "2024-04-10T15:26:01Z",
+      "updated_at": "2024-04-10T15:26:02Z",
+      "symbols": [
+        "IWM",
+        "SPY",
+        "XLRE"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38186082/this-puts-the-fed-in-quite-a-tricky-position-7-economists-weigh-in-on-march-inflati",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38186317,
+      "headline": "Raise Cash, New Data Shows Hotter Inflation – Momo Gurus Wrong Again, Bull Market Intact",
+      "created_at": "2024-04-10T15:36:37Z",
+      "updated_at": "2024-04-10T15:37:46Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/04/38186317/raise-cash-new-data-shows-hotter-inflation-momo-gurus-wrong-again-bull-market-intact",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38186360,
+      "headline": "Goldman Sachs Expects U.S. Federal Reserve To Start Cutting Interest Rates In July Vs Prior Forecast Of June",
+      "created_at": "2024-04-10T15:40:00Z",
+      "updated_at": "2024-04-10T15:40:01Z",
+      "symbols": [
+        "GS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38186360/goldman-sachs-expects-u-s-federal-reserve-to-start-cutting-interest-rates-in-july",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38186533,
+      "headline": "Musk-Modi Rendezvous - Tesla Chief Reportedly To Meet Indian PM Amid Election Heat In Largest Democracy, Eyes Billion-Dollar Factory",
+      "created_at": "2024-04-10T15:50:03Z",
+      "updated_at": "2024-04-10T15:50:04Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38186533/musk-modi-rendezvous-tesla-chief-reportedly-to-meet-indian-pm-amid-election-heat-in-largest-demo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38185276,
+      "headline": "Tesla Cybertruck Lead Engineer Hints At Bigger Battery Coming",
+      "created_at": "2024-04-10T15:52:51Z",
+      "updated_at": "2024-04-10T15:52:52Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/top-stories/24/04/38185276/tesla-cybertruck-lead-engineer-hints-at-bigger-battery-coming",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188064,
+      "headline": "U.S. Sells $39B 9-Year 10-Month Notes At High Yield 4.560%, Awards 54.10% Of Bids At High; U.S. 9-Year 10-Month Notes Bid-To-Cover Ratio 2.34, Non-Comp Bids $83.13M",
+      "created_at": "2024-04-10T17:04:29Z",
+      "updated_at": "2024-04-10T17:04:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38188064/u-s-sells-39b-9-year-10-month-notes-at-high-yield-4-560-awards-54-10-of-bids-at-h",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188098,
+      "headline": "U.S. 10-Year Note Auction 4.560% Vs 4.166% Prior",
+      "created_at": "2024-04-10T17:06:48Z",
+      "updated_at": "2024-04-10T17:07:03Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38188098/10-year-note-auction-4-560-vs-4-166-prior",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188200,
+      "headline": "Stocks Sink On Worrisome Inflation Data, Yields Spike On Rate Cut Delays, Dollar Rallies: What's Driving Markets Wednesday?",
+      "created_at": "2024-04-10T17:12:20Z",
+      "updated_at": "2024-04-10T17:12:22Z",
+      "symbols": [
+        "AMT",
+        "BA",
+        "BTCUSD",
+        "DAL",
+        "DIA",
+        "EXR",
+        "FFIC",
+        "HXL",
+        "PSA",
+        "QQQ",
+        "SBAC",
+        "SFBS",
+        "SPY",
+        "TLT",
+        "UUP",
+        "VLY",
+        "XLF",
+        "XLRE"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38188200/stocks-sink-on-worrisome-inflation-data-yields-spike-on-rate-cut-delays-dollar-rallies-whats-dri",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188230,
+      "headline": "Tesla Stock Faces Challenges In 2024, 2025: Analyst Highlights This Key Future Item, 'We Still Think TSLA Warrants A Place In Clients' Portfolios'",
+      "created_at": "2024-04-10T17:14:38Z",
+      "updated_at": "2024-04-10T17:14:39Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38188230/tesla-stock-faces-challenges-in-2024-2025-analyst-highlights-this-key-future-item-w",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188673,
+      "headline": "Fed's Barkin Says AI Is Going To Expand Rapidly And Replace Some Jobs; I Don't See Any Suggestions CRE Is A Systemic Risk",
+      "created_at": "2024-04-10T17:28:49Z",
+      "updated_at": "2024-04-10T17:28:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38188673/feds-barkin-says-ai-is-going-to-expand-rapidly-and-replace-some-jobs-i-dont-see-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188758,
+      "headline": "10 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-04-10T17:35:19Z",
+      "updated_at": "2024-04-10T17:35:19Z",
+      "symbols": [
+        "AMZN",
+        "BABA",
+        "DASH",
+        "ETSY",
+        "KMX",
+        "LULU",
+        "RH",
+        "TSLA",
+        "ULTA",
+        "VZIO"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/04/38188758/10-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188777,
+      "headline": "White House Reporter For Bloomberg Jennifer Jacobs Posts On X \"U.S. And Allies Believe Major Missile And Drone Strikes By Iran And Its Proxies Against Military And Govt Targets In Israel Are Imminent; Civilian Facilities Not Expected To Be Targeted\"",
+      "created_at": "2024-04-10T17:37:08Z",
+      "updated_at": "2024-04-10T17:37:09Z",
+      "symbols": [
+        "EIS",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38188777/white-house-reporter-for-bloomberg-jennifer-jacobs-posts-on-x-u-s-and-allies-beli",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188869,
+      "headline": "President Biden On Nippon-U.S. Steel Deal, Says Stand By Commitment To U.S. Workers And Japan Alliance",
+      "created_at": "2024-04-10T17:42:20Z",
+      "updated_at": "2024-04-10T17:42:21Z",
+      "symbols": [
+        "EWJ",
+        "SPY",
+        "X"
+      ],
+      "url": "https://www.benzinga.com/m-a/24/04/38188869/president-biden-on-nippon-u-s-steel-deal-says-stand-by-commitment-to-u-s-workers-and-japan-alliance",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188900,
+      "headline": "Japan's Kishida On Nippon-U.S. Steel Deal, Says Japan Believes Appropriate Procedures Based On U.S. Law Are Being Implemented By U.S. Government; Hope To Cement Win-Win Relationship",
+      "created_at": "2024-04-10T17:44:36Z",
+      "updated_at": "2024-04-10T17:44:36Z",
+      "symbols": [
+        "EWJ",
+        "SPY",
+        "X"
+      ],
+      "url": "https://www.benzinga.com/m-a/24/04/38188900/japans-kishida-on-nippon-u-s-steel-deal-says-japan-believes-appropriate-procedures-based-on-u-s-law",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188910,
+      "headline": "President Biden On Inflation Says Inflation News May Delay Rate Cut; Don't Know What Fed Will Do; We Have A Plan To Deal With Inflation",
+      "created_at": "2024-04-10T17:45:22Z",
+      "updated_at": "2024-04-10T17:45:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38188910/president-biden-on-inflation-says-inflation-news-may-delay-rate-cut-dont-know-wha",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188930,
+      "headline": "President Biden On China Says Keep Improving Our Lines Of Communication With China; Agreed With Xi We Would Have Personal Talks Whenever We Want; Japan Cooperation Does Not Have Anything To Do With Conflict",
+      "created_at": "2024-04-10T17:47:00Z",
+      "updated_at": "2024-04-10T17:47:00Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38188930/president-biden-on-china-says-keep-improving-our-lines-of-communication-with-chin",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38188934,
+      "headline": "Elon Musk Says Looking Forward To Meeting With Prime Minister Narendra Modi In India",
+      "created_at": "2024-04-10T17:47:22Z",
+      "updated_at": "2024-04-10T17:47:23Z",
+      "symbols": [
+        "INDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38188934/elon-musk-says-looking-forward-to-meeting-with-prime-minister-narendra-modi-in-india",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189070,
+      "headline": "President Biden Says There Is No Ban On LNG",
+      "created_at": "2024-04-10T17:56:35Z",
+      "updated_at": "2024-04-10T17:56:35Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38189070/president-biden-says-there-is-no-ban-on-lng",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189161,
+      "headline": "FOMC Fed Minutes: Almost All Participants At Fed's March 19-20 Meeting Judged It Would Be Appropriate To Pivot To Less Restrictive Policy Stance At Some Point This Year",
+      "created_at": "2024-04-10T18:01:26Z",
+      "updated_at": "2024-04-10T18:01:26Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38189161/fomc-fed-minutes-almost-all-participants-at-feds-march-19-20-meeting-judged-it-wo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189170,
+      "headline": "Fed Minutes: Participants Noted Disinflation Process Was Continuing On A Path Generally Expected To Be Somewhat Uneven; Participants Generally Judged Risks To Achieving Employment And Inflation Goals Were Moving Into Better Balance; Participants Generally Noted Uncertainty About Persistence Of High Inflation",
+      "created_at": "2024-04-10T18:01:51Z",
+      "updated_at": "2024-04-10T18:01:52Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38189170/fed-minutes-participants-noted-disinflation-process-was-continuing-on-a-path-gene",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189173,
+      "headline": "Fed Minutes: Participants Generally Noted Recent Data Had Not 'increased Confidence' That Inflation Was Moving Sustainably Down To 2%; Some Participants Pointed To Geopolitical Risks That Might Cause More Severe Supply Bottlenecks; Some Participants Noted Concern That Financial Conditions Might Not Be As Restrictive As Desired, Which Could Put Upward Pressure On Inflation",
+      "created_at": "2024-04-10T18:02:10Z",
+      "updated_at": "2024-04-10T18:02:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38189173/fed-minutes-participants-generally-noted-recent-data-had-not-increased-confidence",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189185,
+      "headline": "Fed Minutes: Vast Majority Of Participants Judged Would Be Prudent To Begin Slowing Pace Of Balance Sheet Runoff 'Fairly Soon'; A Few Participants Preferred To Continue Current Pace Of Runoff Until Indicators Showed Reserves Were Nearing 'Ample Level'; Participants Generally Favored Reducing Monthly Runoff Pace By Roughly Half From Recent Overall Pace",
+      "created_at": "2024-04-10T18:02:42Z",
+      "updated_at": "2024-04-10T18:02:43Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38189185/fed-minutes-vast-majority-of-participants-judged-would-be-prudent-to-begin-slowin",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189196,
+      "headline": "Fed Minutes: Participants Saw Little Need To Slow Mortgage-backed Securities Runoff, Preferring To Adjust Cap On Treasuries Redemptions; Fed Staff Economic Projection For March Meeting Was Stronger Than January's Forecast, Citing Higher Projected Population Due To Immigration",
+      "created_at": "2024-04-10T18:02:59Z",
+      "updated_at": "2024-04-10T18:02:59Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38189196/fed-minutes-participants-saw-little-need-to-slow-mortgage-backed-securities-runof",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189280,
+      "headline": "Why Ascent Solar Technologies Shares Are Trading Lower By Around 50%? Here Are Other Stocks Moving In Wednesday's Mid-Day Session",
+      "created_at": "2024-04-10T18:07:05Z",
+      "updated_at": "2024-04-10T18:07:06Z",
+      "symbols": [
+        "ACB",
+        "ACOR",
+        "ADIL",
+        "ASTI",
+        "BNRG",
+        "BPTS",
+        "BSGM",
+        "CISS",
+        "DCGO",
+        "DECK",
+        "DOGZ",
+        "DXYZ",
+        "EZGO",
+        "GRRR",
+        "HXL",
+        "ICCT",
+        "IFBD",
+        "IMRN",
+        "JAGX",
+        "KA",
+        "KITT",
+        "MGAM",
+        "MRIN",
+        "MRNO",
+        "NA",
+        "NEOV",
+        "NOVA",
+        "NUTX",
+        "OPEN",
+        "PRFX",
+        "RETO",
+        "RH",
+        "RKT",
+        "RUN",
+        "RVMD",
+        "SGH",
+        "TSLA",
+        "VERB",
+        "VIAO",
+        "VINO",
+        "VLD",
+        "VLY",
+        "W",
+        "WNW"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38189280/why-ascent-solar-technologies-shares-are-trading-lower-by-around-50-here-are-other-stocks-moving-in",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189647,
+      "headline": "Fed Minutes Reveal Growing Unease Over Inflation Path: Not 'Merely Statistical Aberrations'",
+      "created_at": "2024-04-10T18:27:27Z",
+      "updated_at": "2024-04-10T18:27:27Z",
+      "symbols": [
+        "SPY",
+        "TLT",
+        "XLE",
+        "XLRE"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38189647/fed-minutes-reveal-growing-unease-over-inflation-path-not-merely-statistical-aber",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38189934,
+      "headline": "Seeing Reports Chat GPT Is Down For Several Users",
+      "created_at": "2024-04-10T18:46:54Z",
+      "updated_at": "2024-04-10T18:46:54Z",
+      "symbols": [
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38189934/seeing-reports-chat-gpt-is-down-for-several-users",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38190834,
+      "headline": "Down Day In The Markets? No Problem For Nvidia: 'PreMarket Prep' Co-Host's Pick Rockets Higher",
+      "created_at": "2024-04-10T19:47:50Z",
+      "updated_at": "2024-04-10T19:47:51Z",
+      "symbols": [
+        "AMD",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38190834/down-day-in-the-markets-no-problem-for-nvidia-premarket-prep-co-hosts-pick-rockets-higher",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38190865,
+      "headline": "Benzinga Closing Bell Update: Stocks Fall And Yields Rise Following Hotter-Than-Expected March Inflation Data",
+      "created_at": "2024-04-10T19:50:09Z",
+      "updated_at": "2024-04-10T19:50:09Z",
+      "symbols": [
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38190865/benzinga-closing-bell-update-stocks-fall-and-yields-rise-following-hotter-than-ex",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38195133,
+      "headline": "Why Bitcoin-Linked MicroStrategy Along With Adial Pharmaceuticals, Alpine Immune Sciences, Marin Software, And Tesla Are On Investors' Radars Today",
+      "created_at": "2024-04-11T02:19:07Z",
+      "updated_at": "2024-04-11T02:22:24Z",
+      "symbols": [
+        "ADIL",
+        "ALPN",
+        "BTCUSD",
+        "MRIN",
+        "MSTR",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38195133/why-bitcoin-linked-microstrategy-along-with-adial-pharmaceuticals-alpine-immune-sciences-marin-s",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38195448,
+      "headline": "Tesla's Reengineered Model 3 Reportedly Joins Company's Full Self-Driving Fleet With Debut Software Rollout",
+      "created_at": "2024-04-11T03:50:24Z",
+      "updated_at": "2024-04-11T03:50:25Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38195448/teslas-reengineered-model-3-reportedly-joins-companys-full-self-driving-fleet-with-debut-software-ro",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

@@ -1,0 +1,3915 @@
+{
+  "audit_date": "2026-10-22",
+  "missing_value_policy": "null means not established, never silently filled from current code",
+  "entries": [
+    {
+      "id": "SYN-TRACE-20261022",
+      "artifact": "report/ownership_evidence/reproduction_outputs/audit_20261022/factor_cep_traced.json",
+      "sha256": "52cf29c0bdcfc47d2cc4d8fa8dbdce5abcec8ae825da34e28248be3bc0788fec",
+      "run_id": "SYN-TRACE-20261022",
+      "data_kind": "synthetic",
+      "code_version": {
+        "HEAD": "05b88c09657a8bba03407a6aea944f487e8500ce",
+        "source_manifest_sha256": "63718f2e6bda6be914274a9986be9dadcc562b52fa3ac86c96d8c63cb66bd72a",
+        "snapshot": "report/ownership_evidence/reproduction_outputs/audit_20261022/source_snapshot.tar.gz"
+      },
+      "label_version": "generated labels; generator hash in provenance.json",
+      "parameters": {
+        "seeds": 20,
+        "intensities": {
+          "low": 4.5,
+          "medium": 6.5,
+          "high": 9.0
+        },
+        "cooldown_seconds": 0,
+        "require_pattern": true,
+        "grace_after_seconds": 0
+      },
+      "conclusion_scope": "Controlled generated-factor validation only; separate sequential passes; timing is per pass.",
+      "raw_output": {
+        "data_kind": "synthetic",
+        "ground_truth_kind": "generated_factor_sequences",
+        "metric_scope": "pipeline_validation_only",
+        "protocol": {
+          "seeds": 20,
+          "intensities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "patterns": [
+            "stock_specific_dislocation",
+            "liquidity_pressure_move",
+            "news_confirmed_move",
+            "flash_reversal",
+            "sustained_pressure",
+            "cross_asset_shock"
+          ],
+          "disabled_groups": [],
+          "disabled_patterns": []
+        },
+        "metrics": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "true_positives": 360,
+          "false_positives": 120,
+          "false_negatives": 0,
+          "delay_p50_seconds": 10.0,
+          "delay_p95_seconds": 30.0,
+          "delay_p99_seconds": 30.0,
+          "end_to_end_p50_seconds": null,
+          "end_to_end_p95_seconds": null,
+          "end_to_end_p99_seconds": null,
+          "alerts_per_ticker_hour": 1.6037420648179084,
+          "duplicate_alert_rate": 0.0
+        },
+        "cep_latency": {
+          "p50_ms": 0.015041,
+          "p95_ms": 0.030588149999999998,
+          "p99_ms": 0.06876916999999999
+        },
+        "negative_controls": {
+          "total": 240,
+          "alerts": 40,
+          "false_alert_rate": 0.16666666666666666
+        },
+        "bootstrap_95_ci": {
+          "precision": [
+            0.75,
+            0.75
+          ],
+          "recall": [
+            1.0,
+            1.0
+          ],
+          "f1": [
+            0.8571428571428571,
+            0.8571428571428571
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYN-SUITE-20261022",
+      "artifact": "report/ownership_evidence/reproduction_outputs/audit_20261022/factor_cep_suite.json",
+      "sha256": "86ef32b9f18cfc936d5a34d04eff8f997981418e47a7cb5bee443e2d03b93e31",
+      "run_id": "SYN-SUITE-20261022",
+      "data_kind": "synthetic",
+      "code_version": {
+        "HEAD": "05b88c09657a8bba03407a6aea944f487e8500ce",
+        "source_manifest_sha256": "63718f2e6bda6be914274a9986be9dadcc562b52fa3ac86c96d8c63cb66bd72a",
+        "snapshot": "report/ownership_evidence/reproduction_outputs/audit_20261022/source_snapshot.tar.gz"
+      },
+      "label_version": "generated labels; generator hash in provenance.json",
+      "parameters": {
+        "seeds": 20,
+        "intensities": {
+          "low": 4.5,
+          "medium": 6.5,
+          "high": 9.0
+        },
+        "cooldown_seconds": 0,
+        "require_pattern": true,
+        "grace_after_seconds": 0
+      },
+      "conclusion_scope": "Controlled generated-factor validation only; separate sequential passes; timing is per pass.",
+      "raw_output": {
+        "data_kind": "synthetic",
+        "ground_truth_kind": "generated_factor_sequences",
+        "metric_scope": "pipeline_validation_only",
+        "protocol": {
+          "seeds": 20,
+          "intensities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "patterns": [
+            "stock_specific_dislocation",
+            "liquidity_pressure_move",
+            "news_confirmed_move",
+            "flash_reversal",
+            "sustained_pressure",
+            "cross_asset_shock"
+          ],
+          "disabled_groups": [],
+          "disabled_patterns": []
+        },
+        "metrics": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "true_positives": 360,
+          "false_positives": 120,
+          "false_negatives": 0,
+          "delay_p50_seconds": 10.0,
+          "delay_p95_seconds": 30.0,
+          "delay_p99_seconds": 30.0,
+          "end_to_end_p50_seconds": null,
+          "end_to_end_p95_seconds": null,
+          "end_to_end_p99_seconds": null,
+          "alerts_per_ticker_hour": 1.6037420648179084,
+          "duplicate_alert_rate": 0.0
+        },
+        "cep_latency": {
+          "p50_ms": 0.01375,
+          "p95_ms": 0.023292,
+          "p99_ms": 0.04269490999999997
+        },
+        "negative_controls": {
+          "total": 240,
+          "alerts": 40,
+          "false_alert_rate": 0.16666666666666666
+        },
+        "bootstrap_95_ci": {
+          "precision": [
+            0.75,
+            0.75
+          ],
+          "recall": [
+            1.0,
+            1.0
+          ],
+          "f1": [
+            0.8571428571428571,
+            0.8571428571428571
+          ]
+        },
+        "ablations": {
+          "without_group:activity": {
+            "metrics": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "true_positives": 360,
+              "false_positives": 120,
+              "false_negatives": 0,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.6037420648179084,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:liquidity": {
+            "metrics": {
+              "precision": 0.6,
+              "recall": 0.6666666666666666,
+              "f1": 0.631578947368421,
+              "true_positives": 240,
+              "false_positives": 160,
+              "false_negatives": 120,
+              "delay_p50_seconds": 5.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.3364517206815902,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:market_context": {
+            "metrics": {
+              "precision": 0.7272727272727273,
+              "recall": 0.8888888888888888,
+              "f1": 0.7999999999999999,
+              "true_positives": 320,
+              "false_positives": 120,
+              "false_negatives": 40,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:news": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:price": {
+            "metrics": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "true_positives": 0,
+              "false_positives": 0,
+              "false_negatives": 360,
+              "delay_p50_seconds": 0.0,
+              "delay_p95_seconds": 0.0,
+              "delay_p99_seconds": 0.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 0.0,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 0,
+              "false_alert_rate": 0.0
+            }
+          },
+          "without_microstructure": {
+            "metrics": {
+              "precision": 0.6,
+              "recall": 0.6666666666666666,
+              "f1": 0.631578947368421,
+              "true_positives": 240,
+              "false_positives": 160,
+              "false_negatives": 120,
+              "delay_p50_seconds": 5.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.3364517206815902,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:stock_specific_dislocation": {
+            "metrics": {
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091,
+              "true_positives": 300,
+              "false_positives": 0,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.5126050420168067,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 0,
+              "false_alert_rate": 0.0
+            }
+          },
+          "without_pattern:liquidity_pressure_move": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:news_confirmed_move": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:flash_reversal": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:sustained_pressure": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:cross_asset_shock": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SYN-20260917",
+      "artifact": "report/ownership_evidence/reproduction_outputs/factor_cep_current_20260917.json",
+      "sha256": "3c809d07b0ae917ab5e26da496f2931e8d959290c9af8a999231edcfbeac2141",
+      "run_id": null,
+      "data_kind": "synthetic",
+      "code_version": {
+        "execution_snapshot": null,
+        "note": "Historical JSON has no embedded run ID or source hash. September 17 notes cite base bb0df67; this is not a complete execution snapshot."
+      },
+      "label_version": "generated labels; exact generator snapshot not bound",
+      "parameters": {
+        "seeds": 20,
+        "intensities": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "patterns": [
+          "stock_specific_dislocation",
+          "liquidity_pressure_move",
+          "news_confirmed_move",
+          "flash_reversal",
+          "sustained_pressure",
+          "cross_asset_shock"
+        ],
+        "disabled_groups": [],
+        "disabled_patterns": []
+      },
+      "conclusion_scope": "Historical saved aggregate only; new row decomposition is not retroactive proof of old run membership.",
+      "raw_output": {
+        "data_kind": "synthetic",
+        "ground_truth_kind": "generated_factor_sequences",
+        "metric_scope": "pipeline_validation_only",
+        "protocol": {
+          "seeds": 20,
+          "intensities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "patterns": [
+            "stock_specific_dislocation",
+            "liquidity_pressure_move",
+            "news_confirmed_move",
+            "flash_reversal",
+            "sustained_pressure",
+            "cross_asset_shock"
+          ],
+          "disabled_groups": [],
+          "disabled_patterns": []
+        },
+        "metrics": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "true_positives": 360,
+          "false_positives": 120,
+          "false_negatives": 0,
+          "delay_p50_seconds": 10.0,
+          "delay_p95_seconds": 30.0,
+          "delay_p99_seconds": 30.0,
+          "end_to_end_p50_seconds": null,
+          "end_to_end_p95_seconds": null,
+          "end_to_end_p99_seconds": null,
+          "alerts_per_ticker_hour": 1.6037420648179084,
+          "duplicate_alert_rate": 0.0
+        },
+        "cep_latency": {
+          "p50_ms": 0.013083,
+          "p95_ms": 0.018752049999999996,
+          "p99_ms": 0.029877919999999995
+        },
+        "negative_controls": {
+          "total": 240,
+          "alerts": 40,
+          "false_alert_rate": 0.16666666666666666
+        },
+        "bootstrap_95_ci": {
+          "precision": [
+            0.75,
+            0.75
+          ],
+          "recall": [
+            1.0,
+            1.0
+          ],
+          "f1": [
+            0.8571428571428571,
+            0.8571428571428571
+          ]
+        },
+        "ablations": {
+          "without_group:activity": {
+            "metrics": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "true_positives": 360,
+              "false_positives": 120,
+              "false_negatives": 0,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.6037420648179084,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:liquidity": {
+            "metrics": {
+              "precision": 0.6,
+              "recall": 0.6666666666666666,
+              "f1": 0.631578947368421,
+              "true_positives": 240,
+              "false_positives": 160,
+              "false_negatives": 120,
+              "delay_p50_seconds": 5.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.3364517206815902,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:market_context": {
+            "metrics": {
+              "precision": 0.7272727272727273,
+              "recall": 0.8888888888888888,
+              "f1": 0.7999999999999999,
+              "true_positives": 320,
+              "false_positives": 120,
+              "false_negatives": 40,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:news": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:price": {
+            "metrics": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "true_positives": 0,
+              "false_positives": 0,
+              "false_negatives": 360,
+              "delay_p50_seconds": 0.0,
+              "delay_p95_seconds": 0.0,
+              "delay_p99_seconds": 0.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 0.0,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 0,
+              "false_alert_rate": 0.0
+            }
+          },
+          "without_microstructure": {
+            "metrics": {
+              "precision": 0.6,
+              "recall": 0.6666666666666666,
+              "f1": 0.631578947368421,
+              "true_positives": 240,
+              "false_positives": 160,
+              "false_negatives": 120,
+              "delay_p50_seconds": 5.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.3364517206815902,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:stock_specific_dislocation": {
+            "metrics": {
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091,
+              "true_positives": 300,
+              "false_positives": 0,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.5126050420168067,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 0,
+              "false_alert_rate": 0.0
+            }
+          },
+          "without_pattern:liquidity_pressure_move": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:news_confirmed_move": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:flash_reversal": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:sustained_pressure": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:cross_asset_shock": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "SYN-LEGACY",
+      "artifact": "data/evaluation/factor_cep.json",
+      "sha256": "217e4cc4b967679cea3023fc823cd3b357531f52f56080e55259bf3fccf4bce9",
+      "run_id": null,
+      "data_kind": "synthetic",
+      "code_version": {
+        "execution_snapshot": null,
+        "note": "Historical JSON has no embedded run ID or source hash. September 17 notes cite base bb0df67; this is not a complete execution snapshot."
+      },
+      "label_version": "generated labels; exact generator snapshot not bound",
+      "parameters": {
+        "seeds": 20,
+        "intensities": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "patterns": [
+          "stock_specific_dislocation",
+          "liquidity_pressure_move",
+          "news_confirmed_move",
+          "flash_reversal",
+          "sustained_pressure",
+          "cross_asset_shock"
+        ],
+        "disabled_groups": [],
+        "disabled_patterns": []
+      },
+      "conclusion_scope": "Historical saved aggregate only; new row decomposition is not retroactive proof of old run membership.",
+      "raw_output": {
+        "data_kind": "synthetic",
+        "ground_truth_kind": "generated_factor_sequences",
+        "metric_scope": "pipeline_validation_only",
+        "protocol": {
+          "seeds": 20,
+          "intensities": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "patterns": [
+            "stock_specific_dislocation",
+            "liquidity_pressure_move",
+            "news_confirmed_move",
+            "flash_reversal",
+            "sustained_pressure",
+            "cross_asset_shock"
+          ],
+          "disabled_groups": [],
+          "disabled_patterns": []
+        },
+        "metrics": {
+          "precision": 0.75,
+          "recall": 1.0,
+          "f1": 0.8571428571428571,
+          "true_positives": 360,
+          "false_positives": 120,
+          "false_negatives": 0,
+          "delay_p50_seconds": 10.0,
+          "delay_p95_seconds": 30.0,
+          "delay_p99_seconds": 30.0,
+          "end_to_end_p50_seconds": null,
+          "end_to_end_p95_seconds": null,
+          "end_to_end_p99_seconds": null,
+          "alerts_per_ticker_hour": 1.6037420648179084,
+          "duplicate_alert_rate": 0.0
+        },
+        "cep_latency": {
+          "p50_ms": 0.011375,
+          "p95_ms": 0.022667,
+          "p99_ms": 0.04948190999999998
+        },
+        "negative_controls": {
+          "total": 240,
+          "alerts": 40,
+          "false_alert_rate": 0.16666666666666666
+        },
+        "bootstrap_95_ci": {
+          "precision": [
+            0.75,
+            0.75
+          ],
+          "recall": [
+            1.0,
+            1.0
+          ],
+          "f1": [
+            0.8571428571428571,
+            0.8571428571428571
+          ]
+        },
+        "ablations": {
+          "without_group:activity": {
+            "metrics": {
+              "precision": 0.75,
+              "recall": 1.0,
+              "f1": 0.8571428571428571,
+              "true_positives": 360,
+              "false_positives": 120,
+              "false_negatives": 0,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.6037420648179084,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:liquidity": {
+            "metrics": {
+              "precision": 0.6,
+              "recall": 0.6666666666666666,
+              "f1": 0.631578947368421,
+              "true_positives": 240,
+              "false_positives": 160,
+              "false_negatives": 120,
+              "delay_p50_seconds": 5.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.3364517206815902,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:market_context": {
+            "metrics": {
+              "precision": 0.7272727272727273,
+              "recall": 0.8888888888888888,
+              "f1": 0.7999999999999999,
+              "true_positives": 320,
+              "false_positives": 120,
+              "false_negatives": 40,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:news": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_group:price": {
+            "metrics": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0,
+              "true_positives": 0,
+              "false_positives": 0,
+              "false_negatives": 360,
+              "delay_p50_seconds": 0.0,
+              "delay_p95_seconds": 0.0,
+              "delay_p99_seconds": 0.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 0.0,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 0,
+              "false_alert_rate": 0.0
+            }
+          },
+          "without_microstructure": {
+            "metrics": {
+              "precision": 0.6,
+              "recall": 0.6666666666666666,
+              "f1": 0.631578947368421,
+              "true_positives": 240,
+              "false_positives": 160,
+              "false_negatives": 120,
+              "delay_p50_seconds": 5.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.3364517206815902,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:stock_specific_dislocation": {
+            "metrics": {
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1": 0.9090909090909091,
+              "true_positives": 300,
+              "false_positives": 0,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.5126050420168067,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 0,
+              "false_alert_rate": 0.0
+            }
+          },
+          "without_pattern:liquidity_pressure_move": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:news_confirmed_move": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:flash_reversal": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:sustained_pressure": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 10.0,
+              "delay_p99_seconds": 10.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          },
+          "without_pattern:cross_asset_shock": {
+            "metrics": {
+              "precision": 0.6818181818181818,
+              "recall": 0.8333333333333334,
+              "f1": 0.7499999999999999,
+              "true_positives": 300,
+              "false_positives": 140,
+              "false_negatives": 60,
+              "delay_p50_seconds": 10.0,
+              "delay_p95_seconds": 30.0,
+              "delay_p99_seconds": 30.0,
+              "end_to_end_p50_seconds": null,
+              "end_to_end_p95_seconds": null,
+              "end_to_end_p99_seconds": null,
+              "alerts_per_ticker_hour": 1.4700968927497493,
+              "duplicate_alert_rate": 0.0
+            },
+            "negative_controls": {
+              "total": 240,
+              "alerts": 40,
+              "false_alert_rate": 0.16666666666666666
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "LEGACY-INJECTED",
+      "artifact": "data/comparison_results_nfa_tuned/comparison_60d_0.05.json",
+      "sha256": "60a232a2845f1df9aa5ddc66687fc485f5ec5b96c0cbd3ec81db35e0adffa177",
+      "run_id": null,
+      "data_kind": "real_ohlcv_with_synthetic_injections",
+      "code_version": {
+        "execution_snapshot": null
+      },
+      "label_version": "programmatic injection; label/input file hashes not retained",
+      "parameters": {
+        "period": "60d",
+        "train_ratio": 0.7,
+        "injection_rate": 0.05,
+        "seed": 42,
+        "tickers": [
+          "AAPL",
+          "TSLA",
+          "NVDA"
+        ],
+        "test_windows": 4209,
+        "ground_truth": 225
+      },
+      "conclusion_scope": "Historical aggregate comparison only; exact source data revision, execution date, implementation, trained-model binding and run ID missing. No current-system superiority claim.",
+      "raw_output": {
+        "data_kind": "real_ohlcv_with_synthetic_injections",
+        "ground_truth_kind": "programmatic_anomaly_injection",
+        "metric_scope": "controlled_pipeline_comparison_only",
+        "config": {
+          "period": "60d",
+          "train_ratio": 0.7,
+          "injection_rate": 0.05,
+          "seed": 42,
+          "tickers": [
+            "AAPL",
+            "TSLA",
+            "NVDA"
+          ],
+          "test_windows": 4209,
+          "ground_truth": 225
+        },
+        "methods": [
+          {
+            "name": "ML ensemble",
+            "metrics": {
+              "precision": 0.5719,
+              "recall": 0.7244,
+              "f1": 0.6392,
+              "false_positive_rate": 0.030622,
+              "detection_latency_mean": 0.06,
+              "detection_latency_median": 0,
+              "total_detections": 285,
+              "total_ground_truth": 225,
+              "true_positives": 163,
+              "false_positives": 122,
+              "false_negatives": 62,
+              "per_type_recall": {
+                "sentiment_crash": 1.0,
+                "volume_surge": 0.7963,
+                "price_spike": 0.6056,
+                "multi_feature": 0.6486,
+                "subtle_drift": 0.3333
+              },
+              "per_detector_metrics": {
+                "ewma": {
+                  "precision": 0.296,
+                  "recall": 0.8222,
+                  "f1": 0.4353,
+                  "detections": 625
+                },
+                "hst": {
+                  "precision": 0.0369,
+                  "recall": 0.2311,
+                  "f1": 0.0636,
+                  "detections": 1410
+                },
+                "isolation_forest": {
+                  "precision": 0.6082,
+                  "recall": 0.4622,
+                  "f1": 0.5253,
+                  "detections": 171
+                },
+                "lstm_ae": {
+                  "precision": 0.0566,
+                  "recall": 0.3067,
+                  "f1": 0.0955,
+                  "detections": 1220
+                }
+              }
+            },
+            "latency": {
+              "mean_ms": 4.5135,
+              "median_ms": 4.4791,
+              "p99_ms": 5.119,
+              "max_ms": 6.273
+            }
+          },
+          {
+            "name": "CEP (full)",
+            "metrics": {
+              "precision": 0.7541,
+              "recall": 0.8178,
+              "f1": 0.7846,
+              "false_positive_rate": 0.01506,
+              "detection_latency_mean": 0.04,
+              "detection_latency_median": 0.0,
+              "total_detections": 244,
+              "total_ground_truth": 225,
+              "true_positives": 184,
+              "false_positives": 60,
+              "false_negatives": 41,
+              "per_type_recall": {
+                "sentiment_crash": 1.0,
+                "volume_surge": 0.9815,
+                "price_spike": 0.5775,
+                "multi_feature": 0.7838,
+                "subtle_drift": 0.8667
+              },
+              "per_detector_metrics": {
+                "cep": {
+                  "precision": 0.75,
+                  "recall": 0.8133,
+                  "f1": 0.7804,
+                  "detections": 244
+                }
+              }
+            },
+            "latency": {
+              "mean_ms": 0.0033,
+              "median_ms": 0.003,
+              "p99_ms": 0.008,
+              "max_ms": 0.0342
+            }
+          },
+          {
+            "name": "CEP (automata-only)",
+            "metrics": {
+              "precision": 0.6111,
+              "recall": 0.0489,
+              "f1": 0.0905,
+              "false_positive_rate": 0.001757,
+              "detection_latency_mean": 0.18,
+              "detection_latency_median": 0,
+              "total_detections": 18,
+              "total_ground_truth": 225,
+              "true_positives": 11,
+              "false_positives": 7,
+              "false_negatives": 214,
+              "per_type_recall": {
+                "sentiment_crash": 0.0208,
+                "volume_surge": 0.0,
+                "price_spike": 0.0,
+                "multi_feature": 0.2703,
+                "subtle_drift": 0.0
+              },
+              "per_detector_metrics": {
+                "cep": {
+                  "precision": 0.5556,
+                  "recall": 0.0444,
+                  "f1": 0.0823,
+                  "detections": 18
+                }
+              }
+            },
+            "latency": {
+              "mean_ms": 0.0033,
+              "median_ms": 0.003,
+              "p99_ms": 0.0094,
+              "max_ms": 0.082
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "soak-61164fa173",
+      "artifact": "data/evaluation/soak-61164fa173/report.json",
+      "sha256": "332ac4951a2ab108f3ed3d6c471ea12d0f840e5df78cb3bef3ae2e167122b1be",
+      "run_id": "soak-61164fa173",
+      "data_kind": "synthetic transport",
+      "code_version": {
+        "execution_snapshot": null
+      },
+      "label_version": "not applicable: no detection-effectiveness labels",
+      "parameters": {
+        "recorded_sample": {
+          "input_events": 150,
+          "persisted_events": 150,
+          "persisted_alerts": 15
+        },
+        "invocation_and_runtime_config": null
+      },
+      "conclusion_scope": "Saved engineering gate report only. Exact runtime settings/source snapshot and per-alert rows absent; do not infer reason for differing alert counts.",
+      "raw_output": {
+        "run_id": "soak-61164fa173",
+        "generated_at": "2026-08-06T08:16:22.673027+00:00",
+        "provenance": "synthetic events explicitly marked mode=soak; not live Alpaca data",
+        "path": "MarketEvent -> Kafka -> factor engine -> Kafka -> CEP -> PostgreSQL",
+        "sample": {
+          "input_events": 150,
+          "persisted_events": 150,
+          "persisted_alerts": 15
+        },
+        "receipt_to_alert_persistence_seconds": {
+          "p50": 1.163553,
+          "p95": 1.4842509,
+          "p99": 1.4880493799999999
+        },
+        "gates": {
+          "all_events_persisted": true,
+          "expected_alert_sample": false,
+          "p95_le_15_seconds": true,
+          "no_duplicate_alerts": true,
+          "all_alerts_traceable": true,
+          "kafka_to_database_soak": false
+        }
+      }
+    },
+    {
+      "id": "soak-702644010d",
+      "artifact": "data/evaluation/soak-702644010d/report.json",
+      "sha256": "e0af39616866a18e57e2d68a59c2fc4f329054cecdd2a95b66bb61108cc69147",
+      "run_id": "soak-702644010d",
+      "data_kind": "synthetic transport",
+      "code_version": {
+        "execution_snapshot": null
+      },
+      "label_version": "not applicable: no detection-effectiveness labels",
+      "parameters": {
+        "recorded_sample": {
+          "input_events": 240,
+          "persisted_events": 240,
+          "persisted_alerts": 88
+        },
+        "invocation_and_runtime_config": null
+      },
+      "conclusion_scope": "Saved engineering gate report only. Exact runtime settings/source snapshot and per-alert rows absent; do not infer reason for differing alert counts.",
+      "raw_output": {
+        "run_id": "soak-702644010d",
+        "generated_at": "2026-08-06T08:17:11.894202+00:00",
+        "provenance": "synthetic events explicitly marked mode=soak; not live Alpaca data",
+        "path": "MarketEvent -> Kafka -> factor engine -> Kafka -> CEP -> PostgreSQL",
+        "sample": {
+          "input_events": 240,
+          "persisted_events": 240,
+          "persisted_alerts": 88
+        },
+        "receipt_to_alert_persistence_seconds": {
+          "p50": 1.4175740000000001,
+          "p95": 1.7183804,
+          "p99": 1.73766033
+        },
+        "gates": {
+          "all_events_persisted": true,
+          "expected_alert_sample": true,
+          "p95_le_15_seconds": true,
+          "no_duplicate_alerts": true,
+          "all_alerts_traceable": true,
+          "kafka_to_database_soak": true
+        }
+      }
+    },
+    {
+      "id": "soak-b735cff438",
+      "artifact": "data/evaluation/soak-b735cff438/report.json",
+      "sha256": "56d3664badd6f06a27ae7e4577d96c0f529db0a3d6f45ab1bc277c5cd98893f7",
+      "run_id": "soak-b735cff438",
+      "data_kind": "synthetic transport",
+      "code_version": {
+        "execution_snapshot": null
+      },
+      "label_version": "not applicable: no detection-effectiveness labels",
+      "parameters": {
+        "recorded_sample": {
+          "input_events": 240,
+          "persisted_events": 240,
+          "persisted_alerts": 76
+        },
+        "invocation_and_runtime_config": null
+      },
+      "conclusion_scope": "Saved engineering gate report only. Exact runtime settings/source snapshot and per-alert rows absent; do not infer reason for differing alert counts.",
+      "raw_output": {
+        "run_id": "soak-b735cff438",
+        "generated_at": "2026-09-10T08:23:12.200157+00:00",
+        "provenance": "synthetic events explicitly marked mode=soak; not live Alpaca data",
+        "path": "MarketEvent -> Kafka -> factor engine -> Kafka -> CEP -> PostgreSQL",
+        "sample": {
+          "input_events": 240,
+          "persisted_events": 240,
+          "persisted_alerts": 76
+        },
+        "receipt_to_alert_persistence_seconds": {
+          "p50": 1.4762165,
+          "p95": 1.615935,
+          "p99": 1.7272915
+        },
+        "gates": {
+          "all_events_persisted": true,
+          "expected_alert_sample": true,
+          "p95_le_15_seconds": true,
+          "no_duplicate_alerts": true,
+          "all_alerts_traceable": true,
+          "kafka_to_database_soak": true
+        }
+      }
+    },
+    {
+      "id": "IEX-LIVE",
+      "artifact": "data/evaluation/alpaca_live_e2e.json",
+      "sha256": "16224ed169ab37ec1f1689c0af171db59de40110ae702ad039906b756b3a68e2",
+      "run_id": "alpaca-live-20260819T144908Z",
+      "data_kind": "real_live_soak",
+      "code_version": {
+        "execution_snapshot": null
+      },
+      "label_version": "none; metric_eligible=false",
+      "parameters": {
+        "window": {
+          "first_received_at": "2026-08-19T14:49:10.204889+00:00",
+          "last_received_at": "2026-08-19T14:50:38.494241+00:00"
+        },
+        "provider": "alpaca",
+        "feed": "iex",
+        "full_invocation": null
+      },
+      "conclusion_scope": "Short warm-up ingestion/persistence/cadence gate report; raw event rows not archived here. No accuracy, duration SLA or SIP generalization.",
+      "raw_output": {
+        "run_id": "alpaca-live-20260819T144908Z",
+        "data_kind": "real_live_soak",
+        "metric_eligible": false,
+        "metric_limitation": "warm-up-only run without frozen reviewed ground truth; proves transport and factor-chain operation, not detection precision/recall",
+        "generated_at": "2026-08-19T14:50:42Z",
+        "coverage": "Alpaca IEX only; not consolidated SIP",
+        "path": "Alpaca WebSocket -> MarketEvent -> raw.market_events Kafka -> factor engine -> PostgreSQL",
+        "window": {
+          "first_received_at": "2026-08-19T14:49:10.204889+00:00",
+          "last_received_at": "2026-08-19T14:50:38.494241+00:00"
+        },
+        "persisted_market_events": {
+          "total": 48734,
+          "tickers": 5,
+          "event_types": {
+            "bar": 5,
+            "quote": 48283,
+            "trade": 446
+          },
+          "clean_quality_flags": 48729,
+          "feed_gap_flags": 5,
+          "stale_bar_flags": 0
+        },
+        "persisted_factor_snapshots": {
+          "10s": 40,
+          "1m": 5,
+          "5m": 5,
+          "tickers_per_cadence": 5
+        },
+        "gates": {
+          "iex_websocket_authenticated": true,
+          "iex_websocket_subscribed": true,
+          "news_websocket_authenticated": true,
+          "news_websocket_subscribed": true,
+          "real_iex_event_received": true,
+          "all_five_tickers_persisted": true,
+          "trade_quote_bar_persisted": true,
+          "factor_snapshots_all_cadences": true,
+          "minute_bars_not_falsely_stale": true,
+          "alpaca_live_end_to_end": true
+        }
+      }
+    },
+    {
+      "id": "FORMAL-LABEL-iex_benchmark_v1.ai_preannotated",
+      "artifact": "data/replay/labels/iex_benchmark_v1.ai_preannotated.json",
+      "sha256": "0117133b91047e5a533917e1714af60a3b28b3784747736be694c59710265376",
+      "run_id": null,
+      "data_kind": "proposed real_historical",
+      "code_version": {
+        "formal_execution_snapshot": null
+      },
+      "label_version": "iex_benchmark_v1.ai_preannotated.json",
+      "parameters": {
+        "frozen": false,
+        "interval_count": 24
+      },
+      "conclusion_scope": "No formal replay run/metrics; labels unfrozen. AI preannotations do not constitute independent approval.",
+      "raw_output": {
+        "schema_version": "marketstream-reviewed-labels-v1",
+        "dataset_id": "alpaca-iex-reviewed-benchmark-v1",
+        "data_kind": "real_historical",
+        "provider": "alpaca",
+        "feed": "iex",
+        "timezone": "America/New_York",
+        "frozen": false,
+        "frozen_at": null,
+        "notes": "AI-assisted pre-annotation created from the original draft on 2026-09-20. Sources include issuer and government publications, contemporaneous market reporting, and unadjusted daily OHLCV cross-checks. This file is not independent human approval and must not be frozen or used for formal metrics until rejected controls are replaced and every interval is approved by a blinded human reviewer.",
+        "intervals": [
+          {
+            "interval_id": "aapl-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-05-03T13:30:00Z",
+            "ended_at": "2024-05-03T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "aapl-2024-05-03-earnings",
+            "evidence_urls": [
+              "https://apnews.com/article/3da3918af2387f4921b212194559d610",
+              "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results and buyback announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Unadjusted daily OHLCV cross-check: AAPL +5.98%, SPY +1.24%, residual +4.74%, volume 3.23x prior-20-session median; AP tied the move to the earnings, dividend, and $110 billion buyback. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-apple-intelligence-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-06-11T13:30:00Z",
+            "ended_at": "2024-06-11T15:00:00Z",
+            "direction": "up",
+            "pattern": "news_confirmed_move",
+            "event_id": "aapl-2024-06-11-apple-intelligence",
+            "evidence_urls": [
+              "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+              "https://www.axios.com/2024/06/11/apple-stock-generative-ai-wwdc"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate reaction window following the June 10 Apple Intelligence announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: AAPL +7.26%, SPY +0.24%, residual +7.02%, volume 3.34x; contemporaneous reporting described a 7.3% AI-related move. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "aapl-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+              "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+            ],
+            "confidence": 0.86,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT anomaly and down direction pending blinded human review, but causal pattern is confounded. Daily cross-check: AAPL -4.82%, SPY -2.91%, opening gap -9.45%, volume 2.29x. The global risk-off shock coincided with Berkshire Hathaway cutting its Apple stake, so cross_asset_shock is not a pure attribution. Exact interval requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-04-24T13:30:00Z",
+            "ended_at": "2024-04-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-04-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-first-quarter-2024-financial-results",
+              "https://www.investing.com/news/stock-market-news/tesla-jumps-as-musks-promise-of-more-affordable-cars-eases-growth-fears-3392836"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after Q1 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +12.06%, SPY -0.05%, residual +12.11%, opening gap +12.55%, volume 1.88x; Reuters tied the surge to plans for more affordable models following results. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-07-24T13:30:00Z",
+            "ended_at": "2024-07-24T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-07-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2024-financial-results",
+              "https://www.investing.com/news/stock-market-news/tesla-slides-as-bleak-profit-margins-exposes-need-for-affordable-evs-3532970"
+            ],
+            "confidence": 0.96,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after Q2 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA -12.33%, SPY -2.27%, residual -10.07%, opening gap -8.51%; Reuters reported a 12% fall after weak margins and an earnings miss. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q3-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-10-24T13:30:00Z",
+            "ended_at": "2024-10-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-10-24-earnings",
+            "evidence_urls": [
+              "https://apnews.com/article/81c830cd6d465440f3d8f4bfc12d7487",
+              "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2024-financial-results"
+            ],
+            "confidence": 0.97,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after Q3 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +21.92%, SPY +0.22%, residual +21.70%, opening gap +14.52%, volume 2.94x; AP described one of Tesla's best trading days after results and growth guidance. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy24-q4-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-02-22T14:30:00Z",
+            "ended_at": "2024-02-22T16:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-02-22-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024",
+              "https://www.axios.com/2024/02/22/nvidia-stock-price-earnings-ai-chips"
+            ],
+            "confidence": 0.97,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q4 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +16.40%, SPY +2.07%, residual +14.33%, opening gap +11.19%, volume 1.77x; contemporaneous reporting attributed the 16% move to earnings. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-05-23T13:30:00Z",
+            "ended_at": "2024-05-23T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-05-23-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025",
+              "https://www.investing.com/news/stock-market-news/nasdaq-sp-500-futures-pop-as-nvidia-fuels-chip-stocks-rally-3453619"
+            ],
+            "confidence": 0.96,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q1 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +9.32%, SPY -0.73%, residual +10.05%, opening gap +7.45%, volume 2.21x; Reuters tied the move to the revenue outlook, earnings, and stock split. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-08-29T13:30:00Z",
+            "ended_at": "2024-08-29T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-08-29-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025/",
+              "https://www.investing.com/news/stock-market-news/nvidias-forecast-dampens-ai-enthusiasm-in-other-tech-stocks-3592111"
+            ],
+            "confidence": 0.92,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results; direction must be confirmed during review. AI pre-annotation: ACCEPT candidate and down direction pending blinded human review. Daily cross-check: NVDA -6.38%, SPY +0.01%, residual -6.39%, opening gap -3.38%; Reuters reported a greater-than-6% decline because the outlook failed to meet elevated expectations. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-december-fomc-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2024-12-18T19:00:00Z",
+            "ended_at": "2024-12-18T20:30:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2024-12-18-fomc",
+            "evidence_urls": [
+              "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+              "https://www.investing.com/news/economy-news/stocks-skid-after-fed-signals-it-will-slow-down-its-easing-3780547"
+            ],
+            "confidence": 0.98,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate FOMC statement and press-conference reaction window. AI pre-annotation: ACCEPT candidate pending blinded human review. The 19:00Z start aligns with the 2:00 p.m. ET FOMC decision. Daily cross-check: SPY -2.98%, intraday -2.93%, volume 2.96x; Reuters reported the S&P 500 lost about 2.96% after the Fed signaled fewer cuts. Intraday IEX review should confirm the precise reaction onset.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "qqq-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "QQQ",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "qqq-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+              "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+            ],
+            "confidence": 0.92,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: QQQ -2.98%, SPY -2.91%, opening gap -5.36%, volume 2.14x; Reuters described a broad risk-off selloff led by recession fears. Because much of the loss was an opening gap followed by an intraday rebound, the exact 90-minute anomaly boundary requires IEX review.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-reciprocal-tariff-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2025-04-03T13:30:00Z",
+            "ended_at": "2025-04-03T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2025-04-03-tariff",
+            "evidence_urls": [
+              "https://apnews.com/article/6f7c844f6fbdff738395b6f3eb795b40",
+              "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/"
+            ],
+            "confidence": 0.98,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after the April 2 reciprocal-tariff announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: SPY -4.93%, opening gap -3.44%, volume 1.85x; AP reported the S&P 500 fell 4.8% after the tariff announcement. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-04-19",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-04-19T13:30:00Z",
+            "ended_at": "2024-04-19T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for earnings, macro releases, and unscheduled material news. AI pre-annotation: REJECT as normal control. The session followed an apparent Israeli strike on Iran and contemporaneous market coverage explicitly treated geopolitical escalation as the session driver. Daily cross-check: AAPL -1.22%, SPY -0.87%, absolute-return percentile 80/100. Replace with a quieter calendar-matched interval.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.96,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://apnews.com/article/a7ccbae2e2844bab089e8e4377a24ddb",
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.axios.com/2024/04/19/stock-market-israel-iran-attacks-war-oil-prices"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-05-28",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-05-28T13:30:00Z",
+            "ended_at": "2024-05-28T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control despite a near-flat close. Reuters reported Apple rose premarket after China iPhone sales data showed a 52% year-over-year increase, creating a firm-specific catalyst inside the opening-window evaluation. Daily cross-check: AAPL +0.01%, residual -0.06%, volume 1.01x. Replace with a day without material Apple news.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.9,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://au.investing.com/news/economy/nasdaq-closes-above-17000-sp-500-slightly-higher-dow-down-3274953",
+              "https://finance.yahoo.com/quote/AAPL/history/"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-07-22",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-07-22T13:30:00Z",
+            "ended_at": "2024-07-22T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. The first session after President Biden withdrew from the election was a material political-news day; Reuters explicitly evaluated the market reaction. Daily cross-check: AAPL -0.16%, SPY +1.03%, residual -1.19%. Replace with a non-event session.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.94,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/",
+              "https://www.investing.com/news/economy-news/morning-bid-wall-street-in-measured-mood-as-biden-bows-out-3528118"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-04-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-04-10T13:30:00Z",
+            "ended_at": "2024-04-10T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. BLS released CPI at 8:30 a.m. ET immediately before the 9:30 a.m. evaluation window, making this a scheduled macro catalyst day. Daily cross-check: TSLA -2.89%, SPY -1.00%, residual -1.89%. Replace with a day without a major macro release.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.99,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/",
+              "https://www.bls.gov/schedule/2024/04_sched_list.htm"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-07-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-07-10T13:30:00Z",
+            "ended_at": "2024-07-10T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN only as a low-confidence normal candidate pending full news and intraday review. Daily cross-check: TSLA +0.35%, SPY +0.99%, residual -0.64%, volume 1.38x. The close-to-close move is ordinary, but the stock was in a high-volatility multi-session rally and the first-pass news screen cannot establish absence of a material catalyst.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.6,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-10-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-10-10T13:30:00Z",
+            "ended_at": "2024-10-10T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. This was the scheduled Tesla We, Robot event day. Even though the event occurred after the regular-session evaluation window, anticipation makes the day firm-specific and unsuitable as a clean negative control. Daily cross-check: TSLA -0.95%, SPY -0.18%, residual -0.77%.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.99,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/",
+              "https://www.tesla.com/we-robot"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-02-08",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-02-08T14:30:00Z",
+            "ended_at": "2024-02-08T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -0.65%, SPY +0.04%, residual -0.70%, volume 0.87x. No clear same-day firm-specific or major macro catalyst was identified in the first-pass search, but absence of news is not yet proven.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.72,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-05-09",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-05-09T13:30:00Z",
+            "ended_at": "2024-05-09T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -1.84%, SPY +0.58%, residual -2.42%, volume 0.87x; the move was not extreme relative to NVDA's preceding 60 sessions. A complete news archive and intraday path are still required.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.65,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-08-15",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-08-15T13:30:00Z",
+            "ended_at": "2024-08-15T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. Strong U.S. retail-sales data drove one of the market's strongest sessions of the year; NVDA gained 4.05% while SPY gained 1.71%. This is a macro shock/rebound day rather than a clean negative control.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.97,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/",
+              "https://www.barchart.com/story/news/28026041/stock-market-today-wall-street-leaps-and-s-p-500-rallies-16-as-us-shoppers-drive-the-economy",
+              "https://www.marketscreener.com/news/latest/Stocks-gain-Treasury-yields-jump-as-US-retail-data-reassures-47666474/"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2024-12-04",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2024-12-04T19:00:00Z",
+            "ended_at": "2024-12-04T20:30:00Z",
+            "approval_status": "rejected",
+            "notes": "Time-of-day matched control candidate. Must be checked for macro releases and unscheduled events. AI pre-annotation: REJECT as normal control. The reviewed interval is 19:00-20:30Z, while Chair Powell spoke at the DealBook Summit from 1:40-2:10 p.m. ET, directly overlapping the interval. Daily cross-check: SPY +0.62%. A Fed communication window cannot serve as a clean normal control.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ],
+            "confidence": 0.99,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/SPY/history/",
+              "https://www.federalreserve.gov/newsevents/2024-december.htm"
+            ]
+          },
+          {
+            "interval_id": "qqq-control-2024-07-22",
+            "kind": "normal",
+            "ticker": "QQQ",
+            "started_at": "2024-07-22T13:30:00Z",
+            "ended_at": "2024-07-22T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for macro releases and unscheduled events. AI pre-annotation: REJECT as normal control. This was the first session after President Biden withdrew from the election, a material political-news day. Daily cross-check: QQQ +1.49%, SPY +1.03%, absolute-return percentile 88/100. Replace with a quieter session.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ],
+            "confidence": 0.95,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/QQQ/history/",
+              "https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/",
+              "https://www.investing.com/news/economy-news/morning-bid-wall-street-in-measured-mood-as-biden-bows-out-3528118"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2025-03-13",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2025-03-13T13:30:00Z",
+            "ended_at": "2025-03-13T15:00:00Z",
+            "approval_status": "rejected",
+            "notes": "Calendar-matched control candidate. Must be checked for macro releases and unscheduled events. AI pre-annotation: REJECT as normal control. BLS released February PPI at 8:30 a.m. ET immediately before the opening-window evaluation. Daily cross-check: SPY -1.33%, intraday -1.27%, absolute-return percentile 83/100. Replace with a day without a major macro release.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ],
+            "confidence": 0.99,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/SPY/history/",
+              "https://www.bls.gov/news.release/archives/ppi_03132025.pdf"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "FORMAL-LABEL-iex_benchmark_v1.ai_preannotated.v2",
+      "artifact": "data/replay/labels/iex_benchmark_v1.ai_preannotated.v2.json",
+      "sha256": "f94bc4143580d60b7361394b2eeac19707954632251a2fac41782b49abe372ef",
+      "run_id": null,
+      "data_kind": "proposed real_historical",
+      "code_version": {
+        "formal_execution_snapshot": null
+      },
+      "label_version": "iex_benchmark_v1.ai_preannotated.v2.json",
+      "parameters": {
+        "frozen": false,
+        "interval_count": 24
+      },
+      "conclusion_scope": "No formal replay run/metrics; labels unfrozen. AI preannotations do not constitute independent approval.",
+      "raw_output": {
+        "schema_version": "marketstream-reviewed-labels-v1",
+        "dataset_id": "alpaca-iex-reviewed-benchmark-v1",
+        "data_kind": "real_historical",
+        "provider": "alpaca",
+        "feed": "iex",
+        "timezone": "America/New_York",
+        "frozen": false,
+        "frozen_at": null,
+        "notes": "AI-assisted pre-annotation v2 created from iex_benchmark_v1.ai_preannotated.json on 2026-09-20. Nine rejected normal controls were replaced after a second-pass screen of daily OHLCV, issuer news archives, official BLS/Federal Reserve calendars, and contemporaneous market reporting. Every interval remains proposed: this is not independent human approval, the registry is not frozen, and it must not be used as formal ground truth until blinded reviewers inspect the raw intraday IEX data, adjudicate disagreements, and freeze checksums.",
+        "intervals": [
+          {
+            "interval_id": "aapl-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-05-03T13:30:00Z",
+            "ended_at": "2024-05-03T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "aapl-2024-05-03-earnings",
+            "evidence_urls": [
+              "https://apnews.com/article/3da3918af2387f4921b212194559d610",
+              "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results and buyback announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Unadjusted daily OHLCV cross-check: AAPL +5.98%, SPY +1.24%, residual +4.74%, volume 3.23x prior-20-session median; AP tied the move to the earnings, dividend, and $110 billion buyback. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-apple-intelligence-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-06-11T13:30:00Z",
+            "ended_at": "2024-06-11T15:00:00Z",
+            "direction": "up",
+            "pattern": "news_confirmed_move",
+            "event_id": "aapl-2024-06-11-apple-intelligence",
+            "evidence_urls": [
+              "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+              "https://www.axios.com/2024/06/11/apple-stock-generative-ai-wwdc"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate reaction window following the June 10 Apple Intelligence announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: AAPL +7.26%, SPY +0.24%, residual +7.02%, volume 3.34x; contemporaneous reporting described a 7.3% AI-related move. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "aapl-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+              "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+            ],
+            "confidence": 0.86,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT anomaly and down direction pending blinded human review, but causal pattern is confounded. Daily cross-check: AAPL -4.82%, SPY -2.91%, opening gap -9.45%, volume 2.29x. The global risk-off shock coincided with Berkshire Hathaway cutting its Apple stake, so cross_asset_shock is not a pure attribution. Exact interval requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-04-24T13:30:00Z",
+            "ended_at": "2024-04-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-04-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-first-quarter-2024-financial-results",
+              "https://www.investing.com/news/stock-market-news/tesla-jumps-as-musks-promise-of-more-affordable-cars-eases-growth-fears-3392836"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after Q1 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +12.06%, SPY -0.05%, residual +12.11%, opening gap +12.55%, volume 1.88x; Reuters tied the surge to plans for more affordable models following results. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-07-24T13:30:00Z",
+            "ended_at": "2024-07-24T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-07-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2024-financial-results",
+              "https://www.investing.com/news/stock-market-news/tesla-slides-as-bleak-profit-margins-exposes-need-for-affordable-evs-3532970"
+            ],
+            "confidence": 0.96,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after Q2 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA -12.33%, SPY -2.27%, residual -10.07%, opening gap -8.51%; Reuters reported a 12% fall after weak margins and an earnings miss. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q3-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-10-24T13:30:00Z",
+            "ended_at": "2024-10-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-10-24-earnings",
+            "evidence_urls": [
+              "https://apnews.com/article/81c830cd6d465440f3d8f4bfc12d7487",
+              "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2024-financial-results"
+            ],
+            "confidence": 0.97,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after Q3 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +21.92%, SPY +0.22%, residual +21.70%, opening gap +14.52%, volume 2.94x; AP described one of Tesla's best trading days after results and growth guidance. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy24-q4-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-02-22T14:30:00Z",
+            "ended_at": "2024-02-22T16:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-02-22-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024",
+              "https://www.axios.com/2024/02/22/nvidia-stock-price-earnings-ai-chips"
+            ],
+            "confidence": 0.97,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q4 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +16.40%, SPY +2.07%, residual +14.33%, opening gap +11.19%, volume 1.77x; contemporaneous reporting attributed the 16% move to earnings. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-05-23T13:30:00Z",
+            "ended_at": "2024-05-23T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-05-23-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025",
+              "https://www.investing.com/news/stock-market-news/nasdaq-sp-500-futures-pop-as-nvidia-fuels-chip-stocks-rally-3453619"
+            ],
+            "confidence": 0.96,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q1 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +9.32%, SPY -0.73%, residual +10.05%, opening gap +7.45%, volume 2.21x; Reuters tied the move to the revenue outlook, earnings, and stock split. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-08-29T13:30:00Z",
+            "ended_at": "2024-08-29T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-08-29-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025/",
+              "https://www.investing.com/news/stock-market-news/nvidias-forecast-dampens-ai-enthusiasm-in-other-tech-stocks-3592111"
+            ],
+            "confidence": 0.92,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results; direction must be confirmed during review. AI pre-annotation: ACCEPT candidate and down direction pending blinded human review. Daily cross-check: NVDA -6.38%, SPY +0.01%, residual -6.39%, opening gap -3.38%; Reuters reported a greater-than-6% decline because the outlook failed to meet elevated expectations. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-december-fomc-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2024-12-18T19:00:00Z",
+            "ended_at": "2024-12-18T20:30:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2024-12-18-fomc",
+            "evidence_urls": [
+              "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+              "https://www.investing.com/news/economy-news/stocks-skid-after-fed-signals-it-will-slow-down-its-easing-3780547"
+            ],
+            "confidence": 0.98,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate FOMC statement and press-conference reaction window. AI pre-annotation: ACCEPT candidate pending blinded human review. The 19:00Z start aligns with the 2:00 p.m. ET FOMC decision. Daily cross-check: SPY -2.98%, intraday -2.93%, volume 2.96x; Reuters reported the S&P 500 lost about 2.96% after the Fed signaled fewer cuts. Intraday IEX review should confirm the precise reaction onset.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "qqq-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "QQQ",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "qqq-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+              "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+            ],
+            "confidence": 0.92,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: QQQ -2.98%, SPY -2.91%, opening gap -5.36%, volume 2.14x; Reuters described a broad risk-off selloff led by recession fears. Because much of the loss was an opening gap followed by an intraday rebound, the exact 90-minute anomaly boundary requires IEX review.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-reciprocal-tariff-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2025-04-03T13:30:00Z",
+            "ended_at": "2025-04-03T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2025-04-03-tariff",
+            "evidence_urls": [
+              "https://apnews.com/article/6f7c844f6fbdff738395b6f3eb795b40",
+              "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/"
+            ],
+            "confidence": 0.98,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "notes": "Candidate first 90 regular-session minutes after the April 2 reciprocal-tariff announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: SPY -4.93%, opening gap -3.44%, volume 1.85x; AP reported the S&P 500 fell 4.8% after the tariff announcement. Exact 90-minute boundary still requires intraday IEX review.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-05-17",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-05-17T13:30:00Z",
+            "ended_at": "2024-05-17T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for aapl-control-2024-04-19. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Unadjusted daily cross-check: AAPL +0.02%, SPY +0.14%, residual -0.13%, opening gap -0.17%, intraday +0.19%, volume 0.78x prior-20-session median. Apple’s official newsroom archive shows no same-day corporate release, and the first-pass macro/news screen found no clear material catalyst in the 09:30-11:00 ET window. Absence of material news is not proven without a complete archive.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.72,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.apple.com/newsroom/archive/?page=35",
+              "https://www.bls.gov/schedule/2024/"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-05-29",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-05-29T13:30:00Z",
+            "ended_at": "2024-05-29T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for aapl-control-2024-05-28. AI second-pass screen: RETAIN with moderate confidence pending blinded human and intraday IEX review. Daily cross-check: AAPL +0.16%, SPY -0.70%, residual +0.86%, opening gap -0.20%, intraday +0.36%, volume 1.03x. Apple had routine WWDC and health-study newsroom updates on the prior day, but the first-pass screen found no clear same-day material Apple catalyst in the evaluation window. The 14:00 ET Beige Book occurred after this 09:30-11:00 ET interval. Complete news-archive review is still required.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.62,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.apple.com/newsroom/archive/?page=35",
+              "https://www.federalreserve.gov/monetarypolicy/beigebook202405.htm"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-07-08",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-07-08T13:30:00Z",
+            "ended_at": "2024-07-08T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for aapl-control-2024-07-22. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: AAPL +0.65%, SPY +0.12%, residual +0.54%, opening gap +0.33%, intraday +0.32%, volume 0.79x. Official BLS and Federal Reserve calendars show no major scheduled release or public Fed communication during the 09:30-11:00 ET interval; the Fed consumer-credit release was at 15:00 ET. No clear same-day Apple catalyst was found in the first-pass screen.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.7,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.bls.gov/schedule/2024/",
+              "https://www.federalreserve.gov/newsevents/2024-july.htm"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-02-21",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-02-21T14:30:00Z",
+            "ended_at": "2024-02-21T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for tsla-control-2024-04-10. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: TSLA +0.52%, SPY +0.09%, residual +0.43%, opening gap -0.21%, intraday +0.73%, volume 0.95x. Tesla’s investor-relations calendar shows no earnings or delivery release that day, and no clear material Tesla catalyst was identified. The FOMC minutes were released at 14:00 ET, after the 09:30-11:00 ET evaluation window.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.7,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/",
+              "https://ir.tesla.com/",
+              "https://www.bls.gov/schedule/2024/",
+              "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-07-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-07-10T13:30:00Z",
+            "ended_at": "2024-07-10T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN only as a low-confidence normal candidate pending full news and intraday review. Daily cross-check: TSLA +0.35%, SPY +0.99%, residual -0.64%, volume 1.38x. The close-to-close move is ordinary, but the stock was in a high-volatility multi-session rally and the first-pass news screen cannot establish absence of a material catalyst.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.6,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-10-15",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-10-15T13:30:00Z",
+            "ended_at": "2024-10-15T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for tsla-control-2024-10-10. AI second-pass screen: RETAIN only as a lower-confidence normal candidate pending blinded human and intraday IEX review. Daily cross-check: TSLA +0.19%, SPY -0.78%, residual +0.96%, opening gap +0.39%, intraday -0.20%, volume 0.77x. This is several sessions after the robotaxi event and before the October 23 earnings release; contemporaneous coverage mentions routine EV-sales outlook and post-event debate but no clearly dominant same-day catalyst. Because event after-effects may persist, a human may still reject it.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.55,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/",
+              "https://ir.tesla.com/press?page=4",
+              "https://www.zacks.com/stock/news/2350346/company-news-for-oct-15-2024"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-02-08",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-02-08T14:30:00Z",
+            "ended_at": "2024-02-08T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -0.65%, SPY +0.04%, residual -0.70%, volume 0.87x. No clear same-day firm-specific or major macro catalyst was identified in the first-pass search, but absence of news is not yet proven.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.72,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-05-09",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-05-09T13:30:00Z",
+            "ended_at": "2024-05-09T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -1.84%, SPY +0.58%, residual -2.42%, volume 0.87x; the move was not extreme relative to NVDA's preceding 60 sessions. A complete news archive and intraday path are still required.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.65,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:18:39.860Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-09-23",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-09-23T13:30:00Z",
+            "ended_at": "2024-09-23T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for nvda-control-2024-08-15. AI second-pass screen: RETAIN with moderate confidence pending blinded human and intraday IEX review. Daily cross-check: NVDA +0.22%, SPY +0.25%, residual -0.03%, opening gap +0.47%, intraday -0.25%, volume 0.63x. The broad market was described as a quiet session. NVIDIA posted routine ecosystem/government-partnership newsroom items, and flash PMIs were released at 09:45 ET, but neither produced a material daily NVDA move. A human reviewer must decide whether the PMI overlap or company posts disqualify the exact interval.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.58,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/",
+              "https://nvidianews.nvidia.com/news/nvid-?page=91",
+              "https://www.bls.gov/schedule/2024/09_sched.htm",
+              "https://apnews.com/article/efe102c3b9007cb9abff468aa006f995"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2024-12-05",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2024-12-05T19:00:00Z",
+            "ended_at": "2024-12-05T20:30:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for spy-control-2024-12-04. AI second-pass screen: RETAIN as a time-of-day-matched normal candidate pending blinded human and intraday IEX review. Daily cross-check: SPY -0.16%, opening gap +0.00%, intraday -0.16%, volume 0.67x. AP characterized the session as a small pullback ahead of the next day’s jobs report. The Federal Reserve calendar shows no public Fed speech, Beige Book, or FOMC event during 14:00-15:30 ET; the 08:30 ET trade-balance release occurred well before this afternoon interval.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ],
+            "confidence": 0.76,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/SPY/history/",
+              "https://www.federalreserve.gov/newsevents/2024-december.htm",
+              "https://www.bls.gov/schedule/2024/12_sched_list.htm",
+              "https://apnews.com/article/88d737ab0669b10c06ab39386ed30a74"
+            ]
+          },
+          {
+            "interval_id": "qqq-control-2024-07-08",
+            "kind": "normal",
+            "ticker": "QQQ",
+            "started_at": "2024-07-08T13:30:00Z",
+            "ended_at": "2024-07-08T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for qqq-control-2024-07-22. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: QQQ +0.24%, SPY +0.12%, residual +0.12%, opening gap +0.07%, intraday +0.16%, volume 0.85x. Official BLS and Federal Reserve calendars show no major scheduled release or public Fed communication during 09:30-11:00 ET; the Fed consumer-credit release was at 15:00 ET. The first-pass news screen found no broad shock in the candidate window.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ],
+            "confidence": 0.72,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/QQQ/history/",
+              "https://www.bls.gov/schedule/2024/",
+              "https://www.federalreserve.gov/newsevents/2024-july.htm"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2025-02-18",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2025-02-18T14:30:00Z",
+            "ended_at": "2025-02-18T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for spy-control-2025-03-13. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: SPY +0.29%, opening gap +0.19%, intraday +0.10%, volume 0.65x. AP and Reuters described a quiet, small-gain session. The BLS calendar lists no release that day; the Federal Reserve calendar’s public speech was at 13:00 ET, after the 09:30-11:00 ET evaluation window. A full intraday/news-archive review is still required.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ],
+            "confidence": 0.8,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-20T09:37:22.220Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/SPY/history/",
+              "https://www.bls.gov/schedule/2025/02_sched_list.htm",
+              "https://www.federalreserve.gov/newsevents/2025-february.htm",
+              "https://apnews.com/article/dc48f4eb66b6ec2bf32f93a9d82aabac"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "FORMAL-LABEL-iex_benchmark_v1.ai_preannotated.v3",
+      "artifact": "data/replay/labels/iex_benchmark_v1.ai_preannotated.v3.json",
+      "sha256": "559378decdfd334b2b9aa08c5241ea1ddb61dd46a15cfdfb852d39c6e9a5b1b3",
+      "run_id": null,
+      "data_kind": "proposed real_historical",
+      "code_version": {
+        "formal_execution_snapshot": null
+      },
+      "label_version": "iex_benchmark_v1.ai_preannotated.v3.json",
+      "parameters": {
+        "frozen": false,
+        "interval_count": 24
+      },
+      "conclusion_scope": "No formal replay run/metrics; labels unfrozen. AI preannotations do not constitute independent approval.",
+      "raw_output": {
+        "schema_version": "marketstream-reviewed-labels-v1",
+        "dataset_id": "alpaca-iex-reviewed-benchmark-v1",
+        "data_kind": "real_historical",
+        "provider": "alpaca",
+        "feed": "iex",
+        "timezone": "America/New_York",
+        "frozen": false,
+        "frozen_at": null,
+        "notes": "AI-assisted pre-annotation v3 created from v2 on 2026-09-21. The third pass queried Alpaca IEX one-minute bars and the Alpaca/Benzinga news feed for every interval. Four v2 normal controls were rejected and replaced after exact-window review; anomaly directions were checked against the prior IEX session close so gap-and-reversal sessions are documented correctly. All 24 intervals remain proposed, the registry is not frozen, and this file is not formal ground truth until independent blinded reviewers approve every interval and freeze checksums.",
+        "intervals": [
+          {
+            "interval_id": "aapl-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-05-03T13:30:00Z",
+            "ended_at": "2024-05-03T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "aapl-2024-05-03-earnings",
+            "evidence_urls": [
+              "https://apnews.com/article/3da3918af2387f4921b212194559d610",
+              "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/"
+            ],
+            "confidence": 0.96,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results and buyback announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Unadjusted daily OHLCV cross-check: AAPL +5.98%, SPY +1.24%, residual +4.74%, volume 3.23x prior-20-session median; AP tied the move to the earnings, dividend, and $110 billion buyback. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +7.809%, end of window +6.810% versus prior close, while open-to-end was -0.927%. This confirms an up shock with a partial intrawindow reversal; direction is defined against the prior session close.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-apple-intelligence-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-06-11T13:30:00Z",
+            "ended_at": "2024-06-11T15:00:00Z",
+            "direction": "up",
+            "pattern": "news_confirmed_move",
+            "event_id": "aapl-2024-06-11-apple-intelligence",
+            "evidence_urls": [
+              "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+              "https://www.axios.com/2024/06/11/apple-stock-generative-ai-wwdc"
+            ],
+            "confidence": 0.97,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate reaction window following the June 10 Apple Intelligence announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: AAPL +7.26%, SPY +0.24%, residual +7.02%, volume 3.34x; contemporaneous reporting described a 7.3% AI-related move. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +0.264%, end of window +5.167% versus prior close, open-to-end +4.890%. This confirms the up direction inside the reviewed window.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "aapl-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+              "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+            ],
+            "confidence": 0.9,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT anomaly and down direction pending blinded human review, but causal pattern is confounded. Daily cross-check: AAPL -4.82%, SPY -2.91%, opening gap -9.45%, volume 2.29x. The global risk-off shock coincided with Berkshire Hathaway cutting its Apple stake, so cross_asset_shock is not a pure attribution. Exact interval requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -9.394%, end of window -4.763% versus prior close, while open-to-end rebounded +5.111%. This confirms a down opening shock followed by a large partial reversal; direction is defined against the prior session close.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-04-24T13:30:00Z",
+            "ended_at": "2024-04-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-04-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-first-quarter-2024-financial-results",
+              "https://www.investing.com/news/stock-market-news/tesla-jumps-as-musks-promise-of-more-affordable-cars-eases-growth-fears-3392836"
+            ],
+            "confidence": 0.96,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after Q1 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +12.06%, SPY -0.05%, residual +12.11%, opening gap +12.55%, volume 1.88x; Reuters tied the surge to plans for more affordable models following results. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +12.618%, end of window +11.934% versus prior close, while open-to-end was -0.608%. This confirms an up earnings shock with mild post-open retracement.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-07-24T13:30:00Z",
+            "ended_at": "2024-07-24T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-07-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2024-financial-results",
+              "https://www.investing.com/news/stock-market-news/tesla-slides-as-bleak-profit-margins-exposes-need-for-affordable-evs-3532970"
+            ],
+            "confidence": 0.97,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after Q2 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA -12.33%, SPY -2.27%, residual -10.07%, opening gap -8.51%; Reuters reported a 12% fall after weak margins and an earnings miss. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -8.632%, end of window -11.644% versus prior close, open-to-end -3.297%. This confirms the down direction.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q3-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-10-24T13:30:00Z",
+            "ended_at": "2024-10-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-10-24-earnings",
+            "evidence_urls": [
+              "https://apnews.com/article/81c830cd6d465440f3d8f4bfc12d7487",
+              "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2024-financial-results"
+            ],
+            "confidence": 0.98,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after Q3 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +21.92%, SPY +0.22%, residual +21.70%, opening gap +14.52%, volume 2.94x; AP described one of Tesla's best trading days after results and growth guidance. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +14.459%, end of window +17.194% versus prior close, open-to-end +2.389%. This confirms the up direction.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy24-q4-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-02-22T14:30:00Z",
+            "ended_at": "2024-02-22T16:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-02-22-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024",
+              "https://www.axios.com/2024/02/22/nvidia-stock-price-earnings-ai-chips"
+            ],
+            "confidence": 0.98,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q4 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +16.40%, SPY +2.07%, residual +14.33%, opening gap +11.19%, volume 1.77x; contemporaneous reporting attributed the 16% move to earnings. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close +11.301%, end of window +15.137% versus prior close, open-to-end +3.446%. This confirms the up direction.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-05-23T13:30:00Z",
+            "ended_at": "2024-05-23T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-05-23-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025",
+              "https://www.investing.com/news/stock-market-news/nasdaq-sp-500-futures-pop-as-nvidia-fuels-chip-stocks-rally-3453619"
+            ],
+            "confidence": 0.98,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q1 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +9.32%, SPY -0.73%, residual +10.05%, opening gap +7.45%, volume 2.21x; Reuters tied the move to the revenue outlook, earnings, and stock split. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 90 bars; opening gap versus prior IEX close +7.540%, end of window +9.433% versus prior close, open-to-end +1.760%. This confirms the up direction.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-08-29T13:30:00Z",
+            "ended_at": "2024-08-29T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-08-29-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025/",
+              "https://www.investing.com/news/stock-market-news/nvidias-forecast-dampens-ai-enthusiasm-in-other-tech-stocks-3592111"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results; direction must be confirmed during review. AI pre-annotation: ACCEPT candidate and down direction pending blinded human review. Daily cross-check: NVDA -6.38%, SPY +0.01%, residual -6.39%, opening gap -3.38%; Reuters reported a greater-than-6% decline because the outlook failed to meet elevated expectations. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -3.639%, end of window -2.724% versus prior close, while open-to-end rebounded +0.950%. This confirms a down earnings shock with a partial intrawindow reversal; direction is defined against the prior session close.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-december-fomc-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2024-12-18T19:00:00Z",
+            "ended_at": "2024-12-18T20:30:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2024-12-18-fomc",
+            "evidence_urls": [
+              "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+              "https://www.investing.com/news/economy-news/stocks-skid-after-fed-signals-it-will-slow-down-its-easing-3780547"
+            ],
+            "confidence": 0.99,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate FOMC statement and press-conference reaction window. AI pre-annotation: ACCEPT candidate pending blinded human review. The 19:00Z start aligns with the 2:00 p.m. ET FOMC decision. Daily cross-check: SPY -2.98%, intraday -2.93%, volume 2.96x; Reuters reported the S&P 500 lost about 2.96% after the Fed signaled fewer cuts. Intraday IEX review should confirm the precise reaction onset. Alpaca IEX 1-minute audit: 91 bars; opening level at interval start was +0.040% versus the prior IEX close, end of window -1.796%, and interval return -1.835%. The exact interval contains the rate decision and projection headlines, confirming the down FOMC reaction.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "qqq-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "QQQ",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "qqq-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+              "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+            ],
+            "confidence": 0.94,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: QQQ -2.98%, SPY -2.91%, opening gap -5.36%, volume 2.14x; Reuters described a broad risk-off selloff led by recession fears. Because much of the loss was an opening gap followed by an intraday rebound, the exact 90-minute anomaly boundary requires IEX review. Alpaca IEX 1-minute audit: 89 bars; opening gap versus prior IEX close -5.363%, end of window -3.283% versus prior close, while open-to-end rebounded +2.197%. This confirms a down opening shock followed by a partial reversal; direction is defined against the prior session close.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-reciprocal-tariff-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2025-04-03T13:30:00Z",
+            "ended_at": "2025-04-03T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2025-04-03-tariff",
+            "evidence_urls": [
+              "https://apnews.com/article/6f7c844f6fbdff738395b6f3eb795b40",
+              "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/"
+            ],
+            "confidence": 0.99,
+            "approval_status": "proposed",
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "notes": "Candidate first 90 regular-session minutes after the April 2 reciprocal-tariff announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: SPY -4.93%, opening gap -3.44%, volume 1.85x; AP reported the S&P 500 fell 4.8% after the tariff announcement. Exact 90-minute boundary still requires intraday IEX review. Alpaca IEX 1-minute audit: 91 bars; opening gap versus prior IEX close -3.454%, end of window -4.298% versus prior close, open-to-end -0.875%. This confirms the down direction.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-05-17",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-05-17T13:30:00Z",
+            "ended_at": "2024-05-17T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for aapl-control-2024-04-19. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Unadjusted daily cross-check: AAPL +0.02%, SPY +0.14%, residual -0.13%, opening gap -0.17%, intraday +0.19%, volume 0.78x prior-20-session median. Apple’s official newsroom archive shows no same-day corporate release, and the first-pass macro/news screen found no clear material catalyst in the 09:30-11:00 ET window. Absence of material news is not proven without a complete archive. Alpaca IEX 1-minute audit: 86 bars, open-to-end +0.365%, high-low range 0.830%, max absolute 1-minute move 0.301%, max absolute 5-minute move 0.292%. The only AAPL-tagged item was a generic multi-ticker morning memo; no material firm-specific headline was found in-window.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.82,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.apple.com/newsroom/archive/?page=35",
+              "https://www.bls.gov/schedule/2024/"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-06-27",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-06-27T13:30:00Z",
+            "ended_at": "2024-06-27T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for aapl-control-2024-05-29 after minute-level rejection of the prior candidate. AI third-pass screen: RETAIN with moderate confidence pending blinded human review. Daily cross-check: AAPL +0.40%, SPY +0.16%, residual +0.24%, volume 0.69x prior-20-session median. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.792%, high-low range 1.556%, max absolute 1-minute move 0.234%, max absolute 5-minute move 0.464%. The in-window Alpaca news feed contained broad technology headlines about TSMC and Amazon but no clear Apple-specific catalyst. A complete independent news review is still required.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.66,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.apple.com/newsroom/archive/",
+              "https://www.bls.gov/schedule/2024/"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-07-08",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-07-08T13:30:00Z",
+            "ended_at": "2024-07-08T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for aapl-control-2024-07-22. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: AAPL +0.65%, SPY +0.12%, residual +0.54%, opening gap +0.33%, intraday +0.32%, volume 0.79x. Official BLS and Federal Reserve calendars show no major scheduled release or public Fed communication during the 09:30-11:00 ET interval; the Fed consumer-credit release was at 15:00 ET. No clear same-day Apple catalyst was found in the first-pass screen. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.720%, high-low range 1.814%, max absolute 1-minute move 0.375%, max absolute 5-minute move 1.039%. Only a generic multi-ticker morning memo was found; retain with moderate confidence because the 5-minute move is less quiet than the best controls.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.64,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/AAPL/history/",
+              "https://www.bls.gov/schedule/2024/",
+              "https://www.federalreserve.gov/newsevents/2024-july.htm"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-02-21",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-02-21T14:30:00Z",
+            "ended_at": "2024-02-21T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for tsla-control-2024-04-10. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: TSLA +0.52%, SPY +0.09%, residual +0.43%, opening gap -0.21%, intraday +0.73%, volume 0.95x. Tesla’s investor-relations calendar shows no earnings or delivery release that day, and no clear material Tesla catalyst was identified. The FOMC minutes were released at 14:00 ET, after the 09:30-11:00 ET evaluation window. Alpaca IEX 1-minute audit: 91 bars, open-to-end +0.831%, high-low range 3.249%, max absolute 1-minute move 0.637%, max absolute 5-minute move 0.967%. No material TSLA-specific headline was found, but the range is large in absolute terms; retain only relative to TSLA's high-volatility baseline.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.62,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/",
+              "https://ir.tesla.com/",
+              "https://www.bls.gov/schedule/2024/",
+              "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-07-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-07-10T13:30:00Z",
+            "ended_at": "2024-07-10T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN only as a low-confidence normal candidate pending full news and intraday review. Daily cross-check: TSLA +0.35%, SPY +0.99%, residual -0.64%, volume 1.38x. The close-to-close move is ordinary, but the stock was in a high-volatility multi-session rally and the first-pass news screen cannot establish absence of a material catalyst. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.611%, high-low range 2.973%, max absolute 1-minute move 0.636%, max absolute 5-minute move 1.325%. No material TSLA-specific headline was found, but this remains the weakest high-volatility control and should receive priority human review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.5,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-10-15",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-10-15T13:30:00Z",
+            "ended_at": "2024-10-15T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for tsla-control-2024-10-10. AI second-pass screen: RETAIN only as a lower-confidence normal candidate pending blinded human and intraday IEX review. Daily cross-check: TSLA +0.19%, SPY -0.78%, residual +0.96%, opening gap +0.39%, intraday -0.20%, volume 0.77x. This is several sessions after the robotaxi event and before the October 23 earnings release; contemporaneous coverage mentions routine EV-sales outlook and post-event debate but no clearly dominant same-day catalyst. Because event after-effects may persist, a human may still reject it. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.404%, high-low range 3.250%, max absolute 1-minute move 0.509%, max absolute 5-minute move 1.220%. No in-window TSLA headline was found after filtering provider timestamps, but event after-effects remain a concern.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.52,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/TSLA/history/",
+              "https://ir.tesla.com/press?page=4",
+              "https://www.zacks.com/stock/news/2350346/company-news-for-oct-15-2024"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-02-08",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-02-08T14:30:00Z",
+            "ended_at": "2024-02-08T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -0.65%, SPY +0.04%, residual -0.70%, volume 0.87x. No clear same-day firm-specific or major macro catalyst was identified in the first-pass search, but absence of news is not yet proven. Alpaca IEX 1-minute audit: 90 bars, open-to-end +0.499%, high-low range 1.819%, max absolute 1-minute move 0.824%, max absolute 5-minute move 1.423%. No NVDA-tagged headline was found in the exact interval; retain with moderate confidence because short-horizon volatility is not minimal.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.68,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-09-13",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-09-13T13:30:00Z",
+            "ended_at": "2024-09-13T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for nvda-control-2024-05-09 after minute-level rejection of the prior candidate. AI third-pass screen: RETAIN with moderate confidence pending blinded human review. Daily cross-check: NVDA -0.03%, SPY +0.54%, residual -0.56%, volume 0.73x prior-20-session median. Alpaca IEX 1-minute audit: 91 bars, open-to-end +0.446%, high-low range 1.973%, max absolute 1-minute move 0.580%, max absolute 5-minute move 1.074%; no NVDA-tagged headline appeared in the exact interval. Preliminary Michigan sentiment at 10:00 ET overlaps the window, so a human reviewer must decide whether this scheduled macro release disqualifies the control.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.62,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/",
+              "https://nvidianews.nvidia.com/news/nvid-?page=92",
+              "https://www.bls.gov/schedule/2024/09_sched.htm",
+              "https://www.federalreserve.gov/newsevents/2024-september.htm"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-09-23",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-09-23T13:30:00Z",
+            "ended_at": "2024-09-23T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for nvda-control-2024-08-15. AI second-pass screen: RETAIN with moderate confidence pending blinded human and intraday IEX review. Daily cross-check: NVDA +0.22%, SPY +0.25%, residual -0.03%, opening gap +0.47%, intraday -0.25%, volume 0.63x. The broad market was described as a quiet session. NVIDIA posted routine ecosystem/government-partnership newsroom items, and flash PMIs were released at 09:45 ET, but neither produced a material daily NVDA move. A human reviewer must decide whether the PMI overlap or company posts disqualify the exact interval. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.859%, high-low range 1.837%, max absolute 1-minute move 0.479%, max absolute 5-minute move 0.569%. Two broad/sector headlines appeared at 14:59Z near the interval end; retain with moderate confidence pending human review of the flash-PMI overlap.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ],
+            "confidence": 0.6,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/NVDA/history/",
+              "https://nvidianews.nvidia.com/news/nvid-?page=91",
+              "https://www.bls.gov/schedule/2024/09_sched.htm",
+              "https://apnews.com/article/efe102c3b9007cb9abff468aa006f995"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2024-12-09",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2024-12-09T19:00:00Z",
+            "ended_at": "2024-12-09T20:30:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for spy-control-2024-12-05 after the prior candidate was found to overlap a California earthquake and tsunami warning. AI third-pass screen: RETAIN as a time-of-day-matched normal candidate pending blinded human review. Alpaca IEX 1-minute audit: 91 bars, open-to-end -0.245%, high-low range 0.272%, max absolute 1-minute move 0.053%, max absolute 5-minute move 0.078%; no SPY-tagged headline appeared in the exact 14:00-15:30 ET interval. The BLS calendar lists no major release on December 9, and the Federal Reserve Board calendar lists no public speech, Beige Book, or FOMC event in this window.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ],
+            "confidence": 0.9,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/SPY/history/",
+              "https://www.bls.gov/schedule/2024/12_sched_list.htm",
+              "https://www.federalreserve.gov/newsevents/2024-december.htm"
+            ]
+          },
+          {
+            "interval_id": "qqq-control-2024-07-08",
+            "kind": "normal",
+            "ticker": "QQQ",
+            "started_at": "2024-07-08T13:30:00Z",
+            "ended_at": "2024-07-08T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for qqq-control-2024-07-22. AI second-pass screen: RETAIN as a normal candidate pending blinded human and intraday IEX review. Daily cross-check: QQQ +0.24%, SPY +0.12%, residual +0.12%, opening gap +0.07%, intraday +0.16%, volume 0.85x. Official BLS and Federal Reserve calendars show no major scheduled release or public Fed communication during 09:30-11:00 ET; the Fed consumer-credit release was at 15:00 ET. The first-pass news screen found no broad shock in the candidate window. Alpaca IEX 1-minute audit: 80 bars, open-to-end -0.096%, high-low range 0.264%, max absolute 1-minute move 0.134%, max absolute 5-minute move 0.129%. Only a generic multi-ticker morning memo was found; this is one of the cleanest retained controls.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ],
+            "confidence": 0.86,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/QQQ/history/",
+              "https://www.bls.gov/schedule/2024/",
+              "https://www.federalreserve.gov/newsevents/2024-july.htm"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2025-01-23",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2025-01-23T14:30:00Z",
+            "ended_at": "2025-01-23T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Replacement for spy-control-2025-02-18 after the prior candidate was found to overlap housing data and repeated Fed commentary. AI third-pass screen: RETAIN with moderate confidence pending blinded human review. Daily cross-check: SPY +0.55%. Alpaca IEX 1-minute audit: open-to-end +0.211%, high-low range 0.250%, max absolute 1-minute move 0.055%, max absolute 5-minute move 0.089%. The exact window contained only a broad overnight summary and a natural-gas storage release tagged to SPY; AP described the full session as relatively quiet. President Trump spoke later in the session, so review must confirm the 09:30-11:00 ET boundary is clean enough.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ],
+            "confidence": 0.7,
+            "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+            "reviewed_at": "2026-09-21T01:20:54.742Z",
+            "evidence_urls": [
+              "https://finance.yahoo.com/quote/SPY/history/",
+              "https://www.federalreserve.gov/newsevents/2025-january.htm",
+              "https://apnews.com/article/2467c80e341dc7c982c78f14d3ef6300",
+              "https://www.investing.com/news/economy-news/futures-subdued-after-previous-sessions-jump-data-earnings-on-tap-3826533"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "FORMAL-LABEL-iex_benchmark_v1.draft",
+      "artifact": "data/replay/labels/iex_benchmark_v1.draft.json",
+      "sha256": "3ed6a645b97402eda4dbfb682f3cbbf03e2351868605f8b98c60019f9988615c",
+      "run_id": null,
+      "data_kind": "proposed real_historical",
+      "code_version": {
+        "formal_execution_snapshot": null
+      },
+      "label_version": "iex_benchmark_v1.draft.json",
+      "parameters": {
+        "frozen": false,
+        "interval_count": 24
+      },
+      "conclusion_scope": "No formal replay run/metrics; labels unfrozen. AI preannotations do not constitute independent approval.",
+      "raw_output": {
+        "schema_version": "marketstream-reviewed-labels-v1",
+        "dataset_id": "alpaca-iex-reviewed-benchmark-v1",
+        "data_kind": "real_historical",
+        "provider": "alpaca",
+        "feed": "iex",
+        "timezone": "America/New_York",
+        "frozen": false,
+        "frozen_at": null,
+        "notes": "Draft pre-registration only. Event times, directions, evidence, and all normal controls must be independently reviewed before approval. Detector output must not be consulted during review.",
+        "intervals": [
+          {
+            "interval_id": "aapl-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-05-03T13:30:00Z",
+            "ended_at": "2024-05-03T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "aapl-2024-05-03-earnings",
+            "evidence_urls": [
+              "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results and buyback announcement.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-apple-intelligence-reaction",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-06-11T13:30:00Z",
+            "ended_at": "2024-06-11T15:00:00Z",
+            "direction": "up",
+            "pattern": "news_confirmed_move",
+            "event_id": "aapl-2024-06-11-apple-intelligence",
+            "evidence_urls": [
+              "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate reaction window following the June 10 Apple Intelligence announcement.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "AAPL",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "aapl-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate opening phase of the August 5 global risk-off session.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-04-24T13:30:00Z",
+            "ended_at": "2024-04-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-04-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-first-quarter-2024-financial-results"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after Q1 financial results.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-07-24T13:30:00Z",
+            "ended_at": "2024-07-24T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-07-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2024-financial-results"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after Q2 financial results.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-fy24-q3-reaction",
+            "kind": "anomaly",
+            "ticker": "TSLA",
+            "started_at": "2024-10-24T13:30:00Z",
+            "ended_at": "2024-10-24T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "tsla-2024-10-24-earnings",
+            "evidence_urls": [
+              "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2024-financial-results"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after Q3 financial results.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy24-q4-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-02-22T14:30:00Z",
+            "ended_at": "2024-02-22T16:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-02-22-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q4 results.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q1-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-05-23T13:30:00Z",
+            "ended_at": "2024-05-23T15:00:00Z",
+            "direction": "up",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-05-23-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q1 results.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-fy25-q2-reaction",
+            "kind": "anomaly",
+            "ticker": "NVDA",
+            "started_at": "2024-08-29T13:30:00Z",
+            "ended_at": "2024-08-29T15:00:00Z",
+            "direction": "down",
+            "pattern": "earnings_reaction",
+            "event_id": "nvda-2024-08-29-earnings",
+            "evidence_urls": [
+              "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025/"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results; direction must be confirmed during review.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-december-fomc-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2024-12-18T19:00:00Z",
+            "ended_at": "2024-12-18T20:30:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2024-12-18-fomc",
+            "evidence_urls": [
+              "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate FOMC statement and press-conference reaction window.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "qqq-global-risk-off",
+            "kind": "anomaly",
+            "ticker": "QQQ",
+            "started_at": "2024-08-05T13:30:00Z",
+            "ended_at": "2024-08-05T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "qqq-2024-08-05-risk-off",
+            "evidence_urls": [
+              "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate opening phase of the August 5 global risk-off session.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-reciprocal-tariff-reaction",
+            "kind": "anomaly",
+            "ticker": "SPY",
+            "started_at": "2025-04-03T13:30:00Z",
+            "ended_at": "2025-04-03T15:00:00Z",
+            "direction": "down",
+            "pattern": "cross_asset_shock",
+            "event_id": "spy-2025-04-03-tariff",
+            "evidence_urls": [
+              "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/"
+            ],
+            "confidence": null,
+            "approval_status": "proposed",
+            "reviewed_by": null,
+            "reviewed_at": null,
+            "notes": "Candidate first 90 regular-session minutes after the April 2 reciprocal-tariff announcement.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-04-19",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-04-19T13:30:00Z",
+            "ended_at": "2024-04-19T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for earnings, macro releases, and unscheduled material news.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-05-28",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-05-28T13:30:00Z",
+            "ended_at": "2024-05-28T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "aapl-control-2024-07-22",
+            "kind": "normal",
+            "ticker": "AAPL",
+            "started_at": "2024-07-22T13:30:00Z",
+            "ended_at": "2024-07-22T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-04-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-04-10T13:30:00Z",
+            "ended_at": "2024-04-10T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-07-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-07-10T13:30:00Z",
+            "ended_at": "2024-07-10T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "tsla-control-2024-10-10",
+            "kind": "normal",
+            "ticker": "TSLA",
+            "started_at": "2024-10-10T13:30:00Z",
+            "ended_at": "2024-10-10T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-02-08",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-02-08T14:30:00Z",
+            "ended_at": "2024-02-08T16:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-05-09",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-05-09T13:30:00Z",
+            "ended_at": "2024-05-09T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "nvda-control-2024-08-15",
+            "kind": "normal",
+            "ticker": "NVDA",
+            "started_at": "2024-08-15T13:30:00Z",
+            "ended_at": "2024-08-15T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events.",
+            "context_tickers": [
+              "QQQ",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2024-12-04",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2024-12-04T19:00:00Z",
+            "ended_at": "2024-12-04T20:30:00Z",
+            "approval_status": "proposed",
+            "notes": "Time-of-day matched control candidate. Must be checked for macro releases and unscheduled events.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          },
+          {
+            "interval_id": "qqq-control-2024-07-22",
+            "kind": "normal",
+            "ticker": "QQQ",
+            "started_at": "2024-07-22T13:30:00Z",
+            "ended_at": "2024-07-22T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for macro releases and unscheduled events.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "SPY"
+            ]
+          },
+          {
+            "interval_id": "spy-control-2025-03-13",
+            "kind": "normal",
+            "ticker": "SPY",
+            "started_at": "2025-03-13T13:30:00Z",
+            "ended_at": "2025-03-13T15:00:00Z",
+            "approval_status": "proposed",
+            "notes": "Calendar-matched control candidate. Must be checked for macro releases and unscheduled events.",
+            "context_tickers": [
+              "AAPL",
+              "TSLA",
+              "NVDA",
+              "QQQ"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "CHECKS-20261022-pytest.txt",
+      "artifact": "report/ownership_evidence/reproduction_outputs/audit_20261022/pytest.txt",
+      "sha256": "c72ac2c424217edcee22a45694969994956406565e28e3ee7eb30e19c00dfcda",
+      "run_id": "CHECKS-20261022",
+      "data_kind": "code checks",
+      "code_version": {
+        "source_manifest_sha256": "63718f2e6bda6be914274a9986be9dadcc562b52fa3ac86c96d8c63cb66bd72a",
+        "HEAD": "05b88c09657a8bba03407a6aea944f487e8500ce"
+      },
+      "label_version": "not applicable",
+      "parameters": {
+        "command": ".venv/bin/pytest -q"
+      },
+      "conclusion_scope": "Conformance to saved source/test suite; not production reliability.",
+      "raw_output": null
+    },
+    {
+      "id": "CHECKS-20261022-ruff.txt",
+      "artifact": "report/ownership_evidence/reproduction_outputs/audit_20261022/ruff.txt",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "run_id": "CHECKS-20261022",
+      "data_kind": "code checks",
+      "code_version": {
+        "source_manifest_sha256": "63718f2e6bda6be914274a9986be9dadcc562b52fa3ac86c96d8c63cb66bd72a",
+        "HEAD": "05b88c09657a8bba03407a6aea944f487e8500ce"
+      },
+      "label_version": "not applicable",
+      "parameters": {
+        "command": ".venv/bin/ruff check ."
+      },
+      "conclusion_scope": "Conformance to saved source/test suite; not production reliability.",
+      "raw_output": null
+    },
+    {
+      "id": "HIST-COVERAGE-20260814",
+      "run_id": null,
+      "generated_at": "2026-08-14T09:45:08.355972+00:00",
+      "code_version": null,
+      "data_kind": "historical coverage only",
+      "label_version": null,
+      "parameters": {
+        "train": [
+          "2025-07-09",
+          "2026-03-05"
+        ],
+        "validation": [
+          "2026-03-06",
+          "2026-05-22"
+        ],
+        "test": [
+          "2026-05-23",
+          "2026-08-13"
+        ],
+        "ratio": "60/20/20"
+      },
+      "artifact": "data/historical/alpaca/manifest.json",
+      "sha256": "03936ffd9180aa1267c4b375626e059968d96b205f60f80cb5d9ea8da5908cc2",
+      "associated_files": {
+        "data/historical/alpaca/ohlcv_1d_12m.csv": "cec2a6b7c6b0accd9648a708a9c4ae54899f3f40b793041ddf5896d8f85b2e1f",
+        "data/historical/alpaca/news_12m.jsonl": "4f4021113891053bc62ddd4138e8223ce09104c2b8e3be73f2ec27e16d38c319"
+      },
+      "raw_output": {
+        "generated_at": "2026-08-14T09:45:08.355972+00:00",
+        "requested_start": "2025-07-09",
+        "requested_end": "2026-08-13",
+        "tickers": [
+          "AAPL",
+          "TSLA",
+          "NVDA",
+          "QQQ",
+          "SPY"
+        ],
+        "ohlcv": {
+          "provider": "yahoo_finance",
+          "interval": "1d",
+          "coverage": {
+            "AAPL": {
+              "rows": 277,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            },
+            "TSLA": {
+              "rows": 277,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            },
+            "NVDA": {
+              "rows": 277,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            },
+            "QQQ": {
+              "rows": 277,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            },
+            "SPY": {
+              "rows": 277,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            }
+          }
+        },
+        "news": {
+          "provider": "alpaca_benzinga",
+          "coverage": {
+            "AAPL": {
+              "rows": 2770,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            },
+            "TSLA": {
+              "rows": 3821,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            },
+            "NVDA": {
+              "rows": 5054,
+              "first": "2025-06-19",
+              "last": "2026-08-13",
+              "span_days": 420,
+              "passed": true
+            },
+            "QQQ": {
+              "rows": 1724,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            },
+            "SPY": {
+              "rows": 1779,
+              "first": "2025-07-09",
+              "last": "2026-08-13",
+              "span_days": 400,
+              "passed": true
+            }
+          },
+          "capped_query_windows": 0,
+          "completeness_note": "Alpaca historical news sourced from Benzinga."
+        },
+        "temporal_split": {
+          "train": [
+            "2025-07-09",
+            "2026-03-05"
+          ],
+          "validation": [
+            "2026-03-06",
+            "2026-05-22"
+          ],
+          "test": [
+            "2026-05-23",
+            "2026-08-13"
+          ],
+          "ratio": "60/20/20"
+        },
+        "gates": {
+          "ohlcv_12_months": true,
+          "news_12_months": true,
+          "historical_dataset": true
+        }
+      },
+      "independent_counts": {
+        "daily_rows_per_ticker": 277,
+        "news_ticker_rows": 15148,
+        "distinct_article_ids": 10930,
+        "news_first": "2025-06-19T15:00:18Z",
+        "news_last": "2026-08-13T20:31:17Z"
+      },
+      "conclusion_scope": "Coverage artifact only; no formal run. Daily provider is Yahoo, news provider Alpaca/Benzinga. Publication range differs from requested range; news ticker rows are not distinct stories."
+    }
+  ]
+}

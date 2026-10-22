@@ -1,30 +1,31 @@
-# MarketStream Technical Ownership Evidence
+> Audit, 22 October 2026: [07_Revised_Report_CN.md](07_Revised_Report_CN.md) is the sole report master; English is a companion translation. Use the [run ledger](Evidence_Attachments/Result_Run_Ledger_20261022.md) and [registry](reproduction_outputs/audit_20261022/result_registry.json) for numbers and missing provenance. Historical runs are not current-system results.
 
-Prepared: 17 September 2026  
-Working branch: `codex/core-simplification`  
-Base commit: `bb0df67fad42ef6cf4c544b5e3711d57cd32f3fd`  
-Project status: research prototype and technical validation
+# MarketStream: Project Problem, Architectural Decisions, and Validation Status
 
-## 1. Purpose
+Date: September 17, 2026
 
-This document explains my understanding and contribution. It does not claim that I typed every line alone. I used AI, public research, open-source libraries, and third-party data services. My claim is more limited. I identified and checked project problems. I set constraints. I reviewed generated work. I ran tests. I also challenged results that did not have enough evidence.
+## 1. Problem the Project Addresses
 
-| Supervisor concern | Main section | Primary evidence |
-|---|---|---|
-| Literature verification | Section 8 | Paper pages, sections, and official links |
-| Architecture understanding | Sections 2–5 | Current code, tests, and design records |
-| Technical contribution | Section 6 | Git, code, tests, and AI task records |
-| Experiment understanding | Section 7 | Commands and raw JSON outputs |
+MarketStream processes streaming market events. Its main purpose is to identify unusual combinations of events that deserve manual review while preserving the data behind each decision. At present, the system neither predicts future returns nor executes trades automatically.
 
-## 2. Problem and scope
+Fixed price thresholds are not suitable for this task. Different stocks have different normal ranges of volatility, and even the same stock may behave very differently at market open and around midday. A noticeable price move may also reflect a broader market movement rather than an anomaly in a single stock. To address these differences, the system first calculates eight interpretable factors and compares them with the stock's historical behavior in the corresponding time period. When a factor becomes abnormal, the CEP state machines continue to examine the event's direction, sequence, duration, and relationship with other stocks.
 
-MarketStream processes streaming market events. It does not predict future returns. It does not place trades. Its purpose is to identify unusual event combinations for later human review. It also keeps the evidence behind each result.
+The system currently supports three main conclusions:
 
-A fixed price threshold is not enough. Different stocks have different normal volatility. The market open is also different from the middle of the day. A stock move may follow the whole market. It may not be stock-specific.
+1. CHECKS-20261022 passes 63 tests and Ruff on the archived audit working tree, including the new accounting regression.
+2. In controlled synthetic data, all six rule types can be triggered, and the false positives and ablation results of each rule can be observed.
+3. Historical IEX runs show that real input can enter the system and generate snapshots at 10-second, 1-minute, and 5-minute intervals.
 
-The system first calculates eight simple factors. It compares them with the earlier state of the same stock and intraday context. CEP state machines then check direction, order, duration, and cross-asset relations.
+These results also have clear limitations:
 
-The current core flow is:
+- The real-world labels have not yet been independently reviewed and frozen, so Precision, Recall, and F1 on real market data cannot currently be reported.
+- IEX represents only one trading venue and is not equivalent to complete SIP market data.
+- The existing live-stream run lasted only about 88 seconds, which is not enough to demonstrate long-term system stability.
+- The earlier experiments used artificially injected anomalies, so they cannot establish that the current CEP approach is generally better than ML in real markets.
+
+## 2. Overall Design
+
+The system data flow is as follows:
 
 ```text
 MarketEvent
@@ -35,21 +36,19 @@ MarketEvent
   → Kafka / TimescaleDB / Streamlit
 ```
 
-The current evidence supports three points. The code passes 62 tests and Ruff. Controlled sequences exercise the six patterns. An earlier IEX run shows that real input can enter the pipeline and create all three snapshot cadences.
+This flow divides the work into three stages. First, input events are standardized and checked. Second, raw events are converted into comparable factor snapshots. Third, detection results are generated from the relationships among events. Kafka, TimescaleDB, and Streamlit handle message delivery, data storage, and result presentation, respectively. The detection logic does not depend on the presentation layer.
 
-The evidence does not support real-market Precision, Recall, or F1. Real labels are not independently reviewed and frozen. IEX is not the full SIP market. An 88-second run is not long-term production evidence. The old injected comparison also does not prove that current CEP is better than ML in real markets.
-
-## 3. Data flow and component roles
+## 3. Role of Each Component
 
 ### 3.1 MarketEvent and Quality Gate
 
-`MarketEvent` gives trade, quote, bar, and news a common contract. It keeps event time, receive time, source, feed, event ID, run ID, and provenance. The Quality Gate marks duplicates, out-of-order events, stale data, invalid prices, crossed quotes, zero volume, and feed gaps.
+`MarketEvent` provides a unified format for trade, quote, bar, and news data. Each event retains its event time, received time, source, feed, event ID, run ID, and provenance for later traceability.
 
-The system does not silently repair these issues. Severe quality flags suppress alerts. Raw events remain available for review. A minute bar uses the start of its interval as its timestamp. The code therefore gives bars a 60-second close grace. This avoids a false stale flag.
+The Quality Gate flags duplicate, out-of-order, or overly old events, invalid prices, crossed quotes, zero trading volume, feed gaps, and other data-quality issues. Serious quality problems suppress alerts, but the raw events are still stored for later review. A minute bar's timestamp represents the start of its interval, so judging it directly by arrival time may incorrectly mark a normal bar as stale. The code therefore includes a 60-second close grace period.
 
 ### 3.2 FactorSnapshot
 
-The Factor Engine uses 10-second, 1-minute, and 5-minute windows. It calculates eight factors:
+The Factor Engine calculates eight factors over 10-second, 1-minute, and 5-minute windows:
 
 1. return surprise;
 2. volatility burst;
@@ -60,113 +59,102 @@ The Factor Engine uses 10-second, 1-minute, and 5-minute windows. It calculates 
 7. market residual;
 8. news shock.
 
-Each snapshot also stores factor states, directions, baseline version, quality status, and source event IDs. A DetectionResult can therefore be traced back to its inputs.
+Each snapshot also records the factor state, direction, baseline version, quality status, and the event IDs used in the calculation. A `DetectionResult` can therefore be traced back to the corresponding raw events.
 
-### 3.3 CEP state machines
+### 3.3 CEP State Machines
 
-The current core does not use one large general NFA. It uses six small state machines. They represent stock-specific dislocation, liquidity pressure move, news-confirmed move, flash reversal, sustained pressure, and cross-asset shock.
+The current implementation uses six small state machines with clearly defined logic. They detect stock-specific dislocation, liquidity pressure move, news-confirmed move, flash reversal, sustained pressure, and cross-asset shock.
 
-The state machines handle a limited set of event relations. They do not calculate factors again. The detector also applies warm-up suppression, quality suppression, a 300-second cooldown, deterministic deduplication, severity, and evidence IDs.
+The state machines examine only a limited set of event relationships and do not recalculate factors. The detector centrally handles warm-up suppression, serious-quality suppression, a 300-second cooldown, dedupe keys, severity, and evidence IDs. This separation keeps factor calculation and pattern detection clear and makes them easier to test independently.
 
 ### 3.4 Kafka, TimescaleDB, and Streamlit
 
-- Kafka moves events between collection, factor calculation, and detection services.
-- TimescaleDB stores raw events, snapshots, results, and baseline state.
-- Streamlit displays prices, factors, alerts, and comparisons. It does not make the core decision.
+- Kafka delivers events among the ingestion, factor calculation, and detection components, but it is not the only source of long-term state.
+- TimescaleDB stores raw events, factor snapshots, detection results, and baseline states for time-based queries and result tracing.
+- Streamlit displays prices, factors, alerts, and comparison results, but it does not participate in the core detection decisions.
 
-## 4. Main architecture decisions
+## 4. Main Architectural Decisions and Their Rationale
 
-### 4.1 CEP or the old four-model ensemble
+### 4.1 Why the System Moved from a Four-Model Ensemble to CEP
 
-**Problem.** The old path used EWMA, Half-Space Trees, Isolation Forest, and an LSTM autoencoder. It produced several scores, but event order was difficult to explain.
+The earlier main pipeline included EWMA, Half-Space Trees, Isolation Forest, and an LSTM autoencoder. It could produce anomaly scores, but it was less effective at representing event sequences and combinations. I compared several options: retaining the four models, adding more models, using a general-purpose NFA, and combining lightweight factors with explicit state machines.
 
-**Options.** Keep the ensemble, add more models, use a general NFA, or use simple factors with a small number of state machines.
+The current online pipeline ultimately uses the factors and six CEP state machines, while the earlier ML results remain only as a historical comparison. Conditions such as "the price continues to confirm after a news event," "pressure persists across multiple windows," and "several stocks move within a short period" can be represented directly in state machines. The project currently has a limited number of patterns, so a more complex general-purpose NFA is unnecessary.
 
-**Choice.** The current online path uses factors and six CEP state machines. Old ML results are historical comparisons only.
+This choice also involves trade-offs. Rule parameters still require further calibration, extreme values in a single factor may produce false positives, and the existing results do not show that CEP is inherently more accurate than ML. The relevant implementation and experiment records are in `cep/state_machines.py`, `evaluation/run_synthetic.py`, the current synthetic JSON, and the earlier comparison JSON.
 
-**Reason.** Rules can directly describe a move after news, pressure across windows, or a cross-asset event. A large NFA was not needed for the present project size.
+### 4.2 Why the System Uses 10-Second, 1-Minute, and 5-Minute Windows
 
-**Cost.** Rule parameters still need calibration. A single-factor extreme exception can create false alerts. CEP is not automatically more accurate than ML.
+A single window cannot easily cover immediate shocks, short-term persistence, and slower background changes at the same time. Using too many windows would increase the number of states and create duplicate evidence. The system therefore uses fixed cadences of 10 seconds, 1 minute, and 5 minutes to distinguish rapid reactions from persistent behavior while keeping system complexity under control.
 
-**Evidence.** `cep/state_machines.py`, `evaluation/run_synthetic.py`, the current synthetic JSON, and the old comparison JSON.
+These three windows are engineering choices and have not yet been optimized against frozen real-world labels. Events near the window boundaries may also generate duplicate evidence. The relevant implementation and tests are in `processing/factor_engine.py`, `tests/test_lightweight_factor_engine.py`, and the synthetic scenarios.
 
-### 4.2 Three time windows
+### 4.3 Why the System Uses the Median, MAD, and Empirical Quantiles
 
-**Problem.** One window cannot represent a quick shock, short persistence, and slower context at the same time.
+The mean and standard deviation are easily affected by extreme values. Thresholds based only on empirical quantiles may also be unstable when the sample size is small. The current baseline stores the median, MAD, 0.995 quantile, and 0.999 quantile, and uses:
 
-**Choice.** Use 10 seconds, 1 minute, and 5 minutes.
+```text
+scale = max(1.4826 × MAD, 1e-6)
+```
 
-**Reason.** These cadences separate quick and sustained behaviour. They also keep the state size manageable.
+The elevated threshold uses the stricter of the empirical 0.995 quantile and `4 × scale`. The extreme threshold uses the stricter of the empirical 0.999 quantile and `6 × scale`. The median and MAD are more robust to outliers, while the empirical quantiles retain information about the actual distribution. The value 1.4826 is the scaling constant used to make MAD a consistent estimator of the standard deviation under a normal distribution.
 
-**Cost.** They have not been shown to be optimal on frozen real labels. Evidence near a boundary may also repeat.
+These parameters remain engineering settings and should not be described as optimal for real-world data. The relevant code and tests are in `processing/factor_state.py`, `processing/factor_engine.py`, and the baseline tests.
 
-### 4.3 Median, MAD, and empirical quantiles
+### 4.4 Why the Baseline Uses a Five-Dimensional Key
 
-**Problem.** Mean and standard deviation can be affected by extremes. An empirical quantile alone can be unstable with little data.
+The normal range of the same factor may differ across stocks, windows, market sessions, and intraday positions. The system uses the following five-dimensional key:
 
-**Choice.** Store median, MAD, and the 0.995 and 0.999 quantiles. Use `scale=max(1.4826×MAD,1e-6)`. The elevated level uses the stricter result from the 0.995 quantile and 4×scale. The extreme level uses the stricter result from the 0.999 quantile and 6×scale.
+```text
+(ticker, cadence, market_session, intraday_slot, factor_name)
+```
 
-**Reason.** Median and MAD are robust. Quantiles keep information from the observed distribution. The value 1.4826 is the normal-consistency scale for MAD. It is not a meaningless conversion number.
+This prevents direct comparisons between market-open and midday volatility and avoids placing SPY and an individual stock in the same baseline. The trade-off is a larger number of cells and fewer samples in each cell, so the system requires a warm-up process and state-recovery mechanism. Supporting evidence can be found in `processing/factor_state.py`, `baseline/contracts.py`, and the baseline persistence tests.
 
-**Cost.** These are engineering settings. They are not proven optimal for real market labels.
+### 4.5 Warm-Up, Score Before Update, and Evaluation Freezing
 
-### 4.4 Five-part baseline key
+If the current day's observations enter the baseline before the same day is scored against the updated baseline, anomalies will appear less significant and data leakage will occur. The current design requires each cell to contain observations from at least five strictly earlier trading days. When new data is processed, the system first loads the historical state and calculates the score, then writes the current day's observation. After a baseline is imported for evaluation, `freeze=True` is set.
 
-**Problem.** A factor has a different normal range for different stocks, cadences, sessions, and times of day.
+As a result, a new deployment or a newly added stock goes through a warm-up period during which no alerts are produced. This behavior is covered by `tests/test_lightweight_factor_engine.py` and the replay validation tests.
 
-**Choice.** Use `(ticker, cadence, market_session, intraday_slot, factor_name)`.
+### 4.6 Why the System Uses Six State-Machine Patterns
 
-**Reason.** This avoids comparing the market open with midday. It also avoids mixing an ETF and a single stock.
+A single factor crossing a threshold only shows that one local signal is unusual. It is not enough to constitute a complete market event. The six state machines add timing and combination constraints:
 
-**Cost.** There are more cells and fewer samples in each cell. Warm-up and state recovery are therefore required.
+- news-confirmed move retains news context for no more than five minutes;
+- flash reversal requires two price events in opposite directions, separated by no more than two cadences;
+- sustained pressure requires three different windows to appear in the four most recent frames;
+- cross-asset shock requires at least three tickers within 60 seconds and must include SPY or QQQ.
 
-### 4.5 Warm-up, score-before-update, and freezing
+These patterns are affected by sampling frequency and missing events. The extreme single-factor path in the current `stock_specific_dislocation` pattern is also the main source of false positives. Supporting evidence can be found in `cep/state_machines.py`, the golden trace tests, and the pattern ablation results.
 
-**Problem.** If a current observation enters the baseline before scoring, it can reduce its own anomaly level.
+### 4.7 Cooldown, Deduplication, and Traceability
 
-**Choice.** A cell needs five earlier trading days. The engine scores first and updates later. An evaluation imports the baseline and then uses `freeze=True`.
+The same anomaly may appear in consecutive snapshots. By default, the system merges results with the same ticker, pattern, and direction if they occur within 300 seconds. The dedupe key also includes the pattern's `started_at` timestamp. Each alert retains its factor evidence and event IDs.
 
-**Cost.** A new deployment or ticker has a period with no eligible alerts.
+This approach reduces duplicate alerts, although a second real event during the cooldown period may also be merged. To support review, `DetectionResult` still records the suppression reason. The relevant implementation is in `cep/cep_detector.py` and `tests/test_factor_cep.py`.
 
-### 4.6 Six state machines
+### 4.8 Baseline Persistence and Recovery
 
-**Problem.** A threshold crossing is only a local signal. It may not be a useful market event.
+If the baseline exists only in memory, it will be lost when the system restarts. Restoring only part of the state from the database may also produce inconsistent results. The current startup process requires an explicit choice among `COLD_START`, `VERIFIED_BACKFILL`, and `RESTORE`. The baseline, runtime, and offset must belong to the same epoch/revision, and each checkpoint stores a manifest and checksum.
 
-**Choice.** Use six finite patterns. News confirmation keeps news for five minutes. Flash reversal needs two opposite price events within two cadences. Sustained pressure needs three distinct windows in the latest four frames. Cross-asset shock needs at least three tickers within 60 seconds, including SPY or QQQ.
+This prevents the system from continuing when the source of its state is unclear, although it adds operational steps. This evaluation cycle has not yet produced evidence from a long-running recovery test. The relevant design and tests are in `baseline/`, `docs/BASELINE_PERSISTENCE.md`, and the seven persistence tests.
 
-**Cost.** Patterns depend on sampling and missing data. The extreme path in `stock_specific_dislocation` is the main source of current negative-control alerts.
+### 4.9 Why IEX Is Used for Ingestion Validation
 
-### 4.7 Cooldown, deduplication, and traceability
+The system currently uses Alpaca IEX to validate real-data ingestion and records the feed in its output. This source was selected mainly because it is reliably available at the current stage of the project. IEX covers only one trading venue. Its quotes, trading volume, and event order may differ from SIP, so these results are used only to validate the pipeline and do not represent the entire market. The relevant records are in `data/evaluation/alpaca_live_e2e.json` and the producer configuration.
 
-**Problem.** One event can produce repeated alerts in adjacent snapshots.
+## 5. Two Algorithmic Details
 
-**Choice.** The same ticker, pattern, and direction are merged for 300 seconds. The deduplication key also contains the pattern start time. Results keep factor evidence and event IDs.
+### 5.1 Aggressor-Side Classification
 
-**Cost.** A second real event inside the cooldown may be merged. The result therefore keeps the suppression reason.
+The system uses the upstream-provided side when available. If the side is missing, it compares the trade price with the midpoint of the most recent bid and ask. A trade at or above the midpoint is classified as a buy, while a trade below the midpoint is classified as a sell. If neither the side nor a valid midpoint is available, the trade volume is excluded from the numerator used to calculate signed buy/sell imbalance.
 
-### 4.8 Baseline epoch and recovery
+This is an inspectable approximation and is not functionally equivalent to a complete Lee–Ready implementation.
 
-**Problem.** An in-memory baseline is lost after a restart. A partial database recovery can also mix incompatible state.
+### 5.2 News Sentiment
 
-**Choice.** Startup must state COLD_START, VERIFIED_BACKFILL, or RESTORE. Baseline, runtime, and offsets belong to one epoch and revision. A checkpoint has a manifest and checksum.
-
-**Reason.** Startup state should not be guessed. An inconsistent state should stop or follow an explicit recovery path.
-
-**Cost.** Operations are more complex. There is no long production recovery record yet.
-
-### 4.9 IEX and SIP
-
-**Problem.** An available real-time source is not the same as a consolidated market feed.
-
-**Choice.** Use Alpaca IEX for integration testing and record the feed in provenance.
-
-**Cost.** IEX covers one venue. Its quotes, volume, and event order can differ from SIP.
-
-## 5. Two algorithm details
-
-Trade direction first uses an upstream side when available. Otherwise, the trade price is compared with the latest bid/ask midpoint. A price at or above the midpoint is counted as buy volume. A lower price is counted as sell volume. If there is no side and no midpoint, the volume does not enter the signed numerator. This is a transparent approximation. It is not a full Lee–Ready implementation.
-
-The online news score is not FinBERT. It uses a small positive and negative word list:
+The current news-sentiment calculation uses small positive and negative word lists:
 
 ```text
 sentiment = (positive_count - negative_count)
@@ -174,85 +162,57 @@ sentiment = (positive_count - negative_count)
 news_shock = sentiment × log(1 + headline_count)
 ```
 
-The score is zero when there are no matched words. It is easy to inspect, but it has weak context and negation handling.
+When the denominator is zero, sentiment is set to zero.
 
-## 6. My six main contributions
+This method is simple and transparent, but it has limited ability to handle word meaning, negation, and context.
 
-The full records are in `02_Technical_Contribution_Log_CN.md`.
+## 6. Current Experimental Results and Their Meaning
 
-| Area | My judgement or check | AI role | Evidence |
-|---|---|---|---|
-| Event, quality, traceability | Confirmed the shared contract and provenance; found the stale-bar issue | Helped refactor and test | Event models, quality tests, IEX output |
-| Factors and baseline | Checked the five-part key, 20 days, five-day warm-up, thresholds, and freeze | Helped implement | Factor code and tests |
-| CEP and alert control | Selected explicit states and examined the false-alert source | Helped implement and run experiments | State machines and synthetic JSON |
-| Baseline persistence | Identified restart loss; proposed DB recovery, epochs, and startup constraints | Implemented from these constraints | `baseline/` and seven tests |
-| Leakage-safe replay | Challenged metric provenance; required prior labels, freezing, and event matching | Helped implement | Replay validator and draft registry |
-| IEX/Kafka/DB chain | Separated integration evidence from accuracy; checked stale bars and soak history | Helped run and diagnose | Live E2E and soak artifacts |
+### 6.1 Synthetic Protocol
 
-I do not describe these as fully hand-written work. A more accurate account is that I raised or confirmed the problem, gave constraints, checked AI-generated changes, ran tests, challenged weak results, and requested revisions.
-
-## 7. Experiments and limitations
-
-### 7.1 Current synthetic protocol
-
-I reran 20 seeds on 17 September 2026. The raw file is `reproduction_outputs/factor_cep_current_20260917.json`.
+SYN-TRACE-20261022 ran 20 seeds on the archived audit working tree; output: `reproduction_outputs/audit_20261022/factor_cep_traced.json`.
 
 | Metric | Result |
 |---|---:|
 | TP / FP / FN | 360 / 120 / 0 |
 | Precision / Recall / F1 | 0.750 / 1.000 / 0.857 |
-| Delay p50 / p95 / p99 | 10 / 30 / 30 s |
-| CEP compute p50 / p95 / p99 | 0.0131 / 0.0188 / 0.0299 ms |
+| delay p50 / p95 / p99 | 10 / 30 / 30 s |
+| CEP compute p50 / p95 / p99 | 0.0150 / 0.0306 / 0.0688 ms |
 
-The 120 false positives are extra unmatched alerts in positive scenarios. The `40/240` result is from a separate set of negative controls. They are not the same set.
+The 120 FP comprise 60 unmatched alerts in positive scenarios and 60 alerts in negative controls. The 360 positive scenarios emit 420 alerts; the 240 controls emit 60 alerts across 40 alerting cases. Thus 40/240 is a case rate, and the 60 control alerts are already included in the 120 FP. This decomposition was verified in the new traced run; old aggregate JSON alone cannot establish historical row membership.
 
-All 20 seeds have the same result because the current generator mostly changes identifiers and time shifts. It does not materially change pattern shape or amplitude. This shows repeatability of the script. It does not show real-market stability.
+All 20 seeds produced the same result because the current generator mainly changes identifiers and shifts timestamps without materially changing the pattern structure, magnitude, or rule boundaries. This shows that the script is reproducible, but it does not yet show that the system is stable across different real-world market conditions.
 
-Removing `stock_specific_dislocation` changes TP from 360 to 300 and FP from 120 to 0. The detector misses 60 generated anomalies. This is a trade-off between early single-factor alerts and multi-signal confirmation. Removing activity has no effect because `relative_volume` is not a critical completion condition in the six current rules.
+After removing `stock_specific_dislocation`, TP decreased from 360 to 300 and FP decreased from 120 to 0, while 60 generated anomalies were missed. This reflects the trade-off between timely single-factor alerts and confirmation from multiple pieces of evidence. Removing activity did not change the results, showing that `relative_volume` is not currently a key completion condition in any of the six rules.
 
-### 7.2 Old ML comparison
+### 6.2 Relationship to the Earlier ML Experiment
 
-The old comparison used real OHLCV background with injected anomalies. CEP full had F1 0.785 and the ML ensemble had F1 0.639. The old compatibility protocol measured 0.0033 ms mean CEP compute time. These values describe an older protocol. They do not prove that current CEP is generally better on real markets. They also should not be combined with the current 0.0131 ms result.
+The earlier experiment injected artificial anomalies into a real OHLCV background. Under that setup, the full CEP system achieved an F1 score of 0.785, while the ML ensemble achieved 0.639. Under the earlier compatibility protocol, the average CEP computation time was 0.0033 ms.
 
-### 7.3 Soak and live input
+These figures apply only to the earlier protocol. The earlier experiment and the current system differ in implementation, label source, and evaluation method. They therefore cannot establish that the current six-state-machine system is generally better than ML in real markets. The earlier 0.0033 ms figure also should not be directly combined or compared with the current 0.0150 ms result.
 
-I could not rerun the soak in this work session. The local Docker/Colima socket was unavailable. The latest saved run is dated 10 September 2026. It has 240 inputs, 76 alerts, p95 latency of 1.616 seconds, and no duplicates. The older 6 August run has 88 alerts and p95 latency of 1.718 seconds. The first failed 15-alert gate is also kept.
+### 6.3 Soak Test and Live Run
 
-The IEX run lasted about 88 seconds. It stored 48,734 events. It created forty 10-second snapshots, five 1-minute snapshots, and five 5-minute snapshots. This supports integration and cadence generation. It had no ground truth and remained in warm-up. It does not support detection accuracy.
+The September 17 notes report an unavailable Docker/Colima socket. This audit checks saved artifacts only and does not rerun soak. The most recent usable historical result is from September 10, 2026: 240 inputs, 76 alerts, a p95 latency of 1.616 seconds, and zero duplicates. An earlier record from August 6, 2026, with 88 alerts and a p95 latency of 1.718 seconds, has also been retained. The first failed gate, which produced only 15 alerts, has not been deleted.
 
-### 7.4 Formal real replay
+The IEX run lasted about 88 seconds and received 48,734 events. It generated 40 ten-second snapshots, five one-minute snapshots, and five five-minute snapshots. This run validated ingestion, storage, and cadence generation. Because there was no ground truth and the system was still in warm-up, it does not demonstrate detection accuracy.
 
-Formal replay requires 12 abnormal and 12 normal intervals to be independently reviewed and frozen. It also verifies the data manifest, checksums, feed, baseline period, and evaluation period. The current registry is still a draft. The system therefore refuses to create formal real Precision, Recall, and F1. This is an intended evaluation guard.
+## 7. My Specific Contributions to the Project
 
-## 8. Literature, AI, and responsibility
+I led the selection of MarketStream’s core solution and its development priorities, scope, key design constraints, and verification requirements. I prioritised the backend pipeline, selected eight factors across three time windows with six CEP patterns as the detection architecture, and drove core simplification and modularisation. I directly specified baseline persistence, retention of the latest 20 trading days per cell, three explicit startup modes, and recovery requirements. I also required real-data evaluation, anomaly intervals identified in advance, and visual replay.
 
-I verified the twelve report references against their source pages and sections. They support design motivation. They do not prove MarketStream. For example, Cont et al.'s OFI is not the same as the present simplified imbalance. MacKinlay's formal abnormal return is not the same as `r_i-r_m`. The detailed table is in `04_Literature_Verification_CN.md`.
+AI served as an auxiliary development tool: it provided technical advice, helped elaborate proposals, generated and refactored code, executed tests and debugging, and drafted and revised report text. AI contributed specific proposals for the factors, windows, patterns and explicit state-machine refactoring; implementation proceeded after my approval. Those proposals and generation records remain identified in the provenance materials.
 
-AI helped with code generation, debugging, experiments, structure, and language. My responsibility was to state problems and acceptance conditions, then check the outputs. The project AI task index is in `05_AI_Log_Index_CN.md`. Claude history is not currently available and is not reconstructed. Private chats and unrelated projects are outside this submission.
+My core contributions are solution selection, concrete problem and constraint design, development trade-offs, verification requirements, and report revision decisions. The contribution matrix separately evidences requirements I directly proposed and advice I chose to adopt, linking my decisions, AI assistance, and the resulting code and experiment artifacts.
 
-Public papers provide method background. Alpaca provides the IEX interface. Kafka, PostgreSQL/TimescaleDB, Streamlit, and Python packages are third-party tools. My supervisor requested clearer ownership evidence, but has not approved this exact package format.
+| Decision area | My concrete action | AI execution | Direct evidence |
+|---|---|---|---|
+| Research architecture | Prioritised the backend and approved eight factors, three windows and six patterns as the main path | Proposed details and generated contracts, factors and CEP code | Matrix D01, D02; E01, E02 |
+| Core simplification and machines | Requested less complexity and modularisation; approved six-machine refactoring | Split modules and generated machines and orchestration | D03; E02 |
+| Baseline persistence | Specified database storage, 20 days, recovery, a separate module and three startup modes | Elaborated consistency details and implemented persistence | D04, D05; E03 |
+| Evaluation | Challenged metric sources; required real data, prior labels and HTML; adopted strict freezing | Audited sources and implemented collection, labels, validation and evaluation | D06, D07; E04 |
+| Engineering reruns | Required completion and reruns of outstanding checks | Executed tools and database checks; diagnosed and repaired stale bars | D08; E05 |
+| Report | Required definitions, citations, structure, metric units/denominators and code mapping | Drafted, explained and revised prose and tables | D09, D10; E06–E09 |
 
-## 9. Remaining work
+The [five-column attribution matrix](08_Contribution_Attribution_Matrix_EN.md) links each personal action to original log lines. Technical detail is retained in the [contribution log](02_Technical_Contribution_Log_EN.md). Sole initial authorship of the full detailed architecture, all manual core code, and the extent of my report prose are not established and are explicitly marked for further evidence. Git author identity, code existence and test success cannot substitute for authorship evidence.
 
-1. Complete independent review and freezing of the real event labels.
-2. Rerun the current soak with a working Kafka and PostgreSQL stack.
-3. Test the IEX path across more days and longer sessions.
-4. Compare CEP and ML on one frozen real dataset and one shared protocol.
-5. Add the full available account export when it arrives.
-
-## 10. Questions I should be able to answer
-
-1. Why is 1.4826 used? It is the normal-consistency scale for MAD. It is still an engineering approximation here.
-2. Why score before updating? It prevents a current observation from changing its own threshold.
-3. Why are 20 seeds identical? The varying parts do not change the rule structure. This is not independent market evidence.
-4. How are 120 FP and 40/240 different? One is unmatched alerts in positive cases. The other is a separate negative-control suite.
-5. Why does removing dislocation increase precision and reduce recall? The extreme single-factor path gives early alerts but also false alerts.
-6. Why does the activity ablation have no effect? Relative volume is not a required completion condition in the six rules.
-7. What does the IEX run prove? It proves input integration and snapshot generation, not real detection accuracy.
-8. Why is the old ML result insufficient? It used another implementation, protocol, and injected labels.
-9. What happens after restart? Startup must use an explicit mode and verify epoch, checksum, and offset state.
-10. Which code did AI write? I should answer from the log and contribution table. Git authorship alone is not proof of manual typing.
-
-## Conclusion
-
-The current work is an inspectable research prototype. It has a shared event contract, a quality gate, eight factors over three windows, a five-part baseline, six CEP patterns, persistent baseline design, and traceable results. Synthetic and historical engineering experiments test implementation behaviour. They do not yet prove real-market effectiveness. My technical ownership is mainly in problem identification, design constraints, challenge of results, validation, and clear limits.

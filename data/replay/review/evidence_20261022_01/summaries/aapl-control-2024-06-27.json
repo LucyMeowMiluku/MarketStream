@@ -1,0 +1,709 @@
+{
+  "interval_id": "aapl-control-2024-06-27",
+  "candidate_kind": "normal",
+  "ticker": "AAPL",
+  "started_at": "2024-06-27T13:30:00Z",
+  "ended_at": "2024-06-27T15:00:00Z",
+  "local_start": "2024-06-27T09:30:00-04:00",
+  "local_end": "2024-06-27T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-06-26T19:59:00Z",
+      "prior_close": 213.17,
+      "first_minute": "2024-06-27T13:30:00Z",
+      "last_minute": "2024-06-27T14:59:00Z",
+      "first_open": 214.74,
+      "last_close": 213.275,
+      "gap_pct": 0.7365013838720458,
+      "end_vs_prior_pct": 0.049256461978708366,
+      "window_return_pct": -0.6822203595045151,
+      "window_range_pct": 1.5390705038651291,
+      "volume": 337727,
+      "raw_artifact": "raw/aapl-control-2024-06-27/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 83,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-06-27T14:00:00+00:00",
+        "2024-06-27T14:21:00+00:00",
+        "2024-06-27T14:27:00+00:00",
+        "2024-06-27T14:32:00+00:00",
+        "2024-06-27T14:39:00+00:00",
+        "2024-06-27T14:47:00+00:00",
+        "2024-06-27T14:49:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-06-26T19:59:00Z",
+      "prior_close": 480.41,
+      "first_minute": "2024-06-27T13:30:00Z",
+      "last_minute": "2024-06-27T14:59:00Z",
+      "first_open": 480.14,
+      "last_close": 481.06,
+      "gap_pct": -0.056201994130022914,
+      "end_vs_prior_pct": 0.13530109697965642,
+      "window_return_pct": 0.19161078018912203,
+      "window_range_pct": 0.6039905027700325,
+      "volume": 71376,
+      "raw_artifact": "raw/aapl-control-2024-06-27/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 72,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-06-27T13:38:00+00:00",
+        "2024-06-27T13:41:00+00:00",
+        "2024-06-27T13:44:00+00:00",
+        "2024-06-27T13:47:00+00:00",
+        "2024-06-27T13:59:00+00:00",
+        "2024-06-27T14:07:00+00:00",
+        "2024-06-27T14:23:00+00:00",
+        "2024-06-27T14:28:00+00:00",
+        "2024-06-27T14:29:00+00:00",
+        "2024-06-27T14:30:00+00:00",
+        "2024-06-27T14:32:00+00:00",
+        "2024-06-27T14:34:00+00:00",
+        "2024-06-27T14:35:00+00:00",
+        "2024-06-27T14:37:00+00:00",
+        "2024-06-27T14:41:00+00:00",
+        "2024-06-27T14:54:00+00:00",
+        "2024-06-27T14:58:00+00:00",
+        "2024-06-27T14:59:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-06-26T19:59:00Z",
+      "prior_close": 545.585,
+      "first_minute": "2024-06-27T13:30:00Z",
+      "last_minute": "2024-06-27T14:57:00Z",
+      "first_open": 545.55,
+      "last_close": 545.75,
+      "gap_pct": -0.006415132380854782,
+      "end_vs_prior_pct": 0.030242766938237686,
+      "window_return_pct": 0.03666025112272209,
+      "window_range_pct": 0.2685363394739104,
+      "volume": 55005,
+      "raw_artifact": "raw/aapl-control-2024-06-27/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 39518145,
+      "headline": "Apple Watch X: Cupertino's Special 10th Anniversary Edition To Reportedly Feature Largest Display Yet",
+      "created_at": "2024-06-27T07:33:35Z",
+      "updated_at": "2024-06-27T07:33:35Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39518145/apple-watch-x-cupertinos-special-10th-anniversary-edition-to-reportedly-feature-largest-display-yet",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39519207,
+      "headline": "Earlier: NTSB Sanctions Boeing Over Release Of 737 MAX 9 Investigation Details",
+      "created_at": "2024-06-27T09:32:52Z",
+      "updated_at": "2024-06-27T09:32:53Z",
+      "symbols": [
+        "BA",
+        "SPR",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39519207/earlier-ntsb-sanctions-boeing-over-release-of-737-max-9-investigation-details",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39499140,
+      "headline": "What's Going On With Taiwan Semi Stock On Wednesday?",
+      "created_at": "2024-06-26T11:50:28Z",
+      "updated_at": "2024-06-27T11:10:29Z",
+      "symbols": [
+        "AAPL",
+        "NVDA",
+        "QCOM",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39499140/whats-going-on-with-taiwan-semi-stock-on-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39521566,
+      "headline": "Wall Street Set For Weak Opening As Tech Rally Falters With Micron, Nvidia Edging Lower: Analyst Says Narrow Market Performance To Persists Unless One Of These Materializes",
+      "created_at": "2024-06-27T11:31:17Z",
+      "updated_at": "2024-06-27T11:31:18Z",
+      "symbols": [
+        "APOG",
+        "AYI",
+        "BTCUSD",
+        "FUL",
+        "IP",
+        "LEVI",
+        "MKC",
+        "MU",
+        "NKE",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "WBA",
+        "WS"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/06/39521566/wall-street-set-for-weak-opening-as-tech-rally-falters-with-micron-nvidia-edging-lower-analyst-says",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39523259,
+      "headline": "Retail Inventories Ex Auto For May 0.0% Vs 0.3% Prior",
+      "created_at": "2024-06-27T12:30:14Z",
+      "updated_at": "2024-06-27T12:30:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39523259/retail-inventories-ex-auto-for-may-0-0-vs-0-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39523260,
+      "headline": "GDP (QoQ) (Q1) +1.4% vs +1.3% Est.",
+      "created_at": "2024-06-27T12:30:15Z",
+      "updated_at": "2024-06-27T12:30:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39523260/gdp-qoq-q1-1-4-vs-1-3-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39523261,
+      "headline": "USA Durable Goods Orders (MoM) For May 0.1%\tVs -0.5% Est.; 0.2% Prior",
+      "created_at": "2024-06-27T12:30:19Z",
+      "updated_at": "2024-06-27T12:30:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39523261/usa-durable-goods-orders-mom-for-may-0-1-vs-0-5-est-0-2-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39523262,
+      "headline": "USA Initial Jobless Claims 233K Vs 236K Est.; 239K Prior",
+      "created_at": "2024-06-27T12:30:19Z",
+      "updated_at": "2024-06-27T12:30:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39523262/usa-initial-jobless-claims-233k-vs-236k-est-239k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39523264,
+      "headline": "US Core PCE Prices Q1 3.70% Vs 3.60% Est; 2.00% Prior",
+      "created_at": "2024-06-27T12:30:27Z",
+      "updated_at": "2024-06-27T12:30:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39523264/us-core-pce-prices-q1-3-70-vs-3-60-est-2-00-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39524977,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of June 27 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-06-27T13:13:56Z",
+      "updated_at": "2024-06-27T13:13:56Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "BB",
+        "HIMS",
+        "MU",
+        "NVDA",
+        "RIVN",
+        "TSLA",
+        "WAY",
+        "WBA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/06/39524977/top-10-trending-stocks-on-wallstreetbets-as-of-june-27-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39525722,
+      "headline": "What's Going On With Taiwan Semi Stock On Thursday?",
+      "created_at": "2024-06-27T13:34:17Z",
+      "updated_at": "2024-06-27T13:34:17Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "NVDA",
+        "QCOM",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/government/24/06/39525722/whats-going-on-with-taiwan-semi-stock-on-thursday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39525840,
+      "headline": "What's Going On With AMD Stock On Thursday?",
+      "created_at": "2024-06-27T13:38:51Z",
+      "updated_at": "2024-06-27T13:38:51Z",
+      "symbols": [
+        "AMD",
+        "MU",
+        "NVDA",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39525840/whats-going-on-with-amd-stock-on-thursday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526403,
+      "headline": "USA Pending Home Sales Index For May 70.8 Vs 72.3 Prior",
+      "created_at": "2024-06-27T14:00:09Z",
+      "updated_at": "2024-06-27T14:00:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39526403/usa-pending-home-sales-index-for-may-70-8-vs-72-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526404,
+      "headline": "USA Pending Home Sales (MoM) For May -2.1% Vs 0.6% Est.; -7.7% Prior",
+      "created_at": "2024-06-27T14:00:10Z",
+      "updated_at": "2024-06-27T14:00:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39526404/usa-pending-home-sales-mom-for-may-2-1-vs-0-6-est-7-7-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526486,
+      "headline": "Atlanta Fed's Bostic Says Inflation Moving In 'right Direction,' Interest Rate Cut Likely In Q4; Penciled In Four Quarter-Percentage-Point Rate Cuts For 2025, Fed Is 'On A Long Term Arc'; He Wants To Be 'Absolutely Certain' Inflation Will Return To 2% Before An Initial Cut That Should Be Seen As The First In A Series; That Is A Reason For Patience",
+      "created_at": "2024-06-27T14:01:31Z",
+      "updated_at": "2024-06-27T14:01:32Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39526486/atlanta-feds-bostic-says-inflation-moving-in-right-direction-interest-rate-cut-li",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526500,
+      "headline": "Atlanta Fed's Bostic Says Share Of Goods Rising 5% Or More Has Fallen Below 20%; Inflation Remains 'chief Concern,' Businesses Say They See No 'Cliff' Ahead For The Job Market; Fed Can Achieve 2% Inflation With A Job Market That Remains 'tight' By Historical Standards; Service Businesses Say Pricing Power Is Eroding",
+      "created_at": "2024-06-27T14:02:06Z",
+      "updated_at": "2024-06-27T14:02:07Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39526500/atlanta-feds-bostic-says-share-of-goods-rising-5-or-more-has-fallen-below-20-infl",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526516,
+      "headline": "Atlanta Fed's Bostic Says Housing Costs Are A 'Frontline' Conversation, Though He Remains Confident Shelter Inflation Will 'Fall Back Into Line';  Labor Market 'Loosening But Not Loose'; GDP And Job Market Data Point To 'Orderly Deceleration' In Activity That Will Balance Supply And Demand, Lower Inflation",
+      "created_at": "2024-06-27T14:02:45Z",
+      "updated_at": "2024-06-27T14:02:46Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39526516/atlanta-feds-bostic-says-housing-costs-are-a-frontline-conversation-though-he-rem",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526520,
+      "headline": "Supreme Court Blocks EPA's 'Good Neighbor' Ozone Rule Grants Request From Companies, States In EPA Case",
+      "created_at": "2024-06-27T14:02:54Z",
+      "updated_at": "2024-06-27T14:02:55Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39526520/supreme-court-blocks-epas-good-neighbor-ozone-rule-grants-request-from-companies-states-in-epa-case",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526625,
+      "headline": "Supreme Court Rejects Purdue's Opioid Pact With Sackler Shield",
+      "created_at": "2024-06-27T14:06:41Z",
+      "updated_at": "2024-06-27T14:06:41Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39526625/supreme-court-rejects-purdues-opioid-pact-with-sackler-shield",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39526786,
+      "headline": "Supreme Court Curbs SEC's Use Of In-House Judges In Fraud Cases, Backs Right To Jury Trial For Some SEC Defendants",
+      "created_at": "2024-06-27T14:11:52Z",
+      "updated_at": "2024-06-27T14:11:52Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39526786/supreme-court-curbs-secs-use-of-in-house-judges-in-fraud-cases-backs-right-to-jury-trial-for-some-se",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39527260,
+      "headline": "U.S. Supreme Court Allows, For Now, Abortions To Be Performed In Idaho In Cases Of Medical Emergencies For Pregnant Women",
+      "created_at": "2024-06-27T14:26:16Z",
+      "updated_at": "2024-06-27T14:26:16Z",
+      "symbols": [
+        "PRGO",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/06/39527260/u-s-supreme-court-allows-for-now-abortions-to-be-performed-in-idaho-in-cases-of-medical-emergenci",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39527265,
+      "headline": "Amazon Stock Trades At New 52-Week High: Book Profits Or More Upside Ahead?",
+      "created_at": "2024-06-27T14:26:37Z",
+      "updated_at": "2024-06-27T14:27:12Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "MSFT",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/technicals/24/06/39527265/amazon-stock-trades-at-new-52-week-high-book-profits-or-more-upside-ahead",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39527356,
+      "headline": "USA Natural Gas Storage 52B Vs 53B Est.; 71B Prior",
+      "created_at": "2024-06-27T14:30:49Z",
+      "updated_at": "2024-06-27T14:30:49Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39527356/usa-natural-gas-storage-52b-vs-53b-est-71b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39527471,
+      "headline": "GDP Growth Upwardly Revised In Q1 But Consumer Spending Weakens, Continuing Jobless Claims Hit Nearly 3-Year Highs: Thursday's Economic Digest",
+      "created_at": "2024-06-27T14:34:38Z",
+      "updated_at": "2024-06-27T14:34:39Z",
+      "symbols": [
+        "ADBE",
+        "CRM",
+        "CV",
+        "GS",
+        "META",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/06/39527471/gdp-growth-upwardly-revised-in-q1-but-consumer-spending-weakens-continuing-jobless-cla",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39528226,
+      "headline": "'China's AI Sector Faces Fallout From U.S. Chip Curbs' - The Information",
+      "created_at": "2024-06-27T15:02:37Z",
+      "updated_at": "2024-06-27T15:02:37Z",
+      "symbols": [
+        "BABA",
+        "BIDU",
+        "FXI",
+        "MSFT",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39528226/chinas-ai-sector-faces-fallout-from-u-s-chip-curbs-the-information",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39528474,
+      "headline": "\"Marijuana 'Not As Dangerous' As Previously Thought, Biden Campaign Says As It Promotes Pardons And Rescheduling In New Ads\" - Marijuana Moment",
+      "created_at": "2024-06-27T15:08:28Z",
+      "updated_at": "2024-06-27T15:08:28Z",
+      "symbols": [
+        "MJ",
+        "MSOS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/06/39528474/marijuana-not-as-dangerous-as-previously-thought-biden-campaign-says-as-it-promotes-pardons-and-r",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39529900,
+      "headline": "Senator Whitehouse Probes Oil Companies Over Illegal Coordination",
+      "created_at": "2024-06-27T15:45:14Z",
+      "updated_at": "2024-06-27T15:45:15Z",
+      "symbols": [
+        "COP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39529900/senator-whitehouse-probes-oil-companies-over-illegal-coordination",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39530299,
+      "headline": "'Apple Explores Novel Method for Making iPhone Batteries More Replaceable' - The Information",
+      "created_at": "2024-06-27T16:02:06Z",
+      "updated_at": "2024-06-27T16:02:06Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39530299/apple-explores-novel-method-for-making-iphone-batteries-more-replaceable-the-information",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39530832,
+      "headline": "Apple Battles With The EU Over App Store Policies While Their 30% Recovery Could Propel Their Stock To New Record Highs",
+      "created_at": "2024-06-27T16:20:20Z",
+      "updated_at": "2024-06-27T16:20:53Z",
+      "symbols": [
+        "AAPL",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/06/39530832/apple-battles-with-the-eu-over-app-store-policies-while-their-30-recovery-could-propel-their-stock",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39531150,
+      "headline": "Benzinga Market Summary: Levi Strauss, Walgreens And Micron Drop On Earnings, GDP Growth Slightly Beats Estimates, Presidential Debate To Take Place At 9:00 p.m. ET",
+      "created_at": "2024-06-27T16:34:22Z",
+      "updated_at": "2024-06-27T16:34:23Z",
+      "symbols": [
+        "DJT",
+        "LEVI",
+        "MU",
+        "SPY",
+        "WBA"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39531150/benzinga-market-summary-levi-strauss-walgreens-and-micron-drop-on-earnings-gdp-gr",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39532198,
+      "headline": "AI Stocks Show Asymmetry On Expectations Proving Too High, Wall Street Preps For Presidential Debate",
+      "created_at": "2024-06-27T17:11:17Z",
+      "updated_at": "2024-06-27T17:15:06Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/06/39532198/ai-stocks-show-asymmetry-on-expectations-proving-too-high-wall-street-preps-for-presidential-debate",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39532797,
+      "headline": "Stocks Show Modest Gains Ahead Of Fed's Inflation Report; Chipmakers Struggle, While Gold And Bitcoin Rebound: What's Driving Markets Thursday?",
+      "created_at": "2024-06-27T17:33:47Z",
+      "updated_at": "2024-06-27T17:33:48Z",
+      "symbols": [
+        "AMZN",
+        "AYI",
+        "BABA",
+        "BTCUSD",
+        "CRM",
+        "DCOM",
+        "DIA",
+        "FFWM",
+        "GLD",
+        "GS",
+        "JD",
+        "JEF",
+        "KRE",
+        "LEVI",
+        "MKC",
+        "MU",
+        "NVDA",
+        "PDD",
+        "SMPL",
+        "SOLUSD",
+        "SOXX",
+        "SPY",
+        "TLT",
+        "WBA",
+        "XLE",
+        "XLP",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/06/39532797/stocks-show-modest-gains-ahead-of-feds-inflation-report-chipmakers-struggle-while-gold-and-bitco",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39532857,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-06-27T17:35:13Z",
+      "updated_at": "2024-06-27T17:35:13Z",
+      "symbols": [
+        "AAPL",
+        "ADBE",
+        "ARM",
+        "CRM",
+        "DDOG",
+        "GDDY",
+        "MARA",
+        "MU",
+        "NVDA",
+        "SMCI"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/06/39532857/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39533407,
+      "headline": "Fed's Bowman Says Fed Not At Point Yet Where It Can Consider Rate Cut; If Inflation Moves Toward 2% Eventual Rate Cut On Table; Inflation Should Ease With Current Fed Policy Setting; Monetary Policy Is Currently Restrictive; Still Willing To Raise Rates Again If Inflation Doesn't Ease; Remains 'Cautious' In Weighing Future Fed Rate Changes",
+      "created_at": "2024-06-27T18:06:53Z",
+      "updated_at": "2024-06-27T18:06:54Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39533407/feds-bowman-says-fed-not-at-point-yet-where-it-can-consider-rate-cut-if-inflation",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39533439,
+      "headline": "Fed's Bowman Says Easier Financial Conditions Could Drive Up Inflation; Upside Risks To Inflation Persist; Expects Only Modest Progress On Lower Inflation This Year; Economy Strong But Activity Has Moderated; Concerned By Decline In Number Of U.S. Banks; Lack Of New Bank Creation Will Create Financial Issues",
+      "created_at": "2024-06-27T18:07:25Z",
+      "updated_at": "2024-06-27T18:07:26Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/06/39533439/feds-bowman-says-easier-financial-conditions-could-drive-up-inflation-upside-risk",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39534740,
+      "headline": "IMF's Georgieva Says U.S. Fed Should Lower Policy Rates Only After Clear Evidence Of Inflation Returning To 2% Target; IMF's U.S. Inflation Forecast Slightly More Optimistic Than Fed's; Notes U.S. Consumer Spending Boost From COVID-Era Wealth May Be Subsiding, Easing Inflation Pressure",
+      "created_at": "2024-06-27T19:21:17Z",
+      "updated_at": "2024-06-27T19:21:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/06/39534740/imfs-georgieva-says-u-s-fed-should-lower-policy-rates-only-after-clear-evidence-of-inf",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39534959,
+      "headline": "IMF's Georgieva Says Potential For One Fed Rate Cut In 2024, Further Cuts In 2025",
+      "created_at": "2024-06-27T19:34:34Z",
+      "updated_at": "2024-06-27T19:34:34Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/06/39534959/imfs-georgieva-says-potential-for-one-fed-rate-cut-in-2024-further-cuts-in-2025",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39536635,
+      "headline": "'The U.S. readies to evacuate Americans from Lebanon if fighting between Israel and Hezbollah intensifies' - NBC News",
+      "created_at": "2024-06-27T20:28:31Z",
+      "updated_at": "2024-06-27T20:28:31Z",
+      "symbols": [
+        "EIS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/06/39536635/the-u-s-readies-to-evacuate-americans-from-lebanon-if-fighting-between-israel-and-hezb",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39536854,
+      "headline": "Adobe Stock Jumped On Thursday: What Happened?",
+      "created_at": "2024-06-27T20:35:01Z",
+      "updated_at": "2024-06-27T20:35:01Z",
+      "symbols": [
+        "ADBE",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/06/39536854/adobe-stock-jumped-on-thursday-what-happened",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39537341,
+      "headline": "Last Inflation Report Pushed Markets To Record Highs In June: Could It Happen Again Friday? 5 ETFs To Watch",
+      "created_at": "2024-06-27T20:53:21Z",
+      "updated_at": "2024-06-27T20:53:21Z",
+      "symbols": [
+        "GLD",
+        "IWM",
+        "SPY",
+        "TLT",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/06/39537341/last-inflation-report-pushed-markets-to-record-highs-in-june-could-it-happen-again-friday-5-etfs",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39537406,
+      "headline": "US Economy At Stake In Biden Vs. Trump Debate: 'Both Candidates Have Policies That Are Inflationary'",
+      "created_at": "2024-06-27T20:55:58Z",
+      "updated_at": "2024-06-27T20:55:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/24/06/39537406/us-economy-at-stake-in-biden-vs-trump-debate-both-candidates-have-policies-that-are-inflationary",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

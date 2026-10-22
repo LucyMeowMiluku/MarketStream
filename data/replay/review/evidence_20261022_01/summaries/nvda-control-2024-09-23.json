@@ -1,0 +1,747 @@
+{
+  "interval_id": "nvda-control-2024-09-23",
+  "candidate_kind": "normal",
+  "ticker": "NVDA",
+  "started_at": "2024-09-23T13:30:00Z",
+  "ended_at": "2024-09-23T15:00:00Z",
+  "local_start": "2024-09-23T09:30:00-04:00",
+  "local_end": "2024-09-23T11:00:00-04:00",
+  "symbols": {
+    "NVDA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-09-20T19:59:00Z",
+      "prior_close": 116.04,
+      "first_minute": "2024-09-23T13:30:00Z",
+      "last_minute": "2024-09-23T14:59:00Z",
+      "first_open": 116.47,
+      "last_close": 115.62,
+      "gap_pct": 0.37056187521544715,
+      "end_vs_prior_pct": -0.3619441571871773,
+      "window_return_pct": -0.7298016656649753,
+      "window_range_pct": 1.811625311238945,
+      "volume": 848472,
+      "raw_artifact": "raw/nvda-control-2024-09-23/NVDA.minutes.json"
+    },
+    "QQQ": {
+      "bars": 83,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-09-23T14:02:00+00:00",
+        "2024-09-23T14:24:00+00:00",
+        "2024-09-23T14:29:00+00:00",
+        "2024-09-23T14:41:00+00:00",
+        "2024-09-23T14:42:00+00:00",
+        "2024-09-23T14:44:00+00:00",
+        "2024-09-23T14:46:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-09-20T19:59:00Z",
+      "prior_close": 482.31,
+      "first_minute": "2024-09-23T13:30:00Z",
+      "last_minute": "2024-09-23T14:59:00Z",
+      "first_open": 482.91,
+      "last_close": 483.45,
+      "gap_pct": 0.12440131865398829,
+      "end_vs_prior_pct": 0.23636250544254445,
+      "window_return_pct": 0.11182207864819382,
+      "window_range_pct": 0.45142987306123433,
+      "volume": 83106,
+      "raw_artifact": "raw/nvda-control-2024-09-23/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-09-23T14:10:00+00:00",
+        "2024-09-23T14:11:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-09-20T19:59:00Z",
+      "prior_close": 568.03,
+      "first_minute": "2024-09-23T13:30:00Z",
+      "last_minute": "2024-09-23T14:59:00Z",
+      "first_open": 569.27,
+      "last_close": 569.9,
+      "gap_pct": 0.21829832931359316,
+      "end_vs_prior_pct": 0.3292079643680834,
+      "window_return_pct": 0.1106680485534195,
+      "window_range_pct": 0.35484040964744,
+      "volume": 129451,
+      "raw_artifact": "raw/nvda-control-2024-09-23/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 40974645,
+      "headline": "Nvidia CEO Jensen Huang Meets PM Modi, Says It's 'India's Moment' Amid AI Boom",
+      "created_at": "2024-09-23T08:16:46Z",
+      "updated_at": "2024-09-23T08:16:46Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40974645/nvidia-ceo-jensen-huang-meets-pm-modi-says-its-indias-moment-amid-ai-boom",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40974885,
+      "headline": "S&P 500 Outpaces Wall Street Projections As Year-End Nears: Will The Rally Hold?",
+      "created_at": "2024-09-23T08:25:57Z",
+      "updated_at": "2024-09-23T08:25:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/09/40974885/s-p-500-outpaces-wall-street-projections-as-year-end-nears-will-the-rally-hold",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40976900,
+      "headline": "Wall Street Eyes Modestly Positive Start As Atypical September Rally Generates Positive Sentiment, China Cuts Rate: Intel, Palantir, Bitcoin Make Huge Moves",
+      "created_at": "2024-09-23T11:03:03Z",
+      "updated_at": "2024-09-23T11:03:04Z",
+      "symbols": [
+        "AIR",
+        "BTCUSD",
+        "DELL",
+        "ERIE",
+        "FDX",
+        "INTC",
+        "MU",
+        "PLTR",
+        "QCOM",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/09/40976900/wall-street-eyes-modestly-positive-start-as-atypical-september-rally-generates-positive-sentiment-c",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40976910,
+      "headline": "Minneapolis Fed President Kashkari Said Balance Of Risks Have Shifted Toward Risk Of Further Labor Market Weakening, Higher Unemployment; 50 BPS Rate Cut Was Right Decision, Reflects Progress On Inflation, Softening Of Labor Market",
+      "created_at": "2024-09-23T11:04:05Z",
+      "updated_at": "2024-09-23T11:04:06Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40976910/minneapolis-fed-president-kashkari-said-balance-of-risks-have-shifted-toward-risk-of-further-labor-m",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40977069,
+      "headline": "Alibaba Teams Up With Nvidia to Supercharge EVs for Chinese Automakers: Report",
+      "created_at": "2024-09-23T11:08:38Z",
+      "updated_at": "2024-09-23T11:08:39Z",
+      "symbols": [
+        "APIE",
+        "BABA",
+        "GWLLY",
+        "LI",
+        "NVDA",
+        "PGJ",
+        "XIACY",
+        "ZK"
+      ],
+      "url": "https://www.benzinga.com/government/24/09/40977069/alibaba-teams-up-with-nvidia-to-supercharge-evs-for-chinese-automakers-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40977991,
+      "headline": "Tesla Stock Outperforms Magnificent 7 Peers In Premarket: What's Going On?",
+      "created_at": "2024-09-23T11:59:56Z",
+      "updated_at": "2024-09-23T11:59:56Z",
+      "symbols": [
+        "AMZN",
+        "APPL",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/09/40977991/tesla-stock-outperforms-magnificent-7-peers-in-premarket-whats-going-on",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40979220,
+      "headline": "Minneapolis Fed President Kashkari Said Labor Market Strong, Want To Keep It That Way; Won't Declare Mission Accomplished On Inflation",
+      "created_at": "2024-09-23T12:13:11Z",
+      "updated_at": "2024-09-23T12:13:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40979220/minneapolis-fed-president-kashkari-said-labor-market-strong-want-to-keep-it-that-way-wont-declare-mi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40979229,
+      "headline": "Fed's Kashkari Said 50 Basis Point Fed Rate Cut Was Meaningful Step To Get Process Moving;  Expects Smaller Steps Going Forward For Fed",
+      "created_at": "2024-09-23T12:14:30Z",
+      "updated_at": "2024-09-23T12:14:30Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40979229/feds-kashkari-said-50-basis-point-fed-rate-cut-was-meaningful-step-to-get-process-moving-expects-sma",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40979492,
+      "headline": "Fed's Kashkari Says Penciled In 50 Basis Points More Cuts In 2024",
+      "created_at": "2024-09-23T12:22:19Z",
+      "updated_at": "2024-09-23T12:22:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40979492/feds-kashkari-says-penciled-in-50-basis-points-more-cuts-in-2024",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40979751,
+      "headline": "USA Chicago Fed National Activity For August 0.12 Vs -0.20 Est.; -0.42 Prior (Revised From -0.34)",
+      "created_at": "2024-09-23T12:30:10Z",
+      "updated_at": "2024-09-23T12:30:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40979751/usa-chicago-fed-national-activity-for-august-0-12-vs-0-20-est-0-34-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40980388,
+      "headline": "AMD Chief Predicts Custom Chips Will Outperform GPUs, Sees Shift in AI Chip Demand: Report",
+      "created_at": "2024-09-23T12:59:33Z",
+      "updated_at": "2024-09-23T12:59:33Z",
+      "symbols": [
+        "AMD",
+        "AMZN",
+        "FTXL",
+        "GOOG",
+        "GOOGL",
+        "NVDA",
+        "ORCL",
+        "SEMI"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40980388/amd-chief-predicts-custom-chips-will-outperform-gpus-sees-shift-in-ai-chip-demand-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40981022,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of September 23, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-09-23T13:16:28Z",
+      "updated_at": "2024-09-23T13:16:29Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "INTC",
+        "LOT",
+        "LUNR",
+        "MADE",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/09/40981022/top-10-trending-stocks-on-wallstreetbets-as-of-september-23-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40981728,
+      "headline": "S&P Global US Manufacturing PMI For September 47.0 Vs 48.6 Est.; 47.9 Prior",
+      "created_at": "2024-09-23T13:45:12Z",
+      "updated_at": "2024-09-23T13:45:13Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40981728/s-p-global-us-manufacturing-pmi-for-september-47-0-vs-48-6-est-47-9-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40981729,
+      "headline": "S&P Global Services PMI For September 55.4 Vs 55.3 Est.; 55.7 Prior",
+      "created_at": "2024-09-23T13:45:19Z",
+      "updated_at": "2024-09-23T13:45:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40981729/s-p-global-services-pmi-for-september-55-4-vs-55-3-est-55-7-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40981730,
+      "headline": "S&P Global Composite PMI For September 54.4 Vs 54.3 Est.; 54.6 Prior",
+      "created_at": "2024-09-23T13:45:19Z",
+      "updated_at": "2024-09-23T13:45:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40981730/s-p-global-composite-pmi-for-september-54-4-vs-54-3-est-54-6-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40982617,
+      "headline": "Fed's Goolsbee Sees 'Many More Rate Cuts' Over Next Year; Comfortable With Fed's 50 BPs Rate Cut, Shows Fed Is Focused On Risks To Employment, Not Just Inflation; Inflation Is 'Way Down' From Peak, Labor Market Is At Full Employment; Keeping Rates At Decade-High Does Not Make Sense When You Want Things To Stay Where They Are; To Reach Soft Landing, Cannot Be Behind The Curve; Rates Must Come Down Significantly",
+      "created_at": "2024-09-23T14:14:44Z",
+      "updated_at": "2024-09-23T14:14:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40982617/feds-goolsbee-sees-many-more-rate-cuts-over-next-year-comfortable-with-feds-50-bp",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40982849,
+      "headline": "Fed's Goolsbee Says Golden Path Is In The Books, Inflation Came Down Without A Recession Last Year",
+      "created_at": "2024-09-23T14:24:00Z",
+      "updated_at": "2024-09-23T14:24:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40982849/feds-goolsbee-says-golden-path-is-in-the-books-inflation-came-down-without-a-rece",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40982950,
+      "headline": "Fed's Goolsbee Says 0.7% Increase In Unemployment Over A Year Is Usually A Warning Sign Of Recession; Directionally Unemployment Is Rising, But Level Is Still Low; Rise In Delinquencies Is Also A Warning Sign; GDP Growth, Consumer Spending, Wage Growth Has Been Strong; It's A Little Bit Of A 'Cautionary' Period",
+      "created_at": "2024-09-23T14:28:43Z",
+      "updated_at": "2024-09-23T14:28:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40982950/feds-goolsbee-says-0-7-increase-in-unemployment-over-a-year-is-usually-a-warning-sign-of-recession-d",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983018,
+      "headline": "U.S. State Dept Spokesperson Says Israeli Military Operation That Shut Down Al Jazaeera's Ramallah Office Is Concerning; Israel's Action Is Inconsistent With U.S. Support For Freedom Of The Press In The West Bank And All Over The World",
+      "created_at": "2024-09-23T14:30:10Z",
+      "updated_at": "2024-09-23T14:30:11Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40983018/u-s-state-dept-spokesperson-says-israeli-military-operation-that-shut-down-al-jaz",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983043,
+      "headline": "US Services Growth Tops Estimate, Contraction In Manufacturing Worsens: 'Reacceleration Of Inflation'",
+      "created_at": "2024-09-23T14:31:02Z",
+      "updated_at": "2024-09-23T14:31:03Z",
+      "symbols": [
+        "SPY",
+        "TLT",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/09/40983043/us-services-growth-tops-estimate-contraction-in-manufacturing-worsens-reacceleratio",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983222,
+      "headline": "Fed's Goolsbee Says Businesses Say They See 'Steady As She Goes,' With Surprisingly Little Discussion About Inflation",
+      "created_at": "2024-09-23T14:40:03Z",
+      "updated_at": "2024-09-23T14:40:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40983222/feds-goolsbee-says-businesses-say-they-see-steady-as-she-goes-with-surprisingly-l",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983287,
+      "headline": "Fed's Goolsbee Says Monitoring Office Building Vacancy Rates, Making Sure Banks Provision For Any Losses On Commercial Real Estate",
+      "created_at": "2024-09-23T14:44:56Z",
+      "updated_at": "2024-09-23T14:44:57Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40983287/feds-goolsbee-says-monitoring-office-building-vacancy-rates-making-sure-banks-pro",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983292,
+      "headline": "U.S. Senators Seek To Deter Mexico From Taking Over Vulcan Port",
+      "created_at": "2024-09-23T14:45:42Z",
+      "updated_at": "2024-09-23T14:45:42Z",
+      "symbols": [
+        "EWW",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40983292/u-s-senators-seek-to-deter-mexico-from-taking-over-vulcan-port",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983346,
+      "headline": "Fed's Goolsbee Says Surprisingly High And Stable Amount Of Demand For Cash, Though The Cash Share Of All Transactions Is Down",
+      "created_at": "2024-09-23T14:48:29Z",
+      "updated_at": "2024-09-23T14:48:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40983346/feds-goolsbee-says-surprisingly-high-and-stable-amount-of-demand-for-cash-though-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983392,
+      "headline": "Fed's Goolsbee Says Consumer Sentiment Is Not A Good Indicator For Spending Behavior",
+      "created_at": "2024-09-23T14:50:30Z",
+      "updated_at": "2024-09-23T14:50:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40983392/feds-goolsbee-says-consumer-sentiment-is-not-a-good-indicator-for-spending-behavi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983590,
+      "headline": "Tech Stocks Approach Resistance Zone, Full Scale War Potential In Middle East, China Stimulus Hopes",
+      "created_at": "2024-09-23T14:59:47Z",
+      "updated_at": "2024-09-23T14:59:48Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40983590/tech-stocks-approach-resistance-zone-full-scale-war-potential-in-middle-east-china-stimulus-hopes",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983591,
+      "headline": "Qualcomm Takeover Of Intel Is 'Logically Unlikely' In Face Of Regulatory Challenges, Analyst Says",
+      "created_at": "2024-09-23T14:59:49Z",
+      "updated_at": "2024-09-23T14:59:49Z",
+      "symbols": [
+        "APO",
+        "INTC",
+        "NVDA",
+        "QCOM"
+      ],
+      "url": "https://www.benzinga.com/m-a/24/09/40983591/qualcomm-takeover-of-intel-is-logically-unlikely-in-face-of-regulatory-challenges-analyst-says",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40983747,
+      "headline": "Goolsbee: Until This Recent Rate Cut, Falling Inflation Has Meant Fed Has Been Tightening Policy; The Cut Of 50 Bps To Start Makes Sense; We Are Shifting Back To A Normal Dual Mandate Mode; We Are 100s Of Basis Points Above The Neutral Rate; If Conditions Continue Like This There Are A Lot Of Cuts To Come Over Next 12 Months; We Have A Long Way To Come Down To Get The Interest Rate To Something Like Neutral",
+      "created_at": "2024-09-23T15:04:15Z",
+      "updated_at": "2024-09-23T15:04:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40983747/goolsbee-until-this-recent-rate-cut-falling-inflation-has-meant-fed-has-been-tightening-policy-the-c",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40983809,
+      "headline": "Israeli Military Says It Has Struck Approximately 800 Hezbollah Targets In Southern Lebanon And Bekaa Since This Morning",
+      "created_at": "2024-09-23T15:05:29Z",
+      "updated_at": "2024-09-23T15:05:30Z",
+      "symbols": [
+        "EIS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/09/40983809/israeli-military-says-it-has-struck-approximately-800-hezbollah-targets-in-southern-le",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40983810,
+      "headline": "California Attorney General Says California Files Lawsuit Against Exxon Mobil Over Role In Global Plastic Waste Pollution",
+      "created_at": "2024-09-23T15:05:30Z",
+      "updated_at": "2024-09-23T15:05:30Z",
+      "symbols": [
+        "SPY",
+        "XOM"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40983810/california-attorney-general-says-california-files-lawsuit-against-exxon-mobil-over-role-in-global-pl",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40984046,
+      "headline": "U.S. Commerce Official Says General Motors, Ford Would Need To Stop Importing Vehicles From China For U.S. Market Under New Proposed Connected Car Rule",
+      "created_at": "2024-09-23T15:12:36Z",
+      "updated_at": "2024-09-23T15:12:37Z",
+      "symbols": [
+        "F",
+        "FXI",
+        "GM",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40984046/u-s-commerce-official-says-general-motors-ford-would-need-to-stop-importing-vehic",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40985470,
+      "headline": "'US is sending more troops to the Middle East as violence rises between Israel and Hezbollah' - AP",
+      "created_at": "2024-09-23T16:07:10Z",
+      "updated_at": "2024-09-23T16:07:10Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/09/40985470/us-is-sending-more-troops-to-the-middle-east-as-violence-rises-between-israel-and-hezb",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40985705,
+      "headline": "Russia Projects Decline In Oil And Gas Revenue Over The Next Three Years; Plans To Raise Defense Spending To $142B In 2025",
+      "created_at": "2024-09-23T16:19:07Z",
+      "updated_at": "2024-09-23T16:19:08Z",
+      "symbols": [
+        "SPY",
+        "USO",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/09/40985705/russia-projects-decline-in-oil-and-gas-revenue-over-the-next-three-years-plans-to-rais",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40986188,
+      "headline": "President Biden Says He Will Discuss With UAE President Efforts To End The War In Gaza; They Will Discuss Efforts To Deescalate Situation In Lebanon",
+      "created_at": "2024-09-23T16:33:27Z",
+      "updated_at": "2024-09-23T16:33:27Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40986188/president-biden-says-he-will-discuss-with-uae-president-efforts-to-end-the-war-in",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40986921,
+      "headline": "Microsoft's AI Lead Shrinks: Analyst Downgrades Stock As Amazon And Google Close The Gap",
+      "created_at": "2024-09-23T17:10:21Z",
+      "updated_at": "2024-09-23T17:10:22Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "MSFT",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/09/40986921/microsofts-ai-lead-shrinks-analyst-downgrades-stock-as-amazon-and-google-close-the-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40986930,
+      "headline": "Boeing's DC Office Cuts Political Donations, Lobbying",
+      "created_at": "2024-09-23T17:10:44Z",
+      "updated_at": "2024-09-23T17:10:45Z",
+      "symbols": [
+        "BA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40986930/boeings-dc-office-cuts-political-donations-lobbying",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40987087,
+      "headline": "US Stocks Stall, Gold Updates Record Highs, Tesla Rallies: What's Driving Markets Monday?",
+      "created_at": "2024-09-23T17:19:58Z",
+      "updated_at": "2024-09-23T17:19:59Z",
+      "symbols": [
+        "BTCUSD",
+        "CIEN",
+        "DIA",
+        "GM",
+        "INTC",
+        "IWM",
+        "QCOM",
+        "QQQ",
+        "SPY",
+        "TSLA",
+        "VKTX",
+        "XLU",
+        "XLV",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/09/40987087/us-stocks-stall-gold-updates-record-highs-tesla-rallies-whats-driving-markets-monday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40987402,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-09-23T17:35:13Z",
+      "updated_at": "2024-09-23T17:35:14Z",
+      "symbols": [
+        "AMD",
+        "DOCN",
+        "HPE",
+        "MARA",
+        "MSTR",
+        "MU",
+        "NVDA",
+        "PLTR",
+        "SMCI",
+        "SNOW"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/09/40987402/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40987499,
+      "headline": "'DEA Calls For Massive Increases In Psilocybin, Ibogaine And THC Manufacturing This Year To Meet Research Demands'  - Marijuana Moment",
+      "created_at": "2024-09-23T17:41:39Z",
+      "updated_at": "2024-09-23T17:41:40Z",
+      "symbols": [
+        "ACB",
+        "AKAN",
+        "CGC",
+        "CMPS",
+        "CRON",
+        "CYBN",
+        "DRUG",
+        "ENVB",
+        "GRWG",
+        "IGC",
+        "IMCC",
+        "LFLY",
+        "MNMD",
+        "SEEL",
+        "SNDL",
+        "SPY",
+        "TLRY"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/09/40987499/dea-calls-for-massive-increases-in-psilocybin-ibogaine-and-thc-manufacturing-this-year-to-meet-re",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40988975,
+      "headline": "Alibaba Shares Are Trading Higher: What's Going On",
+      "created_at": "2024-09-23T18:11:49Z",
+      "updated_at": "2024-09-23T18:11:50Z",
+      "symbols": [
+        "BABA",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40988975/alibaba-shares-are-trading-higher-whats-going-on",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40989154,
+      "headline": "Bank Of America CEO Brian Moynihan Says US Fed Rate Cut Is A Good Start",
+      "created_at": "2024-09-23T18:21:50Z",
+      "updated_at": "2024-09-23T18:21:50Z",
+      "symbols": [
+        "BAC",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/09/40989154/bank-of-america-ceo-brian-moynihan-says-us-fed-rate-cut-is-a-good-start",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40989413,
+      "headline": "Biden-Harris Administration Announces $112.5M Investment In Marine Energy To Accelerate Wave Energy Converter Development And Support Clean Energy Initiatives",
+      "created_at": "2024-09-23T18:34:39Z",
+      "updated_at": "2024-09-23T18:34:39Z",
+      "symbols": [
+        "OPTT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40989413/biden-harris-administration-announces-112-5m-investment-in-marine-energy-to-accelerate-wave-energy-c",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40989830,
+      "headline": "Watching Shares Of Richtech Robotics, NVIDIA Robotics Post On X, \"Discover Scorpion, the AI-powered robot by @RichtechRobots , offering customized drink recommendations based on your preferences and mood.\"",
+      "created_at": "2024-09-23T19:01:57Z",
+      "updated_at": "2024-09-23T19:01:57Z",
+      "symbols": [
+        "NVDA",
+        "RR"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40989830/watching-shares-of-richtech-robotics-nvidia-robotics-post-on-x-discover-scorpion-the-ai-powered-robo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40990138,
+      "headline": "\"NVIDIA's H20 AI Accelerators Might Face The Next 'US Ban', Team Green Stops Taking New Orders In China\" - WFFCtech",
+      "created_at": "2024-09-23T19:24:29Z",
+      "updated_at": "2024-09-23T19:24:30Z",
+      "symbols": [
+        "FXI",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40990138/nvidias-h20-ai-accelerators-might-face-the-next-us-ban-team-green-stops-taking-ne",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40991592,
+      "headline": "'Senate Dems' Emergency Abortion Care Blitz; Top Senate Democrats Will Force Republicans To Vote On Access To Emergency Abortion Care This Week, In One Of Senate Majority Leader Chuck Schumer's Final Pre-Election Messaging Pushes' - Axios",
+      "created_at": "2024-09-23T20:41:07Z",
+      "updated_at": "2024-09-23T20:41:08Z",
+      "symbols": [
+        "PGNY",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40991592/senate-dems-emergency-abortion-care-blitz-top-senate-democrats-will-force-republi",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

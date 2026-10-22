@@ -1,3 +1,6 @@
+# 来源归属（2026-10-22）：XI LU 主导方案选择与具体约束，AI 按确认方案生成／重构实现。
+# 本注释不声明全部代码由本人手写；逐项原日志与未确认范围见
+# docs/CORE_CODE_AUTHORSHIP_AND_REFERENCES_CN.md 及 report/ownership_evidence/08_Contribution_Attribution_Matrix_CN.md。
 # =========================================================================
 # function：验证并冻结的真实历史事件标签注册表
 # 贡献：标签 schema、12+12 约束、外部证据要求、摘要和冻结工作流

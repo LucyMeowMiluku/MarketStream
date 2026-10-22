@@ -29,3 +29,16 @@ data/replay/raw/
 node_modules/
 *.docx
 !docs/*.docx
+
+# Local-only artifacts (kept out of the public repository)
+.playwright-cli/
+# Raw provider data: redistribution rights are not verified
+data/historical/
+data/replay/review/*/raw/
+# Legacy ensemble artifacts
+data/backtest_results/*.html
+data/backtest_results/models/
+data/comparison_results*/models/
+# Historical submission package and stale export
+report/提交1/
+report/*.zip

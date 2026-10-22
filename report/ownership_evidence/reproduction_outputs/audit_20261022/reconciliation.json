@@ -1,0 +1,199 @@
+{
+  "counts": {
+    "positive_cases": 360,
+    "positive_alerts": 420,
+    "positive_alerting_cases": 360,
+    "positive_tp": 360,
+    "positive_fp": 60,
+    "positive_fn": 0,
+    "negative_control_cases": 240,
+    "negative_control_alerts": 60,
+    "negative_control_alerting_cases": 40,
+    "negative_control_tp": 0,
+    "negative_control_fp": 60,
+    "negative_control_fn": 0
+  },
+  "fp_by_scenario_and_intensity": [
+    {
+      "kind": "negative_control",
+      "scenario": "after_hours_spread",
+      "intensity": "high",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "after_hours_spread",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "after_hours_spread",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "high_volume_no_price_move",
+      "intensity": "high",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "high_volume_no_price_move",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "high_volume_no_price_move",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "orderly_market_move",
+      "intensity": "high",
+      "fp": 40
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "orderly_market_move",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "orderly_market_move",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "stale_news",
+      "intensity": "high",
+      "fp": 20
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "stale_news",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "negative_control",
+      "scenario": "stale_news",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "cross_asset_shock",
+      "intensity": "high",
+      "fp": 40
+    },
+    {
+      "kind": "positive",
+      "scenario": "cross_asset_shock",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "cross_asset_shock",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "flash_reversal",
+      "intensity": "high",
+      "fp": 20
+    },
+    {
+      "kind": "positive",
+      "scenario": "flash_reversal",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "flash_reversal",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "liquidity_pressure_move",
+      "intensity": "high",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "liquidity_pressure_move",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "liquidity_pressure_move",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "news_confirmed_move",
+      "intensity": "high",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "news_confirmed_move",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "news_confirmed_move",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "stock_specific_dislocation",
+      "intensity": "high",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "stock_specific_dislocation",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "stock_specific_dislocation",
+      "intensity": "medium",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "sustained_pressure",
+      "intensity": "high",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "sustained_pressure",
+      "intensity": "low",
+      "fp": 0
+    },
+    {
+      "kind": "positive",
+      "scenario": "sustained_pressure",
+      "intensity": "medium",
+      "fp": 0
+    }
+  ],
+  "global_matches_equal_partitioned_matches": true
+}

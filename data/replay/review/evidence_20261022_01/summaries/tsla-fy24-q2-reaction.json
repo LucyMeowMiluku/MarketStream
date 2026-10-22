@@ -1,0 +1,1290 @@
+{
+  "interval_id": "tsla-fy24-q2-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "TSLA",
+  "started_at": "2024-07-24T13:30:00Z",
+  "ended_at": "2024-07-24T15:00:00Z",
+  "local_start": "2024-07-24T09:30:00-04:00",
+  "local_end": "2024-07-24T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 82,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-24T14:05:00+00:00",
+        "2024-07-24T14:10:00+00:00",
+        "2024-07-24T14:23:00+00:00",
+        "2024-07-24T14:26:00+00:00",
+        "2024-07-24T14:30:00+00:00",
+        "2024-07-24T14:46:00+00:00",
+        "2024-07-24T14:55:00+00:00",
+        "2024-07-24T14:57:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 0,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-23T19:59:00Z",
+      "prior_close": 480.78,
+      "first_minute": "2024-07-24T13:30:00Z",
+      "last_minute": "2024-07-24T14:59:00Z",
+      "first_open": 473.775,
+      "last_close": 468.98,
+      "gap_pct": -1.4570073630350677,
+      "end_vs_prior_pct": -2.454345022671478,
+      "window_return_pct": -1.0120837950503891,
+      "window_range_pct": 1.168276080417913,
+      "volume": 112435,
+      "raw_artifact": "raw/tsla-fy24-q2-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-23T19:59:00Z",
+      "prior_close": 553.69,
+      "first_minute": "2024-07-24T13:30:00Z",
+      "last_minute": "2024-07-24T14:59:00Z",
+      "first_open": 548.8,
+      "last_close": 545.7,
+      "gap_pct": -0.8831656703209512,
+      "end_vs_prior_pct": -1.4430457476205083,
+      "window_return_pct": -0.5648688046647088,
+      "window_range_pct": 0.7033527696793028,
+      "volume": 279065,
+      "raw_artifact": "raw/tsla-fy24-q2-reaction/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-23T19:59:00Z",
+      "prior_close": 246.48,
+      "first_minute": "2024-07-24T13:30:00Z",
+      "last_minute": "2024-07-24T14:59:00Z",
+      "first_open": 225.205,
+      "last_close": 217.41,
+      "gap_pct": -8.63153197013956,
+      "end_vs_prior_pct": -11.79406037000974,
+      "window_return_pct": -3.4612908239159967,
+      "window_range_pct": 4.971026398170553,
+      "volume": 854835,
+      "raw_artifact": "raw/tsla-fy24-q2-reaction/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 39923738,
+      "headline": "Tesla Reiterates New Electric Vehicles On Track For 2025, But CEO Elon Musk Refuses To Divulge Details: 'We're Going To Make Great Products'",
+      "created_at": "2024-07-24T06:16:19Z",
+      "updated_at": "2024-07-24T06:16:20Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39923738/tesla-reiterates-new-electric-vehicles-on-track-for-2025-but-ceo-elon-musk-refuses-to-divulge-detail",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39924084,
+      "headline": "Elon Musk Thinks Cathie Wood-Led Ark Is 'Probably Not Wrong' With Its $5 Trillion Valuation For Tesla, Cites Potential Of Optimus Humanoid Robot",
+      "created_at": "2024-07-24T06:47:21Z",
+      "updated_at": "2024-07-24T06:47:22Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39924084/elon-musk-thinks-cathie-wood-led-ark-is-probably-not-wrong-with-its-5-trillion-valuation-for-tes",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39924101,
+      "headline": "New Tesla Roadster Will Be 'Something Special,' Says CEO Elon Musk: Production To Commence In 2025",
+      "created_at": "2024-07-24T06:53:30Z",
+      "updated_at": "2024-07-24T06:53:30Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39924101/new-tesla-roadster-will-be-something-special-says-ceo-elon-musk-production-to-commence-in-2025",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39924118,
+      "headline": "Tesla, AT&T And 3 Stocks To Watch Heading Into Wednesday",
+      "created_at": "2024-07-24T06:56:24Z",
+      "updated_at": "2024-07-24T06:56:24Z",
+      "symbols": [
+        "GEV",
+        "GOOG",
+        "GOOGL",
+        "IBM",
+        "T",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39924118/tesla-at-t-and-3-stocks-to-watch-heading-into-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39924560,
+      "headline": "US Stocks End Lower As Investor Optimism Decreases Ahead Of Big Tech Earnings",
+      "created_at": "2024-07-24T07:39:24Z",
+      "updated_at": "2024-07-24T07:39:25Z",
+      "symbols": [
+        "GE",
+        "GEV",
+        "GM",
+        "GOOG",
+        "GOOGL",
+        "IBM",
+        "KO",
+        "T",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39924560/us-stocks-end-lower-as-investor-optimism-decreases-ahead-of-big-tech-earnings",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39924771,
+      "headline": "'Bubble-Fraud Tesla Worth Around $8.40 Per Share:' Stock Valuation Under Scrutiny As EV Maker Gets Sizeable Profit From One-Time ZEV Credit",
+      "created_at": "2024-07-24T07:58:05Z",
+      "updated_at": "2024-07-24T07:58:06Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39924771/bubble-fraud-tesla-worth-around-8-40-per-share-stock-valuation-under-scrutiny-as-ev",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39925596,
+      "headline": "Reuters Reported Earlier, Rivian To Face Trial In Tesla Trade Secrets Theft Case",
+      "created_at": "2024-07-24T09:11:23Z",
+      "updated_at": "2024-07-24T09:11:23Z",
+      "symbols": [
+        "RIVN",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39925596/reuters-reported-earlier-rivian-to-face-trial-in-tesla-trade-secrets-theft-case",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39925905,
+      "headline": "Why Enphase Energy Shares Are Trading Higher; Here Are 20 Stocks Moving Premarket",
+      "created_at": "2024-07-24T09:27:11Z",
+      "updated_at": "2024-07-24T09:27:12Z",
+      "symbols": [
+        "ALLR",
+        "ATCH",
+        "ATIP",
+        "AZTR",
+        "CJET",
+        "CONN",
+        "DRMA",
+        "EFSH",
+        "ENG",
+        "ENPH",
+        "NIVF",
+        "NUZE",
+        "PMNT",
+        "RGC",
+        "SFL",
+        "SOAR",
+        "STX",
+        "TSLA",
+        "UP",
+        "VSTM"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39925905/why-enphase-energy-shares-are-trading-higher-here-are-20-stocks-moving-premarket",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39926416,
+      "headline": "Elon Musk, Cruise Co-Founder Kyle Vogt Slam GM For Stopping Origin AV Development: '...It's Just That Their Technology Is Not At Par,' Tesla CEO Says",
+      "created_at": "2024-07-24T10:03:57Z",
+      "updated_at": "2024-07-24T10:03:58Z",
+      "symbols": [
+        "GM",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39926416/elon-musk-cruise-co-founder-kyle-vogt-slam-gm-for-stopping-origin-av-development-its-just-that-their",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39926440,
+      "headline": "Tesla Stock Is Plunging Over 7% In Wednesday's Pre-Market After Q2 Earnings: What's Going On",
+      "created_at": "2024-07-24T10:04:42Z",
+      "updated_at": "2024-07-24T10:04:42Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39926440/tesla-stock-is-plunging-over-7-in-wednesdays-pre-market-after-q2-earnings-whats-going-on",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39926830,
+      "headline": "Goldman Sachs Maintains Neutral on Tesla, Lowers Price Target to $230",
+      "created_at": "2024-07-24T10:20:05Z",
+      "updated_at": "2024-07-24T10:20:06Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39926830/goldman-sachs-maintains-neutral-on-tesla-lowers-price-target-to-230",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39927189,
+      "headline": "Needham Reiterates Hold on Tesla",
+      "created_at": "2024-07-24T10:44:56Z",
+      "updated_at": "2024-07-24T10:44:56Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39927189/needham-reiterates-hold-on-tesla",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39927381,
+      "headline": "Asia And Europe Markets Decline, Crude Oil At Six-Week Low - Global Markets Today While US Slept",
+      "created_at": "2024-07-24T10:46:00Z",
+      "updated_at": "2024-07-24T10:46:01Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GOOG",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "TSLA",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/07/39927381/asia-and-europe-markets-decline-crude-oil-at-six-week-low-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39927857,
+      "headline": "Tesla Aims At Profitability For Cybertruck By 2024-End With Production Ramp And Cost Savings With Dry Cathode 4680 Cells",
+      "created_at": "2024-07-24T11:08:26Z",
+      "updated_at": "2024-07-24T11:08:27Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39927857/tesla-aims-at-profitability-for-cybertruck-by-2024-end-with-production-ramp-and-cost-savings-with-dr",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39928837,
+      "headline": "Citigroup Maintains Neutral on Tesla, Lowers Price Target to $258",
+      "created_at": "2024-07-24T11:41:42Z",
+      "updated_at": "2024-07-24T11:41:43Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39928837/citigroup-maintains-neutral-on-tesla-lowers-price-target-to-258",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39929107,
+      "headline": "Piper Sandler Maintains Overweight on Tesla, Raises Price Target to $300",
+      "created_at": "2024-07-24T11:48:10Z",
+      "updated_at": "2024-07-24T11:48:11Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39929107/piper-sandler-maintains-overweight-on-tesla-raises-price-target-to-300",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39928846,
+      "headline": "US Stocks Could Open Sharply Lower As Tesla, Alphabet Earnings Offer No Cheer: Analyst Says This Bodes Well For Small-Caps, 'Only Takes A Small Spark To Ignite A Powerful Move'",
+      "created_at": "2024-07-24T11:42:55Z",
+      "updated_at": "2024-07-24T11:50:10Z",
+      "symbols": [
+        "BSX",
+        "BTCUSD",
+        "CHKP",
+        "CME",
+        "CMG",
+        "EW",
+        "F",
+        "GD",
+        "GEV",
+        "GOOG",
+        "GOOGL",
+        "IBM",
+        "KNX",
+        "LVS",
+        "MTH",
+        "NOW",
+        "ODFL",
+        "ORLY",
+        "QQQ",
+        "SPY",
+        "STX",
+        "T",
+        "TMO",
+        "TSLA",
+        "TXN",
+        "V",
+        "WHR"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39928846/us-stocks-could-open-sharply-lower-as-tesla-alphabet-earnings-offer-no-cheer-analyst-says-this-bode",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39929250,
+      "headline": "What's Going On With Chinese EV Maker NIO Shares On Wednesday?",
+      "created_at": "2024-07-24T11:59:07Z",
+      "updated_at": "2024-07-24T11:59:07Z",
+      "symbols": [
+        "NIO",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39929250/whats-going-on-with-chinese-ev-maker-nio-shares-on-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39929709,
+      "headline": "Dan Ives, Jim Cramer And Sawyer Merritt Back Elon Musk's Plan For Tesla's $5B Investment In Grok Parent xAI",
+      "created_at": "2024-07-24T12:08:35Z",
+      "updated_at": "2024-07-24T12:08:36Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39929709/dan-ives-jim-cramer-and-sawyer-merritt-back-elon-musks-plan-for-teslas-5b-investmen",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39929718,
+      "headline": "Tesla Robotaxi Unveiling Set For Oct.10: Here Are The Updates From Company CEO Elon Musk On Its Upcoming Product",
+      "created_at": "2024-07-24T12:09:24Z",
+      "updated_at": "2024-07-24T12:09:25Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39929718/tesla-robotaxi-unveiling-set-for-oct-10-here-are-the-updates-from-company-ceo-elon-musk-on-its-upcom",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39930082,
+      "headline": "Tesla Posts Weak Earnings, Joins Visa, Deutsche Bank And Other Big Stocks Moving Lower In Wednesday's Pre-Market Session",
+      "created_at": "2024-07-24T12:17:24Z",
+      "updated_at": "2024-07-24T12:17:24Z",
+      "symbols": [
+        "BZ",
+        "DB",
+        "GERN",
+        "GOOGL",
+        "SERV",
+        "SFL",
+        "TSLA",
+        "UP",
+        "V"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39930082/tesla-posts-weak-earnings-joins-visa-deutsche-bank-and-other-big-stocks-moving-lower-in-wednesdays-p",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39930467,
+      "headline": "USA Goods Trade Balance For June -96.84B Vs -98.80B Est.; -99.37B Prior",
+      "created_at": "2024-07-24T12:30:23Z",
+      "updated_at": "2024-07-24T12:30:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39930467/usa-goods-trade-balance-for-june-96-84b-vs-98-80b-est-99-37b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39930498,
+      "headline": "USA Retail Inventories Ex Auto For June 0.2%",
+      "created_at": "2024-07-24T12:31:19Z",
+      "updated_at": "2024-07-24T12:31:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39930498/usa-retail-inventories-ex-auto-for-june-0-2",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39930547,
+      "headline": "Market-Moving News for July 24th",
+      "created_at": "2024-07-24T12:34:15Z",
+      "updated_at": "2024-07-24T12:34:16Z",
+      "symbols": [
+        "HOTH",
+        "PRG",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/movers/24/07/39930547/market-moving-news-for-july-24th",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39931245,
+      "headline": "Truist Securities Maintains Hold on Tesla, Raises Price Target to $215",
+      "created_at": "2024-07-24T12:59:30Z",
+      "updated_at": "2024-07-24T12:59:30Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39931245/truist-securities-maintains-hold-on-tesla-raises-price-target-to-215",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39931366,
+      "headline": "President Biden To Welcome Prime Minister Netanyahu To White House On July 25; Leaders To Discuss Gaza, Ceasefire, Hostage Release, And U.S. Commitment To Israel's Security; Vice President To Meet Separately With Netanyahu",
+      "created_at": "2024-07-24T13:00:22Z",
+      "updated_at": "2024-07-24T13:00:23Z",
+      "symbols": [
+        "ISRA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39931366/president-biden-to-welcome-prime-minister-netanyahu-to-white-house-on-july-25-leaders-to-discuss-gaz",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39932008,
+      "headline": "Tesla To Rally Around 22%? Here Are 10 Top Analyst Forecasts For Wednesday",
+      "created_at": "2024-07-24T13:15:16Z",
+      "updated_at": "2024-07-24T13:15:16Z",
+      "symbols": [
+        "BOOT",
+        "CMG",
+        "CSGP",
+        "GOOGL",
+        "PG",
+        "SPOT",
+        "TSLA",
+        "ULTA",
+        "V",
+        "ZION"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39932008/tesla-to-rally-around-22-here-are-10-top-analyst-forecasts-for-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39932009,
+      "headline": "Jim Cramer Slams Tesla, Google-Parent Alphabet Sellers, Says Anyone Who Listened To Conference Calls 'Knows These Companies Are Doing Extremely Well'",
+      "created_at": "2024-07-24T13:15:18Z",
+      "updated_at": "2024-07-24T13:15:19Z",
+      "symbols": [
+        "GOOG",
+        "GOOGL",
+        "IWM",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39932009/jim-cramer-slams-tesla-google-parent-alphabet-sellers-says-anyone-who-listened-to-c",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39932362,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of July 24 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-07-24T13:18:41Z",
+      "updated_at": "2024-07-24T13:18:41Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "AMZN",
+        "CRWD",
+        "GOOGL",
+        "LOT",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/07/39932362/top-10-trending-stocks-on-wallstreetbets-as-of-july-24-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39932395,
+      "headline": "Tesla Stock Is Sliding Wednesday: What's Going On?",
+      "created_at": "2024-07-24T13:22:42Z",
+      "updated_at": "2024-07-24T13:22:42Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39932395/tesla-stock-is-sliding-wednesday-whats-going-on",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39932936,
+      "headline": "USA S&P Global US Manufacturing PMI For July 49.5 Vs 51.7 Est.; 51.6 Prior",
+      "created_at": "2024-07-24T13:45:13Z",
+      "updated_at": "2024-07-24T13:45:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39932936/usa-s-p-global-us-manufacturing-pmi-for-july-49-5-vs-51-7-est-51-6-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39932942,
+      "headline": "USA S&P Global Composite PMI For July 55.0 Vs 54.8 Prior",
+      "created_at": "2024-07-24T13:45:27Z",
+      "updated_at": "2024-07-24T13:45:28Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39932942/usa-s-p-global-composite-pmi-for-july-55-0-vs-54-8-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39932949,
+      "headline": "USA S&P Global Services PMI For July 56.0 Vs 54.7 Est.; 55.3 Prior",
+      "created_at": "2024-07-24T13:45:52Z",
+      "updated_at": "2024-07-24T13:45:52Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39932949/usa-s-p-global-services-pmi-for-july-56-0-vs-54-7-est-55-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39933356,
+      "headline": "BYD Poised To Surpass Tesla In EV Sales As US And Europe Demand Wanes",
+      "created_at": "2024-07-24T14:00:18Z",
+      "updated_at": "2024-07-24T14:00:18Z",
+      "symbols": [
+        "BYDDF",
+        "BYDDY",
+        "DRIV",
+        "DRPRF",
+        "F",
+        "GM",
+        "IDRV",
+        "TSLA",
+        "VWAGY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39933356/byd-poised-to-surpass-tesla-in-ev-sales-as-us-and-europe-demand-wanes",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39933370,
+      "headline": "USA New Home Sales For June 617K Vs 639K Est.; 621K Prior",
+      "created_at": "2024-07-24T14:00:24Z",
+      "updated_at": "2024-07-24T14:00:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39933370/usa-new-home-sales-for-june-617k-vs-639k-est-621k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39933394,
+      "headline": "USA New Home Sales (MoM) For June -0.6%; -14.9% Prior",
+      "created_at": "2024-07-24T14:01:14Z",
+      "updated_at": "2024-07-24T14:01:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39933394/usa-new-home-sales-mom-for-june-0-6-14-9-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934318,
+      "headline": "USA Crude Oil Inventories A Draw Of 3.741M Vs A Draw Of 2.600M Est.; Draw Of 4.870M Prior",
+      "created_at": "2024-07-24T14:30:14Z",
+      "updated_at": "2024-07-24T14:30:15Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39934318/usa-crude-oil-inventories-a-draw-of-3-741m-vs-a-draw-of-2-600m-est-draw-of-4-870m",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934322,
+      "headline": "EIA Weekly Distillates Stocks A Draw Of 2.753M Vs Build Of 3.454M Prior",
+      "created_at": "2024-07-24T14:30:27Z",
+      "updated_at": "2024-07-24T14:30:28Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39934322/eia-weekly-distillates-stocks-a-draw-of-2-753m-vs-build-of-3-454m-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934347,
+      "headline": "USA Gasoline Inventories A Draw Of 5.572M Vs Build Of 3.328M Prior",
+      "created_at": "2024-07-24T14:30:40Z",
+      "updated_at": "2024-07-24T14:30:40Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39934347/usa-gasoline-inventories-a-draw-of-5-572m-vs-build-of-3-328m-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934330,
+      "headline": "AMD CEO Lisa Su Posts On X, \"Great spending time with the @Tesla team talking about AI, leadership and more! Proud to partner with such an amazing team!  Thanks for the invite!\"",
+      "created_at": "2024-07-24T14:30:32Z",
+      "updated_at": "2024-07-24T14:31:27Z",
+      "symbols": [
+        "AMD",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39934330/amd-ceo-post-on-x-great-spending-time-with-the-tesla-team-talking-about-ai-leadership-and-more-proud",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934720,
+      "headline": "President Of Mexico Says Tesla's Musk's Comment On The Possibility Of Not Investing In Mexico \"Is Not Serious\", Saying He \"Must Have Another Business Plan\"",
+      "created_at": "2024-07-24T14:44:33Z",
+      "updated_at": "2024-07-24T14:44:33Z",
+      "symbols": [
+        "EWW",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39934720/president-of-mexico-says-teslas-musks-comment-on-the-possibility-of-not-investing-in-mexico-is-not-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934750,
+      "headline": "Trump Presidency And IRA Cut Would Be 'Devastating' For Competitors, Says Elon Musk: 'Long Term Probably Actually Helps Tesla'",
+      "created_at": "2024-07-24T14:45:29Z",
+      "updated_at": "2024-07-24T14:45:29Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39934750/trump-presidency-and-ira-cut-would-be-devastating-for-competitors-says-elon-musk-long-term-probably",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934954,
+      "headline": "Market Clubhouse Morning Memo - July 24th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-07-24T14:54:12Z",
+      "updated_at": "2024-07-24T14:55:13Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/24/07/39934954/market-clubhouse-morning-memo-july-24th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-an",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39934981,
+      "headline": "US Services Activity Hits 28-Month Peak, Price Pressures Continue To Ease: Economist Calls It 'A Goldilocks Scenario'",
+      "created_at": "2024-07-24T14:55:46Z",
+      "updated_at": "2024-07-24T14:55:47Z",
+      "symbols": [
+        "IWM",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39934981/us-services-activity-hits-28-month-peak-price-pressures-continue-to-ease-economist-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39935377,
+      "headline": "Fiber Optic Company Amphenol Hikes Dividend As Sales Jump 18%",
+      "created_at": "2024-07-24T15:10:24Z",
+      "updated_at": "2024-07-24T15:10:24Z",
+      "symbols": [
+        "APH",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39935377/fiber-optic-company-amphenol-hikes-dividend-as-sales-jump-18",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39935864,
+      "headline": "Tesla's Q2 Results Show The EV King Is Under Pressure",
+      "created_at": "2024-07-24T15:17:23Z",
+      "updated_at": "2024-07-24T15:18:40Z",
+      "symbols": [
+        "BYDDY",
+        "LCID",
+        "NIO",
+        "RIVN",
+        "TSLA",
+        "XPEV"
+      ],
+      "url": "https://www.benzinga.com/markets/penny-stocks/24/07/39935864/teslas-q2-results-show-the-ev-king-is-under-pressure",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39936177,
+      "headline": "Roth MKM Maintains Neutral on Tesla, Maintains $85 Price Target",
+      "created_at": "2024-07-24T15:28:12Z",
+      "updated_at": "2024-07-24T15:28:13Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39936177/roth-mkm-maintains-neutral-on-tesla-maintains-85-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39936315,
+      "headline": "U.S. Issues Fresh North Korea-Related Sanctions Involving China-Based People, Entities. Targeting China-Based Network Supporting North Korea's Ballistic Missile, Space Programs",
+      "created_at": "2024-07-24T15:33:29Z",
+      "updated_at": "2024-07-24T15:33:30Z",
+      "symbols": [
+        "EWY",
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39936315/u-s-issues-fresh-north-korea-related-sanctions-involving-china-based-people-entit",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39936429,
+      "headline": "Electric Vehicles Win The Battle With Humanoid Robots And Robotaxis, The Economy Contracts In Germany",
+      "created_at": "2024-07-24T15:40:32Z",
+      "updated_at": "2024-07-24T15:45:42Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/07/39936429/electric-vehicles-win-the-battle-with-humanoid-robots-and-robotaxis-the-economy-contracts-in-germany",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39937685,
+      "headline": "Dow Tumbles 300 Points; Tesla Shares Plunge After Q2 Results",
+      "created_at": "2024-07-24T16:30:09Z",
+      "updated_at": "2024-07-24T16:30:10Z",
+      "symbols": [
+        "AZTR",
+        "LW",
+        "NUWE",
+        "PIRS",
+        "PRG",
+        "SGMO",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39937685/dow-tumbles-300-points-tesla-shares-plunge-after-q2-results",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39937929,
+      "headline": "Magnificent 7 Still Comprise Over 30% Of S&P 500 Despite Tech Correction",
+      "created_at": "2024-07-24T16:40:39Z",
+      "updated_at": "2024-07-24T16:40:39Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "G",
+        "GOOGL",
+        "MAGS",
+        "META",
+        "MSFT",
+        "NVDA",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/large-cap/24/07/39937929/magnificent-7-still-comprise-over-30-of-s-p-500-despite-tech-correction",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39938160,
+      "headline": "8 Tesla Analysts Size Up Margins, FSD, Robotaxis, New EVs As Stock Tanks: 'The Realities Of Today Vs. The Dreams Of Tomorrow'",
+      "created_at": "2024-07-24T16:48:52Z",
+      "updated_at": "2024-07-24T16:48:53Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39938160/8-tesla-analysts-size-up-margins-fsd-robotaxis-new-evs-as-stock-tanks-the-realities",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39938359,
+      "headline": "CNBC Halftime Report Final Trades: Lockheed Martin, TE Connectivity, SPDR Select Sector Fund - Utilities, 2-Year Treasury",
+      "created_at": "2024-07-24T17:00:56Z",
+      "updated_at": "2024-07-24T17:00:57Z",
+      "symbols": [
+        "LMT",
+        "SPY",
+        "TEL",
+        "XLU"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39938359/cnbc-halftime-report-final-trades-lockheed-martin-te-connectivity-spdr-select-sector-fund-utilities",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39938672,
+      "headline": "US Stocks Tumble, Magnificent 7 Wipe Out $570 Billion As Mega-Tech Earnings Disappoint, VIX Spikes: What's Driving Markets Wednesday?",
+      "created_at": "2024-07-24T17:13:30Z",
+      "updated_at": "2024-07-24T17:13:32Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BSX",
+        "BTCUSD",
+        "CB",
+        "CHKP",
+        "CME",
+        "CMG",
+        "COF",
+        "DIA",
+        "EW",
+        "F",
+        "FI",
+        "GD",
+        "GEV",
+        "IBM",
+        "KLAC",
+        "KNX",
+        "LVS",
+        "MAGS",
+        "META",
+        "MSFT",
+        "MTH",
+        "NEM",
+        "NOW",
+        "ODFL",
+        "ORLY",
+        "ROP",
+        "RSG",
+        "SOXX",
+        "SPY",
+        "T",
+        "TMO",
+        "TXN",
+        "V",
+        "VRT",
+        "WHR",
+        "XLE",
+        "XLF",
+        "XLK",
+        "XLU",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/07/39938672/us-stocks-tumble-magnificent-7-wipe-out-570-billion-as-mega-tech-earnings-disappoint-vix-s",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39938971,
+      "headline": "Chip Stocks Nvidia, AMD And Others See More Selloff On Wednesday - What's Going On?",
+      "created_at": "2024-07-24T17:23:20Z",
+      "updated_at": "2024-07-24T17:23:21Z",
+      "symbols": [
+        "AMD",
+        "ARM",
+        "AVGO",
+        "GOOG",
+        "GOOGL",
+        "INTC",
+        "MU",
+        "NVDA",
+        "QCOM",
+        "SMH",
+        "SOXX",
+        "TSLA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39938971/chip-stocks-nvidia-amd-and-others-see-more-selloff-on-wednesday-whats-going-on",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39938989,
+      "headline": "Why General Dynamics Shares Are Trading Lower? Here Are Other Stocks Moving In Wednesday's Mid-Day Session",
+      "created_at": "2024-07-24T17:26:11Z",
+      "updated_at": "2024-07-24T17:26:12Z",
+      "symbols": [
+        "ALGM",
+        "ALKS",
+        "ALLR",
+        "ATCH",
+        "ATPC",
+        "AZTR",
+        "BBLG",
+        "BHC",
+        "BLCO",
+        "BZ",
+        "CJET",
+        "CONN",
+        "CREV",
+        "DB",
+        "DRMA",
+        "ENPH",
+        "FLEX",
+        "FTV",
+        "GD",
+        "GERN",
+        "GOOGL",
+        "GPI",
+        "HA",
+        "KARO",
+        "KORE",
+        "LITM",
+        "LW",
+        "MANH",
+        "MAT",
+        "NAAS",
+        "NIVF",
+        "NNE",
+        "NUWE",
+        "NUZE",
+        "NXTT",
+        "PIRS",
+        "PRG",
+        "QXO",
+        "ROKU",
+        "ROP",
+        "SAGE",
+        "SFL",
+        "SGMO",
+        "SLNA",
+        "SOAR",
+        "STX",
+        "SYNX",
+        "T",
+        "THC",
+        "TKNO",
+        "TSLA",
+        "TTD",
+        "ULTA",
+        "V",
+        "VSTM",
+        "VWE",
+        "WFRD"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39938989/why-general-dynamics-shares-are-trading-lower-here-are-other-stocks-moving-in-wednesdays-mid-day-ses",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39939049,
+      "headline": "New Street Research Downgrades Tesla to Neutral, Announces $225 Price Target",
+      "created_at": "2024-07-24T17:30:07Z",
+      "updated_at": "2024-07-24T17:30:07Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39939049/new-street-research-downgrades-tesla-to-neutral-announces-225-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39939221,
+      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
+      "created_at": "2024-07-24T17:35:19Z",
+      "updated_at": "2024-07-24T17:35:20Z",
+      "symbols": [
+        "AMZN",
+        "BABA",
+        "BC",
+        "DASH",
+        "HAS",
+        "MCD",
+        "PENN",
+        "SBUX",
+        "TSLA",
+        "WHR"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/07/39939221/10-consumer-discretionary-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39939541,
+      "headline": "Benzinga Market Summary: Tesla And Alphabet Fall On Earnings, Tech Stocks Pull Back AT&T Rises",
+      "created_at": "2024-07-24T17:49:03Z",
+      "updated_at": "2024-07-24T17:49:03Z",
+      "symbols": [
+        "GOOG",
+        "GOOGL",
+        "T",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/24/07/39939541/benzinga-market-summary-tesla-and-alphabet-fall-on-earnings-tech-stocks-pull-back-at-t-ris",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39939566,
+      "headline": "What's Going On With Salesforce (CRM) Stock?",
+      "created_at": "2024-07-24T17:51:37Z",
+      "updated_at": "2024-07-24T17:59:08Z",
+      "symbols": [
+        "CRM",
+        "QQQ",
+        "SPY",
+        "WDAY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39939566/whats-going-on-with-salesforce-crm-stock",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39939788,
+      "headline": "Buy The Dip? Market Expert Says Recent Pullback Part Of Healthy Bull Market: 'A Little Tiny Ounce Of Volatility, It Feels So Foreign'",
+      "created_at": "2024-07-24T18:02:59Z",
+      "updated_at": "2024-07-24T18:02:59Z",
+      "symbols": [
+        "GOOG",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39939788/buy-the-dip-market-expert-says-recent-pullback-part-of-healthy-bull-market-a-little-tiny-ounce-o",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39939884,
+      "headline": "'Israeli Prime Minister Netanyahu addresses joint session of Congress'",
+      "created_at": "2024-07-24T18:07:22Z",
+      "updated_at": "2024-07-24T18:07:22Z",
+      "symbols": [
+        "ISRA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/07/39939884/israeli-prime-minister-netanyahu-addresses-joint-session-of-congress",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39939903,
+      "headline": "Cantor Fitzgerald Reiterates Overweight on Tesla, Maintains $230 Price Target",
+      "created_at": "2024-07-24T18:08:48Z",
+      "updated_at": "2024-07-24T18:08:48Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39939903/cantor-fitzgerald-reiterates-overweight-on-tesla-maintains-230-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39940266,
+      "headline": "Wedbush Reiterates Outperform on Tesla, Maintains $300 Price Target",
+      "created_at": "2024-07-24T18:26:48Z",
+      "updated_at": "2024-07-24T18:26:49Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39940266/wedbush-reiterates-outperform-on-tesla-maintains-300-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39870495,
+      "headline": "Tesla Gets Green Light From Canadian Government To Deploy Steer-By-Wire System, Clearing Path For Cybertruck Sales (CORRECTED)",
+      "created_at": "2024-07-24T18:53:31Z",
+      "updated_at": "2024-07-24T18:53:39Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39870495/tesla-gets-green-light-from-canadian-government-to-deploy-steer-by-wire-system-clearing-path-for-cyb",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39941180,
+      "headline": "Guggenheim Reiterates Sell on Tesla, Maintains $134 Price Target",
+      "created_at": "2024-07-24T19:19:54Z",
+      "updated_at": "2024-07-24T19:19:54Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39941180/guggenheim-reiterates-sell-on-tesla-maintains-134-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39943572,
+      "headline": "You Could Have Turned $500 Into More Than $50,000 In One Day As Market Got Clobbered: Here's How",
+      "created_at": "2024-07-24T20:37:20Z",
+      "updated_at": "2024-07-24T20:37:21Z",
+      "symbols": [
+        "GOOG",
+        "GOOGL",
+        "HOOD",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/general/24/07/39943572/you-could-have-turned-500-into-more-than-50-000-in-one-day-as-market-got-clobbered-heres-how",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39943580,
+      "headline": "Nasdaq 100 Notches Worst Session Since Late 2022, Falls Below Key 50-Day Moving Average: Is The AI Tech Bubble Bursting?",
+      "created_at": "2024-07-24T20:37:49Z",
+      "updated_at": "2024-07-24T20:37:50Z",
+      "symbols": [
+        "ARM",
+        "AVGO",
+        "GOOG",
+        "MAGS",
+        "NVDA",
+        "QQQ",
+        "TLT",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39943580/nasdaq-100-notches-worst-session-since-late-2022-falls-below-key-50-day-moving-average-is-the-ai",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39945998,
+      "headline": "AMD Stock Turns Negative Year-to-Date, CEO Lisa Su Meets With Tesla: What Investors Should Know",
+      "created_at": "2024-07-24T22:49:38Z",
+      "updated_at": "2024-07-24T22:49:38Z",
+      "symbols": [
+        "AMD",
+        "NVDA",
+        "QCOM",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/movers/24/07/39945998/amd-stock-turns-negative-year-to-date-ceo-lisa-su-meets-with-tesla-what-investors-should-kno",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39947955,
+      "headline": "Bitcoin Holds Up, Ethereum, Dogecoin Fall Amid Stock Market Crash: Analyst Predicts $4K For ETH Over Next Two Weeks",
+      "created_at": "2024-07-25T02:10:24Z",
+      "updated_at": "2024-07-25T02:10:25Z",
+      "symbols": [
+        "BTCUSD",
+        "DOGEUSD",
+        "ETHUSD",
+        "GOOGL",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/07/39947955/bitcoin-holds-up-ethereum-dogecoin-fall-amid-stock-market-crash-analyst-predicts-4k-for-et",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39948172,
+      "headline": "Nvidia, Ford, Chipotle, Viking Therapeutics, Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-07-25T02:40:26Z",
+      "updated_at": "2024-07-25T02:40:27Z",
+      "symbols": [
+        "CMG",
+        "F",
+        "NVDA",
+        "TSLA",
+        "VKTX"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39948172/nvidia-ford-chipotle-viking-therapeutics-tesla-why-these-5-stocks-are-on-investors-radars-today",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39947856,
+      "headline": "Tesla Bull Cathie Wood's Ark Invest Buys $7.16M Worth Of EV Maker's Shares After Q2 Earnings Reveal Profits Tanked Sharply (Corrected)",
+      "created_at": "2024-07-25T01:55:42Z",
+      "updated_at": "2024-07-25T03:09:51Z",
+      "symbols": [
+        "ARKW",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39947856/tesla-bull-cathie-woods-ark-invest-sells-7-16m-worth-of-ev-makers-shares-after-q2-earnings-revea",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "next_page_token": "TlZEQXwxNzA3NDAyNjAwMDk3MjIyNTMxfFZ8Njc3LjMxfDF8Vnw3NTIuNTJ8MXxS",
+  "quotes": [
+    {
+      "ap": 752.52,
+      "as": 1,
+      "ax": "V",
+      "bp": 500,
+      "bs": 1,
+      "bx": "V",
+      "c": [
+        "R"
+      ],
+      "t": "2024-02-08T14:30:00.011636796Z",
+      "z": "C"
+    }
+  ],
+  "symbol": "NVDA"
+}

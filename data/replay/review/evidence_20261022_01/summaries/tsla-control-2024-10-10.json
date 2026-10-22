@@ -1,0 +1,1048 @@
+{
+  "interval_id": "tsla-control-2024-10-10",
+  "candidate_kind": "normal",
+  "ticker": "TSLA",
+  "started_at": "2024-10-10T13:30:00Z",
+  "ended_at": "2024-10-10T15:00:00Z",
+  "local_start": "2024-10-10T09:30:00-04:00",
+  "local_end": "2024-10-10T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 78,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-10-10T13:34:00+00:00",
+        "2024-10-10T14:14:00+00:00",
+        "2024-10-10T14:18:00+00:00",
+        "2024-10-10T14:25:00+00:00",
+        "2024-10-10T14:31:00+00:00",
+        "2024-10-10T14:35:00+00:00",
+        "2024-10-10T14:38:00+00:00",
+        "2024-10-10T14:41:00+00:00",
+        "2024-10-10T14:45:00+00:00",
+        "2024-10-10T14:52:00+00:00",
+        "2024-10-10T14:56:00+00:00",
+        "2024-10-10T14:59:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-09T19:59:00Z",
+      "prior_close": 493.2,
+      "first_minute": "2024-10-10T13:30:00Z",
+      "last_minute": "2024-10-10T14:58:00Z",
+      "first_open": 490.89,
+      "last_close": 491.55,
+      "gap_pct": -0.46836982968370133,
+      "end_vs_prior_pct": -0.33454987834549144,
+      "window_return_pct": 0.13444967304283573,
+      "window_range_pct": 0.5622440872700587,
+      "volume": 52320,
+      "raw_artifact": "raw/tsla-control-2024-10-10/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-10-10T14:15:00+00:00",
+        "2024-10-10T14:22:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-09T19:59:00Z",
+      "prior_close": 577.07,
+      "first_minute": "2024-10-10T13:30:00Z",
+      "last_minute": "2024-10-10T14:59:00Z",
+      "first_open": 575.72,
+      "last_close": 575.355,
+      "gap_pct": -0.23394042317224084,
+      "end_vs_prior_pct": -0.2971909820299157,
+      "window_return_pct": -0.06339887445285797,
+      "window_range_pct": 0.32741610505108465,
+      "volume": 206201,
+      "raw_artifact": "raw/tsla-control-2024-10-10/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-10-10T14:28:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-09T19:59:00Z",
+      "prior_close": 241.02,
+      "first_minute": "2024-10-10T13:30:00Z",
+      "last_minute": "2024-10-10T14:59:00Z",
+      "first_open": 241.955,
+      "last_close": 238.305,
+      "gap_pct": 0.38793461123558526,
+      "end_vs_prior_pct": -1.126462534229522,
+      "window_return_pct": -1.5085449773718285,
+      "window_range_pct": 4.0503399392448936,
+      "volume": 402998,
+      "raw_artifact": "raw/tsla-control-2024-10-10/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 41264769,
+      "headline": "Tesla's Latest FSD Update Smooths Out Jittery Car Visualizations, Fixing 4-Year Bug",
+      "created_at": "2024-10-10T05:07:49Z",
+      "updated_at": "2024-10-10T05:07:50Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41264769/teslas-latest-fsd-update-smooths-out-jittery-car-visualizations-fixing-4-year-bug",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41265000,
+      "headline": "Uber Announces Measures To Ramp Up Electrification Of Its Fleet Ahead Of Tesla's Robotaxi Unveil",
+      "created_at": "2024-10-10T06:00:36Z",
+      "updated_at": "2024-10-10T06:00:36Z",
+      "symbols": [
+        "TSLA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41265000/uber-announces-measures-to-ramp-up-electrification-of-its-fleet-ahead-of-teslas-robotaxi-unveil",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41265296,
+      "headline": "Tesla's Future Valuation: Analyst Pierre Ferragu Unveils Scenarios Ranging From $1.4 To $4.7 Trillion Based On FSD, Robotaxi Success",
+      "created_at": "2024-10-10T06:20:28Z",
+      "updated_at": "2024-10-10T06:20:28Z",
+      "symbols": [
+        "BIDU",
+        "GOOG",
+        "GOOGL",
+        "MBLY",
+        "TSLA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41265296/teslas-future-valuation-analyst-pierre-ferragu-unveils-scenarios-ranging-from-1-4-to-4-7-trillio",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41266843,
+      "headline": "Marjorie Taylor Greene Boosts Stock Portfolio With AI Exposure, Buys JPMorgan And This Hot Magnificent 7 Stock: Here're Congresswoman's Latest Trades",
+      "created_at": "2024-10-10T09:21:54Z",
+      "updated_at": "2024-10-10T09:21:55Z",
+      "symbols": [
+        "AMAT",
+        "ASML",
+        "COST",
+        "DELL",
+        "FDX",
+        "JPM",
+        "LRCX",
+        "META",
+        "NVDA",
+        "SPY",
+        "V"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41266843/marjorie-taylor-greene-boosts-stock-portfolio-with-ai-exposure-buys-jpmorgan-and-this-hot-magnif",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41267217,
+      "headline": "Cybertruck Gets Dogecoin Makeover: Tesla Owner Unveils Unique Elon Musk's Favorite Cryptocurrency-Inspired Vehicle Wrap",
+      "created_at": "2024-10-10T09:54:51Z",
+      "updated_at": "2024-10-10T09:54:52Z",
+      "symbols": [
+        "BTCUSD",
+        "DOGEUSD",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/10/41267217/cybertruck-gets-dogecoin-makeover-tesla-owner-unveils-unique-elon-musks-favorite-cryptocur",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41267785,
+      "headline": "Asia Gains, Europe Dips While Crude Oil Surges On Supply Risk - Global Markets Today While US Slept",
+      "created_at": "2024-10-10T10:26:00Z",
+      "updated_at": "2024-10-10T10:26:00Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/10/41267785/asia-gains-europe-dips-while-crude-oil-surges-on-supply-risk-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41266991,
+      "headline": "Tesla's Robotaxi To Take Flight With Doors That Open Like Butterfly Wings: Report",
+      "created_at": "2024-10-10T09:34:03Z",
+      "updated_at": "2024-10-10T10:31:06Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41266991/teslas-robotaxi-to-take-flight-with-doors-that-open-like-butterfly-wings-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41267936,
+      "headline": "As Elon Musk Gears Up For Highly Anticipated Robotaxi Unveil, This Ridesharing Network's Autonomous Driving Plans Could Put Pressure On Tesla's Amibitions",
+      "created_at": "2024-10-10T10:33:08Z",
+      "updated_at": "2024-10-10T10:33:09Z",
+      "symbols": [
+        "GOOG",
+        "GOOGL",
+        "TSLA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41267936/as-elon-musk-gears-up-for-highly-anticipated-robotaxi-unveil-this-ridesharing-netwo",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41268523,
+      "headline": "Reuters Reported X Will Not Be Designated As Gatekeeper Under Landmark EU Tech Rules, Citing Sources",
+      "created_at": "2024-10-10T11:11:10Z",
+      "updated_at": "2024-10-10T11:11:53Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41268523/reuters-reported-x-will-not-be-designated-as-gatekeeper-under-landmark-eu-tech-rules-citing-sources",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41268133,
+      "headline": "Nasdaq, S&P 500 Futures Slip As September CPI Data Looms, Tesla On Radar Ahead Of Robotaxi Event: Strategist Offers Stock Tips Aligned With Presidential Candidates' Trade Policies",
+      "created_at": "2024-10-10T10:49:10Z",
+      "updated_at": "2024-10-10T11:23:29Z",
+      "symbols": [
+        "BTCUSD",
+        "DAL",
+        "DPZ",
+        "GXO",
+        "QQQ",
+        "SPY",
+        "TLRY",
+        "TSLA",
+        "TXG",
+        "XPO"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/10/41268133/nasdaq-s-p-500-futures-slip-as-september-cpi-data-looms-tesla-on-radar-ahead-of-robotaxi-event-stra",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41270448,
+      "headline": "USA CPI (MoM) For September 0.2% Vs 0.1% Est.; 0.2% Prior",
+      "created_at": "2024-10-10T12:30:07Z",
+      "updated_at": "2024-10-10T12:30:08Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41270448/usa-cpi-mom-for-september-0-2-vs-0-1-est-0-2-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41270454,
+      "headline": "Core CPI YoY For Sept. 3.3% Vs 3.2% Expected, 3.2% Prior",
+      "created_at": "2024-10-10T12:30:08Z",
+      "updated_at": "2024-10-10T12:30:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41270454/core-cpi-yoy-for-sept-3-3-vs-3-2-expected-3-2-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41270481,
+      "headline": "USA Core CPI (MoM) For September 0.3% Vs 0.2% Est.; 0.3% Prior",
+      "created_at": "2024-10-10T12:30:17Z",
+      "updated_at": "2024-10-10T12:30:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41270481/usa-core-cpi-mom-for-september-0-3-vs-0-2-est-0-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41270496,
+      "headline": "USA Initial Jobless Claims 258K Vs 231K Est.; 225K Prior",
+      "created_at": "2024-10-10T12:30:47Z",
+      "updated_at": "2024-10-10T12:30:47Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41270496/usa-initial-jobless-claims-258k-vs-231k-est-225k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41270507,
+      "headline": "USA CPI (YoY) For September 2.4% Vs 2.3% Est.; 2.5% Prior",
+      "created_at": "2024-10-10T12:31:15Z",
+      "updated_at": "2024-10-10T12:31:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41270507/usa-cpi-yoy-for-september-2-4-vs-2-3-est-2-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41270965,
+      "headline": "Biden Asked Not To Attack Nuclear Or Oil Facilities In Iran, Netanyahu Responded That It Is A Historic Opportunity",
+      "created_at": "2024-10-10T12:51:06Z",
+      "updated_at": "2024-10-10T12:51:06Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41270965/biden-asked-not-to-attack-nuclear-or-oil-facilities-in-iran-netanyahu-responded-that-i",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41271581,
+      "headline": "Gulf States Are Lobbying Washington To Stop Israel Attacking Iran's Oilfields, Gulf Sources Say",
+      "created_at": "2024-10-10T13:09:39Z",
+      "updated_at": "2024-10-10T13:10:16Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41271581/gulf-states-are-lobbying-washington-to-stop-israel-attacking-irans-oilfields-gulf",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41270761,
+      "headline": "September Inflation Hotter Than Expected, Jobless Claims Spike The Most In Over A Year, Clouding Fed's Interest Rate Outlook (UPDATED)",
+      "created_at": "2024-10-10T13:12:13Z",
+      "updated_at": "2024-10-10T13:12:26Z",
+      "symbols": [
+        "BTCUSD",
+        "DIA",
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41270761/september-inflation-hotter-than-expected-jobless-claims-spike-the-most-in-over-a-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41271768,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of October 10, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-10-10T13:12:30Z",
+      "updated_at": "2024-10-10T13:12:31Z",
+      "symbols": [
+        "AI",
+        "BABA",
+        "LOT",
+        "MADE",
+        "NVDA",
+        "PLTR",
+        "QQQ",
+        "TSLA",
+        "WAY",
+        "YINN"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/10/41271768/top-10-trending-stocks-on-wallstreetbets-as-of-october-10-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41271999,
+      "headline": "Fed's Cook Does Not Comment On Economic Or Monetary Policy Outlook In Prepared Remarks At Event In South Carolina",
+      "created_at": "2024-10-10T13:16:57Z",
+      "updated_at": "2024-10-10T13:16:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41271999/feds-cook-does-not-comment-on-economic-or-monetary-policy-outlook-in-prepared-remarks-at-event-in-so",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41272371,
+      "headline": "White House Economic Adviser Brainard Says CPI Report Shows Inflation Lower And At Pre-Pandemic Rate; \"We Keep Making Progress\"",
+      "created_at": "2024-10-10T13:35:49Z",
+      "updated_at": "2024-10-10T13:35:50Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41272371/white-house-economic-adviser-brainard-says-cpi-report-shows-inflation-lower-and-a",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41272696,
+      "headline": "'UAW President Says Trump 'Writing Off' Hundreds Of Thousands Of Jobs Across U.S. With Threat To Revoke EV Investments' - Reuters News",
+      "created_at": "2024-10-10T13:52:37Z",
+      "updated_at": "2024-10-10T13:52:38Z",
+      "symbols": [
+        "F",
+        "GM",
+        "SPY",
+        "STLA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41272696/uaw-president-says-trump-writing-off-hundreds-of-thousands-of-jobs-across-u-s-with-threat-to-revoke",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273266,
+      "headline": "Traders Circulating Russian Deputy Foreign Minister Says A New Meeting Of The \"Nuclear Five\" Will Be Held In New York In The Near Future",
+      "created_at": "2024-10-10T14:12:50Z",
+      "updated_at": "2024-10-10T14:12:51Z",
+      "symbols": [
+        "SPY",
+        "USO",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41273266/traders-circulating-russian-deputy-foreign-minister-says-a-new-meeting-of-the-nuclear-five-will-be-h",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273310,
+      "headline": "Fed's Goolsbee Says Inflation Came In Around Expectations, Improvement On Housing Front; Overall Trend Is Clearly That Inflation Has Come Down A Lot; Job Market Has Cooled To A Level Of Full Employment; In Total Agreement With The Spirit Of What Fed Chair Said; We've Shifted Now To A More Normal, Balanced-Risk Environment",
+      "created_at": "2024-10-10T14:13:20Z",
+      "updated_at": "2024-10-10T14:13:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41273310/feds-goolsbee-says-inflation-came-in-around-expectations-improvement-on-housing-front-overall-trend",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273335,
+      "headline": "Fed's Goolsbee Says Have To Think About Both Sides Of Fed Mandate; It's Been A Series Of Close-Call Type Meetings; Probably Will Be More Close Fed Meetings; We Want To Not Get Ahead, Or Behind; Still Got A Lot Of Data Coming In, Trying To Figure Out What's Going On, Nothing's Ever Not On The Table",
+      "created_at": "2024-10-10T14:14:06Z",
+      "updated_at": "2024-10-10T14:14:07Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41273335/feds-goolsbee-says-have-to-think-about-both-sides-of-fed-mandate-its-been-a-series-of-close-call-typ",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273375,
+      "headline": "Fed's Goolsbee Says  Fed Minutes At Moments Of Transition Often Show Diversity Of Thought At The Fed; Fed Has To Take Longer View; Fed Projections Show Vast Majority Believes Over Next 12-18 Months Conditions Continue To Improve, Rates Gradually Come Down A Fair Amount",
+      "created_at": "2024-10-10T14:15:36Z",
+      "updated_at": "2024-10-10T14:15:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41273375/feds-goolsbee-says-fed-minutes-at-moments-of-transition-often-show-diversity-of-thought-at-the-fed-f",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273541,
+      "headline": "Fed's Goolsbee Says Data Dependent Doesn't Mean Basing Decisions On Last Month's Data, Need Longer Through Line; If Data Continues To Illustrate Unemployment Is Not Deteriorating, That Will Relieve Some Of My Concerns",
+      "created_at": "2024-10-10T14:19:49Z",
+      "updated_at": "2024-10-10T14:19:50Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41273541/feds-goolsbee-says-data-dependent-doesnt-mean-basing-decisions-on-last-months-data-need-longer-throu",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273589,
+      "headline": "Trump Vs. Harris: Pennsylvania May Flip As VP's Key Support Drops; Inflation Hotter, Jobless Claims Surge, Fed's Rate Plans Uncertain - Top Headlines Today While US Slept",
+      "created_at": "2024-10-10T14:21:17Z",
+      "updated_at": "2024-10-10T14:21:17Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41273589/trump-vs-harris-pennsylvania-may-flip-as-vps-key-support-drops-inflation-hotter-jobless-claims-surge",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273615,
+      "headline": "Tech, Consumer Discretionary Stocks Fall, Utilities Sector Outperforms On Surprisingly High Inflation, Jobless Claims Data",
+      "created_at": "2024-10-10T14:22:35Z",
+      "updated_at": "2024-10-10T14:22:36Z",
+      "symbols": [
+        "DUK",
+        "ENPH",
+        "ES",
+        "FSLR",
+        "LULU",
+        "NEE",
+        "ROST",
+        "SMCI",
+        "TSLA",
+        "XLE",
+        "XLK",
+        "XLRE",
+        "XLU",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41273615/tech-consumer-discretionary-stocks-fall-utilities-sector-outperforms-on-surprisingly-high-inflat",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273618,
+      "headline": "Fed's Goolsbee Says If Job Market Data Is Stable, I'm Going To Be Less Concerned About That; Concern On Passive Tightening Is Not As Relevant Now That Fed Is Moving",
+      "created_at": "2024-10-10T14:22:37Z",
+      "updated_at": "2024-10-10T14:22:38Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41273618/feds-goolsbee-says-if-job-market-data-is-stable-im-going-to-be-less-concerned-about-that-concern-on",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41273679,
+      "headline": "Market Clubhouse Morning Memo - October 10th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-10-10T14:25:16Z",
+      "updated_at": "2024-10-10T14:25:54Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/24/10/41273679/market-clubhouse-morning-memo-october-10th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41274155,
+      "headline": "NHC Forecasts Milton To Become Powerful Post-Tropical Storm By This Evening, With Gradual Weakening Expected Over The Next Few Days",
+      "created_at": "2024-10-10T14:45:36Z",
+      "updated_at": "2024-10-10T14:45:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41274155/nhc-forecasts-milton-to-become-powerful-post-tropical-storm-by-this-evening-with-gradu",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41274371,
+      "headline": "Cantor Fitzgerald Reiterates Neutral on Tesla, Maintains $245 Price Target",
+      "created_at": "2024-10-10T14:57:01Z",
+      "updated_at": "2024-10-10T14:57:01Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41274371/cantor-fitzgerald-reiterates-neutral-on-tesla-maintains-245-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41274987,
+      "headline": "How To Watch Tesla Robotaxi Day Live: Elon Musk's Autonomous Vehicle Event Is Here",
+      "created_at": "2024-10-10T15:10:31Z",
+      "updated_at": "2024-10-10T15:10:31Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/10/41274987/how-to-watch-tesla-robotaxi-day-live-elon-musks-autonomous-vehicle-event-is-here",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41275402,
+      "headline": "Fed's Williams Says Expects Economy Will Allow Fed To Cut Rates Further; Pace And Size Of Future Cuts To Be Determined By Economic Data; Economy Solid, Labor Market In Good Place; Recent Fed Rate Cut Should Leave Economy In Strong Place; Expects Inflation To Wane To 2.25% This Year, Close To 2% In 2025; Job Market Unlikely To Be Inflation Driver Going Forward",
+      "created_at": "2024-10-10T15:19:24Z",
+      "updated_at": "2024-10-10T15:19:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41275402/feds-williams-says-expects-economy-will-allow-fed-to-cut-rates-further-pace-and-size-of-future-cuts",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41275598,
+      "headline": "Fed's Barkin Says Rising US Debt Presents Risk Of Higher Borrowing Costs; Increasingly Confident Inflation Getting Under Control; Feel Good About Where We Are On Inflation, Unemployment; Fed Trying To Balance Risks To Labor Market, Inflation; Earlier Start Could Have Lessened Need For Rapid Hiking; Fed Should Have Begun Raising Rates In 2021; Housing Demand Could Rise Faster Than Supply; Sees Risk That Lower Rates Could Boost Housing Demand; Inflation Down Significantly But Can't Declare Victory",
+      "created_at": "2024-10-10T15:30:15Z",
+      "updated_at": "2024-10-10T15:30:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41275598/feds-barkin-says-rising-us-debt-presents-risk-of-higher-borrowing-costs-increasingly-confident-infla",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41275613,
+      "headline": "Fed's Barkin Says Inflation Is Headed In The Right Direction",
+      "created_at": "2024-10-10T15:30:33Z",
+      "updated_at": "2024-10-10T15:30:34Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41275613/feds-barkin-says-inflation-is-headed-in-the-right-direction",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41275888,
+      "headline": "Fed's Williams Says Important To See Government Debt To GDP Ratio Fall At Some Point",
+      "created_at": "2024-10-10T15:43:43Z",
+      "updated_at": "2024-10-10T15:43:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41275888/feds-williams-says-important-to-see-government-debt-to-gdp-ratio-fall-at-some-poi",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41275938,
+      "headline": "Watching Shares Of DoorDash; Traders Circulating Video Potentially Teasing Partnership With Tesla's Robotaxi",
+      "created_at": "2024-10-10T15:46:04Z",
+      "updated_at": "2024-10-10T15:46:05Z",
+      "symbols": [
+        "DASH",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41275938/watching-shares-of-doordash-traders-circulating-video-potentially-teasing-partnership-with-teslas-ro",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41275945,
+      "headline": "Tesla To Convert 500 Temporary Workers To Permanent Positions At German Gigafactory In Gruenheide Starting Nov. 1, Citing Optimistic Outlook For E-Car Production Expansion",
+      "created_at": "2024-10-10T15:46:57Z",
+      "updated_at": "2024-10-10T15:46:58Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41275945/tesla-to-convert-500-temporary-workers-to-permanent-positions-at-german-gigafactory-in-gruenheide-st",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41276085,
+      "headline": "Fed's Williams Says Overall Balance Of Risks Is Pretty Good Right Now",
+      "created_at": "2024-10-10T15:53:30Z",
+      "updated_at": "2024-10-10T15:53:30Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41276085/feds-williams-says-overall-balance-of-risks-is-pretty-good-right-now",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41276095,
+      "headline": "Fed's Williams Says Markets Have Absorbed Fed Policy Shifts Well",
+      "created_at": "2024-10-10T15:54:08Z",
+      "updated_at": "2024-10-10T15:54:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41276095/feds-williams-says-markets-have-absorbed-fed-policy-shifts-well",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41276133,
+      "headline": "Fed's Williams Says Minimum Wage Changes Don't Have Big Overall Economic Impacts",
+      "created_at": "2024-10-10T15:58:15Z",
+      "updated_at": "2024-10-10T15:58:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41276133/feds-williams-says-minimum-wage-changes-dont-have-big-overall-economic-impacts",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41276229,
+      "headline": "Fed's Williams Says Still Sees Plenty Of Reserves In Financial System; Doesn't Know When Fed Will End Balance Sheet Drawdown",
+      "created_at": "2024-10-10T16:01:42Z",
+      "updated_at": "2024-10-10T16:01:42Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41276229/feds-williams-says-still-sees-plenty-of-reserves-in-financial-system-doesnt-know-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41276483,
+      "headline": "Hotter Inflation But Jobless Claims Cushion The Blow – Selling In Nvidia And AI Stocks",
+      "created_at": "2024-10-10T16:12:02Z",
+      "updated_at": "2024-10-10T16:12:03Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/24/10/41276483/hotter-inflation-but-jobless-claims-cushion-the-blow-selling-in-nvidia-and-ai-stocks",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277131,
+      "headline": "Trump To Propose Making Interest On Car Loans Fully Tax-Deductible; To Propose A 'Made In America' Corporate Tax Rate Of 15% For U.S. Manufacturers",
+      "created_at": "2024-10-10T16:40:35Z",
+      "updated_at": "2024-10-10T16:40:35Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41277131/trump-to-propose-making-interest-on-car-loans-fully-tax-deductible-to-propose-a-m",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277188,
+      "headline": "Trump Says He Will Bar All Chinese Autonomous Vehicles From Traveling On U.S. Roads",
+      "created_at": "2024-10-10T16:42:08Z",
+      "updated_at": "2024-10-10T16:42:09Z",
+      "symbols": [
+        "DJT",
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41277188/trump-says-he-will-bar-all-chinese-autonomous-vehicles-from-traveling-on-u-s-road",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277298,
+      "headline": "'Fed's Bostic Keeps Door Open To Skipping Rate Cut In November' - WSJ Live",
+      "created_at": "2024-10-10T16:51:08Z",
+      "updated_at": "2024-10-10T16:51:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41277298/feds-bostic-keeps-door-open-to-skipping-rate-cut-in-november-wsj-live",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277301,
+      "headline": "'Atlanta Fed President Bostic Open To Either Holding Rates Steady Or Cutting By 25 Basis Points At November Meeting Based On Economic Data; Cites Choppy Data And Patient Approach, Supports Gradually Lowering Rates Toward 3%-3.5% Neutral Range Over Next Year' - WSJ",
+      "created_at": "2024-10-10T16:51:32Z",
+      "updated_at": "2024-10-10T16:51:32Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41277301/atlanta-fed-president-bostic-open-to-either-holding-rates-steady-or-cutting-by-25",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277305,
+      "headline": "Fed's Bostic Says Totally Comfortable With Skipping A Meeting If The Data Suggests That's Appropriate; \"This Choppiness To Me Is Along The Lines Of Maybe We Should Take A Pause In November. I'm Definitely Open To That\"; I'm Open To Not Moving At One Of The Last Two Meetings If The Data Comes In As I Expect",
+      "created_at": "2024-10-10T16:53:03Z",
+      "updated_at": "2024-10-10T16:53:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41277305/feds-bostic-says-totally-comfortable-with-skipping-a-meeting-if-the-data-suggests",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277404,
+      "headline": "Hurricane Milton LIVE: Florida Gov. Ron DeSantis holds briefing",
+      "created_at": "2024-10-10T16:58:36Z",
+      "updated_at": "2024-10-10T16:58:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41277404/hurricane-milton-live-florida-gov-ron-desantis-holds-briefing",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277412,
+      "headline": "Israeli Strike Hits Beirut District Of Noueiri",
+      "created_at": "2024-10-10T16:59:49Z",
+      "updated_at": "2024-10-10T16:59:50Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41277412/israeli-strike-hits-beirut-district-of-noueiri",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277965,
+      "headline": "U.S. Attorney General Merrick Garland Says TD The Largest Bank In U.S. History To Plead Guilty To Bank Secrecy Act Program Failures; Investigations Ongoing At 'Every Level' Of TD Bank; TD Has Agreed To The Imposition Of A 3-Year Monitorship And A 5-Year Term Of Probation",
+      "created_at": "2024-10-10T17:21:21Z",
+      "updated_at": "2024-10-10T17:21:22Z",
+      "symbols": [
+        "SPY",
+        "TD"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41277965/u-s-attorney-general-merrick-garland-says-td-the-largest-bank-in-u-s-history-to-plead-guilty-to-bank",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277995,
+      "headline": "U.S. Homeland Security Secretary Mayorkas Says Milton Has Passed But Danger From Downed Power Lines, Non-Potable Water And Debris Has Not; 4,300 People Have Been Rescued Since Hurricane Helene Made Landfall",
+      "created_at": "2024-10-10T17:22:49Z",
+      "updated_at": "2024-10-10T17:22:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41277995/u-s-homeland-security-secretary-mayorkas-says-milton-has-passed-but-danger-from-d",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41278006,
+      "headline": "U.S. Homeland Security Secretary Mayorkas Says No Resources Needed For Hurricane Helene Response Will Be Diverted To Respond To Hurricane Milton; We Implore Congress To Fund FEMA As Is Needed",
+      "created_at": "2024-10-10T17:24:58Z",
+      "updated_at": "2024-10-10T17:24:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41278006/u-s-homeland-security-secretary-mayorkas-says-no-resources-needed-for-hurricane-h",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41278012,
+      "headline": "Fed's Goolsbee Downplays Inflation Uptick, Economists Hold Steady On November Rate Interest Rate Cut Call",
+      "created_at": "2024-10-10T17:26:13Z",
+      "updated_at": "2024-10-10T17:26:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41278012/feds-goolsbee-downplays-inflation-uptick-economists-hold-steady-on-november-rate-in",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41278173,
+      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
+      "created_at": "2024-10-10T17:35:23Z",
+      "updated_at": "2024-10-10T17:35:23Z",
+      "symbols": [
+        "ABNB",
+        "AMZN",
+        "BABA",
+        "DASH",
+        "JD",
+        "NCLH",
+        "PDD",
+        "TSLA",
+        "ULTA",
+        "W"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/10/41278173/10-consumer-discretionary-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41278282,
+      "headline": "Former President Trump Says Fed's 50bps Point A \"Political Maneuver\" Ahead Of The Election",
+      "created_at": "2024-10-10T17:41:14Z",
+      "updated_at": "2024-10-10T17:41:15Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41278282/former-president-trump-says-feds-50bps-point-a-political-maneuver-ahead-of-the-el",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41278849,
+      "headline": "LIVE: President Joe Biden Delivers Remarks On Milton Hurricane; Says Congress Should Come Back To Handle Disaster Relief Funding Immediately",
+      "created_at": "2024-10-10T18:13:55Z",
+      "updated_at": "2024-10-10T18:13:56Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41278849/live-president-joe-biden-delivers-remarks-on-milton-hurricane-says-congress-shoul",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41278865,
+      "headline": "Stocks Dip As Inflation Slows Less Than Expected, Oil Prices Spike Due To Hurricane Disruptions, Middle East Tensions: What's Driving Markets Thursday?",
+      "created_at": "2024-10-10T18:15:02Z",
+      "updated_at": "2024-10-10T18:15:03Z",
+      "symbols": [
+        "AMD",
+        "BA",
+        "BTCUSD",
+        "CELH",
+        "DIA",
+        "ENPH",
+        "FSLR",
+        "IWM",
+        "NET",
+        "QQQ",
+        "SPY",
+        "XLE",
+        "XLK",
+        "XLRE",
+        "XLU"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41278865/stocks-dip-as-inflation-slows-less-than-expected-oil-prices-spike-due-to-hurricane-disruptions-m",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41279011,
+      "headline": "Republican Presidential Nominee Donald Trump Says U.S. Based Carmakers And Manufacturers Will Be Rewarded With Expanded R&D Tax Credits, Where They Will Be Able To Write Off 100% Of Their Cost Of Heavy Machinery And Other Equipment Necessary To Build A Plant In The First Year., And Full Expensing For Manufacturing Investments",
+      "created_at": "2024-10-10T18:21:16Z",
+      "updated_at": "2024-10-10T18:21:16Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41279011/republican-presidential-nominee-donald-trump-says-u-s-based-carmakers-and-manufac",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41277396,
+      "headline": "Trump To Say If Elected He Will Formally Notify Mexico, Canada Of His Plan To Invoke 6-Year Renegotiation Provision Of USMCA To Address Concerns About Chinese Auto Production",
+      "created_at": "2024-10-10T16:57:23Z",
+      "updated_at": "2024-10-10T18:49:53Z",
+      "symbols": [
+        "DJT",
+        "EWC",
+        "EWW",
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41277396/trump-to-say-if-elected-he-will-formally-notify-mexico-canada-of-his-plan-to-invo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41280243,
+      "headline": "Q3 Earnings Preview: Analyst Predicts Tech Will Triumph While Energy Will Struggle",
+      "created_at": "2024-10-10T19:34:05Z",
+      "updated_at": "2024-10-10T19:34:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41280243/q3-earnings-preview-analyst-predicts-tech-will-triumph-while-energy-will-struggle",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41280510,
+      "headline": "'Iran's Secret Warning To U.S. Allies: Don't Help Israel, Or You're Next; The Threats Through Diplomatic Channels Have Prompted Arab States To Tell The U.S. That They Won't Aid Any Attack On Iran' - WSJ",
+      "created_at": "2024-10-10T19:49:37Z",
+      "updated_at": "2024-10-10T19:49:38Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41280510/irans-secret-warning-to-u-s-allies-dont-help-israel-or-youre-next-the-threats-thr",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41284650,
+      "headline": "Tesla To Reveal Robotaxi At Event Near Los Angeles: CEO Elon Musk Hints It Could Be A 2-Seater",
+      "created_at": "2024-10-11T02:04:59Z",
+      "updated_at": "2024-10-11T02:04:59Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41284650/tesla-to-reveal-robotaxi-at-event-near-los-angeles-ceo-elon-musk-hints-it-could-be-a-2-seater",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41284827,
+      "headline": "Tesla, Uber, AMD, Aehr, And TD Bank: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-10-11T02:59:15Z",
+      "updated_at": "2024-10-11T02:59:15Z",
+      "symbols": [
+        "AEHR",
+        "AMD",
+        "TD",
+        "TSLA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41284827/tesla-uber-amd-aehr-and-td-bank-why-these-5-stocks-are-on-investors-radars-today",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

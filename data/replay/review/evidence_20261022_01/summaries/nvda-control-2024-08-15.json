@@ -1,0 +1,749 @@
+{
+  "interval_id": "nvda-control-2024-08-15",
+  "candidate_kind": "normal",
+  "ticker": "NVDA",
+  "started_at": "2024-08-15T13:30:00Z",
+  "ended_at": "2024-08-15T15:00:00Z",
+  "local_start": "2024-08-15T09:30:00-04:00",
+  "local_end": "2024-08-15T11:00:00-04:00",
+  "symbols": {
+    "NVDA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-14T19:59:00Z",
+      "prior_close": 117.97,
+      "first_minute": "2024-08-15T13:30:00Z",
+      "last_minute": "2024-08-15T14:59:00Z",
+      "first_open": 118.945,
+      "last_close": 121.56,
+      "gap_pct": 0.8264813088073142,
+      "end_vs_prior_pct": 3.043146562685428,
+      "window_return_pct": 2.198495102778608,
+      "window_range_pct": 3.7580394299886493,
+      "volume": 790804,
+      "raw_artifact": "raw/nvda-control-2024-08-15/NVDA.minutes.json"
+    },
+    "QQQ": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-08-15T13:52:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-14T19:59:00Z",
+      "prior_close": 462.82,
+      "first_minute": "2024-08-15T13:30:00Z",
+      "last_minute": "2024-08-15T14:59:00Z",
+      "first_open": 469.43,
+      "last_close": 471.59,
+      "gap_pct": 1.4282010284776048,
+      "end_vs_prior_pct": 1.8949051467092914,
+      "window_return_pct": 0.4601325011183599,
+      "window_range_pct": 0.8840508702042976,
+      "volume": 153542,
+      "raw_artifact": "raw/nvda-control-2024-08-15/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-14T19:59:00Z",
+      "prior_close": 543.78,
+      "first_minute": "2024-08-15T13:30:00Z",
+      "last_minute": "2024-08-15T14:59:00Z",
+      "first_open": 549.76,
+      "last_close": 550.87,
+      "gap_pct": 1.0997094413181863,
+      "end_vs_prior_pct": 1.3038361101916252,
+      "window_return_pct": 0.20190628637950514,
+      "window_range_pct": 0.42291181606520034,
+      "volume": 321086,
+      "raw_artifact": "raw/nvda-control-2024-08-15/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 40390236,
+      "headline": "Asian Markets Up, Europe Mixed; Oil Advances And Gold Steady Near All Time High - Global Markets Today While US Slept",
+      "created_at": "2024-08-15T10:54:07Z",
+      "updated_at": "2024-08-15T11:15:26Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/08/40390236/asian-up-europe-mixed-oil-advances-and-gold-steady-near-all-time-high-global-markets-today-while-us",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40391260,
+      "headline": "S&P 500 Eyes 6th Straight Win, But Investor Sentiment Remains Cautious Ahead Of Data Deluge, Walmart Earnings And Other Key Events",
+      "created_at": "2024-08-15T11:29:22Z",
+      "updated_at": "2024-08-15T11:29:23Z",
+      "symbols": [
+        "BABA",
+        "BRK",
+        "BTCUSD",
+        "COHR",
+        "CSCO",
+        "DE",
+        "GOOG",
+        "GOOGL",
+        "HRB",
+        "JD",
+        "LITE",
+        "MAT",
+        "NKE",
+        "QQQ",
+        "SIRI",
+        "SPY",
+        "ULTA",
+        "WMT"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40391260/s-p-500-eyes-6th-straight-win-but-investor-sentiment-remains-cautious-ahead-of-data-deluge-walmart-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40393167,
+      "headline": "US Initial Jobless Claims 227K vs 236K Est.",
+      "created_at": "2024-08-15T12:30:08Z",
+      "updated_at": "2024-08-15T12:30:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40393167/us-initial-jobless-claims-227k-vs-236k-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40393168,
+      "headline": "Continuing Jobless Claims 1.864M Vs 1.88M Expected, 1.875M Prior",
+      "created_at": "2024-08-15T12:30:11Z",
+      "updated_at": "2024-08-15T12:30:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40393168/continuing-jobless-claims-1-864m-vs-1-88m-expected-1-875m-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40393169,
+      "headline": "USA Core Retail Sales (MoM) For July 0.4% Vs 0.1% Est.; 0.5% Prior",
+      "created_at": "2024-08-15T12:30:21Z",
+      "updated_at": "2024-08-15T12:30:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40393169/usa-core-retail-sales-mom-for-july-0-4-vs-0-1-est-0-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40393176,
+      "headline": "Philadelphia Fed Manufacturing Index For August -7.0 Vs 5.4 Est.; 13.9 Prior",
+      "created_at": "2024-08-15T12:30:27Z",
+      "updated_at": "2024-08-15T12:30:27Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40393176/philadelphia-fed-manufacturing-index-for-august-7-0-vs-5-4-est-13-9-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40393205,
+      "headline": "US Retail Sales (MoM) (Jul) +1% vs +0.4% Est.",
+      "created_at": "2024-08-15T12:30:43Z",
+      "updated_at": "2024-08-15T12:30:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40393205/us-retail-sales-mom-jul-1-vs-0-4-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40393687,
+      "headline": "Retail Sales Soar In July, Weekly Jobless Claims Undercut Expectations: Traders Lean Towards 25-Basis-Point Cut In September",
+      "created_at": "2024-08-15T12:44:12Z",
+      "updated_at": "2024-08-15T13:01:32Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40393687/retail-sales-soar-in-july-weekly-jobless-claims-undercut-expectations-traders-lea",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40394942,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of August 15, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-08-15T13:15:05Z",
+      "updated_at": "2024-08-15T13:15:06Z",
+      "symbols": [
+        "AMZN",
+        "ASTS",
+        "INTC",
+        "LOT",
+        "MADE",
+        "NVDA",
+        "QQQ",
+        "SBUX",
+        "WAY",
+        "WMT"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/08/40394942/top-10-trending-stocks-on-wallstreetbets-as-of-august-15-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40395152,
+      "headline": "Fed's Musalem Says Monetary Policy Moderately Restrictive; Inflation Appears On Track For 2% Target Over Time, But Services And Shelter Inflation Remain Sticky; More Disinflation Work Needed; Labor Market Cooling With Low Layoffs, No Longer An Upside Risk To Inflation; Recent Data Boost Confidence In Inflation Control; Balance Of Risks Between Inflation And Job Market Now More Balanced; Policy Rate Change May Be Approaching",
+      "created_at": "2024-08-15T13:20:05Z",
+      "updated_at": "2024-08-15T13:20:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40395152/feds-musalem-says-monetary-policy-moderately-restrictive-inflation-appears-on-track-for-2-target-ove",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40395477,
+      "headline": "Fed's Musalem Says Economy Has Been Growing Very Well; Data Does Not Support Idea Of A Recession; I See GDP Growth As Between 1.5% To 2% Over Second Half Of This Year",
+      "created_at": "2024-08-15T13:30:57Z",
+      "updated_at": "2024-08-15T13:30:57Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40395477/feds-musalem-says-economy-has-been-growing-very-well-data-does-not-support-idea-o",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40395591,
+      "headline": "Fed's Musalem Says Am Focused On Both Sides Of Our Dual Mandate; Don't Think The Fed Is Behind The Curve, Economy Doing Very Well; News Has Been Very Encouraging On Inflation Over Past Three Months;  Just Have To Be Confident That Inflation Trend Is Secure; Risks To Cutting Too Early Or Too Late",
+      "created_at": "2024-08-15T13:36:23Z",
+      "updated_at": "2024-08-15T13:36:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40395591/feds-musalem-says-am-focused-on-both-sides-of-our-dual-mandate-dont-think-the-fed",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40395663,
+      "headline": "Benzinga Market Summary: Market Sentiment Gains On Upbeat Retail Sales And Soft Jobless Claims, Walmart Surges On Guidance Hike, Berkshire Hathaway Adds To Stake In Sirius XM",
+      "created_at": "2024-08-15T13:39:45Z",
+      "updated_at": "2024-08-15T13:39:46Z",
+      "symbols": [
+        "SIRI",
+        "SPY",
+        "WMT",
+        "XRT"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40395663/benzinga-market-summary-market-sentiment-gains-on-upbeat-retail-sales-and-soft-jo",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40395666,
+      "headline": "Fed's Musalem Says Market Volatility Happens All The Time; As A Policymaker, Only Care About Volatility To Extent It Tightens Financial Conditions",
+      "created_at": "2024-08-15T13:39:50Z",
+      "updated_at": "2024-08-15T13:39:50Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40395666/feds-musalem-says-market-volatility-happens-all-the-time-as-a-policymaker-only-ca",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40395931,
+      "headline": "Fed's Musalem Says Models Indicate Interest Rates Are Likely To Be Higher Than Pre-Pandemic Levels Going Forward",
+      "created_at": "2024-08-15T13:49:34Z",
+      "updated_at": "2024-08-15T13:49:35Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40395931/feds-musalem-says-models-indicate-interest-rates-are-likely-to-be-higher-than-pre-pandemic-levels-go",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40396082,
+      "headline": "Fed's Musalem Says Fed Doesn't Take Politics Into Account In Anything We Do; Election Years Can Bring Uncertainty Though, And That Can Affect Economic Confidence",
+      "created_at": "2024-08-15T13:55:11Z",
+      "updated_at": "2024-08-15T13:55:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40396082/feds-musalem-says-fed-doesnt-take-politics-into-account-in-anything-we-do-electio",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40396247,
+      "headline": "Here's How Much You Would Have Made Owning NVIDIA Stock In The Last 20 Years",
+      "created_at": "2024-08-15T14:00:43Z",
+      "updated_at": "2024-08-15T14:00:44Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/insights/news/24/08/40396247/heres-how-much-you-would-have-made-owning-nvidia-stock-in-the-last-20-years",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40396252,
+      "headline": "USA Retail Inventories Ex Auto For June 0.2% Vs 0.2% Est.; 0.0% Prior",
+      "created_at": "2024-08-15T14:00:53Z",
+      "updated_at": "2024-08-15T14:00:54Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40396252/usa-retail-inventories-ex-auto-for-june-0-2-vs-0-2-est-0-0-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40396269,
+      "headline": "USA Business Inventories (MoM) For June 0.3% Vs 0.3% Est.; 0.5% Prior",
+      "created_at": "2024-08-15T14:01:04Z",
+      "updated_at": "2024-08-15T14:01:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40396269/usa-business-inventories-mom-for-june-0-3-vs-0-3-est-0-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40396280,
+      "headline": "Spotlight on NVIDIA: Analyzing the Surge in Options Activity",
+      "created_at": "2024-08-15T14:01:33Z",
+      "updated_at": "2024-08-15T14:01:34Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/08/40396280/spotlight-on-nvidia-analyzing-the-surge-in-options-activity",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40396898,
+      "headline": "What's Going On With Tesla Stock Today",
+      "created_at": "2024-08-15T14:18:21Z",
+      "updated_at": "2024-08-15T14:18:22Z",
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40396898/whats-going-on-with-tesla-stock-today",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40398533,
+      "headline": "Market Clubhouse Morning Memo - August 15th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META and TSLA)",
+      "created_at": "2024-08-15T15:07:42Z",
+      "updated_at": "2024-08-15T15:07:58Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/24/08/40398533/market-clubhouse-morning-memo-august-15th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40399091,
+      "headline": "Billionaire Investor Leon Cooperman Warns U.S. Is Heading Toward Financial Crisis",
+      "created_at": "2024-08-15T15:21:31Z",
+      "updated_at": "2024-08-15T15:21:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/08/40399091/billionaire-investor-leon-cooperman-warns-u-s-is-heading-toward-financial-crisis",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40399643,
+      "headline": "UK Foreign Minister Lammy Set To Travel To Israel To Prevent Potential All-Out War In The Middle East",
+      "created_at": "2024-08-15T15:38:32Z",
+      "updated_at": "2024-08-15T15:38:32Z",
+      "symbols": [
+        "EWU",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/08/40399643/uk-foreign-minister-lammy-set-to-travel-to-israel-to-prevent-potential-all-out-war-in-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40399974,
+      "headline": "Sweden Reports First Mpox Clade 1 Case Outside Africa, According To Public Health Agency - AFP",
+      "created_at": "2024-08-15T15:52:31Z",
+      "updated_at": "2024-08-15T15:52:31Z",
+      "symbols": [
+        "EWD",
+        "GOVX",
+        "SIGA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/08/40399974/sweden-reports-first-mpox-clade-1-case-outside-africa-according-to-public-health-agenc",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40400105,
+      "headline": "What's Going On With Nvidia Stock On Thursday?",
+      "created_at": "2024-08-15T15:59:35Z",
+      "updated_at": "2024-08-15T15:59:35Z",
+      "symbols": [
+        "ARM",
+        "GOOG",
+        "GOOGL",
+        "INTC",
+        "META",
+        "NVDA",
+        "SFTBF",
+        "SFTBY",
+        "SPY",
+        "TSM",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40400105/whats-going-on-with-nvidia-stock-on-thursday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40401292,
+      "headline": "WHO Says Actively Engaging With Swedish Health Authorities On Managing First Confirmed Case Of Mpox Clade Ib, Our Advice To Member States Going Forward",
+      "created_at": "2024-08-15T16:52:17Z",
+      "updated_at": "2024-08-15T16:52:38Z",
+      "symbols": [
+        "AEMD",
+        "CMRX",
+        "EWD",
+        "GOVX",
+        "INO",
+        "MRNA",
+        "SIGA",
+        "SPY",
+        "TNXP",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/08/40401292/who-says-actively-engaging-with-swedish-health-authorities-on-managing-first-confirmed-case-of-mp",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40401493,
+      "headline": "Vaccine Group Gavi Says It Has Up To $500M Available For Mpox Response",
+      "created_at": "2024-08-15T17:02:57Z",
+      "updated_at": "2024-08-15T17:02:58Z",
+      "symbols": [
+        "AEMD",
+        "CMRX",
+        "EWD",
+        "GOVX",
+        "INO",
+        "MRNA",
+        "SIGA",
+        "SPY",
+        "TNXP"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/08/40401493/vaccine-group-gavi-says-it-has-up-to-500m-available-for-mpox-response",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40401781,
+      "headline": "'Kamala Harris Campaign Says It Agreed To A Second Debate With Donald Trump, Rejects More Than One VP Faceoff' - Deadline",
+      "created_at": "2024-08-15T17:13:31Z",
+      "updated_at": "2024-08-15T17:13:31Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40401781/kamala-harris-campaign-says-it-agreed-to-a-second-debate-with-donald-trump-reject",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40401952,
+      "headline": "Apple Says Driver's Licenses And State IDs In Apple Wallet Are Coming Soon To California; Users In California With ID In Apple Wallet Can Use iPhone/Apple Watch To Present ID In Person At Select TSA Security Checkpoints & Businesses",
+      "created_at": "2024-08-15T17:21:31Z",
+      "updated_at": "2024-08-15T17:21:31Z",
+      "symbols": [
+        "AAPL",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40401952/apple-says-drivers-licenses-and-state-ids-in-apple-wallet-are-coming-soon-to-california-users-in-cal",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40402228,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-08-15T17:35:13Z",
+      "updated_at": "2024-08-15T17:35:13Z",
+      "symbols": [
+        "AMD",
+        "AVGO",
+        "BTDR",
+        "CLS",
+        "CRWD",
+        "GLW",
+        "IREN",
+        "MRVL",
+        "NVDA",
+        "SMCI"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/08/40402228/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40402782,
+      "headline": "U.S. Buys 1.5M Barrels Of Oil For Strategic Petroleum Reserve For January Delivery, Energy Department Says",
+      "created_at": "2024-08-15T18:07:53Z",
+      "updated_at": "2024-08-15T18:07:54Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40402782/u-s-buys-1-5m-barrels-of-oil-for-strategic-petroleum-reserve-for-january-delivery",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40401536,
+      "headline": "Wall Street Eyes Sixth Positive Session On Upbeat Economic Data, Bonds Fall As Traders Lose Conviction In Large Rate Cuts (CORRECTED)",
+      "created_at": "2024-08-15T18:29:19Z",
+      "updated_at": "2024-08-15T18:29:32Z",
+      "symbols": [
+        "ASTS",
+        "BABA",
+        "BTCUSD",
+        "COHR",
+        "CSCO",
+        "DE",
+        "DIA",
+        "HRB",
+        "IWM",
+        "JD",
+        "MAT",
+        "MNDY",
+        "QQQ",
+        "SPY",
+        "TLT",
+        "ULTA",
+        "UUP",
+        "WMT",
+        "XLF",
+        "XLK",
+        "XLRE",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/08/40401536/wall-street-eyes-sixth-positive-session-on-upbeat-economic-data-bonds-fall-as-traders-lose-convi",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40403222,
+      "headline": "EXCLUSIVE: Which Magnificent 7 Stock Would Investors Put $1,000 In Today? 44% Of Benzinga Readers Pick This Company",
+      "created_at": "2024-08-15T18:38:50Z",
+      "updated_at": "2024-08-15T18:38:51Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "MAGS",
+        "META",
+        "MSFT",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/exclusives/24/08/40403222/exclusive-which-magnificent-7-stock-would-investors-put-1-000-in-today-44-of-benzinga-readers-pick-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40403663,
+      "headline": "EXCLUSIVE: AI Bubble Fears Could Be Overdone — 56% Of Benzinga Readers See Potential, Pick Palantir Stock To Outperform",
+      "created_at": "2024-08-15T19:03:16Z",
+      "updated_at": "2024-08-15T19:03:17Z",
+      "symbols": [
+        "AI",
+        "AMD",
+        "INTC",
+        "NVDA",
+        "PLTR",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/exclusives/24/08/40403663/exclusive-ai-bubble-fears-could-be-overdone-56-of-benzinga-readers-see-potential-pick-palantir-stock",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40403801,
+      "headline": "U.S. Approves Possible $5B Sale Of Patriot Missiles To Germany",
+      "created_at": "2024-08-15T19:08:34Z",
+      "updated_at": "2024-08-15T19:08:34Z",
+      "symbols": [
+        "EWG",
+        "RTX",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40403801/u-s-approves-possible-5b-sale-of-patriot-missiles-to-germany",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40404210,
+      "headline": "Three New Pieces Of Data Trigger Aggressive Buying In Nvidia And AI Stocks",
+      "created_at": "2024-08-15T19:32:10Z",
+      "updated_at": "2024-08-15T19:32:11Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "WMT"
+      ],
+      "url": "https://www.benzinga.com/markets/24/08/40404210/three-new-pieces-of-data-trigger-aggressive-buying-in-nvidia-and-ai-stocks",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40406284,
+      "headline": "Nasdaq 100 Sees Best 6-Day Rally Since Late 2022 As Traders Ride Bull Market Wave: Tech Stocks On The Move Thursday",
+      "created_at": "2024-08-15T20:42:20Z",
+      "updated_at": "2024-08-15T20:42:21Z",
+      "symbols": [
+        "CSCO",
+        "KHC",
+        "LULU",
+        "MDLZ",
+        "MRVL",
+        "ON",
+        "ORLY",
+        "QQQ",
+        "SMCI",
+        "SMH",
+        "TMUS",
+        "VRSK"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/08/40406284/nasdaq-100-sees-best-6-day-rally-since-late-2022-as-traders-ride-bull-market-wave-tech-stocks-on",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40406340,
+      "headline": "Fed Chair Powell To Speak On Economic Outlook At KC Fed's Jackson Hole Economic Symposium On August 23 At 10 AM EDT",
+      "created_at": "2024-08-15T20:43:31Z",
+      "updated_at": "2024-08-15T20:43:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40406340/fed-chair-powell-to-speak-on-economic-outlook-at-kc-feds-jackson-hole-economic-symposium-on-august-2",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40409247,
+      "headline": "Former Google CEO Eric Schmidt Highlights Nvidia As Major AI Player In Now Deleted Video: 'That's Not A Stock Recommendation'",
+      "created_at": "2024-08-16T01:53:32Z",
+      "updated_at": "2024-08-16T01:53:32Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40409247/former-google-ceo-eric-schmidt-highlights-nvidia-as-major-ai-player-in-now-deleted-video-thats-not-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40409572,
+      "headline": "Nvidia AI Dominance Challenged By Asian Startups Betting On Energy-Efficient And Cost-Effective Silicon — 'Inference' And 'Training' Chips Emerge As Key Focus",
+      "created_at": "2024-08-16T03:37:05Z",
+      "updated_at": "2024-08-16T03:37:06Z",
+      "symbols": [
+        "AMD",
+        "AMZN",
+        "GOOG",
+        "INTC",
+        "META",
+        "NVDA",
+        "SFTBF",
+        "SFTBY",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/08/40409572/nvidia-ai-dominance-challenged-by-asian-startups-betting-on-energy-efficient-and-cost-effective-sili",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

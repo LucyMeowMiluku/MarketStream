@@ -1,13 +1,15 @@
+> 2026-10-22 重新核验：本文件早期“当前”指2026-09-17，不再代表今天。唯一主稿为[07_Revised_Report_CN.md](07_Revised_Report_CN.md)，英文是译稿；旧草稿／提交副本为历史材料。结果以[运行台账](Evidence_Attachments/Result_Run_Ledger_20261022.md)为准。
+
 # MarketStream 报告修订记录
 
 原始文件：`report/report draft.md`  
 修订中文稿：`07_Revised_Report_CN.md`  
 修订英文稿：`07_Revised_Report_EN.md`  
-修订日期：2026-09-17
+修订日期：2026-09-17；贡献归属更新：2026-10-22
 
 ## 修订原则
 
-- 原始报告不覆盖。
+- 2026-09-17 的结果修订保留原始报告；2026-10-22 按作者要求同步更新各报告的贡献归属段落，不改实验结果。
 - 当前版本结果与旧版本结果分开。
 - synthetic、injected、soak、live 和 formal replay 分开。
 - 没有原始输出支持的数字不作为主要结论。
@@ -28,7 +30,7 @@
 | R-08 | elevated/extreme 只有模糊描述 | 补充 signed 与 non-negative 因子的具体公式 | `processing/factor_engine.py` | 已修正 |
 | R-09 | 把 0.995/0.999 当成可靠尾部概率 | 说明最多 20 样本时 nearest-rank 高分位通常等于最大值 | `processing/factor_state.py`；方法核查任务 | 已修正 |
 | R-10 | baseline key 写成六维且持久化状态过时 | 区分五维 cell key 与 `session_date` observation；补充 epoch 和显式启动模式 | `baseline/`；persistence tests | 已修正 |
-| R-11 | 360/480/120 与 40/240 关系不清楚 | 写明 120 是正场景额外未匹配告警，40/240 是独立负对照 | 当前 synthetic JSON | 已修正 |
+| R-11 | 原修订错误声称负对照与120 FP互不包含 | 本轮trace证实120=正场景60+负对照60；40是触发场景数，不能当告警条数 | SYN-TRACE-20261022逐场景明细 | 2026-10-22纠正，撤销旧解释 |
 | R-12 | 20 个 seed 相同容易被写成稳定性 | 改成生成器结构确定性和脚本重复性，不代表真实市场稳定 | per-seed output | 已修正 |
 | R-13 | activity ablation 未解释 | 明确 current rule completion 不依赖 relative volume | pattern definitions and JSON | 已修正 |
 | R-14 | dislocation ablation 只强调 F1 提升 | 增加 TP 360→300、FP 120→0 和及时性/确认取舍 | current JSON | 已修正 |
@@ -38,12 +40,13 @@
 | R-18 | 日线数据被写成 intraday baseline 来源 | 改为覆盖检查与候选事件选择；正式 baseline 要用此前的微观事件 | replay protocol | 已修正 |
 | R-19 | 文献表述过强 | 修正 NIST deployment、MEDOS trust、ViEWS accuracy、OFI 等说法 | `04_Literature_Verification_CN.md` | 已修正 |
 | R-20 | 没有个人贡献与 AI 边界 | 增加 9.4 节；指向 AI Log Index 和贡献表 | AI logs、Git 和 tests | 已修正 |
+| R-21 | 个人工作被笼统写成核查，缺少本人决策与 AI 执行的明确对应 | 新增中英文五列表 D01–D10 与原行号摘录；同步中英文贡献、报告、代码来源和提交副本，突出本人决策及具体约束，保留 AI 实施来源与未确认手写范围 | `08_Contribution_Attribution_Matrix_CN.md`、英文版和 `Evidence_Attachments/Decision_Log_Excerpts.md` | 2026-10-22 已修订 |
 
 ## 当前报告中的结果分层
 
 | 结果 | 分类 | 能证明什么 | 不能证明什么 |
 |---|---|---|---|
-| 62 tests + Ruff | 当前版本实测 | 当前测试和静态检查通过 | 生产可靠性 |
+| 63 tests + Ruff（CHECKS-20261022） | 本轮归档工作树 | 当前测试和静态检查通过；62是9月17日记录 | 生产可靠性 |
 | F1 0.857 | 受控生成验证 | 预设规则可被当前实现检测 | 真实市场 F1 |
 | 40/240 negative controls | 受控生成验证 | extreme 单因子通道有误警风险 | 正常市场实际误警率 |
 | 旧 CEP F1 0.785 vs ML 0.639 | 旧版本人工注入 | 旧协议内的比较 | 当前方法真实优越性 |
@@ -58,3 +61,29 @@
 3. 若重新生成图表，只允许从已索引 JSON 生成，并保存脚本和相对路径。
 4. 收到 ChatGPT 官方导出后补充日志索引。
 5. 导师确认格式后，再决定是否转换为 PDF 或 DOCX。
+
+## 本轮交付定位
+
+- [中文五列交付表](08_Contribution_Attribution_Matrix_CN.md)与[英文版](08_Contribution_Attribution_Matrix_EN.md)。
+- [原日志摘录](Evidence_Attachments/Decision_Log_Excerpts.md)与[归属核验结果](Evidence_Attachments/Attribution_Validation_20261022.md)。
+- 本轮同步当前 Markdown 源文件及代码来源注释；`report/MarketStream项目描述.zip` 保留为历史提交快照，没有重打包或改写其中旧导出的 Word 文件。
+
+
+## 核心贡献表述完善
+
+按作者后续要求，将叙述中心进一步统一为“本人主导核心方案与开发推进，AI 辅助开发”。新增中英文 `09_Core_Contribution_Statement`，在项目证据链开头概括本人主导内容，将五列表各项标题及贡献记录字段改为明确的个人核心贡献表述，并同步报告、代码来源说明与提交副本。具体技术建议、AI 代码／文字生成来源和未确认项继续按原始证据披露；没有修改历史日志或实验数值。
+
+## 2026-10-22 数字与结论重新核验（覆盖旧结果口径）
+
+| ID | 核验发现 | 处理与依据 |
+|---|---|---|
+| R-22 | 原R-11解释与detections.extend的总体口径冲突 | 撤销“互不包含”；120 FP=正场景60+负对照60；40/240统计触发场景。保留600场景的逐条truth与检测 |
+| R-23 | “当前”混用了9月17日计时、旧注入均值和历史soak | 本轮trace计时0.0150/0.0306/0.0688 ms；独立suite另列；旧0.0033与0.0299均仅历史。主稿删除p99低于0.03 ms的结论 |
+| R-24 | 76告警run的p50/p99抄错 | 按soak-b735cff438原文件改为1.476217/1.727292 s，p95保持1.615935 s |
+| R-25 | 62/160被写成当前测试 | 本轮新增计数回归后63 passed，Ruff通过；历史数字不合并 |
+| R-26 | 零重复、退化CI和告警负担解释过强 | cooldown=0且场景人工分隔；bootstrap固定FP；1.604分母含人为间隔。删除生产冷却／真实稳定性推论 |
+| R-27 | 真实回放状态只检查draft | 检查draft及3份AI预标注，均frozen=false；无正式结果，不把AI标注当独立批准 |
+| R-28 | 历史run缺完整版本和输入绑定 | 七字段台账逐项标缺失；保存工件hash，不虚构历史执行hash或run ID |
+| R-29 | 主稿不唯一、贡献文档复述旧口径 | 确定中文修订稿唯一主稿；英文对应译稿；统一贡献材料的运行证据与边界，给旧稿／提交副本加历史声明 |
+
+本轮运行源码及测试快照、逐场景输出、suite消融、检查原文和机器清单位于`reproduction_outputs/audit_20261022/`。真实标签冻结、历史缺失原始行与执行快照仍是缺口，未伪造补齐。9月17日Docker阻塞只作为当时记录，本轮没有重跑基础设施。

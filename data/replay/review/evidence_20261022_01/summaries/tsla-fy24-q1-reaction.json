@@ -1,0 +1,1270 @@
+{
+  "interval_id": "tsla-fy24-q1-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "TSLA",
+  "started_at": "2024-04-24T13:30:00Z",
+  "ended_at": "2024-04-24T15:00:00Z",
+  "local_start": "2024-04-24T09:30:00-04:00",
+  "local_end": "2024-04-24T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-04-24T14:08:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-23T19:59:00Z",
+      "prior_close": 425.105,
+      "first_minute": "2024-04-24T13:30:00Z",
+      "last_minute": "2024-04-24T14:59:00Z",
+      "first_open": 428.525,
+      "last_close": 427.26,
+      "gap_pct": 0.8045071217699151,
+      "end_vs_prior_pct": 0.5069335811152431,
+      "window_return_pct": -0.295198646520034,
+      "window_range_pct": 0.6417361880870428,
+      "volume": 117629,
+      "raw_artifact": "raw/tsla-fy24-q1-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-23T19:59:00Z",
+      "prior_close": 505.5,
+      "first_minute": "2024-04-24T13:30:00Z",
+      "last_minute": "2024-04-24T14:59:00Z",
+      "first_open": 506.54,
+      "last_close": 505.26,
+      "gap_pct": 0.20573689416418794,
+      "end_vs_prior_pct": -0.04747774480712286,
+      "window_return_pct": -0.25269475263552943,
+      "window_range_pct": 0.46097050578433674,
+      "volume": 160746,
+      "raw_artifact": "raw/tsla-fy24-q1-reaction/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-04-23T19:59:00Z",
+      "prior_close": 144.63,
+      "first_minute": "2024-04-24T13:30:00Z",
+      "last_minute": "2024-04-24T14:59:00Z",
+      "first_open": 162.88,
+      "last_close": 161.835,
+      "gap_pct": 12.618405586669423,
+      "end_vs_prior_pct": 11.895872225679337,
+      "window_return_pct": -0.641576620825135,
+      "window_range_pct": 5.912328094302551,
+      "volume": 1136718,
+      "raw_artifact": "raw/tsla-fy24-q1-reaction/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 38395385,
+      "headline": "Elon Musk Says Tesla Optimus Humanoid Robot Might Be Available Externally By The End Of Next Year: Here's The Progress Report",
+      "created_at": "2024-04-24T04:14:49Z",
+      "updated_at": "2024-04-24T04:14:49Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38395385/elon-musk-says-tesla-optimus-humanoid-robot-might-be-available-externally-by-the-end-of-next-year-he",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38395406,
+      "headline": "Tesla's Strategic Pivot Post-Q1 Gets A Thumbs Up From Ross Gerber, Wedbush's Dan Ives Lauds Elon Musk's Leadership",
+      "created_at": "2024-04-24T04:21:01Z",
+      "updated_at": "2024-04-24T04:21:01Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38395406/teslas-strategic-pivot-post-q1-gets-a-thumbs-up-from-ross-gerber-wedbushs-dan-ives-lauds-elon-mu",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38395808,
+      "headline": "Tesla's High-Profile Departures Continue As Investor Relations Head Martin Viecha Bids Farewell After 7-Year Run",
+      "created_at": "2024-04-24T05:20:56Z",
+      "updated_at": "2024-04-24T05:20:57Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38395808/teslas-high-profile-departures-continue-as-investor-relations-head-martin-viecha-bids-farewell-after",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38396305,
+      "headline": "Tesla, Boeing And 3 Stocks To Watch Heading Into Wednesday",
+      "created_at": "2024-04-24T06:22:55Z",
+      "updated_at": "2024-04-24T06:22:56Z",
+      "symbols": [
+        "BA",
+        "F",
+        "STX",
+        "T",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38396305/tesla-boeing-and-3-stocks-to-watch-heading-into-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38396608,
+      "headline": "Tesla Exec Says 1,000 Cybertrucks A Week Prove 4680 Cell Production Isn't A Bottleneck: 'We Expect To Stay Ahead...'",
+      "created_at": "2024-04-24T06:59:08Z",
+      "updated_at": "2024-04-24T06:59:08Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38396608/tesla-exec-says-1-000-cybertrucks-a-week-prove-4680-cell-production-isnt-a-bottleneck-we-expect-to-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38395097,
+      "headline": "Elon Musk Likes Games Originating From This Country Because They Haven't Been Corrupted By 'Woke DEI Lies'",
+      "created_at": "2024-04-24T03:15:41Z",
+      "updated_at": "2024-04-24T07:31:09Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/general/gaming/24/04/38395097/elon-musk-likes-games-originating-from-this-country-because-because-they-havet-been-corrupted-by-w",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38397042,
+      "headline": "Tesla CEO Elon Musk Says He Feels 'Like A Wince' When Saying 'GPU' As He Boasts Rapid Progress With AI Compute: 'Need A New Word'",
+      "created_at": "2024-04-24T07:39:13Z",
+      "updated_at": "2024-04-24T07:39:14Z",
+      "symbols": [
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38397042/tesla-ceo-elon-musk-says-he-feels-like-a-wince-when-saying-gpu-as-he-boasts-rapid-progress-with-ai-c",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38396288,
+      "headline": "Tesla's Robotaxi To Be Called 'Cybercab?' Elon Musk Says Self-Driving Fleet Will Be Like 'Combination Of Airbnb And Uber'",
+      "created_at": "2024-04-24T06:19:12Z",
+      "updated_at": "2024-04-24T08:43:54Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38396288/teslas-robotaxi-to-be-called-cybercab-elon-musk-says-self-driving-fleet-will-be-like-combination-of",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38397845,
+      "headline": "Tesla Will Solve Autonomy 'Even If I Got Kidnapped By Aliens Tomorrow,' Says Elon Musk As He Reveals Talks With 'Major Automaker' For FSD Licensing",
+      "created_at": "2024-04-24T09:11:19Z",
+      "updated_at": "2024-04-24T09:11:20Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38397845/tesla-will-solve-autonomy-even-if-i-got-kidnapped-by-aliens-tomorrow-says-elon-musk-as-he-reveals-ta",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38398185,
+      "headline": "Needham Reiterates Hold on Tesla",
+      "created_at": "2024-04-24T09:50:25Z",
+      "updated_at": "2024-04-24T09:50:25Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38398185/needham-reiterates-hold-on-tesla",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38398667,
+      "headline": "Tesla Bulls Praise Musk's Q1 Earnings Call, See EV Giant On Collision Course With Uber And Lyft — But Critic Says 'Christmas Just Came Early' For Bears",
+      "created_at": "2024-04-24T10:11:59Z",
+      "updated_at": "2024-04-24T10:12:00Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38398667/tesla-bulls-praise-musks-q1-earnings-call-see-ev-giant-on-collision-course-with-ube",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38398670,
+      "headline": "B of A Securities Upgrades Tesla to Buy, Maintains $220 Price Target",
+      "created_at": "2024-04-24T10:12:27Z",
+      "updated_at": "2024-04-24T10:12:28Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38398670/b-of-a-securities-upgrades-tesla-to-buy-maintains-220-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38398736,
+      "headline": "Mizuho Maintains Neutral on Tesla, Lowers Price Target to $180",
+      "created_at": "2024-04-24T10:15:18Z",
+      "updated_at": "2024-04-24T10:15:18Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38398736/mizuho-maintains-neutral-on-tesla-lowers-price-target-to-180",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38399089,
+      "headline": "Nasdaq Futures Get A Lift From Tesla, Texas Instruments Earnings: Analyst Points To Key Catalyst For Boosting Rally",
+      "created_at": "2024-04-24T10:37:30Z",
+      "updated_at": "2024-04-24T10:37:31Z",
+      "symbols": [
+        "BIIB",
+        "BKR",
+        "BSX",
+        "BTCUSD",
+        "CMG",
+        "F",
+        "GD",
+        "HAS",
+        "HUM",
+        "IBM",
+        "KNX",
+        "LRCX",
+        "MAT",
+        "MTH",
+        "NOW",
+        "NSC",
+        "ODFL",
+        "ORLY",
+        "QQQ",
+        "QS",
+        "SPY",
+        "STLD",
+        "T",
+        "TMO",
+        "TSLA",
+        "TXN",
+        "WHR",
+        "WU"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38399089/nasdaq-futures-get-a-lift-from-tesla-texas-instruments-earnings-analyst-points-to-key-catalyst-for-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38399345,
+      "headline": "Asia And Europe Markets Rise, US Dollar Rebounds - Global Markets Today While US Slept",
+      "created_at": "2024-04-24T10:47:06Z",
+      "updated_at": "2024-04-24T10:47:07Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/04/38399345/asia-and-europe-markets-rise-us-dollar-rebounds-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38399868,
+      "headline": "Why Is Tesla Stock Surging Premarket Despite Q1 Miss?",
+      "created_at": "2024-04-24T11:05:00Z",
+      "updated_at": "2024-04-24T11:05:01Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38399868/why-is-tesla-stock-surging-premarket-despite-q1-miss",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38400599,
+      "headline": "Oppenheimer Maintains Perform on Teslato Perform",
+      "created_at": "2024-04-24T11:33:38Z",
+      "updated_at": "2024-04-24T11:33:38Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38400599/oppenheimer-maintains-perform-on-teslato-perform",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38400974,
+      "headline": "Tesla To $180? Here Are 10 Top Analyst Forecasts For Wednesday",
+      "created_at": "2024-04-24T11:44:42Z",
+      "updated_at": "2024-04-24T11:44:43Z",
+      "symbols": [
+        "AMZN",
+        "CSGP",
+        "DHR",
+        "GM",
+        "MELI",
+        "MSCI",
+        "PINS",
+        "PLCE",
+        "SPOT",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38400974/tesla-to-180-here-are-10-top-analyst-forecasts-for-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38396337,
+      "headline": "Elon Musk Answers Question On Reducing Involvement At Tesla In Coming 3 Years: 'It's Rare For Me To Take A Sunday Afternoon Off'",
+      "created_at": "2024-04-24T06:28:52Z",
+      "updated_at": "2024-04-24T11:47:06Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38396337/elon-musk-answers-question-on-reducing-involvement-at-tesla-in-coming-3-years-its-rare-for-me-to-tak",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38401202,
+      "headline": "Tesla's New $53K Model 3 Performance Eligible For Full Tax Credits, But Leasing Long Range Might Be Cheaper",
+      "created_at": "2024-04-24T11:54:29Z",
+      "updated_at": "2024-04-24T11:54:30Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38401202/teslas-new-53k-model-3-performance-eligible-for-full-tax-credits-but-leasing-long-range-might-be-che",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38401266,
+      "headline": "Truist Securities Maintains Hold on Tesla, Lowers Price Target to $162",
+      "created_at": "2024-04-24T11:59:40Z",
+      "updated_at": "2024-04-24T11:59:41Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38401266/truist-securities-maintains-hold-on-tesla-lowers-price-target-to-162",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38401641,
+      "headline": "12 Consumer Discretionary Stocks Moving In Wednesday's Pre-Market Session",
+      "created_at": "2024-04-24T12:06:43Z",
+      "updated_at": "2024-04-24T12:06:43Z",
+      "symbols": [
+        "AENT",
+        "AMST",
+        "CZOO",
+        "FRSX",
+        "JFBR",
+        "LRN",
+        "MTEN",
+        "NVFY",
+        "TSLA",
+        "VFS",
+        "VLCN",
+        "VNCE"
+      ],
+      "url": "https://www.benzinga.com/insights/movers/24/04/38401641/12-consumer-discretionary-stocks-moving-in-wednesdays-pre-market-session",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38401873,
+      "headline": "Why Tesla Shares Are Trading Higher By Over 10%; Here Are 20 Stocks Moving Premarket",
+      "created_at": "2024-04-24T12:09:58Z",
+      "updated_at": "2024-04-24T12:09:59Z",
+      "symbols": [
+        "ABVC",
+        "AEYE",
+        "BJDX",
+        "CSLR",
+        "CSSE",
+        "ENPH",
+        "EQX",
+        "EVO",
+        "INM",
+        "MIGI",
+        "NCI",
+        "NUKK",
+        "OST",
+        "PEGY",
+        "TLSA",
+        "TRSG",
+        "TSLA",
+        "TXN",
+        "WIMI",
+        "ZPTA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38401873/why-tesla-shares-are-trading-higher-by-over-10-here-are-20-stocks-moving-premarket",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38402232,
+      "headline": "Wedbush Maintains Outperform on Tesla, Lowers Price Target to $275",
+      "created_at": "2024-04-24T12:20:18Z",
+      "updated_at": "2024-04-24T12:20:19Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38402232/wedbush-maintains-outperform-on-tesla-lowers-price-target-to-275",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38402447,
+      "headline": "US Core Durable Goods Orders (MoM) (Mar) +0.2% vs +0.3% Est.",
+      "created_at": "2024-04-24T12:30:17Z",
+      "updated_at": "2024-04-24T12:30:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38402447/us-core-durable-goods-orders-mom-mar-0-2-vs-0-3-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38402448,
+      "headline": "USA Durable Goods Orders (MoM) For March 2.6% Vs 2.5% Est.; 0.7% Prior",
+      "created_at": "2024-04-24T12:30:20Z",
+      "updated_at": "2024-04-24T12:30:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38402448/usa-durable-goods-orders-mom-for-march-2-6-vs-2-5-est-0-7-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38402449,
+      "headline": "USA Durables Excluding Defense (MoM) For March 2.3% Vs 1.5% Prior",
+      "created_at": "2024-04-24T12:30:23Z",
+      "updated_at": "2024-04-24T12:30:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38402449/usa-durables-excluding-defense-mom-for-march-2-3-vs-1-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38402822,
+      "headline": "Canaccord Genuity Maintains Buy on Tesla, Lowers Price Target to $222",
+      "created_at": "2024-04-24T12:40:51Z",
+      "updated_at": "2024-04-24T12:40:51Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38402822/canaccord-genuity-maintains-buy-on-tesla-lowers-price-target-to-222",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38402856,
+      "headline": "Tesla Bull Says Elon Musk Delivered 'Rip The Band-Aid Off' Q1 But Cautions This Could Derail Bullish Thesis",
+      "created_at": "2024-04-24T12:43:33Z",
+      "updated_at": "2024-04-24T12:46:40Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38402856/tesla-bull-says-elon-musk-delivered-rip-the-band-aid-off-q1-but-cautions-this-could",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38402981,
+      "headline": "Elon Musk's Big Bet: Tesla to Ramp Up AI Development with Nvidia's Powerful Chips",
+      "created_at": "2024-04-24T12:48:27Z",
+      "updated_at": "2024-04-24T12:48:28Z",
+      "symbols": [
+        "AMZN",
+        "ASML",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "ORCL",
+        "TCEHY",
+        "TSLA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38402981/elon-musks-big-bet-tesla-to-ramp-up-ai-development-with-nvidias-powerful-chips",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38403990,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of April 24, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-04-24T13:15:06Z",
+      "updated_at": "2024-04-24T13:15:06Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "BA",
+        "DJT",
+        "INTC",
+        "META",
+        "MSFT",
+        "NFLX",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/04/38403990/top-10-trending-stocks-on-wallstreetbets-as-of-april-24-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38404191,
+      "headline": "Threat For Tesla? Apple's Chinese Rival Huawei Launches New Software For Intelligent Driving",
+      "created_at": "2024-04-24T13:19:26Z",
+      "updated_at": "2024-04-24T13:19:26Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38404191/threat-for-tesla-apples-chinese-rival-huawei-launches-new-software-for-intelligent-driving",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38404148,
+      "headline": "Tesla Provides Great Risk Reward For Long Term Investors At This Technical Level",
+      "created_at": "2024-04-24T13:17:27Z",
+      "updated_at": "2024-04-24T13:19:40Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/04/38404148/tesla-provides-great-risk-reward-for-long-term-investors-at-this-technical-level",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38404209,
+      "headline": "Roth MKM Maintains Neutral on Tesla, Maintains $85 Price Target",
+      "created_at": "2024-04-24T13:20:02Z",
+      "updated_at": "2024-04-24T13:20:03Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38404209/roth-mkm-maintains-neutral-on-tesla-maintains-85-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38405187,
+      "headline": "Elon Musk Echoes Cathie Wood, Wants Tesla To Be Seen As An AI Or Robotics Company: 'If You Value Tesla As Just An Auto Company…Wrong Framework'",
+      "created_at": "2024-04-24T13:53:21Z",
+      "updated_at": "2024-04-24T13:53:22Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38405187/elon-musk-echoes-cathie-wood-wants-tesla-to-be-seen-as-an-ai-or-robotics-company-if-you-value-te",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38405212,
+      "headline": "Tesla Stock Is Ripping Higher Wednesday: What's Going On?",
+      "created_at": "2024-04-24T13:54:19Z",
+      "updated_at": "2024-04-24T13:54:20Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38405212/tesla-stock-is-ripping-higher-wednesday-whats-going-on",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38405106,
+      "headline": "US Economy Expected To Grow 2.5% In Q1: Not 'A Hard Landing And Hardly A Soft One'",
+      "created_at": "2024-04-24T13:49:15Z",
+      "updated_at": "2024-04-24T13:57:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/24/04/38405106/us-economy-expected-to-grow-2-5-in-q1-not-a-hard-landing-and-hardly-a-soft-one",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38405732,
+      "headline": "Benzinga Morning Update: Tesla Surges On Earnings, Texas Instruments Lifts Chip Stocks Higher",
+      "created_at": "2024-04-24T14:08:41Z",
+      "updated_at": "2024-04-24T14:08:41Z",
+      "symbols": [
+        "SMH",
+        "TSLA",
+        "TXN"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38405732/benzinga-morning-update-tesla-surges-on-earnings-texas-instruments-lifts-chip-sto",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38406214,
+      "headline": "Tesla Shareholder Asks Judge To Keep Musk Pay Fight In Delaware",
+      "created_at": "2024-04-24T14:21:25Z",
+      "updated_at": "2024-04-24T14:21:26Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38406214/tesla-shareholder-asks-judge-to-keep-musk-pay-fight-in-delaware",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38406512,
+      "headline": "Nasdaq Rises 0.5%; Tesla Shares Jump After Q1 Results",
+      "created_at": "2024-04-24T14:30:27Z",
+      "updated_at": "2024-04-24T14:30:27Z",
+      "symbols": [
+        "AMST",
+        "ATXI",
+        "BOF",
+        "CSSE",
+        "EVO",
+        "GCTK",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38406512/nasdaq-rises-0-5-tesla-shares-jump-after-q1-results",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38406562,
+      "headline": "USA Crude Oil Inventories A Draw Of 6.368M Vs A Build Of 1.600M Est.; Build Of 2.735M Prior",
+      "created_at": "2024-04-24T14:31:34Z",
+      "updated_at": "2024-04-24T14:31:35Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38406562/usa-crude-oil-inventories-a-draw-of-6-368m-vs-a-build-of-1-600m-est-build-of-2-73",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38406571,
+      "headline": "USA EIA Weekly Distillates Stocks A Build Of 1.614M Vs A Draw Of 0.900M Est.; Draw Of 2.760M Prior",
+      "created_at": "2024-04-24T14:31:45Z",
+      "updated_at": "2024-04-24T14:31:46Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38406571/usa-eia-weekly-distillates-stocks-a-build-of-1-614m-vs-a-draw-of-0-900m-est-draw-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38406573,
+      "headline": "USA Gasoline Inventories A Draw Of 0.634M Vs A Draw Of 1.400M Est.; Draw Of 1.154M Prior",
+      "created_at": "2024-04-24T14:31:53Z",
+      "updated_at": "2024-04-24T14:31:54Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38406573/usa-gasoline-inventories-a-draw-of-0-634m-vs-a-draw-of-1-400m-est-draw-of-1-154m-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38406630,
+      "headline": "Market Clubhouse Morning Memo - April 24th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA)",
+      "created_at": "2024-04-24T14:33:54Z",
+      "updated_at": "2024-04-24T14:37:43Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/04/38406630/market-clubhouse-morning-memo-april-24th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38407358,
+      "headline": "President Biden Says He Signed Ukraine, Israel, Taiwan Aid Bill Into Law; On Ukraine, Israel Aid Bill, Says It's A Great Day For World Peace; It Will Make America And The World Safer",
+      "created_at": "2024-04-24T14:59:24Z",
+      "updated_at": "2024-04-24T14:59:25Z",
+      "symbols": [
+        "EIS",
+        "EWT",
+        "ISRA",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38407358/president-biden-says-he-signed-ukraine-israel-taiwan-aid-bill-into-law-on-ukraine",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38407491,
+      "headline": "President Biden On Ukraine, Israel Aid Bill, Says Now We Need To Move Fast; Ukraine Has The Will And The Skill To Win; Will Make Sure Shipments To Ukraine Start Right Away; Shipments Will Start In Next Few Hours",
+      "created_at": "2024-04-24T15:01:57Z",
+      "updated_at": "2024-04-24T15:01:58Z",
+      "symbols": [
+        "EIS",
+        "EWT",
+        "ISRA",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38407491/president-biden-on-ukraine-israel-aid-bill-says-now-we-need-to-move-fast-ukraine-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38407586,
+      "headline": "TikTok CEO Says Legislation Signed By President Biden \"Is A Ban\" On The App",
+      "created_at": "2024-04-24T15:05:33Z",
+      "updated_at": "2024-04-24T15:05:34Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38407586/tiktok-ceo-says-legislation-signed-by-president-biden-is-a-ban-on-the-app",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38407741,
+      "headline": "TikTok CEO Expects To Prevail In Courts Over Divestment Legislation, Says \"We Aren't Going Anywhere\"",
+      "created_at": "2024-04-24T15:09:36Z",
+      "updated_at": "2024-04-24T15:09:36Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38407741/tiktok-ceo-expects-to-prevail-in-courts-over-divestment-legislation-says-we-arent-going-anywhere",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38407794,
+      "headline": "\"Trump Media CEO Urges House GOP Leaders To Probe Possible 'Manipulation' Of DJT Stock\" - CNBC",
+      "created_at": "2024-04-24T15:11:00Z",
+      "updated_at": "2024-04-24T15:11:01Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38407794/trump-media-ceo-urges-house-gop-leaders-to-probe-possible-manipulation-of-djt-stock-cnbc",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38408008,
+      "headline": "TikTok Says U.S. Legislation Is 'Unconstitutional'; TikTok Says It Will Challenge U.S. Law In Court",
+      "created_at": "2024-04-24T15:16:31Z",
+      "updated_at": "2024-04-24T15:16:31Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38408008/tiktok-says-u-s-legislation-is-unconstitutional-tiktok-says-it-will-challenge-u-s-law-in-court",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38408162,
+      "headline": "Hilton Worldwide Reports Upbeat Results, Joins Hasbro, Vertiv Holdings And Other Big Stocks Moving Higher On Wednesday",
+      "created_at": "2024-04-24T15:19:08Z",
+      "updated_at": "2024-04-24T15:19:09Z",
+      "symbols": [
+        "BILI",
+        "BSX",
+        "CGEM",
+        "GPI",
+        "HAS",
+        "HLT",
+        "LRN",
+        "LWAY",
+        "MTC",
+        "NVTS",
+        "RBBN",
+        "RILY",
+        "SAGE",
+        "TSLA",
+        "TXN",
+        "VRT",
+        "WAB",
+        "WSO"
+      ],
+      "url": "https://www.benzinga.com/24/04/38408162/hilton-worldwide-reports-upbeat-results-joins-hasbro-vertiv-holdings-and-other-big-stocks-moving-hig",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38408380,
+      "headline": "Tuesday's Stock Surge Signals Resilience And Promise In The S&P 500 As Tesla Prepares To Reveal Earnings That Could Propel Markets To New Heights",
+      "created_at": "2024-04-24T15:21:43Z",
+      "updated_at": "2024-04-24T15:22:47Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/04/38408380/tuesdays-stock-surge-signals-resilience-and-promise-in-the-s-p-500-as-tesla-prepares-to-reveal-earn",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38408710,
+      "headline": "Musk Lifts Sentiment In Entire Stock Market By Saying A Regular Car Is Like \"Riding A Horse\"",
+      "created_at": "2024-04-24T15:27:37Z",
+      "updated_at": "2024-04-24T15:29:59Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "AMZN",
+        "ARM",
+        "BA",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SMCI",
+        "SPY",
+        "TSLA",
+        "TSM",
+        "USO",
+        "VRT"
+      ],
+      "url": "https://www.benzinga.com/markets/24/04/38408710/musk-lifts-sentiment-in-entire-stock-market-by-saying-a-regular-car-is-like-riding-a-horse",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38409435,
+      "headline": "Tesla Offsets News Of Steep Sales Drop and Halved Profit By Accelerating Affordable EV Plans",
+      "created_at": "2024-04-24T15:49:11Z",
+      "updated_at": "2024-04-24T15:49:30Z",
+      "symbols": [
+        "BYD",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/24/04/38409435/tesla-offsets-news-of-steep-sales-drop-and-halved-profit-by-accelerating-affordable-ev-plans",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38407101,
+      "headline": "Major indexes are higher following earnings reports across sectors. Strong earnings from TXN have lifted chip stocks while Tesla also gained following its Q1 report.",
+      "created_at": "2024-04-24T14:46:52Z",
+      "updated_at": "2024-04-24T15:53:17Z",
+      "symbols": [
+        "DIA",
+        "IWM",
+        "QQQ",
+        "QQQM",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/wiim/24/04/38407101/major-indexes-are-higher-following-earnings-reports-across-sectors-strong-earnings-from-txn-have-lif",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 38406798,
+      "headline": "Jim Cramer Takes Potshots At Tesla, Boeing, Says Post-Earnings 'Smacks Of Fiction': ' Horrendous Cash Flow'",
+      "created_at": "2024-04-24T14:38:53Z",
+      "updated_at": "2024-04-24T15:53:29Z",
+      "symbols": [
+        "BA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38406798/jim-cramer-takes-potshots-at-tesla-boeing-shrugs-off-post-earnings-rally-as-smacks-of-fiction-horre",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 38409844,
+      "headline": "\"Senate Committee Investigates Ozempic And Wegovy Costs; Senator Bernie Sanders Is Pressing The Drugmaker Novo Nordisk For Details On Its Pricing Of The Popular Diabetes And Weight Loss Medications\" - NY Times",
+      "created_at": "2024-04-24T16:03:37Z",
+      "updated_at": "2024-04-24T16:03:37Z",
+      "symbols": [
+        "NVO",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/04/38409844/senate-committee-investigates-ozempic-and-wegovy-costs-senator-bernie-sanders-is-pressing-the-dru",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38410997,
+      "headline": "RBC Capital Maintains Outperform on Tesla, Lowers Price Target to $293",
+      "created_at": "2024-04-24T16:41:48Z",
+      "updated_at": "2024-04-24T16:41:48Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38410997/rbc-capital-maintains-outperform-on-tesla-lowers-price-target-to-293",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38411281,
+      "headline": "8 Tesla Analysts Size Up Next-Gen Vehicles, FSD, AI And More: 'Potential To Be A Transformational Technology Company, Deliver Outsized Returns'",
+      "created_at": "2024-04-24T16:50:57Z",
+      "updated_at": "2024-04-24T16:50:57Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38411281/8-tesla-analysts-size-up-next-gen-vehicles-fsd-ai-and-more-potential-to-be-a-transf",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38411394,
+      "headline": "UBS Maintains Neutral on Tesla, Lowers Price Target to $147",
+      "created_at": "2024-04-24T16:54:01Z",
+      "updated_at": "2024-04-24T16:54:02Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38411394/ubs-maintains-neutral-on-tesla-lowers-price-target-to-147",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38412367,
+      "headline": "Guggenheim Maintains Sell on Tesla, Raises Price Target to $126",
+      "created_at": "2024-04-24T17:35:02Z",
+      "updated_at": "2024-04-24T17:35:03Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38412367/guggenheim-maintains-sell-on-tesla-raises-price-target-to-126",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38412371,
+      "headline": "10 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-04-24T17:35:18Z",
+      "updated_at": "2024-04-24T17:35:18Z",
+      "symbols": [
+        "AMZN",
+        "APTV",
+        "CMG",
+        "CZR",
+        "ETSY",
+        "JD",
+        "LI",
+        "NCLH",
+        "PENN",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/04/38412371/10-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38412375,
+      "headline": "Jim Cramer Says Tesla Stock Could Climb To $175 Today On Back Of Elon Musk Comments: 'Everything That Was Bad Is Now Good'",
+      "created_at": "2024-04-24T17:35:58Z",
+      "updated_at": "2024-04-24T17:35:59Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/04/38412375/jim-cramer-says-tesla-stock-could-climb-to-175-today-on-back-of-elon-musk-comments-everything-that-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38412499,
+      "headline": "Treasury Yields Rise, Tesla Jumps On Cheaper Model Pledge, Yen Plummets To 34-Year Lows: What's Driving Markets Wednesday?",
+      "created_at": "2024-04-24T17:40:39Z",
+      "updated_at": "2024-04-24T17:40:58Z",
+      "symbols": [
+        "BA",
+        "BIIB",
+        "BKR",
+        "BSX",
+        "BTCUSD",
+        "CB",
+        "CME",
+        "CMG",
+        "DIA",
+        "F",
+        "GD",
+        "HAS",
+        "HLT",
+        "HUM",
+        "IBM",
+        "IWM",
+        "KNX",
+        "LRCX",
+        "MAT",
+        "MTH",
+        "NOW",
+        "NSC",
+        "ODFL",
+        "ORLY",
+        "QQQ",
+        "QS",
+        "SPY",
+        "STLD",
+        "T",
+        "TLT",
+        "TMO",
+        "TXN",
+        "WHR",
+        "WU",
+        "XLB",
+        "XLC",
+        "XLI",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/04/38412499/treasury-yields-rise-tesla-jumps-on-cheaper-model-pledge-yen-plummets-to-34-year-lows-what",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38412561,
+      "headline": "Cashing In On Tesla's Post-Earnings Bounce--Ben Graham's \"The Intelligent Investor\" Is No Guide Here",
+      "created_at": "2024-04-24T17:43:07Z",
+      "updated_at": "2024-04-24T17:54:12Z",
+      "symbols": [
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/24/04/38412561/cashing-in-on-teslas-post-earnings-bounce-ben-grahams-the-intelligent-investor-is-no-guide-here",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38412758,
+      "headline": "Citigroup Maintains Neutral on Tesla, Raises Price Target to $182",
+      "created_at": "2024-04-24T17:54:11Z",
+      "updated_at": "2024-04-24T17:54:12Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38412758/citigroup-maintains-neutral-on-tesla-raises-price-target-to-182",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38412830,
+      "headline": "Why Teledyne Technologies Shares Are Trading Lower By 9%? Here Are Other Stocks Moving In Wednesday's Mid-Day Session",
+      "created_at": "2024-04-24T17:57:43Z",
+      "updated_at": "2024-04-24T17:57:44Z",
+      "symbols": [
+        "AMST",
+        "APDN",
+        "ATXI",
+        "BNAI",
+        "BOF",
+        "BSX",
+        "BW",
+        "CSSE",
+        "EDU",
+        "ENPH",
+        "EQX",
+        "EVO",
+        "FNCH",
+        "GCTK",
+        "HAS",
+        "HELE",
+        "HLT",
+        "ICG",
+        "ISUN",
+        "LAD",
+        "LICN",
+        "LRN",
+        "MANH",
+        "MRSN",
+        "MTC",
+        "MULN",
+        "NCI",
+        "NIVF",
+        "NVTS",
+        "ODFL",
+        "PRE",
+        "RBBN",
+        "RCON",
+        "RILY",
+        "SNBR",
+        "TDY",
+        "TROO",
+        "TSLA",
+        "TXN",
+        "VAXX",
+        "VICR",
+        "VRT",
+        "WAB",
+        "WIMI",
+        "YYAI"
+      ],
+      "url": "https://www.benzinga.com/24/04/38412830/why-teledyne-technologies-shares-are-trading-lower-by-9-here-are-other-stocks-moving-in-wednesdays-m",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38413619,
+      "headline": "HSBC Maintains Reduce on Tesla, Lowers Price Target to $120",
+      "created_at": "2024-04-24T18:29:16Z",
+      "updated_at": "2024-04-24T18:29:17Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38413619/hsbc-maintains-reduce-on-tesla-lowers-price-target-to-120",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38413805,
+      "headline": "AI Server Market Is Expanding Rapidly - Analysts Highlight Super Micro Computer's Importance In The Game",
+      "created_at": "2024-04-24T18:38:58Z",
+      "updated_at": "2024-04-24T18:38:58Z",
+      "symbols": [
+        "ARM",
+        "META",
+        "NTNX",
+        "NVDA",
+        "SMCI",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38413805/ai-server-market-is-expanding-rapidly-analysts-highlight-super-micro-computers-impo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38414172,
+      "headline": "White House National Security Adviser Sullivan Says U.S. Shipped Long-Range Missiles To Ukraine; Will Send More Missiles To Ukraine",
+      "created_at": "2024-04-24T19:02:37Z",
+      "updated_at": "2024-04-24T19:07:32Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/04/38414172/white-house-national-security-adviser-sullivan-says-u-s-shipped-long-range-missil",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38414718,
+      "headline": "White House National Security Adviser Sullivan Says Focused On Working Through TikTok Divestment In Way Consistent With National Security Concerns; China Should Allow TikTok To Be Sold; There Are A Number Of Interested Potential Buyers",
+      "created_at": "2024-04-24T19:38:40Z",
+      "updated_at": "2024-04-24T19:38:41Z",
+      "symbols": [
+        "AMZN",
+        "FXI",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/04/38414718/white-house-national-security-adviser-sullivan-says-focused-on-working-through-tiktok-divestment-in",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38415577,
+      "headline": "Tesla Posts Strongest Session Since January 2022: Is A Trend Reversal Underway?",
+      "created_at": "2024-04-24T20:11:13Z",
+      "updated_at": "2024-04-24T20:11:14Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/04/38415577/tesla-posts-strongest-session-since-january-2022-is-a-trend-reversal-underway",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38420894,
+      "headline": "Meta Platforms, Snap, Amazon, IBM, Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-04-25T01:47:51Z",
+      "updated_at": "2024-04-25T01:47:52Z",
+      "symbols": [
+        "AMZN",
+        "IBM",
+        "META",
+        "SNAP",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/04/38420894/meta-platforms-snap-amazon-ibm-tesla-why-these-5-stocks-are-on-investors-radars-today",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

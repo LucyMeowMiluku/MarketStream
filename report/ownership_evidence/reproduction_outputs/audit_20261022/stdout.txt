@@ -1,0 +1,1 @@
+{"run_id": "audit-synthetic-20261022", "counts": {"positive_cases": 360, "positive_alerts": 420, "positive_alerting_cases": 360, "positive_tp": 360, "positive_fp": 60, "positive_fn": 0, "negative_control_cases": 240, "negative_control_alerts": 60, "negative_control_alerting_cases": 40, "negative_control_tp": 0, "negative_control_fp": 60, "negative_control_fn": 0}}

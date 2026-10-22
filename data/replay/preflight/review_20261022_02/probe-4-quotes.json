@@ -1,0 +1,19 @@
+{
+  "next_page_token": "U1BZfDE3MzMzMzg4MDAzNTA3MzEwMDh8Vnw2MDUuODZ8MXxWfDYwNi4wOXwxfFI=",
+  "quotes": [
+    {
+      "ap": 606.09,
+      "as": 1,
+      "ax": "V",
+      "bp": 605.87,
+      "bs": 1,
+      "bx": "V",
+      "c": [
+        "R"
+      ],
+      "t": "2024-12-04T19:00:00.211384832Z",
+      "z": "B"
+    }
+  ],
+  "symbol": "SPY"
+}

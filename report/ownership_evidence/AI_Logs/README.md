@@ -56,3 +56,7 @@ JSONL 每行是一个保留记录。建议先看 `../05_AI_Log_Index_CN.md`。�
 3. 删除凭据和私人邮箱，并保留 `[REDACTED: credential]` 说明。
 4. 不修改原始对话内容。
 5. 重新计算 SHA-256，并在索引中标注新增文件。
+
+## 2026-10-22 归属核对补充
+
+本轮没有改写 transcript 或既有 SHA256SUMS。个人决策与 AI 实施见[五列表](../08_Contribution_Attribution_Matrix_CN.md)；[摘录附件](../Evidence_Attachments/Decision_Log_Excerpts.md)记录原行号、角色、UTC 时间及已有 JSON 转义失败行。被选作证据的记录可严格解析。fork 继承的相同历史不作独立多重证明，当前归档也不等于完整 Claude 或账号官方导出。

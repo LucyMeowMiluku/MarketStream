@@ -1,0 +1,98 @@
+{
+  "config": {
+    "period": "60d",
+    "train_ratio": 0.7,
+    "injection_rate": 0.05,
+    "seed": 42,
+    "tickers": [
+      "AAPL",
+      "TSLA",
+      "NVDA"
+    ],
+    "threshold": -0.25
+  },
+  "training": {
+    "isolation_forest": {
+      "samples": 9816,
+      "anomalies": 491,
+      "anomaly_rate": 0.05,
+      "score_mean": 0.1214,
+      "score_std": 0.058
+    },
+    "lstm": {
+      "sequences": 9783,
+      "final_loss": 0.298554
+    }
+  },
+  "metrics": {
+    "precision": 0.4638,
+    "recall": 0.7111,
+    "f1": 0.5614,
+    "false_positive_rate": 0.046436,
+    "detection_latency_mean": 0.1,
+    "detection_latency_median": 0.0,
+    "total_detections": 345,
+    "total_ground_truth": 225,
+    "true_positives": 160,
+    "false_positives": 185,
+    "false_negatives": 65,
+    "per_type_recall": {
+      "sentiment_crash": 1.0,
+      "volume_surge": 0.7963,
+      "price_spike": 0.5493,
+      "multi_feature": 0.6757,
+      "subtle_drift": 0.3333
+    },
+    "per_detector_metrics": {
+      "ewma": {
+        "precision": 0.2313,
+        "recall": 0.8267,
+        "f1": 0.3615,
+        "detections": 804
+      },
+      "hst": {
+        "precision": 0.0418,
+        "recall": 0.3067,
+        "f1": 0.0736,
+        "detections": 1650
+      },
+      "isolation_forest": {
+        "precision": 0.493,
+        "recall": 0.4711,
+        "f1": 0.4818,
+        "detections": 215
+      },
+      "lstm_ae": {
+        "precision": 0.0558,
+        "recall": 0.3644,
+        "f1": 0.0968,
+        "detections": 1469
+      }
+    }
+  },
+  "score_statistics": {
+    "ensemble_mean": -0.1402,
+    "ensemble_std": 0.1187,
+    "cohens_d": 1.7783,
+    "anomaly_score_mean": -0.4334,
+    "normal_score_mean": -0.1237,
+    "ewma_mean": -0.2005,
+    "ewma_std": 0.1675,
+    "hst_mean": -0.3063,
+    "hst_std": 0.2282,
+    "isolation_forest_mean": -0.0344,
+    "isolation_forest_std": 0.1422,
+    "lstm_ae_mean": -0.2926,
+    "lstm_ae_std": 0.2705
+  },
+  "drift_test": {
+    "shift_start_index": 3367,
+    "total_rows": 4209,
+    "detection_latency": {
+      "total_volume": 88,
+      "avg_sentiment": 182
+    },
+    "total_drift_events": 37
+  },
+  "drift_events_during_replay": 16
+}

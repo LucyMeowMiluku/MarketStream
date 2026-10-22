@@ -1,0 +1,28 @@
+Earlier verification: .venv/bin/pytest -q tests/test_replay_labels.py tests/test_event_metrics.py tests/test_isolation_forest_baseline.py
+11 passed in 1.55s. Unit/contract checks only, no market-effectiveness claim.
+
+[
+  {
+    "command": [
+      ".venv/bin/python",
+      "-m",
+      "replay.labels",
+      "validate",
+      "data/replay/labels/iex_benchmark_v1.draft.json",
+      "--require-frozen"
+    ],
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/ywx/Documents/NTU/capstone_project/replay/labels.py\", line 214, in <module>\n    main()\n  File \"/Users/ywx/Documents/NTU/capstone_project/replay/labels.py\", line 198, in main\n    registry.validate(\n  File \"/Users/ywx/Documents/NTU/capstone_project/replay/labels.py\", line 106, in validate\n    raise ValueError(\"label registry is not frozen\")\nValueError: label registry is not frozen\n"
+  },
+  {
+    "command": [
+      ".venv/bin/ruff",
+      "check",
+      "scripts/prepare_reviewed_replay.py"
+    ],
+    "exit_code": 0,
+    "stdout": "All checks passed!\n",
+    "stderr": ""
+  }
+]

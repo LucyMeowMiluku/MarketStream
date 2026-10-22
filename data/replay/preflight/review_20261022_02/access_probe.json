@@ -1,0 +1,361 @@
+{
+  "status": "sampled_only",
+  "full_event_coverage_verified": false,
+  "license_and_retention_terms_verified": false,
+  "requests": [
+    {
+      "interval_id": "nvda-control-2024-02-08",
+      "endpoint": "/v2/stocks/NVDA/trades",
+      "params": {
+        "start": "2024-02-08T14:30:00Z",
+        "end": "2024-02-08T16:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-0-trades.json"
+    },
+    {
+      "interval_id": "nvda-control-2024-02-08",
+      "endpoint": "/v2/stocks/NVDA/quotes",
+      "params": {
+        "start": "2024-02-08T14:30:00Z",
+        "end": "2024-02-08T16:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-0-quotes.json"
+    },
+    {
+      "interval_id": "nvda-control-2024-02-08",
+      "kind": "prior_session_calendar",
+      "required_sessions": 20,
+      "event_coverage_verified": false,
+      "status": "accessible",
+      "sessions": [
+        "2024-01-10",
+        "2024-01-11",
+        "2024-01-12",
+        "2024-01-16",
+        "2024-01-17",
+        "2024-01-18",
+        "2024-01-19",
+        "2024-01-22",
+        "2024-01-23",
+        "2024-01-24",
+        "2024-01-25",
+        "2024-01-26",
+        "2024-01-29",
+        "2024-01-30",
+        "2024-01-31",
+        "2024-02-01",
+        "2024-02-02",
+        "2024-02-05",
+        "2024-02-06",
+        "2024-02-07"
+      ]
+    },
+    {
+      "interval_id": "tsla-control-2024-04-10",
+      "endpoint": "/v2/stocks/TSLA/trades",
+      "params": {
+        "start": "2024-04-10T13:30:00Z",
+        "end": "2024-04-10T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-1-trades.json"
+    },
+    {
+      "interval_id": "tsla-control-2024-04-10",
+      "endpoint": "/v2/stocks/TSLA/quotes",
+      "params": {
+        "start": "2024-04-10T13:30:00Z",
+        "end": "2024-04-10T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-1-quotes.json"
+    },
+    {
+      "interval_id": "tsla-control-2024-04-10",
+      "kind": "prior_session_calendar",
+      "required_sessions": 20,
+      "event_coverage_verified": false,
+      "status": "accessible",
+      "sessions": [
+        "2024-03-12",
+        "2024-03-13",
+        "2024-03-14",
+        "2024-03-15",
+        "2024-03-18",
+        "2024-03-19",
+        "2024-03-20",
+        "2024-03-21",
+        "2024-03-22",
+        "2024-03-25",
+        "2024-03-26",
+        "2024-03-27",
+        "2024-03-28",
+        "2024-04-01",
+        "2024-04-02",
+        "2024-04-03",
+        "2024-04-04",
+        "2024-04-05",
+        "2024-04-08",
+        "2024-04-09"
+      ]
+    },
+    {
+      "interval_id": "aapl-control-2024-04-19",
+      "endpoint": "/v2/stocks/AAPL/trades",
+      "params": {
+        "start": "2024-04-19T13:30:00Z",
+        "end": "2024-04-19T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-2-trades.json"
+    },
+    {
+      "interval_id": "aapl-control-2024-04-19",
+      "endpoint": "/v2/stocks/AAPL/quotes",
+      "params": {
+        "start": "2024-04-19T13:30:00Z",
+        "end": "2024-04-19T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-2-quotes.json"
+    },
+    {
+      "interval_id": "aapl-control-2024-04-19",
+      "kind": "prior_session_calendar",
+      "required_sessions": 20,
+      "event_coverage_verified": false,
+      "status": "accessible",
+      "sessions": [
+        "2024-03-21",
+        "2024-03-22",
+        "2024-03-25",
+        "2024-03-26",
+        "2024-03-27",
+        "2024-03-28",
+        "2024-04-01",
+        "2024-04-02",
+        "2024-04-03",
+        "2024-04-04",
+        "2024-04-05",
+        "2024-04-08",
+        "2024-04-09",
+        "2024-04-10",
+        "2024-04-11",
+        "2024-04-12",
+        "2024-04-15",
+        "2024-04-16",
+        "2024-04-17",
+        "2024-04-18"
+      ]
+    },
+    {
+      "interval_id": "qqq-control-2024-07-22",
+      "endpoint": "/v2/stocks/QQQ/trades",
+      "params": {
+        "start": "2024-07-22T13:30:00Z",
+        "end": "2024-07-22T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-3-trades.json"
+    },
+    {
+      "interval_id": "qqq-control-2024-07-22",
+      "endpoint": "/v2/stocks/QQQ/quotes",
+      "params": {
+        "start": "2024-07-22T13:30:00Z",
+        "end": "2024-07-22T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-3-quotes.json"
+    },
+    {
+      "interval_id": "qqq-control-2024-07-22",
+      "kind": "prior_session_calendar",
+      "required_sessions": 20,
+      "event_coverage_verified": false,
+      "status": "accessible",
+      "sessions": [
+        "2024-06-21",
+        "2024-06-24",
+        "2024-06-25",
+        "2024-06-26",
+        "2024-06-27",
+        "2024-06-28",
+        "2024-07-01",
+        "2024-07-02",
+        "2024-07-03",
+        "2024-07-05",
+        "2024-07-08",
+        "2024-07-09",
+        "2024-07-10",
+        "2024-07-11",
+        "2024-07-12",
+        "2024-07-15",
+        "2024-07-16",
+        "2024-07-17",
+        "2024-07-18",
+        "2024-07-19"
+      ]
+    },
+    {
+      "interval_id": "spy-control-2024-12-04",
+      "endpoint": "/v2/stocks/SPY/trades",
+      "params": {
+        "start": "2024-12-04T19:00:00Z",
+        "end": "2024-12-04T20:30:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-4-trades.json"
+    },
+    {
+      "interval_id": "spy-control-2024-12-04",
+      "endpoint": "/v2/stocks/SPY/quotes",
+      "params": {
+        "start": "2024-12-04T19:00:00Z",
+        "end": "2024-12-04T20:30:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-4-quotes.json"
+    },
+    {
+      "interval_id": "spy-control-2024-12-04",
+      "kind": "prior_session_calendar",
+      "required_sessions": 20,
+      "event_coverage_verified": false,
+      "status": "accessible",
+      "sessions": [
+        "2024-11-05",
+        "2024-11-06",
+        "2024-11-07",
+        "2024-11-08",
+        "2024-11-11",
+        "2024-11-12",
+        "2024-11-13",
+        "2024-11-14",
+        "2024-11-15",
+        "2024-11-18",
+        "2024-11-19",
+        "2024-11-20",
+        "2024-11-21",
+        "2024-11-22",
+        "2024-11-25",
+        "2024-11-26",
+        "2024-11-27",
+        "2024-11-29",
+        "2024-12-02",
+        "2024-12-03"
+      ]
+    },
+    {
+      "interval_id": "spy-reciprocal-tariff-reaction",
+      "endpoint": "/v2/stocks/SPY/trades",
+      "params": {
+        "start": "2025-04-03T13:30:00Z",
+        "end": "2025-04-03T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-5-trades.json"
+    },
+    {
+      "interval_id": "spy-reciprocal-tariff-reaction",
+      "endpoint": "/v2/stocks/SPY/quotes",
+      "params": {
+        "start": "2025-04-03T13:30:00Z",
+        "end": "2025-04-03T15:00:00Z",
+        "feed": "iex",
+        "limit": 1,
+        "sort": "asc"
+      },
+      "complete_dataset": false,
+      "status": "accessible",
+      "rows": 1,
+      "artifact": "probe-5-quotes.json"
+    },
+    {
+      "interval_id": "spy-reciprocal-tariff-reaction",
+      "kind": "prior_session_calendar",
+      "required_sessions": 20,
+      "event_coverage_verified": false,
+      "status": "accessible",
+      "sessions": [
+        "2025-03-06",
+        "2025-03-07",
+        "2025-03-10",
+        "2025-03-11",
+        "2025-03-12",
+        "2025-03-13",
+        "2025-03-14",
+        "2025-03-17",
+        "2025-03-18",
+        "2025-03-19",
+        "2025-03-20",
+        "2025-03-21",
+        "2025-03-24",
+        "2025-03-25",
+        "2025-03-26",
+        "2025-03-27",
+        "2025-03-28",
+        "2025-03-31",
+        "2025-04-01",
+        "2025-04-02"
+      ]
+    }
+  ]
+}

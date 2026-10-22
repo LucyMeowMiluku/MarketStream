@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_PREPARATION",
+  "command": ".venv/bin/python scripts/prepare_reviewed_replay.py --probe --output data/replay/preflight/review_20261022_01",
+  "exit_code": 1,
+  "reason": "No module named pip when collecting environment; failed before API probes",
+  "detector_executed": false,
+  "metrics": null
+}

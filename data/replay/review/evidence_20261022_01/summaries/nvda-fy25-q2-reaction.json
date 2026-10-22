@@ -1,0 +1,1179 @@
+{
+  "interval_id": "nvda-fy25-q2-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "NVDA",
+  "started_at": "2024-08-29T13:30:00Z",
+  "ended_at": "2024-08-29T15:00:00Z",
+  "local_start": "2024-08-29T09:30:00-04:00",
+  "local_end": "2024-08-29T11:00:00-04:00",
+  "symbols": {
+    "NVDA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-28T19:59:00Z",
+      "prior_close": 125.57,
+      "first_minute": "2024-08-29T13:30:00Z",
+      "last_minute": "2024-08-29T14:59:00Z",
+      "first_open": 121,
+      "last_close": 122.19,
+      "gap_pct": -3.639404316317585,
+      "end_vs_prior_pct": -2.6917257306681486,
+      "window_return_pct": 0.9834710743801711,
+      "window_range_pct": 4.272727272727274,
+      "volume": 1997660,
+      "raw_artifact": "raw/nvda-fy25-q2-reaction/NVDA.minutes.json"
+    },
+    "QQQ": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-08-29T14:34:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-28T19:59:00Z",
+      "prior_close": 471.24,
+      "first_minute": "2024-08-29T13:30:00Z",
+      "last_minute": "2024-08-29T14:59:00Z",
+      "first_open": 473.2,
+      "last_close": 476.66,
+      "gap_pct": 0.41592394533571664,
+      "end_vs_prior_pct": 1.1501570325099797,
+      "window_return_pct": 0.7311918850380517,
+      "window_range_pct": 1.0629754860524034,
+      "volume": 169737,
+      "raw_artifact": "raw/nvda-fy25-q2-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-08-29T14:06:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-28T19:59:00Z",
+      "prior_close": 558.35,
+      "first_minute": "2024-08-29T13:30:00Z",
+      "last_minute": "2024-08-29T14:59:00Z",
+      "first_open": 560.27,
+      "last_close": 562.045,
+      "gap_pct": 0.3438703322288905,
+      "end_vs_prior_pct": 0.6617712904092299,
+      "window_return_pct": 0.3168115372945257,
+      "window_range_pct": 0.6032805611580123,
+      "volume": 187158,
+      "raw_artifact": "raw/nvda-fy25-q2-reaction/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 40617519,
+      "headline": "Nvidia CFO Colette Kress Says Chinese Revenue Remains Resilient Despite US Imposed Export Controls: 'Expect The China Market To Be Very Competitive Going Forward'",
+      "created_at": "2024-08-29T04:52:36Z",
+      "updated_at": "2024-08-29T04:52:36Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40617519/nvidia-cfo-colette-kress-says-chinese-revenue-remains-resilient-despite-us-imposed-export-controls-e",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40617599,
+      "headline": "Nvidia, Best Buy And 3 Stocks To Watch Heading Into Thursday",
+      "created_at": "2024-08-29T04:59:38Z",
+      "updated_at": "2024-08-29T06:14:22Z",
+      "symbols": [
+        "BBY",
+        "DELL",
+        "DG",
+        "HPQ",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40617599/nvidia-best-buy-and-3-stocks-to-watch-heading-into-thursday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40618131,
+      "headline": "Nasdaq Tumbles Over 1% As Super Micro And Other Chip Stocks Decline: Fear & Greed Index Remains In 'Neutral' Zone",
+      "created_at": "2024-08-29T06:26:52Z",
+      "updated_at": "2024-08-29T06:26:53Z",
+      "symbols": [
+        "BBY",
+        "DELL",
+        "DG",
+        "FL",
+        "NVDA",
+        "SMCI"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40618131/nasdaq-tumbles-over-1-as-super-micro-and-other-chip-stocks-decline-fear-greed-index-remains-in-neut",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40618139,
+      "headline": "Nvidia's Sovereign AI Segment Set To Generate 'Low Double-Digit Billions' This Year, Says CFO: They 'Have To Use AI' To Have Their Own Digital Intelligence",
+      "created_at": "2024-08-29T06:29:22Z",
+      "updated_at": "2024-08-29T06:29:22Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/08/40618139/nvidias-sovereign-ai-segment-set-to-generate-low-double-digit-billions-this-year-says-cfo-they-h",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40618295,
+      "headline": "AI Crypto Tokens Crack Despite Nvidia's Q2 Earnings Beat—But YTD Performance Aligns With Tech Stock's Blockbuster Run",
+      "created_at": "2024-08-29T06:41:18Z",
+      "updated_at": "2024-08-29T06:41:19Z",
+      "symbols": [
+        "FETUSD",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/08/40618295/ai-crypto-tokens-crack-despite-nvidias-q2-earnings-beat-but-ytd-performance-aligns-with-te",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40594137,
+      "headline": "Here's What Nvidia's Jensen Huang Had To Say About AMD CEO And His Cousin Lisa Su",
+      "created_at": "2024-08-28T08:09:57Z",
+      "updated_at": "2024-08-29T07:09:44Z",
+      "symbols": [
+        "AMD",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40594137/heres-what-nvidias-jensen-huang-had-to-say-about-amd-ceo-and-his-cousin-lisa-su",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40619714,
+      "headline": "Nvidia Slumps Nearly 5% In Premarket, Dragging Down Super Micro, Micron And Other Peers: What's Going On?",
+      "created_at": "2024-08-29T09:11:01Z",
+      "updated_at": "2024-08-29T09:11:01Z",
+      "symbols": [
+        "AMD",
+        "ARM",
+        "AVGO",
+        "MRVL",
+        "MU",
+        "NVDA",
+        "SMCI",
+        "SOXX",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40619714/nvidia-slumps-nearly-5-in-premarket-dragging-down-super-micro-micron-and-other-peers-whats-going-on",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40620136,
+      "headline": "Mizuho Maintains Outperform on NVIDIA, Raises Price Target to $140",
+      "created_at": "2024-08-29T09:43:32Z",
+      "updated_at": "2024-08-29T09:43:32Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40620136/mizuho-maintains-outperform-on-nvidia-raises-price-target-to-140",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40620201,
+      "headline": "Raymond James Maintains Strong Buy on NVIDIA, Raises Price Target to $140",
+      "created_at": "2024-08-29T09:51:11Z",
+      "updated_at": "2024-08-29T09:51:12Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40620201/raymond-james-maintains-strong-buy-on-nvidia-raises-price-target-to-140",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40620595,
+      "headline": "As Nvidia Tumbles Post Q2 Earnings, Tech Bull Draws Parallels To Market's Reaction To Apple Stock After WWDC 2024: 'We Always Focus On Demand, Guidance, And Growth'",
+      "created_at": "2024-08-29T10:08:18Z",
+      "updated_at": "2024-08-29T10:08:19Z",
+      "symbols": [
+        "AAPL",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/08/40620595/as-nvidia-tumbles-post-q2-earnings-tech-bull-draws-parallels-to-markets-reaction-to",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40620849,
+      "headline": "U.S. National Security Adviser Sullivan Said U.S. Indo-Pacific Command And Chinese Southern Command Leader Will Speak",
+      "created_at": "2024-08-29T10:18:56Z",
+      "updated_at": "2024-08-29T10:18:56Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40620849/u-s-national-security-adviser-sullivan-said-u-s-indo-pacific-command-and-chinese-southern-command-le",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40620886,
+      "headline": "Sullivan Said President Biden And China's Xi Will Likely Be At G20 And Apec Conferences This Year, May Have Chance To See One Another",
+      "created_at": "2024-08-29T10:19:44Z",
+      "updated_at": "2024-08-29T10:19:45Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40620886/sullivan-said-president-biden-and-chinas-xi-will-likely-be-at-g20-and-apec-conferences-this-year-may",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40621520,
+      "headline": "Needham Maintains Buy on NVIDIA, Raises Price Target to $145",
+      "created_at": "2024-08-29T10:49:44Z",
+      "updated_at": "2024-08-29T10:49:45Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40621520/needham-maintains-buy-on-nvidia-raises-price-target-to-145",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40621553,
+      "headline": "Wall Street On Track For Relief Rally With Nvidia Earnings In Rearview Mirror: Strategist Says Near-Term Market Trajectory May Not Hinge On Presidential Election But This",
+      "created_at": "2024-08-29T10:54:46Z",
+      "updated_at": "2024-08-29T10:54:47Z",
+      "symbols": [
+        "ADSK",
+        "AEO",
+        "AFRM",
+        "BBY",
+        "BTCUSD",
+        "BURL",
+        "COO",
+        "CPB",
+        "CRM",
+        "CRWD",
+        "DELL",
+        "DG",
+        "FIVE",
+        "GPS",
+        "HPQ",
+        "LULU",
+        "MDB",
+        "MRVL",
+        "NTAP",
+        "NTNX",
+        "NVDA",
+        "OKTA",
+        "OLLI",
+        "PSTG",
+        "QQQ",
+        "SMCI",
+        "SPY",
+        "ULTA",
+        "VSCO"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40621553/wall-street-on-track-for-relief-rally-with-nvidia-earnings-in-rearview-mirror-strategist-says-near-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40622578,
+      "headline": "Asia Markets Mixed, Europe Advances; US Dollar Gains While Gold Hits New High At $2,555 - Global Markets Today While US Slept",
+      "created_at": "2024-08-29T11:19:59Z",
+      "updated_at": "2024-08-29T11:19:59Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/08/40622578/asia-markets-mixed-europe-advances-us-dollar-gains-while-gold-hits-new-high-at-2-555-global-markets",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40622630,
+      "headline": "US Embargo Fuels China's $6B Plus Data Center Investment: Report",
+      "created_at": "2024-08-29T11:26:39Z",
+      "updated_at": "2024-08-29T11:26:40Z",
+      "symbols": [
+        "AMD",
+        "BABA",
+        "MU",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/government/24/08/40622630/us-embargo-fuels-chinas-6b-plus-data-center-investment-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40622868,
+      "headline": "Intel Faces Scrutiny Over Job Cuts While Competing for $20B US Chip Subsidy",
+      "created_at": "2024-08-29T11:33:24Z",
+      "updated_at": "2024-08-29T11:33:24Z",
+      "symbols": [
+        "INTC",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/government/24/08/40622868/intel-faces-scrutiny-over-job-cuts-while-competing-for-20b-us-chip-subsidy",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40623266,
+      "headline": "Baird Maintains Outperform on NVIDIA, Raises Price Target to $150",
+      "created_at": "2024-08-29T11:56:11Z",
+      "updated_at": "2024-08-29T11:56:11Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40623266/baird-maintains-outperform-on-nvidia-raises-price-target-to-150",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40623597,
+      "headline": "Rosenblatt Maintains Buy on NVIDIA, Maintains $200 Price Target",
+      "created_at": "2024-08-29T12:05:40Z",
+      "updated_at": "2024-08-29T12:05:41Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40623597/rosenblatt-maintains-buy-on-nvidia-maintains-200-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40623804,
+      "headline": "B of A Securities Maintains Buy on NVIDIA, Raises Price Target to $165",
+      "created_at": "2024-08-29T12:12:18Z",
+      "updated_at": "2024-08-29T12:12:19Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40623804/b-of-a-securities-maintains-buy-on-nvidia-raises-price-target-to-165",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40623834,
+      "headline": "Guess?, Nvidia, Pure Storage, Applied Digital And Other Big Stocks Moving Lower In Thursday's Pre-Market Session",
+      "created_at": "2024-08-29T12:13:11Z",
+      "updated_at": "2024-08-29T12:13:12Z",
+      "symbols": [
+        "APLD",
+        "BLDP",
+        "GES",
+        "LPA",
+        "MODG",
+        "NVDA",
+        "OKTA",
+        "PSTG",
+        "VYX"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40623834/guess-nvidia-pure-storage-applied-digital-and-other-big-stocks-moving-lower-in-thursdays-pre-market",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624103,
+      "headline": "Wells Fargo Maintains Overweight on NVIDIA, Raises Price Target to $165",
+      "created_at": "2024-08-29T12:28:16Z",
+      "updated_at": "2024-08-29T12:28:17Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40624103/wells-fargo-maintains-overweight-on-nvidia-raises-price-target-to-165",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624107,
+      "headline": "Traders Brace For Fed's Favorite Inflation Report Friday: July Price Pressures Expected To Edge Higher",
+      "created_at": "2024-08-29T12:28:58Z",
+      "updated_at": "2024-08-29T12:28:58Z",
+      "symbols": [
+        "IWM",
+        "QQQ",
+        "SPY",
+        "TLT",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/08/40624107/traders-brace-for-feds-favorite-inflation-report-friday-july-price-pressures-expect",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624186,
+      "headline": "GDP (QoQ) (Q2) +3% vs +2.8% Est.",
+      "created_at": "2024-08-29T12:30:11Z",
+      "updated_at": "2024-08-29T12:30:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40624186/gdp-qoq-q2-3-vs-2-8-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624187,
+      "headline": "Goods Trade Balance For July -102.66B Vs -97.7B Estimate, -96.56B Prior",
+      "created_at": "2024-08-29T12:30:14Z",
+      "updated_at": "2024-08-29T12:30:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40624187/goods-trade-balance-for-july-102-66b-vs-97-7b-estimate-96-56b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624188,
+      "headline": "USA Retail Inventories Ex Auto For July 0.5%; 0.3% Prior",
+      "created_at": "2024-08-29T12:30:14Z",
+      "updated_at": "2024-08-29T12:30:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40624188/usa-retail-inventories-ex-auto-for-july-0-5-0-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40620740,
+      "headline": "Nvidia ETFs Split In Pre-Market After Jensen Huang-Led Chip Giant Exceeds Q2 Expectations",
+      "created_at": "2024-08-29T10:15:09Z",
+      "updated_at": "2024-08-29T12:30:21Z",
+      "symbols": [
+        "NVDA",
+        "NVDL",
+        "NVDQ",
+        "NVDU",
+        "SOXL",
+        "SOXX",
+        "USD"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40620740/nvidia-etfs-split-in-pre-market-after-jensen-huang-led-chip-giant-exceeded-q2-expectations",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624181,
+      "headline": "USA Initial Jobless Claims 231K Vs 232K Est.; 232K Prior (Revised To 233K)",
+      "created_at": "2024-08-29T12:30:08Z",
+      "updated_at": "2024-08-29T12:30:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40624181/usa-initial-jobless-claims-231k-vs-232k-est-232k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624209,
+      "headline": "USA Continuing Jobless Claims 1,868K Vs 1,870K Est.; 1,855K Prior",
+      "created_at": "2024-08-29T12:30:26Z",
+      "updated_at": "2024-08-29T12:30:27Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40624209/usa-continuing-jobless-claims-1-868k-vs-1-870k-est-1-855k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624217,
+      "headline": "US Core PCE Prices (Q2) 2.8% vs 2.9% Est.",
+      "created_at": "2024-08-29T12:30:32Z",
+      "updated_at": "2024-08-29T12:30:33Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40624217/us-core-pce-prices-q2-2-8-vs-2-9-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624645,
+      "headline": "Craig-Hallum Maintains Buy on NVIDIA, Raises Price Target to $165",
+      "created_at": "2024-08-29T12:43:10Z",
+      "updated_at": "2024-08-29T12:43:11Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40624645/craig-hallum-maintains-buy-on-nvidia-raises-price-target-to-165",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624703,
+      "headline": "NVIDIA To Rally Over 31%? Here Are 10 Top Analyst Forecasts For Thursday",
+      "created_at": "2024-08-29T12:45:22Z",
+      "updated_at": "2024-08-29T12:45:22Z",
+      "symbols": [
+        "CRM",
+        "CRWD",
+        "EQNR",
+        "HPQ",
+        "NBIX",
+        "NVDA",
+        "PVH",
+        "SCVL",
+        "SPOT",
+        "VEEV"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40624703/nvidia-to-rally-over-31-here-are-10-top-analyst-forecasts-for-thursday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624865,
+      "headline": "Morgan Stanley Maintains Overweight on NVIDIA, Raises Price Target to $150",
+      "created_at": "2024-08-29T12:54:40Z",
+      "updated_at": "2024-08-29T12:54:40Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40624865/morgan-stanley-maintains-overweight-on-nvidia-raises-price-target-to-150",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624885,
+      "headline": "WestPark Capital Maintains Buy on NVIDIA, Raises Price Target to $165",
+      "created_at": "2024-08-29T12:55:39Z",
+      "updated_at": "2024-08-29T12:55:39Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40624885/westpark-capital-maintains-buy-on-nvidia-raises-price-target-to-165",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40624663,
+      "headline": "US Economy Expands By 3% In Q2, Surpasses Earlier Estimates; Jobless Claims Little Moved Last Week (CORRECTED)",
+      "created_at": "2024-08-29T12:57:12Z",
+      "updated_at": "2024-08-29T12:57:26Z",
+      "symbols": [
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/government/24/08/40624663/us-economy-expands-by-3-in-q2-surpasses-earlier-estimates-jobless-claims-little-moved-last-week",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40625533,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of August 29, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-08-29T13:15:05Z",
+      "updated_at": "2024-08-29T13:15:05Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "ASTS",
+        "DG",
+        "LOT",
+        "MADE",
+        "NVDA",
+        "QQQ",
+        "SMCI",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/08/40625533/top-10-trending-stocks-on-wallstreetbets-as-of-august-29-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40625596,
+      "headline": "Uber Pumps Capital Into Nvidia-Backed Wayve's Series C Funding Round",
+      "created_at": "2024-08-29T13:17:02Z",
+      "updated_at": "2024-08-29T13:17:03Z",
+      "symbols": [
+        "NVDA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40625596/uber-pumps-capital-into-nvidia-backed-wayves-series-c-funding-round",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40626048,
+      "headline": "Benzinga Market Summary: GDP Growth Beats Expectations, NVIDIA Declines Despite Q2 Earnings Beat, Multiple Retail Stocks Fall On Earnings",
+      "created_at": "2024-08-29T13:34:07Z",
+      "updated_at": "2024-08-29T13:34:08Z",
+      "symbols": [
+        "AEO",
+        "DG",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40626048/benzinga-market-summary-gdp-growth-beats-expectations-nvidia-declines-despite-q2-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40626068,
+      "headline": "JP Morgan Maintains Overweight on NVIDIA, Raises Price Target to $155",
+      "created_at": "2024-08-29T13:36:46Z",
+      "updated_at": "2024-08-29T13:36:47Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40626068/jp-morgan-maintains-overweight-on-nvidia-raises-price-target-to-155",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40626112,
+      "headline": "Truist Securities Maintains Buy on NVIDIA, Raises Price Target to $148",
+      "created_at": "2024-08-29T13:38:01Z",
+      "updated_at": "2024-08-29T13:38:02Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40626112/truist-securities-maintains-buy-on-nvidia-raises-price-target-to-148",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40626524,
+      "headline": "USA Pending Home Sales (MoM) For July -5.5% Vs 0.2% Est.; 4.8% Prior",
+      "created_at": "2024-08-29T14:00:31Z",
+      "updated_at": "2024-08-29T14:00:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40626524/usa-pending-home-sales-mom-for-july-5-5-vs-0-2-est-4-8-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40626551,
+      "headline": "Dow Jumps Over 100 Points; Nvidia Earnings Top Views",
+      "created_at": "2024-08-29T14:00:51Z",
+      "updated_at": "2024-08-29T14:00:51Z",
+      "symbols": [
+        "AILE",
+        "BCDA",
+        "BIG",
+        "ENSC",
+        "LUCY",
+        "NVDA",
+        "XRTX"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40626551/dow-jumps-over-100-points-nvidia-earnings-top-views",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40626785,
+      "headline": "Bitcoin And Ethereum Recover From FTX Collapse, MicroStrategy Outperforms; Nvidia Pre-Earnings Showdown Spurs Trading - Top Headlines Today While US Slept",
+      "created_at": "2024-08-29T14:08:05Z",
+      "updated_at": "2024-08-29T14:08:06Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/08/40626785/bitcoin-and-ethereum-recover-from-ftx-collapse-microstrategy-outperforms-nvidia-pre-earnin",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40626873,
+      "headline": "Libyan Oil Crescent Ports Halt Export Operations On Thursday",
+      "created_at": "2024-08-29T14:11:43Z",
+      "updated_at": "2024-08-29T14:11:43Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/08/40626873/libyan-oil-crescent-ports-halt-export-operations-on-thursday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40627044,
+      "headline": "US Dollar, Oil Prices, Tech Stocks Rise As GDP Roars By 3% In Q2; Bonds, Yen Slip As Bets For Large Rate Cuts Ease",
+      "created_at": "2024-08-29T14:21:41Z",
+      "updated_at": "2024-08-29T14:21:41Z",
+      "symbols": [
+        "FXY",
+        "GLD",
+        "IWM",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TLT",
+        "USO",
+        "UUP",
+        "XLK",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/08/40627044/us-dollar-oil-prices-tech-stocks-rise-as-gdp-roars-by-3-in-q2-bonds-yen-slip-as-bets-for-large-r",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40627168,
+      "headline": "USA Natural Gas Storage 35B Vs 33B Est. 35B Prior",
+      "created_at": "2024-08-29T14:30:17Z",
+      "updated_at": "2024-08-29T14:30:18Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40627168/usa-natural-gas-storage-35b-vs-33b-est-35b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40627271,
+      "headline": "\"'Move Over Nvidia.' Apple Is Citi's Top AI Stock Pick.\" - Barron's",
+      "created_at": "2024-08-29T14:31:07Z",
+      "updated_at": "2024-08-29T14:31:07Z",
+      "symbols": [
+        "AAPL",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/24/08/40627271/move-over-nvidia-apple-is-citis-top-ai-stock-pick-barrons",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40627383,
+      "headline": "Benchmark Reiterates Buy on NVIDIA, Maintains $170 Price Target",
+      "created_at": "2024-08-29T14:36:25Z",
+      "updated_at": "2024-08-29T14:36:25Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40627383/benchmark-reiterates-buy-on-nvidia-maintains-170-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40627447,
+      "headline": "DA Davidson Maintains Neutral on NVIDIA, Maintains $90 Price Target",
+      "created_at": "2024-08-29T14:40:37Z",
+      "updated_at": "2024-08-29T14:40:38Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40627447/da-davidson-maintains-neutral-on-nvidia-maintains-90-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40628314,
+      "headline": "Cantor Fitzgerald Reiterates Overweight on NVIDIA, Maintains $175 Price Target",
+      "created_at": "2024-08-29T15:11:33Z",
+      "updated_at": "2024-08-29T15:11:34Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40628314/cantor-fitzgerald-reiterates-overweight-on-nvidia-maintains-175-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40628887,
+      "headline": "Nvidia Analysts Say Pullback Is Buying Opportunity: 'Pushing AI Envelope Too Significant To Slow Down'",
+      "created_at": "2024-08-29T15:39:49Z",
+      "updated_at": "2024-08-29T15:39:49Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/08/40628887/nvidia-analysts-say-pullback-is-buying-opportunity-pushing-ai-envelope-too-signific",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40629988,
+      "headline": "Senior WHO Official Says 'We Have A Preliminary Commitment For Area Specific Humanitarian Pauses' During Polio Vaccination Campaign In Gaza; Israeli Military Has Agreed To 3 Different Humanitarian Pauses In Gaza In 3 Zones, Each For 3 Days",
+      "created_at": "2024-08-29T16:22:17Z",
+      "updated_at": "2024-08-29T16:22:17Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40629988/senior-who-official-says-we-have-a-preliminary-commitment-for-area-specific-human",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40630439,
+      "headline": "Semiconductor ETFs Rally Despite Nvidia Dip: 10 Chipmakers Defy The AI Darling's Drop",
+      "created_at": "2024-08-29T16:37:12Z",
+      "updated_at": "2024-08-29T16:37:13Z",
+      "symbols": [
+        "ADI",
+        "ARM",
+        "FTXL",
+        "INTC",
+        "MCHP",
+        "MRVL",
+        "MU",
+        "NVDA",
+        "ON",
+        "ONTO",
+        "QRVO",
+        "SHOC",
+        "SMH",
+        "SMHX",
+        "SOXQ",
+        "SOXX",
+        "SWKS",
+        "TER",
+        "XSD"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40630439/semiconductor-etfs-rally-despite-nvidia-dip-10-chipmakers-defy-the-ai-darlings-drop",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40630522,
+      "headline": "Wedbush Reiterates Outperform on NVIDIA, Maintains $138 Price Target",
+      "created_at": "2024-08-29T16:43:26Z",
+      "updated_at": "2024-08-29T16:43:27Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40630522/wedbush-reiterates-outperform-on-nvidia-maintains-138-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40630603,
+      "headline": "Piper Sandler Maintains Overweight on NVIDIA, Maintains $140 Price Target",
+      "created_at": "2024-08-29T16:46:46Z",
+      "updated_at": "2024-08-29T16:46:47Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40630603/piper-sandler-maintains-overweight-on-nvidia-maintains-140-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40630955,
+      "headline": "Fitch Affirms The United States Of America At 'AA+'; Outlook Stable; Says U.S. Ratings Constrained By High Fiscal Deficits, Substantial Interest Burden & High Government Debt",
+      "created_at": "2024-08-29T16:57:03Z",
+      "updated_at": "2024-08-29T16:57:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40630955/fitch-affirms-the-united-states-of-america-at-aa-outlook-stable-says-u-s-ratings-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40632899,
+      "headline": "'JD Vance Urges Billionaire Peter Thiel To Help Bankroll Trump Campaign' - Financial Times",
+      "created_at": "2024-08-29T17:28:40Z",
+      "updated_at": "2024-08-29T17:28:41Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40632899/jd-vance-urges-billionaire-peter-thiel-to-help-bankroll-trump-campaign-financial-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40633354,
+      "headline": "Bernstein Maintains Outperform on NVIDIA, Raises Price Target to $155",
+      "created_at": "2024-08-29T17:35:12Z",
+      "updated_at": "2024-08-29T17:35:13Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40633354/bernstein-maintains-outperform-on-nvidia-raises-price-target-to-155",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40633356,
+      "headline": "10 Information Technology Stocks Whale Activity In Today's Session",
+      "created_at": "2024-08-29T17:35:14Z",
+      "updated_at": "2024-08-29T17:35:15Z",
+      "symbols": [
+        "AAPL",
+        "CRM",
+        "DELL",
+        "INTC",
+        "IREN",
+        "MRVL",
+        "MSFT",
+        "MU",
+        "NVDA",
+        "SMCI"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/08/40633356/10-information-technology-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40634432,
+      "headline": "Reported Earlier, \"Trump Says Plan To Make U.S. 'Crypto Capital Of The Planet' Coming Within Hours\" - CNBC",
+      "created_at": "2024-08-29T17:58:28Z",
+      "updated_at": "2024-08-29T17:58:29Z",
+      "symbols": [
+        "BITF",
+        "BTCUSD",
+        "CLSK",
+        "COIN",
+        "DJT",
+        "ETHUSD",
+        "HUT",
+        "MARA",
+        "MSTR",
+        "RIOT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/08/40634432/reported-earlier-trump-says-plan-to-make-u-s-crypto-capital-of-the-planet-coming-within-ho",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40634896,
+      "headline": "CDC Says Clade I Mpox Outbreak Originating In Central Africa; Risk Of Mpox Coming Into U.S. Is Low; No Cases Of Clade I Mpox Have Been Reported In The U.S. At This Time; Best Protection Against Mpox Is Two Doses Of Jynneos Vaccine If Eligible; Working With Other U.S. Government Agencies & Partners On Strategy For Vaccination In Democratic Republic Of Congo",
+      "created_at": "2024-08-29T18:15:53Z",
+      "updated_at": "2024-08-29T18:15:53Z",
+      "symbols": [
+        "AEMD",
+        "APDN",
+        "CMRX",
+        "EBS",
+        "EJH",
+        "GOVX",
+        "INO",
+        "MRNA",
+        "SPY",
+        "TNXP",
+        "VRAX"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/08/40634896/cdc-says-clade-i-mpox-outbreak-originating-in-central-africa-risk-of-mpox-coming-into-u-s-is-low-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40633329,
+      "headline": "US Stocks Rally, Dow Jones Achieves Record Highs As GDP Outperforms, Nvidia Falls: What's Driving Markets Thursday?",
+      "created_at": "2024-08-29T17:34:38Z",
+      "updated_at": "2024-08-29T18:27:20Z",
+      "symbols": [
+        "ADSK",
+        "AEO",
+        "AFRM",
+        "ARM",
+        "BBY",
+        "BTCUSD",
+        "BURL",
+        "COO",
+        "CPB",
+        "CRM",
+        "CRWD",
+        "DELL",
+        "DG",
+        "DIA",
+        "FIVE",
+        "GAP",
+        "HPQ",
+        "INTC",
+        "IWM",
+        "LULU",
+        "MDB",
+        "MRVL",
+        "NTAP",
+        "NTNX",
+        "NVDA",
+        "OKTA",
+        "OLLI",
+        "ON",
+        "PSTG",
+        "QQQ",
+        "SOXX",
+        "SPY",
+        "ULTA",
+        "VSCO",
+        "XLF",
+        "XLI",
+        "XLK",
+        "XLRE"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/08/40633329/us-stocks-rally-dow-jones-achieves-record-highs-as-gdp-outperforms-nvidia-falls-whats-driv",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40635333,
+      "headline": "Nvidia Stock Dips Despite Q2 Earnings Beat — Is The AI Rally Fading?",
+      "created_at": "2024-08-29T18:36:09Z",
+      "updated_at": "2024-08-29T18:36:09Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/technicals/24/08/40635333/nvidia-stock-dips-despite-q2-earnings-beat-is-the-ai-rally-fading",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40635421,
+      "headline": "Pentagon Approves Department Of Homeland Security's Request For Additional Military Support Capabilities For Presidential And Vice Presidential Candidates",
+      "created_at": "2024-08-29T18:41:03Z",
+      "updated_at": "2024-08-29T18:41:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/08/40635421/pentagon-approves-department-of-homeland-securitys-request-for-additional-military-sup",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40635763,
+      "headline": "NVIDIA Has Held Discussions About Joining OpenAI Funding Round",
+      "created_at": "2024-08-29T19:01:21Z",
+      "updated_at": "2024-08-29T19:01:22Z",
+      "symbols": [
+        "MSFT",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40635763/nvidia-has-held-discussions-about-joining-openai-funding-round",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40636209,
+      "headline": "Multiple Unconfirmed Social Media Reports Of A Possible Drone Attack On U.S. Forces In Syria",
+      "created_at": "2024-08-29T19:12:57Z",
+      "updated_at": "2024-08-29T19:12:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/08/40636209/multiple-unconfirmed-social-media-reports-of-a-possible-drone-attack-on-u-s-forces-in-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40636153,
+      "headline": "Apple, Nvidia In Talks To Invest In OpenAI As ChatGPT Maker's Valuation Climbs To $100B: Report",
+      "created_at": "2024-08-29T19:10:08Z",
+      "updated_at": "2024-08-29T19:46:44Z",
+      "symbols": [
+        "AAPL",
+        "MSFT",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40636153/apple-in-talks-to-invest-in-openai-as-chatgpt-makers-valuation-climbs-to-100b-report",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40638519,
+      "headline": "Fitch Reaffirms US 'AA+' Credit Rating, Warns Of Growing Debt Burden: 'Tax Cuts Will Be Extended Under Either Trump Or Harris'",
+      "created_at": "2024-08-29T20:23:13Z",
+      "updated_at": "2024-08-29T20:23:14Z",
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "TLT",
+        "UTEN",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/08/40638519/fitch-reaffirms-us-aa-credit-rating-warns-of-growing-debt-burden-tax-cuts-will-be-e",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40639345,
+      "headline": "Traders Scale Back Bets On 50-Basis-Point September Rate Cut Ahead of Friday's Key Fed Inflation Gauge Data",
+      "created_at": "2024-08-29T20:46:04Z",
+      "updated_at": "2024-08-29T20:46:05Z",
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "TLT",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/news/large-cap/24/08/40639345/traders-scale-back-bets-on-50-basis-point-september-rate-cut-ahead-of-fridays-key-fed-inflation-ga",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40643790,
+      "headline": "Bitcoin, Ethereum, Dogecoin Remain Choppy — Trader Says 'Still Holding Long, Ready To Add ' If King Crypto Dips Lower",
+      "created_at": "2024-08-30T02:40:19Z",
+      "updated_at": "2024-08-30T02:40:20Z",
+      "symbols": [
+        "BTC",
+        "BTCUSD",
+        "DOGEUSD",
+        "ETHUSD",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/08/40643790/bitcoin-ethereum-dogecoin-remain-choppy-trader-says-still-holding-long-ready-to-add-if-kin",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40644047,
+      "headline": "'Don't Fight Nvidia' Or The Fed, Says Mohamed El-Erian, Urges Investors To Recognize Dual Influence On Market Dynamics",
+      "created_at": "2024-08-30T03:39:10Z",
+      "updated_at": "2024-08-30T03:39:11Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/08/40644047/dont-fight-nvidia-or-the-fed-says-mohamed-el-erian-urges-investors-to-recognize-dual-influence-o",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

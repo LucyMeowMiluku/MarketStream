@@ -1,0 +1,668 @@
+{
+  "interval_id": "nvda-control-2024-09-13",
+  "candidate_kind": "normal",
+  "ticker": "NVDA",
+  "started_at": "2024-09-13T13:30:00Z",
+  "ended_at": "2024-09-13T15:00:00Z",
+  "local_start": "2024-09-13T09:30:00-04:00",
+  "local_end": "2024-09-13T11:00:00-04:00",
+  "symbols": {
+    "NVDA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-09-12T19:59:00Z",
+      "prior_close": 119.22,
+      "first_minute": "2024-09-13T13:30:00Z",
+      "last_minute": "2024-09-13T14:59:00Z",
+      "first_open": 118.96,
+      "last_close": 119.39,
+      "gap_pct": -0.21808421405804523,
+      "end_vs_prior_pct": 0.1425935245764176,
+      "window_return_pct": 0.36146603900470975,
+      "window_range_pct": 1.9502353732347073,
+      "volume": 966565,
+      "raw_artifact": "raw/nvda-control-2024-09-13/NVDA.minutes.json"
+    },
+    "QQQ": {
+      "bars": 81,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-09-13T13:30:00+00:00",
+        "2024-09-13T13:52:00+00:00",
+        "2024-09-13T13:57:00+00:00",
+        "2024-09-13T14:21:00+00:00",
+        "2024-09-13T14:27:00+00:00",
+        "2024-09-13T14:46:00+00:00",
+        "2024-09-13T14:50:00+00:00",
+        "2024-09-13T14:57:00+00:00",
+        "2024-09-13T14:59:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 0,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-09-12T19:59:00Z",
+      "prior_close": 473.18,
+      "first_minute": "2024-09-13T13:31:00Z",
+      "last_minute": "2024-09-13T14:58:00Z",
+      "first_open": 472.68,
+      "last_close": 474.69,
+      "gap_pct": -0.10566803330656072,
+      "end_vs_prior_pct": 0.319117460585816,
+      "window_return_pct": 0.42523483117542504,
+      "window_range_pct": 0.6135228907506087,
+      "volume": 99295,
+      "raw_artifact": "raw/nvda-control-2024-09-13/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-09-13T14:07:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-09-12T19:59:00Z",
+      "prior_close": 559.06,
+      "first_minute": "2024-09-13T13:30:00Z",
+      "last_minute": "2024-09-13T14:59:00Z",
+      "first_open": 559.71,
+      "last_close": 561.84,
+      "gap_pct": 0.11626659034809084,
+      "end_vs_prior_pct": 0.4972632633349017,
+      "window_return_pct": 0.3805542155759234,
+      "window_range_pct": 0.5520716085115359,
+      "volume": 285437,
+      "raw_artifact": "raw/nvda-control-2024-09-13/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 40847223,
+      "headline": "S&P 500 Gains For 4th Straight Session Amid Rise In Nvidia, Alphabet, And Other Tech Stocks: Greed Index Remains In 'Fear' Zone",
+      "created_at": "2024-09-13T05:22:00Z",
+      "updated_at": "2024-09-13T05:22:01Z",
+      "symbols": [
+        "CMCM",
+        "GOOG",
+        "GOOGL",
+        "NVDA",
+        "SIG",
+        "SLQT"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/09/40847223/s-p-500-gains-for-4th-straight-session-amid-rise-in-nvidia-alphabet-and-other-tech-stocks-greed-ind",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40849093,
+      "headline": "Nvidia's Chip Supply To Saudi Arabia Boosts Regional Sentiment, Says Expert: 'I Think Regionally It's Great'",
+      "created_at": "2024-09-13T08:58:37Z",
+      "updated_at": "2024-09-13T08:58:37Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40849093/nvidias-chip-supply-to-saudi-arabia-boosts-regional-sentiment-says-expert-i-think-regionally-its-gre",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40850183,
+      "headline": "Nvidia, NetApp And 2 Other Stocks Executives Are Selling",
+      "created_at": "2024-09-13T10:17:57Z",
+      "updated_at": "2024-09-13T10:17:58Z",
+      "symbols": [
+        "JHG",
+        "LTRX",
+        "NTAP",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40850183/nvidia-netapp-and-2-other-stocks-executives-are-selling",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40850274,
+      "headline": "Crude Gains On Supply Disruptions, Gold Hits Record High And Dollar Hits One Week Low - Global Markets Today While US Slept",
+      "created_at": "2024-09-13T10:23:18Z",
+      "updated_at": "2024-09-13T10:23:19Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/09/40850274/crude-gains-on-supply-disruptions-gold-hits-record-high-and-dollar-hits-one-week-low-global-markets",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40850544,
+      "headline": "Wall Street Eyes Strong Finish To The Week Despite Futures Suggesting Moderation In Tech Buying: Strategist Cautions Against Factoring Rapid, Steep Cuts Ahead Of Next Week's Fed Meeting",
+      "created_at": "2024-09-13T10:35:34Z",
+      "updated_at": "2024-09-13T10:35:35Z",
+      "symbols": [
+        "ADBE",
+        "BA",
+        "BTCUSD",
+        "MRNA",
+        "ORCL",
+        "QQQ",
+        "RH",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/09/40850544/wall-street-eyes-strong-finish-to-the-week-despite-futures-suggesting-moderation-in-tech-buying-str",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40852843,
+      "headline": "Super Micro Computer Battles AI Volatility: Is A Rebound Coming?",
+      "created_at": "2024-09-13T12:31:32Z",
+      "updated_at": "2024-09-13T12:31:33Z",
+      "symbols": [
+        "AMZN",
+        "DELL",
+        "NVDA",
+        "SMCI",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/technicals/24/09/40852843/super-micro-computer-battles-ai-volatility-is-a-rebound-coming",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40853147,
+      "headline": "USA Export Price Index (MoM) For August -0.7% Vs -0.1% Est.; 0.5% Prior",
+      "created_at": "2024-09-13T12:50:42Z",
+      "updated_at": "2024-09-13T12:50:43Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40853147/usa-export-price-index-mom-for-august-0-7-vs-0-1-est-0-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40853149,
+      "headline": "USA Import Price Index (MoM) For August -0.3% Vs -0.2% Est.; 0.1% Prior",
+      "created_at": "2024-09-13T12:51:08Z",
+      "updated_at": "2024-09-13T12:51:08Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40853149/usa-import-price-index-mom-for-august-0-3-vs-0-2-est-0-1-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40853499,
+      "headline": "AMD Vs. Nvidia: AI Stock Showdown Heats Up As Market Awaits Next Big Move",
+      "created_at": "2024-09-13T13:02:59Z",
+      "updated_at": "2024-09-13T13:02:59Z",
+      "symbols": [
+        "AMD",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/technicals/24/09/40853499/amd-vs-nvidia-ai-stock-showdown-heats-up-as-market-awaits-next-big-move",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40853680,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of September 13, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-09-13T13:12:11Z",
+      "updated_at": "2024-09-13T13:12:11Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "BA",
+        "GLD",
+        "LOT",
+        "MADE",
+        "NVDA",
+        "QQQ",
+        "TUA",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/09/40853680/top-10-trending-stocks-on-wallstreetbets-as-of-september-13-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40853791,
+      "headline": "Bitcoin Spot ETFs Experience $39M Inflows, With A 'Bullish Correction' Potentially Developing; Boeing Faces Production Threat As 30,000 Workers Vote For Industrial Action, Sparking 'Strike At Midnight' And Financial Concerns - Top Headlines Today While US Slept",
+      "created_at": "2024-09-13T13:17:27Z",
+      "updated_at": "2024-09-13T13:17:28Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/09/40853791/bitcoin-spot-etfs-experience-39m-inflows-with-a-bullish-correction-potentially-developing-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40854556,
+      "headline": "Michigan Consumer Sentiment For Sept. 69.0 Vs 68.3 Est.; 67.9 Prior",
+      "created_at": "2024-09-13T14:00:23Z",
+      "updated_at": "2024-09-13T14:00:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40854556/michigan-consumer-sentiment-for-sept-69-0-vs-68-3-est-67-9-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40855247,
+      "headline": "Fed Rate Cuts And S&P 500: The 'Why' Matters Most, Data Shows",
+      "created_at": "2024-09-13T14:21:58Z",
+      "updated_at": "2024-09-13T14:21:59Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40855247/fed-rate-cuts-and-s-p-500-the-why-matters-most-data-shows",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40855427,
+      "headline": "Michigan 1-Year Inflation Expectations For September\t2.7% Vs 2.8% Est.; 2.8% Prior",
+      "created_at": "2024-09-13T14:33:44Z",
+      "updated_at": "2024-09-13T14:33:45Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40855427/michigan-1-year-inflation-expectations-for-september-2-7-vs-2-8-est-2-8-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40855469,
+      "headline": "Russia's UN Envoy Tells Security Council That If West Allows Ukraine To Conduct Long-Range Strikes In Russia Then NATO States Would Be 'Conducting Direct War With Russia'; Says 'NATO Will Be A Direct Party To Hostilities Against A Nuclear Power I Think You Shouldn't Forget About This And Think About The Consequences'",
+      "created_at": "2024-09-13T14:36:07Z",
+      "updated_at": "2024-09-13T14:36:39Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/09/40855469/russias-un-envoy-tells-security-council-that-if-west-allows-ukraine-to-conduct-long-ra",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40855963,
+      "headline": "Investigating NVIDIA's Standing In Semiconductors &amp; Semiconductor Equipment Industry Compared To Competitors",
+      "created_at": "2024-09-13T15:00:12Z",
+      "updated_at": "2024-09-13T15:00:13Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/insights/news/24/09/40855963/investigating-nvidias-standing-in-semiconductors-amp-semiconductor-equipment-industry-compared-to-c",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40856466,
+      "headline": "Benzinga Market Summary: Boeing Workers To Strike, Consumer Sentiment Beats Expectations, RH Surges On Strong Earnings And Price Target Raises",
+      "created_at": "2024-09-13T15:13:00Z",
+      "updated_at": "2024-09-13T15:13:00Z",
+      "symbols": [
+        "BA",
+        "RH",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40856466/benzinga-market-summary-boeing-workers-to-strike-consumer-sentiment-beats-expecta",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40856682,
+      "headline": "U.S. Coast Guard Says Several Louisiana Ports Including New Orleans And Loop Reopen Following Storm Francine; Texas Ports Including Texas City, Lake Charles Servicing Tankers Following Storm Francine",
+      "created_at": "2024-09-13T15:21:09Z",
+      "updated_at": "2024-09-13T15:21:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40856682/u-s-coast-guard-says-several-louisiana-ports-including-new-orleans-and-loop-reope",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40856873,
+      "headline": "Gold Breaks To A New High And Can Go Much Higher, Stocks And Gold Running On 50 BPS Cut",
+      "created_at": "2024-09-13T15:29:44Z",
+      "updated_at": "2024-09-13T15:29:45Z",
+      "symbols": [
+        "AAPL",
+        "ADBE",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NEM",
+        "NVDA",
+        "QQQ",
+        "RH",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40856873/gold-breaks-to-a-new-high-and-can-go-much-higher-stocks-and-gold-running-on-50-bps-cut",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40857041,
+      "headline": "BEAMR Posts On X \" Experience 4K p60 Live streaming with 30%-50% less resource load - without sacrificing quality! Join us #IBC2024 to see our demo with NVIDIA Holoscan for Media....\"",
+      "created_at": "2024-09-13T15:33:35Z",
+      "updated_at": "2024-09-13T15:33:36Z",
+      "symbols": [
+        "BMR",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40857041/beamr-posts-on-x-experience-4k-p60-live-streaming-with-30-50-less-resource-load-without-sacrificing",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40857233,
+      "headline": "White House Says Would Not Expect To See A Change In U.S. Policy On Friday On Ukraine Use Of Long-Range Weapons Inside Russia",
+      "created_at": "2024-09-13T15:46:37Z",
+      "updated_at": "2024-09-13T15:46:37Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40857233/white-house-says-would-not-expect-to-see-a-change-in-u-s-policy-on-friday-on-ukra",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40857236,
+      "headline": "White House Says U.S. Continues To Monitor Progression Of North Korea's Nuclear Ambitions, Ballistic Missile Technology",
+      "created_at": "2024-09-13T15:47:18Z",
+      "updated_at": "2024-09-13T15:47:19Z",
+      "symbols": [
+        "EWY",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40857236/white-house-says-u-s-continues-to-monitor-progression-of-north-koreas-nuclear-amb",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40857449,
+      "headline": "Consumer Morale Hits 4-Month High, Inflation Expectations Ease: 'Partisan Gaps In Sentiment Inched Up'",
+      "created_at": "2024-09-13T16:00:54Z",
+      "updated_at": "2024-09-13T16:00:55Z",
+      "symbols": [
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "UUP",
+        "XLB"
+      ],
+      "url": "https://www.benzinga.com/24/09/40857449/consumer-morale-hits-4-month-high-inflation-expectations-ease-partisan-gaps-in-sentiment-inched-up",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40858482,
+      "headline": "Oracle Analysts Praise 'Resilient, Sticky' Revenue Stream, AI Growth After CloudWorld Conference",
+      "created_at": "2024-09-13T16:54:28Z",
+      "updated_at": "2024-09-13T16:54:28Z",
+      "symbols": [
+        "NVDA",
+        "ORCL"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/09/40858482/oracle-analysts-praise-resilient-sticky-revenue-stream-ai-growth-after-cloudworld-c",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40858707,
+      "headline": "U.S. Baker Hughes Oil Rig Count +5; U.S. Baker Hughes NatGas Rig Count +3; U.S. Baker Hughes Total Rig Count 590 Vs 582 Prior",
+      "created_at": "2024-09-13T17:06:16Z",
+      "updated_at": "2024-09-13T17:06:17Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40858707/u-s-baker-hughes-oil-rig-count-5-u-s-baker-hughes-natgas-rig-count-3-u-s-baker-hu",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40858763,
+      "headline": "\"How The UAE Got The U.S. To Bless Its AI Ambitions; The U.S. Has Approved The Sale Of Nvidia Chips To G42, The Company At The Center Of The UAE's Efforts To Become A Global Leader In AI\" - Semafor",
+      "created_at": "2024-09-13T17:09:28Z",
+      "updated_at": "2024-09-13T17:09:28Z",
+      "symbols": [
+        "NVDA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/09/40858763/how-the-uae-got-the-u-s-to-bless-its-ai-ambitions-the-u-s-has-approved-the-sale-of-nvidia-chips-to-g",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40858884,
+      "headline": "Wall Street Aims For Fifth Straight Gain, Small Caps Soar As 2-Year Yields Hit 2-Year Lows, Adobe Sinks: What's Driving Markets Friday?",
+      "created_at": "2024-09-13T17:18:17Z",
+      "updated_at": "2024-09-13T17:18:18Z",
+      "symbols": [
+        "ADBE",
+        "BA",
+        "CHTR",
+        "DIA",
+        "GDX",
+        "GLD",
+        "GRMN",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "UAL",
+        "WBD",
+        "XLB",
+        "XLC",
+        "XLRE",
+        "XLU"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/09/40858884/wall-street-aims-for-fifth-straight-gain-small-caps-soar-as-2-year-yields-hit-2-year-lows-adobe-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40858952,
+      "headline": "\"Florida Discourages Use Of mRNA Covid Vaccines In Older Adults; In Updated Guidance To Health Care Providers, Florida Health Officials Advise That \"Non-mRNA Covid-19 Vaccines And Treatment\" Should Be Prioritized\" - NBC News",
+      "created_at": "2024-09-13T17:21:41Z",
+      "updated_at": "2024-09-13T17:21:42Z",
+      "symbols": [
+        "BNTX",
+        "MRNA",
+        "NVAX",
+        "PFE",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/09/40858952/florida-discourages-use-of-mrna-covid-vaccines-in-older-adults-in-updated-guidance-to-health-care",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40859195,
+      "headline": "Former President Donald J. Trump Speaking Live In Los Angeles, CA",
+      "created_at": "2024-09-13T17:31:45Z",
+      "updated_at": "2024-09-13T17:31:46Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40859195/former-president-donald-j-trump-speaking-live-in-los-angeles-ca",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40859238,
+      "headline": "10 Information Technology Stocks Whale Activity In Today's Session",
+      "created_at": "2024-09-13T17:35:27Z",
+      "updated_at": "2024-09-13T17:35:28Z",
+      "symbols": [
+        "APP",
+        "AVGO",
+        "DV",
+        "MSFT",
+        "MSTR",
+        "MU",
+        "NVDA",
+        "ORCL",
+        "PLTR",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/09/40859238/10-information-technology-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40859402,
+      "headline": "Pope Francis, Asked About U.S. Election, Criticizes Harris On Abortion, Trump On Migration; Pope Says Americans Should 'Choose The Lesser Evil' When Voting In Presidential Election",
+      "created_at": "2024-09-13T17:51:41Z",
+      "updated_at": "2024-09-13T17:51:42Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40859402/pope-francis-asked-about-u-s-election-criticizes-harris-on-abortion-trump-on-migr",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40859905,
+      "headline": "U.S. State Department States Putin's Comments On Ukraine's Use Of Long-Range Missiles Mirror Previous Remarks During Conflict; Reaffirms U.S. Will Not Participate In War But Will Support Ukraine's Defense",
+      "created_at": "2024-09-13T18:15:15Z",
+      "updated_at": "2024-09-13T18:15:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/09/40859905/u-s-state-department-states-putins-comments-on-ukraines-use-of-long-range-missiles-mir",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40860906,
+      "headline": "Joe Biden Expected To Visit Angola In Coming Weeks, First Africa Visit For U.S. President",
+      "created_at": "2024-09-13T19:18:43Z",
+      "updated_at": "2024-09-13T19:18:44Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40860906/joe-biden-expected-to-visit-angola-in-coming-weeks-first-africa-visit-for-u-s-pre",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40861141,
+      "headline": "U.s=S. Vice President Harris Giving Interview To ABC Affiliate In Philadelphia; Harris To Join Oprah Winfrey For Livestream Next Week",
+      "created_at": "2024-09-13T19:35:19Z",
+      "updated_at": "2024-09-13T19:35:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40861141/u-s-s-vice-president-harris-giving-interview-to-abc-affiliate-in-philadelphia-har",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40861516,
+      "headline": "Benzinga Market Summary: S&P Closes Higher On Consumer Sentiment Rise, Moody's Places Boeing's Rating On Review For Downgrade Amid Strike",
+      "created_at": "2024-09-13T20:06:33Z",
+      "updated_at": "2024-09-13T20:06:34Z",
+      "symbols": [
+        "BA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/09/40861516/benzinga-market-summary-s-p-closes-higher-on-consumer-sentiment-rise-moodys-place",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40861742,
+      "headline": "Nasdaq 100 Posts Biggest Weekly Rally In Almost A Year As Fed Rate Cut Hopes Grow: Top 7 Tech Stocks Of The Week",
+      "created_at": "2024-09-13T20:19:43Z",
+      "updated_at": "2024-09-13T20:19:43Z",
+      "symbols": [
+        "AMD",
+        "ARM",
+        "AVGO",
+        "CEG",
+        "NVDA",
+        "QQQ",
+        "SMCI",
+        "WBD"
+      ],
+      "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/24/09/40861742/nasdaq-100-posts-biggest-weekly-rally-in-almost-a-year-as-fed-rate-cut-hopes-grow-top-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40862122,
+      "headline": "Rate-Cut Prospects Fuel Investor Risk Appetite, Gold Hits Record Highs, Harris Outperforms Trump: This Week In The Markets",
+      "created_at": "2024-09-13T20:45:01Z",
+      "updated_at": "2024-09-13T20:45:01Z",
+      "symbols": [
+        "GDX",
+        "GM",
+        "GOOG",
+        "GOOGL",
+        "SPY",
+        "TAN"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/09/40862122/rate-cut-prospects-fuel-investor-risk-appetite-gold-hits-record-highs-harris-outperforms-trump-t",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

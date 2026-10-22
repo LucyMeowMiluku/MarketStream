@@ -1,0 +1,829 @@
+{
+  "interval_id": "spy-reciprocal-tariff-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "SPY",
+  "started_at": "2025-04-03T13:30:00Z",
+  "ended_at": "2025-04-03T15:00:00Z",
+  "local_start": "2025-04-03T09:30:00-04:00",
+  "local_end": "2025-04-03T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2025-04-02T19:59:00Z",
+      "prior_close": 476.12,
+      "first_minute": "2025-04-03T13:30:00Z",
+      "last_minute": "2025-04-03T14:59:00Z",
+      "first_open": 456.41,
+      "last_close": 452.67,
+      "gap_pct": -4.139712677476259,
+      "end_vs_prior_pct": -4.925228933882209,
+      "window_return_pct": -0.8194386626059869,
+      "window_range_pct": 1.6290177691111067,
+      "volume": 321248,
+      "raw_artifact": "raw/spy-reciprocal-tariff-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2025-04-02T19:59:00Z",
+      "prior_close": 564.63,
+      "first_minute": "2025-04-03T13:30:00Z",
+      "last_minute": "2025-04-03T14:59:00Z",
+      "first_open": 545.13,
+      "last_close": 540.23,
+      "gap_pct": -3.453589076032093,
+      "end_vs_prior_pct": -4.321414023342718,
+      "window_return_pct": -0.8988681598884662,
+      "window_range_pct": 1.4400234806376502,
+      "volume": 676425,
+      "raw_artifact": "raw/spy-reciprocal-tariff-reaction/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 44622677,
+      "headline": "Meta, AMD, Apple, AT&T Among Biggest US Tech Giants That 'May Suffer The Most' As Tariffs Spark Trade Turmoil: Here's Why",
+      "created_at": "2025-04-03T08:28:35Z",
+      "updated_at": "2025-04-03T08:28:36Z",
+      "symbols": [
+        "AAPL",
+        "ALB",
+        "AMD",
+        "BBY",
+        "DECK",
+        "INCY",
+        "META",
+        "QQQ",
+        "SPY",
+        "T",
+        "TMUS",
+        "VZ"
+      ],
+      "url": "https://www.benzinga.com/25/04/44622677/meta-amd-apple-att-among-biggest-us-tech-multinationals-that-may-suffer-the-most-as-tariffs-spark-trade-turmoil-heres-why",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44622754,
+      "headline": "Trump Tariffs Could Cost $30 Trillion Or About $300,000 Per Family, Says Former Treasury Secretary Larry Summers: 'Most Expensive And Masochistic'",
+      "created_at": "2025-04-03T08:44:12Z",
+      "updated_at": "2025-04-03T08:44:12Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/25/04/44622754/tariffs-are-most-expensive-and-masochistic-could-cost-30-trillion-to-the-economy-erasing-300k-per-family-explains-former-treasury-secretary-larry-summers",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44623604,
+      "headline": "US Stocks Likely To Open Lower Following Trump's Tariffs: 'Worse Than The Worst Case Scenario,' Says Analyst",
+      "created_at": "2025-04-03T10:08:16Z",
+      "updated_at": "2025-04-03T10:10:07Z",
+      "symbols": [
+        "AYI",
+        "CAG",
+        "GNSS",
+        "PENG",
+        "QQQ",
+        "RH",
+        "SPY",
+        "TSLA",
+        "XOM"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/25/04/44623604/us-stock-likely-to-open-lower-following-trumps-tariffs-worse-than-the-worst-case-scenario-says-analyst",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44623918,
+      "headline": "Global Markets Rattle With Trump's Tariff, Dollar Weakens, Oil Tanks - Global Markets Today While US Slept",
+      "created_at": "2025-04-03T10:32:17Z",
+      "updated_at": "2025-04-03T10:32:18Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/25/04/44623918/global-markets-rattle-under-tariff-shock-asia-sinks-europe-tumbles-dollar-weakens-oil-tanks-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44623855,
+      "headline": "Ray Dalio Warns Of 'Abrupt, Unconventional Changes' In Markets: Here's How The 'Tariff Machine' Affects Currency, Monetary And Fiscal Policies",
+      "created_at": "2025-04-03T10:26:39Z",
+      "updated_at": "2025-04-03T10:38:54Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/25/04/44623855/ray-dalio-warns-of-abrupt-unconventional-changes-in-markets-heres-how-the-tariff-machine-affects-currency-monetary-and-fiscal-policies",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44624245,
+      "headline": "Trump Tariffs To 'Plug The Hole' For Income Tax Cuts To Come: Economists Predict What More Could Be Expected",
+      "created_at": "2025-04-03T10:56:01Z",
+      "updated_at": "2025-04-03T10:56:02Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/25/04/44624245/tariffs-to-plug-the-hole-for-income-tax-cuts-to-come-economists-predict-what-more-could-be-expected",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44624742,
+      "headline": "Saudi Arabia, Russia, Iraq, UAE, Kuwait, Kazakhstan, Algeria, Oman Reaffirm Commitment To Market Stability On Healthier Oil Market Outlook And Adjust Production Upward",
+      "created_at": "2025-04-03T11:17:11Z",
+      "updated_at": "2025-04-03T11:17:12Z",
+      "symbols": [
+        "SPY",
+        "USO",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/25/04/44624742/saudi-arabia-russia-iraq-uae-kuwait-kazakhstan-algeria-oman-reaffirm-commitment-to-market-stability",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44625746,
+      "headline": "Wall Street Worries Mount As Bearish Sentiment Hits Highest Level Since 2009 Amid Trump's Tariffs",
+      "created_at": "2025-04-03T12:07:03Z",
+      "updated_at": "2025-04-03T12:07:03Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/04/44625746/wall-street-worries-mount-as-bearish-sentiment-hits-highest-level-since-2009-amid-trumps-tariffs",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44626047,
+      "headline": "U.S Vice President Vance Says: Musk Will Continue To Be An Adviser -Fox Interview",
+      "created_at": "2025-04-03T12:19:36Z",
+      "updated_at": "2025-04-03T12:19:37Z",
+      "symbols": [
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44626047/u-s-vice-president-vance-says-musk-will-continue-to-be-an-adviser-fox-interview",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44626140,
+      "headline": "U.S. Vice President Vance Says TikTok Decision Will Come Before Deadeline",
+      "created_at": "2025-04-03T12:27:36Z",
+      "updated_at": "2025-04-03T12:27:36Z",
+      "symbols": [
+        "FXI",
+        "MET",
+        "ORCL",
+        "PINS",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/04/44626140/u-s-vice-president-vance-says-tiktok-decision-will-come-before-deadeline",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44626199,
+      "headline": "USA Trade Balance For February -122.70B Vs -122.50B Est.; -130.70B Prior",
+      "created_at": "2025-04-03T12:30:23Z",
+      "updated_at": "2025-04-03T12:30:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44626199/usa-trade-balance-for-february-122-70b-vs-122-50b-est-130-70b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44626204,
+      "headline": "USA Initial Jobless Claims 219K Vs 225K Est; 225K Prior",
+      "created_at": "2025-04-03T12:30:37Z",
+      "updated_at": "2025-04-03T12:30:38Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44626204/usa-initial-jobless-claims-219k-vs-225k-est-225k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44626214,
+      "headline": "USA Exports For February 278.50B Vs 269.80B Prior",
+      "created_at": "2025-04-03T12:31:02Z",
+      "updated_at": "2025-04-03T12:31:03Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44626214/usa-exports-for-february-278-50b-vs-269-80b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44626248,
+      "headline": "USA Imports For February 401.10B Vs 401.20B Prior",
+      "created_at": "2025-04-03T12:32:00Z",
+      "updated_at": "2025-04-03T12:32:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44626248/usa-imports-for-february-401-10b-vs-401-20b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44626728,
+      "headline": "The American Association of Individual Investors (AAII) Weekly Survey Hit A Bearish Score Of 61.9%, A 16-Year High From March 2009.",
+      "created_at": "2025-04-03T12:52:43Z",
+      "updated_at": "2025-04-03T12:52:43Z",
+      "symbols": [
+        "ACWI",
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "VTI"
+      ],
+      "url": "https://www.benzinga.com/news/25/04/44626728/the-american-association-of-individual-investors-aaii-weekly-survey-hit-a-bearish-score-of-61-9-a-16",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44627790,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of April 3, 2025 (Via Swaggy Stocks)",
+      "created_at": "2025-04-03T13:25:35Z",
+      "updated_at": "2025-04-03T13:25:36Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "ASIA",
+        "GLD",
+        "GOOGL",
+        "MAGA",
+        "MCD",
+        "NVDA",
+        "QQQ",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/25/04/44627790/top-10-trending-stocks-on-wallstreetbets-as-of-april-3-2025-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44628206,
+      "headline": "S&P Global Composite PMI For March 53.5 Vs 53.5 Est.; 51.6 Prior",
+      "created_at": "2025-04-03T13:46:58Z",
+      "updated_at": "2025-04-03T13:46:59Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44628206/s-p-global-composite-pmi-for-march-53-5-vs-53-5-est-51-6-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44628288,
+      "headline": "S&P Global Services PMI For March 54.4 Vs 54.3 Est.; 51.0 Prior",
+      "created_at": "2025-04-03T13:47:22Z",
+      "updated_at": "2025-04-03T13:47:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44628288/s-p-global-services-pmi-for-march-54-4-vs-54-3-est-51-0-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44628566,
+      "headline": "ISM Non-Manufacturing PMI For March 50.8 Vs 53.0 Est.; 53.5 Prior",
+      "created_at": "2025-04-03T14:00:19Z",
+      "updated_at": "2025-04-03T14:00:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44628566/ism-non-manufacturing-pmi-for-march-50-8-vs-53-0-est-53-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44628586,
+      "headline": "ISM Non-Manufacturing Employment For March 46.2 Vs 53.9 Prior",
+      "created_at": "2025-04-03T14:00:39Z",
+      "updated_at": "2025-04-03T14:00:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44628586/ism-non-manufacturing-employment-for-march-46-2-vs-53-9-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44628616,
+      "headline": "ISM Non-Manufacturing Prices For March 60.9 Vs\t62.6 Prior",
+      "created_at": "2025-04-03T14:01:05Z",
+      "updated_at": "2025-04-03T14:01:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44628616/ism-non-manufacturing-prices-for-march-60-9-vs-62-6-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44629405,
+      "headline": "Gold Tops Bitcoin As Inflation Hedge; Metals Exempt From Trump Tariffs As White House Eyes Industry Boost; Chinese Tech Giants Order $16B In Nvidia Chips Amid AI Boom – Top Headlines While The US Slept",
+      "created_at": "2025-04-03T14:36:43Z",
+      "updated_at": "2025-04-03T14:36:43Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/25/04/44629405/metals-exempt-from-trump-tariffs-as-white-house-eyes-industry-boost-jpmorgan-gold-tops-bitcoin-as-inflation-hedge-chinese-tech-giants-order-16b-in-nvidia-chips-amid-ai-boom-top-headlines-while-the-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44629640,
+      "headline": "US Services Sector Slows Sharply As Hiring Drops, Tariff Pressures Mount",
+      "created_at": "2025-04-03T14:48:44Z",
+      "updated_at": "2025-04-03T14:48:45Z",
+      "symbols": [
+        "AAPL",
+        "BAC",
+        "GS",
+        "QQQ",
+        "RL",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/04/44629640/us-services-sector-slows-sharply-as-hiring-drops-tariff-pressures-mount",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44630166,
+      "headline": "Benzinga Market Summary: Market Falls After President Trump's Announcement Of Sweeping Reciprocal Tariffs, Oil Drops With Tariffs And After Eight OPEC+ Producers Accelerated Output Hikes, RH Feels Tariff Impact And Sinks After Q4 Earnings Miss, Stellantis Halts Plans To Open Plants In Mexico And Canada",
+      "created_at": "2025-04-03T15:14:01Z",
+      "updated_at": "2025-04-03T15:14:01Z",
+      "symbols": [
+        "RH",
+        "SPY",
+        "STLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630166/benzinga-market-summary-market-falls-after-president-trumps-announcement-of-sweep",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630611,
+      "headline": "'Several' White House National Security Council Directors Fired On Thursday",
+      "created_at": "2025-04-03T15:34:49Z",
+      "updated_at": "2025-04-03T15:34:50Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630611/several-white-house-national-security-council-directors-fired-on-thursday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630672,
+      "headline": "U.S Secretary Of Commerce Lutnick Says: No Chance Trump Will Back Off Tariffs; President Trump Will Negotiate Only If Other Countries Fix Their Tariffs And Non-Tariff Barriers -CNN Interview",
+      "created_at": "2025-04-03T15:37:39Z",
+      "updated_at": "2025-04-03T15:37:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630672/u-s-secretary-of-commerce-lutnick-says-no-chance-trump-will-back-off-tariffs-pres",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630721,
+      "headline": "Canada PM Carney Says: Trump's Actions Will Reverberate Across Canada, Around the World; Existing Trump Tariffs To Pose 'Significant' Threats to Economy",
+      "created_at": "2025-04-03T15:41:19Z",
+      "updated_at": "2025-04-03T15:41:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630721/canada-pm-carney-says-trumps-actions-will-reverberate-across-canada-around-the-wo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630735,
+      "headline": "Canada PM Carney Says: Trump's Tariff Policy Will 'Rupture' Global Economy",
+      "created_at": "2025-04-03T15:43:32Z",
+      "updated_at": "2025-04-03T15:43:33Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630735/canada-pm-carney-says-trumps-tariff-policy-will-rupture-global-economy",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630788,
+      "headline": "Canada PM Carney Says: We Will Fight These Tariffs Until They Are Removed; Era Of Integration With U.S. Economy Is 'Over'",
+      "created_at": "2025-04-03T15:46:31Z",
+      "updated_at": "2025-04-03T15:46:32Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630788/canada-pm-carney-says-we-will-fight-these-tariffs-until-they-are-removed-era-of-i",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630881,
+      "headline": "Canada PM Carney Says: Canada To Impose 25% Tariff On U.S.-Made Auto That Are Not USMCA Compliant; Canada Will Not Impose Tariffs on Auto Parts",
+      "created_at": "2025-04-03T15:47:58Z",
+      "updated_at": "2025-04-03T15:47:59Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630881/canada-pm-carney-says-canada-to-impose-25-tariff-on-u-s-made-auto-that-are-not-us",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630901,
+      "headline": "Canada PM Carney Says: Govt To Provide Financial Help To Companies Affected By Canada Auto Tariffs",
+      "created_at": "2025-04-03T15:48:45Z",
+      "updated_at": "2025-04-03T15:48:46Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630901/canada-pm-carney-says-govt-to-provide-financial-help-to-companies-affected-by-can",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630931,
+      "headline": "Commerce Secretary Lutnick Says US Markets Will Perform 'Extremely Well' Long Term Despite Trump Tariff Selloff",
+      "created_at": "2025-04-03T15:50:27Z",
+      "updated_at": "2025-04-03T15:50:27Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/04/44630931/commerce-secretary-lutnick-says-us-markets-will-perform-extremely-well-long-term-despite-trump-tariff-selloff",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630950,
+      "headline": "Canada PM Carney Says: Existing Retaliatory Tariffs To Remain In Place; We Would React Energetically To Any New U.S. Tariffs",
+      "created_at": "2025-04-03T15:50:46Z",
+      "updated_at": "2025-04-03T15:50:47Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630950/canada-pm-carney-says-existing-retaliatory-tariffs-to-remain-in-place-we-would-re",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631030,
+      "headline": "Canada PM Carney Says: 25% Tariff On U.S.-Made Autos Could Raise Up To C$8B",
+      "created_at": "2025-04-03T15:57:53Z",
+      "updated_at": "2025-04-03T15:57:54Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44631030/canada-pm-carney-says-25-tariff-on-u-s-made-autos-could-raise-up-to-c-8b",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631179,
+      "headline": "Canada PM Carney Says: Call With Trump Helped Canada Avoid Reciprocal Tariffs",
+      "created_at": "2025-04-03T16:02:15Z",
+      "updated_at": "2025-04-03T16:02:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44631179/canada-pm-carney-says-call-with-trump-helped-canada-avoid-reciprocal-tariffs",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631306,
+      "headline": "Canada PM Carney Says: He May Speak With Trump Again But Nothing Scheduled",
+      "created_at": "2025-04-03T16:12:45Z",
+      "updated_at": "2025-04-03T16:12:46Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44631306/canada-pm-carney-says-he-may-speak-with-trump-again-but-nothing-scheduled",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44630917,
+      "headline": "Canada PM Carney Says: Govt Stands In Solidarity With Stellantis Workers In Windsor, Ontario",
+      "created_at": "2025-04-03T15:49:30Z",
+      "updated_at": "2025-04-03T16:13:58Z",
+      "symbols": [
+        "SPY",
+        "STLA"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44630917/canada-pm-carney-says-govt-stands-in-solidarity-with-stellantis-workers-in-windso",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631716,
+      "headline": "Fed Vice Chair Jefferson Says: No Need To Be In A Hurry On Policy Rate Adjustments;  Current Policy Rate Well-Positioned to Deal With Risks, Uncertainties; Could Retain Current Policy Restraint for Longer, Or Ease Policy, Depending On Inflation Progress And Job Market; Policy Rate Is Now Somewhat Restrictive",
+      "created_at": "2025-04-03T16:39:37Z",
+      "updated_at": "2025-04-03T16:39:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44631716/fed-vice-chair-jefferson-says-no-need-to-be-in-a-hurry-on-policy-rate-adjustments",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631748,
+      "headline": "Fed Vice Chair Jefferson Says: Labor Market Solid, Well-Balanced; Latest Data Shows Inflation Moving Sideways; Longer-Term Inflation Expectations Remain Consistent With 2% Goal; Rise in Goods Inflation Partly Due To Trade Policy; Drop In Housing Services Inflation Could Help Counter",
+      "created_at": "2025-04-03T16:41:09Z",
+      "updated_at": "2025-04-03T16:41:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44631748/fed-vice-chair-jefferson-says-labor-market-solid-well-balanced-latest-data-shows-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631778,
+      "headline": "Fed Vice Chair Jefferson Says: Economy Solid, But Heightened Uncertainty Among Consumers, Businesses Tied To Trade Policy; If Uncertainty Worsens, Economic Activity May Be Constrained; Negative Sentiment Often Does Not Translate To Slowdown In Actual Activity; Recent Signs That Consumer Spending May Be Weakening; Anticipate Some Modest Labor Market Softening This Year",
+      "created_at": "2025-04-03T16:43:03Z",
+      "updated_at": "2025-04-03T16:43:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44631778/fed-vice-chair-jefferson-says-economy-solid-but-heightened-uncertainty-among-cons",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631783,
+      "headline": "Fed Vice Chair Jefferson Says: Vigilant On Spillovers From Federal Government Layoffs To Other Sectors",
+      "created_at": "2025-04-03T16:44:05Z",
+      "updated_at": "2025-04-03T16:44:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44631783/fed-vice-chair-jefferson-says-vigilant-on-spillovers-from-federal-government-layo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44631916,
+      "headline": "Wall Street Wipes Out $2 Trillion, Apple Eyes Worst Day Since COVID-19 Pandemic, Oil Plummets: What's Driving Markets Thursday?",
+      "created_at": "2025-04-03T16:51:27Z",
+      "updated_at": "2025-04-03T16:51:28Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "AVGO",
+        "BAC",
+        "BTCUSD",
+        "CCL",
+        "DIA",
+        "EWT",
+        "EWW",
+        "FIVE",
+        "GOOGL",
+        "GRMN",
+        "IWM",
+        "JPM",
+        "KSS",
+        "LULU",
+        "LW",
+        "META",
+        "MOH",
+        "MSFT",
+        "NCLH",
+        "NKE",
+        "NVDA",
+        "QQQ",
+        "RCL",
+        "RL",
+        "SPY",
+        "TSLA",
+        "VNM",
+        "XLK",
+        "XLP",
+        "XLV",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/04/44631916/wall-street-wipes-out-2-trillion-apple-eyes-worst-day-since-covid-19-pandemic-oil-plummets-whats-driving-markets-thursday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44632207,
+      "headline": "Fed's Jefferson Says Still Substantial Uncertainty Around Trade; Says Uncertainty Can Weigh On Spending, Investment Decisions; Says Will Be Important To Take Our Time And Think About Impact",
+      "created_at": "2025-04-03T17:11:53Z",
+      "updated_at": "2025-04-03T17:11:53Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/04/44632207/feds-jefferson-says-still-substantial-uncertainty-around-trade-says-uncertainty-can-weigh-on-spendin",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44632488,
+      "headline": "White House Is Floating The Idea Of Potentially Launching A Tariff Investigation Into Critical Minerals Imports",
+      "created_at": "2025-04-03T17:32:56Z",
+      "updated_at": "2025-04-03T17:32:57Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/04/44632488/white-house-is-floating-the-idea-of-potentially-launching-a-tariff-investigation-into-critical-miner",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44633944,
+      "headline": "Fed's Cook Says: Appropriate To Maintain Current Policy For Now While Watching Data; Now Is Time for Fed To Be 'Patient But Attentive; Economy Has Entered A Period of Uncertainty; Reduced Uncertainty, Easing Inflation Would Facilitate Rate Cuts",
+      "created_at": "2025-04-03T18:33:35Z",
+      "updated_at": "2025-04-03T18:33:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44633944/feds-cook-says-appropriate-to-maintain-current-policy-for-now-while-watching-data",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44633971,
+      "headline": "Fed's Cook Says: Uncertainty Related To Tariffs Could Cause Economy to Weaken; Encouraging Inflation Has Moderated Amid Solid Growth, Healthy Job Market; Right Now, Economy Is In A 'Solid Position';  Inflation Data Already Showing Impact Of Tariffs",
+      "created_at": "2025-04-03T18:34:48Z",
+      "updated_at": "2025-04-03T18:34:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44633971/feds-cook-says-uncertainty-related-to-tariffs-could-cause-economy-to-weaken-encou",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44633997,
+      "headline": "Fed's Cook Says: Is Watching For Evidence Tariffs Driving Persistent Increase In Price Pressures; Uncertainty Heightened By Economic Outlook, Government Policy Shifts; Is Watching For Evidence Of Trouble On Longer-Term Inflation Expectations; The Job Market Appears To Have Stabilized",
+      "created_at": "2025-04-03T18:36:11Z",
+      "updated_at": "2025-04-03T18:36:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44633997/feds-cook-says-is-watching-for-evidence-tariffs-driving-persistent-increase-in-pr",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44634034,
+      "headline": "Fed's Cook Says: Sees More Evidence Of Slowing Consumer Spending, Business Investment; Sees More Emphasis On Upside Inflation Risks",
+      "created_at": "2025-04-03T18:39:31Z",
+      "updated_at": "2025-04-03T18:39:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44634034/feds-cook-says-sees-more-evidence-of-slowing-consumer-spending-business-investmen",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44634188,
+      "headline": "Are Bitcoin And The S&P 500 Heading For A Death Cross?",
+      "created_at": "2025-04-03T18:55:26Z",
+      "updated_at": "2025-04-03T18:55:28Z",
+      "symbols": [
+        "BTCUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/25/04/44634188/are-bitcoin-and-the-sp-500-heading-for-a-death-cross",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44634493,
+      "headline": "U.S. State Dept Approves Sale Of Upgrade And Recertification Of Patriot Missiles To Kuwait For $400M",
+      "created_at": "2025-04-03T19:11:09Z",
+      "updated_at": "2025-04-03T19:11:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44634493/u-s-state-dept-approves-sale-of-upgrade-and-recertification-of-patriot-missiles-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44634504,
+      "headline": "Judge Says There Is a 'Fair Likelihood' That Trump Administration Violated His Order Blocking Deportations Of Some Venezuelans",
+      "created_at": "2025-04-03T19:12:36Z",
+      "updated_at": "2025-04-03T19:12:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/04/44634504/judge-says-there-is-a-fair-likelihood-that-trump-administration-violated-his-orde",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44634825,
+      "headline": "Asked If There Are Concerns That China Will Cut Off Supplies Of Pharmaceuticals, White House's Hassett Says Don't Think People Need To Be Worried About That",
+      "created_at": "2025-04-03T19:32:24Z",
+      "updated_at": "2025-04-03T19:32:24Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/25/04/44634825/asked-if-there-are-concerns-that-china-will-cut-off-supplies-of-pharmaceuticals-white-houses-hassett",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44635144,
+      "headline": "Friday's Jobs Report Could Be Make-Or-Break Moment After Trump's Tariff Shock",
+      "created_at": "2025-04-03T19:56:22Z",
+      "updated_at": "2025-04-03T19:56:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/04/44635144/fridays-jobs-report-could-be-make-or-break-moment-after-trumps-tariff-shock",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44637959,
+      "headline": "Mexican Stocks Notch Widest 1-Day Rally Versus S&P 500 Since 1998 As Trump Spares Mexico From Tariffs",
+      "created_at": "2025-04-03T21:23:47Z",
+      "updated_at": "2025-04-03T21:23:48Z",
+      "symbols": [
+        "BOMXF",
+        "EWW",
+        "GPOVF",
+        "GPOVY",
+        "OPMXF",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/04/44637959/mexican-stocks-notch-widest-1-day-rally-versus-sp-500-since-1998-as-trump-spares-mexico-from-tariffs",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+> Audit, 22 October 2026: [07_Revised_Report_CN.md](07_Revised_Report_CN.md) is the sole report master; English is a companion translation. Use the [run ledger](Evidence_Attachments/Result_Run_Ledger_20261022.md) and [registry](reproduction_outputs/audit_20261022/result_registry.json) for numbers and missing provenance. Historical runs are not current-system results.
+
 # MarketStream Technical Ownership Evidence Index
 
 Prepared: 17 September 2026  
@@ -42,23 +44,22 @@ I use four evidence classes throughout this package.
 
 | Item | Current evidence | Classification | Boundary |
 |---|---:|---|---|
-| Automated tests | 62 passed in 4.85 s | Current-version measured result | Shows conformance to the present test suite, not production reliability |
+| Automated tests | 63 passed in 4.67 s | Current-version measured result | Shows conformance to the present test suite, not production reliability |
 | Ruff | All checks passed | Current-version measured result | Static checks only |
 | Generated CEP protocol | Precision 0.750, Recall 1.000, F1 0.857 | Controlled technical validation | Generated factor sequences, not real market labels |
-| Generated CEP computation | p50 0.0131 ms, p99 0.0299 ms | Current-version measured result on synthetic snapshots | Excludes Kafka, database, and network time |
-| Negative controls | 40 alerting cases out of 240 | Controlled technical validation | Separate cases from the 120 unmatched alerts in positive scenarios |
-| Latest available Kafka/database soak | 240 events, 76 alerts, p95 1.616 s | Historical controlled validation dated 10 September 2026 | Could not be rerun because the local Docker daemon was not running |
+| Generated CEP computation | SYN-TRACE-20261022: p50 0.0150 ms, p99 0.0688 ms | Current-version measured result on synthetic snapshots | Excludes Kafka, database, and network time |
+| Negative controls | 40 alerting cases out of 240 | Controlled technical validation | 40 cases emit 60 alerts included in the 120 total FP |
+| Latest available Kafka/database soak | 240 events, 76 alerts, p95 1.616 s | Historical controlled validation dated 10 September 2026 | No rerun in this audit; September 17 notes reported Docker unavailable |
 | Older Kafka/database soak | 240 events, 88 alerts, p95 1.718 s | Historical controlled validation dated 6 August 2026 | Retained to show the earlier run, not used as the current result |
 | Alpaca IEX live run | 48,734 events over about 88 seconds | Historical real-input engineering validation | Warm-up only. It does not provide real detection Precision or Recall |
 | Real historical effectiveness | No eligible result | Not yet demonstrated | Labels remain unreviewed and unfrozen |
 
 ## Main corrections made in this package
 
-- `160 passed` is an older-version result. The current tree has 62 tests.
+- `160 passed` is an older-version result. CHECKS-20261022 has 63 tests; the September 17 summary had 62.
 - The latest available soak has 76 alerts. The 88-alert run is retained as an older
   run instead of being silently replaced.
-- The 120 false positives and the 40/240 negative-control alerts are different
-  observations from different parts of the protocol.
+- 120 FP = 60 unmatched positive-scenario alerts + 60 negative-control alerts. The 40/240 figure counts alerting cases; those 40 cases emit 60 alerts already included in total FP.
 - The old 0.0033 ms comparison and the current synthetic timing are not presented as
   one experiment.
 - The old ML comparison used real OHLCV with injected anomalies. It does not prove
@@ -82,23 +83,30 @@ I use four evidence classes throughout this package.
 - [`Evidence_Attachments/Test_Outputs.md`](Evidence_Attachments/Test_Outputs.md): reproduced checks.
 - [`Evidence_Attachments/Experiment_Artifact_Index.md`](Evidence_Attachments/Experiment_Artifact_Index.md): raw experiment map.
 
+- [`08_Contribution_Attribution_Matrix_EN.md`](08_Contribution_Attribution_Matrix_EN.md): decision, execution and evidence matrix (22 October 2026).
+- [`08_Contribution_Attribution_Matrix_CN.md`](08_Contribution_Attribution_Matrix_CN.md): Chinese matrix.
+- [`Evidence_Attachments/Decision_Log_Excerpts.md`](Evidence_Attachments/Decision_Log_Excerpts.md): original record locations and excerpts.
+
+- [`Evidence_Attachments/Attribution_Validation_20261022.md`](Evidence_Attachments/Attribution_Validation_20261022.md): attribution verification results.
+
+- [`09_Core_Contribution_Statement_EN.md`](09_Core_Contribution_Statement_EN.md): concise statement of personal leadership and AI-assisted development.
+- [`09_Core_Contribution_Statement_CN.md`](09_Core_Contribution_Statement_CN.md): Chinese contribution statement.
+
 ## Authorship and AI statement
 
-`LucyMeowMiluku` and `Demo0102` are two Git identities used by the same student.
-Git history shows when changes entered a branch, but it cannot prove that every line
-was typed without assistance.
+I led the selection of MarketStream’s core solution and its development priorities, scope, key design constraints, and verification requirements. I prioritised the backend pipeline, selected eight factors across three time windows with six CEP patterns as the detection architecture, and drove core simplification and modularisation. I directly specified baseline persistence, retention of the latest 20 trading days per cell, three explicit startup modes, and recovery requirements. I also required real-data evaluation, anomaly intervals identified in advance, and visual replay.
 
-I used AI for code generation, debugging, explanation, restructuring, and report
-drafting. My claim is narrower: I identified several project problems, supplied
-constraints and acceptance criteria, checked outputs, requested changes, and ran
-verification. The contribution log separates these actions from AI implementation,
-the supervisor's direction, public research methods, and third-party platforms.
+AI served as an auxiliary development tool: it provided technical advice, helped elaborate proposals, generated and refactored code, executed tests and debugging, and drafted and revised report text. AI contributed specific proposals for the factors, windows, patterns and explicit state-machine refactoring; implementation proceeded after my approval. Those proposals and generation records remain identified in the provenance materials.
 
-Claude logs are currently unavailable and are not reconstructed. Project-related
-Codex tasks that remain accessible are indexed. Private chats and unrelated projects
-are outside the evidence-package scope.
+My core contributions are solution selection, concrete problem and constraint design, development trade-offs, verification requirements, and report revision decisions. The contribution matrix separately evidences requirements I directly proposed and advice I chose to adopt, linking my decisions, AI assistance, and the resulting code and experiment artifacts.
+
+The [attribution matrix](08_Contribution_Attribution_Matrix_EN.md) is the decision-to-evidence map, with a [Chinese version](08_Contribution_Attribution_Matrix_CN.md). The [log excerpts](Evidence_Attachments/Decision_Log_Excerpts.md) identify original records and distinguish direct requirements, adoption decisions and AI execution. Architecture selection is not conflated with first proposal, and testing is not conflated with manual authorship.
+
+Sole initial authorship of the detailed architecture, all core/state-machine code and the extent of personally written report text are unconfirmed. Git identities record repository versions; they do not settle generation provenance. Claude history remains unavailable and is not reconstructed. Private chats and unrelated projects remain excluded.
 
 ## Remaining gaps
+
+- Personal code/prose authorship requires specific editing evidence; archived JSONL includes existing escaping defects documented in the log excerpts.
 
 - The supervisor has not yet stated whether this evidence format is sufficient.
 - The real-event label registry is still a draft and is not frozen.

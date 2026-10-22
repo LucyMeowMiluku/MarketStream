@@ -1,0 +1,1099 @@
+{
+  "interval_id": "aapl-fy24-q2-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "AAPL",
+  "started_at": "2024-05-03T13:30:00Z",
+  "ended_at": "2024-05-03T15:00:00Z",
+  "local_start": "2024-05-03T09:30:00-04:00",
+  "local_end": "2024-05-03T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-02T19:59:00Z",
+      "prior_close": 173.13,
+      "first_minute": "2024-05-03T13:30:00Z",
+      "last_minute": "2024-05-03T14:59:00Z",
+      "first_open": 186.65,
+      "last_close": 184.76,
+      "gap_pct": 7.809160746260035,
+      "end_vs_prior_pct": 6.717495523594974,
+      "window_return_pct": -1.0125904098580274,
+      "window_range_pct": 2.298419501741223,
+      "volume": 1728434,
+      "raw_artifact": "raw/aapl-fy24-q2-reaction/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 87,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-03T14:25:00+00:00",
+        "2024-05-03T14:38:00+00:00",
+        "2024-05-03T14:59:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-02T19:59:00Z",
+      "prior_close": 426.92,
+      "first_minute": "2024-05-03T13:30:00Z",
+      "last_minute": "2024-05-03T14:58:00Z",
+      "first_open": 434.49,
+      "last_close": 433.83,
+      "gap_pct": 1.7731659327274496,
+      "end_vs_prior_pct": 1.6185702239295274,
+      "window_return_pct": -0.15190223020092875,
+      "window_range_pct": 0.7848281893714528,
+      "volume": 154121,
+      "raw_artifact": "raw/aapl-fy24-q2-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-03T14:41:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-02T19:59:00Z",
+      "prior_close": 505.03,
+      "first_minute": "2024-05-03T13:30:00Z",
+      "last_minute": "2024-05-03T14:59:00Z",
+      "first_open": 511.16,
+      "last_close": 509.175,
+      "gap_pct": 1.213789279844768,
+      "end_vs_prior_pct": 0.8207433221788962,
+      "window_return_pct": -0.38833242037717985,
+      "window_range_pct": 0.7571014946396328,
+      "volume": 285749,
+      "raw_artifact": "raw/aapl-fy24-q2-reaction/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 38605878,
+      "headline": "Tim Cook Blasts DOJ's Antitrust Lawsuit Against Apple, Says He's Going To Make Sure It Doesn't Become A Distraction: 'We're Going To Fight It'",
+      "created_at": "2024-05-03T05:29:29Z",
+      "updated_at": "2024-05-03T05:29:29Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38605878/tim-cook-blasts-dojs-antitrust-lawsuit-against-apple-says-hes-going-to-make-sure-it-doesnt-become-a",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38606230,
+      "headline": "Elon Musk Wowed By Apple's Biggest Stock Buyback — Will Tesla Follow Suit Or Remain Stuck In 'Category 5' Storm?",
+      "created_at": "2024-05-03T06:11:28Z",
+      "updated_at": "2024-05-03T06:11:28Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38606230/elon-musk-wowed-by-apples-biggest-stock-buyback-will-tesla-follow-suit-or-remain-stuck-in-catego",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38606493,
+      "headline": "Apple, Hershey And 3 Stocks To Watch Heading Into Friday",
+      "created_at": "2024-05-03T06:46:13Z",
+      "updated_at": "2024-05-03T06:46:14Z",
+      "symbols": [
+        "AAPL",
+        "AXL",
+        "COIN",
+        "FLR",
+        "HS",
+        "HSY"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/earnings-beats/24/05/38606493/apple-hershey-and-3-stocks-to-watch-heading-into-friday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38607876,
+      "headline": "Steve Jobs Wasn't A Fan, But Apple's Record Stock Buyback Is So Massive It Dwarfs Valuations Of Boeing, Starbucks, eBay And 415 Other S&P 500 Companies",
+      "created_at": "2024-05-03T09:43:08Z",
+      "updated_at": "2024-05-03T09:43:08Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38607876/steve-jobs-wasnt-a-fan-but-apples-record-stock-buyback-is-so-massive-it-dwarfs-valuations-of-boe",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38608038,
+      "headline": "Why Apple Shares Are Trading Higher By 6%; Here Are 20 Stocks Moving Premarket",
+      "created_at": "2024-05-03T09:57:39Z",
+      "updated_at": "2024-05-03T09:57:40Z",
+      "symbols": [
+        "AAPL",
+        "AMGN",
+        "ARDX",
+        "AXTI",
+        "BBAI",
+        "EXPE",
+        "FTNT",
+        "JAGX",
+        "LLAP",
+        "LOCO",
+        "MRIN",
+        "NAOV",
+        "NET",
+        "OLB",
+        "OSPN",
+        "RPID",
+        "SPT",
+        "STEM",
+        "TRUP",
+        "VAXX"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38608038/why-apple-shares-are-trading-higher-by-6-here-are-20-stocks-moving-premarket",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38608712,
+      "headline": "Asia Markets Mixed, Europe Gain While Crude Oil and Gold Fall Below Key Levels - Global Markets Today While US Slept",
+      "created_at": "2024-05-03T10:37:22Z",
+      "updated_at": "2024-05-03T10:37:23Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "QCOM",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/05/38608712/asia-markets-mixed-europe-gain-while-crude-oil-and-gold-fall-below-key-levels-global-markets-today-w",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38608792,
+      "headline": "Why Is Apple Stock Soaring Premarket Today?",
+      "created_at": "2024-05-03T10:40:43Z",
+      "updated_at": "2024-05-03T10:40:44Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38608792/why-is-apple-stock-soaring-premarket-today",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38608959,
+      "headline": "Needham Reiterates Buy on Apple, Maintains $220 Price Target",
+      "created_at": "2024-05-03T10:48:28Z",
+      "updated_at": "2024-05-03T10:48:28Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38608959/needham-reiterates-buy-on-apple-maintains-220-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38609896,
+      "headline": "Wall Street Looks To Feed Off Apple's Post-Earnings Power But Key Jobs Data May Upset The Cart: Analyst Says 'A Lot Of These Clouds Will Lift' If This Happens",
+      "created_at": "2024-05-03T11:03:32Z",
+      "updated_at": "2024-05-03T11:03:33Z",
+      "symbols": [
+        "AMGN",
+        "APPL",
+        "AXL",
+        "BBAI",
+        "BJRI",
+        "BTCUSD",
+        "CBOE",
+        "COIN",
+        "EXPE",
+        "FIVN",
+        "FLR",
+        "HSY",
+        "ILMN",
+        "LYV",
+        "NET",
+        "OMI",
+        "OPEN",
+        "QQQ",
+        "REG",
+        "SPY",
+        "TNDM",
+        "XPO"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/05/38609896/wall-street-looks-to-feed-off-apples-post-earnings-power-but-key-jobs-data-may-upset-the-cart-analy",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38610270,
+      "headline": "Jim Cramer Slams Analysts Over 'Getting China Wrong About Apple For Two Decades:' 'That's Why I Am Always Trashing You!'",
+      "created_at": "2024-05-03T11:16:54Z",
+      "updated_at": "2024-05-03T11:16:55Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/38610270/jim-cramer-slams-analysts-over-getting-china-wrong-about-apple-for-two-decades-that",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38610325,
+      "headline": "Tim Cook 'Very Bullish' On Apple's Generative AI Efforts Despite Lower Capital Expenditure Than Rivals",
+      "created_at": "2024-05-03T11:22:02Z",
+      "updated_at": "2024-05-03T11:22:02Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38610325/tim-cook-very-bullish-on-apples-generative-ai-efforts-despite-lower-capital-expenditure-than-riv",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38610873,
+      "headline": "Despite Tim Cook's Scant Details About iPhone AI, Tesla Investor Ross Gerber Thinks It Will Trigger 'Whole New Upgrade Cycle'",
+      "created_at": "2024-05-03T11:41:59Z",
+      "updated_at": "2024-05-03T11:42:00Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38610873/despite-tim-cooks-scant-details-about-iphone-ai-tesla-investor-ross-gerber-thinks-it-will-trigger-wh",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38611874,
+      "headline": "Marjorie Taylor Greene Reveals New Stock Trades After 2-Year Gap: Berkshire Hathway, Goldman Sachs And Microsoft Make The List — But Trump's DJT Doesn't",
+      "created_at": "2024-05-03T12:18:38Z",
+      "updated_at": "2024-05-03T12:18:39Z",
+      "symbols": [
+        "BRK",
+        "DJT",
+        "EMG",
+        "GS",
+        "HD",
+        "HSY",
+        "IJR",
+        "IUSG",
+        "IVV",
+        "IXUS",
+        "MSFT",
+        "MSTF",
+        "QCOM",
+        "SPY",
+        "SWLGX",
+        "TSCO",
+        "VB",
+        "VEA",
+        "VO",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38611874/marjorie-taylor-greene-reveals-new-stock-trades-after-2-year-gap-berkshire-hathway-goldman-sachs",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612141,
+      "headline": "Warren Buffett's Berkshire Hathaway Faces Apple Risk, Bearish Momentum Ahead Of Q1 Earnings",
+      "created_at": "2024-05-03T12:25:47Z",
+      "updated_at": "2024-05-03T12:25:48Z",
+      "symbols": [
+        "AAPL",
+        "BRK"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/38612141/warren-buffetts-berkshire-hathaway-faces-apple-risk-bearish-momentum-ahead-of-q1-ea",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612333,
+      "headline": "Nonfarm Payrolls (Apr) +175K vs +238K Est.",
+      "created_at": "2024-05-03T12:30:10Z",
+      "updated_at": "2024-05-03T12:30:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38612333/nonfarm-payrolls-apr-175k-vs-238k-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612334,
+      "headline": "USA Average Hourly Earnings (MoM) For April 0.2% Vs 0.3% Est; 0.3% Prior",
+      "created_at": "2024-05-03T12:30:11Z",
+      "updated_at": "2024-05-03T12:30:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38612334/usa-average-hourly-earnings-mom-for-april-0-2-vs-0-3-est-0-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612335,
+      "headline": "USA Unemployment Rate For April 3.9% Vs 3.8% Est.; 3.8% Prior",
+      "created_at": "2024-05-03T12:30:11Z",
+      "updated_at": "2024-05-03T12:30:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38612335/usa-unemployment-rate-for-april-3-9-vs-3-8-est-3-8-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612345,
+      "headline": "U6 Unemployment Rate For April 7.4% Vs 7.3% Prior",
+      "created_at": "2024-05-03T12:30:17Z",
+      "updated_at": "2024-05-03T12:30:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38612345/u6-unemployment-rate-for-april-7-4-vs-7-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612346,
+      "headline": "Participation Rate (Apr) 62.7%",
+      "created_at": "2024-05-03T12:30:22Z",
+      "updated_at": "2024-05-03T12:30:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38612346/participation-rate-apr-62-7",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612558,
+      "headline": "Market-Moving News for May 3rd",
+      "created_at": "2024-05-03T12:42:12Z",
+      "updated_at": "2024-05-03T12:42:13Z",
+      "symbols": [
+        "AAPL",
+        "ARDX",
+        "SPT"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/movers/24/05/38612558/market-moving-news-for-may-3rd",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612602,
+      "headline": "Rosenblatt Reiterates Neutral on Apple, Raises Price Target to $196",
+      "created_at": "2024-05-03T12:44:57Z",
+      "updated_at": "2024-05-03T12:44:57Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38612602/rosenblatt-reiterates-neutral-on-apple-raises-price-target-to-196",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38612469,
+      "headline": "Job Market Cools In April: Payrolls Miss Forecasts, Wages Rise Less Than Expected (UPDATED)",
+      "created_at": "2024-05-03T12:58:14Z",
+      "updated_at": "2024-05-03T12:58:18Z",
+      "symbols": [
+        "ABNB",
+        "BKNG",
+        "LMT",
+        "MRK",
+        "NVDA",
+        "NVO",
+        "PDD",
+        "PEP",
+        "SPY",
+        "TD",
+        "UBER",
+        "UUP",
+        "XLK",
+        "XLRE"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38612469/job-market-cools-in-april-payrolls-miss-forecasts-wages-rise-less-than-expected",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38613204,
+      "headline": "Coinbase Global To Rally Around 22%? Here Are 10 Top Analyst Forecasts For Friday",
+      "created_at": "2024-05-03T13:02:08Z",
+      "updated_at": "2024-05-03T13:02:08Z",
+      "symbols": [
+        "AAPL",
+        "BKNG",
+        "COIN",
+        "CYRX",
+        "LYV",
+        "MCO",
+        "TXRH",
+        "UNP",
+        "WEN",
+        "XYL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38613204/coinbase-global-to-rally-around-22-here-are-10-top-analyst-forecasts-for-friday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38613198,
+      "headline": "Apple Delivered Much Better-Than-Feared 'Jalen-Brunson-Like' Quarter, Says Bullish Analyst: Why Betting Against Cupertino Is A 'Wrong Move'",
+      "created_at": "2024-05-03T13:01:49Z",
+      "updated_at": "2024-05-03T13:14:12Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/24/05/38613198/apple-delivered-much-better-than-feared-jalen-brunson-like-quarter-says-bullish-analyst-why-betting",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38613649,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of May 3, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-05-03T13:18:20Z",
+      "updated_at": "2024-05-03T13:18:21Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "BA",
+        "COIN",
+        "CVNA",
+        "DJT",
+        "IBRX",
+        "NVDA",
+        "PLTR",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/05/38613649/top-10-trending-stocks-on-wallstreetbets-as-of-may-3-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614135,
+      "headline": "Benzinga Opening Bell Update: Apple Gains On Earnings And Buyback, Cloudflare Falls On Soft Guidance, Apr. Unemployment Rate Comes In Above Estimates",
+      "created_at": "2024-05-03T13:32:15Z",
+      "updated_at": "2024-05-03T13:32:15Z",
+      "symbols": [
+        "AAPL",
+        "NET",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614135/benzinga-opening-bell-update-apple-gains-on-earnings-and-buyback-cloudflare-falls",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614138,
+      "headline": "'Have You Used Siri Lately?' Elon Musk Answers MKBHD After Tim Cook Teases 'Exciting' AI Developments From Apple This Year",
+      "created_at": "2024-05-03T13:32:17Z",
+      "updated_at": "2024-05-03T13:32:18Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38614138/have-you-used-siri-lately-elon-musk-answers-mkbhd-after-tim-cook-teases-exciting-ai-developments-fro",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614400,
+      "headline": "S&P Global Services PMI For April 51.3 Vs 50.9 Est. 51.7 Prior",
+      "created_at": "2024-05-03T13:45:23Z",
+      "updated_at": "2024-05-03T13:45:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614400/s-p-global-services-pmi-for-april-51-3-vs-50-9-est-51-7-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614401,
+      "headline": "S&P Global Composite PMI For April 51.3 Vs 50.9 Est.; 52.1 Prior",
+      "created_at": "2024-05-03T13:45:28Z",
+      "updated_at": "2024-05-03T13:45:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614401/s-p-global-composite-pmi-for-april-51-3-vs-50-9-est-52-1-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614468,
+      "headline": "Fed's Bowman Says Her Baseline Outlook Continues To Be That Inflation Will Decline Further With Policy Rate Held Steady; She Remains Willing To Raise Federal Funds Rate At A Future Meeting Should Data Show Progress On Inflation Has Stalled Or Reversed; Still Sees A Number Of Upside Inflation Risks To Her Outlook; Will Continue To Watch Data Closely To Assess Appropriate Monetary Policy",
+      "created_at": "2024-05-03T13:48:12Z",
+      "updated_at": "2024-05-03T13:48:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614468/feds-bowman-says-her-baseline-outlook-continues-to-be-that-inflation-will-decline",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614479,
+      "headline": "Fed's Bowman Says Fed's Monetary Policy Stance Appears To Be Restrictive; Unclear Whether Further Supply-side Improvements Will Continue To Lower Inflation; Risk Strong That Consumer Demand, More Immigration And Tight Labor Market Could Lead To Persistently High Core Services Inflation; Inflow Of New Immigrants To Some Areas That Lack Affordable Housing Could Push Up Rents; Geopolitical Developments Also An Upside Risk To Inflation",
+      "created_at": "2024-05-03T13:48:37Z",
+      "updated_at": "2024-05-03T13:48:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614479/feds-bowman-says-feds-monetary-policy-stance-appears-to-be-restrictive-unclear-wh",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614483,
+      "headline": "Fed's Bowman Says Also Risk Of Loosening Financial Conditions, Fiscal Stimulus Could Juice Demand, Stalling And Even Reversing Inflation Progress; Extent Of Data Revisions In Past Few Years Makes Assessing Economy Even More Challenging; She Will Remain Cautious In Her Approach To Deciding Future Changes To Policy Stance",
+      "created_at": "2024-05-03T13:48:59Z",
+      "updated_at": "2024-05-03T13:49:00Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614483/feds-bowman-says-also-risk-of-loosening-financial-conditions-fiscal-stimulus-coul",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614506,
+      "headline": "Fed's Bowman Says Expects Inflation To Remain Elevated For Some Time; Recent Inflation Pickup Evident Across Many Goods And Service Categories; Recent Employment Reports Show A Continued Tight Labor Market",
+      "created_at": "2024-05-03T13:49:19Z",
+      "updated_at": "2024-05-03T13:49:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614506/feds-bowman-says-expects-inflation-to-remain-elevated-for-some-time-recent-inflat",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614811,
+      "headline": "USA ISM Non-Manufacturing PMI For April 49.4 Vs 52.0 Est.; 51.4 Prior",
+      "created_at": "2024-05-03T14:00:23Z",
+      "updated_at": "2024-05-03T14:00:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614811/usa-ism-non-manufacturing-pmi-for-april-49-4-vs-52-0-est-51-4-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38614838,
+      "headline": "USA ISM Non-Manufacturing Prices For April 59.2 Vs 55.0 Est.; 53.4 Prior",
+      "created_at": "2024-05-03T14:00:59Z",
+      "updated_at": "2024-05-03T14:01:00Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38614838/usa-ism-non-manufacturing-prices-for-april-59-2-vs-55-0-est-53-4-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38615099,
+      "headline": "Wedbush Reiterates Outperform on Apple, Maintains $250 Price Target",
+      "created_at": "2024-05-03T14:08:36Z",
+      "updated_at": "2024-05-03T14:08:37Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38615099/wedbush-reiterates-outperform-on-apple-maintains-250-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38615142,
+      "headline": "Market Clubhouse Morning Memo - May 3rd, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-05-03T14:12:26Z",
+      "updated_at": "2024-05-03T14:13:48Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/24/05/38615142/market-clubhouse-morning-memo-may-3rd-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-and",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38615271,
+      "headline": "Amgen Posts Upbeat Results, Joins OneSpan, Paylocity Holding, MercadoLibre And Other Big Stocks Moving Higher On Friday",
+      "created_at": "2024-05-03T14:15:59Z",
+      "updated_at": "2024-05-03T14:16:00Z",
+      "symbols": [
+        "AAPL",
+        "ALHC",
+        "AMGN",
+        "ARDX",
+        "ATGE",
+        "BKNG",
+        "CGON",
+        "CLFD",
+        "ENPH",
+        "IBRX",
+        "IESC",
+        "LOCO",
+        "MELI",
+        "MODV",
+        "MTZ",
+        "OLED",
+        "OSPN",
+        "PCTY",
+        "RMAX",
+        "RUN",
+        "TDW",
+        "TNDM",
+        "TWST",
+        "WK",
+        "WOW",
+        "XPO"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38615271/amgen-posts-upbeat-results-joins-onespan-paylocity-holding-mercadolibre-and-other-big-stocks-moving",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38615273,
+      "headline": "Barclays Maintains Underweight on Apple, Raises Price Target to $164",
+      "created_at": "2024-05-03T14:16:12Z",
+      "updated_at": "2024-05-03T14:16:13Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38615273/barclays-maintains-underweight-on-apple-raises-price-target-to-164",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38615551,
+      "headline": "Warren Buffett's Berkshire To Rake In $226M Passively In A Jiffy, Thanks To Its Core Holding Apple",
+      "created_at": "2024-05-03T14:23:45Z",
+      "updated_at": "2024-05-03T14:23:46Z",
+      "symbols": [
+        "AAPL",
+        "AXP",
+        "BAC",
+        "BRK",
+        "CVX",
+        "KO"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38615551/warren-buffetts-berkshire-to-rake-in-226m-passively-in-a-jiffy-thanks-to-its-core-holding-apple",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38616058,
+      "headline": "Services Sector Activity Gauge Contracts, Stocks, Bonds Trim Gains: 'Business Is Slowing'",
+      "created_at": "2024-05-03T14:44:35Z",
+      "updated_at": "2024-05-03T14:45:20Z",
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "TLT"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38616058/services-sector-activity-contracts-business-is-slowing-as-stocks-bonds-trim-gains",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38616109,
+      "headline": "Fed's Goolsbee Says 175,000 New Jobs Is A Very Solid Report; Hit A Bump On Inflation At The Start Of The Year; The More Jobs Report That Look Like They Did Pre-covid The More Confidence There Is That The Economy Is Not Overheating;  Don't Like Committing Even To The Next Meeting",
+      "created_at": "2024-05-03T14:46:07Z",
+      "updated_at": "2024-05-03T14:46:08Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38616109/feds-goolsbee-says-175-000-new-jobs-is-a-very-solid-report-hit-a-bump-on-inflatio",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38616124,
+      "headline": "Fed's Goolsbee Says Fed Must Get Comfort That Recent Inflation Is Not A Sign Of Reacceleration; What Happened In The Job Market This Year Has To Be Re-Normed Based On Estimates Of Higher Immigration; Still Trying To Analyze That; Feels Monetary Policy Is Restrictive; \"Real\" Federal Funds Rate Is As High As It Has Been In Decades; Have To Get More Comfort On Whether The Fed Is Still On A Path To Lower Inflation",
+      "created_at": "2024-05-03T14:46:31Z",
+      "updated_at": "2024-05-03T14:46:32Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38616124/feds-goolsbee-says-fed-must-get-comfort-that-recent-inflation-is-not-a-sign-of-re",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38616129,
+      "headline": "Fed's Goolsbee Says If The Fed Remains Restrictive Too Long It Will Have To Think About The Employment Side Of The Mandate; But Current Numbers Are Solid; When The Business Cycle Turns \"It Is Not Subtle\" With Credit Deteriorating, Unemployment Rising; Have Not Seen That Yet",
+      "created_at": "2024-05-03T14:46:55Z",
+      "updated_at": "2024-05-03T14:46:55Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38616129/feds-goolsbee-says-if-the-fed-remains-restrictive-too-long-it-will-have-to-think-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38616598,
+      "headline": "Wage Growth Slows – Stock Market Celebrates, Five Real Reasons Apple Is Running Up",
+      "created_at": "2024-05-03T14:58:59Z",
+      "updated_at": "2024-05-03T15:00:40Z",
+      "symbols": [
+        "AAPL",
+        "AMGN",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "LLY",
+        "META",
+        "MSFT",
+        "NVDA",
+        "NVO",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38616598/wage-growth-slows-stock-market-celebrates-five-real-reasons-apple-is-running-up",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 38617303,
+      "headline": "JP Morgan Maintains Overweight on Apple, Raises Price Target to $225",
+      "created_at": "2024-05-03T15:16:53Z",
+      "updated_at": "2024-05-03T15:16:54Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38617303/jp-morgan-maintains-overweight-on-apple-raises-price-target-to-225",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38618865,
+      "headline": "Jobs Growth Slows, Unemployment Ticks Up, Wage Increase Cools: 'The Market Should Love This Report'",
+      "created_at": "2024-05-03T16:08:10Z",
+      "updated_at": "2024-05-03T16:08:10Z",
+      "symbols": [
+        "QQQ",
+        "TLT"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38618865/jobs-growth-slows-unemployment-ticks-up-wage-increase-cools-the-market-should-lov",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38619721,
+      "headline": "B of A Securities Maintains Buy on Apple, Raises Price Target to $230",
+      "created_at": "2024-05-03T16:42:52Z",
+      "updated_at": "2024-05-03T16:42:52Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38619721/b-of-a-securities-maintains-buy-on-apple-raises-price-target-to-230",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38619882,
+      "headline": "Nasdaq Surges 2%; Apple Posts Upbeat Results",
+      "created_at": "2024-05-03T16:49:34Z",
+      "updated_at": "2024-05-03T16:49:35Z",
+      "symbols": [
+        "AAPL",
+        "AEON",
+        "OMI",
+        "SGBX",
+        "SPT",
+        "TNDM",
+        "UPLD"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/05/38619882/nasdaq-surges-2-apple-posts-upbeat-results",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38620023,
+      "headline": "Morgan Stanley Maintains Overweight on Apple, Raises Price Target to $216",
+      "created_at": "2024-05-03T16:57:59Z",
+      "updated_at": "2024-05-03T16:58:00Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38620023/morgan-stanley-maintains-overweight-on-apple-raises-price-target-to-216",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38620223,
+      "headline": "U.S. Baker Hughes Oil Rig Count -7 To 499; U.S. Baker Hughes Gas Rig Count -3 To 102; U.S. Baker Hughes Total Rig Count 605 Vs\t613 Prior",
+      "created_at": "2024-05-03T17:03:09Z",
+      "updated_at": "2024-05-03T17:03:10Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38620223/u-s-baker-hughes-oil-rig-count-7-to-499-u-s-baker-hughes-gas-rig-count-3-to-102-u",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38620997,
+      "headline": "10 Information Technology Stocks Whale Activity In Today's Session",
+      "created_at": "2024-05-03T17:35:12Z",
+      "updated_at": "2024-05-03T17:35:13Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "BILL",
+        "ENPH",
+        "FROG",
+        "NET",
+        "NVDA",
+        "PLTR",
+        "SEMR",
+        "SPT"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/05/38620997/10-information-technology-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38621037,
+      "headline": "7 Apple Analysts Size Up Q2 Results: Artificial Intelligence 'A Major Upgrade Cycle Within Product Categories Such As The iPhone'",
+      "created_at": "2024-05-03T17:37:57Z",
+      "updated_at": "2024-05-03T17:37:58Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/38621037/7-apple-analysts-size-up-q2-results-artificial-intelligence-a-major-upgrade-cycle-w",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38621183,
+      "headline": "U.S. DoT Releases Final Rules To Lower Consumer Costs, Continue U.S. Manufacturing Boom In Batteries And Clean Vehicles, Strengthen Energy Security; Secretary Yellen Says \"The Inflation Reduction Act's Clean Vehicle Credits Save Consumers Up To $7,500 On A New Vehicle, And Hundreds Of Dollars Per Year On Gas, While Creating Good-Paying Jobs And Strengthening Our Energy Security\"",
+      "created_at": "2024-05-03T17:44:19Z",
+      "updated_at": "2024-05-03T17:44:20Z",
+      "symbols": [
+        "F",
+        "GM",
+        "SPY",
+        "STLA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38621183/u-s-dot-releases-final-rules-to-lower-consumer-costs-continue-u-s-manufacturing-b",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38621297,
+      "headline": "Stocks Rally As Jobs Report Rekindles Rate Cut Hopes, Apple Rockets, Bitcoin Soars Above $61,000: What's Driving Markets Friday?",
+      "created_at": "2024-05-03T17:51:02Z",
+      "updated_at": "2024-05-03T17:51:03Z",
+      "symbols": [
+        "AMGN",
+        "BKNG",
+        "BTCUSD",
+        "CBRE",
+        "COIN",
+        "CRBG",
+        "CTRA",
+        "DIA",
+        "EOG",
+        "EXPE",
+        "FTNT",
+        "HSY",
+        "IWM",
+        "LNG",
+        "MELI",
+        "MNST",
+        "QQQ",
+        "SPY",
+        "SQ",
+        "XLB",
+        "XLC",
+        "XLE",
+        "XLK",
+        "XLP"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/05/38621297/stocks-rally-as-jobs-report-rekindles-rate-cut-hopes-apple-rockets-bitcoin-soars-above-61-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38621378,
+      "headline": "U.S. Democratic Representative Henry Cuellar Indicted On Conspiracy, Bribery Charges",
+      "created_at": "2024-05-03T17:57:23Z",
+      "updated_at": "2024-05-03T17:57:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38621378/u-s-democratic-representative-henry-cuellar-indicted-on-conspiracy-bribery-charge",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38621662,
+      "headline": "Itau BBA Upgrades Apple to Market Perform, Announces $188 Price Target",
+      "created_at": "2024-05-03T18:08:17Z",
+      "updated_at": "2024-05-03T18:08:17Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38621662/itau-bba-upgrades-apple-to-market-perform-announces-188-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38621762,
+      "headline": "'Why Isn't Buffett Calling Cook Out?' Question Redditors On Apple's Largest-Ever Share Buyback",
+      "created_at": "2024-05-03T18:14:22Z",
+      "updated_at": "2024-05-03T18:14:22Z",
+      "symbols": [
+        "AAPL",
+        "KO"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38621762/why-isnt-buffett-calling-cook-out-question-redditors-on-apples-largest-ever-share-buyback",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38623135,
+      "headline": "Apple Eyes Best Session Since Late 2022, Breaks Above 200-Day Average For First Time In 4 Months",
+      "created_at": "2024-05-03T19:27:01Z",
+      "updated_at": "2024-05-03T19:27:02Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/38623135/apple-eyes-best-session-since-late-2022-breaks-above-200-day-average-for-first-time",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38623678,
+      "headline": "Fitch Ratings Says 'U.S Credit Momentum Will Be Tempered By Rate Uncertainty'",
+      "created_at": "2024-05-03T19:57:06Z",
+      "updated_at": "2024-05-03T19:57:06Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38623678/fitch-ratings-says-u-s-credit-momentum-will-be-tempered-by-rate-uncertainty",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38623700,
+      "headline": "Hamas Says We Are 'Determined' To Reach Truce Agreement In A Way That Fulfils Palestinians' Demands; We Emphasize Movement's Positive Spirit While Studying Ceasefire Proposal, Going To Cairo With Same Spirit To Reach Agreement",
+      "created_at": "2024-05-03T19:58:50Z",
+      "updated_at": "2024-05-03T19:58:50Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38623700/hamas-says-we-are-determined-to-reach-truce-agreement-in-a-way-that-fulfils-pales",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38623944,
+      "headline": "Benzinga Closing Bell Update: Stocks Close Higher Following Jobs Data, Apple Gains On Strong Earnings, Dollar Falls",
+      "created_at": "2024-05-03T20:04:03Z",
+      "updated_at": "2024-05-03T20:04:04Z",
+      "symbols": [
+        "AAPL",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/24/05/38623944/benzinga-closing-bell-update-stocks-close-higher-following-jobs-data-apple-gains-on-strong",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38624536,
+      "headline": "Federal Reserve Dismisses Rate Hike Fears, Labor Market Cools, Apple Lures Investors With Record-Breaking Buyback: This Week In The Market",
+      "created_at": "2024-05-03T20:15:52Z",
+      "updated_at": "2024-05-03T20:15:53Z",
+      "symbols": [
+        "AAPL",
+        "BTCUSD",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/38624536/federal-reserve-dismisses-rate-hike-fears-labor-market-cools-apple-lures-investors-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38625551,
+      "headline": "Apple Says On April 23, California District Court Issued Order Granting Preliminary Approval Of Proposed Settlement Of Consolidated Derivative Lawsuits",
+      "created_at": "2024-05-03T20:41:12Z",
+      "updated_at": "2024-05-03T20:41:13Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38625551/apple-says-on-april-23-california-district-court-issued-order-granting-preliminary-approval-of-propo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38626374,
+      "headline": "Canaccord Genuity Maintains Buy on Apple, Raises Price Target to $215",
+      "created_at": "2024-05-03T21:12:51Z",
+      "updated_at": "2024-05-03T21:12:52Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38626374/canaccord-genuity-maintains-buy-on-apple-raises-price-target-to-215",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

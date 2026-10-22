@@ -1,0 +1,469 @@
+{
+  "interval_id": "aapl-control-2024-05-17",
+  "candidate_kind": "normal",
+  "ticker": "AAPL",
+  "started_at": "2024-05-17T13:30:00Z",
+  "ended_at": "2024-05-17T15:00:00Z",
+  "local_start": "2024-05-17T09:30:00-04:00",
+  "local_end": "2024-05-17T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 85,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-17T13:52:00+00:00",
+        "2024-05-17T13:53:00+00:00",
+        "2024-05-17T14:11:00+00:00",
+        "2024-05-17T14:38:00+00:00",
+        "2024-05-17T14:40:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-16T19:59:00Z",
+      "prior_close": 189.93,
+      "first_minute": "2024-05-17T13:30:00Z",
+      "last_minute": "2024-05-17T14:59:00Z",
+      "first_open": 189.22,
+      "last_close": 189.975,
+      "gap_pct": -0.3738219343968896,
+      "end_vs_prior_pct": 0.023692939504016408,
+      "window_return_pct": 0.39900644752139947,
+      "window_range_pct": 0.8297220167001338,
+      "volume": 118494,
+      "raw_artifact": "raw/aapl-control-2024-05-17/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 75,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-17T13:44:00+00:00",
+        "2024-05-17T13:52:00+00:00",
+        "2024-05-17T14:08:00+00:00",
+        "2024-05-17T14:14:00+00:00",
+        "2024-05-17T14:20:00+00:00",
+        "2024-05-17T14:22:00+00:00",
+        "2024-05-17T14:23:00+00:00",
+        "2024-05-17T14:29:00+00:00",
+        "2024-05-17T14:37:00+00:00",
+        "2024-05-17T14:41:00+00:00",
+        "2024-05-17T14:43:00+00:00",
+        "2024-05-17T14:44:00+00:00",
+        "2024-05-17T14:45:00+00:00",
+        "2024-05-17T14:49:00+00:00",
+        "2024-05-17T14:50:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-16T19:59:00Z",
+      "prior_close": 451.96,
+      "first_minute": "2024-05-17T13:30:00Z",
+      "last_minute": "2024-05-17T14:59:00Z",
+      "first_open": 452.07,
+      "last_close": 452.445,
+      "gap_pct": 0.024338437029824966,
+      "end_vs_prior_pct": 0.10731038144968785,
+      "window_return_pct": 0.08295175525914189,
+      "window_range_pct": 0.28867210830181317,
+      "volume": 65336,
+      "raw_artifact": "raw/aapl-control-2024-05-17/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 82,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-17T13:34:00+00:00",
+        "2024-05-17T13:37:00+00:00",
+        "2024-05-17T13:44:00+00:00",
+        "2024-05-17T13:58:00+00:00",
+        "2024-05-17T14:00:00+00:00",
+        "2024-05-17T14:15:00+00:00",
+        "2024-05-17T14:52:00+00:00",
+        "2024-05-17T14:55:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-16T19:59:00Z",
+      "prior_close": 528.83,
+      "first_minute": "2024-05-17T13:30:00Z",
+      "last_minute": "2024-05-17T14:59:00Z",
+      "first_open": 528.93,
+      "last_close": 529.105,
+      "gap_pct": 0.0189096685135004,
+      "end_vs_prior_pct": 0.05200158841214275,
+      "window_return_pct": 0.033085663509369034,
+      "window_range_pct": 0.1739360595919988,
+      "volume": 113561,
+      "raw_artifact": "raw/aapl-control-2024-05-17/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 38890222,
+      "headline": "Biden Hands Out 'Big L' To Trump As Dow Hits 40K For First Time And Ex-President's Stock Market Crash Prediction Falls Flat",
+      "created_at": "2024-05-17T09:36:32Z",
+      "updated_at": "2024-05-17T09:36:33Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38890222/biden-hands-out-big-l-to-trump-as-dow-hits-40k-for-first-time-and-ex-presidents-stock-market-cra",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38890667,
+      "headline": "China Gains 1%, Europe Markets Dip, And Gold Inches Toward $2,400 Again - Global Markets Today While US Slept",
+      "created_at": "2024-05-17T10:07:40Z",
+      "updated_at": "2024-05-17T10:07:41Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/05/38890667/china-gains-1-europe-markets-dip-and-gold-inches-toward-2-400-again-global-markets-today-while-us-sl",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38891635,
+      "headline": "Disney Following Netflix's Footsteps Out Of App Stores? Bob Iger Demands Better Deals From Apple, Google",
+      "created_at": "2024-05-17T11:10:48Z",
+      "updated_at": "2024-05-17T11:10:48Z",
+      "symbols": [
+        "AAPL",
+        "DIS",
+        "GOOG",
+        "GOOGL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38891635/disney-following-netflixs-footsteps-out-of-app-stores-bob-iger-demands-better-deals-from-apple-g",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38891648,
+      "headline": "Wall Street Stays Cautious To Close Out A Big Week, Meme Rally Resumes: Analyst Warns Investors 'Not To Sprint On The Victory Lap'",
+      "created_at": "2024-05-17T11:12:34Z",
+      "updated_at": "2024-05-17T11:12:35Z",
+      "symbols": [
+        "AMAT",
+        "AMC",
+        "BTCUSD",
+        "DOCS",
+        "DXC",
+        "GME",
+        "HOOD",
+        "QQQ",
+        "SPY",
+        "TTWO",
+        "WMT"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/05/38891648/wall-street-stays-cautious-to-close-out-a-big-week-meme-rally-resumes-analyst-warns-investors-not-t",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38894003,
+      "headline": "Bitcoin, Ethereum, And Dogecoin Pull Back After Strong Rally, GOP-Led House Passes Bill Urging Biden To Arm Israel Amid Hamas Conflict - Top Headlines Today While US Slept",
+      "created_at": "2024-05-17T13:07:39Z",
+      "updated_at": "2024-05-17T13:07:40Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/05/38894003/bitcoin-ethereum-and-dogecoin-pull-back-after-strong-rally-gop-led-house-passes-bill-urgin",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38894976,
+      "headline": "US Leading Index (MoM) For April -0.6% Vs -0.3% Est.; -0.3% Prior",
+      "created_at": "2024-05-17T14:00:08Z",
+      "updated_at": "2024-05-17T14:00:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38894976/us-leading-index-mom-for-april-0-6-vs-0-3-est-0-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38895462,
+      "headline": "Fed's Waller Doesn't Comment On Rate Outlook In Prepared Speech",
+      "created_at": "2024-05-17T14:17:39Z",
+      "updated_at": "2024-05-17T14:17:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38895462/feds-waller-doesnt-comment-on-rate-outlook-in-prepared-speech",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38882423,
+      "headline": "If You Made $70,000 Salary When Trump Was Elected, You'd Need $90,000 Today To Keep Up",
+      "created_at": "2024-05-16T19:39:00Z",
+      "updated_at": "2024-05-17T14:21:23Z",
+      "symbols": [
+        "SPY",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38882423/if-you-made-70-000-when-trump-was-elected-youd-need-90-000-today-to-keep-up",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38895623,
+      "headline": "Market Clubhouse Morning Memo - May 17th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-05-17T14:25:59Z",
+      "updated_at": "2024-05-17T14:28:41Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/05/38895623/market-clubhouse-morning-memo-may-17th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-an",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38895763,
+      "headline": "U.S. Treasury Says Yellen To Travel To G7 Finance Meeting In Italy Next Week With A Stop In Frankfurt, Germany; Will Discuss At G7 Meeting Proposals To Bring Forward Future Proceeds From Frozen Russian Assets To Give More Money To Ukraine More Quickly",
+      "created_at": "2024-05-17T14:33:46Z",
+      "updated_at": "2024-05-17T14:33:47Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38895763/u-s-treasury-says-yellen-to-travel-to-g7-finance-meeting-in-italy-next-week-with-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38895768,
+      "headline": "Treasury Official Says Yellen Hopes G7 Finance Officials Can Reach Consensus On A Plan For Russian Assets To Advise G7 Leaders For Summit In June;  Yellen Will Discuss At G7 Meeting The Need To Tackle China's Excess Industrial Capacity In Key Sectors And New U.S. Tariffs On EVs, Solar, Semiconductors",
+      "created_at": "2024-05-17T14:34:11Z",
+      "updated_at": "2024-05-17T14:34:12Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38895768/treasury-official-says-yellen-hopes-g7-finance-officials-can-reach-consensus-on-a",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38895771,
+      "headline": "Treasury Official Says Yellen Will Talk To European Banks, G7 Colleagues About Ways To Cut Off Financing From Russia, Tighten Sanctions; G7 Countries Are 'Making Progress' Towards Consensus On Russian Assets Plan To Provide More Money To Ukraine; Yellen To Deliver Remarks In Frankfurt On Importance Of Transatlantic Alliance, Including Disrupting Russia's War Machine, Developing Clean Energy",
+      "created_at": "2024-05-17T14:34:37Z",
+      "updated_at": "2024-05-17T14:35:19Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38895771/treasury-official-says-yellen-will-talk-to-european-banks-g7-colleagues-about-way",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38896080,
+      "headline": "A Great Strategy For Investing In Artificial Intelligence, Rates Higher For Longer",
+      "created_at": "2024-05-17T14:51:08Z",
+      "updated_at": "2024-05-17T15:10:06Z",
+      "symbols": [
+        "AAPL",
+        "AMAT",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/05/38896080/a-great-strategy-for-investing-in-artificial-intelligence-rates-higher-for-longer",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 38897559,
+      "headline": "Fed Spokesperson Says Fed Chair Powell Tested Positive For Covid-19 Yesterday, Experiencing Symptoms, Working From Home And Staying Away From Others",
+      "created_at": "2024-05-17T15:49:44Z",
+      "updated_at": "2024-05-17T15:49:45Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38897559/fed-spokesperson-says-fed-chair-powell-tested-positive-for-covid-19-yesterday-exp",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38896863,
+      "headline": "'Playing The Rumor, Not The News': Reddit Users Speculate On Potential S&P 500 Inclusions",
+      "created_at": "2024-05-17T15:16:57Z",
+      "updated_at": "2024-05-17T15:56:07Z",
+      "symbols": [
+        "APP",
+        "ARES",
+        "DASH",
+        "DDOG",
+        "IVV",
+        "PINS",
+        "PLTR",
+        "SPY",
+        "SQ",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/general/social-media/24/05/38896863/playing-the-rumor-not-the-news-reddit-users-speculate-on-potential-s-p-500-inclusions",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38898206,
+      "headline": "'Apple Plans A Thinner iPhone In 2025' - The Information",
+      "created_at": "2024-05-17T16:18:35Z",
+      "updated_at": "2024-05-17T16:19:39Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38898206/apple-plans-a-thinner-iphone-in-2025-the-information",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38898370,
+      "headline": "'Pentagon Weighs Microsoft Licensing Upgrades' - Axios",
+      "created_at": "2024-05-17T16:30:03Z",
+      "updated_at": "2024-05-17T16:31:23Z",
+      "symbols": [
+        "MSFT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38898370/pentagon-weighs-microsoft-licensing-upgrades-axios",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38899701,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-05-17T17:35:13Z",
+      "updated_at": "2024-05-17T17:35:14Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "CRM",
+        "MARA",
+        "MDB",
+        "MSTR",
+        "NVDA",
+        "SMCI",
+        "TSM",
+        "ZM"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/05/38899701/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38900479,
+      "headline": "Apple Plans for Thinner, More Expensive iPhone 17 in 2025",
+      "created_at": "2024-05-17T18:19:28Z",
+      "updated_at": "2024-05-17T18:19:28Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38900479/apple-plans-for-thinner-more-expensive-iphone-17-in-2025",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38900777,
+      "headline": "Federal Reserve Says It Denies Bank Industry Trade Group Request To Revise Its Confidential Bank Rating System",
+      "created_at": "2024-05-17T18:34:24Z",
+      "updated_at": "2024-05-17T18:34:25Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38900777/federal-reserve-says-it-denies-bank-industry-trade-group-request-to-revise-its-co",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38901344,
+      "headline": "Energy Department Says U.S. Buys 3.3M Barrels Of Oil For Strategic Petroleum Reserve",
+      "created_at": "2024-05-17T19:07:55Z",
+      "updated_at": "2024-05-17T19:07:56Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38901344/energy-department-says-u-s-buys-3-3m-barrels-of-oil-for-strategic-petroleum-reser",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38903714,
+      "headline": "Justice Department, TikTok Ask Appeals Court For Expedited Schedule On Divestiture Or Ban Law, Seek Ruling By Dec. 6",
+      "created_at": "2024-05-17T20:37:56Z",
+      "updated_at": "2024-05-17T20:37:57Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38903714/justice-department-tiktok-ask-appeals-court-for-expedited-schedule-on-divestiture-or-ban-law-seek-ru",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

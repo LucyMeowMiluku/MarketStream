@@ -1,0 +1,19 @@
+{
+  "next_page_token": "QUFQTHwxNzEzNTMzNDAwMzY4Njg2OTE4fFZ8MTYyLjE1fDF8VnwxODAuMjh8MXxS",
+  "quotes": [
+    {
+      "ap": 180.28,
+      "as": 1,
+      "ax": "V",
+      "bp": 162.15,
+      "bs": 1,
+      "bx": "V",
+      "c": [
+        "R"
+      ],
+      "t": "2024-04-19T13:30:00.000853168Z",
+      "z": "C"
+    }
+  ],
+  "symbol": "AAPL"
+}

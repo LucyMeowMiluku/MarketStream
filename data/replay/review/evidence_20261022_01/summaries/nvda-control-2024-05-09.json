@@ -1,0 +1,786 @@
+{
+  "interval_id": "nvda-control-2024-05-09",
+  "candidate_kind": "normal",
+  "ticker": "NVDA",
+  "started_at": "2024-05-09T13:30:00Z",
+  "ended_at": "2024-05-09T15:00:00Z",
+  "local_start": "2024-05-09T09:30:00-04:00",
+  "local_end": "2024-05-09T11:00:00-04:00",
+  "symbols": {
+    "NVDA": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-09T13:38:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 0,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-08T19:59:00Z",
+      "prior_close": 903.5,
+      "first_minute": "2024-05-09T13:30:00Z",
+      "last_minute": "2024-05-09T14:59:00Z",
+      "first_open": 905.31,
+      "last_close": 890.27,
+      "gap_pct": 0.20033204205864852,
+      "end_vs_prior_pct": -1.4643054786939724,
+      "window_return_pct": -1.6613093857352657,
+      "window_range_pct": 3.023273795716385,
+      "volume": 133751,
+      "raw_artifact": "raw/nvda-control-2024-05-09/NVDA.minutes.json"
+    },
+    "QQQ": {
+      "bars": 85,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-09T13:40:00+00:00",
+        "2024-05-09T13:55:00+00:00",
+        "2024-05-09T14:35:00+00:00",
+        "2024-05-09T14:49:00+00:00",
+        "2024-05-09T14:50:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 0,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-08T19:59:00Z",
+      "prior_close": 440.135,
+      "first_minute": "2024-05-09T13:30:00Z",
+      "last_minute": "2024-05-09T14:59:00Z",
+      "first_open": 440.36,
+      "last_close": 440.86,
+      "gap_pct": 0.051120678882621284,
+      "end_vs_prior_pct": 0.16472218751064638,
+      "window_return_pct": 0.11354346443819274,
+      "window_range_pct": 0.5892905804341835,
+      "volume": 92335,
+      "raw_artifact": "raw/nvda-control-2024-05-09/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-09T13:34:00+00:00",
+        "2024-05-09T13:57:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-08T19:59:00Z",
+      "prior_close": 517.2,
+      "first_minute": "2024-05-09T13:30:00Z",
+      "last_minute": "2024-05-09T14:59:00Z",
+      "first_open": 517.435,
+      "last_close": 519.145,
+      "gap_pct": 0.04543696829077959,
+      "end_vs_prior_pct": 0.37606341840679125,
+      "window_return_pct": 0.3304762917081483,
+      "window_range_pct": 0.49281552272265206,
+      "volume": 219855,
+      "raw_artifact": "raw/nvda-control-2024-05-09/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 38721486,
+      "headline": "Nvidia's Grace Blackwell Chip Could Spark Accelerated ARM Adoption In Data Centers For AI Applications: CEO Rene Haas",
+      "created_at": "2024-05-09T04:25:25Z",
+      "updated_at": "2024-05-09T04:48:18Z",
+      "symbols": [
+        "ARM",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38721486/nvidias-grace-blackwell-chip-could-spark-accelerated-arm-adoption-in-data-centers-for-ai-application",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38724294,
+      "headline": "Biden Says He's Already Turned Economy Around, Blames 'Corporate Greed' For Persistently High Inflation: 'We've Got To Deal With It'",
+      "created_at": "2024-05-09T09:49:14Z",
+      "updated_at": "2024-05-09T09:49:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/24/05/38724294/biden-says-hes-already-turned-economy-around-blames-corporate-greed-for-persistently-high-inflation",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38725148,
+      "headline": "Asia And European Markets Mixed; Crude Oil Hovers Around $80 - Global Markets Today While US Slept",
+      "created_at": "2024-05-09T10:23:51Z",
+      "updated_at": "2024-05-09T10:23:52Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/05/38725148/asia-and-european-markets-mixed-crude-oil-hovers-around-80-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38727392,
+      "headline": "Wall Street Stares At Weaker Open On Rate Anxiety, Hopes For Better Earnings: Analyst Pencils Key S&P 500 Support Level",
+      "created_at": "2024-05-09T11:27:00Z",
+      "updated_at": "2024-05-09T11:27:01Z",
+      "symbols": [
+        "ABNB",
+        "AKAM",
+        "AMC",
+        "AMGN",
+        "APP",
+        "BA",
+        "BLNK",
+        "BMBL",
+        "BTCUSD",
+        "BYND",
+        "CARS",
+        "CEG",
+        "CSIQ",
+        "DBX",
+        "DNUT",
+        "EQIX",
+        "EXAS",
+        "HBI",
+        "HOOD",
+        "HUBS",
+        "LGF",
+        "MARA",
+        "NVTS",
+        "NWSA",
+        "PZZA",
+        "QQQ",
+        "RACE",
+        "RBLX",
+        "RXT",
+        "SEDG",
+        "SIX",
+        "SPY",
+        "SYNA",
+        "USFD",
+        "WBD",
+        "YELP"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/05/38727392/wall-street-stares-at-weaker-open-on-rate-anxiety-hopes-for-better-earnings-analyst-pencils-key-s-p",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38729820,
+      "headline": "US Initial Jobless Claims 231K vs 212K Est.",
+      "created_at": "2024-05-09T12:30:08Z",
+      "updated_at": "2024-05-09T12:30:08Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38729820/us-initial-jobless-claims-231k-vs-212k-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38729905,
+      "headline": "Continuing Jobless Claims 1.785M vs 1.79M Est.",
+      "created_at": "2024-05-09T12:30:29Z",
+      "updated_at": "2024-05-09T12:30:30Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38729905/continuing-jobless-claims-1-785m-vs-1-79m-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38731740,
+      "headline": "Former President Trump Pledged To Oil CEOs To Scrap President Biden's EV Policies, Asked Oil CEOs For $1B For Re-Election Campaign",
+      "created_at": "2024-05-09T13:12:48Z",
+      "updated_at": "2024-05-09T13:12:49Z",
+      "symbols": [
+        "DJT",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38731740/former-president-trump-pledged-to-oil-ceos-to-scrap-president-bidens-ev-policies-asked-oil-ceos-for",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38732239,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of May 9, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-05-09T13:26:01Z",
+      "updated_at": "2024-05-09T13:26:01Z",
+      "symbols": [
+        "ALCC",
+        "ARM",
+        "DJT",
+        "HOOD",
+        "LOT",
+        "NVDA",
+        "QQQ",
+        "RBLX",
+        "TKO",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/05/38732239/top-10-trending-stocks-on-wallstreetbets-as-of-may-9-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38732903,
+      "headline": "Benzinga Opening Bell Update: US Initial Jobless Claims Come In Above Expectations, Bank of England Leaves Rates Unchanged, Roblox Falls 20% On Soft Guidance",
+      "created_at": "2024-05-09T13:46:15Z",
+      "updated_at": "2024-05-09T13:46:15Z",
+      "symbols": [
+        "EWU",
+        "RBLX",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38732903/benzinga-opening-bell-update-us-initial-jobless-claims-come-in-above-expectations",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38732916,
+      "headline": "NVIDIA's Options: A Look at What the Big Money is Thinking",
+      "created_at": "2024-05-09T13:47:18Z",
+      "updated_at": "2024-05-09T13:47:19Z",
+      "symbols": [
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/05/38732916/nvidias-options-a-look-at-what-the-big-money-is-thinking",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38734026,
+      "headline": "Market Clubhouse Morning Memo - May 9th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-05-09T14:20:52Z",
+      "updated_at": "2024-05-09T14:25:50Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/24/05/38734026/market-clubhouse-morning-memo-may-9th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-and",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38734283,
+      "headline": "USA Natural Gas Storage 79B Vs 87B Est.; 59B Prior",
+      "created_at": "2024-05-09T14:31:01Z",
+      "updated_at": "2024-05-09T14:31:02Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38734283/usa-natural-gas-storage-79b-vs-87b-est-59b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38734795,
+      "headline": "Unemployment Claims Surge More Than Expected, Hit 8-Month Peak: Dollar Falls As Traders Bet On Rate Cuts",
+      "created_at": "2024-05-09T14:44:56Z",
+      "updated_at": "2024-05-09T14:44:57Z",
+      "symbols": [
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38734795/unemployment-claims-surge-more-than-expected-hit-8-month-peak-dollar-falls-as-traders-bet-on-rat",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38734738,
+      "headline": "AI Favorite ARM Earnings Show Cracks Appearing In Ultra Bullish AI Story",
+      "created_at": "2024-05-09T14:41:54Z",
+      "updated_at": "2024-05-09T14:45:13Z",
+      "symbols": [
+        "AAPL",
+        "ABNB",
+        "AMZN",
+        "ARM",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SFTBY",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/05/38734738/ai-favorite-arm-earnings-show-cracks-appearing-in-ultra-bullish-ai-story",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 38736770,
+      "headline": "White House's Kirby Says President Biden Has Communicated Opposition To Rafah Repeatedly And Straightforwardly To Israel PM Netanyahu",
+      "created_at": "2024-05-09T15:41:41Z",
+      "updated_at": "2024-05-09T15:41:42Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38736770/white-houses-kirby-says-president-biden-has-communicated-opposition-to-rafah-repe",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38737365,
+      "headline": "Israeli Official Says Israel Will Press Ahead With Its Operation In Rafah And Elsewhere In The Gaza Strip As Planned",
+      "created_at": "2024-05-09T16:02:27Z",
+      "updated_at": "2024-05-09T16:02:28Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38737365/israeli-official-says-israel-will-press-ahead-with-its-operation-in-rafah-and-els",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38737402,
+      "headline": "NSC Coordinator For Strategic Communications John Kirby Says U.S. Is Not Walking Away From Israel; Weapons Are Still Going To Israel, They Are Getting Vast Majority Of What They Need",
+      "created_at": "2024-05-09T16:03:40Z",
+      "updated_at": "2024-05-09T16:03:40Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38737402/nsc-coordinator-for-strategic-communications-john-kirby-says-u-s-is-not-walking-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38737501,
+      "headline": "\"Israel-Hamas Hostage Deal Talks Are Paused Amid Ongoing Rafah Fighting\" - Politico",
+      "created_at": "2024-05-09T16:06:20Z",
+      "updated_at": "2024-05-09T16:06:21Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38737501/israel-hamas-hostage-deal-talks-are-paused-amid-ongoing-rafah-fighting-politico",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38737635,
+      "headline": "French AI Startup, Founded By Former Google And Meta Researchers, Is Up To Challenge Silicon Valley Dominance: Report",
+      "created_at": "2024-05-09T16:11:44Z",
+      "updated_at": "2024-05-09T16:11:44Z",
+      "symbols": [
+        "CRM",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38737635/french-ai-startup-founded-by-former-google-and-meta-researchers-is-up-to-challenge-silicon-valley-do",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38737980,
+      "headline": "NSC Coordinator For Strategic Communication John Kirby Says The U.S. Believes There Are Better Ways To Go After What Is Left Of Hamas In Gaza Than A Major Ground Operation",
+      "created_at": "2024-05-09T16:20:00Z",
+      "updated_at": "2024-05-09T16:20:00Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38737980/nsc-coordinator-for-strategic-communication-john-kirby-says-the-u-s-believes-ther",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38738050,
+      "headline": "Investors Flock To Lower-Cost Vanguard S&P 500 ETF: Is It Time To Switch From SPY To VOO?",
+      "created_at": "2024-05-09T16:22:54Z",
+      "updated_at": "2024-05-09T16:22:55Z",
+      "symbols": [
+        "BLK",
+        "IVV",
+        "SPY",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38738050/investors-flock-to-lower-cost-vanguard-s-p-500-etf-is-it-time-to-switch-from-spy-to-voo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38738612,
+      "headline": "Stocks Rebound As Rising Jobless Claims Sustain Rate-Cut Hopes, Dollar Falls, Gold Rallies: What's Driving Markets Thursday?",
+      "created_at": "2024-05-09T16:42:34Z",
+      "updated_at": "2024-05-09T16:42:35Z",
+      "symbols": [
+        "ABNB",
+        "AKAM",
+        "APP",
+        "BLNK",
+        "BTCUSD",
+        "CEG",
+        "DBX",
+        "DIA",
+        "DUOL",
+        "EQIX",
+        "EXAS",
+        "HOOD",
+        "IWM",
+        "LGF",
+        "MARA",
+        "NRG",
+        "NVTS",
+        "QQQ",
+        "RBLX",
+        "RXT",
+        "SPY",
+        "SYNA",
+        "TDD",
+        "TPL",
+        "USFD",
+        "UUP",
+        "VTRS",
+        "WBD",
+        "XLB",
+        "XLE",
+        "XLK",
+        "XLRE",
+        "XLU",
+        "XLY",
+        "YELP"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/05/38738612/stocks-rebound-as-rising-jobless-claims-sustain-rate-cut-hopes-dollar-falls-gold-rallies-w",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38738819,
+      "headline": "The Dragon Awakens: KraneShares CIO Names 5 Reasons To Invest In China's Stock Market Rebound",
+      "created_at": "2024-05-09T16:50:46Z",
+      "updated_at": "2024-05-09T17:00:12Z",
+      "symbols": [
+        "FXI",
+        "KBA",
+        "KWEB",
+        "MCHI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/38738819/the-dragon-awakens-kraneshares-cio-names-5-reasons-to-invest-in-chinas-stock-market",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38739792,
+      "headline": "U.S. DoT, Pacific Northwest National Laboratory, And Cloudflare Partner To Improve The Cyber Resilience Of The Financial Services Industry By Sharing An Advanced Threat Intelligence Feed",
+      "created_at": "2024-05-09T17:32:12Z",
+      "updated_at": "2024-05-09T17:32:13Z",
+      "symbols": [
+        "NET",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38739792/u-s-dot-pacific-northwest-national-laboratory-and-cloudflare-partner-to-improve-the-cyber-resilience",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38739885,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-05-09T17:35:12Z",
+      "updated_at": "2024-05-09T17:35:13Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "ARM",
+        "CFLT",
+        "INTC",
+        "MSFT",
+        "NVDA",
+        "PLTR",
+        "QCOM",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/05/38739885/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38740053,
+      "headline": "U.S. State Dept Says U.S. Thinks A Rafah Operation Would Weaken Its Position In Hostage Talks, Its Standing In The World; Continue To Engage With The Israeli Government On The Amendment To The Proposal Hamas Submitted, About Other Options In Rafah Instead Of A Major Military Operation",
+      "created_at": "2024-05-09T17:40:43Z",
+      "updated_at": "2024-05-09T17:40:44Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38740053/u-s-state-dept-says-u-s-thinks-a-rafah-operation-would-weaken-its-position-in-hos",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38740274,
+      "headline": "U.S. House Committee To Hold May 15 Hearing On Federal Response To Maryland Bridge Collapse",
+      "created_at": "2024-05-09T17:50:54Z",
+      "updated_at": "2024-05-09T17:50:55Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38740274/u-s-house-committee-to-hold-may-15-hearing-on-federal-response-to-maryland-bridge",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38740703,
+      "headline": "Fed's Daly Says Inflation Is Going To Be A Bumpy Ride; The Last 3-Months Has Left Considerable Uncertainty About The Next Few Months Of Inflation",
+      "created_at": "2024-05-09T18:10:15Z",
+      "updated_at": "2024-05-09T18:10:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38740703/feds-daly-says-inflation-is-going-to-be-a-bumpy-ride-the-last-3-months-has-left-c",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38740720,
+      "headline": "Fed's Daly Says A Range Of Scenarios The Fed Is Facing Right Now",
+      "created_at": "2024-05-09T18:11:09Z",
+      "updated_at": "2024-05-09T18:11:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38740720/feds-daly-says-a-range-of-scenarios-the-fed-is-facing-right-now",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38740930,
+      "headline": "Fed's Daly Says Still See A \"Really Healthy\" Labor Market And Inflation That Is Too High",
+      "created_at": "2024-05-09T18:17:03Z",
+      "updated_at": "2024-05-09T18:17:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38740930/feds-daly-says-still-see-a-really-healthy-labor-market-and-inflation-that-is-too-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741103,
+      "headline": "Fed's Daly Says Fed Policy Is Restrictive But It May Still Take Time To Bring Inflation Down",
+      "created_at": "2024-05-09T18:20:52Z",
+      "updated_at": "2024-05-09T18:20:53Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38741103/feds-daly-says-fed-policy-is-restrictive-but-it-may-still-take-time-to-bring-infl",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38740904,
+      "headline": "Fed's Daly Says Getting Different Signals From Firms Who Say Consumers Seem To Be Getting Choosy But Input Prices Are Not Yet Declining; Balance Sheet Offers No Signal About Monetary Policy; Officials Don't Know How The Economy Will Evolve, Only How They Would React Under Different Circumstances; Right Now No Evidence That The Labor Market Is Approaching A \"Worrisome\" Position",
+      "created_at": "2024-05-09T18:16:38Z",
+      "updated_at": "2024-05-09T18:21:02Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38740904/daly-says-getting-different-signals-from-firms-who-say-consumers-seem-to-be-getti",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741207,
+      "headline": "Daly Says Fed Cannot Count On Productivity To \"Save\" The U.S. From Inflation",
+      "created_at": "2024-05-09T18:26:03Z",
+      "updated_at": "2024-05-09T18:26:03Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38741207/daly-says-fed-cannot-count-on-productivity-to-save-the-u-s-from-inflation",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741367,
+      "headline": "Fed's Daly Says Expect That In Next Framework Review Questions Will Include Whether Fed Will Be Fighting Inflation From Below Target Or Above",
+      "created_at": "2024-05-09T18:34:18Z",
+      "updated_at": "2024-05-09T18:34:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38741367/feds-daly-says-expect-that-in-next-framework-review-questions-will-include-whethe",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741419,
+      "headline": "Fed's Daly Says Other Issues For Framework Will Likely Be Neutral Level Of Rates, Probability Of Hitting Zero Lower Bound On Rates, And Path Of Potential Output",
+      "created_at": "2024-05-09T18:35:25Z",
+      "updated_at": "2024-05-09T18:35:26Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38741419/feds-daly-says-other-issues-for-framework-will-likely-be-neutral-level-of-rates-p",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741471,
+      "headline": "Fed's Daly Says 2% Is The Inflation Target And The Fed Is Not Going To \"Change The Goalpost\" While It Is Trying To Reach It",
+      "created_at": "2024-05-09T18:39:54Z",
+      "updated_at": "2024-05-09T18:39:55Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38741471/feds-daly-says-2-is-the-inflation-target-and-the-fed-is-not-going-to-change-the-g",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741477,
+      "headline": "Fed's Daly Says Fed Cannot Take Politics And Political Changes Into The Policy Conversation; Job Is Hard Enough",
+      "created_at": "2024-05-09T18:40:57Z",
+      "updated_at": "2024-05-09T18:40:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/38741477/feds-daly-says-fed-cannot-take-politics-and-political-changes-into-the-policy-con",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741575,
+      "headline": "Fed's Daly Says Difference In Labor Market Being Softer And 'Getting Weak'; If It Was Getting Weak That Could Be A Reason To Change Policy Rate; Says A Softening Labor Market Would Be Getting Back To Normal Growth",
+      "created_at": "2024-05-09T18:44:34Z",
+      "updated_at": "2024-05-09T18:44:35Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38741575/feds-daly-says-difference-in-labor-market-being-softer-and-getting-weak-if-it-was-getting-weak-that",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741576,
+      "headline": "Fed's Daly Says Do See The Labor Market Cooling; But That Is What Should Be Happening :+1: 1",
+      "created_at": "2024-05-09T18:44:50Z",
+      "updated_at": "2024-05-09T18:44:51Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38741576/feds-daly-says-do-see-the-labor-market-cooling-but-that-is-what-should-be-happening-1-1",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38741608,
+      "headline": "Fed's Daly Says If Labor Market Were To Falter In A 'Fundamental Way' Policy Action Would Be Needed",
+      "created_at": "2024-05-09T18:46:46Z",
+      "updated_at": "2024-05-09T18:46:47Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/38741608/feds-daly-says-if-labor-market-were-to-falter-in-a-fundamental-way-policy-action-would-be-needed",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38743773,
+      "headline": "Trump's China Tariff Hikes Could Smother US Economic Growth: Fitch Ratings Sounds Alarm",
+      "created_at": "2024-05-09T20:10:34Z",
+      "updated_at": "2024-05-09T20:10:35Z",
+      "symbols": [
+        "GXC",
+        "KWEB",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/38743773/trumps-china-tariff-hikes-could-smother-us-economic-growth-fitch-ratings-sounds-ala",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38747694,
+      "headline": "Nvidia-Backed Recursion Pharmaceuticals Stock Is Up On Q1 Earnings: Everything You Need To Know",
+      "created_at": "2024-05-09T21:25:31Z",
+      "updated_at": "2024-05-09T21:25:31Z",
+      "symbols": [
+        "NVDA",
+        "RXRX"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/05/38747694/nvidia-backed-recursion-pharmaceuticals-stock-is-up-on-q1-earnings-everything-you-need-to-know",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 38751754,
+      "headline": "Jim Cramer Advises Investors To Stick With Good Companies Despite Short-Term Losses: 'You Just Need To Figure Out Which Companies Deserve Your Confidence'",
+      "created_at": "2024-05-10T03:20:33Z",
+      "updated_at": "2024-05-10T03:20:34Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/38751754/jim-cramer-advises-investors-to-stick-with-good-companies-despite-short-term-losses-you-just-nee",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

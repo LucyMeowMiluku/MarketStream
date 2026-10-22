@@ -1,0 +1,18 @@
+{
+  "next_page_token": "TlZEQXwxNzA3NDAyNjAwNTc3MDk4ODM2fFZ8MTYx",
+  "symbol": "NVDA",
+  "trades": [
+    {
+      "c": [
+        "@",
+        "I"
+      ],
+      "i": 160,
+      "p": 700.755,
+      "s": 19,
+      "t": "2024-02-08T14:30:00.512615668Z",
+      "x": "V",
+      "z": "C"
+    }
+  ]
+}

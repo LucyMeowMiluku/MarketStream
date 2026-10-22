@@ -6,6 +6,7 @@ import argparse
 import copy
 import json
 import time
+from dataclasses import asdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -33,6 +34,7 @@ def run_protocol(
     disabled_groups: frozenset[str] = frozenset(),
     disabled_patterns: frozenset[str] = frozenset(),
     include_bootstrap: bool = True,
+    scenario_records: list[dict] | None = None,
 ) -> dict:
     truth: list[GroundTruthEvent] = []
     detections: list[DetectedEvent] = []
@@ -105,6 +107,16 @@ def run_protocol(
                     controls += 1
                     control_alerts += bool(scenario_detections)
                 detections.extend(scenario_detections)
+                if scenario_records is not None:
+                    scenario_records.append({
+                        "scenario_id": f"{name}:{seed}:{intensity}",
+                        "name": name,
+                        "seed": seed,
+                        "intensity": intensity,
+                        "kind": "positive" if scenario.expected_pattern else "negative_control",
+                        "truth": [asdict(truth[-1])] if scenario.expected_pattern else [],
+                        "detections": [asdict(item) for item in scenario_detections],
+                    })
     metrics = compute_event_metrics(truth, detections)
     latency = {
         "p50_ms": float(np.percentile(latencies_ms, 50)),

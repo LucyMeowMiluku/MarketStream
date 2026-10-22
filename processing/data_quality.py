@@ -1,3 +1,6 @@
+# 来源归属（2026-10-22）：XI LU 主导方案选择与具体约束，AI 按确认方案生成／重构实现。
+# 本注释不声明全部代码由本人手写；逐项原日志与未确认范围见
+# docs/CORE_CODE_AUTHORSHIP_AND_REFERENCES_CN.md 及 report/ownership_evidence/08_Contribution_Attribution_Matrix_CN.md。
 # =============================================================================
 # function：在因子计算前为 live/replay MarketEvent 添加数据质量标记。
 #   比如，在计算因子前显式标记 duplicate、out-of-order、stale、zero-volume、invalid-price、crossed-quote 和 feed-gap。

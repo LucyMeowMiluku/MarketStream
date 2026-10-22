@@ -1,0 +1,50 @@
+{
+  "created_at": "2026-10-22T14:26:44.054286+00:00",
+  "status": "BLOCKED_BEFORE_FREEZE",
+  "detector_executed": false,
+  "metrics": null,
+  "counts": {
+    "anomaly": 12,
+    "normal": 12
+  },
+  "manifests_found": [
+    {
+      "path": "data/historical/alpaca/manifest.json",
+      "schema_version": null,
+      "sha256": "03936ffd9180aa1267c4b375626e059968d96b205f60f80cb5d9ea8da5908cc2"
+    },
+    {
+      "path": "data/historical/manifest.json",
+      "schema_version": null,
+      "sha256": "c5c95b3f0c420358af9e45543dd144a12184927a7ed0566a92e545acf2532d6e"
+    }
+  ],
+  "canonical_event_files_found": [],
+  "label_versions": {
+    "iex_benchmark_v1.ai_preannotated.json": {
+      "frozen": false,
+      "approved": 0
+    },
+    "iex_benchmark_v1.ai_preannotated.v2.json": {
+      "frozen": false,
+      "approved": 0
+    },
+    "iex_benchmark_v1.ai_preannotated.v3.json": {
+      "frozen": false,
+      "approved": 0
+    },
+    "iex_benchmark_v1.draft.json": {
+      "frozen": false,
+      "approved": 0
+    }
+  },
+  "blockers": [
+    "independent human label review missing",
+    "complete verified trade/quote/baseline package missing",
+    "protocol and independent holdout not frozen",
+    "CEP/IF target and alert-policy parity unresolved"
+  ],
+  "git_head": "05b88c09657a8bba03407a6aea944f487e8500ce",
+  "code_snapshot_is_experimental_freeze": false,
+  "access_probe": "access_probe.json"
+}

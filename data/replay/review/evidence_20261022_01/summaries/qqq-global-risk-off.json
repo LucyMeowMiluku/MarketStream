@@ -1,0 +1,652 @@
+{
+  "interval_id": "qqq-global-risk-off",
+  "candidate_kind": "anomaly",
+  "ticker": "QQQ",
+  "started_at": "2024-08-05T13:30:00Z",
+  "ended_at": "2024-08-05T15:00:00Z",
+  "local_start": "2024-08-05T09:30:00-04:00",
+  "local_end": "2024-08-05T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-08-05T14:26:00+00:00",
+        "2024-08-05T14:36:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-02T19:59:00Z",
+      "prior_close": 448.66,
+      "first_minute": "2024-08-05T13:30:00Z",
+      "last_minute": "2024-08-05T14:59:00Z",
+      "first_open": 424.6,
+      "last_close": 433.735,
+      "gap_pct": -5.362635403200644,
+      "end_vs_prior_pct": -3.3265724602148605,
+      "window_return_pct": 2.1514366462553003,
+      "window_range_pct": 3.41968911917098,
+      "volume": 244573,
+      "raw_artifact": "raw/qqq-global-risk-off/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-08-02T19:59:00Z",
+      "prior_close": 532.92,
+      "first_minute": "2024-08-05T13:30:00Z",
+      "last_minute": "2024-08-05T14:59:00Z",
+      "first_open": 511.49,
+      "last_close": 516.37,
+      "gap_pct": -4.0212414621331405,
+      "end_vs_prior_pct": -3.1055317871350185,
+      "window_return_pct": 0.9540753484916564,
+      "window_range_pct": 2.0225224344561905,
+      "volume": 516274,
+      "raw_artifact": "raw/qqq-global-risk-off/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 40156460,
+      "headline": "Bloodbath In Asia And Europe, Japan's Index Crashes 13%; Gold Near Record Highs - Global Markets Update While US Slept",
+      "created_at": "2024-08-05T10:44:38Z",
+      "updated_at": "2024-08-05T10:44:39Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/08/40156460/bloodbath-in-asia-and-europe-japans-index-crashes-13-gold-near-record-highs-global-markets-update-wh",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40157189,
+      "headline": "Deadpool & Wolverine Grosses $824M Globally, Disney Hits $3B Milestone: Report",
+      "created_at": "2024-08-05T11:29:16Z",
+      "updated_at": "2024-08-05T11:29:17Z",
+      "symbols": [
+        "DIS",
+        "IMAX",
+        "SPY",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40157189/deadpool-wolverine-grosses-824m-globally-disney-hits-3b-milestone-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40157665,
+      "headline": "Nasdaq, R2K Futures Tumble Over 4%, VIX Spikes Over 100%, Bitcoin Plunges Hard As Global Sell-Off Deepens Amid Recession Fears",
+      "created_at": "2024-08-05T11:51:10Z",
+      "updated_at": "2024-08-05T11:51:11Z",
+      "symbols": [
+        "AAPL",
+        "ADTN",
+        "AMD",
+        "ARM",
+        "BNTX",
+        "BTCUSD",
+        "CAR",
+        "CG",
+        "CSX",
+        "FANG",
+        "JJSF",
+        "NVDA",
+        "NVTS",
+        "PLTR",
+        "QQQ",
+        "SFTBY",
+        "SPY",
+        "TSN",
+        "YUMC"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/08/40157665/nasdaq-r2k-futures-tumble-over-4-vix-spikes-over-100-bitcoin-plunges-hard-as-global-sell-off-deepen",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40152994,
+      "headline": "As Global Markets Roil, Strategist Soothes Nerves: 'Some Normal Action Under The Surface' As 'Tech Got Way Ahead Of Itself' (CORRECTED)",
+      "created_at": "2024-08-05T06:16:55Z",
+      "updated_at": "2024-08-05T11:57:49Z",
+      "symbols": [
+        "NVDA",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/08/40152994/as-global-markets-roil-strategist-soothes-nerves-some-normal-action-under-the-surface-as-tech-got-wa",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40159286,
+      "headline": "Fed's Goolsbee Says Fed Has Been In A Restrictive Posture; You Only Want To Be That Restrictive If There Is Fear Of Overheating; Data Does Not Look Like Economy Is Overheating; Jobs Number Were Weaker Than Expected But Not Looking Yet Like Recession; Fed Does Need To Be Forward Looking In Making Decisions; Must Be A Little Careful Over Concluding About Jobs Report",
+      "created_at": "2024-08-05T12:40:46Z",
+      "updated_at": "2024-08-05T12:40:47Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40159286/feds-goolsbee-says-fed-has-been-in-a-restrictive-posture-you-only-want-to-be-that",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40159295,
+      "headline": "Fed's Goolsbee Says Manufacturing Sector Is A Little Complicated; We Expected Some Weakness In Manufacturing Due To Pandemic Effects; That Said, There Are Cautionary Indicators In Other Data Such As Business Defaults; On Other Side, GDP Number Was A Bit Stronger Than Expected; Economic Growth Continues At Steady Level",
+      "created_at": "2024-08-05T12:41:39Z",
+      "updated_at": "2024-08-05T12:41:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40159295/feds-goolsbee-says-manufacturing-sector-is-a-little-complicated-we-expected-some-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40159302,
+      "headline": "Fed's Goolsbee Says It Seems Like There Is A Lot Going On In The World, Which Makes Things A Little More Complicated; Stock Market Has A Lot More Volatility Than The Fed; Asked About An Emergency Cut, Says Everything Is Always On The Table Including Raises And Cuts; If Economy Deteriorates, The Fed Will Fix It; Fed Will Respond To Conditions; I Have Been Saying For Some Time We Are In A Balanced Risk Posture",
+      "created_at": "2024-08-05T12:42:15Z",
+      "updated_at": "2024-08-05T12:42:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40159302/feds-goolsbee-says-it-seems-like-there-is-a-lot-going-on-in-the-world-which-makes",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40159318,
+      "headline": "Fed's Goolsbee Says There Is Some Weakness In The Jobs Market, We Have To Pay Attention To That; We Are Restrictive In Real Terms At The Highest In Many Decades; You Only Want To Be There For As Long As You Have To; If We Are Not Overheating, We Should Not Tighten Our Restrictiveness In Real Terms; We Should Respond To Conditions On The Broad Through Line",
+      "created_at": "2024-08-05T12:43:08Z",
+      "updated_at": "2024-08-05T12:43:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40159318/feds-goolsbee-says-there-is-some-weakness-in-the-jobs-market-we-have-to-pay-atten",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40159320,
+      "headline": "Fed's Goolsbee Says Inflation Is Way Down And Employment Is At Relatively Decent Spot; We Still Have Some Strength In Labor Market But It's Going The Wrong Way, Needs To Settle At Normal; We Can't Blow Through Normal On Jobs; If We Do, We'll Have To React More Robustly",
+      "created_at": "2024-08-05T12:43:39Z",
+      "updated_at": "2024-08-05T12:43:39Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40159320/feds-goolsbee-says-inflation-is-way-down-and-employment-is-at-relatively-decent-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40160644,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of August 5, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-08-05T13:24:31Z",
+      "updated_at": "2024-08-05T13:24:32Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "CORN",
+        "INTC",
+        "LOT",
+        "MADE",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/08/40160644/top-10-trending-stocks-on-wallstreetbets-as-of-august-5-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161135,
+      "headline": "USA S&P Global Services PMI For July 55.0 Vs 56.0 Est.; 55.3 Prior",
+      "created_at": "2024-08-05T13:45:14Z",
+      "updated_at": "2024-08-05T13:45:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40161135/usa-s-p-global-services-pmi-for-july-55-0-vs-56-0-est-55-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161142,
+      "headline": "USA S&P Global Composite PMI For July 54.3 Vs 55.0 Est.; 54.8 Prior",
+      "created_at": "2024-08-05T13:45:26Z",
+      "updated_at": "2024-08-05T13:45:27Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40161142/usa-s-p-global-composite-pmi-for-july-54-3-vs-55-0-est-54-8-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161285,
+      "headline": "Benzinga Market Summary: Indexes Post Major Losses, VIX Volatility Index Spikes To Third Highest Level Ever, Japanese Market Falls 12%, Bitcoin Falls 12%, Yield Curve Disinverts For First Time In Two Years",
+      "created_at": "2024-08-05T13:52:40Z",
+      "updated_at": "2024-08-05T13:52:40Z",
+      "symbols": [
+        "BTCUSD",
+        "EWJ",
+        "SPY",
+        "VIXM"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40161285/benzinga-market-summary-indexes-post-major-losses-vix-volatility-index-spikes-to-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161435,
+      "headline": "USA ISM Non-Manufacturing Prices For July 57.0 Vs 56.0 Est.; 56.3 Prior",
+      "created_at": "2024-08-05T14:00:08Z",
+      "updated_at": "2024-08-05T14:00:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40161435/usa-ism-non-manufacturing-prices-for-july-57-0-vs-56-0-est-56-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161445,
+      "headline": "USA ISM Non-Manufacturing PMI For July 51.4 Vs 51.4 Est.; 48.8 Prior",
+      "created_at": "2024-08-05T14:00:23Z",
+      "updated_at": "2024-08-05T14:00:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40161445/usa-ism-non-manufacturing-pmi-for-july-51-4-vs-51-4-est-48-8-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161446,
+      "headline": "USA CB Employment Trends Index For July 109.61 Vs 110.27 Prior",
+      "created_at": "2024-08-05T14:00:24Z",
+      "updated_at": "2024-08-05T14:00:25Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40161446/usa-cb-employment-trends-index-for-july-109-61-vs-110-27-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161465,
+      "headline": "USA ISM Non-Manufacturing Employment For July 51.1 Vs 46.4 Est.; 46.1 Prior",
+      "created_at": "2024-08-05T14:00:40Z",
+      "updated_at": "2024-08-05T14:00:41Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40161465/usa-ism-non-manufacturing-employment-for-july-51-1-vs-46-4-est-46-1-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161800,
+      "headline": "Market Clubhouse Morning Memo - August 5th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-08-05T14:13:55Z",
+      "updated_at": "2024-08-05T14:14:28Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/24/08/40161800/market-clubhouse-morning-memo-august-5th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-a",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40161832,
+      "headline": "US Services Activity Returns To Growth In July, Global Market Selloff Stalls: Are Recession Fears Overdone?",
+      "created_at": "2024-08-05T14:15:03Z",
+      "updated_at": "2024-08-05T14:21:06Z",
+      "symbols": [
+        "FXY",
+        "GLD",
+        "QQQ",
+        "SPY",
+        "TLT",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/news/econ-s/24/08/40161832/us-services-activity-returns-to-growth-in-july-global-market-selloff-stalls-are-recession-fears-over",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40125614,
+      "headline": "Trump's Policies May Boost Oil And Crypto, While Harris Presidency Remains A Market Wild Card, Says Expert: 'A Lot Harder To Predict'",
+      "created_at": "2024-08-02T10:10:40Z",
+      "updated_at": "2024-08-05T14:31:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/08/40125614/trumps-policies-may-boost-oil-and-crypto-while-harris-presidency-remains-a-market-w",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40162472,
+      "headline": "Market Momentum: Your Weekly Financial Forecast",
+      "created_at": "2024-08-05T14:37:12Z",
+      "updated_at": "2024-08-05T14:40:55Z",
+      "symbols": [
+        "AMZN",
+        "BBY",
+        "DIA",
+        "IWM",
+        "KO",
+        "MCHP",
+        "MRVL",
+        "NDAQ",
+        "NVDA",
+        "PG",
+        "QCOM",
+        "QQQ",
+        "SPY",
+        "TSLA",
+        "TSM",
+        "URA",
+        "WMG"
+      ],
+      "url": "https://www.benzinga.com/markets/24/08/40162472/market-momentum-your-weekly-financial-forecast",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 40164105,
+      "headline": "Potential Iranian Attack On Israel Could Rattle Markets: What Happened To Stocks When Russia Invaded Ukraine?",
+      "created_at": "2024-08-05T15:08:12Z",
+      "updated_at": "2024-08-05T15:08:13Z",
+      "symbols": [
+        "DIA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/24/08/40164105/potential-iranian-attack-on-israel-could-rattle-markets-what-happened-to-stocks-when-russia-invaded",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40165496,
+      "headline": "What Are Stock Bubbles And When Do They Burst? What To Know As Nvidia, Tech Sector Sink",
+      "created_at": "2024-08-05T15:51:57Z",
+      "updated_at": "2024-08-05T15:51:57Z",
+      "symbols": [
+        "AAPL",
+        "AMAT",
+        "AMZN",
+        "NVDA",
+        "QQQ",
+        "SOXX"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/08/40165496/what-are-stock-bubbles-and-when-do-they-burst-what-to-know-as-nvidia-tech-sector-sink",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40165773,
+      "headline": "Schwab, Vanguard, Fidelity Among Trading Platforms With Technical Problems As Market Meltdown Intensifies",
+      "created_at": "2024-08-05T16:01:24Z",
+      "updated_at": "2024-08-05T16:01:25Z",
+      "symbols": [
+        "FNF",
+        "SCHW",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40165773/schwab-vanguard-fidelity-among-trading-platforms-with-technical-problems-as-market-meltdown-intensif",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40166207,
+      "headline": "How To Navigate Market Volatility: 5 ETFs That Strengthen Your Portfolio During Stock Turmoil",
+      "created_at": "2024-08-05T16:22:49Z",
+      "updated_at": "2024-08-05T16:22:49Z",
+      "symbols": [
+        "FXY",
+        "QQQ",
+        "SQQQ",
+        "SRTY",
+        "TLT",
+        "VIXY"
+      ],
+      "url": "https://www.benzinga.com/news/large-cap/24/08/40166207/how-to-navigate-market-volatility-5-etfs-that-strengthen-your-portfolio-during-stock-turmoil",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40166267,
+      "headline": "Democratic Presidential Candidate Kamala Harris Has Narrowed Her Search For A Vice Presidential Running Mate To Two Finalists, Pennsylvania Governor Josh Shapiro And Minnesota Governor Tim Walz; Expected To Announce Her Selection By Tuesday, Ahead Of Her First Scheduled Public Appearance With Her Running Mate In The Evening At Temple University In Philadelphia",
+      "created_at": "2024-08-05T16:25:49Z",
+      "updated_at": "2024-08-05T16:25:50Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/08/40166267/democratic-presidential-candidate-kamala-harris-has-narrowed-her-search-for-a-vic",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40168075,
+      "headline": "Markets Are 'Ripe For Negativity,' But Financial Expert Urges Investors To 'Pick Up Some Deals'",
+      "created_at": "2024-08-05T17:46:03Z",
+      "updated_at": "2024-08-05T17:46:04Z",
+      "symbols": [
+        "DIA",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/24/08/40168075/markets-are-ripe-for-negativity-but-financial-expert-urges-investors-to-pick-up-some-deals",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40167312,
+      "headline": "US Stocks Trim Black Monday's Drops As Services Gauge Expands, Bond Gains Stall As Traders Reassess Fed Cuts: What's Driving Markets?",
+      "created_at": "2024-08-05T17:11:24Z",
+      "updated_at": "2024-08-05T17:56:03Z",
+      "symbols": [
+        "ADTN",
+        "BNTX",
+        "BTCUSD",
+        "CAR",
+        "CG",
+        "CSX",
+        "DIA",
+        "FANG",
+        "IWM",
+        "JJSF",
+        "K",
+        "NVTS",
+        "PLTR",
+        "QQQ",
+        "SPY",
+        "TLT",
+        "TSN",
+        "XLK",
+        "XLP",
+        "XLRE",
+        "YUMC"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/08/40167312/us-stocks-trim-black-mondays-drops-as-services-gauge-expands-bond-gains-stall-as-traders-r",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40169086,
+      "headline": "U.S. Supreme Court Declines To Halt Trump's Sentencing And Gag Order In NY Hush Money Case Until After Election",
+      "created_at": "2024-08-05T18:36:58Z",
+      "updated_at": "2024-08-05T18:36:58Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40169086/u-s-supreme-court-declines-to-halt-trumps-sentencing-and-gag-order-in-ny-hush-money-case-until-after",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40169263,
+      "headline": "Two Rockets Fired At Iraqi Ain Al-Asad Airbase Housing US Forces",
+      "created_at": "2024-08-05T18:49:06Z",
+      "updated_at": "2024-08-05T18:49:06Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/08/40169263/two-rockets-fired-at-iraqi-ain-al-asad-airbase-housing-us-forces",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40169330,
+      "headline": "Nvidia, Microsoft, Apple, Amazon Erase $1.1 Trillion In Monday Sell-Off: Bubble Burst Or Market Correction?",
+      "created_at": "2024-08-05T18:53:36Z",
+      "updated_at": "2024-08-05T18:53:36Z",
+      "symbols": [
+        "AAL",
+        "AAPL",
+        "AMZN",
+        "BASFY",
+        "BRK",
+        "DAL",
+        "DD",
+        "DOW",
+        "INTC",
+        "LUV",
+        "MMM",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "QQQM",
+        "SMH",
+        "SOXX",
+        "TSLA",
+        "TSM",
+        "UAL",
+        "XSD"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40169330/nvidia-microsoft-apple-amazon-erase-1-1-trillion-in-monday-sell-off-bubble-burst-or-market-correctio",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40169767,
+      "headline": "A Bear Market Is Not A Recession: How To Understand What's Going On In The Markets Right Now",
+      "created_at": "2024-08-05T19:17:35Z",
+      "updated_at": "2024-08-05T19:17:35Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/education/24/08/40169767/a-bear-market-is-not-a-recession-how-to-understand-whats-going-on-in-the-markets-right-now",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40170177,
+      "headline": "Vanguard Says Issue With Clients Experiencing Difficulties Accessing Accounts Has Been Resolved",
+      "created_at": "2024-08-05T19:42:19Z",
+      "updated_at": "2024-08-05T19:42:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/08/40170177/vanguard-says-issue-with-clients-experiencing-difficulties-accessing-accounts-has-been-resolved",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40170709,
+      "headline": "Veteran Wall Street Analyst Counters Recession Fears: 'We Don't Expect A Hard Landing Of The Economy'",
+      "created_at": "2024-08-05T20:05:03Z",
+      "updated_at": "2024-08-05T20:05:04Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "GOOGL",
+        "META",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/08/40170709/veteran-wall-street-analyst-counters-recession-fears-we-dont-expect-a-hard-landing-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40175334,
+      "headline": "Pelosi Says President Biden Should Be Added To Mount Rushmore After Reportedly Pushing For His Ouster: 'He Knows That I Love Him Very Much'",
+      "created_at": "2024-08-05T22:53:31Z",
+      "updated_at": "2024-08-05T22:53:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/politics/24/08/40175334/pelosi-says-president-biden-should-be-added-to-mount-rushmore-after-reportedly-pushing-for-his-o",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 40175656,
+      "headline": "Tech Stocks Lead Dow Jones Industrial Average To Largest Drop In Almost Two Years",
+      "created_at": "2024-08-05T23:32:48Z",
+      "updated_at": "2024-08-05T23:32:49Z",
+      "symbols": [
+        "AAPL",
+        "CSCO",
+        "CZR",
+        "DIA",
+        "ETSY",
+        "INTC",
+        "SPY",
+        "WBA"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/08/40175656/tech-stocks-lead-dow-jones-industrial-average-to-largest-drop-in-almost-two-years",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

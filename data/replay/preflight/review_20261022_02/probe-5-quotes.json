@@ -1,0 +1,19 @@
+{
+  "next_page_token": "U1BZfDE3NDM2ODcwMDAwNjA5ODQ1NzZ8Vnw1NDMuODN8MTB8Vnw1NDUuNDZ8MXxS",
+  "quotes": [
+    {
+      "ap": 545.93,
+      "as": 10,
+      "ax": "V",
+      "bp": 543.83,
+      "bs": 10,
+      "bx": "V",
+      "c": [
+        "R"
+      ],
+      "t": "2025-04-03T13:30:00.01553152Z",
+      "z": "B"
+    }
+  ],
+  "symbol": "SPY"
+}

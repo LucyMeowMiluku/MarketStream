@@ -1,0 +1,52 @@
+{
+  "scope": "preparation_only",
+  "detector_executed": false,
+  "attempts": [
+    {
+      "output": "../review_20261022_01",
+      "exit_code": 1,
+      "status": "FAILED_PREPARATION",
+      "reason": "pip missing; old files retained"
+    },
+    {
+      "command": ".venv/bin/python scripts/prepare_reviewed_replay.py --probe --output data/replay/preflight/review_20261022_02",
+      "exit_code": 0,
+      "status": "BLOCKED_BEFORE_FREEZE",
+      "probe_requests": 18,
+      "probe_accessible": 18
+    }
+  ],
+  "tests": {
+    "command": ".venv/bin/pytest -q tests/test_replay_labels.py tests/test_event_metrics.py tests/test_isolation_forest_baseline.py",
+    "exit_code": 0,
+    "passed": 11
+  },
+  "validation": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "replay.labels",
+        "validate",
+        "data/replay/labels/iex_benchmark_v1.draft.json",
+        "--require-frozen"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/ywx/Documents/NTU/capstone_project/replay/labels.py\", line 214, in <module>\n    main()\n  File \"/Users/ywx/Documents/NTU/capstone_project/replay/labels.py\", line 198, in main\n    registry.validate(\n  File \"/Users/ywx/Documents/NTU/capstone_project/replay/labels.py\", line 106, in validate\n    raise ValueError(\"label registry is not frozen\")\nValueError: label registry is not frozen\n"
+    },
+    {
+      "command": [
+        ".venv/bin/ruff",
+        "check",
+        "scripts/prepare_reviewed_replay.py"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    }
+  ],
+  "metrics": null,
+  "trace": null,
+  "fp_fn_cases": null
+}

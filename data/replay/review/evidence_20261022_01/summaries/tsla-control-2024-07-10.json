@@ -1,0 +1,1190 @@
+{
+  "interval_id": "tsla-control-2024-07-10",
+  "candidate_kind": "normal",
+  "ticker": "TSLA",
+  "started_at": "2024-07-10T13:30:00Z",
+  "ended_at": "2024-07-10T15:00:00Z",
+  "local_start": "2024-07-10T09:30:00-04:00",
+  "local_end": "2024-07-10T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 77,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-10T13:37:00+00:00",
+        "2024-07-10T13:39:00+00:00",
+        "2024-07-10T13:55:00+00:00",
+        "2024-07-10T14:01:00+00:00",
+        "2024-07-10T14:03:00+00:00",
+        "2024-07-10T14:15:00+00:00",
+        "2024-07-10T14:21:00+00:00",
+        "2024-07-10T14:25:00+00:00",
+        "2024-07-10T14:28:00+00:00",
+        "2024-07-10T14:32:00+00:00",
+        "2024-07-10T14:37:00+00:00",
+        "2024-07-10T14:45:00+00:00",
+        "2024-07-10T14:54:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-09T19:59:00Z",
+      "prior_close": 497.82,
+      "first_minute": "2024-07-10T13:30:00Z",
+      "last_minute": "2024-07-10T14:59:00Z",
+      "first_open": 499.85,
+      "last_close": 498.96,
+      "gap_pct": 0.40777791169499533,
+      "end_vs_prior_pct": 0.22899843316861457,
+      "window_return_pct": -0.17805341602481484,
+      "window_range_pct": 0.3200960288086471,
+      "volume": 108117,
+      "raw_artifact": "raw/tsla-control-2024-07-10/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 87,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-10T14:44:00+00:00",
+        "2024-07-10T14:45:00+00:00",
+        "2024-07-10T14:57:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-09T19:59:00Z",
+      "prior_close": 555.87,
+      "first_minute": "2024-07-10T13:30:00Z",
+      "last_minute": "2024-07-10T14:59:00Z",
+      "first_open": 557.13,
+      "last_close": 557.015,
+      "gap_pct": 0.2266717038156285,
+      "end_vs_prior_pct": 0.20598341338802229,
+      "window_return_pct": -0.02064150198337611,
+      "window_range_pct": 0.16154218943513673,
+      "volume": 96199,
+      "raw_artifact": "raw/tsla-control-2024-07-10/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-09T19:59:00Z",
+      "prior_close": 262.33,
+      "first_minute": "2024-07-10T13:30:00Z",
+      "last_minute": "2024-07-10T14:59:00Z",
+      "first_open": 262.765,
+      "last_close": 261.23,
+      "gap_pct": 0.16582167498950806,
+      "end_vs_prior_pct": -0.419319178134403,
+      "window_return_pct": -0.5841721690483803,
+      "window_range_pct": 2.9189580043004266,
+      "volume": 185759,
+      "raw_artifact": "raw/tsla-control-2024-07-10/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 39702160,
+      "headline": "Elon Musk Critique Ross Gerber Calls Tesla Short Sellers 'Stupid' — Dan Ives Asks If Bulls Camp Is Ready To Welcome Back The 'Former Bear'",
+      "created_at": "2024-07-10T04:34:33Z",
+      "updated_at": "2024-07-10T04:34:33Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39702160/elon-musk-critique-ross-gerber-calls-tesla-short-sellers-stupid-dan-ives-asks-if-bulls-camp-is-ready",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39702458,
+      "headline": "Tesla CEO Elon Musk Teases New Optimus Design, Says It Is 'Something Special'",
+      "created_at": "2024-07-10T05:45:39Z",
+      "updated_at": "2024-07-10T05:45:39Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39702458/tesla-ceo-elon-musk-teases-new-optimus-design-says-it-is-something-special",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39702995,
+      "headline": "Elon Musk Laughs At Jim Cramer Saying He'd Rather Buy GM Over Tesla, With EV Giant's Stock Rallying 44% Since: 'Amazing'",
+      "created_at": "2024-07-10T07:06:16Z",
+      "updated_at": "2024-07-10T07:06:17Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39702995/elon-musk-laughs-at-jim-cramer-saying-hed-rather-buy-gm-over-tesla-with-ev-giants-stock-rallying",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39702661,
+      "headline": "Here's Why Elon Musk Ditched India Tour To Visit China",
+      "created_at": "2024-07-10T07:39:53Z",
+      "updated_at": "2024-07-10T07:39:54Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39702661/heres-why-elon-musk-ditched-india-tour-to-visit-china",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39703586,
+      "headline": "'Bond King' Bill Gross Says 'Tesla Acting Like A Meme Stock,' Draws Parallels To GameStop, Chewy, And Zapp Amid Rising Pump And Dump Trends",
+      "created_at": "2024-07-10T08:25:55Z",
+      "updated_at": "2024-07-10T08:25:55Z",
+      "symbols": [
+        "CHWY",
+        "GME",
+        "GOOG",
+        "GOOGL",
+        "MSFT",
+        "TSLA",
+        "ZAPP"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39703586/bond-king-bill-gross-says-tesla-acting-like-a-meme-stock-draws-parallels-to-gamesto",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39703771,
+      "headline": "Tesla CEO Elon Musk Slams Use Of Hydrogen For Cars, Terms It 'Silly' As Toyota Gears To Promote Its Fuel Cell Vehicle Mirai At Paris Olympics",
+      "created_at": "2024-07-10T08:46:00Z",
+      "updated_at": "2024-07-10T08:51:57Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39703771/tesla-ceo-elon-musk-slams-the-use-of-hydrogen-for-cars-terms-it-silly-as-toyota-gears-to-promote-its",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39703500,
+      "headline": "June CPI Report On Traders' Radar: Analysts Predict S&P 500 Move For Thursday Under Different Inflation Scenarios (CORRECTED)",
+      "created_at": "2024-07-10T08:09:38Z",
+      "updated_at": "2024-07-10T10:23:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39703500/june-cpi-report-on-traders-radar-analysts-predict-s-p-500-move-for-wednesday-under-different-inflati",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39705124,
+      "headline": "Tesla Giving Special Treatment To Musk And High-Profile 'VIP' Drivers In FSD Development: Report",
+      "created_at": "2024-07-10T10:38:54Z",
+      "updated_at": "2024-07-10T10:38:55Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39705124/tesla-giving-special-treatment-to-musk-and-high-profile-vip-drivers-in-fsd-development-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39706357,
+      "headline": "Asia Mostly In Red, European Markets Gain, While Gold Advanced - Global Markets Today While US Slept",
+      "created_at": "2024-07-10T11:38:16Z",
+      "updated_at": "2024-07-10T11:38:16Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "NVDA",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/07/39706357/asia-mostly-in-red-european-markets-gain-while-gold-advanced-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39706387,
+      "headline": "Nasdaq, S&P 500 Futures Rise Amid Tech Buoyancy, Bitcoin Gains 2%: Analyst Warns Of Elevated Valuations And Potential Election Volatility",
+      "created_at": "2024-07-10T11:40:56Z",
+      "updated_at": "2024-07-10T11:40:57Z",
+      "symbols": [
+        "BIDU",
+        "BTCUSD",
+        "MANU",
+        "NVDA",
+        "PSMT",
+        "QQQ",
+        "SMCI",
+        "SPY",
+        "TSLA",
+        "TSM",
+        "TXG",
+        "WDFC"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39706387/nasdaq-s-p-500-futures-rise-amid-tech-buoyancy-bitcoin-gains-2-analyst-warns-of-elevated-valuations",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39707086,
+      "headline": "OPEC Keeps 2025 Global Oil-Demand Growth Forecast At 1.8M Barrels/Day; Lifts 2024 Global Economic-Growth Forecast To 2.9% From 2.8%; Keeps 2024 Global Oil-Demand Growth Forecast At 2.2M Barrels/Day; Keeps 2025 Global Economic-Growth Forecast At 2.9%; Keeps 2024 U.S. Economic-Growth Forecast At 2.2%; Keeps 2025 U.S. Economic-Growth Forecast At 1.9%",
+      "created_at": "2024-07-10T12:05:23Z",
+      "updated_at": "2024-07-10T12:05:24Z",
+      "symbols": [
+        "SPY",
+        "USO",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39707086/opec-keeps-2025-global-oil-demand-growth-forecast-at-1-8m-barrelsday-lifts-2024-g",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39707937,
+      "headline": "Goldman Sachs Maintains Neutral on Tesla, Raises Price Target to $248",
+      "created_at": "2024-07-10T12:42:55Z",
+      "updated_at": "2024-07-10T12:42:55Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39707937/goldman-sachs-maintains-neutral-on-tesla-raises-price-target-to-248",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39708329,
+      "headline": "As Tesla Surges 44% In 10 Sessions, Bearish Analyst Smells Stock Manipulation: 'They Keep Buying Puts To Cause Inorganic Buying'",
+      "created_at": "2024-07-10T12:51:02Z",
+      "updated_at": "2024-07-10T12:51:03Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39708329/as-tesla-surges-44-in-10-sessions-bearish-analyst-smells-stock-manipulation-they-keep-buying-put",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39708989,
+      "headline": "Morgan Stanley Maintains Overweight on Tesla, Maintains $310 Price Target",
+      "created_at": "2024-07-10T13:08:57Z",
+      "updated_at": "2024-07-10T13:08:58Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39708989/morgan-stanley-maintains-overweight-on-tesla-maintains-310-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39709053,
+      "headline": "Baidu's Market Value Propels As Robotaxi Apollo Go Soars In Popularity",
+      "created_at": "2024-07-10T13:12:20Z",
+      "updated_at": "2024-07-10T13:12:21Z",
+      "symbols": [
+        "BIDU",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39709053/baidus-market-value-propels-as-robotaxi-apollo-go-soars-in-popularity",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39709298,
+      "headline": "Bitcoin, Ethereum, Dogecoin Recover As Federal Reserve Chair Powell Says Rate Cut Not 'Appropriate' For Now; Biden Faces NATO Challenge Amid Candidacy Uncertainty - Top Headlines Today While US Slept",
+      "created_at": "2024-07-10T13:15:56Z",
+      "updated_at": "2024-07-10T13:15:56Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/07/39709298/bitcoin-ethereum-dogecoin-recover-as-federal-reserve-chair-powell-says-rate-cut-not-approp",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39709338,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of July 10 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-07-10T13:17:46Z",
+      "updated_at": "2024-07-10T13:17:46Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "AMD",
+        "AMZN",
+        "INTC",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "TSM",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/07/39709338/top-10-trending-stocks-on-wallstreetbets-as-of-july-10-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39709504,
+      "headline": "U.S. Secretary Of State Blinken Says F-16 Jets Are En Route From Denmark To Ukraine Right Now; Those F-16 Jets Will Be Flying In The Skies Of Ukraine This Summer",
+      "created_at": "2024-07-10T13:21:38Z",
+      "updated_at": "2024-07-10T13:21:39Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39709504/u-s-secretary-of-state-blinken-says-f-16-jets-are-en-route-from-denmark-to-ukrain",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39709532,
+      "headline": "Apple To Rally Around 14%? Here Are 10 Top Analyst Forecasts For Wednesday",
+      "created_at": "2024-07-10T13:22:59Z",
+      "updated_at": "2024-07-10T13:22:59Z",
+      "symbols": [
+        "A",
+        "AAPL",
+        "CRL",
+        "JBHT",
+        "MA",
+        "META",
+        "NFLX",
+        "SFM",
+        "SNPS",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39709532/apple-to-rally-around-14-here-are-10-top-analyst-forecasts-for-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39710828,
+      "headline": "'LIVE: Federal Reserve Chair Powell testifies before House financial services panel — 7/10/24' - CNBC",
+      "created_at": "2024-07-10T14:14:20Z",
+      "updated_at": "2024-07-10T14:14:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39710828/live-federal-reserve-chair-powell-testifies-before-house-financial-services-panel",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711215,
+      "headline": "USA Crude Oil Inventories A Draw Of 3.443M Vs A Build Of 0.700M Est.; Draw Of 12.157M Prior",
+      "created_at": "2024-07-10T14:30:14Z",
+      "updated_at": "2024-07-10T14:30:15Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711215/usa-crude-oil-inventories-a-draw-of-3-443m-vs-a-build-of-0-700m-est-draw-of-12-15",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711217,
+      "headline": "Fed Chair Powell Says Balance Sheet Runoff Has Made Significant Progress But Still Has A Ways To Go",
+      "created_at": "2024-07-10T14:30:26Z",
+      "updated_at": "2024-07-10T14:30:27Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711217/fed-chair-powell-says-balance-sheet-runoff-has-made-significant-progress-but-stil",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711219,
+      "headline": "EIA Weekly Distillates Stocks A Build Of 4.884M Vs A Draw Of 0.300M Est.; Draw Of 1.535M Prior",
+      "created_at": "2024-07-10T14:30:30Z",
+      "updated_at": "2024-07-10T14:30:30Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711219/eia-weekly-distillates-stocks-a-build-of-4-884m-vs-a-draw-of-0-300m-est-draw-of-1",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711240,
+      "headline": "USA Gasoline Inventories A Draw Of 2.006M Vs A Draw Of 1.900M Est.; Draw Of 2.214M Prior",
+      "created_at": "2024-07-10T14:30:42Z",
+      "updated_at": "2024-07-10T14:30:43Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711240/usa-gasoline-inventories-a-draw-of-2-006m-vs-a-draw-of-1-900m-est-draw-of-2-214m-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711288,
+      "headline": "Fed Chair Powell Says Significant Progress Made On Balance Sheet Runoff But Still A Good Ways To Go; Hard To Determine Exact Stopping Point, Aiming For A Buffer; Slower Pace May Allow Us To Go Further; Dual Mandate Has Served Us Well",
+      "created_at": "2024-07-10T14:32:31Z",
+      "updated_at": "2024-07-10T14:32:32Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711288/fed-chair-powell-says-significant-progress-made-on-balance-sheet-runoff-but-still",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711306,
+      "headline": "Fed Chair Powell Says We're Strong Supporters Of Diversity",
+      "created_at": "2024-07-10T14:33:51Z",
+      "updated_at": "2024-07-10T14:33:51Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711306/fed-chair-powell-says-were-strong-supporters-of-diversity",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711340,
+      "headline": "'Biden Could Try To Deliver On Sweeping Student Loan Forgiveness Weeks Before Election' - CNBC",
+      "created_at": "2024-07-10T14:34:16Z",
+      "updated_at": "2024-07-10T14:34:16Z",
+      "symbols": [
+        "SLM",
+        "SOFI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711340/biden-could-try-to-deliver-on-sweeping-student-loan-forgiveness-weeks-before-elec",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711358,
+      "headline": "Fed Chair Powell Says Most Successful Institutions Are Usually Those That Excel In Diversity",
+      "created_at": "2024-07-10T14:34:55Z",
+      "updated_at": "2024-07-10T14:34:56Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711358/fed-chair-powell-says-most-successful-institutions-are-usually-those-that-excel-i",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711395,
+      "headline": "Fed's Powell Says Fed's Discussions With FDIC And OCC On Basel 3 Re-Proposal Have Been Very Productive So Far",
+      "created_at": "2024-07-10T14:37:00Z",
+      "updated_at": "2024-07-10T14:37:00Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711395/feds-powell-says-feds-discussions-with-fdic-and-occ-on-basel-3-re-proposal-have-b",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711375,
+      "headline": "Market Clubhouse Morning Memo - July 10th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-07-10T14:35:54Z",
+      "updated_at": "2024-07-10T14:37:31Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/24/07/39711375/market-clubhouse-morning-memo-july-10th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-an",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711414,
+      "headline": "Fed's Powell Says Fed Is Strongly Committed To The Rule Of Law In Response To Recent Supreme Court Decisions",
+      "created_at": "2024-07-10T14:38:48Z",
+      "updated_at": "2024-07-10T14:38:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711414/feds-powell-says-fed-is-strongly-committed-to-the-rule-of-law-in-response-to-rece",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711459,
+      "headline": "Fed's Powell Says Current Fed Policy Is Restrictive; Neutral Interest Rate Likely Moved Up At Least In The Short Term",
+      "created_at": "2024-07-10T14:40:48Z",
+      "updated_at": "2024-07-10T14:40:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711459/feds-powell-says-current-fed-policy-is-restrictive-neutral-interest-rate-likely-m",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711610,
+      "headline": "Fed's Powell Says We Know We Have To Adapt Bank Stress Tests Over Time; Main Thing Is To Get It Right On Bank Capital Proposal",
+      "created_at": "2024-07-10T14:46:26Z",
+      "updated_at": "2024-07-10T14:46:26Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711610/feds-powell-says-we-know-we-have-to-adapt-bank-stress-tests-over-time-main-thing-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711719,
+      "headline": "Amazon Says Microsoft Settlement With Trade Body CISPE Does Nothing For Vast Majority Of Its Customers In Europe And Worldwide",
+      "created_at": "2024-07-10T14:55:43Z",
+      "updated_at": "2024-07-10T14:55:44Z",
+      "symbols": [
+        "AMZN",
+        "MSFT",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39711719/amazon-says-microsoft-settlement-with-trade-body-cispe-does-nothing-for-vast-majority-of-its-custome",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711752,
+      "headline": "Fed Chair Powell Says We Know We Have To Adapt Bank Stress Tests Over Time; Main Thing Is To Get It Right On Bank Capital Proposal; Asked About Fed Independence, Says Having It Is Essential; That View Is Very Widely Held On Capitol Hill; Fed Independence Best For Promoting Price Stability",
+      "created_at": "2024-07-10T14:59:10Z",
+      "updated_at": "2024-07-10T14:59:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711752/fed-chair-powell-says-we-know-we-have-to-adapt-bank-stress-tests-over-time-main-t",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711753,
+      "headline": "Fed Chair Powell Says  We Want To Have A Sustainable Set Of Rules For Banks",
+      "created_at": "2024-07-10T14:59:36Z",
+      "updated_at": "2024-07-10T14:59:36Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711753/fed-chair-powell-says-we-want-to-have-a-sustainable-set-of-rules-for-banks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39711884,
+      "headline": "Fed Chair Powell Says Economy Is Growing Around 2% It Feels Like, And With Inflation And Jobs, These Are Good Numbers",
+      "created_at": "2024-07-10T15:02:42Z",
+      "updated_at": "2024-07-10T15:02:43Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711884/fed-chair-powell-says-economy-is-growing-around-2-it-feels-like-and-with-inflatio",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39711929,
+      "headline": "Tesla Hikes Prices Of Model 3 In Some European Countries Because Of EU Tariffs On China-Made EVs",
+      "created_at": "2024-07-10T15:05:22Z",
+      "updated_at": "2024-07-10T15:05:23Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "TSLA",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711929/tesla-hikes-prices-of-model-3-in-some-european-countries-because-of-eu-tariffs-on",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712033,
+      "headline": "Fed Chair Powell Says Financial Regulators Have Very, Very Limited Role With Climate",
+      "created_at": "2024-07-10T15:06:29Z",
+      "updated_at": "2024-07-10T15:06:30Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712033/fed-chair-powell-says-financial-regulators-have-very-very-limited-role-with-clima",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712199,
+      "headline": "Fed Chair Powell Says We Have Increased Transparency On Bank Stress Tests Over Time, Open To Improving Further",
+      "created_at": "2024-07-10T15:11:14Z",
+      "updated_at": "2024-07-10T15:11:14Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712199/fed-chair-powell-says-we-have-increased-transparency-on-bank-stress-tests-over-ti",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712295,
+      "headline": "Democratic U.S. Senator Blumenthal Says \"I Am Deeply Concerned\" About President Biden",
+      "created_at": "2024-07-10T15:12:35Z",
+      "updated_at": "2024-07-10T15:12:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712295/democratic-u-s-senator-blumenthal-says-i-am-deeply-concerned-about-president-bide",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39711660,
+      "headline": "Bipartisan Group Of Senators Is About To Announce A Deal On A Congressional Stock Trading Ban. Will Be Marked Up In Committee On July 24 - Punchbowl News Reporter",
+      "created_at": "2024-07-10T14:51:28Z",
+      "updated_at": "2024-07-10T15:13:43Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39711660/bipartisan-group-of-senators-is-about-to-announce-a-deal-on-a-congressional-stock",
+      "after_window": false,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712491,
+      "headline": "Saudi Aramco Tightens Price Guidance To 110-115 BPs Over UST For 10-Year Bond",
+      "created_at": "2024-07-10T15:19:03Z",
+      "updated_at": "2024-07-10T15:19:04Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712491/saudi-aramco-tightens-price-guidance-to-110-115-bps-over-ust-for-10-year-bond",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712513,
+      "headline": "Fed Chair Powell Says You Don't Want To Wait Until Inflation Gets All The Way To 2% To Ease Policy",
+      "created_at": "2024-07-10T15:20:02Z",
+      "updated_at": "2024-07-10T15:20:03Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712513/fed-chair-powell-says-you-dont-want-to-wait-until-inflation-gets-all-the-way-to-2",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712528,
+      "headline": "Benzinga Market Summary: Market Awaits Thursday CPI Data, Baidu Jumps On Reports Of Robotaxi Popularity In China, Samsung Unveils Phones With Google Gemini Integration; AMD Jumps On Silo AI Acquisition",
+      "created_at": "2024-07-10T15:20:48Z",
+      "updated_at": "2024-07-10T15:20:48Z",
+      "symbols": [
+        "AMD",
+        "BIDU",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712528/benzinga-market-summary-market-awaits-thursday-cpi-data-baidu-jumps-on-reports-of",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712582,
+      "headline": "Fed Chair Powell Says We Want To Have Greater Confidence, Which Means More Good Inflation Readings; We're Not Just An Inflation-Targeting Central Bank, We Have An Employment Mandate",
+      "created_at": "2024-07-10T15:22:24Z",
+      "updated_at": "2024-07-10T15:22:25Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712582/fed-chair-powell-says-we-want-to-have-greater-confidence-which-means-more-good-in",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712607,
+      "headline": "Fed Chair Powell Says Now See Risks To The 2 Mandates Much Closer To Being In Balance; We're Looking At Both Sides; Our Political Independence Is Critical To Ability To Do Our Jobs;  We Don't Take Political Factors Into Consideration; We're Not Looking At Things Like Election Cycles; Inflation Has Come Down But Prices Are Still High",
+      "created_at": "2024-07-10T15:23:37Z",
+      "updated_at": "2024-07-10T15:23:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712607/fed-chair-powell-says-now-see-risks-to-the-2-mandates-much-closer-to-being-in-bal",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712665,
+      "headline": "Fed Chair Powell Says I Do Have Some Confidence In Inflation Coming Down But Not Prepared To Say Sufficiently Confident In It Coming Sustainably Down To 2% Yet; We're Going To Return To 2% Inflation I Am Reasonably Confident",
+      "created_at": "2024-07-10T15:26:46Z",
+      "updated_at": "2024-07-10T15:28:55Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712665/fed-chair-powell-says-i-do-have-some-confidence-in-inflation-coming-down-but-not-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712870,
+      "headline": "Fed's Powell Says Fed Believes It Is Very Important To Have A Federal Framework For Stablecoins",
+      "created_at": "2024-07-10T15:36:23Z",
+      "updated_at": "2024-07-10T15:36:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712870/feds-powell-says-fed-believes-it-is-very-important-to-have-a-federal-framework-fo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39712936,
+      "headline": "Fed's Powell Says We Need To Be Mindful Of The Labor Market, Have Seen Considerable Softening",
+      "created_at": "2024-07-10T15:40:01Z",
+      "updated_at": "2024-07-10T15:40:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39712936/feds-powell-says-we-need-to-be-mindful-of-the-labor-market-have-seen-considerable",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713171,
+      "headline": "Fed Chair Powell Says Fed Has Yet To Make A Proposal On Prepositioning, Can Certainly Modernize And Make Discount Window More Effective; We Need To Bake New Reality Into Liquidity Requirements; Intermediation In Nonbanks Is Growing Very Quickly",
+      "created_at": "2024-07-10T15:53:03Z",
+      "updated_at": "2024-07-10T15:55:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713171/fed-chair-powell-says-fed-has-yet-to-make-a-proposal-on-prepositioning-can-certai",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713231,
+      "headline": "Fed Chair Powell Says Question Of What Is Neutral Is An Empirical One; Unlikely Going Back To Very Low Rates Of Pre-Crisis Period; Fed Needs To Pay Attention To Both Labor Market And Jobs, Compared To Before When Focus Was On Inflation Risks",
+      "created_at": "2024-07-10T15:56:36Z",
+      "updated_at": "2024-07-10T15:56:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713231/fed-chair-powell-says-question-of-what-is-neutral-is-an-empirical-one-unlikely-go",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713411,
+      "headline": "EXCLUSIVE: Nvidia's Sky-High Valuation 'Gives Some Investors Pause,' Expert Warns Of Reevaluation",
+      "created_at": "2024-07-10T16:03:46Z",
+      "updated_at": "2024-07-10T16:03:47Z",
+      "symbols": [
+        "NVDA",
+        "QQQ",
+        "SMH",
+        "SOXL",
+        "SOXS",
+        "SOXX"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/24/07/39713411/exclusive-nvidias-sky-high-valuation-gives-some-investors-pause-expert-warns-of-reevalua",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713568,
+      "headline": "Fed's Powell Says Inflation Has Come Down But Prices Are Still High; Confident Inflation Will Decrease, But Not Yet Confident It Will Sustainably Reach 2%; Reasonably Confident In Returning To 2% Inflation; Fed Is Very Focused On Potential Foreign Meddling Against U.S. Banks",
+      "created_at": "2024-07-10T16:09:21Z",
+      "updated_at": "2024-07-10T16:09:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713568/feds-powell-says-inflation-has-come-down-but-prices-are-still-high-confident-infl",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713606,
+      "headline": "June Inflation Report Expected To Show Cooler Pricing, But Consumers Feel Financial Strain",
+      "created_at": "2024-07-10T16:11:01Z",
+      "updated_at": "2024-07-10T16:11:02Z",
+      "symbols": [
+        "SPY",
+        "TLT"
+      ],
+      "url": "https://www.benzinga.com/top-stories/24/07/39713606/june-inflation-report-expected-to-show-cooler-pricing-but-consumers-feel-financial-strain",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713695,
+      "headline": "Fed Chair Powell Says President Biden Has Not Sought A Meeting With Fed Chair",
+      "created_at": "2024-07-10T16:14:47Z",
+      "updated_at": "2024-07-10T16:14:48Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713695/fed-chair-powell-says-president-biden-has-not-sought-a-meeting-with-fed-chair",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713670,
+      "headline": "TSMC Sales Jump 40% On AI Demand, Microsoft And Apple Give Up OpenAI Board Seats, Musk Ditches Oracle",
+      "created_at": "2024-07-10T16:14:16Z",
+      "updated_at": "2024-07-10T16:16:22Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "ORCL",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "TSM",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/markets/24/07/39713670/tsmc-sales-jump-40-on-ai-demand-microsoft-and-apple-give-up-openai-board-seats-musk-ditches-oracle",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713840,
+      "headline": "Fed's Powell Says Administration Has Been Very Respectful Of The Fed; September Rate Cut Will Focus On Economic Data, Not Politics; Decisions Made As Needed And Well Grounded; Fed Does Not Consider Election Cycles",
+      "created_at": "2024-07-10T16:17:13Z",
+      "updated_at": "2024-07-10T16:17:13Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713840/feds-powell-says-administration-has-been-very-respectful-of-the-fed-september-rat",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713853,
+      "headline": "Powell Says We Want To Be More Confident Inflation Is Moving Sustainably Toward 2%; Confident Inflation Is On A Downward Path; No Cognitive Decline Noticed In Interactions With President Biden",
+      "created_at": "2024-07-10T16:17:58Z",
+      "updated_at": "2024-07-10T16:17:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713853/powell-says-we-want-to-be-more-confident-inflation-is-moving-sustainably-toward-2",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713910,
+      "headline": "Feds Powell Says \"You Are Never Able To Sleep On Cyber Risk\"; Stigma On Banks Using Discount Window Hard To Fight; Administration Not Trying To Influence The Fed; Fed To Make Decisions Based On Data, Not Considering Political Factors; Not Appropriate For Fed To Consider Elections; We Need To Finish The Job On Inflation While Maintaining A Strong Labor Market",
+      "created_at": "2024-07-10T16:24:08Z",
+      "updated_at": "2024-07-10T16:24:09Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713910/feds-powell-says-you-are-never-able-to-sleep-on-cyber-risk-stigma-on-banks-using-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39713993,
+      "headline": "Fed's Powell Says Fiscal And Monetary Response To Pandemic Behind Subsequent Inflation; Need To Finish The Job On Inflation While Maintaining Strong Labor Market; Basel 3 Re-Proposal Likely Out For Comment In Fall; Stress Tests Show Financial System Is Strong",
+      "created_at": "2024-07-10T16:28:10Z",
+      "updated_at": "2024-07-10T16:28:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39713993/feds-powell-says-fiscal-and-monetary-response-to-pandemic-behind-subsequent-infla",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39714116,
+      "headline": "U.S. Treasury Undersecretary Jay Shambaugh Says U.S. May Need Further Defensive Actions To Protect Industries From China's Overcapacity; Suggests 'More Creative Approaches' Beyond Section 301 Tariffs; Defending Against Excess Capacity And Dumping Not Protectionist Or Anti-Trade",
+      "created_at": "2024-07-10T16:33:45Z",
+      "updated_at": "2024-07-10T16:33:46Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39714116/u-s-treasury-undersecretary-jay-shambaugh-says-u-s-may-need-further-defensive-actions-to-protect-ind",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39714170,
+      "headline": "Jerome Powell Tells Congress The Fed Could Cut Rates If Either Of These Things Happen: 'Inflation Has A Certain Momentum'",
+      "created_at": "2024-07-10T16:38:22Z",
+      "updated_at": "2024-07-10T16:38:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/24/07/39714170/jerome-powell-tells-congress-the-fed-could-cut-rates-if-either-of-these-things-happen-inflation-has",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39714228,
+      "headline": "Fed's Powell Says We Need To Finish The Job On Inflation While Keeping A Strong Labor Market; Basel 3 Re-Proposal Expected To Go Out For Comment In Fall; Stress Tests Show Financial System Is Strong; Elections Don't Alter How The Fed Does Its Job; Biggest Concern Is Cyber Attacks; Primary Focus Now Is Getting Policy Right On Inflation And Jobs Market",
+      "created_at": "2024-07-10T16:44:18Z",
+      "updated_at": "2024-07-10T16:44:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39714228/feds-powell-says-we-need-to-finish-the-job-on-inflation-while-keeping-a-strong-la",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39714353,
+      "headline": "Fed's Powell Says Lowering Inflation While Keeping Employment High Is Biggest Concern; Fed Aware That Risky Assets Could Be Returning To Banks' Balance Sheets Through Back Door; Fed To Focus On Liquidity Proposal Once Basel III Moves To Next Phase",
+      "created_at": "2024-07-10T16:48:16Z",
+      "updated_at": "2024-07-10T16:48:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39714353/feds-powell-says-lowering-inflation-while-keeping-employment-high-is-biggest-conc",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39714465,
+      "headline": "Fed's Powell Says High Fixed Costs From Regulation Might Drive U.S. Banking Sector Consolidation; Banks Also Consolidating To Manage Technology Costs",
+      "created_at": "2024-07-10T16:56:47Z",
+      "updated_at": "2024-07-10T16:56:47Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39714465/feds-powell-says-high-fixed-costs-from-regulation-might-drive-u-s-banking-sector-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39714475,
+      "headline": "Fed's Powell Says Relying On Banking Agencies To Lead Fight On Climate Change Is A Big Mistake; Fed Won't Force Banks To Adopt Climate Transition Plans; We Are Not Climate Policymakers And Don't Have That Mandate; Key To Our Independence Is Sticking To The Job Given By Congress; Fed Can Only Ensure Banks Are Able To Absorb Costs Of Climate Change",
+      "created_at": "2024-07-10T16:58:01Z",
+      "updated_at": "2024-07-10T16:58:02Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39714475/feds-powell-says-relying-on-banking-agencies-to-lead-fight-on-climate-change-is-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39714690,
+      "headline": "What's Going On With Nvidia, AMD Stocks On Wednesday?",
+      "created_at": "2024-07-10T17:07:14Z",
+      "updated_at": "2024-07-10T17:07:14Z",
+      "symbols": [
+        "AMD",
+        "NVDA",
+        "QQQ",
+        "TSM",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/24/07/39714690/whats-going-on-with-nvidia-amd-stocks-on-wednesday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39715374,
+      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
+      "created_at": "2024-07-10T17:35:19Z",
+      "updated_at": "2024-07-10T17:35:19Z",
+      "symbols": [
+        "ANF",
+        "CAVA",
+        "HBI",
+        "JD",
+        "PDD",
+        "PENN",
+        "RCL",
+        "RIVN",
+        "SBUX",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/07/39715374/10-consumer-discretionary-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39716688,
+      "headline": "Apple, Microsoft, Meta, Google: Which Would You Buy At All-Time High? Investor Poll Reveals Split Opinions",
+      "created_at": "2024-07-10T18:54:25Z",
+      "updated_at": "2024-07-10T18:54:25Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL",
+        "MAGS",
+        "META",
+        "MSFT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/24/07/39716688/apple-microsoft-meta-google-which-would-you-buy-at-all-time-high-investor-poll-reveals",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39716732,
+      "headline": "AI-Enhanced iPhone 16 May Help Apple Sell More Devices, Rebound In China",
+      "created_at": "2024-07-10T18:59:48Z",
+      "updated_at": "2024-07-10T18:59:49Z",
+      "symbols": [
+        "AAPL",
+        "IVV",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/24/07/39716732/ai-enhanced-iphone-16-may-help-apple-sell-more-devices-rebound-in-china",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39716836,
+      "headline": "NBC's Lester Holt To Interview President Biden On Monday",
+      "created_at": "2024-07-10T19:03:42Z",
+      "updated_at": "2024-07-10T19:03:43Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39716836/nbcs-lester-holt-to-interview-president-biden-on-monday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39717220,
+      "headline": "'Warren Buffett Indicator' Sounds Alarm: Stock Market Levels Now Surpass Dot-Com Bubble, Great Financial Crisis",
+      "created_at": "2024-07-10T19:31:20Z",
+      "updated_at": "2024-07-10T19:31:43Z",
+      "symbols": [
+        "BRK",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/general/education/24/07/39717220/warren-buffett-indicator-sounds-alarm-stock-market-levels-now-surpass-dot-com-bubble-great-fina",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39717359,
+      "headline": "President Biden Seeks 4.5 Million Barrels For Strategic Oil Reserve",
+      "created_at": "2024-07-10T19:38:36Z",
+      "updated_at": "2024-07-10T19:38:37Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39717359/president-biden-seeks-4-5-million-barrels-for-strategic-oil-reserve",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39717369,
+      "headline": "'Biden Administration Agrees to Ship 500-Pound Bombs to Israel' - WSJ",
+      "created_at": "2024-07-10T19:39:15Z",
+      "updated_at": "2024-07-10T19:40:02Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39717369/biden-administration-agrees-to-ship-500-pound-bombs-to-israel-wsj",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39721426,
+      "headline": "Lindsey Graham Says AOC's Impeachment Bid Against Justices Thomas and Alito Is Going Nowhere: 'Clickbait is Legislating' For Her",
+      "created_at": "2024-07-11T01:31:58Z",
+      "updated_at": "2024-07-11T01:31:58Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39721426/lindsey-graham-says-aocs-impeachment-bid-against-justices-thomas-and-alito-is-going-nowhere-clickbai",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39721677,
+      "headline": "Palantir, Apple, Costco, SoundHound AI, Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-07-11T02:20:15Z",
+      "updated_at": "2024-07-11T02:20:15Z",
+      "symbols": [
+        "AAPL",
+        "COST",
+        "PLTR",
+        "SOUN",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39721677/palantir-apple-costco-soundhound-ai-tesla-why-these-5-stocks-are-on-investors-radars-today",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39721774,
+      "headline": "Elon Musk Slams Bond King Bill Gross For Tesla Is 'Meme Stock' Remarks: He Makes 'Investment Decisions By Looking In The Rear-View Mirror'",
+      "created_at": "2024-07-11T02:54:13Z",
+      "updated_at": "2024-07-11T02:54:13Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39721774/elon-musk-slams-bond-king-bill-gross-for-tesla-is-meme-stock-remarks-he-makes-investment-decisio",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

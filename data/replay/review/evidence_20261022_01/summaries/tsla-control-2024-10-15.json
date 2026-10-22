@@ -1,0 +1,837 @@
+{
+  "interval_id": "tsla-control-2024-10-15",
+  "candidate_kind": "normal",
+  "ticker": "TSLA",
+  "started_at": "2024-10-15T13:30:00Z",
+  "ended_at": "2024-10-15T15:00:00Z",
+  "local_start": "2024-10-15T09:30:00-04:00",
+  "local_end": "2024-10-15T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 86,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-10-15T13:37:00+00:00",
+        "2024-10-15T13:39:00+00:00",
+        "2024-10-15T14:01:00+00:00",
+        "2024-10-15T14:08:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-14T19:59:00Z",
+      "prior_close": 497.5,
+      "first_minute": "2024-10-15T13:30:00Z",
+      "last_minute": "2024-10-15T14:59:00Z",
+      "first_open": 497.83,
+      "last_close": 492.27,
+      "gap_pct": 0.06633165829146304,
+      "end_vs_prior_pct": -1.0512562814070425,
+      "window_return_pct": -1.1168471164855531,
+      "window_range_pct": 1.5607737581102061,
+      "volume": 141036,
+      "raw_artifact": "raw/tsla-control-2024-10-15/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-14T19:59:00Z",
+      "prior_close": 584.31,
+      "first_minute": "2024-10-15T13:30:00Z",
+      "last_minute": "2024-10-15T14:59:00Z",
+      "first_open": 584.64,
+      "last_close": 581.95,
+      "gap_pct": 0.056476870154553716,
+      "end_vs_prior_pct": -0.40389519262034046,
+      "window_return_pct": -0.46011220580185475,
+      "window_range_pct": 0.5918171866447791,
+      "volume": 265185,
+      "raw_artifact": "raw/tsla-control-2024-10-15/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-14T19:59:00Z",
+      "prior_close": 219.16,
+      "first_minute": "2024-10-15T13:30:00Z",
+      "last_minute": "2024-10-15T14:59:00Z",
+      "first_open": 220.08,
+      "last_close": 219.19,
+      "gap_pct": 0.41978463223215634,
+      "end_vs_prior_pct": 0.013688629311925382,
+      "window_return_pct": -0.40439840058161813,
+      "window_range_pct": 3.207924391130499,
+      "volume": 317869,
+      "raw_artifact": "raw/tsla-control-2024-10-15/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 41324660,
+      "headline": "Jim Cramer Says Earnings Season Will Fuel Market's Record Run, But Warns Of This 'Horrendous' Headwind That Could Apply Brakes To Rally",
+      "created_at": "2024-10-15T08:08:27Z",
+      "updated_at": "2024-10-15T08:08:27Z",
+      "symbols": [
+        "BAC",
+        "C",
+        "GS",
+        "JBHT",
+        "JNJ",
+        "JPM",
+        "PNC",
+        "QQQ",
+        "SCHW",
+        "SPY",
+        "UAL",
+        "UNH",
+        "WBA",
+        "WFC"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41324660/jim-cramer-says-earnings-season-will-fuel-markets-record-run-but-warns-of-this-horr",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41325252,
+      "headline": "Tesla Cybertruck Leads The Pack As Most Popular EV Truck In US In Q3, Outselling Rivals From Ford, GM And Rivian Combined",
+      "created_at": "2024-10-15T09:07:23Z",
+      "updated_at": "2024-10-15T09:07:23Z",
+      "symbols": [
+        "F",
+        "GM",
+        "RIVN",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41325252/tesla-cybertruck-leads-the-pack-as-most-popular-ev-truck-in-us-in-q3-outselling-rivals-from-ford-gm",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41325776,
+      "headline": "Tech YouTuber MKBHD Says 'I'll Shave My Head On Camera' If Elon Musk's Tesla Delivers Cybercab Before 2027 As Robotaxi Timeline Faces Skepticism",
+      "created_at": "2024-10-15T09:47:07Z",
+      "updated_at": "2024-10-15T09:47:08Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41325776/tech-youtuber-mkbhd-says-ill-shave-my-head-on-camera-if-elon-musks-tesla-delivers-cybercab-before-20",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41325803,
+      "headline": "Tesla Exec Mocks Stellantis' Fiat For New Commercial Comparing Fiat 500e With Cybertruck: '...Really Nailed This...'",
+      "created_at": "2024-10-15T09:53:57Z",
+      "updated_at": "2024-10-15T09:53:58Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41325803/tesla-exec-mocks-stellantis-fiat-for-new-commercial-comparing-fiat-500e-with-cybertruck-really-naile",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41326262,
+      "headline": "Crude Oil Drops 5% On Demand Concerns, Asia And Europe Markets Mixed - Global Markets Today While US Slept",
+      "created_at": "2024-10-15T10:16:40Z",
+      "updated_at": "2024-10-15T10:16:41Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/10/41326262/crude-oil-drops-5-on-demand-concerns-asia-and-europe-markets-mixed-global-markets-today-while-us-sle",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41326823,
+      "headline": "Wall Street On Edge As Nasdaq Nears Record High, Oil Prices Plummet: Strategist Says There's Opportunity If Resilience Continues",
+      "created_at": "2024-10-15T10:43:50Z",
+      "updated_at": "2024-10-15T10:43:52Z",
+      "symbols": [
+        "AMD",
+        "BA",
+        "BAC",
+        "BTCUSD",
+        "C",
+        "DJT",
+        "GS",
+        "JBHT",
+        "JNJ",
+        "MU",
+        "NVDA",
+        "PNC",
+        "QQQ",
+        "SCHW",
+        "SMCI",
+        "SPY",
+        "UAL",
+        "UNH",
+        "WBA",
+        "WOLF"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/10/41326823/wall-street-on-edge-as-nasdaq-nears-record-high-oil-prices-plummet-strategist-says-theres-opportuni",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41328039,
+      "headline": "As Elon Musk Unveils Cybercab, Uber CEO Weighs In On Robotaxi Competiton From Waymo, Tesla: 'Don't Think This Is Going To Be A Winner-Take-All Marketplace'",
+      "created_at": "2024-10-15T11:17:03Z",
+      "updated_at": "2024-10-15T11:17:04Z",
+      "symbols": [
+        "GOOGL",
+        "TSLA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41328039/as-elon-musk-unveils-cybercab-uber-ceo-weighs-in-on-robotaxi-competiton-from-waymo-tesla-dont-think",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41328029,
+      "headline": "Top 3 Tech And Telecom Stocks That Could Lead To Your Biggest Gains This Quarter",
+      "created_at": "2024-10-15T11:16:18Z",
+      "updated_at": "2024-10-15T11:24:47Z",
+      "symbols": [
+        "LVO",
+        "TIMB",
+        "TRVG",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/24/10/41328029/top-3-tech-and-telecom-stocks-that-could-lead-to-your-biggest-gains-this-quarter",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41330114,
+      "headline": "USA NY Empire State Manufacturing Index For October -11.90 Vs 3.40 Est.; 11.50 Prior",
+      "created_at": "2024-10-15T12:30:20Z",
+      "updated_at": "2024-10-15T12:30:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41330114/usa-ny-empire-state-manufacturing-index-for-october-11-90-vs-3-40-est-11-50-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41330825,
+      "headline": "RE/MAX Reports The Number Of Homes For Sale Climbed For The Seventh Consecutive Month Across The 52 Metro Areas Surveyed – 6.4% Higher Than August And 33.6% Above September 2023 Levels. New Listings Also Increased 9.7% Compared To September 2023.",
+      "created_at": "2024-10-15T12:47:07Z",
+      "updated_at": "2024-10-15T12:47:07Z",
+      "symbols": [
+        "RMAX",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41330825/remax-reports-the-number-of-homes-for-sale-climbed-for-the-seventh-consecutive-month-across-the-52-m",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41331033,
+      "headline": "USA Redbook (YoY) 5.6%; 5.4% Prior",
+      "created_at": "2024-10-15T12:55:42Z",
+      "updated_at": "2024-10-15T12:55:43Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41331033/usa-redbook-yoy-5-6-5-4-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41332662,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of October 15, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-10-15T13:21:36Z",
+      "updated_at": "2024-10-15T13:21:36Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "DJT",
+        "MADE",
+        "MSTR",
+        "NVDA",
+        "QQQ",
+        "SOFI",
+        "TSLA",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/10/41332662/top-10-trending-stocks-on-wallstreetbets-as-of-october-15-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41257775,
+      "headline": "Uber 'Well Positioned' Despite Tesla Robotaxi Threat, Analyst Says",
+      "created_at": "2024-10-09T18:28:40Z",
+      "updated_at": "2024-10-15T13:41:04Z",
+      "symbols": [
+        "LYFT",
+        "TSLA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41257775/uber-well-positioned-despite-tesla-robotaxi-threat-analyst-says",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41333565,
+      "headline": "Tesla Adds 7-Seat Model Y In Netherlands Amid EV Sales Slump; Bitcoin, Ethereum, Dogecoin Surge As Stocks Hit Record Highs - Top Headlines Today While US Slept",
+      "created_at": "2024-10-15T13:46:43Z",
+      "updated_at": "2024-10-15T13:46:43Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/10/41333565/tesla-adds-7-seat-model-y-in-netherlands-amid-ev-sales-slump-bitcoin-ethereum-dogecoin-sur",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41333885,
+      "headline": "Benzinga Market Summary: Oil Falls After Israel Reportedly Suggested It Wouldn't Plan To Strike Iranian Oil Targets, Healthcare Stocks Fall After Q3 Earnings From UnitedHealth, Biden Administration Reportedly Discusses Curbing Chip Exports To Some Countries",
+      "created_at": "2024-10-15T14:00:02Z",
+      "updated_at": "2024-10-15T14:00:03Z",
+      "symbols": [
+        "AMD",
+        "BNO",
+        "NVDA",
+        "SPY",
+        "UNH",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41333885/benzinga-market-summary-oil-falls-after-israel-reportedly-suggested-it-wouldnt-pl",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41335838,
+      "headline": "'US FCC Opens Formal Inquiry Into Use Of Data Caps By Telecom Firms' - Reuters News",
+      "created_at": "2024-10-15T14:29:51Z",
+      "updated_at": "2024-10-15T14:29:52Z",
+      "symbols": [
+        "SPY",
+        "T",
+        "TMUS",
+        "VZ"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41335838/us-fcc-opens-formal-inquiry-into-use-of-data-caps-by-telecom-firms-reuters-news",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41336987,
+      "headline": "NY Fed 1-Year Consumer Inflation Expectations For September 3.0%; 3.0% Prior",
+      "created_at": "2024-10-15T15:05:40Z",
+      "updated_at": "2024-10-15T15:05:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41336987/ny-fed-1-year-consumer-inflation-expectations-for-september-3-0-3-0-prior",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41337016,
+      "headline": "Anthony Pompliano Predicts Tesla's Automation Tech Will Spike Stablecoin Adoption: 'People Don't Want To Spend Their Bitcoin'",
+      "created_at": "2024-10-15T15:06:28Z",
+      "updated_at": "2024-10-15T15:06:29Z",
+      "symbols": [
+        "BTCUSD",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/10/41337016/anthony-pompliano-predicts-teslas-automation-tech-will-spike-stablecoin-adoption-people-do",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41337983,
+      "headline": "Fed's Daly Says Fed Monetary Policy Still Restrictive, Working To Lower Inflation; Continued Progress On Fed Goals Not Assured, Fed Must Remain Vigilant; Fed Must Deliver 2% Inflation While Keeping Job Market At Full Employment; Risks To Fed Job, Inflation Mandates Now More Balanced; September Rate Cut Right-sized Monetary Policy; A Continued Expansion Remains Very Possible",
+      "created_at": "2024-10-15T15:32:39Z",
+      "updated_at": "2024-10-15T15:32:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41337983/feds-daly-says-fed-monetary-policy-still-restrictive-working-to-lower-inflation-continued-progress-o",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41337995,
+      "headline": "Fed's Daly Says Labor Market Has Cooled, Largely Normalized From Pandemic; Current Unemployment Rate Near Long-Run Level; Economy Is Clearly In A Better Place, Inflation Eased A Lot; Data Shows Public Expects Inflation To Ease More Over Time; Fully Expects Economy To See Bumps, Disturbances And Scares; Job To Achieve Soft Landing Is Not Complete",
+      "created_at": "2024-10-15T15:33:20Z",
+      "updated_at": "2024-10-15T15:33:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41337995/feds-daly-says-labor-market-has-cooled-largely-normalized-from-pandemic-current-unemployment-rate-ne",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41337996,
+      "headline": "Market Clubhouse Morning Memo - October 15th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-10-15T15:33:24Z",
+      "updated_at": "2024-10-15T15:34:14Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/10/41337996/market-clubhouse-morning-memo-october-15th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-met",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41338396,
+      "headline": "Fed's Daly Says Is 'Cautiously Optimistic' About Economic Outlook; Fed Has Been Able To Get Inflation Down Without Major Disruption; Notes Inflation's Retreat Has Been Broad Based; Funds Rate A Long Way From Where It's Likely To Settle; Likely Neutral Rate Is Higher Than It Once Was; 3% Rate May Be Around Neutral; Won't Be Surprised By Messy Economic Data",
+      "created_at": "2024-10-15T15:52:17Z",
+      "updated_at": "2024-10-15T15:52:17Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41338396/feds-daly-says-is-cautiously-optimistic-about-economic-outlook-fed-has-been-able-to-get-inflation-do",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41338639,
+      "headline": "Fed's Daly Sees Signs Housing Market Is Coming Back To Life",
+      "created_at": "2024-10-15T15:58:48Z",
+      "updated_at": "2024-10-15T15:58:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41338639/feds-daly-sees-signs-housing-market-is-coming-back-to-life",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41338702,
+      "headline": "Fed's Daly Remains Confident Fed Tools Get Achieve Central Bank Mandates",
+      "created_at": "2024-10-15T16:00:40Z",
+      "updated_at": "2024-10-15T16:00:41Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41338702/feds-daly-remains-confident-fed-tools-get-achieve-central-bank-mandates",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41338912,
+      "headline": "Fed's Daly Does Not Feel Current Fed Framework Created Policy Constraints; Says Key Question For Fed Framework Review Is Real Rate Of Interest Level, Framework Review Should Review Rate Policy, Balance Sheet Linkages",
+      "created_at": "2024-10-15T16:06:59Z",
+      "updated_at": "2024-10-15T16:06:59Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41338912/feds-daly-does-not-feel-current-fed-framework-created-policy-constraints-says-key",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41339035,
+      "headline": "Fed's Daly Says Lack Of Fed Dissents Doesn't Mean Officials Fully Agree",
+      "created_at": "2024-10-15T16:10:16Z",
+      "updated_at": "2024-10-15T16:10:17Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41339035/feds-daly-says-lack-of-fed-dissents-doesnt-mean-officials-fully-agree",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41339140,
+      "headline": "Fed's Daly Says By And Large Most Banks Are Monitoring Their Interest Rate Risk; Bank Runs Can Now Happen At Accelerated Pace",
+      "created_at": "2024-10-15T16:13:42Z",
+      "updated_at": "2024-10-15T16:13:42Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41339140/feds-daly-says-by-and-large-most-banks-are-monitoring-their-interest-rate-risk-bank-runs-can-now-hap",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41339228,
+      "headline": "Fed's Daly Says Is More Comfortable Fed Can Wind Down Balance Sheet Without Market Trouble",
+      "created_at": "2024-10-15T16:16:58Z",
+      "updated_at": "2024-10-15T16:16:58Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41339228/feds-daly-says-is-more-comfortable-fed-can-wind-down-balance-sheet-without-market-trouble",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41339306,
+      "headline": "Fed's Daly Says Talk Of Gradual Rate Cuts Means Less Than It Appears; If Forecast Met Sees One Or Two More Rate Cuts This Year",
+      "created_at": "2024-10-15T16:20:35Z",
+      "updated_at": "2024-10-15T16:20:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41339306/feds-daly-says-talk-of-gradual-rate-cuts-means-less-than-it-appears-if-forecast-met-sees-one-or-two",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41339316,
+      "headline": "Google Goes Nuclear For AI Power, Israeli Restraint Impacts Stocks, Gold, And Oil",
+      "created_at": "2024-10-15T16:21:42Z",
+      "updated_at": "2024-10-15T16:21:43Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BAC",
+        "BTCUSD",
+        "CEG",
+        "GLD",
+        "GOOG",
+        "GS",
+        "JNJ",
+        "META",
+        "MSFT",
+        "NEM",
+        "NNE",
+        "NVDA",
+        "OKLO",
+        "PEG",
+        "QQQ",
+        "SLV",
+        "SMR",
+        "SPY",
+        "TSLA",
+        "UNH",
+        "USO",
+        "VST"
+      ],
+      "url": "https://www.benzinga.com/markets/24/10/41339316/google-goes-nuclear-for-ai-power-israeli-restraint-impacts-stocks-gold-and-oil",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41340084,
+      "headline": "LIVE: Watch Donald Trump Speaks With Bloomberg News; Discusses Economic Plan",
+      "created_at": "2024-10-15T16:51:35Z",
+      "updated_at": "2024-10-15T16:52:08Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41340084/live-watch-donald-trump-speaks-with-bloomberg-news",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41340650,
+      "headline": "Former President Donald Trump Does Not Say If He Has Spoken To Russia's Putin Since Leaving Office, Says \"If I Did It's A Smart Thing\"",
+      "created_at": "2024-10-15T17:13:42Z",
+      "updated_at": "2024-10-15T17:13:42Z",
+      "symbols": [
+        "DJT",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41340650/former-president-donald-trump-does-not-say-if-he-has-spoken-to-russias-putin-since-leaving-office-sa",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41340839,
+      "headline": "U.S. State Department Says Blinken And Secretary Austin Address Israeli Ministers Dermer And Gallant On Concerns Over Gaza Humanitarian Situation; Blinken Previously Wrote To Gallant In April Stressing The Need For Sustained Humanitarian Aid",
+      "created_at": "2024-10-15T17:23:27Z",
+      "updated_at": "2024-10-15T17:23:28Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41340839/u-s-state-department-says-blinken-and-secretary-austin-address-israeli-ministers-derme",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41340855,
+      "headline": "Donald Trump Says He Has Right To Tell Fed What To Do On Interest Rates, But Not Order It",
+      "created_at": "2024-10-15T17:24:59Z",
+      "updated_at": "2024-10-15T17:24:59Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41340855/donald-trump-says-he-has-right-to-tell-fed-what-to-do-on-interest-rates-but-not-o",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41341104,
+      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
+      "created_at": "2024-10-15T17:35:16Z",
+      "updated_at": "2024-10-15T17:35:17Z",
+      "symbols": [
+        "AMZN",
+        "ANF",
+        "BABA",
+        "JD",
+        "LGIH",
+        "NIO",
+        "SIG",
+        "TSLA",
+        "YUM",
+        "YUMC"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/10/41341104/10-consumer-discretionary-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41341168,
+      "headline": "Chipmaker Stocks Sink On ASML Earnings Leak, Oil Eyes Worst 1-Day Drop This Year, Small Caps Rally: What's Driving Markets Tuesday?",
+      "created_at": "2024-10-15T17:37:15Z",
+      "updated_at": "2024-10-15T17:37:16Z",
+      "symbols": [
+        "AAL",
+        "ARM",
+        "ASML",
+        "BAC",
+        "BTCUSD",
+        "C",
+        "CCL",
+        "DIA",
+        "GS",
+        "IBKR",
+        "IWM",
+        "JBHT",
+        "JNJ",
+        "KRE",
+        "NCLH",
+        "NVDA",
+        "OMC",
+        "PNC",
+        "QQQ",
+        "SCHW",
+        "SOXX",
+        "SPY",
+        "STT",
+        "UAL",
+        "UNH",
+        "WBA",
+        "XLE",
+        "XLF",
+        "XLK"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41341168/chipmaker-stocks-sink-on-asml-earnings-leak-oil-eyes-worst-1-day-drop-this-year-small-caps-rally",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41341278,
+      "headline": "Enphase Energy Downgraded: Analyst Cites Competitive Pressures And Market Share Loss In Inverter Segment",
+      "created_at": "2024-10-15T17:44:29Z",
+      "updated_at": "2024-10-15T17:44:30Z",
+      "symbols": [
+        "ENPH",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41341278/enphase-energy-downgraded-analyst-cites-competitive-pressures-and-market-share-loss",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41341280,
+      "headline": "Former President Trump Says \"I Want Alot Of People To Come Into Country But Legally\"",
+      "created_at": "2024-10-15T17:44:38Z",
+      "updated_at": "2024-10-15T17:44:38Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41341280/former-president-trump-says-i-want-alot-of-people-to-come-into-country-but-legall",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41341317,
+      "headline": "Harris Leads Trump 45%-42% In Latest Reuters/Ipsos Poll Of U.S. Registered Voters",
+      "created_at": "2024-10-15T17:46:57Z",
+      "updated_at": "2024-10-15T17:46:58Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41341317/harris-leads-trump-45-42-in-latest-reutersipsos-poll-of-u-s-registered-voters",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41341894,
+      "headline": "EV Slowdown Concerns Eased As China's NEVs Show Strong Q3 Rebound: Analyst",
+      "created_at": "2024-10-15T18:10:16Z",
+      "updated_at": "2024-10-15T18:10:17Z",
+      "symbols": [
+        "TSLA",
+        "VWAGY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41341894/ev-slowdown-concerns-eased-as-chinas-nevs-show-strong-q3-rebound-analyst",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41342914,
+      "headline": "Cybercab Or Robotaxi? Robovan Or Robobus? Tesla Trademark Filings Might Reveal Elon Musk's Preferred Name For New Vehicles",
+      "created_at": "2024-10-15T19:07:43Z",
+      "updated_at": "2024-10-15T19:07:44Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41342914/cybercab-or-robotaxi-robovan-or-robobus-tesla-trademark-filings-might-reveal-elon-musks-preferred-na",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41342942,
+      "headline": "Tesla Fails To Justify The Robotaxi Hype With Concrete Figures",
+      "created_at": "2024-10-15T19:08:24Z",
+      "updated_at": "2024-10-15T19:08:53Z",
+      "symbols": [
+        "AMZN",
+        "GM",
+        "GOOG",
+        "GOOGL",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/24/10/41342942/tesla-fails-to-justify-the-robotaxi-hype-with-concrete-figures",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41343089,
+      "headline": "Benzinga Market Summary: Indexes Fall Amid Weakness In Chip Stocks And Health Insurers, Schwab Surges After Client Assets Increase 27%, China Stocks Fall On Weak Exports And Continued Stimulus Uncertainty",
+      "created_at": "2024-10-15T19:15:56Z",
+      "updated_at": "2024-10-15T19:18:48Z",
+      "symbols": [
+        "AMD",
+        "ASML",
+        "BABA",
+        "DIA",
+        "FXI",
+        "IWM",
+        "NVDA",
+        "QQQ",
+        "SCHW",
+        "SMH",
+        "SPY",
+        "UNH"
+      ],
+      "url": "https://www.benzinga.com/wiim/24/10/41343089/benzinga-market-summary-indexes-fall-amid-weakness-in-chip-stocks-and-health-insurers-schwab-surges",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41344805,
+      "headline": "U.S. Judge Orders Boeing, Government To Provide Supplemental Briefing By October 25 On Plea Deal",
+      "created_at": "2024-10-15T20:29:14Z",
+      "updated_at": "2024-10-15T20:29:15Z",
+      "symbols": [
+        "BA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41344805/u-s-judge-orders-boeing-government-to-provide-supplemental-briefing-by-october-25-on-plea-deal",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41348730,
+      "headline": "Elon Musk's Tesla Waving Goodbye To Bitcoin? $760M Sent To Unknown Wallets",
+      "created_at": "2024-10-16T01:32:43Z",
+      "updated_at": "2024-10-16T01:32:44Z",
+      "symbols": [
+        "BTCUSD",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/10/41348730/elon-musks-tesla-waving-goodbye-to-bitcoin-760m-sent-to-unknown-wallets",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41349278,
+      "headline": "ASML, Walgreens, Trump Media, United Airlines, And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-10-16T02:43:13Z",
+      "updated_at": "2024-10-16T02:43:14Z",
+      "symbols": [
+        "ASML",
+        "BTCUSD",
+        "DJT",
+        "TSLA",
+        "UAL",
+        "WBA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41349278/asml-walgreens-trump-media-united-airlines-and-tesla-why-these-5-stocks-are-on-investors-radars-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41349340,
+      "headline": "Elon Musk Announces Tesla Semi 'Will Be Available Worldwide' Amid Growing Skepticism Over 500-Mile Range And Autonomous Features",
+      "created_at": "2024-10-16T03:01:28Z",
+      "updated_at": "2024-10-16T03:01:28Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41349340/elon-musk-announces-tesla-semi-will-be-available-worldwide-amid-growing-skepticism-over-500-mile",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

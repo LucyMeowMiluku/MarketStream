@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.10, pytest-9.0.3, pluggy-1.6.0
+rootdir: /Users/ywx/Documents/NTU/capstone_project
+configfile: pyproject.toml
+testpaths: tests
+plugins: cov-7.1.0, anyio-4.13.0
+collected 63 items
+
+tests/test_alpaca_history.py ....                                        [  6%]
+tests/test_baseline_persistence.py .......                               [ 17%]
+tests/test_cep_golden_trace.py .                                         [ 19%]
+tests/test_data_quality.py ....                                          [ 25%]
+tests/test_db.py ....                                                    [ 31%]
+tests/test_event_metrics.py ....                                         [ 38%]
+tests/test_event_models.py ...                                           [ 42%]
+tests/test_factor_cep.py ................                                [ 68%]
+tests/test_isolation_forest_baseline.py ...                              [ 73%]
+tests/test_lightweight_factor_engine.py .........                        [ 87%]
+tests/test_real_replay.py .                                              [ 88%]
+tests/test_replay_consistency.py ..                                      [ 92%]
+tests/test_replay_labels.py ....                                         [ 98%]
+tests/test_synthetic_accounting.py .                                     [100%]
+
+============================== 63 passed in 4.67s ==============================

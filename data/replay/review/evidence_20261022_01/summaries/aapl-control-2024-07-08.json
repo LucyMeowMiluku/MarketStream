@@ -1,0 +1,707 @@
+{
+  "interval_id": "aapl-control-2024-07-08",
+  "candidate_kind": "normal",
+  "ticker": "AAPL",
+  "started_at": "2024-07-08T13:30:00Z",
+  "ended_at": "2024-07-08T15:00:00Z",
+  "local_start": "2024-07-08T09:30:00-04:00",
+  "local_end": "2024-07-08T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-05T19:59:00Z",
+      "prior_close": 226.35,
+      "first_minute": "2024-07-08T13:30:00Z",
+      "last_minute": "2024-07-08T14:59:00Z",
+      "first_open": 227.125,
+      "last_close": 225.4,
+      "gap_pct": 0.34239010382151047,
+      "end_vs_prior_pct": -0.4197039982328232,
+      "window_return_pct": -0.7594936708860689,
+      "window_range_pct": 1.7831590533846926,
+      "volume": 261918,
+      "raw_artifact": "raw/aapl-control-2024-07-08/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 79,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-08T13:33:00+00:00",
+        "2024-07-08T14:09:00+00:00",
+        "2024-07-08T14:16:00+00:00",
+        "2024-07-08T14:30:00+00:00",
+        "2024-07-08T14:32:00+00:00",
+        "2024-07-08T14:37:00+00:00",
+        "2024-07-08T14:47:00+00:00",
+        "2024-07-08T14:52:00+00:00",
+        "2024-07-08T14:55:00+00:00",
+        "2024-07-08T14:57:00+00:00",
+        "2024-07-08T14:59:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-05T19:59:00Z",
+      "prior_close": 496.23,
+      "first_minute": "2024-07-08T13:30:00Z",
+      "last_minute": "2024-07-08T14:58:00Z",
+      "first_open": 496.43,
+      "last_close": 495.77,
+      "gap_pct": 0.04030389134070944,
+      "end_vs_prior_pct": -0.09269895008363616,
+      "window_return_pct": -0.132949257699988,
+      "window_range_pct": 0.26388413270753225,
+      "volume": 62655,
+      "raw_artifact": "raw/aapl-control-2024-07-08/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 83,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-07-08T14:07:00+00:00",
+        "2024-07-08T14:08:00+00:00",
+        "2024-07-08T14:09:00+00:00",
+        "2024-07-08T14:49:00+00:00",
+        "2024-07-08T14:52:00+00:00",
+        "2024-07-08T14:53:00+00:00",
+        "2024-07-08T14:56:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-07-05T19:59:00Z",
+      "prior_close": 554.725,
+      "first_minute": "2024-07-08T13:30:00Z",
+      "last_minute": "2024-07-08T14:59:00Z",
+      "first_open": 555.35,
+      "last_close": 555.2,
+      "gap_pct": 0.1126684393167876,
+      "end_vs_prior_pct": 0.08562801388074526,
+      "window_return_pct": -0.027009993697668655,
+      "window_range_pct": 0.221481948320882,
+      "volume": 118906,
+      "raw_artifact": "raw/aapl-control-2024-07-08/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 39658506,
+      "headline": "Apple Watch Series 10 May Not Include Anticipated Health Features Like Blood Pressure Monitoring And Sleep Apnea Detection",
+      "created_at": "2024-07-08T04:25:09Z",
+      "updated_at": "2024-07-08T04:25:09Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39658506/apple-watch-series-10-may-not-include-anticipated-health-features-like-blood-pressure-monitoring-and",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39658170,
+      "headline": "Tesla's 9-Day Winning Streak In Question As Nvidia, Apple, Microsoft, And Other Mag 7 Stocks Rise, Forecasts Gary Black (CORRECTED)",
+      "created_at": "2024-07-08T02:17:04Z",
+      "updated_at": "2024-07-08T05:16:27Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTDR",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39658170/tesla-could-be-on-the-verge-of-a-9-day-winning-streak-as-nvidia-apple-microsoft-and-other-mag-7-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39659580,
+      "headline": "After iPhone Success, Apple Wants To Revive Its 'Make In India' Plans For iPads And AirPod Cases: Report",
+      "created_at": "2024-07-08T09:41:59Z",
+      "updated_at": "2024-07-08T09:42:00Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39659580/after-iphone-success-apple-wants-to-revive-its-make-in-india-plans-for-ipads-and-airpod-cases-re",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39660525,
+      "headline": "Microsoft Asks Staff In China To Switch From Android Phones To iPhones At Work: Report",
+      "created_at": "2024-07-08T09:52:10Z",
+      "updated_at": "2024-07-08T09:53:04Z",
+      "symbols": [
+        "AAPL",
+        "MSFT"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39660525/microsoft-asks-staff-in-china-to-switch-from-android-phones-to-iphones-at-work-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39662496,
+      "headline": "Nvidia, Apple Supplier TSMC Stock Surges In Pre-Market After Morgan Stanley Raises Price Target Ahead Of Earnings",
+      "created_at": "2024-07-08T10:20:28Z",
+      "updated_at": "2024-07-08T10:20:28Z",
+      "symbols": [
+        "AAPL",
+        "NVDA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39662496/nvidia-apple-supplier-tsmc-stock-surges-in-pre-market-after-morgan-stanley-raises-price-target-a",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39663633,
+      "headline": "Asia Markets Dip While Europe Advances, Crude Cools 1% - Global Markets Today While US Slept",
+      "created_at": "2024-07-08T11:27:26Z",
+      "updated_at": "2024-07-08T11:27:27Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/07/39663633/asia-markets-dip-while-europe-advances-crude-cools-1-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39663936,
+      "headline": "Wall Street Sentiment Skittish At Start Of Fresh Trading Week, Bitcoin Stabilizes: Analyst Says 'First Half Of July Is Historically One Of The Most Bullish Periods'",
+      "created_at": "2024-07-08T11:43:55Z",
+      "updated_at": "2024-07-08T12:12:32Z",
+      "symbols": [
+        "BA",
+        "BTCUSD",
+        "PARA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/07/39663936/wall-street-sentiment-skittish-at-start-of-fresh-trading-week-bitcoin-stabilizes-analyst-says-first",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39665558,
+      "headline": "Apple's Most-Awaited Siri AI Upgrade Will Not Come Until 2025: Report",
+      "created_at": "2024-07-08T12:46:23Z",
+      "updated_at": "2024-07-08T12:46:24Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39665558/apples-most-awaited-siri-ai-upgrade-will-not-come-until-2025-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39665665,
+      "headline": "Apple, Microsoft, Meta, Google Stocks Hit 52-Week Highs: Which Is The Best Investment?",
+      "created_at": "2024-07-08T12:54:44Z",
+      "updated_at": "2024-07-08T12:54:45Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39665665/apple-microsoft-meta-google-stocks-hit-52-week-highs-which-is-the-best-investment",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39666062,
+      "headline": "Masimo Receives Non-Binding Term Sheet From Potential JV Partner Offering $850M-$950M For Consumer Business; JV Partner Proposes Short-Term Exclusivity Extension Through Mid-August 2024; Masimo To Retain Litigation With Apple And License Some IP Rights For Consumer Use",
+      "created_at": "2024-07-08T13:08:25Z",
+      "updated_at": "2024-07-08T13:08:26Z",
+      "symbols": [
+        "AAPL",
+        "MASI"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39666062/masimo-receives-non-binding-term-sheet-from-potential-jv-partner-offering-850m-950m-for-consumer-bus",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39666275,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of July 8 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-07-08T13:15:13Z",
+      "updated_at": "2024-07-08T13:15:13Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "AMZN",
+        "BA",
+        "INTC",
+        "NVDA",
+        "PLTR",
+        "TSLA",
+        "TSM",
+        "WAY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/07/39666275/top-10-trending-stocks-on-wallstreetbets-as-of-july-8-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39666525,
+      "headline": "Bitcoin, Ethereum, And Dogecoin Drop Again: Analyst Warns Of A Major Decline If Bitcoin Falls Below $56K; Biden Claims 'Trump Is Lying About Project 2025,' Saying It Will Harm America - Top Headlines Today While US Slept",
+      "created_at": "2024-07-08T13:21:19Z",
+      "updated_at": "2024-07-08T13:21:20Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/07/39666525/bitcoin-ethereum-and-dogecoin-drop-again-analyst-warns-of-a-major-decline-if-bitcoin-falls",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39667654,
+      "headline": "China's Commerce Ministry, On Media Reports Saying China Only Recently Sought Consultations With EU On EV Tariffs: It Is 'Grossly Inconsistent With The Facts'; Urge The European Side To Properly Handle Economic, Trade Frictions Through Dialogue And Consultation",
+      "created_at": "2024-07-08T14:00:22Z",
+      "updated_at": "2024-07-08T14:00:22Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "TSLA",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39667654/chinas-commerce-ministry-on-media-reports-saying-china-only-recently-sought-consu",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39667703,
+      "headline": "China's Commerce Ministry Says China Has Always Believed That Trade Protectionist Measures Are Not Conducive To Cooperation In The Automotive Industry",
+      "created_at": "2024-07-08T14:01:51Z",
+      "updated_at": "2024-07-08T14:01:52Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39667703/chinas-commerce-ministry-says-china-has-always-believed-that-trade-protectionist-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39667758,
+      "headline": "China's Commerce Ministry Says China Is Resolutely Opposed To Any Unilateralism And Protectionism Practices That 'Politicize And Weaponize' Economic And Trade Issues; China Is Bound To Take All Measures To Safeguard Its Rights And Interests Against Any 'Egregious Practices' That Abuse Rules And Suppress China",
+      "created_at": "2024-07-08T14:03:07Z",
+      "updated_at": "2024-07-08T14:03:08Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "TSLA",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39667758/chinas-commerce-ministry-says-china-is-resolutely-opposed-to-any-unilateralism-an",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39667885,
+      "headline": "Benzinga Market Summary: UBS Raises NVIDIA Price Target, Biden Commits To Staying In The Race, Boeing Strikes Plea Deal With DOJ",
+      "created_at": "2024-07-08T14:09:33Z",
+      "updated_at": "2024-07-08T14:09:34Z",
+      "symbols": [
+        "BA",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39667885/benzinga-market-summary-ubs-raises-nvidia-price-target-biden-commits-to-staying-i",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39668140,
+      "headline": "Market Clubhouse Morning Memo - July 8th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-07-08T14:19:13Z",
+      "updated_at": "2024-07-08T14:19:55Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/24/07/39668140/market-clubhouse-morning-memo-july-8th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-and",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39667663,
+      "headline": "USA CB Employment Trends Index For June 110.27 Vs  111.04 Prior",
+      "created_at": "2024-07-08T14:00:41Z",
+      "updated_at": "2024-07-08T14:25:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39667663/usa-cb-employment-trends-index-for-june-110-27-vs-111-44-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39669262,
+      "headline": "NY Fed Reported June 1-Year Ahead Expected Inflation At 3% Vs May's 3.2%; June 3-Year Ahead Expected Inflation At 2.9% Vs May's 2.8%;June 5-Year Ahead Expected Inflation At 2.8% Vs May's 3%; June Expected Home Price Rise At 3% Vs May's 3.3%; Consumers See Slower Expected Price Gains For Rent, Food, Medical Care, College, Gas; June Expected Year Ahead Earnings Growth Best Since September 2023; Perceptions Of Household Financial Situation Lost Ground In June",
+      "created_at": "2024-07-08T15:12:45Z",
+      "updated_at": "2024-07-08T15:13:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39669262/ny-fed-reported-june-1-year-ahead-expected-inflation-at-3-vs-mays-3-2-june-3-year",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39669649,
+      "headline": "Apple's 'Path To $4 Trillion': iPhone 16 AI Supercycle Sparks Analyst Optimism",
+      "created_at": "2024-07-08T15:31:02Z",
+      "updated_at": "2024-07-08T15:31:03Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL",
+        "META"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39669649/apples-path-to-4-trillion-iphone-16-ai-supercycle-sparks-analyst-optimism",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39669759,
+      "headline": "'TSMC May Revise Its Sales Growth Projection For 2024 At Its Forthcoming Investors Conference In Light Of The Substantial Orders It Has Received From AMD, Apple, Broadcom, Intel, Mediatek, And Qualcomm, According To Industry Sources\" - DigiTimes Alert",
+      "created_at": "2024-07-08T15:35:15Z",
+      "updated_at": "2024-07-08T15:35:15Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "AVGO",
+        "INTC",
+        "QCOM",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39669759/tsmc-may-revise-its-sales-growth-projection-for-2024-at-its-forthcoming-investors-conference-in-ligh",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39670081,
+      "headline": "Hamas Says Israel's PM Netanyahu Is Placing Hurdles In Front Of Ceasefire Negotiations; Calls On Mediators To Interfere Against 'Maneuvers, Crimes' Of Israel's Netanyahu",
+      "created_at": "2024-07-08T15:54:12Z",
+      "updated_at": "2024-07-08T15:54:42Z",
+      "symbols": [
+        "EIS",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39670081/hamas-says-israels-pm-netanyahu-is-placing-hurdles-in-front-of-ceasefire-negotiat",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39670093,
+      "headline": "What's Going On With Google Parent Alphabet Monday?",
+      "created_at": "2024-07-08T15:54:52Z",
+      "updated_at": "2024-07-08T15:54:52Z",
+      "symbols": [
+        "AAPL",
+        "BABA",
+        "GOOG",
+        "GOOGL",
+        "MSFT"
+      ],
+      "url": "https://www.benzinga.com/government/24/07/39670093/whats-going-on-with-google-parent-alphabet-monday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39670765,
+      "headline": "Investors Pay Attention To Nvidia, Apple, And Microsoft Divergence; Election Shock In France",
+      "created_at": "2024-07-08T16:25:12Z",
+      "updated_at": "2024-07-08T16:27:28Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "RSP",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "UNH"
+      ],
+      "url": "https://www.benzinga.com/markets/24/07/39670765/investors-pay-attention-to-nvidia-apple-and-microsoft-divergence-election-shock-in-france",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39671471,
+      "headline": "What's Going On With Super Micro Computer Stock On Monday?",
+      "created_at": "2024-07-08T17:04:34Z",
+      "updated_at": "2024-07-08T17:04:34Z",
+      "symbols": [
+        "AAPL",
+        "IVV",
+        "NVDA",
+        "SMCI",
+        "SPY",
+        "TSLA",
+        "TSM"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39671471/whats-going-on-with-super-micro-computer-stock-on-monday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39672162,
+      "headline": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+      "created_at": "2024-07-08T17:35:13Z",
+      "updated_at": "2024-07-08T17:35:13Z",
+      "symbols": [
+        "AAOI",
+        "AAPL",
+        "AMD",
+        "AVGO",
+        "CLSK",
+        "CSCO",
+        "DELL",
+        "INTC",
+        "NVDA",
+        "SMCI"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/07/39672162/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39672170,
+      "headline": "Stocks Hold Steady, Small Caps Rise, French Equities Slip After Surprise Win By Left-Wing Bloc: What's Driving Markets Monday?",
+      "created_at": "2024-07-08T17:36:10Z",
+      "updated_at": "2024-07-08T17:36:11Z",
+      "symbols": [
+        "BTCUSD",
+        "DIA",
+        "EWQ",
+        "GLW",
+        "HLVX",
+        "INTC",
+        "IWM",
+        "MORF",
+        "PARAA",
+        "RCM",
+        "SEDG",
+        "SPY",
+        "UAA",
+        "XLC",
+        "XLE",
+        "XLU"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39672170/stocks-hold-steady-small-caps-rise-french-equities-slip-after-surprise-win-by-left-wing-bloc-wha",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39673296,
+      "headline": "Just 17% Of S&P 500 Stocks Outperform The Index: What Does That Mean For The Market?",
+      "created_at": "2024-07-08T18:18:43Z",
+      "updated_at": "2024-07-08T18:18:44Z",
+      "symbols": [
+        "RSP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/24/07/39673296/just-17-of-s-p-500-stocks-outperform-the-index-what-does-that-mean-for-the-market",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39673466,
+      "headline": "White House Says President Biden Wednesday Will Hold Bilateral Meeting With UK's Starmer",
+      "created_at": "2024-07-08T18:28:14Z",
+      "updated_at": "2024-07-08T18:28:14Z",
+      "symbols": [
+        "EWU",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39673466/white-house-says-president-biden-wednesday-will-hold-bilateral-meeting-with-uks-s",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39673820,
+      "headline": "Big Tech's Next Milestone Is The $4 Trillion Market Cap",
+      "created_at": "2024-07-08T18:50:11Z",
+      "updated_at": "2024-07-08T18:51:13Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "MSFT",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/tech/24/07/39673820/big-techs-next-milestone-is-the-4-trillion-market-cap",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39673986,
+      "headline": "Consumer Credit For May 11.35B Vs. 10.70B Est.; 6.49B Prior",
+      "created_at": "2024-07-08T19:02:39Z",
+      "updated_at": "2024-07-08T19:02:39Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39673986/consumer-credit-for-may-11-35b-vs-10-70b-est-6-49b-prior",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39674202,
+      "headline": "White House Says President Biden And His Doctor Have Said Cognitive Test Is Not Warranted",
+      "created_at": "2024-07-08T19:15:40Z",
+      "updated_at": "2024-07-08T19:15:41Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39674202/white-house-says-president-biden-and-his-doctor-have-said-cognitive-test-is-not-w",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39674698,
+      "headline": "Market Momentum: Your Weekly Financial Forecast",
+      "created_at": "2024-07-08T19:48:37Z",
+      "updated_at": "2024-07-08T19:49:16Z",
+      "symbols": [
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/07/39674698/market-momentum-your-weekly-financial-forecast",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39675021,
+      "headline": "Benzinga Market Summary: Corning Raises Guidance, Biden Tells Democrats He Is Committed To Staying In Race, Chinese EV Stocks Fall",
+      "created_at": "2024-07-08T20:04:29Z",
+      "updated_at": "2024-07-08T20:04:29Z",
+      "symbols": [
+        "GLW",
+        "LI",
+        "NIO",
+        "SPY",
+        "XPEV"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/07/39675021/benzinga-market-summary-corning-raises-guidance-biden-tells-democrats-he-is-commi",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39675202,
+      "headline": "Expert Trader Suggests Interest Rates Aren't Sole Cause For Small Cap Struggles, Recommends Alternative Investment Ideas",
+      "created_at": "2024-07-08T20:10:10Z",
+      "updated_at": "2024-07-08T20:10:11Z",
+      "symbols": [
+        "AAPL",
+        "IWM",
+        "MSFT"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/07/39675202/expert-trader-suggests-interest-rates-arent-sole-cause-for-small-cap-struggles-recommends-altern",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39676340,
+      "headline": "Market Correction 'Highly Likely' Before 2024 Election, Says Morgan Stanley CIO",
+      "created_at": "2024-07-08T20:45:38Z",
+      "updated_at": "2024-07-08T20:45:39Z",
+      "symbols": [
+        "IVV",
+        "SPY",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39676340/market-correction-highly-likely-before-2024-election-says-morgan-stanley-cio",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39678774,
+      "headline": "From Apple TV+'s New Feature To Dark Mode Icons: Here's What's New In Latest iOS18 Beta",
+      "created_at": "2024-07-09T01:47:47Z",
+      "updated_at": "2024-07-09T01:47:48Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/07/39678774/from-apple-tv-s-new-feature-to-dark-mode-icons-heres-whats-new-in-latest-ios18-beta",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39677621,
+      "headline": "Ed Yardeni Downplays Recession Fears But Warns, 'We Need More Bears To Keep The Bull Market Going'",
+      "created_at": "2024-07-08T22:25:34Z",
+      "updated_at": "2024-07-09T01:55:10Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/07/39677621/ed-yardeni-downplays-recession-fears-but-warns-we-need-more-bears-to-keep-the-bull-",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

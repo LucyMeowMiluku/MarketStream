@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-10-22T14:36:06.534645+00:00",
+  "purpose": "AI-assisted evidence review; no human approval or detector execution",
+  "source_label_hashes": {
+    "draft": "3ed6a645b97402eda4dbfb682f3cbbf03e2351868605f8b98c60019f9988615c",
+    "ai_preannotated.v3": "559378decdfd334b2b9aa08c5241ea1ddb61dd46a15cfdfb852d39c6e9a5b1b3"
+  },
+  "interval_ids": [
+    "aapl-fy24-q2-reaction",
+    "aapl-apple-intelligence-reaction",
+    "aapl-global-risk-off",
+    "tsla-fy24-q1-reaction",
+    "tsla-fy24-q2-reaction",
+    "tsla-fy24-q3-reaction",
+    "nvda-fy24-q4-reaction",
+    "nvda-fy25-q1-reaction",
+    "nvda-fy25-q2-reaction",
+    "spy-december-fomc-reaction",
+    "qqq-global-risk-off",
+    "spy-reciprocal-tariff-reaction",
+    "aapl-control-2024-04-19",
+    "aapl-control-2024-05-28",
+    "aapl-control-2024-07-22",
+    "tsla-control-2024-04-10",
+    "tsla-control-2024-07-10",
+    "tsla-control-2024-10-10",
+    "nvda-control-2024-02-08",
+    "nvda-control-2024-05-09",
+    "nvda-control-2024-08-15",
+    "spy-control-2024-12-04",
+    "qqq-control-2024-07-22",
+    "spy-control-2025-03-13",
+    "aapl-control-2024-05-17",
+    "aapl-control-2024-06-27",
+    "aapl-control-2024-07-08",
+    "tsla-control-2024-02-21",
+    "tsla-control-2024-10-15",
+    "nvda-control-2024-09-13",
+    "nvda-control-2024-09-23",
+    "spy-control-2024-12-09",
+    "qqq-control-2024-07-08",
+    "spy-control-2025-01-23"
+  ],
+  "boundary_rule": "minute start >= start and < end; exclude end-stamped minute",
+  "direction_references": [
+    "prior regular-session close",
+    "window first open"
+  ],
+  "normality_rule": "No automatic normal approval from quiet bars or absent news.",
+  "baseline_note": "Prior daily sessions are context only, not event baseline coverage."
+}

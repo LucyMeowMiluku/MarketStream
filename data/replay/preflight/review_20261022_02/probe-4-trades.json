@@ -1,0 +1,18 @@
+{
+  "next_page_token": "U1BZfDE3MzMzMzg4MDc2NDU1NDI2NTZ8Vnw1Mjk4MzY3Njk0MjQwOA==",
+  "symbol": "SPY",
+  "trades": [
+    {
+      "c": [
+        " ",
+        "I"
+      ],
+      "i": 52983676886880,
+      "p": 605.8,
+      "s": 12,
+      "t": "2024-12-04T19:00:03.232722688Z",
+      "x": "V",
+      "z": "B"
+    }
+  ]
+}

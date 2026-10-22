@@ -1,0 +1,845 @@
+{
+  "interval_id": "spy-december-fomc-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "SPY",
+  "started_at": "2024-12-18T19:00:00Z",
+  "ended_at": "2024-12-18T20:30:00Z",
+  "local_start": "2024-12-18T14:00:00-05:00",
+  "local_end": "2024-12-18T15:30:00-05:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-12-18T19:28:00+00:00",
+        "2024-12-18T19:52:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-12-17T20:59:00Z",
+      "prior_close": 535.81,
+      "first_minute": "2024-12-18T19:00:00Z",
+      "last_minute": "2024-12-18T20:29:00Z",
+      "first_open": 534.68,
+      "last_close": 522.04,
+      "gap_pct": -0.2108956533099393,
+      "end_vs_prior_pct": -2.5699408372370725,
+      "window_return_pct": -2.3640308221740125,
+      "window_range_pct": 2.508042193461504,
+      "volume": 171247,
+      "raw_artifact": "raw/spy-december-fomc-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-12-17T20:59:00Z",
+      "prior_close": 604.24,
+      "first_minute": "2024-12-18T19:00:00Z",
+      "last_minute": "2024-12-18T20:29:00Z",
+      "first_open": 604.48,
+      "last_close": 593.19,
+      "gap_pct": 0.039719316827757645,
+      "end_vs_prior_pct": -1.8287435456110113,
+      "window_return_pct": -1.867721016410795,
+      "window_range_pct": 2.0083377448385367,
+      "volume": 480764,
+      "raw_artifact": "raw/spy-december-fomc-reaction/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 42547783,
+      "headline": "Santa Claus Rally Is Facing Some 'Indigestion,' Says UBS Expert: 'The Market Is Basically Taking A Little Bit Of A Probably Well-Needed Pause'",
+      "created_at": "2024-12-18T09:12:39Z",
+      "updated_at": "2024-12-18T09:12:39Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/12/42547783/santa-claus-rally-is-facing-some-indigestion-says-ubs-expert-the-market-is-basically-taking-a-little-bit-of-a-probably-well-needed-pause",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42548779,
+      "headline": "China And Europe Markets Advance, Dollar Strengthens Ahead Of Fed Meeting - Global Markets Today While US Slept",
+      "created_at": "2024-12-18T11:03:48Z",
+      "updated_at": "2024-12-18T11:03:49Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/24/12/42548779/asia-markets-mixed-europe-advances-oil-prices-climb-and-dollar-strengthens-ahead-of-fed-meeting-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42549182,
+      "headline": "US Stocks To Open Higher As Rate Cut Expectations Surge: All Eyes On Dow Jones To Break Its 9-Day Losing Streak",
+      "created_at": "2024-12-18T11:22:12Z",
+      "updated_at": "2024-12-18T11:22:12Z",
+      "symbols": [
+        "APDN",
+        "CRVS",
+        "GIS",
+        "JBL",
+        "MU",
+        "NUKK",
+        "PRZO",
+        "QQQ",
+        "QUBT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/previews/24/12/42549182/us-stocks-to-open-higher-as-rate-cut-expectations-surge-all-eyes-on-dow-jones-to-break-its-9-day-losing-streak",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42552352,
+      "headline": "USA Housing Starts (MoM) For November; -1.8% Vs -3.2% YoY",
+      "created_at": "2024-12-18T13:30:28Z",
+      "updated_at": "2024-12-18T13:30:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42552352/usa-housing-starts-mom-for-november-1-8-vs-3-2-yoy",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42552364,
+      "headline": "USA Current Account (Q3) -310.9B Vs -286.0B Est.; -275.0B Prior",
+      "created_at": "2024-12-18T13:31:00Z",
+      "updated_at": "2024-12-18T13:31:00Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42552364/usa-current-account-q3-310-9b-vs-286-0b-est-275-0b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42552396,
+      "headline": "US Building Permits (Nov) 1.505M vs 1.430M Est.",
+      "created_at": "2024-12-18T13:31:13Z",
+      "updated_at": "2024-12-18T13:31:13Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42552396/us-building-permits-nov-1-505m-vs-1-430m-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42554114,
+      "headline": "All Eyes On December Fed Meeting As Traders Await Interest Rate Projections",
+      "created_at": "2024-12-18T14:18:48Z",
+      "updated_at": "2024-12-18T14:18:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42554114/all-eyes-on-december-fed-meeting-as-traders-await-interest-rate-projections",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42555033,
+      "headline": "Russian Deputy Foreign Minister Says Moscow Can 'Definitely' Work With Trump Administration",
+      "created_at": "2024-12-18T14:48:51Z",
+      "updated_at": "2024-12-18T14:48:52Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42555033/russian-deputy-foreign-minister-says-moscow-can-definitely-work-with-trump-admini",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42556119,
+      "headline": "'China Is Rapidly Expanding Nuclear Forces, Says Pentagon; U.S. Defence Department Reports That Beijing Has Increased Operational Nuclear Warhead Arsenal By 20% In A Year' - Financial Times",
+      "created_at": "2024-12-18T15:24:25Z",
+      "updated_at": "2024-12-18T15:24:25Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42556119/china-is-rapidly-expanding-nuclear-forces-says-pentagon-u-s-defence-department-re",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42556252,
+      "headline": "USA Crude Oil Inventories 0.934M\tBarrel Draw Vs 1.600M Barrel Draw Est.; 1.425M Barrel Draw Prior",
+      "created_at": "2024-12-18T15:30:20Z",
+      "updated_at": "2024-12-18T15:30:20Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42556252/usa-crude-oil-inventories-0-934m-barrel-draw-vs-1-600m-barrel-draw-est-1-425m-bar",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42556302,
+      "headline": "EIA Weekly Distillates Stocks 3.180M Barrel Draw Vs 0.800M Barrel Build Est.; 3.235M Barrel Build Prior",
+      "created_at": "2024-12-18T15:30:39Z",
+      "updated_at": "2024-12-18T15:30:40Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42556302/eia-weekly-distillates-stocks-3-180m-barrel-draw-vs-0-800m-barrel-build-est-3-235",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42556343,
+      "headline": "USA Gasoline Inventories 2.348M Barrel Build Vs 2.000M Barrel Build Est.; 5.086M Barrel Build Prior",
+      "created_at": "2024-12-18T15:30:59Z",
+      "updated_at": "2024-12-18T15:31:00Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42556343/usa-gasoline-inventories-2-348m-barrel-build-vs-2-000m-barrel-build-est-5-086m-ba",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42556652,
+      "headline": "20 ETFs Primed For Unusually Big Swings On Fed Meeting Days",
+      "created_at": "2024-12-18T15:40:55Z",
+      "updated_at": "2024-12-18T15:40:56Z",
+      "symbols": [
+        "EMB",
+        "GLD",
+        "HYG",
+        "IEF",
+        "IWM",
+        "KBE",
+        "KRE",
+        "LQD",
+        "QQQ",
+        "SLV",
+        "SMH",
+        "SOXX",
+        "SPY",
+        "TIP",
+        "USO",
+        "VOO",
+        "XBI",
+        "XLF",
+        "XLK",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42556652/20-etfs-primed-for-unusually-big-swings-on-fed-meeting-days",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42556936,
+      "headline": "\"Subaru Has 'Room To Expand' U.S. Output In Response To Trump Tariffs: CEO\" - Nikkei Asia",
+      "created_at": "2024-12-18T15:48:26Z",
+      "updated_at": "2024-12-18T15:48:27Z",
+      "symbols": [
+        "FUJHY",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42556936/subaru-has-room-to-expand-u-s-output-in-response-to-trump-tariffs-ceo-nikkei-asia",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42557641,
+      "headline": "CDC Confirms First Severe Case Of H5N1 Bird Flu In U.S. On December 13; Patient Hospitalized With Severe Case Of Avian Influenza A Virus Infection In Louisiana",
+      "created_at": "2024-12-18T16:08:54Z",
+      "updated_at": "2024-12-18T16:08:54Z",
+      "symbols": [
+        "GSK",
+        "NVAX",
+        "NVS",
+        "SNY",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/12/42557641/cdc-confirms-first-severe-case-of-h5n1-bird-flu-in-u-s-on-december-13-patient-hospitalized-with-s",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42557652,
+      "headline": "U.S. Supreme Court Will Hear Arguments In ByteDance And TikTok's Bid To Pause Law That Would Force Sale Or Ban TikTok App",
+      "created_at": "2024-12-18T16:10:04Z",
+      "updated_at": "2024-12-18T16:10:05Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42557652/u-s-supreme-court-will-hear-arguments-in-bytedance-and-tiktoks-bid-to-pause-law-that-would-force-sal",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42557693,
+      "headline": "U.S. Supreme Court Agrees To Hear South Carolina's Bid To End Public Funding Of Abortion Provider Planned Parenthood",
+      "created_at": "2024-12-18T16:11:48Z",
+      "updated_at": "2024-12-18T16:11:48Z",
+      "symbols": [
+        "DARE",
+        "ENDPQ",
+        "PFE",
+        "SPY",
+        "TEVA"
+      ],
+      "url": "https://www.benzinga.com/general/biotech/24/12/42557693/u-s-supreme-court-agrees-to-hear-south-carolinas-bid-to-end-public-funding-of-abortion-provider-p",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42557799,
+      "headline": "Top Senate Republican McConnell Urges Supreme Court Not To Delay TikTok Ban Law, Calling First Amendment Arguments \"Meritless And Unsound\"",
+      "created_at": "2024-12-18T16:12:45Z",
+      "updated_at": "2024-12-18T16:12:45Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42557799/top-senate-republican-mcconnell-urges-supreme-court-not-to-delay-tiktok-ban-law-calling-first-amendm",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42559584,
+      "headline": "Stocks Inch Up Ahead Of Fed Decision, Nvidia Set To Snap Four Straight Losses, Bitcoin Slips: What's Driving Markets Wednesday?",
+      "created_at": "2024-12-18T17:33:52Z",
+      "updated_at": "2024-12-18T17:33:53Z",
+      "symbols": [
+        "BTCUSD",
+        "DIA",
+        "GIS",
+        "HEI",
+        "IWM",
+        "JBL",
+        "MU",
+        "NVDA",
+        "QQQ",
+        "SOXX",
+        "SPY",
+        "XLE",
+        "XLK",
+        "XLRE",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42559584/stocks-inch-up-ahead-of-fed-decision-nvidia-set-to-snap-four-straight-losses-bitcoin-slips-whats-driving-markets-wednesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42559597,
+      "headline": "U.s. Senate Has Enough Votes To Pass $895B Defense Authorization Bill, Voting Continues",
+      "created_at": "2024-12-18T17:34:31Z",
+      "updated_at": "2024-12-18T17:34:31Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42559597/u-s-senate-has-enough-votes-to-pass-895b-defense-authorization-bill-voting-contin",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42560227,
+      "headline": "U.S. Senate Passes $895B National Defense Authorization Act, Sending Bill To Biden",
+      "created_at": "2024-12-18T18:06:16Z",
+      "updated_at": "2024-12-18T18:06:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42560227/u-s-senate-passes-895b-national-defense-authorization-act-sending-bill-to-biden",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561247,
+      "headline": "Fed Cuts Key Overnight Rate By 25 bps",
+      "created_at": "2024-12-18T19:00:09Z",
+      "updated_at": "2024-12-18T19:00:10Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/12/42561247/fed-cuts-key-overnight-rate-by-25-bps",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561259,
+      "headline": "Federal Reserve Issues FOMC Statement December 18, 2024",
+      "created_at": "2024-12-18T19:00:21Z",
+      "updated_at": "2024-12-18T19:00:21Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561259/federal-reserve-issues-fomc-statement-december-18-2024",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561290,
+      "headline": "Federal Reserve Cuts Key Overnight Interest Rate 25 Basis Points To 4.25-4.50% Range; New Projections Show 50 Bps Of Cuts In 2025; Fed Policy Statement Little Changed From November Meeting Statement; Descriptions Of Economy Growing At Solid Pace Are Identical",
+      "created_at": "2024-12-18T19:01:08Z",
+      "updated_at": "2024-12-18T19:01:08Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561290/federal-reserve-cuts-key-overnight-interest-rate-25-basis-points-to-4-25-4-50-ran",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561296,
+      "headline": "Fed Says In Considering 'extent And Timing' Of Additional Rate Adjustments Fed Will Assess Incoming Data, Evolving Outlook, Balance Of Risks; Lowers Reverse Repo Rate By 30 Basis Points To 4.25% Versus 25 Bps Cut To Fed Funds Rate; Fed Vote In Favor Of Rate Cut Was 11-1; Cleveland Fed President Hammack Dissented, Preferring To Leave Policy Rate Unchanged",
+      "created_at": "2024-12-18T19:01:18Z",
+      "updated_at": "2024-12-18T19:01:18Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561296/fed-says-in-considering-extent-and-timing-of-additional-rate-adjustments-fed-will",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561327,
+      "headline": "Fed Officials' Median View Of Fed Funds Rate At End-2024 4.4% (Prev 4.4%); Fed Officials' Median View Of Fed Funds Rate At End-2025 3.9% (Prev 3.4%); Fed Officials' Median View Of Fed Funds Rate At End-2026 3.4% (Prev +2.9%); Fed Officials' Median View Of Fed Funds Rate At End-2027 3.1% (Prev +2.9%); Fed Officials' Median View Of Fed Funds Rate In Longer Run 3.0% (Prev 2.9%)",
+      "created_at": "2024-12-18T19:02:23Z",
+      "updated_at": "2024-12-18T19:02:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561327/fed-officials-median-view-of-fed-funds-rate-at-end-2024-4-4-prev-4-4-fed-official",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561339,
+      "headline": "Fed Projections Imply 50 Basis Points Of Rate Cuts In 2025, Another 50 Bps In 2026; Fed Policy Rate Reaching 3.1% In 2027; Show Longer-run Policy Rate At 3.0% Vs 2.9% In September Projections; One Of 19 Officials See No Cuts In 2025, 3 See One Cut, 10 See 2 Cuts, 3 See 3 Cuts, One Sees 4 Cuts, One Sees 5 Cuts; Stronger Growth And Stronger Inflation In 2025",
+      "created_at": "2024-12-18T19:02:52Z",
+      "updated_at": "2024-12-18T19:02:52Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561339/fed-projections-imply-50-basis-points-of-rate-cuts-in-2025-another-50-bps-in-2026",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561342,
+      "headline": "Fed Policymakers See 4.3% Unemployment Rate At End Of 2025 Versus 4.4% In September Projections; End-2025 PCE Inflation At 2.5% Versus 2.1% In September; Core Seen At 2.5% Versus 2.2%; 2.1% GDP Growth In 2025 Versus 2.0% In September, See Longer-run Growth At 1.8%, Unchanged From September",
+      "created_at": "2024-12-18T19:03:16Z",
+      "updated_at": "2024-12-18T19:03:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561342/fed-policymakers-see-4-3-unemployment-rate-at-end-of-2025-versus-4-4-in-september",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42560087,
+      "headline": "Major indexes are higher ahead of the Fed's decision today. The Dow is also rebounding following recent weakness.",
+      "created_at": "2024-12-18T18:01:44Z",
+      "updated_at": "2024-12-18T19:05:50Z",
+      "symbols": [
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42560087/major-indexes-are-higher-ahead-of-the-feds-decision-today-the-dow-is-also-rebound",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561414,
+      "headline": "Fed Interest Rate Decision Lowered 25 Basis Points To 4.50% Vs 4.50% Est.; 4.75% Prior",
+      "created_at": "2024-12-18T19:05:39Z",
+      "updated_at": "2024-12-18T19:08:40Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561414/fed-interest-rate-decision-lowered-25-basis-points-to-4-50-vs-4-50-est-4-75-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561687,
+      "headline": "Benzinga Market Summary: Fed Cuts Rates By 25 bps, S&P Falls, Gold Drops",
+      "created_at": "2024-12-18T19:19:03Z",
+      "updated_at": "2024-12-18T19:19:04Z",
+      "symbols": [
+        "GLD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561687/benzinga-market-summary-fed-cuts-rates-by-25-bps-s-p-falls-gold-drops",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561549,
+      "headline": "Fed Slashes Interest Rates By 0.25% As Predicted: December Dot Plot Flags Only 2 Potential Cuts In 2025",
+      "created_at": "2024-12-18T19:13:55Z",
+      "updated_at": "2024-12-18T19:26:59Z",
+      "symbols": [
+        "BTCUSD",
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/news/econ-s/24/12/42561549/fed-slashes-interest-rates-by-0-25-as-predicted-december-dot-plot-flags-only-2-potential-cuts-in-2025",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561860,
+      "headline": "\"Despite Revamped Proposals, Nippon Steel Deal On Track To Be Blocked, Letter Says\" - Reuters News",
+      "created_at": "2024-12-18T19:30:30Z",
+      "updated_at": "2024-12-18T19:30:31Z",
+      "symbols": [
+        "NPSCY",
+        "SPY",
+        "X"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42561860/despite-revamped-proposals-nippon-steel-deal-on-track-to-be-blocked-letter-says-reuters-news",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561909,
+      "headline": "Fed Chair Powell Says Inflation Much Closer To 2% Goal; Says Consumer Spending Resilient, Investment In Equipment Has Strengthened And Housing Activity Has Been Weak",
+      "created_at": "2024-12-18T19:33:36Z",
+      "updated_at": "2024-12-18T19:33:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561909/fed-chair-powell-says-inflation-much-closer-to-2-goal-says-consumer-spending-resi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561944,
+      "headline": "Powell Says Core PCE Prices Probably Rose 2.8% In Nov, Says Inflation Expectations Remain Well Anchored",
+      "created_at": "2024-12-18T19:35:39Z",
+      "updated_at": "2024-12-18T19:35:39Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561944/powell-says-core-pce-prices-probably-rose-2-8-in-nov-says-inflation-expectations-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42561976,
+      "headline": "Powell Says Powell: Policy Stance Is Now Significantly Less Restrictive And We Can Be More Cautious Going Forward, More Cautious In Reducing Rate, Says Can Dial Back Policy Restraint More Slowly If Inflation Not Moving Sustainably Toward 2%",
+      "created_at": "2024-12-18T19:37:07Z",
+      "updated_at": "2024-12-18T19:37:07Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42561976/powell-says-powell-policy-stance-is-now-significantly-less-restrictive-and-we-can",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562009,
+      "headline": "Powell Says Policy Is Well Positioned To Deal With Risks; Says Downside Risks To Labor Market Remain Diminished But Still cooling, Says Don't Think We Need Further Cooling In Labor Market To Get Inflation To 2%",
+      "created_at": "2024-12-18T19:40:13Z",
+      "updated_at": "2024-12-18T19:40:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562009/powell-says-policy-is-well-positioned-to-deal-with-risks-says-downside-risks-to-l",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562026,
+      "headline": "Powell Says The 'Extent And Timing' Language Shows We Are At Or Near Point Of Being Appropriate To Slow Rate Cuts; Says The Slower Pace Of Rate Cuts Reflects Expectation Of Higher Inflation But Sees Ourselves As Still On Track To Continue To Cut",
+      "created_at": "2024-12-18T19:42:11Z",
+      "updated_at": "2024-12-18T19:42:11Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562026/powell-says-the-extent-and-timing-language-shows-we-are-at-or-near-point-of-being",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562047,
+      "headline": "Powell Says To Cut Further After This Point, Looking For Further Progress On Inflation And Strength In Labor Market",
+      "created_at": "2024-12-18T19:43:05Z",
+      "updated_at": "2024-12-18T19:43:06Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562047/powell-says-to-cut-further-after-this-point-looking-for-further-progress-on-infla",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562050,
+      "headline": "Why Nasdaq-100 Inverse ETF SQQQ Is Moving",
+      "created_at": "2024-12-18T19:43:44Z",
+      "updated_at": "2024-12-18T19:43:44Z",
+      "symbols": [
+        "QQQ",
+        "SQQQ"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42562050/why-nasdaq-100-inverse-etf-sqqq-is-moving",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562139,
+      "headline": "Powell Says Higher Inflation Is Probably Biggest Factor For New Projections; Moving Sideways On 12-Month Inflation",
+      "created_at": "2024-12-18T19:47:42Z",
+      "updated_at": "2024-12-18T19:47:43Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562139/powell-says-higher-inflation-is-probably-biggest-factor-for-new-projections-movin",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562181,
+      "headline": "Powell Says Committee Discussing Ways Tariffs Can Drive Inflation, Says Puts Fed In Place To Make A Careful Assessment Of Appropriate Policy Response To Tariffs; Says Many Factors Affect How Much Tariffs Will Go Into Consumer Inflation, Premature To Make Conclusion",
+      "created_at": "2024-12-18T19:51:04Z",
+      "updated_at": "2024-12-18T19:51:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562181/powell-says-committee-discussing-ways-tariffs-can-drive-inflation-says-puts-fed-i",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562202,
+      "headline": "Powell Says Core Inflation Coming Down To 2.5% Next Year, Would Be Significant Progress",
+      "created_at": "2024-12-18T19:54:14Z",
+      "updated_at": "2024-12-18T19:54:15Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562202/powell-says-core-inflation-coming-down-to-2-5-next-year-would-be-significant-prog",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562236,
+      "headline": "Powell Says Outlook Is Bright For Economy, Want To Keep Labor Market Pretty Close Where It Is; Says Job Creation Is A Little Below Level",
+      "created_at": "2024-12-18T19:55:35Z",
+      "updated_at": "2024-12-18T19:55:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562236/powell-says-outlook-is-bright-for-economy-want-to-keep-labor-market-pretty-close-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562254,
+      "headline": "Powell Says Housing Inflation Has Come Down Steadily,  Goods Inflation Has Returned To Pre-Pandemic Range Overall",
+      "created_at": "2024-12-18T19:58:35Z",
+      "updated_at": "2024-12-18T19:58:35Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562254/powell-says-housing-inflation-has-come-down-steadily-goods-inflation-has-returned",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562275,
+      "headline": "Powell Says It Might Take Another Year Or Two From Here To Get To 2%",
+      "created_at": "2024-12-18T20:00:28Z",
+      "updated_at": "2024-12-18T20:00:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562275/powell-says-it-might-take-another-year-or-two-from-here-to-get-to-2",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562306,
+      "headline": "Powell Says Labor Market Not Cooling In A Way That Raises Concerns",
+      "created_at": "2024-12-18T20:01:52Z",
+      "updated_at": "2024-12-18T20:01:53Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/federal-reserve/24/12/42562306/powell-says-labor-market-not-cooling-in-a-way-that-raises-concerns",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562401,
+      "headline": "Powell On Bitcoin Reserve, Says We Are Not Allowed To Own Bitcoin And Not Looking For A Law Change",
+      "created_at": "2024-12-18T20:06:18Z",
+      "updated_at": "2024-12-18T20:06:19Z",
+      "symbols": [
+        "BTCUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/12/42562401/powell-on-bitcoin-reserve-says-we-are-not-allowed-to-own-bitcoin-and-not-looking-for-a-law",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562427,
+      "headline": "Powell Says Hiring Rate Is Low, Which Is A Sign Of Softening; Says Level Of Unemployment Is Low And Participation Is High",
+      "created_at": "2024-12-18T20:08:29Z",
+      "updated_at": "2024-12-18T20:08:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562427/powell-says-hiring-rate-is-low-which-is-a-sign-of-softening-says-level-of-unemplo",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562516,
+      "headline": "Powell Says Feels Good About Where The Economy Is, Expects Another Good Year Next Year",
+      "created_at": "2024-12-18T20:13:00Z",
+      "updated_at": "2024-12-18T20:13:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562516/powell-says-feels-good-about-where-the-economy-is-expects-another-good-year-next-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42562673,
+      "headline": "Powell Says We Won't Settle For Above 2% Inflation; Says Rate Hike Does Not Appear To Be A Likely Outcome Next Year",
+      "created_at": "2024-12-18T20:24:34Z",
+      "updated_at": "2024-12-18T20:24:35Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42562673/powell-says-we-wont-settle-for-above-2-inflation-says-rate-hike-does-not-appear-t",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42563299,
+      "headline": "Fed's Powell Shocks Markets After Interest Rate Cut: 'It's A New Phase'",
+      "created_at": "2024-12-18T20:58:56Z",
+      "updated_at": "2024-12-18T20:58:56Z",
+      "symbols": [
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42563299/feds-powell-shocks-markets-its-a-new-phase-were-significantly-closer-to-neutral",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 42564443,
+      "headline": "'Santa Came Early' But Fed Brings 'Coal Next Year': Experts Weigh In On Interest Rate Cut, 2025 Projections",
+      "created_at": "2024-12-18T21:29:45Z",
+      "updated_at": "2024-12-18T21:29:45Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/24/12/42564443/santa-came-early-with-rate-cut-but-federal-reserve-brings-coal-next-year-experts-weigh-in-on-rate-cut-feds-2025-projections",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 42564807,
+      "headline": "Powell Triggers Market Carnage: VIX Spikes 58%, Stocks Plummet, Dollar Hits 2-Year Highs, Bitcoin Nosedives",
+      "created_at": "2024-12-18T21:38:27Z",
+      "updated_at": "2024-12-18T21:38:28Z",
+      "symbols": [
+        "AMZN",
+        "BTCUSD",
+        "DIA",
+        "IWM",
+        "PAYC",
+        "QQQ",
+        "SPY",
+        "TSLA",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/news/econ-s/24/12/42564807/powell-triggers-market-carnage-vix-spikes-58-stocks-plummet-dollar-hits-2-year-highs-bitcoin-nosedives",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 42567950,
+      "headline": "Jim Cramer Warns Of 'Incredible Panic' As Jerome Powell's Hawkish Outlook Send Stocks Into Free Fall: 'People Throwing Away Good And Bad'",
+      "created_at": "2024-12-19T02:27:38Z",
+      "updated_at": "2024-12-19T02:27:39Z",
+      "symbols": [
+        "BTCUSD",
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/12/42567950/jim-cramer-warns-of-incredible-panic-as-jerome-powells-cautious-rate-cuts-send-us-stocks-into-freefall",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

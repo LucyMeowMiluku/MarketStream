@@ -1,17 +1,8 @@
-# MarketStream 文献核实表
+> 2026-10-22 核验口径：唯一报告主稿为 [07_Revised_Report_CN.md](07_Revised_Report_CN.md)，英文为对应译稿。数字、版本与缺失依据以[运行台账](Evidence_Attachments/Result_Run_Ledger_20261022.md)及[机器清单](reproduction_outputs/audit_20261022/result_registry.json)为准；历史结果不能合并为当前系统结果。
 
-核实日期：2026-09-17  
-核实范围：`report/report draft.md` 参考文献 [1]–[12]
+# MarketStream 文献核实
 
-## 核实方法
-
-- 优先使用作者公开 PDF、期刊页面、会议论文集或政府机构正式报告。
-- “原文位置”同时记录论文页码或章节。只有摘要可访问时会明确说明。
-- 表中的“支持”表示文献可以支持报告里的背景或设计动机，不表示文献验证了 MarketStream。
-- MarketStream 的窗口、阈值、六类模式和实验结果仍需要项目自己的证据。
-- 以下内容均为转述。没有复制长段原文。
-
-## 总表
+## 1.总表
 
 | 编号 | 文献 | 报告中使用的观点 | 原文位置 | 我的理解 | 支持什么 | 不支持什么 | 报告处理 |
 |---|---|---|---|---|---|---|---|
@@ -28,104 +19,113 @@
 | [11] | Prytherch et al., ViEWS | 纸面加权早期预警分数；24 小时院内死亡 AUROC 0.888，95% CI 0.880–0.895 | PubMed Abstract；journal pp. 932–937；Results in abstract | 少量领域变量经过分级和加权可以形成可解释评分。论文还比较触发工作量 | 支持少量可解释、分级因子的设计动机 | 不支持“变量少就一定准确”，也不支持把医疗 AUROC 或权重迁移到金融 | 将“准确度非常高”改成“该临床数据集上的 AUROC 为 0.888”，避免价值判断 |
 | [12] | Tetlock | WSJ 媒体悲观度与后续市场下行压力、价格回归和交易量相关 | Journal of Finance p. 1139 Abstract；Section II content factor；Section III empirical tests；pp. 1144–1160 | 新闻文本可以形成量化情绪变量，但相关性和预测关系不等于新闻是基本面原因 | 支持将新闻作为上下文信号并要求价格确认 | 不支持当前小词表 sentiment 的准确性、五分钟窗口或单篇新闻因果解释 | 保留；把“极度乐观也带来高交易量”改成论文更准确的“unusually high or low pessimism”表述 |
 
-## 逐篇核实记录
+## 2.只使用了其中最相关的六篇作为参考
 
 ### [1] Barrie et al. — MEDOS
 
-- 正式来源：[NASA NTRS 20250002215](https://ntrs.nasa.gov/citations/20250002215)
-- PDF：[MEDOSJSR.pdf](https://ntrs.nasa.gov/api/citations/20250002215/downloads/MEDOSJSR.pdf)
-- 核实结果：NTRS 摘要明确说明 MEDOS 从机载测量计算具有物理意义的 derived parameters，再使用 fuzzy sets 与典型值比较并形成 event confidence。PDF Section II 展开两个阶段：派生特征与事件分类。
-- 对项目的实际影响：我借鉴的是“先构造可解释状态，再判断事件”。MarketStream 没有实现 MEDOS 的 fuzzy system。
-- 报告修改：不再写“他们发现这种方式让一线人员更信任”这种因果较强的句子。改为作者认为熟悉的参数和 likelihood 表达有助于建立信任。
+- 来源：https://ntrs.nasa.gov/api/citations/20250002215/downloads/MEDOSJSR.pdf
 
-### [2] Bhattacharya et al. — Unbiased TSAD Evaluation
+- 简介：MEDOS主要讲了航天器怎样在太空中自动识别事件，并根据事件做出操作决定。传统航天器会按照预先写好的时间表执行命令。但有些事件无法提前确定时间，例如，航天器进入辐射带、穿过磁层边界等。如果每个事件都等地面人员发现，再向航天器发送命令，通信延迟会很大，特别是对于远距离任务或卫星群。MEDOS的目标是，让航天器根据传感器数据，在本地识别事件，并根据识别结果触发操作。
 
-- 正式来源：[OpenReview PDF](https://openreview.net/pdf?id=CseY9pxbsN)
-- 预印本：[arXiv 2409.13053](https://arxiv.org/abs/2409.13053)
-- 核实结果：Abstract 和 Figure 1 明确批评传统 PA 偏向 TP，并提出 Balanced Adjustment 同时对 FP 做对称调整。
-- 对项目的实际影响：项目没有直接实现 BA。它选择事件级一对一匹配，目的是不让同一异常被重复计算 TP。
-- 报告修改：删除“采用了 BA”的暗示，改为“受到评测偏差问题启发”。
+  MEDOS 主要有两个步骤。第一步，把航天器多条原始数据（电压、磁场方向等）组合起来，形成具有实际意义且专家熟悉的派生参数（如等离子体密度）。第二步，将这些派生参数与文献、历史飞行经验等典型值和事件定义进行比较。系统不再使用固定的阈值，而是通过 fuzzy membership function 判断每个参数与目标事件的符合程度，再组合多个参数的证据，输出事件发生的 confidence。
 
-### [3] Cont et al. — Order Flow Imbalance
+- 项目中借鉴的观点：
 
-- 正式来源：[SSRN record](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1712822)
-- 预印本：[arXiv 1011.6402](https://arxiv.org/abs/1011.6402)
-- DOI：[10.1093/jjfinec/nbt003](https://doi.org/10.1093/jjfinec/nbt003)
-- 核实结果：Abstract 明确写出短时间价格变化主要由 best bid/ask 的 OFI 驱动，线性关系斜率与市场深度成反比；trade volume 关系更 noisy。
-- 对项目的实际影响：支持关注报价压力和成交方向，但当前实现没有限价单新增/撤单的完整 OFI。
-- 报告修改：把“直接金融学依据”改为“因子选择动机”，并强调简化和 IEX 覆盖限制。
+  | MEDOS 的观点                                                 | 对 MarketStream 的启发                                       |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | **不能只对原始数据使用固定阈值**：MEDOS不会直接对单个原始遥测数据报警，会先形成有实际意义的派生参数。 | 对复杂实时数据进行事件判断前，可以先把原始输入转换成具有该领域实际意义的派生状态。项目中不直接对原始数据trade / quote / bar / news使用固定阈值判断异常，而是先计算八个有金融意义因子。 |
+  | **异常要相对于正常运行状态判断**：MEDOS 会把派生参数与典型值比较。 | 事件检测不能只看绝对数值，还需要参考当前对象和运行状态下的典型范围。同样的成交量在开盘可能正常，在午间可能异常。不同的标的的阈值也不一样。因此在项目中，需将当前因子与相同 ticker、cadence、session 和 intraday slot 的历史 baseline 比较。 |
+  | **告警应该给出可理解的证据**：MEDOS 的derived parameters 是可解释的值，且最后判断后会给出confidence而不只是一个判断。 | 系统输出应该保留领域含义和判断依据，而不只是输出一个无法解释的异常分数。项目中没有使用 MEDOS 的 fuzzy confidence，但是选择了相似的可解释异常结果的这一种方向。因此，DetectionResult 还需保留 pattern、方向、因子状态、质量标记和原始 event IDs |
 
-### [4] Drew et al. — Alarm Fatigue
+### [2] Bhattacharya et al. — Towards Unbiased Evaluation of Time-series Anomaly Detector
 
-- 正式来源：[PLOS ONE article](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0110274)
-- PDF：[Printable PDF](https://journals.plos.org/plosone/article/file?id=10.1371%2Fjournal.pone.0110274&type=printable)
-- 核实结果：Abstract/Results 支持报告中的 461 patients、31 days、2,558,760 alarms、187 audible alarms/bed/day 和 88.8% FP。
-- 对项目的实际影响：支持单独报告告警负担和重复，而不只报告 detection score。
-- 报告修改：继续明确医疗报警率不能迁移到金融系统。
+- 来源：https://openreview.net/pdf?id=CseY9pxbsN
 
-### [5] Guha et al. — Robust Random Cut Forest
+- 简介：主要讨论时间序列异常检测的评测结果是否公平。普通分类通常把每个时间点单独判断为正常或异常。但是，时间序列中的异常经常会持续一段时间。例如，一次设备故障或市场异常可能连续存在几分钟。因此，异常应该被理解为一个连续事件，而不只是很多互相独立的异常点。
 
-- 正式来源：[PMLR page](https://proceedings.mlr.press/v48/guha16.html)
-- PDF：[PMLR PDF](https://proceedings.mlr.press/v48/guha16.pdf)
-- 核实结果：论文提出能用于 dynamic streams 的 robust random cut forest，并用点对模型复杂度的 externality 定义异常。
-- 对项目的实际影响：支持保留简单、可更新的统计/树模型作为对比，而不是默认深度学习一定更合适。
-- 报告修改：不再用“很扎实的 baseline”这种主观措辞，改为“可更新的 streaming detector 代表”。
+  为了处理这个问题，很多研究使用 Point Adjustment。它的做法是，只要系统检测到异常区间中的一个时间点，就算作整个异常区间都检测正确。这就会导致，一个系统即使只碰巧命中了一个点，也可能被当作发现了整个异常事件。但是这种方法会增加 True Positive，让 F1 变得过高，导致检测器性能被高估。同时，正常区间中的一次错误告警仍然只计算为一个 FP，导致系统得到的奖励和惩罚并不平衡。
 
-### [6] Gyllstrom et al. — SASE
+  因此，论文提出了 Balanced Adjustment。该方法在扩展异常区间内 TP 的同时，也会对正常区间中的 FP 进行相应调整，使正确检测和错误检测受到更平衡的处理。
 
-- 正式来源：[arXiv cs/0612128](https://arxiv.org/abs/cs/0612128)
-- 作者项目页：[SASE publications](https://sase.cs.umass.edu/index.php?page=content_types)
-- 核实结果：论文使用复杂事件语言和查询处理，把 RFID low-level readings 过滤、关联为 meaningful actionable events。
-- 对项目的实际影响：支持表达顺序、窗口和组合。金融 pattern 内容仍由 MarketStream 负责。
-- 报告修改：保留当前限制说明。
+- 项目中借鉴的观点：项目主要借鉴了参考论文设计 Balanced Adjustment 的思路。
 
-### [7] Liu & Paparrizos — TSB-AD
+  | **Unbiased TSAD Evaluation 的观点**                          | **对 MarketStream 的启发**                                   |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | **时间点和异常事件不是同一个概念**：时间序列异常通常会持续一段时间，不能只把每个时间点作为独立的分类结果。 | MarketStream 评测的是完整的金融异常事件。因此，项目比较的是 DetectionResult 与预先定义的真实异常事件，而不是只检查每个 FactorSnapshot 是否预测正确。 |
+  | **部分命中可能使评测结果过高**：传统 Point Adjustment 可能把异常区间中的一次命中扩展为整个区间都检测正确，从而使 TP 和 F1 偏高。 | 同一个真实异常即使产生多条连续告警，也最多计算一次 TP。项目使用一对一事件匹配，未匹配的告警计算为 FP，未被发现的真实事件计算为 FN。 |
 
-- 作者 PDF：[LiuNeurIPS24.pdf](https://www.paparrizos.org/papers/LiuNeurIPS24.pdf)
-- OpenReview：[paper PDF](https://openreview.net/pdf?id=oRKkE4E9P5)
-- 核实结果：Abstract 支持 1,070 time series、40 datasets、40 algorithms、dataset integrity、measure reliability 和 comprehensive benchmarking。作者结论是简单方法经常优于更复杂方法，不是永远更好。
-- 对项目的实际影响：支持公平协议、数据质量和不以复杂度作为贡献。
-- 报告修改：用“often”而不是“普遍”。MarketStream 事件指标不称为 VUS-PR。
+### [3] Cont et al. —  The Price Impact of Order Book Events
 
-### [8] MacKinlay — Event Studies
+- 来源：https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1712822
 
-- 书目信息：[RePEc/AEA record](https://ideas.repec.org/a/aea/jeclit/v35y1997i1p13-39.html)
-- 可访问 PDF：[Boston University mirror](https://www.bu.edu/econ/files/2011/01/MacKinlay-1996-Event-Studies-in-Economics-and-Finance.pdf)
-- 核实结果：p. 13 说明 event study 衡量经济事件对 firm value 的影响。后续方法使用 normal return model，并定义 actual minus normal 为 abnormal return。
-- 对项目的实际影响：支持相对市场背景判断个股变化。
+- 简介：该篇论文研究了订单事件与短期价格变化之间的关系。文中使用的数据是记录 50 只美国股票的 NYSE Trades and Quotes。作者关注三种订单事件：限价单、市价单和撤单。这些事件会改变最优买价和最优卖价附近的供需情况。
+
+  论文提出了 Order Flow Imbalance（OFI）。它表示最优买卖价附近买方力量和卖方力量的差异。OFI 不只统计已经完成的成交，也考虑新增限价单和撤单带来的变化。在较短的时间范围内，OFI 与价格变化接近线性关系。当买方订单流更强时，价格更可能上涨；当卖方订单流更强时，价格更可能下跌。
+
+  论文还发现，订单流对价格的影响与市场可以承接多少交易有关。当买卖报价上的挂单较少时，较小的订单流也可能引起较大的价格变化。
+
+- 项目中借鉴的观点：
+
+  | **Order Flow Imbalance  **                                   | 对MarketStream 的启发                                        |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | **不能只根据成交量判断市场异常**：短期价格变化与买卖双方的订单流失衡有关。限价单、市价单和撤单都可能改变市场供需 | 项目除了计算 `relative_volume`，也关注报价和成交方向。因此加入了 `quote_imbalance` 和 `signed_trade_imbalance`，用于表示买卖双方的压力。不过，这两个因子只是简化指标，不等于论文中严格定义的 OFI。 |
+  | **订单流的影响与市场流动性有关**：OFI 对价格的影响与市场深度有关。市场深度越低，同样的订单流失衡可能产生更大的价格变化。 | 这说明判断订单流异常时，还需要考虑当时的市场流动性状态。项目因此也观察报价量和 `spread_stress`。但是，价差不等于市场深度，而且项目使用的 IEX 顶层报价不能代表完整市场订单簿。 |
+
+### [4] Gyllstrom et al. — SASE: Complex Event Processing over Streams
+
+- 来源：https://www.skilift-simmerberg.de/~patrick/papers/cidr07.pdf
+
+  https://arxiv.org/abs/cs/0612128
+
+- 简介：该篇论文是CEP的早期重要论文之一。研究背景是随着 RFID（射频识别）技术在供应链、零售、医疗等领域的普及，传感器会产生海量的原始数据，但底层数据太原始无业务层需要的实际含义。为了解决这些问题，作者提出了 SASE 系统，目的从海量、底层的实时数据流中，高效地提取和匹配出有业务价值的“复杂事件”。
+
+  论文有三大核心贡献。第一，提供了一种为事件模式匹配设计的类似于 SQL 的语言。第二，为了底层执行速度更快，SASE 采用了一种类似关系型数据库的Dataflow模型。第三，SASE 不仅仅是一个算法，它提供了一个三层架构的完整系统。物理层用于收集 RFID 硬件信号，数据清洗层用于将原始信号转化为基础事件流，复杂事件处理层用于实时处理这些事件流，输出告警，同时将有用的事件存档到数据库中，以供历史查询。
+
+  在论文中展示了一个零售店防盗场景。假设要检测是否有商品被偷，可以定义该事件逻辑为：商品在货架被读取了 ，随后没有在收银台被读取，最后在出口门禁被读取了。如果出现了这一特定时间序列，系统就会立刻捕获偷窃这一事件然后警报。
+
+- 项目中借鉴的观点：
+
+  | **SASE 的观点**                                              | 对 MarketStream 的启发                                       |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | 单个数据没有意义，组合起来才是事件：SASE会组合货架、收银台和出口等多条记录来判断商品未结账离店等异常事件。 | MarketStream 不能只根据一次价格变化或一个异常因子就判断为市场异常事件。将八因子分别组合成CEP组合再判断是否为异常事件。 |
+  | **事件之间的顺序和时间范围很重要**：SASE 会规定事件先发生什么、后发生什么，以及模式需要在多长时间内完成。 | 项目受此启发使用了 CEP 状态机和时间窗口的设计。例如，新闻先出现，随后价格和成交活动发生变化，才能形成新闻冲击模式。持续订单压力也需要在一段时间内连续出现，而不是只看某一个时刻。 |
+
+### [5] MacKinlay — Event Studies in Economics and Finance
+
+- 来源：https://ideas.repec.org/a/aea/jeclit/v35y1997i1p13-39.html
+
+  https://www.bu.edu/econ/files/2011/01/MacKinlay-1996-Event-Studies-in-Economics-and-Finance.pdf
+
+- 简介：这篇论文主要回答了一个问题：某个经济事件发生后，一家公司股票的变化，有多少可以被认为是这个事件带来的，而不是整个市场正常波动造成的。文章中使用 Event Study 研究方法用于分析某个明确事件是否引起了股票价格或公司价值的异常变化，其逻辑可以定义为异常收益 = 实际收益 - 没有该事件时的预期正常收益
+
+  论文主要介绍了三个核心内容。第一，研究者需要确定事件日期和事件窗口。事件窗口包括事件发生前后的一段时间。第二，需要先使用事件发生前的数据估计正常收益。然后用实际收益减去正常收益，得到异常收益。第三，可以将多天的异常收益累加为累计异常收益，并通过统计检验判断结果是否明显偏离正常水平。
+
+  论文使用公司季度财报作为示例。作者收集了道琼斯工业指数中30家公司的600次季度财报公告。财报被分为好消息、普通消息和坏消息。然后，作者比较三类财报发布前后的异常收益和累计异常收益。
+
+- 项目中借鉴的观点：
+
+  | **Event Study 的观点**                                       | **对 MarketStream 的启发**                                   |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | 异常收益应通过实际收益与正常预期收益的差值来判断。市场收益可以用于估计个股的正常表现。 | MarketStream 加入了 `market_residual` 因子，用个股收益减去市场收益，避免把市场整体上涨或下跌误认为个股异常。 |
+
 - 报告修改：`market_residual = r_i-r_m` 持续标为轻量近似，不称为正式 abnormal return。
 
-### [9] Manzoor et al. — StreamSpot
+### [6] Tetlock — Giving Content to Investor Sentiment: The Role of Media in the Stock Market
 
-- 正式 PDF：[KDD 2016 paper](https://www.kdd.org/kdd2016/papers/files/rfp0693-manzoorA.pdf)
-- 预印本：[arXiv 1602.04844](https://arxiv.org/abs/1602.04844)
-- 核实结果：Abstract 支持 fully streaming、memory-efficient sketch、constant-time update 和超过 100K edges/s；实验使用模拟系统调用图。
-- 对项目的实际影响：支持有界状态设计。
-- 报告修改：不把论文 accuracy 或 throughput 当作 MarketStream 指标。
+- 来源：https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2007.01232.x
 
-### [10] Powell et al. — NISTIR 8219
+  https://www.uts.edu.au/globalassets/sites/default/files/adg_cons2015_tetlock-journal-of-finance-2007.pdf
 
-- 正式来源：[NIST publication page](https://www.nist.gov/publications/securing-manufacturing-industrial-control-systems-behavioral-anomaly-detection)
-- PDF：[NIST.IR.8219.pdf](https://nvlpubs.nist.gov/nistpubs/ir/2020/NIST.IR.8219.pdf)
-- 核实结果：Abstract 和 Section 3 支持两个 demonstration environments。Section 4 记录 demonstration scenarios and findings。
-- 对项目的实际影响：异常检测需要结合具体 operating environment 和正常行为。
-- 报告修改：把“部署在两个环境”改为“在两个演示环境中展示”。
+- 简介：该论文研究新闻媒体中的悲观情绪是否与短期市场收益和交易量有关。作者提出了三种可能的解释。第一，媒体报道包含新的基本面信息，因此会对价格产生较长期的影响。第二，媒体情绪影响投资者行为，从而造成短期买卖压力。第三，媒体只是在描述已经发生的市场变化，并没有提供额外的预测信息。  
 
-### [11] Prytherch et al. — ViEWS
+  作者分析了《华尔街日报》的每日市场评论，并检查媒体情绪、市场收益和交易量之间的时间关系。结果显示，当媒体内容异常悲观时，股票市场在下一个交易日通常面临下跌压力，但这部分影响会在之后几天逐渐反转。同时，之前的市场下跌也会使后续报道变得更加悲观。论文因此认为，媒体情绪与市场变化存在双向关系。媒体悲观情绪更接近短期投资者情绪和交易压力，而不能简单理解为长期基本面信息。
 
-- 正式来源：[PubMed 20637974](https://pubmed.ncbi.nlm.nih.gov/20637974/)
-- DOI：[10.1016/j.resuscitation.2010.04.014](https://doi.org/10.1016/j.resuscitation.2010.04.014)
-- 核实结果：PubMed Abstract 支持 198,755 observation sets、35,585 admissions、24-hour mortality AUROC 0.888 和 95% CI。
-- 访问限制：本轮未获得出版社完整 PDF，因此变量权重细节不在本材料中转述。
-- 报告修改：将“准确度非常高”改为客观数字和数据集范围。
+- 项目中借鉴的观点：
 
-### [12] Tetlock — Media Sentiment
-
-- 正式来源：[Wiley article page](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.2007.01232.x)
-- 可访问 PDF：[UTS mirror](https://www.uts.edu.au/globalassets/sites/default/files/adg_cons2015_tetlock-journal-of-finance-2007.pdf)
-- 核实结果：Abstract 支持 high media pessimism 与价格下行压力及之后的反转有关，也支持 unusually high or low pessimism 与高交易量有关。
-- 对项目的实际影响：新闻可作为上下文信号，但不能从相关性直接推出单篇新闻造成价格变化。
-- 报告修改：保留新闻后价格确认，明确当前 sentiment 只是小词表分数，不是论文中的完整内容分析模型。
+  | **Media Sentiment 对 MarketStream 的启发**                   | **项目中的对应方式**                                         |
+  | ------------------------------------------------------------ | ------------------------------------------------------------ |
+  | **新闻情绪可以作为市场异常的辅助信息**：论文发现，媒体悲观程度与短期价格压力和交易活动有关。 | 项目加入新闻情绪因子，用来补充价格、成交量和订单流信息。但是，项目采用简化的词典评分，并没有复现论文的情绪计算方法。 |
+  | **新闻情绪不能单独解释价格变化**：媒体情绪可能影响投资者，但市场下跌也可能使后续报道更加悲观。论文还发现部分价格影响随后会反转。 | 项目不把负面新闻直接当作异常结论，而是结合价格、成交量或订单流进行确认。系统只能识别时间上的共同变化，不能证明新闻导致了价格变化。 |
 
 ## 文献核实后的总体修改
 

@@ -1,0 +1,920 @@
+{
+  "interval_id": "spy-control-2025-03-13",
+  "candidate_kind": "normal",
+  "ticker": "SPY",
+  "started_at": "2025-03-13T13:30:00Z",
+  "ended_at": "2025-03-13T15:00:00Z",
+  "local_start": "2025-03-13T09:30:00-04:00",
+  "local_end": "2025-03-13T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 87,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2025-03-13T13:31:00+00:00",
+        "2025-03-13T13:32:00+00:00",
+        "2025-03-13T13:43:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2025-03-12T19:59:00Z",
+      "prior_close": 477.1,
+      "first_minute": "2025-03-13T13:30:00Z",
+      "last_minute": "2025-03-13T14:59:00Z",
+      "first_open": 475.62,
+      "last_close": 472.435,
+      "gap_pct": -0.310207503668003,
+      "end_vs_prior_pct": -0.9777824355481024,
+      "window_return_pct": -0.6696522433875751,
+      "window_range_pct": 1.2215634329927256,
+      "volume": 129653,
+      "raw_artifact": "raw/spy-control-2025-03-13/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2025-03-13T14:49:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2025-03-12T19:59:00Z",
+      "prior_close": 558.92,
+      "first_minute": "2025-03-13T13:30:00Z",
+      "last_minute": "2025-03-13T14:59:00Z",
+      "first_open": 558.395,
+      "last_close": 555.9,
+      "gap_pct": -0.09393115293780951,
+      "end_vs_prior_pct": -0.5403277749946311,
+      "window_return_pct": -0.44681632177938635,
+      "window_range_pct": 0.8157307998817951,
+      "volume": 268665,
+      "raw_artifact": "raw/spy-control-2025-03-13/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 44296158,
+      "headline": "Jim Cramer Says Auto Tariffs Are Inevitable As Alibaba's Joe Tsai Says Chinese EVs May Eventually Be Hit By Them: 'More Than Half The Cars Sold Here Are Imports'",
+      "created_at": "2025-03-13T08:21:38Z",
+      "updated_at": "2025-03-13T08:21:39Z",
+      "symbols": [
+        "BABA",
+        "DRIV",
+        "F",
+        "FTXR",
+        "GM",
+        "IDRV",
+        "QQQ",
+        "SPY",
+        "STLA"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/25/03/44296158/jim-cramer-says-auto-tariffs-are-inevitable-as-alibabas-joe-tsai-says-chinese-evs-may-eventually-be-hit-by-them-more-than-half-the-cars-sold-here-are-imports",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44296698,
+      "headline": "Time To Buy The Dip Or Wait Till Further Clarity On Tariffs? Here's What Experts Are Saying Amid Ongoing Market Correction",
+      "created_at": "2025-03-13T09:09:03Z",
+      "updated_at": "2025-03-13T09:09:04Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/25/03/44296698/time-to-buy-the-dip-or-wait-till-further-clarity-on-tariffs-heres-what-experts-are-saying-amid-ongoing-market-correction",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44296754,
+      "headline": "Reuters Reported Wednesday, PepsiCo, Conagra, J M Smucker Requested President Trump Exempt Ingredients Not Available From U.S. Sources, From Tariffs",
+      "created_at": "2025-03-13T09:23:56Z",
+      "updated_at": "2025-03-13T09:23:57Z",
+      "symbols": [
+        "CAG",
+        "PEP",
+        "SJM",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44296754/reuters-reported-wednesday-pepsico-conagra-j-m-smucker-requested-president-trump-exempt-ingredients",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44297073,
+      "headline": "US Stocks Likely To Open Lower After A Brief Respite: 'Add Exposure To Equities' Amid Pullback, Says Expert",
+      "created_at": "2025-03-13T09:52:38Z",
+      "updated_at": "2025-03-13T09:52:39Z",
+      "symbols": [
+        "ADBE",
+        "ADTX",
+        "ANIK",
+        "DG",
+        "GIII",
+        "INTC",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA",
+        "ULTA"
+      ],
+      "url": "https://www.benzinga.com/25/03/44297073/us-stocks-poised-for-a-lower-open-after-a-brief-respite-add-exposure-to-equities-amid-pullback-says-expert",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44297925,
+      "headline": "Asia Market Slip, Europe Mixed, Gold Nears Record High - Global Markets Today While US Slept",
+      "created_at": "2025-03-13T10:44:02Z",
+      "updated_at": "2025-03-13T10:44:03Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/25/03/44297925/asia-market-slip-europe-mixed-oil-steady-after-rally-gold-holds-gains-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44300048,
+      "headline": "FTC Chair Andrew Ferguson Says Big Tech Is One Of The Main Priorities Of The Agency",
+      "created_at": "2025-03-13T12:18:32Z",
+      "updated_at": "2025-03-13T12:18:33Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44300048/ftc-chair-andrew-ferguson-says-big-tech-is-one-of-the-main-priorities-of-the-agen",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44300385,
+      "headline": "USA PPI (MoM) For February 0.0% Vs 0.3% Est.; 0.6% Prior",
+      "created_at": "2025-03-13T12:30:19Z",
+      "updated_at": "2025-03-13T12:30:19Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44300385/usa-ppi-mom-for-february-0-0-vs-0-3-est-0-6-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44300378,
+      "headline": "PPI (YoY) (Feb) +3.2% vs +3.3% Est.; Prior +3.7%",
+      "created_at": "2025-03-13T12:30:12Z",
+      "updated_at": "2025-03-13T12:30:37Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44300378/ppi-yoy-feb-3-2-vs-3-3-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44300391,
+      "headline": "USA Initial Jobless Claims 220K Vs 226K Est: 222K Prior",
+      "created_at": "2025-03-13T12:30:49Z",
+      "updated_at": "2025-03-13T12:30:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44300391/usa-initial-jobless-claims-220k-vs-226k-est-222k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44300404,
+      "headline": "US Core PPI (MoM) For Feb. -0.1% Vs 0.3% Est.; 0.5% Prior",
+      "created_at": "2025-03-13T12:30:56Z",
+      "updated_at": "2025-03-13T12:30:57Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44300404/us-core-ppi-mom-for-feb-0-1-vs-0-3-est-0-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44300810,
+      "headline": "US Producer Inflation Stalls In February As Services Costs Drop, Eggs Price Skyrockets",
+      "created_at": "2025-03-13T12:49:55Z",
+      "updated_at": "2025-03-13T12:49:55Z",
+      "symbols": [
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44300810/us-producer-inflation-stalls-in-february-as-services-items-decline-eggs-price-skyrockets",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44301368,
+      "headline": "'Trump Family Has Held Deal Talks With Binance Following Crypto Exchange's Guilty Plea; Trump-Backed World Liberty Financial Could Be Part Of Binance Deal, Sources Say' - WSJ",
+      "created_at": "2025-03-13T13:02:27Z",
+      "updated_at": "2025-03-13T13:02:28Z",
+      "symbols": [
+        "BTCUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/25/03/44301368/trump-family-has-held-deal-talks-with-binance-following-crypto-exchanges-guilty-plea-trump",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44300114,
+      "headline": "'President Trump Floats 200% Tariff On EU Wines' -Bloomberg News",
+      "created_at": "2025-03-13T12:27:51Z",
+      "updated_at": "2025-03-13T13:18:22Z",
+      "symbols": [
+        "DEO",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44300114/president-trump-floats-200-tariff-on-eu-wines-bloomberg",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44301873,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of March 13, 2025 (Via Swaggy Stocks)",
+      "created_at": "2025-03-13T13:24:18Z",
+      "updated_at": "2025-03-13T13:24:18Z",
+      "symbols": [
+        "AAPL",
+        "GLD",
+        "GOOGL",
+        "INTC",
+        "LINE",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "TSLQ",
+        "WAR"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/25/03/44301873/top-10-trending-stocks-on-wallstreetbets-as-of-march-13-2025-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44301942,
+      "headline": "Democratic-led States File Lawsuit To Block Trump Administration From Dismantling U.S. Department Of Education",
+      "created_at": "2025-03-13T13:29:01Z",
+      "updated_at": "2025-03-13T13:29:01Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44301942/democratic-led-states-file-lawsuit-to-block-trump-administration-from-dismantling-u-s-department-of",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44304224,
+      "headline": "U.S. Treasury Secretary Bessent Says Focused On Long-term Gains For The Market, Americans; Asked About Stock Market, Says Not Concerned About A Little Volatility Over 3-Weeks,  We Are Focused Over The Medium, Long-Term; Says U.S. Government Shutdown Would Be Disruptive; Asked About Trump's Threatened 200% Tariff On EU Alcohol, Says Not Sure Why One Or Two Items From One Or Two Trading Blocks Is A Big Deal; Aside From Metals And Likely Autos, Everything Else Is Up For Grabs For Tariff Negotiations",
+      "created_at": "2025-03-13T14:20:26Z",
+      "updated_at": "2025-03-13T14:20:27Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44304224/u-s-treasury-secretary-bessent-says-focused-on-long-term-gains-for-the-market-ame",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44304292,
+      "headline": "U.S. Treasury Secretary Bessent Says If Trading Partners Want To Ratchet Things Up, Surplus Countries Will Take The Biggest Hit; Companies Generally Supportive Of Transition Away From Government Spending; Confident Trump Tax Bill Is On Track; A 'Detox' Does Not Have To Be A Recession; Asked About U.S. Dollar Weakening, Says A Lot Was Priced In, Natural To See An Adjustment",
+      "created_at": "2025-03-13T14:22:12Z",
+      "updated_at": "2025-03-13T14:22:12Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44304292/u-s-treasury-secretary-bessent-says-if-trading-partners-want-to-ratchet-things-up",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44304296,
+      "headline": "U.S. Treasury Secretary Bessent Says Could See A Surprise Upside Growth In Europe, China Seems To Have Stabilized; After Big Surge In The Dollar, It's Natural That Other Currencies Could Do Well; Am Sure Trump, Xi Will Engage In Talks At Some Point; Hoping To Get To Tax Bill In Coming Weeks",
+      "created_at": "2025-03-13T14:22:25Z",
+      "updated_at": "2025-03-13T14:22:26Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44304296/u-s-treasury-secretary-bessent-says-could-see-a-surprise-upside-growth-in-europe-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44304556,
+      "headline": "USA Natural Gas Storage -62B Vs -46B Est.; -80B Prior",
+      "created_at": "2025-03-13T14:30:11Z",
+      "updated_at": "2025-03-13T14:31:11Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44304556/usa-natural-gas-storage-62b-vs-46b-est-80b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44304807,
+      "headline": "U.S. Treasury Department Says U.S. Imposes Sanctions On Iranian Oil Minister Mohsen Paknejad, Hong Kong-Flagged Vessels",
+      "created_at": "2025-03-13T14:32:37Z",
+      "updated_at": "2025-03-13T14:32:38Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44304807/u-s-treasury-department-says-u-s-imposes-sanctions-on-iranian-oil-minister-mohsen",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44304840,
+      "headline": "U.S. State Department Sanctions 3 Entities And 3 Vessels To Stop Flow Of Money To Iran",
+      "created_at": "2025-03-13T14:33:28Z",
+      "updated_at": "2025-03-13T14:33:29Z",
+      "symbols": [
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44304840/u-s-state-department-sanctions-3-entities-and-3-vessels-to-stop-flow-of-money-to-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44305113,
+      "headline": "Benzinga Market Summary: Feb. PPI comes In Below Estimates But S&P Falls Amid Trade Uncertainty, Intel Rises On CEO Announcement",
+      "created_at": "2025-03-13T14:41:23Z",
+      "updated_at": "2025-03-13T14:41:24Z",
+      "symbols": [
+        "INTC",
+        "SPY",
+        "VTI"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44305113/benzinga-market-summary-feb-ppi-comes-in-below-estimates-but-s-p-falls-amid-trade",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44305200,
+      "headline": "'Trump Is Expected To Invoke Wartime Authority To Speed Up Mass Deportation Effort In Coming Days; The Alien Enemies Act Of 1798, Gives The President Authority To Target And Remove Undocumented Immigrants, Though Legal Experts Have Argued It Would Face An Uphill Battle In Court' - CNN Live Updates",
+      "created_at": "2025-03-13T14:43:49Z",
+      "updated_at": "2025-03-13T14:43:49Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44305200/trump-is-expected-to-invoke-wartime-authority-to-speed-up-mass-deportation-effort",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44305525,
+      "headline": "Bitcoin Vs. LUNR: Intuitive Machines May Outpace BTC In Volatility; EPA Targets Biden-Era Rules; Musk Sees Tesla Doubling Output – Top Headlines While The US Slept",
+      "created_at": "2025-03-13T14:51:28Z",
+      "updated_at": "2025-03-13T14:51:29Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44305525/bitcoin-vs-lunr-intuitive-machines-may-outpace-btc-in-volatility-epa-targets-biden-era-rules-musk-sees-tesla-doubling-output-top-headlines-while-the-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44305681,
+      "headline": "Former U.S. Transportation Secretary Pete Buttigieg Says He Will Not Run For Michigan Governor, Senate Next Year",
+      "created_at": "2025-03-13T14:55:56Z",
+      "updated_at": "2025-03-13T14:55:56Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44305681/former-u-s-transportation-secretary-pete-buttigieg-says-he-will-not-run-for-michi",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44305725,
+      "headline": "Binance's Changpeng Zhao Posts On X  \"Sorry to disappoint. The WSJ article got the facts wrong. More than 20 people have told me they were asked by the WSJ (and another media), \"Can you confirm that CZ made some deal for a pardon?\" They probably asked hundreds of people to have 20 people reach out to me. In essence, they tried hard to make a story to report. Fact: I have had no discussions of a Binance US deal with … well, anyone....\"",
+      "created_at": "2025-03-13T14:58:08Z",
+      "updated_at": "2025-03-13T14:58:09Z",
+      "symbols": [
+        "BTCUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/25/03/44305725/binances-changpeng-zhao-posts-on-x-sorry-to-disappoint-the-wsj-article-got-the-facts-wrong",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 44305960,
+      "headline": "\"Trump White House Has Asked U.S. Military To Develop Options For The Panama Canal, Officials Say\" - NBC News Exclusive",
+      "created_at": "2025-03-13T15:00:53Z",
+      "updated_at": "2025-03-13T15:00:54Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44305960/trump-white-house-has-asked-u-s-military-to-develop-options-for-the-panama-canal-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44306014,
+      "headline": "'Senate Unveils Its Bid To Curb U.S. Investment In China As House Waits' - Semafor",
+      "created_at": "2025-03-13T15:01:37Z",
+      "updated_at": "2025-03-13T15:01:38Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44306014/senate-unveils-its-bid-to-curb-u-s-investment-in-china-as-house-waits-semafor",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44306873,
+      "headline": "'DOGE Proposes Cutting IRS Workforce By A Total Of Nearly 20%' - CNN Live Updates",
+      "created_at": "2025-03-13T15:25:12Z",
+      "updated_at": "2025-03-13T15:25:12Z",
+      "symbols": [
+        "HRB",
+        "INTU",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44306873/doge-proposes-cutting-irs-workforce-by-a-total-of-nearly-20-cnn-live-updates",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44307002,
+      "headline": "U.S. House Oversight Panel Opens Probe Into Fatal American Airlines Jet, Army Helicopter Collision Near Washington Airport",
+      "created_at": "2025-03-13T15:28:49Z",
+      "updated_at": "2025-03-13T15:28:49Z",
+      "symbols": [
+        "AAL",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44307002/u-s-house-oversight-panel-opens-probe-into-fatal-american-airlines-jet-army-helicopter-collision-nea",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44307019,
+      "headline": "Latest Inflation Data Excludes Tariffs, Trump Policy Changes: 2025 Will Be 'Much More Volatile Year,' Economist Says",
+      "created_at": "2025-03-13T15:29:34Z",
+      "updated_at": "2025-03-13T15:29:34Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/econ-s/25/03/44307019/latest-inflation-data-excludes-tariffs-trump-policy-changes-2025-will-be-much-more-volatile-year-economist-says",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44307657,
+      "headline": "Russia's President Putin Says Thanks President Trump For Attention To Russia-Ukraine Conflict; Says We Agree To Stop Fighting In Ukraine But It Should Lead To Long-Standing Peace, Have To Eliminate Root Causes Of The Conflict",
+      "created_at": "2025-03-13T15:44:24Z",
+      "updated_at": "2025-03-13T15:44:25Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44307657/russias-president-putin-says-thanks-president-trump-for-attention-to-russia-ukrai",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44307911,
+      "headline": "\"Trump Envoy Witkoff To Meet Putin Tonight Amid Ukraine Ceasefire Push; A Top Kremlin Adviser Says The Sit-Down Will 'Take Place In A Closed Format This Evening'\" - Politico",
+      "created_at": "2025-03-13T15:53:43Z",
+      "updated_at": "2025-03-13T15:53:43Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44307911/trump-envoy-witkoff-to-meet-putin-tonight-amid-ukraine-ceasefire-push-a-top-kreml",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44307931,
+      "headline": "The Majority Of Stocks In The S&P 500 Are Already In Correction Territory. As Of Monday's Close, 366 S&P 500 Components, Or 73%, Were Trading 10% Or More Below Their Respective 52-Week Highs.",
+      "created_at": "2025-03-13T15:54:33Z",
+      "updated_at": "2025-03-13T15:54:34Z",
+      "symbols": [
+        "ACWI",
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "VTI"
+      ],
+      "url": "https://www.benzinga.com/news/large-cap/25/03/44307931/the-majority-of-stocks-in-the-s-p-500-are-already-in-correction-territory-as-of-mondays-close-366-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44308014,
+      "headline": "Gold Hits Record Highs As Trade War Fears Fuel Safe-Haven Demand: Mining Stocks Soar",
+      "created_at": "2025-03-13T15:57:25Z",
+      "updated_at": "2025-03-13T15:57:26Z",
+      "symbols": [
+        "BTCUSD",
+        "BTG",
+        "FNV",
+        "GDX",
+        "GDXJ",
+        "GLD",
+        "GOLD",
+        "KGC",
+        "NEM",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/03/44308014/gold-hits-record-highs-as-trade-war-fears-fuel-safe-haven-demand-mining-stocks-soar",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44308035,
+      "headline": "203 Companies In The S&P 500 Have Closed More Than 20% Below 52-Week Highs As Of Monday, Entering Bear Market Territory.",
+      "created_at": "2025-03-13T15:58:02Z",
+      "updated_at": "2025-03-13T15:58:02Z",
+      "symbols": [
+        "ACWI",
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "VTI"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/25/03/44308035/203-companies-in-the-s-p-500-have-closed-more-than-20-below-52-week-highs-as-of-monday-entering-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44308103,
+      "headline": "5 Out Of 11 S&P 500 Sectors Are In Correction Territory: Communication Services, Consumer Discretionary, Materials, Technology And Energy.",
+      "created_at": "2025-03-13T16:00:16Z",
+      "updated_at": "2025-03-13T16:00:17Z",
+      "symbols": [
+        "ACWI",
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "VTI"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/25/03/44308103/5-out-of-11-s-p-500-sectors-are-in-correction-territory-communication-services-consumer-discreti",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44308109,
+      "headline": "World Trade Organization Says Canada Initiates WTO Dispute Complaint Regarding U.S. Steel And Aluminium Duties; Canada Has Requested WTO Dispute Consultations With U.S. Regarding Import Duties On Certain Steel And Aluminum Products From Canada",
+      "created_at": "2025-03-13T16:00:26Z",
+      "updated_at": "2025-03-13T16:00:27Z",
+      "symbols": [
+        "AA",
+        "EWC",
+        "EWCLF",
+        "MT",
+        "NUE",
+        "RS",
+        "SPY",
+        "STLD"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44308109/world-trade-organization-says-canada-initiates-wto-dispute-complaint-regarding-u-s-steel-and-alumini",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44308850,
+      "headline": "U.S. Judge Says He Will Grant 'Additional Relief' In Challenge To Trump Administration's Mass Firings; Orders 6 Federal Agencies To Reinstate Thousands Of Fired Probationary Employees",
+      "created_at": "2025-03-13T16:23:05Z",
+      "updated_at": "2025-03-13T16:23:06Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44308850/u-s-judge-says-he-will-grant-additional-relief-in-challenge-to-trump-administrati",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44308932,
+      "headline": "Live On CNBC, Bill Baruch Announces Sold Invesco S&P 500 Equal Weight ETF; Bought Invesco QQQ Trust, Series 1",
+      "created_at": "2025-03-13T16:26:32Z",
+      "updated_at": "2025-03-13T16:26:33Z",
+      "symbols": [
+        "QQQ",
+        "RSP"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44308932/live-on-cnbc-bill-baruch-announces-sold-invesco-s-p-500-equal-weight-etf-bought-invesco-qqq-trust-se",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44308973,
+      "headline": "The NFIB's Small Business Uncertainty Index Experienced A Four-Point Uptick In February, Reaching 104—The Second-Highest Reading On Record. 46% Of All U.S. Private Sector Employees Are Employed By Small Businesses, Which Are Defined As Those With 500 Employees Or Fewer.",
+      "created_at": "2025-03-13T16:28:11Z",
+      "updated_at": "2025-03-13T16:28:12Z",
+      "symbols": [
+        "ACWI",
+        "DIA",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "VTI"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44308973/the-nfibs-small-business-uncertainty-index-experienced-a-four-point-uptick-in-february-reaching-104",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44309400,
+      "headline": "Ukrainian Government Official Says Keiv Understands It Cannot Recover All Its Territory By Military Force Right Now And Will Need To Do This Diplomatically Over Time, Will Not Recognize Russian Rights Over Ukrainian Territory; Territorial Concessions Were Not Discussed During Jeddah Talks With U.S. Officials; Demonstrating Our Readiness To Accept A 30-Day Ceasefire Was A Compromise To Show Ukraine Wants Peace",
+      "created_at": "2025-03-13T16:40:31Z",
+      "updated_at": "2025-03-13T16:40:32Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44309400/ukrainian-government-official-says-keiv-understands-it-cannot-recover-all-its-ter",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44309548,
+      "headline": "President Trump Says Witkoff In Serious Discussions In Russia; Hopefully Russia Will Do The Right Thing; Would Like To See A Ceasefire From Russia; Big Power Plant Involved In Russia-Ukraine Talks; Putin Put Out A Very Promising Statement But It Wasn't Complete; Willing To Talk To Putin",
+      "created_at": "2025-03-13T16:46:51Z",
+      "updated_at": "2025-03-13T16:46:51Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44309548/president-trump-says-witkoff-in-serious-discussions-in-russia-hopefully-russia-wi",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44309584,
+      "headline": "President Trump Says Not Going To Change Mind On April 2 Tariffs; There Will Be A Little Disruption But It Won't Be Very Long",
+      "created_at": "2025-03-13T16:48:00Z",
+      "updated_at": "2025-03-13T16:48:01Z",
+      "symbols": [
+        "EWC",
+        "FXI",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44309584/president-trump-says-not-going-to-change-mind-on-april-2-tariffs-there-will-be-a-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44309742,
+      "headline": "Recession Watch: Small Caps Sound The Alarm, But Credit Markets Shrug",
+      "created_at": "2025-03-13T16:55:45Z",
+      "updated_at": "2025-03-13T16:55:46Z",
+      "symbols": [
+        "IWM",
+        "LQD",
+        "QQQ",
+        "SPY",
+        "USHY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44309742/recession-watch-small-caps-sound-the-alarm-but-credit-markets-shrug",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44309830,
+      "headline": "President Trump Says Government Shutdown Could Delay Tax Bill",
+      "created_at": "2025-03-13T16:58:22Z",
+      "updated_at": "2025-03-13T16:58:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44309830/president-trump-says-government-shutdown-could-delay-tax-bill",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44309844,
+      "headline": "President Trump Says Facebook Is Going To Invest $60B By End Of Year",
+      "created_at": "2025-03-13T16:58:52Z",
+      "updated_at": "2025-03-13T16:58:53Z",
+      "symbols": [
+        "META",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44309844/president-trump-says-facebook-is-going-to-invest-60b-by-end-of-year",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44310145,
+      "headline": "USA 30-Year Bond Auction 4.623% Vs 4.748% Prior",
+      "created_at": "2025-03-13T17:04:45Z",
+      "updated_at": "2025-03-13T17:04:46Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44310145/usa-30-year-bond-auction-4-623-vs-4-748-prior",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44310335,
+      "headline": "President Trump Says I Think Annexation Of Greenland Will Happen; We Are Going To Order 48 Icebreakers; We're Going To Have To Make A Deal On Greenland; Will Lay Out His Vision At Justice Department Speech Friday",
+      "created_at": "2025-03-13T17:11:30Z",
+      "updated_at": "2025-03-13T17:11:31Z",
+      "symbols": [
+        "EDEN",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44310335/president-trump-says-i-think-annexation-of-greenland-will-happen-we-are-going-to-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44310673,
+      "headline": "The Bear Market Isn't Coming: 3 Reasons Why We're Not Heading There",
+      "created_at": "2025-03-13T17:22:47Z",
+      "updated_at": "2025-03-13T17:22:48Z",
+      "symbols": [
+        "SPY",
+        "VOO"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/25/03/44310673/the-bear-market-isnt-coming-3-reasons-why-were-not-heading-there",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44311699,
+      "headline": "Wall Street's Downward Slide Returns, Gold Breaks Records, Intel Skyrockets On CEO Appointment: What's Driving Markets Thursday?",
+      "created_at": "2025-03-13T18:00:21Z",
+      "updated_at": "2025-03-13T18:00:22Z",
+      "symbols": [
+        "ADBE",
+        "BTCUSD",
+        "CCI",
+        "DG",
+        "DIA",
+        "DOCU",
+        "FUTU",
+        "INTC",
+        "IWM",
+        "QQQ",
+        "SPY",
+        "ULTA",
+        "WB",
+        "WPM",
+        "XLB",
+        "XLC",
+        "XLK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44311699/wall-streets-downward-slide-returns-gold-breaks-records-intel-skyrockets-on-ceo-appointment-whats-driving-markets-thursday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44312479,
+      "headline": "White House Says President Trump Met With General Motors CEO Mary Barra On Wednesday To Talk About Automaker's Investment Plans",
+      "created_at": "2025-03-13T18:24:02Z",
+      "updated_at": "2025-03-13T18:24:02Z",
+      "symbols": [
+        "GM",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44312479/white-house-says-president-trump-met-with-general-motors-ceo-mary-barra-on-wednesday-to-talk-about-a",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44312492,
+      "headline": "Union Sues Trump Administration For Moving To End Collective Bargaining For Transportation Security Officers",
+      "created_at": "2025-03-13T18:24:57Z",
+      "updated_at": "2025-03-13T18:24:57Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44312492/union-sues-trump-administration-for-moving-to-end-collective-bargaining-for-trans",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44313161,
+      "headline": "The US Postal Service Signs An Agreement With the Department of Government Efficiency And The General Services Administration To Help the Agency In \"Identifying and Achieving Further Efficiencies,\"",
+      "created_at": "2025-03-13T18:46:36Z",
+      "updated_at": "2025-03-13T18:46:36Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/25/03/44313161/the-us-postal-service-signs-an-agreement-with-the-department-of-government-effici",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44314068,
+      "headline": "'Trump Asks Supreme Court to Intervene on Birthright Citizenship' -Bloomberg",
+      "created_at": "2025-03-13T19:18:07Z",
+      "updated_at": "2025-03-13T19:18:08Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44314068/trump-asks-supreme-court-to-intervene-on-birthright-citizenship-bloomberg",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44314537,
+      "headline": "Ukraine's Zelenskiy Says Putin Is Preparing A Rejection Of Ceasefire Proposal, But Is Scared To Say This Directly To President Trump; Says Russia Setting Conditions On Ceasefire To Try To Delay It Or Make It Not Happen",
+      "created_at": "2025-03-13T19:33:16Z",
+      "updated_at": "2025-03-13T19:33:16Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/news/25/03/44314537/ukraines-zelenskiy-says-putin-is-preparing-a-rejection-of-ceasefire-proposal-but-is-scared-to-say-th",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44316175,
+      "headline": "Wall Street Bull Turns Cautious: Ed Yardeni Cuts S&P 500 Target As Trump's Tariffs Threat Stagflation",
+      "created_at": "2025-03-13T20:16:47Z",
+      "updated_at": "2025-03-13T20:16:48Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/25/03/44316175/wall-street-bull-turns-cautious-ed-yardeni-cuts-sp-500-target-as-trumps-tariffs-threat-stagflation",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 44317410,
+      "headline": "S&P 500 Enters Technical Correction As Trade War Fears Rattle Markets",
+      "created_at": "2025-03-13T20:46:46Z",
+      "updated_at": "2025-03-13T20:46:47Z",
+      "symbols": [
+        "ABNB",
+        "ADBE",
+        "AES",
+        "DG",
+        "DLTR",
+        "INTC",
+        "LYV",
+        "NEM",
+        "SMCI",
+        "SPY",
+        "TPL"
+      ],
+      "url": "https://www.benzinga.com/government/regulations/25/03/44317410/sp-500-enters-technical-correction-as-trade-war-fears-rattle-markets",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

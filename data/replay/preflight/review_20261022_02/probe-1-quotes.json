@@ -1,0 +1,19 @@
+{
+  "next_page_token": "VFNMQXwxNzEyNzU1ODAxMDc4NTczNTA4fFZ8MTcyLjkxfDF8VnwxNzMuMDF8MnxS",
+  "quotes": [
+    {
+      "ap": 173.02,
+      "as": 2,
+      "ax": "V",
+      "bp": 172.9,
+      "bs": 1,
+      "bx": "V",
+      "c": [
+        "R"
+      ],
+      "t": "2024-04-10T13:30:01.060456405Z",
+      "z": "C"
+    }
+  ],
+  "symbol": "TSLA"
+}

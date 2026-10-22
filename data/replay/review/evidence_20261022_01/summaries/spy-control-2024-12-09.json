@@ -1,0 +1,428 @@
+{
+  "interval_id": "spy-control-2024-12-09",
+  "candidate_kind": "normal",
+  "ticker": "SPY",
+  "started_at": "2024-12-09T19:00:00Z",
+  "ended_at": "2024-12-09T20:30:00Z",
+  "local_start": "2024-12-09T14:00:00-05:00",
+  "local_end": "2024-12-09T15:30:00-05:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 78,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-12-09T19:07:00+00:00",
+        "2024-12-09T19:08:00+00:00",
+        "2024-12-09T19:09:00+00:00",
+        "2024-12-09T19:29:00+00:00",
+        "2024-12-09T19:35:00+00:00",
+        "2024-12-09T19:36:00+00:00",
+        "2024-12-09T19:40:00+00:00",
+        "2024-12-09T19:41:00+00:00",
+        "2024-12-09T19:42:00+00:00",
+        "2024-12-09T19:46:00+00:00",
+        "2024-12-09T20:05:00+00:00",
+        "2024-12-09T20:29:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-12-06T20:59:00Z",
+      "prior_close": 526.51,
+      "first_minute": "2024-12-09T19:00:00Z",
+      "last_minute": "2024-12-09T20:28:00Z",
+      "first_open": 523.4,
+      "last_close": 521.36,
+      "gap_pct": -0.590682038327861,
+      "end_vs_prior_pct": -0.9781390666843914,
+      "window_return_pct": -0.38975926633548763,
+      "window_range_pct": 0.3897592663354917,
+      "volume": 78068,
+      "raw_artifact": "raw/spy-control-2024-12-09/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-12-06T20:59:00Z",
+      "prior_close": 607.89,
+      "first_minute": "2024-12-09T19:00:00Z",
+      "last_minute": "2024-12-09T20:29:00Z",
+      "first_open": 605.995,
+      "last_close": 604.47,
+      "gap_pct": -0.31173403082794815,
+      "end_vs_prior_pct": -0.5626017865074218,
+      "window_return_pct": -0.251652241355127,
+      "window_range_pct": 0.27145438493716645,
+      "volume": 184264,
+      "raw_artifact": "raw/spy-control-2024-12-09/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 42383505,
+      "headline": "Stocks And Crypto Ride Optimism, But November CPI Could Be The Ultimate Market Test, Investors Warn",
+      "created_at": "2024-12-09T07:50:05Z",
+      "updated_at": "2024-12-09T07:50:06Z",
+      "symbols": [
+        "BTCUSD",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/12/42383505/stocks-and-crypto-ride-optimism-but-november-cpi-could-be-the-ultimate-market-test-investors-warn",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42383874,
+      "headline": "Expert Slams Trump's Tariff Policies As 'Completely And Utterly Wrong' But Says 'We Don't Think They Are Going To Do Anything...'",
+      "created_at": "2024-12-09T08:52:21Z",
+      "updated_at": "2024-12-09T08:52:22Z",
+      "symbols": [
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/12/42383874/expert-slams-trumps-tariff-policies-as-completely-and-utterly-wrong-but-says-we-dont-think-they-are-going-to-do-anything",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42384763,
+      "headline": "Xinhua Reported Earlier From China's Politburo Meeting: China Will Implement More Proactive Fiscal Policy And Moderately Loose Monetary Policy",
+      "created_at": "2024-12-09T10:31:39Z",
+      "updated_at": "2024-12-09T10:31:40Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42384763/xinhua-reported-earlier-from-chinas-politburo-meeting-china-will-implement-more-p",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42384771,
+      "headline": "China's Politburo Urged Expansion Of Domestic Demand And Consumption In All Directions To Boost Economy",
+      "created_at": "2024-12-09T10:33:26Z",
+      "updated_at": "2024-12-09T10:33:27Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42384771/chinas-politburo-urged-expansion-of-domestic-demand-and-consumption-in-all-direct",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42384776,
+      "headline": "China's Politburo Said We Must Expand Opening Up To Outside World, Stabilize Foreign Trade, Foreign Investment",
+      "created_at": "2024-12-09T10:36:27Z",
+      "updated_at": "2024-12-09T10:36:27Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42384776/chinas-politburo-said-we-must-expand-opening-up-to-outside-world-stabilize-foreig",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42384779,
+      "headline": "China's Politburo Said Will Stabilize Property, Stock Markets",
+      "created_at": "2024-12-09T10:37:51Z",
+      "updated_at": "2024-12-09T10:37:51Z",
+      "symbols": [
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42384779/chinas-politburo-said-will-stabilize-property-stock-markets",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42385559,
+      "headline": "Asia And Europe Markets Mixed; Crude Gains Amid China Policy Shift - Global Markets Today While US Slept",
+      "created_at": "2024-12-09T11:30:17Z",
+      "updated_at": "2024-12-09T11:30:18Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/forex/24/12/42385559/asia-and-europe-markets-mixed-crude-gains-amid-china-policy-shift-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42385849,
+      "headline": "US Stocks On Edge As Investors Await November Inflation Data: Super Micro, Palantir Among Stocks In Focus",
+      "created_at": "2024-12-09T11:46:50Z",
+      "updated_at": "2024-12-09T11:46:51Z",
+      "symbols": [
+        "AI",
+        "ASAN",
+        "CASY",
+        "DOCU",
+        "JFBR",
+        "ORCL",
+        "PLTR",
+        "QQQ",
+        "RGTI",
+        "SMCI",
+        "SPY",
+        "TOL",
+        "ZBAO"
+      ],
+      "url": "https://www.benzinga.com/24/12/42385849/us-stocks-could-open-lower-as-markets-await-november-inflation-data-this-week-global-cues-weigh-in-super-micro-planatir-stocks-in-focus",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42385870,
+      "headline": "Reuters Reported  China's Market Regulator Has Opened An Investigation Into Nvidia Over Suspected Violation Of China's Antimonopoly Law",
+      "created_at": "2024-12-09T11:49:05Z",
+      "updated_at": "2024-12-09T11:49:05Z",
+      "symbols": [
+        "FXI",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/fintech/24/12/42385870/reuters-reported-chinas-market-regulator-has-opened-an-investigation-into-nvidia-over-suspected-viol",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42387581,
+      "headline": "Bitcoin, Ethereum, Dogecoin Reverse After Advances; Trump's Deregulation Efforts Are Expected To Benefit Energy Sectors; Tesla Cuts Supercharging Prices To Drive EV Adoption - Top Headlines Today While US Slept",
+      "created_at": "2024-12-09T12:54:21Z",
+      "updated_at": "2024-12-09T12:54:22Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/24/12/42387581/litecoin-and-dogecoin-saw-hash-rate-gains-after-a-mining-firm-reported-triple-bitcoins-profits-trumps-deregulation-efforts-are-expected-to-benefit-energy-sectors-tesla-cuts-supercharging-prices-to-drive-ev-adoption-top-headlines-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42390079,
+      "headline": "Bytedance, TikTok Seek Emergency Injunction To Block Law That Would Force Sale Or Ban Tiktok",
+      "created_at": "2024-12-09T14:09:39Z",
+      "updated_at": "2024-12-09T14:09:40Z",
+      "symbols": [
+        "FXI",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "PINS",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42390079/bytedance-tiktok-seek-emergency-injunction-to-block-law-that-would-force-sale-or-ban-tiktok",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42391583,
+      "headline": "USA Wholesale Inventories (MoM) For October 0.2% Vs 0.2% Est.; -0.2% Prior",
+      "created_at": "2024-12-09T15:00:31Z",
+      "updated_at": "2024-12-09T15:02:02Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42391583/usa-wholesale-inventories-mom-for-october-0-2-vs-0-2-est-0-2-prior-unchanged",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42391599,
+      "headline": "USA CB Employment Trends Index For November 108.25; 107.66 Prior",
+      "created_at": "2024-12-09T15:02:06Z",
+      "updated_at": "2024-12-09T15:02:07Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42391599/usa-cb-employment-trends-index-for-november-108-25-107-66-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42391738,
+      "headline": "Benzinga Market Summary: China Reportedly Signals Monetary Policy Easing, Assad Ousted, Oil Prices Gain, Nvidia Stock Falls On China Antitrust Probe",
+      "created_at": "2024-12-09T15:04:50Z",
+      "updated_at": "2024-12-09T15:04:50Z",
+      "symbols": [
+        "FXI",
+        "NVDA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42391738/benzinga-market-summary-china-reportedly-signals-monetary-policy-easing-assad-ous",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42393610,
+      "headline": "New York Fed Survey Shows Year-Ahead Expected Inflation In November At 3% Vs 2.9% In October; November 3-Year Ahead Expected Inflation At 2.6% Vs 2.5% In October; November 5-Year Ahead Expected Inflation At 2.9% Vs 2.8% In October",
+      "created_at": "2024-12-09T16:03:16Z",
+      "updated_at": "2024-12-09T16:03:17Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42393610/new-york-fed-survey-shows-year-ahead-expected-inflation-in-november-at-3-vs-2-9-i",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42394508,
+      "headline": "BLM Issues Decision For Coastal Plain Oil And Gas Leasing Program In Arctic National Wildlife Refuge, Announcing January 2025 Sale Of 400,000 Acres With Protections For Wildlife Habitats; Fulfills 2017 Tax Act Requirements While Balancing Conservation Goals",
+      "created_at": "2024-12-09T16:41:09Z",
+      "updated_at": "2024-12-09T16:41:10Z",
+      "symbols": [
+        "SPY",
+        "UNG",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/12/42394508/blm-issues-decision-for-coastal-plain-oil-and-gas-leasing-program-in-arctic-national-wildlife-refuge",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42394518,
+      "headline": "'China Is Cutting Off Drone Supplies Critical To Ukraine War Effort; Equipment Squeeze Follows Sanctions On Us Military Contractors; Beijing Expected To Set Tighter Drone Curbs As Soon As January' - Bloomberg",
+      "created_at": "2024-12-09T16:41:41Z",
+      "updated_at": "2024-12-09T16:41:42Z",
+      "symbols": [
+        "FXI",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42394518/china-is-cutting-off-drone-supplies-critical-to-ukraine-war-effort-equipment-sque",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42396181,
+      "headline": "Oil Prices Move Higher As Syrian Rebels Take Control Of Damascus",
+      "created_at": "2024-12-09T17:47:27Z",
+      "updated_at": "2024-12-09T17:47:27Z",
+      "symbols": [
+        "IAUM",
+        "QQQ",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/24/12/42396181/whats-going-on-in-syria-how-financial-markets-are-faring",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42396421,
+      "headline": "Power Vacuum In Syria Increases Geopolitical Instability, China Investigating Nvidia",
+      "created_at": "2024-12-09T17:56:33Z",
+      "updated_at": "2024-12-09T17:56:34Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "TUR"
+      ],
+      "url": "https://www.benzinga.com/markets/emerging-markets/24/12/42396421/power-vacuum-in-syria-increases-geopolitical-instability-china-investigating-nvidia",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42397426,
+      "headline": "New York Mayor Adams Says We Have A Strong Person Of Interest In UnitedHealth Executive Shooting; He Matches The Description Of Identification; Also In Possession Of Items That Connect Him To Incident; This Morning In Pennsylvania, Luigi Mangione Was Arrested On Fire Arms Charges",
+      "created_at": "2024-12-09T18:49:58Z",
+      "updated_at": "2024-12-09T18:49:59Z",
+      "symbols": [
+        "SPY",
+        "UNH"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42397426/new-york-mayor-adams-says-we-have-a-strong-person-of-interest-in-unitedhealth-exe",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 42399447,
+      "headline": "Benzinga Market Summary: Person Of Interest Identified In UnitedHealthcare CEO Shooting, Metals And Materials Stocks Rise On Potential China Policy Easing, Nvidia Falls On China Probe",
+      "created_at": "2024-12-09T20:52:40Z",
+      "updated_at": "2024-12-09T20:52:41Z",
+      "symbols": [
+        "FCX",
+        "NVDA",
+        "SCCO",
+        "SPY",
+        "UNH"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/12/42399447/benzinga-market-summary-person-of-interest-identified-in-unitedhealthcare-ceo-sho",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 42402989,
+      "headline": "How To Beat The Market When One Of Your Top Stocks Drops 44%",
+      "created_at": "2024-12-09T23:08:51Z",
+      "updated_at": "2024-12-09T23:08:51Z",
+      "symbols": [
+        "ANF",
+        "CENX",
+        "DELL",
+        "FIX",
+        "MSTR",
+        "POWL",
+        "QFIN",
+        "SMCI",
+        "SMTC",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/markets/options/24/12/42402989/how-to-beat-the-market-when-one-of-your-top-stocks-drops-44",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

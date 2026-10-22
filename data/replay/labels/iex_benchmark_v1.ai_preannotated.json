@@ -1,0 +1,542 @@
+{
+  "schema_version": "marketstream-reviewed-labels-v1",
+  "dataset_id": "alpaca-iex-reviewed-benchmark-v1",
+  "data_kind": "real_historical",
+  "provider": "alpaca",
+  "feed": "iex",
+  "timezone": "America/New_York",
+  "frozen": false,
+  "frozen_at": null,
+  "notes": "AI-assisted pre-annotation created from the original draft on 2026-09-20. Sources include issuer and government publications, contemporaneous market reporting, and unadjusted daily OHLCV cross-checks. This file is not independent human approval and must not be frozen or used for formal metrics until rejected controls are replaced and every interval is approved by a blinded human reviewer.",
+  "intervals": [
+    {
+      "interval_id": "aapl-fy24-q2-reaction",
+      "kind": "anomaly",
+      "ticker": "AAPL",
+      "started_at": "2024-05-03T13:30:00Z",
+      "ended_at": "2024-05-03T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "aapl-2024-05-03-earnings",
+      "evidence_urls": [
+        "https://apnews.com/article/3da3918af2387f4921b212194559d610",
+        "https://www.apple.com/newsroom/2024/05/apple-reports-second-quarter-results/"
+      ],
+      "confidence": 0.94,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results and buyback announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Unadjusted daily OHLCV cross-check: AAPL +5.98%, SPY +1.24%, residual +4.74%, volume 3.23x prior-20-session median; AP tied the move to the earnings, dividend, and $110 billion buyback. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "aapl-apple-intelligence-reaction",
+      "kind": "anomaly",
+      "ticker": "AAPL",
+      "started_at": "2024-06-11T13:30:00Z",
+      "ended_at": "2024-06-11T15:00:00Z",
+      "direction": "up",
+      "pattern": "news_confirmed_move",
+      "event_id": "aapl-2024-06-11-apple-intelligence",
+      "evidence_urls": [
+        "https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/",
+        "https://www.axios.com/2024/06/11/apple-stock-generative-ai-wwdc"
+      ],
+      "confidence": 0.94,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate reaction window following the June 10 Apple Intelligence announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: AAPL +7.26%, SPY +0.24%, residual +7.02%, volume 3.34x; contemporaneous reporting described a 7.3% AI-related move. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "aapl-global-risk-off",
+      "kind": "anomaly",
+      "ticker": "AAPL",
+      "started_at": "2024-08-05T13:30:00Z",
+      "ended_at": "2024-08-05T15:00:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "aapl-2024-08-05-risk-off",
+      "evidence_urls": [
+        "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+        "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+      ],
+      "confidence": 0.86,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT anomaly and down direction pending blinded human review, but causal pattern is confounded. Daily cross-check: AAPL -4.82%, SPY -2.91%, opening gap -9.45%, volume 2.29x. The global risk-off shock coincided with Berkshire Hathaway cutting its Apple stake, so cross_asset_shock is not a pure attribution. Exact interval requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "tsla-fy24-q1-reaction",
+      "kind": "anomaly",
+      "ticker": "TSLA",
+      "started_at": "2024-04-24T13:30:00Z",
+      "ended_at": "2024-04-24T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "tsla-2024-04-24-earnings",
+      "evidence_urls": [
+        "https://ir.tesla.com/press-release/tesla-releases-first-quarter-2024-financial-results",
+        "https://www.investing.com/news/stock-market-news/tesla-jumps-as-musks-promise-of-more-affordable-cars-eases-growth-fears-3392836"
+      ],
+      "confidence": 0.94,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after Q1 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +12.06%, SPY -0.05%, residual +12.11%, opening gap +12.55%, volume 1.88x; Reuters tied the surge to plans for more affordable models following results. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "tsla-fy24-q2-reaction",
+      "kind": "anomaly",
+      "ticker": "TSLA",
+      "started_at": "2024-07-24T13:30:00Z",
+      "ended_at": "2024-07-24T15:00:00Z",
+      "direction": "down",
+      "pattern": "earnings_reaction",
+      "event_id": "tsla-2024-07-24-earnings",
+      "evidence_urls": [
+        "https://ir.tesla.com/press-release/tesla-releases-second-quarter-2024-financial-results",
+        "https://www.investing.com/news/stock-market-news/tesla-slides-as-bleak-profit-margins-exposes-need-for-affordable-evs-3532970"
+      ],
+      "confidence": 0.96,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after Q2 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA -12.33%, SPY -2.27%, residual -10.07%, opening gap -8.51%; Reuters reported a 12% fall after weak margins and an earnings miss. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "tsla-fy24-q3-reaction",
+      "kind": "anomaly",
+      "ticker": "TSLA",
+      "started_at": "2024-10-24T13:30:00Z",
+      "ended_at": "2024-10-24T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "tsla-2024-10-24-earnings",
+      "evidence_urls": [
+        "https://apnews.com/article/81c830cd6d465440f3d8f4bfc12d7487",
+        "https://ir.tesla.com/press-release/tesla-releases-third-quarter-2024-financial-results"
+      ],
+      "confidence": 0.97,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after Q3 financial results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: TSLA +21.92%, SPY +0.22%, residual +21.70%, opening gap +14.52%, volume 2.94x; AP described one of Tesla's best trading days after results and growth guidance. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "nvda-fy24-q4-reaction",
+      "kind": "anomaly",
+      "ticker": "NVDA",
+      "started_at": "2024-02-22T14:30:00Z",
+      "ended_at": "2024-02-22T16:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "nvda-2024-02-22-earnings",
+      "evidence_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2024",
+        "https://www.axios.com/2024/02/22/nvidia-stock-price-earnings-ai-chips"
+      ],
+      "confidence": 0.97,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q4 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +16.40%, SPY +2.07%, residual +14.33%, opening gap +11.19%, volume 1.77x; contemporaneous reporting attributed the 16% move to earnings. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "nvda-fy25-q1-reaction",
+      "kind": "anomaly",
+      "ticker": "NVDA",
+      "started_at": "2024-05-23T13:30:00Z",
+      "ended_at": "2024-05-23T15:00:00Z",
+      "direction": "up",
+      "pattern": "earnings_reaction",
+      "event_id": "nvda-2024-05-23-earnings",
+      "evidence_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2025",
+        "https://www.investing.com/news/stock-market-news/nasdaq-sp-500-futures-pop-as-nvidia-fuels-chip-stocks-rally-3453619"
+      ],
+      "confidence": 0.96,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q1 results. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: NVDA +9.32%, SPY -0.73%, residual +10.05%, opening gap +7.45%, volume 2.21x; Reuters tied the move to the revenue outlook, earnings, and stock split. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "nvda-fy25-q2-reaction",
+      "kind": "anomaly",
+      "ticker": "NVDA",
+      "started_at": "2024-08-29T13:30:00Z",
+      "ended_at": "2024-08-29T15:00:00Z",
+      "direction": "down",
+      "pattern": "earnings_reaction",
+      "event_id": "nvda-2024-08-29-earnings",
+      "evidence_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2025/",
+        "https://www.investing.com/news/stock-market-news/nvidias-forecast-dampens-ai-enthusiasm-in-other-tech-stocks-3592111"
+      ],
+      "confidence": 0.92,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after fiscal Q2 results; direction must be confirmed during review. AI pre-annotation: ACCEPT candidate and down direction pending blinded human review. Daily cross-check: NVDA -6.38%, SPY +0.01%, residual -6.39%, opening gap -3.38%; Reuters reported a greater-than-6% decline because the outlook failed to meet elevated expectations. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "spy-december-fomc-reaction",
+      "kind": "anomaly",
+      "ticker": "SPY",
+      "started_at": "2024-12-18T19:00:00Z",
+      "ended_at": "2024-12-18T20:30:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "spy-2024-12-18-fomc",
+      "evidence_urls": [
+        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20241218a.htm",
+        "https://www.investing.com/news/economy-news/stocks-skid-after-fed-signals-it-will-slow-down-its-easing-3780547"
+      ],
+      "confidence": 0.98,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate FOMC statement and press-conference reaction window. AI pre-annotation: ACCEPT candidate pending blinded human review. The 19:00Z start aligns with the 2:00 p.m. ET FOMC decision. Daily cross-check: SPY -2.98%, intraday -2.93%, volume 2.96x; Reuters reported the S&P 500 lost about 2.96% after the Fed signaled fewer cuts. Intraday IEX review should confirm the precise reaction onset.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ]
+    },
+    {
+      "interval_id": "qqq-global-risk-off",
+      "kind": "anomaly",
+      "ticker": "QQQ",
+      "started_at": "2024-08-05T13:30:00Z",
+      "ended_at": "2024-08-05T15:00:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "qqq-2024-08-05-risk-off",
+      "evidence_urls": [
+        "https://www.axios.com/newsletters/axios-markets-3e47a650-5119-11ef-af91-cb87052b972a",
+        "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-57355629/news/Major-indexes-sink-amid-US-recession-fears-drop-in-Apple-shares-47559754/"
+      ],
+      "confidence": 0.92,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate opening phase of the August 5 global risk-off session. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: QQQ -2.98%, SPY -2.91%, opening gap -5.36%, volume 2.14x; Reuters described a broad risk-off selloff led by recession fears. Because much of the loss was an opening gap followed by an intraday rebound, the exact 90-minute anomaly boundary requires IEX review.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "spy-reciprocal-tariff-reaction",
+      "kind": "anomaly",
+      "ticker": "SPY",
+      "started_at": "2025-04-03T13:30:00Z",
+      "ended_at": "2025-04-03T15:00:00Z",
+      "direction": "down",
+      "pattern": "cross_asset_shock",
+      "event_id": "spy-2025-04-03-tariff",
+      "evidence_urls": [
+        "https://apnews.com/article/6f7c844f6fbdff738395b6f3eb795b40",
+        "https://www.whitehouse.gov/fact-sheets/2025/04/fact-sheet-president-donald-j-trump-declares-national-emergency-to-increase-our-competitive-edge-protect-our-sovereignty-and-strengthen-our-national-and-economic-security/"
+      ],
+      "confidence": 0.98,
+      "approval_status": "proposed",
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "notes": "Candidate first 90 regular-session minutes after the April 2 reciprocal-tariff announcement. AI pre-annotation: ACCEPT candidate pending blinded human review. Daily cross-check: SPY -4.93%, opening gap -3.44%, volume 1.85x; AP reported the S&P 500 fell 4.8% after the tariff announcement. Exact 90-minute boundary still requires intraday IEX review.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ]
+    },
+    {
+      "interval_id": "aapl-control-2024-04-19",
+      "kind": "normal",
+      "ticker": "AAPL",
+      "started_at": "2024-04-19T13:30:00Z",
+      "ended_at": "2024-04-19T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for earnings, macro releases, and unscheduled material news. AI pre-annotation: REJECT as normal control. The session followed an apparent Israeli strike on Iran and contemporaneous market coverage explicitly treated geopolitical escalation as the session driver. Daily cross-check: AAPL -1.22%, SPY -0.87%, absolute-return percentile 80/100. Replace with a quieter calendar-matched interval.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.96,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://apnews.com/article/a7ccbae2e2844bab089e8e4377a24ddb",
+        "https://finance.yahoo.com/quote/AAPL/history/",
+        "https://www.axios.com/2024/04/19/stock-market-israel-iran-attacks-war-oil-prices"
+      ]
+    },
+    {
+      "interval_id": "aapl-control-2024-05-28",
+      "kind": "normal",
+      "ticker": "AAPL",
+      "started_at": "2024-05-28T13:30:00Z",
+      "ended_at": "2024-05-28T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control despite a near-flat close. Reuters reported Apple rose premarket after China iPhone sales data showed a 52% year-over-year increase, creating a firm-specific catalyst inside the opening-window evaluation. Daily cross-check: AAPL +0.01%, residual -0.06%, volume 1.01x. Replace with a day without material Apple news.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.9,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://au.investing.com/news/economy/nasdaq-closes-above-17000-sp-500-slightly-higher-dow-down-3274953",
+        "https://finance.yahoo.com/quote/AAPL/history/"
+      ]
+    },
+    {
+      "interval_id": "aapl-control-2024-07-22",
+      "kind": "normal",
+      "ticker": "AAPL",
+      "started_at": "2024-07-22T13:30:00Z",
+      "ended_at": "2024-07-22T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. The first session after President Biden withdrew from the election was a material political-news day; Reuters explicitly evaluated the market reaction. Daily cross-check: AAPL -0.16%, SPY +1.03%, residual -1.19%. Replace with a non-event session.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.94,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/AAPL/history/",
+        "https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/",
+        "https://www.investing.com/news/economy-news/morning-bid-wall-street-in-measured-mood-as-biden-bows-out-3528118"
+      ]
+    },
+    {
+      "interval_id": "tsla-control-2024-04-10",
+      "kind": "normal",
+      "ticker": "TSLA",
+      "started_at": "2024-04-10T13:30:00Z",
+      "ended_at": "2024-04-10T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. BLS released CPI at 8:30 a.m. ET immediately before the 9:30 a.m. evaluation window, making this a scheduled macro catalyst day. Daily cross-check: TSLA -2.89%, SPY -1.00%, residual -1.89%. Replace with a day without a major macro release.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.99,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/TSLA/history/",
+        "https://www.bls.gov/schedule/2024/04_sched_list.htm"
+      ]
+    },
+    {
+      "interval_id": "tsla-control-2024-07-10",
+      "kind": "normal",
+      "ticker": "TSLA",
+      "started_at": "2024-07-10T13:30:00Z",
+      "ended_at": "2024-07-10T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN only as a low-confidence normal candidate pending full news and intraday review. Daily cross-check: TSLA +0.35%, SPY +0.99%, residual -0.64%, volume 1.38x. The close-to-close move is ordinary, but the stock was in a high-volatility multi-session rally and the first-pass news screen cannot establish absence of a material catalyst.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.6,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/TSLA/history/"
+      ]
+    },
+    {
+      "interval_id": "tsla-control-2024-10-10",
+      "kind": "normal",
+      "ticker": "TSLA",
+      "started_at": "2024-10-10T13:30:00Z",
+      "ended_at": "2024-10-10T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. This was the scheduled Tesla We, Robot event day. Even though the event occurred after the regular-session evaluation window, anticipation makes the day firm-specific and unsuitable as a clean negative control. Daily cross-check: TSLA -0.95%, SPY -0.18%, residual -0.77%.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.99,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/TSLA/history/",
+        "https://www.tesla.com/we-robot"
+      ]
+    },
+    {
+      "interval_id": "nvda-control-2024-02-08",
+      "kind": "normal",
+      "ticker": "NVDA",
+      "started_at": "2024-02-08T14:30:00Z",
+      "ended_at": "2024-02-08T16:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -0.65%, SPY +0.04%, residual -0.70%, volume 0.87x. No clear same-day firm-specific or major macro catalyst was identified in the first-pass search, but absence of news is not yet proven.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.72,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/NVDA/history/"
+      ]
+    },
+    {
+      "interval_id": "nvda-control-2024-05-09",
+      "kind": "normal",
+      "ticker": "NVDA",
+      "started_at": "2024-05-09T13:30:00Z",
+      "ended_at": "2024-05-09T15:00:00Z",
+      "approval_status": "proposed",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: RETAIN as a normal candidate pending full news and intraday review. Daily cross-check: NVDA -1.84%, SPY +0.58%, residual -2.42%, volume 0.87x; the move was not extreme relative to NVDA's preceding 60 sessions. A complete news archive and intraday path are still required.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.65,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/NVDA/history/"
+      ]
+    },
+    {
+      "interval_id": "nvda-control-2024-08-15",
+      "kind": "normal",
+      "ticker": "NVDA",
+      "started_at": "2024-08-15T13:30:00Z",
+      "ended_at": "2024-08-15T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for scheduled and unscheduled events. AI pre-annotation: REJECT as normal control. Strong U.S. retail-sales data drove one of the market's strongest sessions of the year; NVDA gained 4.05% while SPY gained 1.71%. This is a macro shock/rebound day rather than a clean negative control.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ],
+      "confidence": 0.97,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/NVDA/history/",
+        "https://www.barchart.com/story/news/28026041/stock-market-today-wall-street-leaps-and-s-p-500-rallies-16-as-us-shoppers-drive-the-economy",
+        "https://www.marketscreener.com/news/latest/Stocks-gain-Treasury-yields-jump-as-US-retail-data-reassures-47666474/"
+      ]
+    },
+    {
+      "interval_id": "spy-control-2024-12-04",
+      "kind": "normal",
+      "ticker": "SPY",
+      "started_at": "2024-12-04T19:00:00Z",
+      "ended_at": "2024-12-04T20:30:00Z",
+      "approval_status": "rejected",
+      "notes": "Time-of-day matched control candidate. Must be checked for macro releases and unscheduled events. AI pre-annotation: REJECT as normal control. The reviewed interval is 19:00-20:30Z, while Chair Powell spoke at the DealBook Summit from 1:40-2:10 p.m. ET, directly overlapping the interval. Daily cross-check: SPY +0.62%. A Fed communication window cannot serve as a clean normal control.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ],
+      "confidence": 0.99,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/SPY/history/",
+        "https://www.federalreserve.gov/newsevents/2024-december.htm"
+      ]
+    },
+    {
+      "interval_id": "qqq-control-2024-07-22",
+      "kind": "normal",
+      "ticker": "QQQ",
+      "started_at": "2024-07-22T13:30:00Z",
+      "ended_at": "2024-07-22T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for macro releases and unscheduled events. AI pre-annotation: REJECT as normal control. This was the first session after President Biden withdrew from the election, a material political-news day. Daily cross-check: QQQ +1.49%, SPY +1.03%, absolute-return percentile 88/100. Replace with a quieter session.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "SPY"
+      ],
+      "confidence": 0.95,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/QQQ/history/",
+        "https://www.ap.org/news-highlights/elections/2024/biden-drops-out-of-2024-race-after-disastrous-debate-inflamed-age-concerns-vp-harris-gets-his-nod/",
+        "https://www.investing.com/news/economy-news/morning-bid-wall-street-in-measured-mood-as-biden-bows-out-3528118"
+      ]
+    },
+    {
+      "interval_id": "spy-control-2025-03-13",
+      "kind": "normal",
+      "ticker": "SPY",
+      "started_at": "2025-03-13T13:30:00Z",
+      "ended_at": "2025-03-13T15:00:00Z",
+      "approval_status": "rejected",
+      "notes": "Calendar-matched control candidate. Must be checked for macro releases and unscheduled events. AI pre-annotation: REJECT as normal control. BLS released February PPI at 8:30 a.m. ET immediately before the opening-window evaluation. Daily cross-check: SPY -1.33%, intraday -1.27%, absolute-return percentile 83/100. Replace with a day without a major macro release.",
+      "context_tickers": [
+        "AAPL",
+        "TSLA",
+        "NVDA",
+        "QQQ"
+      ],
+      "confidence": 0.99,
+      "reviewed_by": "OpenAI Codex (AI-assisted pre-annotation; not an independent human reviewer)",
+      "reviewed_at": "2026-09-20T09:18:39.860Z",
+      "evidence_urls": [
+        "https://finance.yahoo.com/quote/SPY/history/",
+        "https://www.bls.gov/news.release/archives/ppi_03132025.pdf"
+      ]
+    }
+  ]
+}

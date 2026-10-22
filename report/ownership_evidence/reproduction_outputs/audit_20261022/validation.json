@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "source_files": 69,
+  "registered_artifacts": 16,
+  "checks": [
+    "Live sources, archived sources and 16 registered artifacts match SHA-256 manifests.",
+    "All 600 scenario rows and all 20 seed partitions reconcile; total FP=60+60, negative cases=40, negative alerts=60.",
+    "Independent synthetic passes agree on counts; soak alias is same run; four label files remain unfrozen.",
+    "Local navigation links resolve, including URL-encoded spaces.",
+    "Active report and ownership timings agree; erroneous FP-membership claims and soak percentiles removed; 63 tests and Ruff pass."
+  ],
+  "limits": [
+    "Historical runs lacking execution snapshots or raw rows are checked only against saved summaries.",
+    "No infrastructure or formal real replay rerun.",
+    "Markdown sources and navigation checked; historical PDF/DOCX/ZIP not regenerated."
+  ]
+}

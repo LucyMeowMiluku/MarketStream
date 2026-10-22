@@ -1,10 +1,12 @@
+> 2026-10-22：本索引中的旧 CURRENT/LATEST 名称仅为历史工件ID，不表示本轮版本。完整运行字段与缺失依据见[运行台账](Result_Run_Ledger_20261022.md)及[机器清单](../reproduction_outputs/audit_20261022/result_registry.json)。新合成结果使用SYN-TRACE-20261022，消融使用SYN-SUITE-20261022。
+
 # 实验原始工件索引
 
 | ID | 工件 | 数据性质 | 当前用途 | 主要限制 |
 |---|---|---|---|---|
-| EXP-CURRENT-SYNTH | `../reproduction_outputs/factor_cep_current_20260917.json` | synthetic factor sequences | 当前规则、负对照、消融和纯 CEP 计时 | 不能代表真实市场 |
+| EXP-CURRENT-SYNTH | `../reproduction_outputs/factor_cep_current_20260917.json` | synthetic factor sequences | 9月17日保存的规则、负对照、消融和计时 | 不能代表真实市场 |
 | EXP-OLD-SYNTH | `../../../data/evaluation/factor_cep.json` | synthetic factor sequences | 与旧报告对照 | 计时受运行环境影响 |
-| EXP-SOAK-LATEST | `../../../data/evaluation/kafka_db_soak.json` | synthetic transport probe | 最近一次 Kafka→DB 工程验证 | 不是检测准确率 |
+| EXP-SOAK-LATEST | `../../../data/evaluation/kafka_db_soak.json` | synthetic transport probe | 最近保存的历史Kafka→DB汇总；非本轮复跑 | 不是检测准确率 |
 | EXP-SOAK-FAIL | `../../../data/evaluation/soak-61164fa173/report.json` | synthetic transport probe | 保留失败—修改—复验记录 | 告警样本不足 |
 | EXP-SOAK-88 | `../../../data/evaluation/soak-702644010d/report.json` | synthetic transport probe | 旧 88-alert run | 不是最新 run |
 | EXP-SOAK-76 | `../../../data/evaluation/soak-b735cff438/report.json` | synthetic transport probe | 最近 76-alert run | 未在本轮重跑 |

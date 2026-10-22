@@ -1,0 +1,1099 @@
+{
+  "interval_id": "tsla-fy24-q3-reaction",
+  "candidate_kind": "anomaly",
+  "ticker": "TSLA",
+  "started_at": "2024-10-24T13:30:00Z",
+  "ended_at": "2024-10-24T15:00:00Z",
+  "local_start": "2024-10-24T09:30:00-04:00",
+  "local_end": "2024-10-24T11:00:00-04:00",
+  "symbols": {
+    "QQQ": {
+      "bars": 81,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-10-24T13:39:00+00:00",
+        "2024-10-24T13:54:00+00:00",
+        "2024-10-24T13:57:00+00:00",
+        "2024-10-24T14:18:00+00:00",
+        "2024-10-24T14:21:00+00:00",
+        "2024-10-24T14:23:00+00:00",
+        "2024-10-24T14:39:00+00:00",
+        "2024-10-24T14:43:00+00:00",
+        "2024-10-24T14:44:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-23T19:59:00Z",
+      "prior_close": 488.46,
+      "first_minute": "2024-10-24T13:30:00Z",
+      "last_minute": "2024-10-24T14:59:00Z",
+      "first_open": 492.16,
+      "last_close": 490.71,
+      "gap_pct": 0.7574827007329255,
+      "end_vs_prior_pct": 0.46063137206731053,
+      "window_return_pct": -0.29461963589078044,
+      "window_range_pct": 0.3738621586476007,
+      "volume": 86991,
+      "raw_artifact": "raw/tsla-fy24-q3-reaction/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-23T19:59:00Z",
+      "prior_close": 578.04,
+      "first_minute": "2024-10-24T13:30:00Z",
+      "last_minute": "2024-10-24T14:59:00Z",
+      "first_open": 580.02,
+      "last_close": 578.79,
+      "gap_pct": 0.3425368486609903,
+      "end_vs_prior_pct": 0.12974880631098085,
+      "window_return_pct": -0.21206165304644697,
+      "window_range_pct": 0.2586117720078618,
+      "volume": 206329,
+      "raw_artifact": "raw/tsla-fy24-q3-reaction/SPY.minutes.json"
+    },
+    "TSLA": {
+      "bars": 90,
+      "expected_minutes": 90,
+      "missing_minutes": [],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-10-23T19:59:00Z",
+      "prior_close": 213.74,
+      "first_minute": "2024-10-24T13:30:00Z",
+      "last_minute": "2024-10-24T14:59:00Z",
+      "first_open": 244.645,
+      "last_close": 250.35,
+      "gap_pct": 14.459155983905681,
+      "end_vs_prior_pct": 17.128286703471506,
+      "window_return_pct": 2.3319503770769856,
+      "window_range_pct": 3.4069774571317657,
+      "volume": 1287315,
+      "raw_artifact": "raw/tsla-fy24-q3-reaction/TSLA.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 41508724,
+      "headline": "Tesla, Dow And 3 Stocks To Watch Heading Into Thursday",
+      "created_at": "2024-10-24T06:18:41Z",
+      "updated_at": "2024-10-24T06:18:41Z",
+      "symbols": [
+        "AAL",
+        "DOW",
+        "HON",
+        "LRCX",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/10/41508724/tesla-dow-and-3-stocks-to-watch-heading-into-thursday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41508872,
+      "headline": "Elon Musk Apologizes To 'Long Suffering' Deposit Holders Of New Tesla Roadster, But Says The Delay Is 'Cherry On The Icing On The Cake'",
+      "created_at": "2024-10-24T06:27:56Z",
+      "updated_at": "2024-10-24T06:27:56Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41508872/elon-musk-apologizes-to-long-suffering-deposit-holders-of-new-tesla-roadster-but-says-the-delay-is-c",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41509528,
+      "headline": "Tesla Bull Gary Black Praises EV Giant's 'Clean Beat' In Q3 As Auto Margins Blow Past Estimates, Stock Surges Over 12%",
+      "created_at": "2024-10-24T07:46:23Z",
+      "updated_at": "2024-10-24T07:46:24Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41509528/tesla-bull-gary-black-praises-ev-giants-clean-beat-in-q3-as-auto-margins-blow-past-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41510859,
+      "headline": "Tesla Soars In Thursday Pre-Market: Here's What's Driving The Surge",
+      "created_at": "2024-10-24T09:52:00Z",
+      "updated_at": "2024-10-24T09:52:01Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41510859/tesla-soars-in-thursday-pre-market-heres-whats-driving-the-surge",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41511508,
+      "headline": "Why Tesla Shares Are Trading Higher By Around 11%; Here Are 20 Stocks Moving Premarket",
+      "created_at": "2024-10-24T10:21:11Z",
+      "updated_at": "2024-10-24T10:21:12Z",
+      "symbols": [
+        "CARR",
+        "CCTG",
+        "CNSP",
+        "DBVT",
+        "GORO",
+        "GTX",
+        "IBM",
+        "ICLR",
+        "IKT",
+        "KWE",
+        "LRHC",
+        "MNDR",
+        "ODV",
+        "ORKT",
+        "QLGN",
+        "SDRL",
+        "SVRE",
+        "TSLA",
+        "VEEE",
+        "ZPTA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41511508/why-tesla-shares-are-trading-higher-by-around-11-here-are-20-stocks-moving-premarket",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41511994,
+      "headline": "Needham Reiterates Hold on Tesla",
+      "created_at": "2024-10-24T10:36:43Z",
+      "updated_at": "2024-10-24T10:36:44Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41511994/needham-reiterates-hold-on-tesla",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41512097,
+      "headline": "Asia Mixed, Europe Gains, Crude Oil Jumps 2% On Geopolitical Concerns, Gold Advances - Global Markets Today While US Slept",
+      "created_at": "2024-10-24T10:44:31Z",
+      "updated_at": "2024-10-24T10:44:31Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/10/41512097/asia-mixed-europe-gains-crude-oil-jumps-2-on-geopolitical-concerns-gold-advances-global-markets-toda",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41512809,
+      "headline": "Uber, Lyft Shares Are Sliding In Premarket Today: Is Elon Musk's Robotaxi Plan The Reason?",
+      "created_at": "2024-10-24T11:02:53Z",
+      "updated_at": "2024-10-24T11:10:35Z",
+      "symbols": [
+        "LYFT",
+        "TSLA",
+        "UBER"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41512809/uber-lyft-shares-are-sliding-in-premarket-today-is-elon-musks-robotaxi-plan-the-reason",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41513078,
+      "headline": "US Stocks Set To Open Higher As Tesla's Strong Profit Margins Win Over Wall Street: Wharton Economist Says 'Under-Loved' Bull Market Could See 'Significant Upside'",
+      "created_at": "2024-10-24T11:11:10Z",
+      "updated_at": "2024-10-24T11:11:11Z",
+      "symbols": [
+        "AAL",
+        "AAPL",
+        "BA",
+        "DOW",
+        "HON",
+        "IBM",
+        "LUV",
+        "NOC",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "T",
+        "TSLA",
+        "UPS"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/10/41513078/us-stocks-set-to-open-higher-as-teslas-strong-profit-margins-win-over-wall-street-wharton-economist",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41513753,
+      "headline": "The Power Of Pickups Shows No Signs Of Fading Away Even In The EV Era",
+      "created_at": "2024-10-24T11:32:25Z",
+      "updated_at": "2024-10-24T11:33:48Z",
+      "symbols": [
+        "F",
+        "GM",
+        "HMC",
+        "NSANY",
+        "RIVN",
+        "STLA",
+        "TM",
+        "TSLA",
+        "WKSP"
+      ],
+      "url": "https://www.benzinga.com/markets/penny-stocks/24/10/41513753/the-power-of-pickups-shows-no-signs-of-fading-away-even-in-the-ev-era",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41514042,
+      "headline": "Elon Musk Promises Free Hardware 4 Upgrades if Tesla's Hardware 3 Fails Full Self-Driving Test",
+      "created_at": "2024-10-24T11:48:13Z",
+      "updated_at": "2024-10-24T11:48:14Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41514042/elon-musk-promises-free-hardware-4-upgrades-if-teslas-hardware-3-fails-full-self-driving-test",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41514925,
+      "headline": "12 Consumer Discretionary Stocks Moving In Thursday's Pre-Market Session",
+      "created_at": "2024-10-24T12:07:38Z",
+      "updated_at": "2024-10-24T12:07:38Z",
+      "symbols": [
+        "BYON",
+        "GNLN",
+        "LGCB",
+        "MMA",
+        "PC",
+        "PNST",
+        "QS",
+        "SOND",
+        "SVMH",
+        "TAL",
+        "TSLA",
+        "VEEE"
+      ],
+      "url": "https://www.benzinga.com/insights/movers/24/10/41514925/12-consumer-discretionary-stocks-moving-in-thursdays-pre-market-session",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41514926,
+      "headline": "12 Consumer Discretionary Stocks Moving In Thursday's Pre-Market Session",
+      "created_at": "2024-10-24T12:07:38Z",
+      "updated_at": "2024-10-24T12:07:39Z",
+      "symbols": [
+        "BYON",
+        "GNLN",
+        "LGCB",
+        "MMA",
+        "PC",
+        "PNST",
+        "QS",
+        "SOND",
+        "SVMH",
+        "TAL",
+        "TSLA",
+        "VEEE"
+      ],
+      "url": "https://www.benzinga.com/insights/movers/24/10/41514926/12-consumer-discretionary-stocks-moving-in-thursdays-pre-market-session",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41515038,
+      "headline": "Market-Moving News for October 24th",
+      "created_at": "2024-10-24T12:10:35Z",
+      "updated_at": "2024-10-24T12:10:35Z",
+      "symbols": [
+        "TSLA",
+        "VKTX",
+        "ZENA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/movers/24/10/41515038/market-moving-news-for-october-24th",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41515045,
+      "headline": "B of A Securities Maintains Buy on Tesla, Raises Price Target to $265",
+      "created_at": "2024-10-24T12:11:10Z",
+      "updated_at": "2024-10-24T12:11:11Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41515045/b-of-a-securities-maintains-buy-on-tesla-raises-price-target-to-265",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41515276,
+      "headline": "Canaccord Genuity Maintains Buy on Tesla, Raises Price Target to $278",
+      "created_at": "2024-10-24T12:17:07Z",
+      "updated_at": "2024-10-24T12:17:08Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41515276/canaccord-genuity-maintains-buy-on-tesla-raises-price-target-to-278",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41515376,
+      "headline": "Tesla To Rally More Than 24%? Here Are 10 Top Analyst Forecasts For Thursday",
+      "created_at": "2024-10-24T12:19:28Z",
+      "updated_at": "2024-10-24T12:19:28Z",
+      "symbols": [
+        "APH",
+        "CSGP",
+        "DBVT",
+        "EWBC",
+        "NEP",
+        "NOW",
+        "RKLB",
+        "SNPS",
+        "TDY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41515376/tesla-to-rally-more-than-24-here-are-10-top-analyst-forecasts-for-thursday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41515658,
+      "headline": "Goldman Sachs Maintains Neutral on Tesla, Raises Price Target to $250",
+      "created_at": "2024-10-24T12:27:48Z",
+      "updated_at": "2024-10-24T12:27:49Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41515658/goldman-sachs-maintains-neutral-on-tesla-raises-price-target-to-250",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41515871,
+      "headline": "US Continuing Jobless Claims 1.897M vs 1.88M Est.",
+      "created_at": "2024-10-24T12:30:12Z",
+      "updated_at": "2024-10-24T12:30:13Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41515871/us-continuing-jobless-claims-1-897m-vs-1-88m-est",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41515916,
+      "headline": "USA Initial Jobless Claims 227K Vs 243K Est.; 242K Prior",
+      "created_at": "2024-10-24T12:30:21Z",
+      "updated_at": "2024-10-24T12:30:22Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41515916/usa-initial-jobless-claims-227k-vs-243k-est-242k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41516050,
+      "headline": "JP Morgan Maintains Underweight on Tesla, Raises Price Target to $135",
+      "created_at": "2024-10-24T12:33:56Z",
+      "updated_at": "2024-10-24T12:33:56Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41516050/jp-morgan-maintains-underweight-on-tesla-raises-price-target-to-135",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41516638,
+      "headline": "Fed's Hammack Says Inflation Has Eased Notably But Hasn't Returned To Goal; Inflation Readings Have Improved In Recent Months; Fed Policy Has Helped Cool Inflation Process; Longer Run Inflation Expectations Have Been Anchored; Inflation Has Eased Amid Strong Job Market, Good Growth",
+      "created_at": "2024-10-24T12:57:44Z",
+      "updated_at": "2024-10-24T12:57:45Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41516638/feds-hammack-says-inflation-has-eased-notably-but-hasnt-returned-to-goal-inflatio",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41516639,
+      "headline": "Fed's Hammack Says Inflation Has Eased Amid Strong Job Market, Good Growth; Reasonable To Expect More Disinflation; Housing Related Inflation Could Be Issue For A While",
+      "created_at": "2024-10-24T12:57:50Z",
+      "updated_at": "2024-10-24T12:57:50Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41516639/feds-hammack-says-inflation-has-eased-amid-strong-job-market-good-growth-reasonable-to-expect-more-d",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41517353,
+      "headline": "Jobless Claims Fall More Than Expected, Continuing Benefits Surge To Nearly 3-Year Highs: Labor Market At 'Full Employment,' Analyst Says",
+      "created_at": "2024-10-24T13:12:45Z",
+      "updated_at": "2024-10-24T13:12:46Z",
+      "symbols": [
+        "GLD",
+        "SPY",
+        "UUP"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41517353/jobless-claims-fall-more-than-expected-continuing-benefits-surge-to-nearly-3-year-h",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41517737,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of October 24, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-10-24T13:21:30Z",
+      "updated_at": "2024-10-24T13:21:30Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "BA",
+        "DJT",
+        "LOT",
+        "MCD",
+        "NVDA",
+        "QQQ",
+        "TSLA",
+        "UPS"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/10/41517737/top-10-trending-stocks-on-wallstreetbets-as-of-october-24-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41518370,
+      "headline": "Wedbush Reiterates Outperform on Tesla, Maintains $300 Price Target",
+      "created_at": "2024-10-24T13:33:39Z",
+      "updated_at": "2024-10-24T13:33:40Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41518370/wedbush-reiterates-outperform-on-tesla-maintains-300-price-target",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41518579,
+      "headline": "S&P Global Services PMI For October 55.3 Vs 55.0 Est.; 55.2 Prior",
+      "created_at": "2024-10-24T13:45:14Z",
+      "updated_at": "2024-10-24T13:45:14Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41518579/s-p-global-services-pmi-for-october-55-3-vs-55-0-est-55-2-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41518650,
+      "headline": "S&P Global US Manufacturing PMI For October 47.8 Vs 47.5 Est.; 47.3 Prior",
+      "created_at": "2024-10-24T13:47:04Z",
+      "updated_at": "2024-10-24T13:47:04Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41518650/s-p-global-us-manufacturing-pmi-for-october-47-8-vs-47-5-est-47-3-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41518658,
+      "headline": "S&P Global Composite PMI For October 54.3 Vs 54.0 Prior",
+      "created_at": "2024-10-24T13:47:19Z",
+      "updated_at": "2024-10-24T13:47:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41518658/s-p-global-composite-pmi-for-october-54-3-vs-54-0-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41518961,
+      "headline": "Dow Falls 150 Points; Tesla Posts Upbeat Earnings",
+      "created_at": "2024-10-24T13:58:14Z",
+      "updated_at": "2024-10-24T13:58:14Z",
+      "symbols": [
+        "LGCB",
+        "LILM",
+        "MRNS",
+        "NXU",
+        "ORKT",
+        "TC",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/10/41518961/dow-falls-150-points-tesla-posts-upbeat-earnings",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41519277,
+      "headline": "USA New Home Sales (MoM) For September 4.1% Vs -2.3% Prior (Revised)",
+      "created_at": "2024-10-24T14:03:56Z",
+      "updated_at": "2024-10-24T14:03:57Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41519277/usa-new-home-sales-mom-for-september-4-1-vs-2-3-prior-revised",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41519291,
+      "headline": "USA New Home Sales For September 738K Vs 719K Est.; 709K Prior",
+      "created_at": "2024-10-24T14:04:15Z",
+      "updated_at": "2024-10-24T14:04:16Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41519291/usa-new-home-sales-for-september-738k-vs-719k-est-709k-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41519598,
+      "headline": "Wells Fargo Maintains Underweight on Tesla, Raises Price Target to $125",
+      "created_at": "2024-10-24T14:13:07Z",
+      "updated_at": "2024-10-24T14:13:07Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41519598/wells-fargo-maintains-underweight-on-tesla-raises-price-target-to-125",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41519858,
+      "headline": "\"Beyoncé Will Appear With Vice President Kamala Harris In Houston On Friday At A Campaign Rally, According To People Familiar With The Plan Who Spoke On The Condition Of Anonymity To Preview An Appearance That Hasn't Been Publicly Announced\" - Washington Post",
+      "created_at": "2024-10-24T14:22:49Z",
+      "updated_at": "2024-10-24T14:22:50Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41519858/beyonc-will-appear-with-vice-president-kamala-harris-in-houston-on-friday-at-a-ca",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41520190,
+      "headline": "USA Natural Gas Storage 80B Vs 61B Est.; 76B Prior",
+      "created_at": "2024-10-24T14:30:11Z",
+      "updated_at": "2024-10-24T14:30:12Z",
+      "symbols": [
+        "SPY",
+        "UNG"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41520190/usa-natural-gas-storage-80b-vs-61b-est-76b-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41520604,
+      "headline": "US Private Sector Growth Remains Strong In October, Price Pressures Now Consistent With 'Inflation Running Below The Fed's 2% Target'",
+      "created_at": "2024-10-24T14:41:50Z",
+      "updated_at": "2024-10-24T14:41:51Z",
+      "symbols": [
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41520604/us-private-sector-growth-remains-strong-in-october-price-pressures-now-consistent",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41521088,
+      "headline": "KC Fed Composite Index For October -4 Vs -8 Prior",
+      "created_at": "2024-10-24T14:59:20Z",
+      "updated_at": "2024-10-24T14:59:20Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41521088/kc-fed-composite-index-for-october-4-vs-8-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41521090,
+      "headline": "KC Fed Manufacturing Index For October 0 Vs -18 Prior",
+      "created_at": "2024-10-24T14:59:41Z",
+      "updated_at": "2024-10-24T14:59:42Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41521090/kc-fed-manufacturing-index-for-october-0-vs-18-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 41521415,
+      "headline": "UPS Posts Upbeat Q3 Results, Joins Tesla, Celestica, Pool, T-Mobile And Other Big Stocks Moving Higher On Thursday",
+      "created_at": "2024-10-24T15:03:49Z",
+      "updated_at": "2024-10-24T15:03:50Z",
+      "symbols": [
+        "ACIC",
+        "ADT",
+        "ASTS",
+        "CBRE",
+        "CLS",
+        "LC",
+        "LH",
+        "MOH",
+        "PEGA",
+        "PLXS",
+        "POOL",
+        "QS",
+        "RKLB",
+        "TMUS",
+        "TSLA",
+        "TYL",
+        "UPS",
+        "VKTX",
+        "WHR",
+        "WST",
+        "ZLAB"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41521415/ups-posts-upbeat-q3-results-joins-tesla-celestica-pool-t-mobile-and-other-big-stocks-moving-higher-o",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41522940,
+      "headline": "Watch Live: Russian President Vladimir Putin Holds A Meeting With Leaders At The BRICS Summit; Says Cross-Border Payments Issue Is Important, We Will Develop Cooperation Within BRICS; BRICS Does Not Pursue Separate Common Payment System",
+      "created_at": "2024-10-24T15:33:28Z",
+      "updated_at": "2024-10-24T15:33:57Z",
+      "symbols": [
+        "EWZ",
+        "EZA",
+        "FXI",
+        "INDA",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41522940/watch-live-russian-president-vladimir-putin-holds-a-meeting-with-leaders-at-the-b",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41523000,
+      "headline": "Benzinga Market Summary: Boeing Machinists Reject Deal, Extending Strike, Tesla Surges On Earnings, Treasury Yields Drop",
+      "created_at": "2024-10-24T15:35:54Z",
+      "updated_at": "2024-10-24T15:35:54Z",
+      "symbols": [
+        "BA",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/10/41523000/benzinga-market-summary-boeing-machinists-reject-deal-extending-strike-tesla-surg",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41523040,
+      "headline": "Putin On Contacts With Donald Trump, Says Investigations Showed That Trump Has Had No Ties With Russia",
+      "created_at": "2024-10-24T15:40:23Z",
+      "updated_at": "2024-10-24T15:40:24Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41523040/putin-on-contacts-with-donald-trump-says-investigations-showed-that-trump-has-had-no-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41523121,
+      "headline": "Russia's Putin Says If United States Is Open To Normal Relations With Russia, We Will Do The Same; I Welcome Statements From Trump That He Seeks To End Conflict In Ukraine",
+      "created_at": "2024-10-24T15:43:14Z",
+      "updated_at": "2024-10-24T15:43:15Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41523121/russias-putin-says-if-united-states-is-open-to-normal-relations-with-russia-we-will-do",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41523253,
+      "headline": "Truist Securities Maintains Hold on Tesla, Raises Price Target to $238",
+      "created_at": "2024-10-24T15:51:14Z",
+      "updated_at": "2024-10-24T15:51:15Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41523253/truist-securities-maintains-hold-on-tesla-raises-price-target-to-238",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41524133,
+      "headline": "Russia's Putin Says We Are Ready To Consider Any Options To End Conflict In Ukraine, But Only Proceeding From Reality On The Ground",
+      "created_at": "2024-10-24T16:20:57Z",
+      "updated_at": "2024-10-24T16:20:58Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41524133/russias-putin-says-we-are-ready-to-consider-any-options-to-end-conflict-in-ukraine-but",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41524131,
+      "headline": "Sentiment From Tesla Earnings Counterbalances Rising Yields, Good For Nvidia",
+      "created_at": "2024-10-24T16:21:00Z",
+      "updated_at": "2024-10-24T16:21:01Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "BTCUSD",
+        "GLD",
+        "GOOG",
+        "LYFT",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SLV",
+        "SPY",
+        "TSLA",
+        "UBER",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/24/10/41524131/sentiment-from-tesla-earnings-counterbalances-rising-yields-good-for-nvidia",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41524179,
+      "headline": "CDC Issues Report On Missouri H5N1 Serology Testing; Confirms No Human-To-Human Transmission Of H5 Bird Flu Detected In US",
+      "created_at": "2024-10-24T16:23:20Z",
+      "updated_at": "2024-10-24T16:23:20Z",
+      "symbols": [
+        "GSK",
+        "NVAX",
+        "NVS",
+        "SNY",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41524179/cdc-issues-report-on-missouri-h5n1-serology-testing-confirms-no-human-to-human-transmission-of-h5-bi",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41524419,
+      "headline": "Tesla Q3 'An Unexpectedly Good Quarter': 10 Analysts On Earnings, Margins, FSD, Robotaxis, More",
+      "created_at": "2024-10-24T16:28:56Z",
+      "updated_at": "2024-10-24T16:28:57Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/10/41524419/tesla-q3-an-unexpectedly-good-quarter-10-analysts-on-earnings-margins-fsd-robotaxis",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41524814,
+      "headline": "3 Consumer Discretionary Stocks Moving In Thursday's Intraday Session",
+      "created_at": "2024-10-24T16:39:06Z",
+      "updated_at": "2024-10-24T16:39:07Z",
+      "symbols": [
+        "NXU",
+        "QS",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/insights/movers/24/10/41524814/3-consumer-discretionary-stocks-moving-in-thursdays-intraday-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41525059,
+      "headline": "KGI Securities Upgrades Tesla to Outperform, Announces $276 Price Target",
+      "created_at": "2024-10-24T16:49:42Z",
+      "updated_at": "2024-10-24T16:49:42Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41525059/kgi-securities-upgrades-tesla-to-outperform-announces-276-price-target",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41525267,
+      "headline": "Tech Stocks Rebound With Tesla Soaring To Best Day Since March 2021, Gold Rises As Treasury Yields Ease: What's Driving Markets Thursday?",
+      "created_at": "2024-10-24T16:57:58Z",
+      "updated_at": "2024-10-24T16:57:59Z",
+      "symbols": [
+        "AMP",
+        "BA",
+        "BTCUSD",
+        "CARR",
+        "CBRE",
+        "COF",
+        "DECK",
+        "DIA",
+        "DOW",
+        "DXCM",
+        "EW",
+        "GLD",
+        "HON",
+        "IBM",
+        "IWM",
+        "KKR",
+        "LRCX",
+        "LUV",
+        "LVS",
+        "NDAQ",
+        "NEM",
+        "NOW",
+        "QQQ",
+        "RES",
+        "RJF",
+        "SPGI",
+        "SPY",
+        "TMUS",
+        "TSLA",
+        "UNP",
+        "UPS",
+        "URI",
+        "VLO",
+        "XLB",
+        "XLRE",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41525267/tech-stocks-rebound-with-tesla-soaring-to-best-day-since-march-2021-gold-rises-as-treasury-yield",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41525942,
+      "headline": "RBC Capital Maintains Outperform on Tesla, Raises Price Target to $249",
+      "created_at": "2024-10-24T17:26:23Z",
+      "updated_at": "2024-10-24T17:26:24Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41525942/rbc-capital-maintains-outperform-on-tesla-raises-price-target-to-249",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41526300,
+      "headline": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
+      "created_at": "2024-10-24T17:37:20Z",
+      "updated_at": "2024-10-24T17:37:20Z",
+      "symbols": [
+        "AMZN",
+        "BABA",
+        "CVNA",
+        "DKNG",
+        "JWN",
+        "LVS",
+        "PDD",
+        "SBUX",
+        "TSLA",
+        "W"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/10/41526300/10-consumer-discretionary-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41526572,
+      "headline": "What's Going On With Rivian Automotive Stock Today?",
+      "created_at": "2024-10-24T17:53:48Z",
+      "updated_at": "2024-10-24T17:53:48Z",
+      "symbols": [
+        "RIVN",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41526572/whats-going-on-with-rivian-automotive-stock-today",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41526600,
+      "headline": "Cantor Fitzgerald Maintains Neutral on Tesla, Raises Price Target to $255",
+      "created_at": "2024-10-24T17:55:15Z",
+      "updated_at": "2024-10-24T17:55:16Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41526600/cantor-fitzgerald-maintains-neutral-on-tesla-raises-price-target-to-255",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41526856,
+      "headline": "Profiting From Tesla's Earnings Beat",
+      "created_at": "2024-10-24T18:02:52Z",
+      "updated_at": "2024-10-24T18:02:53Z",
+      "symbols": [
+        "BA",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/24/10/41526856/profiting-from-teslas-earnings-beat",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41527272,
+      "headline": "This Tesla Analyst Turns Bullish; Here Are Top 5 Upgrades For Thursday",
+      "created_at": "2024-10-24T18:07:52Z",
+      "updated_at": "2024-10-24T18:07:53Z",
+      "symbols": [
+        "CP",
+        "NEP",
+        "RF",
+        "STE",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/upgrades/24/10/41527272/this-tesla-analyst-turns-bullish-here-are-top-5-upgrades-for-thursday",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41527945,
+      "headline": "Guggenheim Maintains Sell on Tesla, Raises Price Target to $156",
+      "created_at": "2024-10-24T18:40:50Z",
+      "updated_at": "2024-10-24T18:40:50Z",
+      "symbols": [
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/10/41527945/guggenheim-maintains-sell-on-tesla-raises-price-target-to-156",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41528133,
+      "headline": "Japan Finance Minister Kato Highlights High FX Market Volatility At G20, Stresses Vigilance On Spill-Overs And Speculative Trading; BOJ Governor Ueda Cites Growing Optimism On U.S. Economy But Emphasizes Need To Scrutinize Its Sustainability; Notes Yen Weakness Partly Driven By U.S. Sentiment And High Implied Volatility; Sees Potential For Global Soft Landing Despite Divergence Among Countries",
+      "created_at": "2024-10-24T18:51:58Z",
+      "updated_at": "2024-10-24T18:51:59Z",
+      "symbols": [
+        "EWJ",
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/10/41528133/japan-finance-minister-kato-highlights-high-fx-market-volatility-at-g20-stresses-vigil",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41528871,
+      "headline": "DOJ Asked To Appoint Special Counsel To Probe Kushner",
+      "created_at": "2024-10-24T19:30:15Z",
+      "updated_at": "2024-10-24T19:30:16Z",
+      "symbols": [
+        "DJT",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/government/24/10/41528871/doj-asked-to-appoint-special-counsel-to-probe-kushner",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41531885,
+      "headline": "Benzinga Market Summary: Initial Jobless Claims Drop, Tesla Surges, Judge Reportedly Blocks Tapestry-Capri Proposed Deal",
+      "created_at": "2024-10-24T20:50:10Z",
+      "updated_at": "2024-10-24T20:50:11Z",
+      "symbols": [
+        "CPRI",
+        "SPY",
+        "TPR",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/general/market-summary/24/10/41531885/benzinga-market-summary-initial-jobless-claims-drop-tesla-surges-judge-reportedly-blocks-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41536197,
+      "headline": "Monopar Therapeutics, Intellia Therapeutics, Capri Holdings, Western Digital, And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+      "created_at": "2024-10-25T02:17:50Z",
+      "updated_at": "2024-10-25T02:17:50Z",
+      "symbols": [
+        "CPRI",
+        "MNPR",
+        "NTLA",
+        "TSLA",
+        "WDC"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41536197/monopar-therapeutics-intellia-therapeutics-capri-holdings-western-digital-and-tesla-why-these-5-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41536387,
+      "headline": "Cathie Wood's Ark Sells $22M Worth Of Tesla Shares Following Blockbuster Q3 Rally",
+      "created_at": "2024-10-25T02:37:04Z",
+      "updated_at": "2024-10-25T02:37:04Z",
+      "symbols": [
+        "ARKK",
+        "ARKQ",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/10/41536387/cathie-woods-ark-sells-22m-worth-of-tesla-shares-following-blockbuster-q3-rally",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 41536518,
+      "headline": "Bitcoin Gains, Ethereum, Dogecoin Muted Amid Tesla-Powered Stocks Rally: Analyst Highlights 'Most Bullish Outcome' For King Crypto In The Short Term",
+      "created_at": "2024-10-25T03:06:34Z",
+      "updated_at": "2024-10-25T03:06:35Z",
+      "symbols": [
+        "BTC",
+        "BTCUSD",
+        "DOGEUSD",
+        "ETHUSD",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/markets/cryptocurrency/24/10/41536518/bitcoin-gains-ethereum-dogecoin-muted-amid-tesla-powered-stocks-rally-analyst-highlights-m",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}

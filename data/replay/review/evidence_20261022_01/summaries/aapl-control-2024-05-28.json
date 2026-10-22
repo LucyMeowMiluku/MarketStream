@@ -1,0 +1,703 @@
+{
+  "interval_id": "aapl-control-2024-05-28",
+  "candidate_kind": "normal",
+  "ticker": "AAPL",
+  "started_at": "2024-05-28T13:30:00Z",
+  "ended_at": "2024-05-28T15:00:00Z",
+  "local_start": "2024-05-28T09:30:00-04:00",
+  "local_end": "2024-05-28T11:00:00-04:00",
+  "symbols": {
+    "AAPL": {
+      "bars": 88,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-28T14:40:00+00:00",
+        "2024-05-28T14:43:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-24T19:59:00Z",
+      "prior_close": 190,
+      "first_minute": "2024-05-28T13:30:00Z",
+      "last_minute": "2024-05-28T14:59:00Z",
+      "first_open": 191.53,
+      "last_close": 191.595,
+      "gap_pct": 0.8052631578947311,
+      "end_vs_prior_pct": 0.8394736842105344,
+      "window_return_pct": 0.0339372422074824,
+      "window_range_pct": 1.3783741450425449,
+      "volume": 274840,
+      "raw_artifact": "raw/aapl-control-2024-05-28/AAPL.minutes.json"
+    },
+    "QQQ": {
+      "bars": 74,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-28T13:32:00+00:00",
+        "2024-05-28T14:06:00+00:00",
+        "2024-05-28T14:08:00+00:00",
+        "2024-05-28T14:10:00+00:00",
+        "2024-05-28T14:19:00+00:00",
+        "2024-05-28T14:20:00+00:00",
+        "2024-05-28T14:21:00+00:00",
+        "2024-05-28T14:28:00+00:00",
+        "2024-05-28T14:32:00+00:00",
+        "2024-05-28T14:43:00+00:00",
+        "2024-05-28T14:47:00+00:00",
+        "2024-05-28T14:50:00+00:00",
+        "2024-05-28T14:54:00+00:00",
+        "2024-05-28T14:56:00+00:00",
+        "2024-05-28T14:57:00+00:00",
+        "2024-05-28T14:59:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-24T19:59:00Z",
+      "prior_close": 457.98,
+      "first_minute": "2024-05-28T13:30:00Z",
+      "last_minute": "2024-05-28T14:58:00Z",
+      "first_open": 459.215,
+      "last_close": 459.31,
+      "gap_pct": 0.26966243067381157,
+      "end_vs_prior_pct": 0.29040569457181586,
+      "window_return_pct": 0.020687477543201993,
+      "window_range_pct": 0.4485916183051517,
+      "volume": 91400,
+      "raw_artifact": "raw/aapl-control-2024-05-28/QQQ.minutes.json"
+    },
+    "SPY": {
+      "bars": 89,
+      "expected_minutes": 90,
+      "missing_minutes": [
+        "2024-05-28T14:53:00+00:00"
+      ],
+      "duplicate_minute_timestamps": 0,
+      "excluded_end_or_outside_bars": 1,
+      "prior_daily_sessions_found": 20,
+      "prior_close_time": "2024-05-24T19:59:00Z",
+      "prior_close": 529.46,
+      "first_minute": "2024-05-28T13:30:00Z",
+      "last_minute": "2024-05-28T14:59:00Z",
+      "first_open": 530.32,
+      "last_close": 529.89,
+      "gap_pct": 0.1624296452989782,
+      "end_vs_prior_pct": 0.0812148226494891,
+      "window_return_pct": -0.08108311962590209,
+      "window_range_pct": 0.2809624377734215,
+      "volume": 149522,
+      "raw_artifact": "raw/aapl-control-2024-05-28/SPY.minutes.json"
+    }
+  },
+  "status": "complete",
+  "errors": [],
+  "news": [
+    {
+      "id": 39032802,
+      "headline": "Apple's First OLED-Screen Tablet, The iPad Pro Targets 9M Shipments This Year: Report",
+      "created_at": "2024-05-28T06:58:26Z",
+      "updated_at": "2024-05-28T06:58:27Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39032802/apples-first-oled-screen-tablet-the-ipad-pro-targets-9m-shipments-this-year-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39033895,
+      "headline": "Reuters Reported  Apple iPhone Shipments In China Rose 52% YoY In April, Citing CAICT Data",
+      "created_at": "2024-05-28T09:20:12Z",
+      "updated_at": "2024-05-28T09:20:13Z",
+      "symbols": [
+        "AAPL",
+        "FXI",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/fintech/24/05/39033895/reuters-reported-apple-iphone-shipments-in-china-rose-52-yoy-in-april-citing-caict-data",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39034731,
+      "headline": "Asia And European Markets Dip, Crude Oil Advances Towards $80 - Global Markets Today While US Slept",
+      "created_at": "2024-05-28T10:40:14Z",
+      "updated_at": "2024-05-28T10:40:15Z",
+      "symbols": [
+        "ADIV",
+        "AGOV",
+        "ASHR",
+        "BBEU",
+        "BOIL",
+        "CQQQ",
+        "DBC",
+        "EEM",
+        "EEMA",
+        "EWU",
+        "EZU",
+        "FLAX",
+        "FXA",
+        "FXB",
+        "FXC",
+        "FXE",
+        "FXI",
+        "GLD",
+        "GSG",
+        "GXC",
+        "IEMG",
+        "IEUR",
+        "IEV",
+        "KDIV",
+        "SPEM",
+        "SPY",
+        "UNG",
+        "USDU",
+        "USO",
+        "UUP",
+        "VGK",
+        "VWO"
+      ],
+      "url": "https://www.benzinga.com/markets/asia/24/05/39034731/asia-and-european-markets-dip-crude-oil-advances-towards-80-global-markets-today-while-us-slept",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39035564,
+      "headline": "Wall Street Eyes Mixed Start After Memorial Day Break: Tech And Meme Stocks Gain; Analyst Says Sustained Selloff 'Unlikely'",
+      "created_at": "2024-05-28T11:27:20Z",
+      "updated_at": "2024-05-28T11:27:21Z",
+      "symbols": [
+        "AAPL",
+        "AMC",
+        "BOX",
+        "BTCUSD",
+        "CAVA",
+        "GME",
+        "NVDA",
+        "QQQ",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/earnings/24/05/39035564/wall-street-eyes-mixed-start-after-memorial-day-break-tech-and-meme-stocks-gain-analyst-says-sustai",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39037458,
+      "headline": "Taiwan Semi Leverages Asian Expertise and Culture for Chip Manufacturing Edge",
+      "created_at": "2024-05-28T12:33:47Z",
+      "updated_at": "2024-05-28T12:33:47Z",
+      "symbols": [
+        "AAPL",
+        "INTC",
+        "NVDA",
+        "SOXQ",
+        "TSM",
+        "USD"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39037458/taiwan-semi-leverages-asian-expertise-and-culture-for-chip-manufacturing-edge",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39037833,
+      "headline": "Magnificent 7 Becomes 'The Magnificent One': Wall Street Guru Hails Single Tech Stock As Market Leader",
+      "created_at": "2024-05-28T12:52:11Z",
+      "updated_at": "2024-05-28T12:52:12Z",
+      "symbols": [
+        "META",
+        "NVDA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/39037833/magnificent-7-becomes-the-magnificent-one-wall-street-guru-hails-single-tech-stock-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39038349,
+      "headline": "What's Going On With Apple Stock On Tuesday?",
+      "created_at": "2024-05-28T13:03:40Z",
+      "updated_at": "2024-05-28T13:03:41Z",
+      "symbols": [
+        "AAPL",
+        "IXN",
+        "IYW"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39038349/whats-going-on-with-apple-stock-on-tuesday",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39038737,
+      "headline": "Top 10 Trending Stocks On WallStreetBets As Of May 28, 2024 (Via Swaggy Stocks)",
+      "created_at": "2024-05-28T13:15:08Z",
+      "updated_at": "2024-05-28T13:15:09Z",
+      "symbols": [
+        "AAPL",
+        "AI",
+        "CAVA",
+        "DELL",
+        "DKNG",
+        "GME",
+        "LOT",
+        "NVDA",
+        "QQQ",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/trading-ideas/24/05/39038737/top-10-trending-stocks-on-wallstreetbets-as-of-may-28-2024-via-swaggy-stocks",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39038939,
+      "headline": "Apple, Amazon, Google Up In Arms Against India's Proposed Anti-Competition Bill: Report",
+      "created_at": "2024-05-28T13:24:22Z",
+      "updated_at": "2024-05-28T13:24:24Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "GOOG",
+        "GOOGL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39038939/apple-amazon-google-up-in-arms-against-indias-proposed-anti-competition-bill-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39038995,
+      "headline": "Economist Predicts Bitcoin Will Surge Past $110K In Q3 Despite Recession Fears; Expert Warns A Second Trump Term Could Worsen US-China Relations - Top Headlines Today While US Slept",
+      "created_at": "2024-05-28T13:27:20Z",
+      "updated_at": "2024-05-28T13:27:20Z",
+      "symbols": [
+        "BTCUSD",
+        "ETHUSD",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39038995/economist-predicts-bitcoin-will-surge-past-110k-in-q3-despite-recession-fears-expert-warns-a-second",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039401,
+      "headline": "'Saudi Arabia to Raise $10 Billion to $20 Billion in Fresh Aramco Stock Sale' - WSJ",
+      "created_at": "2024-05-28T13:47:01Z",
+      "updated_at": "2024-05-28T13:48:25Z",
+      "symbols": [
+        "KSA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39039401/saudi-arabia-to-raise-10-billion-to-20-billion-in-fresh-aramco-stock-sale-wsj",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039506,
+      "headline": "'Israel gave mediators updated proposal for Gaza hostage-ceasefire deal' - Axios",
+      "created_at": "2024-05-28T13:51:50Z",
+      "updated_at": "2024-05-28T13:51:50Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/05/39039506/israel-gave-mediators-updated-proposal-for-gaza-hostage-ceasefire-deal-axios",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039562,
+      "headline": "Fed's Kashkari Says The U.S. Labor Market Has Softened, But Remains Tight; Don't Think Anyone Has Taken Rate Increases Off Table",
+      "created_at": "2024-05-28T13:56:24Z",
+      "updated_at": "2024-05-28T13:56:24Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39039562/feds-kashkari-says-the-u-s-labor-market-has-softened-but-remains-tight-dont-think",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039571,
+      "headline": "Apple Not Satisfied With iPhone 16 Pro Max Screens Four Months Ahead Of Launch: Report",
+      "created_at": "2024-05-28T13:58:09Z",
+      "updated_at": "2024-05-28T13:58:10Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39039571/apple-not-satisfied-with-iphone-16-pro-max-screens-four-months-ahead-of-launch-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039587,
+      "headline": "Fed's Kashkari Says Wage Growth Is Still Quite Robust Relative To 2% Goal; Policy Is Restrictive By Most Measures, But Not All",
+      "created_at": "2024-05-28T13:59:05Z",
+      "updated_at": "2024-05-28T13:59:05Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39039587/feds-kashkari-says-wage-growth-is-still-quite-robust-relative-to-2-goal-policy-is",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039911,
+      "headline": "Benzinga Market Summary: T-Mobile Acquires US Cellular's Wireless Operations, Fed's Kashkari Says US Labor Market Has Softened, Saudi Arabia Could Reportedly Raise $10B-$20B In Aramco Stock Sale",
+      "created_at": "2024-05-28T14:06:53Z",
+      "updated_at": "2024-05-28T14:06:54Z",
+      "symbols": [
+        "SPY",
+        "TMUS",
+        "USM"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39039911/benzinga-market-summary-t-mobile-acquires-us-cellulars-wireless-operations-feds-k",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039913,
+      "headline": "U.S. Appeals Court To Hear Legal Challenges To Law That Could Ban TikTok In September",
+      "created_at": "2024-05-28T14:07:01Z",
+      "updated_at": "2024-05-28T14:07:01Z",
+      "symbols": [
+        "AMZN",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "RUM",
+        "SNAP",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39039913/u-s-appeals-court-to-hear-legal-challenges-to-law-that-could-ban-tiktok-in-september",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039656,
+      "headline": "USA CB Consumer Confidence For May 102 Vs 96 Est.; 97.5 Prior",
+      "created_at": "2024-05-28T14:00:41Z",
+      "updated_at": "2024-05-28T14:08:54Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39039656/usa-cb-consumer-confidence-for-may-96-vs-97-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39039927,
+      "headline": "UPDATE: USA CB Consumer Confidence For May 102 Vs 96 Est.; 97.5 Prior",
+      "created_at": "2024-05-28T14:08:09Z",
+      "updated_at": "2024-05-28T14:09:06Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39039927/update-usa-cb-consumer-confidence-for-may-102-vs-96-est-97-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39040141,
+      "headline": "Javier Milei Cozying Up To Tim Cook, Mark Zuckerberg And Other Tech Titans As He Seeks To Build Hype For His Economic Reforms In Argentina",
+      "created_at": "2024-05-28T14:19:56Z",
+      "updated_at": "2024-05-28T14:19:56Z",
+      "symbols": [
+        "AAPL",
+        "GOOG",
+        "GOOGL",
+        "META",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39040141/javier-milei-cozying-up-to-tim-cook-mark-zuckerberg-and-other-tech-titans-as-he-seeks-to-build-hype",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39040231,
+      "headline": "Fed's Kashkari says Think The Odds Of Fed Raising Rates Are Quite Low; Could Stay On Hold For An Indefinite Period Of Time",
+      "created_at": "2024-05-28T14:24:33Z",
+      "updated_at": "2024-05-28T14:24:34Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39040231/feds-kashkari-says-think-the-odds-of-fed-raising-rates-are-quite-low-could-stay-o",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39040368,
+      "headline": "Dallas Fed Mfg Business Index For May -19.4 Vs -14.5 Prior",
+      "created_at": "2024-05-28T14:30:55Z",
+      "updated_at": "2024-05-28T14:30:56Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39040368/dallas-fed-mfg-business-index-for-may-19-4-vs-14-5-prior",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39040470,
+      "headline": "Dallas Fed Texas Manufacturing Output Index -2.8 In May Vs 4.8 In April",
+      "created_at": "2024-05-28T14:31:30Z",
+      "updated_at": "2024-05-28T14:31:30Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39040470/dallas-fed-texas-manufacturing-output-index-2-8-in-may-vs-4-8-in-april",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39040856,
+      "headline": "Apple's First OLED MacBook Model To Launch In 2026: Report",
+      "created_at": "2024-05-28T14:48:45Z",
+      "updated_at": "2024-05-28T14:48:45Z",
+      "symbols": [
+        "AAPL"
+      ],
+      "url": "https://www.benzinga.com/news/24/05/39040856/apples-first-oled-macbook-model-to-launch-in-2026-report",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39040878,
+      "headline": "White House Deputy National Security Adviser Says Russia's Military Industrial Complex Could Grow Stronger Than Pre-Ukraine War; Urges Intensified Efforts To Halt Sanctions Circumvention",
+      "created_at": "2024-05-28T14:50:27Z",
+      "updated_at": "2024-05-28T14:50:27Z",
+      "symbols": [
+        "SPY",
+        "VGK"
+      ],
+      "url": "https://www.benzinga.com/general/macro-notification/24/05/39040878/white-house-deputy-national-security-adviser-says-russias-military-industrial-complex-",
+      "after_window": false,
+      "updated_after_window": false
+    },
+    {
+      "id": 39041070,
+      "headline": "Market Clubhouse Morning Memo - May 28th, 2024 (Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META And TSLA)",
+      "created_at": "2024-05-28T15:00:42Z",
+      "updated_at": "2024-05-28T15:00:42Z",
+      "symbols": [
+        "AAPL",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QQQ",
+        "SPY",
+        "TSLA"
+      ],
+      "url": "https://www.benzinga.com/24/05/39041070/market-clubhouse-morning-memo-may-28th-2024-trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-and",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39042945,
+      "headline": "'U.S. Aid Deliveries To Gaza By Sea Suspended After Damage To Temporary Pier' - NBC News",
+      "created_at": "2024-05-28T16:15:53Z",
+      "updated_at": "2024-05-28T16:15:54Z",
+      "symbols": [
+        "EIS",
+        "ISRA",
+        "SPY",
+        "USO"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39042945/u-s-aid-deliveries-to-gaza-by-sea-suspended-after-damage-to-temporary-pier-nbc-ne",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39044002,
+      "headline": "Fed's Daly Says New Technologies Often Reallocate Labor, With A 'Painful Gap' For Some Workers; No One Knows The Impact Of Generative AI On Labor And The Economy",
+      "created_at": "2024-05-28T17:07:28Z",
+      "updated_at": "2024-05-28T17:07:29Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39044002/feds-daly-says-new-technologies-often-reallocate-labor-with-a-painful-gap-for-som",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39044121,
+      "headline": "Airbnb, Norwegian Cruise See Analyst Upgrades: Are Travel And Leisure Stocks The New Value Heaven?",
+      "created_at": "2024-05-28T17:17:04Z",
+      "updated_at": "2024-05-28T17:17:05Z",
+      "symbols": [
+        "ABNB",
+        "ALK",
+        "BEDZ",
+        "BYD",
+        "CCL",
+        "CRUZ",
+        "CZR",
+        "EXPE",
+        "IWB",
+        "IWD",
+        "JRNY",
+        "LVS",
+        "MGM",
+        "NCLH",
+        "RCL",
+        "SPY",
+        "UAL",
+        "WH",
+        "WYNN"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/39044121/airbnb-norwegian-cruise-see-analyst-upgrades-are-travel-and-leisure-stocks-the-new-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39044294,
+      "headline": "Nvidia's Meteoric Rise: How Does It Compare To Other Market Rallies?",
+      "created_at": "2024-05-28T17:30:34Z",
+      "updated_at": "2024-05-28T17:30:35Z",
+      "symbols": [
+        "AAPL",
+        "AMZN",
+        "LLY",
+        "MSFT",
+        "NVDA"
+      ],
+      "url": "https://www.benzinga.com/markets/equities/24/05/39044294/nvidias-meteoric-rise-how-does-it-compare-to-other-market-rallies",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39044451,
+      "headline": "10 Information Technology Stocks Whale Activity In Today's Session",
+      "created_at": "2024-05-28T17:35:11Z",
+      "updated_at": "2024-05-28T17:35:12Z",
+      "symbols": [
+        "AAPL",
+        "CRDO",
+        "CRM",
+        "DELL",
+        "MARA",
+        "MSFT",
+        "NVDA",
+        "PSTG",
+        "QCOM",
+        "ZS"
+      ],
+      "url": "https://www.benzinga.com/insights/options/24/05/39044451/10-information-technology-stocks-whale-activity-in-todays-session",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39044604,
+      "headline": "US Stocks Waver, Nvidia Lifts Chipmakers, GameStop Spikes, Moderna Tumbles: What's Driving Markets Tuesday?",
+      "created_at": "2024-05-28T17:47:45Z",
+      "updated_at": "2024-05-28T17:52:50Z",
+      "symbols": [
+        "ARM",
+        "BTCUSD",
+        "CAVA",
+        "CELH",
+        "DIA",
+        "DKNG",
+        "GME",
+        "GOOGL",
+        "HEI",
+        "HUBS",
+        "MRNA",
+        "NCLH",
+        "NVDA",
+        "QQQ",
+        "SOXX",
+        "SPY",
+        "TLT",
+        "XLE",
+        "XLV",
+        "XLY"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/39044604/us-stocks-waver-nvidia-lifts-chipmaker-boats-gamestop-spikes-moderna-tumbles-whats-",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39044802,
+      "headline": "Fed Releases Discount Rate Meeting Minutes for April 8-May 1; All Reserve Banks Voted to Hold Discount Rate in April",
+      "created_at": "2024-05-28T18:02:04Z",
+      "updated_at": "2024-05-28T18:02:05Z",
+      "symbols": [
+        "KBE",
+        "KRE",
+        "SPY",
+        "XLF"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39044802/fed-releases-discount-rate-meeting-minutes-for-april-8-may-1-all-reserve-banks-vo",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39045327,
+      "headline": "Nvidia's Record-Breaking Earnings Boost SOX And NASDAQ Indexes: What Investors Need To Know",
+      "created_at": "2024-05-28T18:37:18Z",
+      "updated_at": "2024-05-28T18:37:19Z",
+      "symbols": [
+        "AAPL",
+        "AMD",
+        "AMZN",
+        "GOOGL",
+        "META",
+        "MSFT",
+        "NVDA",
+        "QCOM"
+      ],
+      "url": "https://www.benzinga.com/analyst-ratings/analyst-color/24/05/39045327/nvidias-record-breaking-earnings-boost-sox-and-nasdaq-indexes-what-investors-need-t",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39046133,
+      "headline": "Americans Finally Start To Feel Better About The Economy: What It Means For Trump, Biden Presidential Election",
+      "created_at": "2024-05-28T19:45:23Z",
+      "updated_at": "2024-05-28T19:45:23Z",
+      "symbols": [
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/general/politics/24/05/39046133/americans-finally-start-to-feel-better-about-the-economy-what-it-means-for-trump-biden-president",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39046183,
+      "headline": "John Kirby, NSC Coordinator For Strategic Communications, Says U.S. Condemns Loss Of Innocent Life In Rafah",
+      "created_at": "2024-05-28T19:50:58Z",
+      "updated_at": "2024-05-28T19:50:58Z",
+      "symbols": [
+        "EIS",
+        "SPY"
+      ],
+      "url": "https://www.benzinga.com/economics/macro-economic-events/24/05/39046183/john-kirby-nsc-coordinator-for-strategic-communications-says-u-s-condemns-loss-of",
+      "after_window": true,
+      "updated_after_window": true
+    },
+    {
+      "id": 39049904,
+      "headline": "Nvidia Now Worth More Than Tesla, Exxon, Walmart, Costco, Netflix, Intel, Disney And Pepsi Combined: The Rise Of An AI Powerhouse",
+      "created_at": "2024-05-28T21:53:30Z",
+      "updated_at": "2024-05-28T21:53:31Z",
+      "symbols": [
+        "AAPL",
+        "COST",
+        "DIS",
+        "INTC",
+        "MSFT",
+        "NFLX",
+        "NVDA",
+        "PEP",
+        "TSLA",
+        "WMT",
+        "XOM"
+      ],
+      "url": "https://www.benzinga.com/general/education/24/05/39049904/nvidia-now-worth-more-than-tesla-exxon-walmart-costco-netflix-intel-disney-and-pepsi-combined-t",
+      "after_window": true,
+      "updated_after_window": true
+    }
+  ]
+}
