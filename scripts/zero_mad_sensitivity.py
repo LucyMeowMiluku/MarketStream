@@ -165,7 +165,11 @@ def run_block(variant: Variant, block_dir: Path, sessions: list[str]) -> dict:
         for ticker in sorted({item.ticker for item in day}):
             training = [s for past in training_days for s in by_session[past] if s.ticker == ticker]
             scored = [item for item in day if item.ticker == ticker]
-            _, if_windows = isolation_forest_detections(training, scored)
+            if any(item.warmup_status == "ready" for item in training):
+                _, if_windows = isolation_forest_detections(training, scored)
+            else:
+                counts["if_skipped_no_ready_training"] += 1
+                if_windows = []
             for method, windows in (
                 ("cep", [w for w in cep_windows if w.snapshot.ticker == ticker]),
                 ("if", if_windows),
