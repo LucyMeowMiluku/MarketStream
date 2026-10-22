@@ -1,6 +1,7 @@
 """Freeze evaluation sources and emit a scenario-level reconciliation (no services)."""
 from __future__ import annotations
 
+import argparse
 import hashlib
 import json
 import platform
@@ -15,6 +16,7 @@ from evaluation.run_synthetic import run_evaluation_suite, run_protocol
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / 'report/ownership_evidence/reproduction_outputs/audit_20261022'
+RUN_ID = 'audit-synthetic-20261022'
 
 
 def dump(name, value):
@@ -22,6 +24,12 @@ def dump(name, value):
 
 
 def main():
+    global OUT, RUN_ID
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output', type=Path, default=OUT)
+    parser.add_argument('--run-id', default=RUN_ID)
+    args = parser.parse_args()
+    OUT, RUN_ID = args.output.resolve(), args.run_id
     OUT.mkdir(parents=True, exist_ok=True)
     files = sorted(p for folder in ('baseline', 'cep', 'config', 'dashboard', 'evaluation',
                                   'ml', 'processing', 'producers', 'replay', 'scripts',
@@ -34,11 +42,13 @@ def main():
         for p in files:
             archive.add(p, arcname=str(p.relative_to(ROOT)))
     dump('provenance.json', {
-        'run_id': 'audit-synthetic-20261022', 'generated_at': datetime.now(timezone.utc),
+        'run_id': RUN_ID, 'generated_at': datetime.now(timezone.utc),
         'base_commit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=ROOT, text=True).strip(),
-        'dirty_tree': True, 'source_manifest_sha256': snapshot, 'source_files': hashes,
+        'dirty_tree': bool(subprocess.check_output(['git', 'status', '--porcelain', '--untracked-files=no'],
+                                                   cwd=ROOT, text=True).strip()),
+        'source_manifest_sha256': snapshot, 'source_files': hashes,
         'archive': 'source_snapshot.tar.gz', 'python': platform.python_version(),
-        'command': '.venv/bin/python -m report.tools.audit_results',
+        'command': f'.venv/bin/python -m report.tools.audit_results --output {OUT.relative_to(ROOT)} --run-id {RUN_ID}',
         'data_source': 'evaluation/synthetic_scenarios.py; no external market data',
         'labels': 'generated expected_pattern/direction; generator hash above',
         'parameters': {'seeds': 20, 'intensities': {'low': 4.5, 'medium': 6.5, 'high': 9.0},
@@ -78,7 +88,7 @@ def main():
         {'kind': k[0], 'scenario': k[1], 'intensity': k[2], 'fp': v}
         for k, v in sorted(details.items())], 'global_matches_equal_partitioned_matches': True})
     dump('factor_cep_suite.json', run_evaluation_suite(20))
-    print(json.dumps({'run_id': 'audit-synthetic-20261022', 'counts': dict(totals)}))
+    print(json.dumps({'run_id': RUN_ID, 'counts': dict(totals)}))
 
 
 if __name__ == '__main__':

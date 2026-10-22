@@ -295,7 +295,7 @@ class LightweightFactorEngine:
         range_series = self._series(range_key)
         spread_series = self._series(spread_key)
         return_series = self._series(return_key)
-        return_median, return_mad, _, _ = return_series.summary(before=session_date)
+        return_median, _, _, _ = return_series.summary(before=session_date)
         benchmark_return = self._latest_benchmark_return(ticker, cadence, window.end)
         if ticker in {"SPY", "QQQ"}:
             self._benchmark_returns[(cadence, ticker)] = (window.end, metrics.raw_return)
@@ -304,7 +304,9 @@ class LightweightFactorEngine:
             window,
             metrics,
             return_median=return_median,
-            return_mad=return_mad,
+            return_scale=self._return_scale(
+                return_series, session_date, previous_close or metrics.close
+            ),
             volume_median=volume_series.summary(before=session_date)[0],
             range_median=range_series.summary(before=session_date)[0],
             spread_median=spread_series.summary(before=session_date)[0],
@@ -380,6 +382,15 @@ class LightweightFactorEngine:
             provenance=window.provenance,
         )
 
+    def _return_scale(
+        self, series: BaselineSeries, session_date: date, reference_price: float
+    ) -> float:
+        _, mad, _, _ = series.summary(before=session_date)
+        return max(1.4826 * mad, 1e-6)
+
+    def _factor_scale(self, series, session_date, median: float, mad: float) -> float:
+        return max(1.4826 * mad, 1e-6)
+
     def _classify_factors(
         self, ticker, cadence, session, slot, session_date, values, unobserved=()
     ):
@@ -387,7 +398,7 @@ class LightweightFactorEngine:
         for name, value in values.items():
             series = self._series(self._baseline_key(ticker, cadence, session, slot, name))
             median, mad, quantile_995, quantile_999 = series.summary(before=session_date)
-            scale = max(1.4826 * mad, 1e-6)
+            scale = self._factor_scale(series, session_date, median, mad)
             prior_samples = series.samples_before(session_date)
             robust_z = (value - median) / scale if prior_samples else 0.0
             if name in SIGNED_FACTORS:

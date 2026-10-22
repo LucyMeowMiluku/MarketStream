@@ -45,13 +45,12 @@ def calculate_factors(
     metrics: WindowMetrics,
     *,
     return_median: float,
-    return_mad: float,
+    return_scale: float,
     volume_median: float,
     range_median: float,
     spread_median: float,
     benchmark_return: float,
 ) -> dict[str, float]:
-    return_scale = max(1.4826 * return_mad, 1e-6)
     quote_total = window.bid_size + window.ask_size
     trade_total = window.buy_volume + window.sell_volume
     news_mean = statistics.fmean(window.news_scores) if window.news_scores else 0.0

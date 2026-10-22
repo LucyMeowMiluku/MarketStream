@@ -47,3 +47,6 @@ report/*.zip
 report/ownership_evidence/AI_Logs/transcripts/
 report/ownership_evidence/AI_Logs/chatgpt_*.md
 report/ownership_evidence/Evidence_Attachments/Decision_Log_Excerpts.md
+
+# Calibration provider data for parameter studies (local only)
+data/calibration/
