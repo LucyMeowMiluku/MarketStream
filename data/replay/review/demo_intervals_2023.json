@@ -1,0 +1,113 @@
+{
+  "schema_version": "marketstream-reviewed-labels-v1",
+  "dataset_id": "label-review-demo-2023",
+  "data_kind": "practice",
+  "provider": "alpaca",
+  "feed": "sip",
+  "timezone": "America/New_York",
+  "frozen": false,
+  "frozen_at": null,
+  "notes": "Practice intervals for learning the review app; disjoint from all candidates.",
+  "intervals": [
+    {
+      "interval_id": "demo-1",
+      "kind": "demo",
+      "ticker": "TSLA",
+      "started_at": "2023-10-19T13:30:00Z",
+      "ended_at": "2023-10-19T15:00:00Z",
+      "direction": null,
+      "pattern": null,
+      "event_id": null,
+      "evidence_urls": [],
+      "confidence": null,
+      "approval_status": "proposed",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "notes": "Practice interval from the disjoint 2023 period (day after earnings); not part of any benchmark.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "demo-2",
+      "kind": "demo",
+      "ticker": "SPY",
+      "started_at": "2023-09-13T13:30:00Z",
+      "ended_at": "2023-09-13T15:00:00Z",
+      "direction": null,
+      "pattern": null,
+      "event_id": null,
+      "evidence_urls": [],
+      "confidence": null,
+      "approval_status": "proposed",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "notes": "Practice interval from the disjoint 2023 period (CPI release day); not part of any benchmark.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "demo-3",
+      "kind": "demo",
+      "ticker": "NVDA",
+      "started_at": "2023-08-24T13:30:00Z",
+      "ended_at": "2023-08-24T15:00:00Z",
+      "direction": null,
+      "pattern": null,
+      "event_id": null,
+      "evidence_urls": [],
+      "confidence": null,
+      "approval_status": "proposed",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "notes": "Practice interval from the disjoint 2023 period (day after earnings); not part of any benchmark.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "demo-4",
+      "kind": "demo",
+      "ticker": "QQQ",
+      "started_at": "2023-09-20T18:00:00Z",
+      "ended_at": "2023-09-20T19:30:00Z",
+      "direction": null,
+      "pattern": null,
+      "event_id": null,
+      "evidence_urls": [],
+      "confidence": null,
+      "approval_status": "proposed",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "notes": "Practice interval from the disjoint 2023 period (FOMC decision day); not part of any benchmark.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    },
+    {
+      "interval_id": "demo-5",
+      "kind": "demo",
+      "ticker": "AAPL",
+      "started_at": "2023-08-16T13:30:00Z",
+      "ended_at": "2023-08-16T15:00:00Z",
+      "direction": null,
+      "pattern": null,
+      "event_id": null,
+      "evidence_urls": [],
+      "confidence": null,
+      "approval_status": "proposed",
+      "reviewed_by": null,
+      "reviewed_at": null,
+      "notes": "Practice interval from the disjoint 2023 period (ordinary day); not part of any benchmark.",
+      "context_tickers": [
+        "QQQ",
+        "SPY"
+      ]
+    }
+  ]
+}

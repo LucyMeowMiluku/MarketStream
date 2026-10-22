@@ -51,3 +51,6 @@ report/ownership_evidence/Evidence_Attachments/Decision_Log_Excerpts.md
 # Calibration provider data for parameter studies (local only)
 data/calibration/
 data/review_bars/
+data/replay/review/workbench/
+data/replay/review/workbench_demo/
+data/replay/review/workbench_prepare.log

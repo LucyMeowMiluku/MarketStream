@@ -149,3 +149,23 @@ ignores routine analyst notes, because a move large enough to matter already fai
 
 The project lead chooses an option; the chosen text then replaces Section 3 and the status
 line becomes *APPROVED* with the date.
+
+## 9. Review tool
+
+```bash
+uv run python -m scripts.prepare_review_workbench          # once: SIP bars + news, local only
+uv run streamlit run scripts/label_review_app.py           # opens the review app
+```
+
+- Candidate intervals are locked until the status line above reads *APPROVED*; until then the
+  app offers five practice intervals from the disjoint 2023 period (`--prefix D` workbench).
+- Intervals appear as neutral IDs (R01–R24, replacement pool P01–P10) in a seeded random order.
+  The draft's kind, direction, name, notes and links are hidden; revealing them is possible but
+  recorded as `draft_revealed_before_decision`.
+- The app shows each market-data rule's measured value next to its threshold. It never proposes
+  a label; A3, N4 and N5 are judged by the reviewer from the news list and official calendars.
+- Decisions are saved per reviewer in `data/replay/review/annotations/<reviewer>.json`.
+  *Write export files* produces `<reviewer>_review.csv` and `<reviewer>_reviewed_labels.json`
+  (approved intervals only, with any missing 12 + 12 or ticker coverage reported), ready for
+  `uv run python -m replay.labels validate` and `freeze`.
+- The app and its helpers import no detector module (enforced by a test).
