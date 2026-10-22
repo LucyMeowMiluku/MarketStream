@@ -78,16 +78,6 @@ class StockSpecificDislocationMachine:
                     [price.factor, residual.factor],
                 )
             ], []
-        if price and snapshot.factor_states.get("return_surprise", {}).get("state") == "extreme":
-            return [
-                _pattern(
-                    self.name,
-                    price.direction,
-                    price.event_time,
-                    snapshot.event_time,
-                    ["extreme:return_surprise"],
-                )
-            ], []
         return [], []
 
     def expire(self, snapshot):

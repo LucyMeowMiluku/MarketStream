@@ -93,9 +93,11 @@ RealReplayEvaluator.run
 stateDiagram-v2
   [*] --> IDLE
   IDLE --> COMPLETED: 同窗价格异常与市场残差同向
-  IDLE --> COMPLETED: return_surprise为extreme
   COMPLETED --> [*]
 ```
+
+单独的 extreme `return_surprise` 不再直接完成该模式：缺少市场残差确认时无法区分个股偏离与
+大盘整体波动，这是合成负对照（orderly market move、stale news）误报的唯一来源。
 
 ### 6.2 流动性压力
 

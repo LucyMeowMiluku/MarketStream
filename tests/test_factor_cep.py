@@ -23,9 +23,12 @@ def test_each_factor_pattern_completes(pattern):
     )
 
 
+@pytest.mark.parametrize("intensity", ["medium", "high"])
 @pytest.mark.parametrize("control", NEGATIVE_CONTROLS)
-def test_negative_controls_do_not_alert_at_medium_intensity(control):
-    scenario = generate_scenario(control, seed=2, intensity="medium")
+def test_negative_controls_do_not_alert(control, intensity):
+    # High intensity makes return_surprise extreme; a lone extreme price move
+    # without residual confirmation is not a stock-specific dislocation.
+    scenario = generate_scenario(control, seed=2, intensity=intensity)
     detector = CEPDetector(cooldown_seconds=0)
     results = [detector.process(snapshot) for snapshot in scenario.snapshots]
     assert not any(result.is_alert for result in results)
