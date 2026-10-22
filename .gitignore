@@ -42,3 +42,8 @@ data/comparison_results*/models/
 # Historical submission package and stale export
 report/提交1/
 report/*.zip
+# Private AI conversation logs (kept locally, never published)
+*rollout-*.jsonl
+report/ownership_evidence/AI_Logs/transcripts/
+report/ownership_evidence/AI_Logs/chatgpt_*.md
+report/ownership_evidence/Evidence_Attachments/Decision_Log_Excerpts.md
