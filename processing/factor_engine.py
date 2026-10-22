@@ -47,7 +47,7 @@ class LightweightFactorEngine:
         self.epoch_id = epoch_id
         self._track_state_updates = track_state_updates
         self._pending_updates = StateUpdateBatch()
-        self._baseline_version = "rolling-mad-v2"
+        self._baseline_version = "rolling-mad-v3"
         self._windows: OrderedDict[tuple[str, int], WindowAccumulator] = OrderedDict()
         self._baselines: dict[tuple[str, int, str, int, str], BaselineSeries] = {}
         self._previous_close: dict[tuple[str, int], float] = {}
@@ -180,7 +180,7 @@ class LightweightFactorEngine:
         self._frozen_baselines = freeze
         canonical = json.dumps(state, sort_keys=True, separators=(",", ":"))
         digest = hashlib.sha256(canonical.encode()).hexdigest()[:12]
-        self._baseline_version = f"frozen-mad-v2:{digest}" if freeze else "rolling-mad-v2"
+        self._baseline_version = f"frozen-mad-v3:{digest}" if freeze else "rolling-mad-v3"
 
     def restore_observations(
         self, observations: list[BaselineObservation], *, clear: bool = True
@@ -304,8 +304,16 @@ class LightweightFactorEngine:
             spread_median=spread_series.summary(before=session_date)[0],
             benchmark_return=benchmark_return,
         )
+        # Until the raw-return history is mature, MAD is zero and the robust
+        # scale falls back to 1e-6, inflating return_surprise ~1e6x.  Recording
+        # those values would dominate this factor's own threshold history for
+        # the whole baseline window, so the factor is not observed yet.
+        unobserved = set()
+        if return_series.distinct_days_before(session_date) < self.min_history_days:
+            factor_values["return_surprise"] = 0.0
+            unobserved.add("return_surprise")
         factor_states = self._classify_factors(
-            ticker, cadence, session, slot, session_date, factor_values
+            ticker, cadence, session, slot, session_date, factor_values, unobserved
         )
         ready = all(item["state"] != "warmup" for item in factor_states.values())
         if not self._frozen_baselines:
@@ -366,7 +374,9 @@ class LightweightFactorEngine:
             provenance=window.provenance,
         )
 
-    def _classify_factors(self, ticker, cadence, session, slot, session_date, values):
+    def _classify_factors(
+        self, ticker, cadence, session, slot, session_date, values, unobserved=()
+    ):
         states = {}
         for name, value in values.items():
             series = self._series(self._baseline_key(ticker, cadence, session, slot, name))
@@ -386,7 +396,7 @@ class LightweightFactorEngine:
                 direction = "up"
             state = "warmup"
             history_days = series.distinct_days_before(session_date)
-            if history_days >= self.min_history_days:
+            if name not in unobserved and history_days >= self.min_history_days:
                 state = "extreme" if distance >= extreme_threshold else "elevated" if distance >= threshold else "normal"
             states[name] = {
                 "group": FACTOR_GROUPS[name],
@@ -398,7 +408,7 @@ class LightweightFactorEngine:
                 "extreme_threshold": round(extreme_threshold, 8),
                 "history_days": history_days,
             }
-            if not self._frozen_baselines:
+            if not self._frozen_baselines and name not in unobserved:
                 self._add_baseline_value(
                     self._baseline_key(ticker, cadence, session, slot, name),
                     session_date,

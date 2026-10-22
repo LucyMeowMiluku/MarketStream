@@ -54,14 +54,33 @@ def test_emits_three_cadences_with_eight_factors_and_input_summary():
 
 def test_warmup_requires_five_distinct_trading_days_for_same_intraday_slot():
     engine = LightweightFactorEngine(cadences=(300,), min_history_days=5)
-    last = []
-    # Six completed days are needed so the sixth can be judged against five
-    # strictly-prior days without leaking the current window into its threshold.
-    for day in range(7):
-        when = BASE + timedelta(days=day * 7, minutes=day * 0)
-        last = engine.process(_trade("AAPL", when, 100 + day, 100, f"d{day}"))
-    assert last[0].warmup_status == "ready"
-    assert last[0].factor_states["return_surprise"]["history_days"] >= 5
+    emitted = []
+    # return_surprise is only observed once five strictly-prior raw returns
+    # exist; it then needs five strictly-prior days of its own history.
+    for day in range(12):
+        when = BASE + timedelta(days=day)
+        emitted.extend(engine.process(_trade("AAPL", when, 100 + day, 100, f"d{day}")))
+    assert emitted[-2].warmup_status == "warming_up"
+    assert emitted[-1].warmup_status == "ready"
+    assert emitted[-1].factor_states["return_surprise"]["history_days"] == 5
+
+
+def test_warmup_return_scores_do_not_pollute_return_surprise_threshold():
+    engine = LightweightFactorEngine(cadences=(300,), min_history_days=5)
+    emitted = []
+    for day in range(12):
+        when = BASE + timedelta(days=day)
+        price = 100.0 if day % 2 == 0 else 101.0
+        emitted.extend(engine.process(_trade("AAPL", when, price, 100, f"d{day}")))
+    recorded = [
+        value
+        for record in engine.export_baseline_state()["baselines"]
+        if record["name"] == "return_surprise"
+        for _, value in record["values"]
+    ]
+    # Before the raw-return scale exists the score would be ~1e4 here.
+    assert recorded and max(abs(value) for value in recorded) < 50
+    assert emitted[-1].factor_states["return_surprise"]["threshold"] < 50
 
 
 def test_ticker_state_isolated_and_bounded():
@@ -106,7 +125,7 @@ def test_exported_thresholds_can_be_frozen_before_test_replay():
     after = testing.export_baseline_state()["baselines"]
     assert before == after
     assert testing.frozen_baselines
-    assert snapshots[0].baseline_version.startswith("frozen-mad-v2:")
+    assert snapshots[0].baseline_version.startswith("frozen-mad-v3:")
 
 
 def test_baseline_series_overwrites_same_day_and_keeps_latest_twenty():

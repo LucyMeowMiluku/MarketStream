@@ -42,7 +42,7 @@ class Settings(BaseSettings):
     # missing value before the live consumer subscribes.
     factor_baseline_startup_mode: str | None = None
     factor_baseline_epoch_id: str | None = None
-    factor_baseline_algorithm_version: str = "rolling-mad-v2"
+    factor_baseline_algorithm_version: str = "rolling-mad-v3"
     factor_engine_version: str = "marketstream-0.1.0"
     factor_baseline_manifest: Path | None = None
     factor_baseline_manifest_sha256: str | None = None

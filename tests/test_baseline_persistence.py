@@ -41,7 +41,7 @@ def _config(tmp_path, mode, **overrides):
     values = {
         "mode": mode,
         "expected_epoch_id": None,
-        "baseline_algorithm_version": "rolling-mad-v2",
+        "baseline_algorithm_version": "rolling-mad-v3",
         "engine_version": "test-engine",
         "cadences": (300,),
         "min_history_days": 5,

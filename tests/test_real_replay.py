@@ -12,8 +12,8 @@ from processing.event_models import MarketEvent
 START = datetime(2025, 1, 6, 15, 0, tzinfo=timezone.utc)
 
 
-def _write_event(path: Path, event: MarketEvent) -> None:
-    path.write_text(json.dumps(event.to_dict()) + "\n")
+def _write_events(path: Path, *events: MarketEvent) -> None:
+    path.write_text("".join(json.dumps(event.to_dict()) + "\n" for event in events))
 
 
 def _trade(event_id: str, ticker: str, when: datetime, dataset_id: str, interval_id: str, phase: str):
@@ -64,21 +64,29 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
         baseline_path = interval_dir / "baseline.jsonl"
         evaluation_path = interval_dir / "evaluation.jsonl"
         local_start = start.astimezone(ZoneInfo("America/New_York"))
-        baseline_time = datetime.combine(
-            local_start.date() - timedelta(days=7), local_start.timetz()
-        ).astimezone(timezone.utc)
-        _write_event(
+        # return_surprise needs one prior raw return before it is observed and
+        # then one day of its own history, so two baseline sessions are needed.
+        baseline_times = [
+            datetime.combine(
+                local_start.date() - timedelta(days=days), local_start.timetz()
+            ).astimezone(timezone.utc)
+            for days in (14, 7)
+        ]
+        _write_events(
             baseline_path,
-            _trade(
-                f"alpaca-baseline-{index}",
-                ticker,
-                baseline_time,
-                dataset_id,
-                interval_id,
-                "baseline",
+            *(
+                _trade(
+                    f"alpaca-baseline-{index}-{position}",
+                    ticker,
+                    baseline_time,
+                    dataset_id,
+                    interval_id,
+                    "baseline",
+                )
+                for position, baseline_time in enumerate(baseline_times)
             ),
         )
-        _write_event(
+        _write_events(
             evaluation_path,
             _trade(
                 f"alpaca-evaluation-{index}",
@@ -95,7 +103,7 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
                 "baseline": {
                     "path": str(baseline_path),
                     "sha256": file_sha256(baseline_path),
-                    "events": 1,
+                    "events": 2,
                 },
                 "evaluation": {
                     "path": str(evaluation_path),
