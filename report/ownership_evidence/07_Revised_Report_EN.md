@@ -14,7 +14,7 @@ MarketEvent → Quality Gate → FactorSnapshot → CEP State Machines → Detec
 
 Trade, quote, bar, and news events use one data contract. The system calculates eight factors over 10-second, 1-minute, and 5-minute windows. It then applies six explicit CEP patterns. Results keep factor evidence and source event IDs.
 
-The evidence is reported by type. The current synthetic protocol gives Precision 0.750, Recall 1.000, and F1 0.857. Current CEP computation has p50 0.0150 ms and p99 0.0688 ms. Within that same pooled protocol, 40 of 240 negative-control cases emit 60 alerts already included in the 120 FP. An older five-minute injected protocol reported CEP F1 0.785 and ML ensemble F1 0.639. This old result does not prove that current CEP is better on real markets.
+The evidence is reported by type. Before revision, the synthetic protocol gave Precision 0.750, Recall 1.000, and F1 0.857, and 40 of 240 negative-control cases alerted; every false positive came from a rule letting a single extreme return complete a pattern. Removing that exception, the project's one pre-declared rule change, made before any real replay, gives Precision, Recall, and F1 of 1.000 and 0 of 240 alerting controls on the same protocol. Because the change was chosen from those controls, the revised result is an in-sample check of the implementation only. Current CEP computation has p50 0.0132 ms and p99 0.0259 ms. An older five-minute injected protocol reported CEP F1 0.785 and ML ensemble F1 0.639. This old result does not prove that current CEP is better on real markets.
 
 The latest saved Kafka and database soak has 240 inputs, 76 alerts, zero duplicates, and p95 latency of 1.616 seconds. An 88-second Alpaca IEX run stored 48,734 real input events and created all three snapshot cadences. It proves integration only. It does not prove detection accuracy. Real labels are not independently reviewed and frozen, so this report does not give real-market Precision, Recall, or F1.
 
@@ -86,7 +86,7 @@ Tetlock [12] linked media pessimism with market behaviour. This supports news as
 
 The Quality Gate checks duplicates, out-of-order events, stale input, invalid prices, crossed quotes, zero volume, and feed gaps. Severe quality flags suppress formal alerts. The original input remains available.
 
-A minute bar timestamp marks the start of its interval. A normal bar can therefore look stale under a single 30-second rule. The current code adds a 60-second close grace for bars.
+A minute bar's provider timestamp marks the start of its interval, but the bar only completes at the end of the minute and arrives after that. Keying it by its start put the whole minute's open, high, low and close into the first 10-second window of that minute in replay (future information), while live bars arrived late, so the two modes diverged. Bars now carry their interval explicitly in the payload; the event time is the completion time (interval end); the receive time is the observed arrival in live mode and, because the historical API has no publication time, the completion time in replay, marked as assumed in provenance. A bar only contributes to a window that contains its whole interval, so 10-second and 1-minute windows never use minute bars and 5-minute windows use the minutes completed inside them. First and last prices follow observation time (a bar's open at its start, its close at its end), so a late bar cannot overwrite a later trade, and live and replay give the same window. Staleness is measured from completion, with no separate bar grace; the converter version became `alpaca-market-event-v2`.
 
 ### 3.2 FactorSnapshot
 
@@ -115,14 +115,16 @@ The current core uses six small state machines:
 
 | Pattern | Main relation |
 |---|---|
-| Stock-specific dislocation | stock return and market residual agree, or return is extreme |
+| Stock-specific dislocation | stock return and market residual agree in the same window |
 | Liquidity pressure move | spread and imbalance pressure confirm a price move |
 | News-confirmed move | price follows news direction within five minutes |
 | Flash reversal | opposite price events occur within two cadences |
 | Sustained pressure | pressure appears in three distinct windows among the latest four |
 | Cross-asset shock | at least three tickers move in one direction within 60 seconds, including SPY or QQQ |
 
-The detector also checks warm-up and data quality. It applies a 300-second cooldown to the same ticker, pattern, and direction. Results keep evidence IDs and suppression reasons.
+The detector also checks warm-up and data quality. It applies a 300-second cooldown to the same ticker, pattern, and direction. Results keep evidence IDs and suppression reasons. The formal CEP versus Isolation Forest comparison replaces this cooldown with one alert policy shared by both methods (Section 6.7).
+
+An earlier version also completed stock-specific dislocation when the return alone was extreme. Without the market residual, that exception cannot separate a stock-specific move from a market-wide one, and it caused every synthetic false positive (Section 6.3). It was removed before any real replay. A single extreme return now remains an atomic event and an in-progress clue.
 
 ### 3.4 Infrastructure roles
 
@@ -168,6 +170,8 @@ A baseline cell is identified by:
 
 Each cell stores observations by session date. It keeps at most the latest 20 trading days with data. A cell needs five strictly earlier trading days before it is ready.
 
+`return_surprise` is normalised twice: the current return is scaled by the raw-return history, and the resulting score is then compared with its own history. With fewer than five days of raw returns the MAD is usually zero, the scale collapses to its numeric floor, and scores are inflated by up to about 10^6. An earlier version recorded those inflated scores, which then set the factor's threshold for about 20 sessions (from roughly 4 to roughly 508 in a simulation) while snapshots were already marked ready. `return_surprise` is now unobserved, not recorded and kept in warm-up until five days of raw returns exist. It starts its own history on day 6 and is ready on about day 11; the other seven factors still need five days. A 20-day replay baseline therefore leaves 15 days of `return_surprise` history on the evaluation day. Together with the zero-MAD rule (Section 4.4) this is baseline algorithm version `rolling-mad-v4`, so older epochs cannot be restored.
+
 This structure avoids mixing different stocks, windows, sessions, and times of day. It also creates many small cells. Some cells may remain in warm-up.
 
 ### 4.4 Median, MAD, and thresholds
@@ -179,6 +183,14 @@ scale=\max(1.4826\times MAD(X),10^{-6})
 \]
 
 The value 1.4826 is the normal-consistency scale for MAD. It does not mean that market factors are normally distributed.
+
+For the raw-return scale behind `return_surprise`, the numeric floor is not enough. IEX trades are sparse, so many 10-second windows contain only quotes and a return of exactly zero. In a disjoint 2023-Q4 calibration set the MAD of the raw-return cell was zero for 56.1% of 10-second, 33.9% of 1-minute and 5.2% of 5-minute windows. The scale then collapsed to 10^-6 (0.01 basis points), a one-tick move scored in the thousands, and 80.5% of CEP alerts came from such windows. The raw-return scale is therefore:
+
+\[
+scale_r=\max\Big(s,\ \frac{0.01}{P_{ref}}\Big),\quad s=1.4826\,MAD(X)\ \text{if}\ MAD(X)>0,\ \text{else}\ 1.2533\,\mathrm{mean}|x-\mathrm{median}(X)|
+\]
+
+1.2533 (√(π/2)) converts the mean absolute deviation to a normal standard deviation, the usual fallback for modified z-scores when MAD is zero. 0.01/P_ref is one minimum price increment as a return, the smallest observable change, so the floor comes from market rules rather than tuning. The rule was declared before the calibration results (Section 6.8). Per-factor classification keeps the formula above.
 
 For signed factors, the distance is \(|x-median|\). The elevated threshold is the stricter value from the 0.995 empirical quantile distance and \(4\times scale\). The extreme threshold uses the 0.999 quantile distance and \(6\times scale\).
 
@@ -251,48 +263,57 @@ The current label registry is still a draft. The evaluator therefore refuses to 
 
 ## 6. Results
 
-Source bindings: 6.1=CHECKS-20261022; 6.2=SYN-TRACE-20261022 (`factor_cep_traced.json`, `scenarios.json`); 6.3=SYN-SUITE-20261022 (`factor_cep_suite.json#/ablations`); 6.4=LEGACY-INJECTED (`methods`); 6.5=the three original `soak-*/report.json`; 6.6=`alpaca_live_e2e.json`. The abstract and conclusion repeat these runs. All seven provenance fields, file hashes and missing historical fields are recorded in the [run ledger](Evidence_Attachments/Result_Run_Ledger_20261022.md).
+Source bindings: 6.1=CHECKS-20261023; 6.2=SYN-TRACE-20261023 for current results and SYN-TRACE-20261022 for the pre-revision column (`factor_cep_traced.json`, `scenarios.json`); 6.3=SYN-SUITE-20261023 and SYN-SUITE-20261022 (`factor_cep_suite.json#/ablations`); 6.4=LEGACY-INJECTED (`methods`); 6.5=the three original `soak-*/report.json`; 6.6=`alpaca_live_e2e.json`. The abstract and conclusion repeat these runs. All seven provenance fields, file hashes and missing historical fields are recorded in the [run ledger](Evidence_Attachments/Result_Run_Ledger_20261022.md).
 
 
 ### 6.1 Tests and static checks
 
-CHECKS-20261022, on the archived audit working tree, produced:
+CHECKS-20261023, on the archived audit source snapshot, produced:
 
 ```text
-63 passed in 4.67s
+91 passed in 5.01s
 All checks passed (Ruff)
 ```
 
-The September 17 summary reported 62 tests; the new accounting regression adds one. The older 160-test statement has no complete run binding and is not current evidence.
+CHECKS-20261022 reported 63 passed; the additional tests cover the warm-up fix, the zero-MAD return scale, minute-bar timing, the shared alert policy, cross-asset cadence separation, quality-flag consistency, high-intensity negative controls and the label review tools. The September 17 summary reported 62 tests. The older 160-test statement has no complete run binding and is not current evidence.
 
 ### 6.2 Synthetic detection
 
-| Metric | Result |
-|---|---:|
-| TP | 360 |
-| FP | 120 |
-| FN | 0 |
-| Precision | 0.750 |
-| Recall | 1.000 |
-| F1 | 0.857 |
-| first detection p50 / p95 / p99 | 10 / 30 / 30 s |
-| CEP compute p50 / p95 / p99 | 0.0150 / 0.0306 / 0.0688 ms |
-| alerts per ticker-hour | 1.604 |
-| duplicate rate | 0 |
+Two runs use the same generator, seeds, matching rule and cooldown=0 protocol: SYN-TRACE-20261022 before the rule revision and SYN-TRACE-20261023 for the current implementation.
 
-The system detects all 360 generated target events. It emits 480 alerts, so 120 are unmatched. 
+| Metric | Before revision | Current |
+|---|---:|---:|
+| TP | 360 | 360 |
+| FP | 120 | 0 |
+| FN | 0 | 0 |
+| Precision | 0.750 | 1.000 |
+| Recall | 1.000 | 1.000 |
+| F1 | 0.857 | 1.000 |
+| alerting negative-control cases | 40 / 240 | 0 / 240 |
+| first detection p50 / p95 / p99 | 10 / 30 / 30 s | 10 / 30 / 30 s |
+| CEP compute p50 / p95 / p99 | 0.0150 / 0.0306 / 0.0688 ms | 0.0132 / 0.0178 / 0.0259 ms |
+| alerts per ticker-hour | 1.604 | 1.815 |
+| duplicate rate | 0 | 0 |
 
-The 120 FP comprise 60 unmatched alerts in positive scenarios and 60 alerts in negative controls. The 360 positive scenarios emit 420 alerts; the 240 controls emit 60 alerts across 40 alerting cases. Thus 40/240 is a case rate, and the 60 control alerts are already included in the 120 FP. This decomposition was verified in the new traced run; old aggregate JSON alone cannot establish historical row membership.
+Before revision, the 120 FP comprised 60 unmatched alerts in positive scenarios (high-intensity flash reversal 20, cross-asset shock 40) and 60 alerts in negative controls (high-intensity orderly market move 40, stale news 20). The 240 controls emitted those 60 alerts across 40 alerting cases, so 40/240 is a case rate and the 60 control alerts are already included in the 120 FP. Every one of the 120 came from the single-extreme-return exception: high intensity makes return surprise extreme, and the exception completed stock-specific dislocation on any such snapshot.
 
-The bootstrap resamples truth-hit indicators while holding FP fixed. All truth events are matched, so its interval collapses. It does not estimate normal-period false-alert uncertainty or establish stability across seeds. The 1.604 alerts/ticker-hour includes artificial ten-minute scenario gaps; zero duplicates with detector cooldown=0 does not validate production cooldown.
+The current perfect scores are not evidence of detection ability. The generator and the rules encode the same patterns, the rule change was chosen from these very controls, so the revised control result is in-sample, and the protocol is now saturated and cannot rank rule variants. It serves as an implementation regression check only.
+
+The bootstrap resamples truth-hit indicators while holding FP fixed. All truth events are matched in both runs, so its interval collapses. It does not estimate normal-period false-alert uncertainty or establish stability across seeds. Alerts per ticker-hour divide by the first-to-last time span times the number of tickers involved; the earlier false alerts on SPY enlarged that ticker set, which is why the value rises after the revision. It cannot be read as a real alert burden. Zero duplicates with detector cooldown=0 does not validate production cooldown.
 
 ### 6.3 Ablations
 
-Removing `stock_specific_dislocation` changes TP from 360 to 300 and FP from 120 to 0. Precision becomes 1.000 and Recall becomes 0.833. The system misses 60 generated anomalies. The result shows a trade-off between an early single-factor alert and multi-signal confirmation.
+| Setting | Precision | Recall | F1 | alerting controls |
+|---|---:|---:|---:|---:|
+| Before revision, full method (SYN-SUITE-20261022) | 0.750 | 1.000 | 0.857 | 16.7% |
+| Before revision, whole dislocation pattern removed | 1.000 | 0.833 | 0.909 | 0.0% |
+| Current, only the exception removed (SYN-SUITE-20261023) | 1.000 | 1.000 | 1.000 | 0.0% |
+
+The earlier draft read the 60 misses from removing the whole pattern as the value of the extreme exception. That attribution was wrong. Those 60 are the dislocation scenarios, which complete through return surprise and market residual agreeing at every intensity; they do not need the exception. Removing only the exception keeps all 60 and removes every false alert. In this protocol the exception added no detections and only false alerts. Whether it would find some real events earlier cannot be answered here.
+
+Current group ablations (SYN-SUITE-20261023) produce no false alerts, so Precision stays at 1.000 and only Recall moves. Removing price gives no completed detections. Removing liquidity or all microstructure factors lowers Recall to 0.667 (F1 0.800). Removing news lowers Recall to 0.833 (F1 0.909). Removing market context also gives Recall 0.833: dislocation now requires the residual, whereas before the revision 20 high-intensity dislocation cases completed through the exception (Recall 0.889).
 
 Removing the activity group has no effect. `relative_volume` is not a critical completion condition in the six current patterns. A factor can have a reasonable financial meaning but still have no measured role in the current rules.
-
-Removing price gives no completed detections. Removing liquidity or all microstructure factors lowers F1 to 0.632. Removing news lowers F1 to 0.750. Removing market context lowers F1 to 0.800.
 
 ### 6.4 Historical ML comparison
 
@@ -339,6 +360,22 @@ The draft and three AI-preannotation files each contain 24 proposed intervals (1
 
 The separate historical coverage artifact HIST-COVERAGE-20260814 contains Yahoo daily prices (277 rows per ticker, July 9, 2025–August 13, 2026) and Alpaca/Benzinga news (15,148 ticker-linked rows; 10,930 distinct article IDs; actual publication dates June 19, 2025–August 13, 2026). Its 60/20/20 split is a recorded proposal, not a completed micro-event baseline or evaluation.
 
+The replay protocol fixes how the comparison will be run once labels are frozen. Each interval uses a baseline of the 20 prior sessions at the same time of day, frozen before evaluation. Both methods are scored only on the reviewed ticker; context tickers such as SPY and QQQ only feed factors and cross-asset shock. Isolation Forest is fitted per interval on that ticker's post-warm-up baseline snapshots. Both methods first produce raw per-window detections. One shared alert policy then gates out warm-up and critical-quality windows and merges detections for the same ticker and direction within 300 seconds of an emitted alert, so precision differences are not driven by different post-processing; CEP's own per-pattern cooldown is not used here. Every run writes `window_detections.jsonl` with one row per scored window and method (score, fired flag, pattern, direction, policy outcome, raw and alert match), and `detector_comparison.json` reports both policy-level and raw per-window metrics. Zero-MAD handling: the raw-return scale uses the pre-declared, sensitivity-checked rule of Section 4.4, fixed before the protocol is frozen.
+
+Labels follow objective criteria approved before any candidate data was shown (`docs/LABELING_CRITERIA.md`). Consolidated SIP minute bars give each interval's total move, volume and range against the median of the same ticker and clock window over the previous 20 sessions. An anomaly needs a move at least 4× typical, a publicly documented cause, a clear direction and complete data; a normal control needs price, volume and the market within 1.5× typical, no company news and no major macro release. Everything else is excluded and replaced. The review interface hides the draft labels and shows no detector output.
+
+### 6.8 Zero-MAD sensitivity check (unlabelled calibration)
+
+Rule, variants and criteria were committed before the results. Data: Alpaca IEX, 30 sessions from 2023-10-02 to 2023-11-10, five tickers, 09:30–11:00 and 14:00–15:30, disjoint from all candidates, their baselines and the holdout. The first 20 sessions only build the rolling baseline; the last 10 are measured (65,081 windows, 150 ticker-hours) through the full quality gate, factors, CEP, Isolation Forest and the shared alert policy. With no labels, the check asks only whether the scale rule drives or distorts the output.
+
+| Rule | CEP alerts with scale at floor | IF alerts with scale at floor | CEP Jaccard, floor ×0.5 / ×2 | Price-atom rate, MAD=0 vs other windows |
+|---|---:|---:|---:|---:|
+| Old rule (floor 10^-6) | 80.5% | 29.2% | — | 4.44 |
+| Adopted: MeanAD fallback + one-tick floor | 22.6% | 24.3% | 0.91 / 0.85 | 1.54 |
+| Declared alternative: no score when MAD=0 | 43.0% | 36.2% | — | 0.00 |
+
+Under the old rule |z| in zero-MAD windows reached 2,159 at the 99th percentile and 83,065 at the maximum. The adopted rule passed the stability criterion (alert counts change by at most 1.4% between half and double the floor) and the distortion criterion (1.54 ≤ 2), but failed the floor-dominance criterion: about a quarter of alerts come from windows where the floor is the binding bound (limit 5%). The floor's value barely changes alerts within a plausible range, but it is the active bound there, and that failure is reported as is. The declared alternative also failed it, switched the price factor off in over half of the 10-second windows and removed 42% of CEP alerts, so the project lead chose the primary rule under the pre-declared procedure. Without minute bars the conclusion holds (atom-rate ratio 4.09 → 1.41). In the calibration period, CEP produced about 5.6 and Isolation Forest about 5.9 alerts per ticker-hour under the shared policy; without labels these are an alert-burden reference only and change no detection rule.
+
 ## 7. Discussion
 
 ### 7.1 Where the complexity moved
@@ -349,7 +386,7 @@ This makes each result easier to inspect. It does not remove the need for calibr
 
 ### 7.2 Negative results matter
 
-The negative controls show that the extreme dislocation exception is too permissive under some generated inputs. The activity ablation shows that one factor currently has no critical rule role. These results are kept because they affect the next design decision.
+The negative controls showed that the single-extreme-return dislocation exception was too permissive; it was removed before any real replay, using the project's one pre-declared rule change. Real evaluation may still reveal events that only show one extreme return without a residual; those must be reported as misses rather than fixed on the same test set. The activity ablation shows that one factor currently has no critical rule role. These results are kept because they affect the next design decision.
 
 ### 7.3 Evaluation is the main gap
 

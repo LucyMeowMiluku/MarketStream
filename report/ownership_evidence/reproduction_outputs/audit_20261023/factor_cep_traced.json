@@ -1,0 +1,63 @@
+{
+  "data_kind": "synthetic",
+  "ground_truth_kind": "generated_factor_sequences",
+  "metric_scope": "pipeline_validation_only",
+  "protocol": {
+    "seeds": 20,
+    "intensities": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "patterns": [
+      "stock_specific_dislocation",
+      "liquidity_pressure_move",
+      "news_confirmed_move",
+      "flash_reversal",
+      "sustained_pressure",
+      "cross_asset_shock"
+    ],
+    "disabled_groups": [],
+    "disabled_patterns": []
+  },
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "true_positives": 360,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "delay_p50_seconds": 10.0,
+    "delay_p95_seconds": 30.0,
+    "delay_p99_seconds": 30.0,
+    "end_to_end_p50_seconds": null,
+    "end_to_end_p95_seconds": null,
+    "end_to_end_p99_seconds": null,
+    "alerts_per_ticker_hour": 1.815126050420168,
+    "duplicate_alert_rate": 0.0
+  },
+  "cep_latency": {
+    "p50_ms": 0.013208,
+    "p95_ms": 0.017836049999999996,
+    "p99_ms": 0.025880839999999992
+  },
+  "negative_controls": {
+    "total": 240,
+    "alerts": 0,
+    "false_alert_rate": 0.0
+  },
+  "bootstrap_95_ci": {
+    "precision": [
+      1.0,
+      1.0
+    ],
+    "recall": [
+      1.0,
+      1.0
+    ],
+    "f1": [
+      1.0,
+      1.0
+    ]
+  }
+}

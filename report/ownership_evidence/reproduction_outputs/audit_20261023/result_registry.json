@@ -1,0 +1,99 @@
+{
+  "audit_date": "2026-10-23",
+  "missing_value_policy": "null means not established",
+  "entries": [
+    {
+      "id": "CHECKS-20261023",
+      "artifact": "report/ownership_evidence/reproduction_outputs/audit_20261023/pytest.txt",
+      "run_id": "CHECKS-20261023",
+      "data_kind": "tests",
+      "code_version": {
+        "HEAD": "738abfbea7458fa181343f23dde89d47cce0c8c4",
+        "source_manifest_sha256": "c49e226c13ac900e4543bc275dabd8ec3f1c7dd38f2724880375751619835bb2",
+        "snapshot": "report/ownership_evidence/reproduction_outputs/audit_20261023/source_snapshot.tar.gz",
+        "dirty_tree": false
+      },
+      "parameters": "uv run pytest -q; uv run ruff check .",
+      "raw_output": {
+        "pytest": "============================== 91 passed in 5.01s ==============================",
+        "ruff": "All checks passed!"
+      },
+      "conclusion_scope": "Declared behaviour of the current code only.",
+      "sha256": "6bb1b43d376a9b78e543b2913f33b03d2f75410410fb38d7b6bb6c1d02f97d3f"
+    },
+    {
+      "id": "SYN-TRACE-20261023",
+      "artifact": "report/ownership_evidence/reproduction_outputs/audit_20261023/factor_cep_traced.json",
+      "run_id": "SYN-TRACE-20261023",
+      "data_kind": "synthetic",
+      "code_version": {
+        "HEAD": "738abfbea7458fa181343f23dde89d47cce0c8c4",
+        "source_manifest_sha256": "c49e226c13ac900e4543bc275dabd8ec3f1c7dd38f2724880375751619835bb2",
+        "snapshot": "report/ownership_evidence/reproduction_outputs/audit_20261023/source_snapshot.tar.gz",
+        "dirty_tree": false
+      },
+      "label_version": "generated labels; generator hash in provenance.json",
+      "parameters": {
+        "seeds": 20,
+        "intensities": {
+          "low": 4.5,
+          "medium": 6.5,
+          "high": 9.0
+        },
+        "cooldown_seconds": 0,
+        "require_pattern": true,
+        "grace_after_seconds": 0
+      },
+      "conclusion_scope": "In-sample implementation check after the pre-declared rule change; not detection ability.",
+      "sha256": "97f30184d3fd9852bdfb43d1ae559b868581dc6a3524f686b00c6313b98ecebc"
+    },
+    {
+      "id": "SYN-SUITE-20261023",
+      "artifact": "report/ownership_evidence/reproduction_outputs/audit_20261023/factor_cep_suite.json",
+      "run_id": "SYN-SUITE-20261023",
+      "data_kind": "synthetic",
+      "code_version": {
+        "HEAD": "738abfbea7458fa181343f23dde89d47cce0c8c4",
+        "source_manifest_sha256": "c49e226c13ac900e4543bc275dabd8ec3f1c7dd38f2724880375751619835bb2",
+        "snapshot": "report/ownership_evidence/reproduction_outputs/audit_20261023/source_snapshot.tar.gz",
+        "dirty_tree": false
+      },
+      "parameters": {
+        "seeds": 20,
+        "intensities": {
+          "low": 4.5,
+          "medium": 6.5,
+          "high": 9.0
+        },
+        "cooldown_seconds": 0,
+        "require_pattern": true,
+        "grace_after_seconds": 0
+      },
+      "conclusion_scope": "Ablations of generated scenarios; saturated protocol.",
+      "sha256": "6d0129146b6381db043a2be38d7b8b5caf956abe5c1d86f33204d9e15c64f0f1"
+    },
+    {
+      "id": "ZMAD-20261023",
+      "artifact": "report/ownership_evidence/reproduction_outputs/zero_mad_20261023/summary.json",
+      "run_id": "ZMAD-20261023",
+      "data_kind": "real_historical_unlabelled_calibration",
+      "code_version": {
+        "HEAD_at_run": "0a2f010 parent 622b049 (study run before the rule was adopted in 738abfb)"
+      },
+      "data_source": "Alpaca IEX 2023-10-02..2023-11-10, manifest sha256 prefix bdc5f9344a343a6d (local, not published)",
+      "parameters": "docs/ZERO_MAD_SENSITIVITY_CN.md sections 2-5 and amendment 5a",
+      "conclusion_scope": "Whether the scale rule drives or distorts output; no precision or recall.",
+      "sha256": "dbb432750f0bf954a8e422c92d529dc33e54cf830a8441d2aa24163aa6539833"
+    },
+    {
+      "id": "LABEL-BASE-2023",
+      "artifact": "report/ownership_evidence/reproduction_outputs/labeling_base_rates_2023/summary.json",
+      "run_id": "LABEL-BASE-2023",
+      "data_kind": "real_historical_unlabelled",
+      "data_source": "Alpaca SIP split-adjusted minute bars 2023-07-10..2023-11-10",
+      "parameters": "docs/LABELING_CRITERIA.md thresholds (market-data rules only)",
+      "conclusion_scope": "Base rates of the labeling rules on a disjoint period; informative only.",
+      "sha256": "ab0f4647f8fecfab7c6446b12ad865aa7293f1429988a3c79ec7bf96c920be8b"
+    }
+  ]
+}

@@ -86,6 +86,38 @@ Precision=360/480=0.750，Recall=360/360=1.000，F1=0.857143；正确匹配的�
 - 原始输出：四个标签文件存在；正式结果不存在。没有运行就不赋予虚构 run ID。
 - 结论范围：不报告真实历史 Precision、Recall、F1 或真实正常期误警率；贡献只可主张提出／实现与测试准入协议，不能主张已验证真实市场有效性。
 
+## 2026-10-23 新增运行（当前结果以本节为准）
+
+机器清单：[audit_20261023/result_registry.json](../reproduction_outputs/audit_20261023/result_registry.json)。
+
+### CHECKS-20261023
+
+- 代码版本：HEAD `738abfb`，工作树干净（`dirty_tree=false`），源码快照 [source_snapshot.tar.gz](../reproduction_outputs/audit_20261023/source_snapshot.tar.gz)。
+- 参数：`uv run pytest -q`；`uv run ruff check .`。原始输出：[pytest.txt](../reproduction_outputs/audit_20261023/pytest.txt) 为 **91 passed in 5.01s**；[ruff.txt](../reproduction_outputs/audit_20261023/ruff.txt) 为 `All checks passed!`。
+- 结论范围：当前代码符合测试声明的行为，不证明市场效果。
+
+### SYN-TRACE-20261023 / SYN-SUITE-20261023
+
+- 代码版本：同上；命令 `uv run python -m report.tools.audit_results --output report/ownership_evidence/reproduction_outputs/audit_20261023 --run-id audit-synthetic-20261023`。
+- 数据与标签：与 SYN-*-20261022 相同的生成器、种子、强度与匹配规则（20 seeds × low/medium/high，cooldown=0）。
+- 结果：TP/FP/FN = 360/0/0，Precision/Recall/F1 = 1.000/1.000/1.000，负对照 0/240；首次检测延迟 p50/p95/p99 = 10/30/30 s；1.815 alerts/ticker-hour（分母口径同上，随参与 ticker 集合变化）；trace pass CEP 计时 p50/p95/p99 = 0.0132/0.0178/0.0259 ms，suite pass 为 0.0126/0.0173/0.0210 ms。消融 F1：activity 1.000，liquidity 与 microstructure 0.800，market context 与 news 0.909，price 0，各单一模式 0.909。
+- 结论范围：删除单因子极端价格例外（预先声明的唯一一次规则修订）之后的**样本内**实现检查；负对照正是该修订的依据，生成协议已饱和，不代表检测能力。SYN-*-20261022 保留为修订前对照。
+
+### ZMAD-20261023：零 MAD 敏感性检验
+
+- 代码版本：检验在 `0a2f010` 之前完成，预注册 `d37edbe`，修订 `6bbbb16`；采纳规则见 `738abfb`。
+- 数据：Alpaca IEX 2023-10-02 至 2023-11-10，30 个交易日、五标的、两时段；报价每秒保留最后一笔；manifest SHA-256 前缀 `bdc5f9344a343a6d`（本地，不公开）。
+- 标签：无（无标签校准）。
+- 原始输出：[zero_mad_20261023/summary.json](../reproduction_outputs/zero_mad_20261023/summary.json)、[per_block.json](../reproduction_outputs/zero_mad_20261023/per_block.json)。
+- 结论范围：尺度规则是否主导或扭曲输出；主方案 C3、C4 通过，C2 不通过（CEP 22.6%、IF 24.3%）；不报告 Precision/Recall。详见 `docs/ZERO_MAD_SENSITIVITY_CN.md`。
+
+### LABEL-BASE-2023：标注准则基准率
+
+- 数据：Alpaca SIP 拆股调整分钟线，2023-07-10 至 2023-11-10，计量 2023-08-14 起 64 个交易日 × 5 标的 × 2 时段 = 640 个窗口。
+- 参数：`docs/LABELING_CRITERIA.md` 中可自动计算的市场数据规则（A1、A2、A4、A5；N1–N3、N6）。
+- 原始输出：[labeling_base_rates_2023/summary.json](../reproduction_outputs/labeling_base_rates_2023/summary.json)。
+- 结论范围：准则在不相交时期的触发频率，仅供批准准则时参考；准则已于 2026-10-23 以 volume option 2 批准。
+
 ## 核验覆盖与保留缺口
 
 本轮逐项对照摘要、实验与结论数字，重跑 synthetic 基线及消融、重算逐场景 FP 分区、核对历史 JSON 的计数／比例／分位数、检查全部四个标签文件并同步中英文贡献材料。原始日志、历史 JSON 和 ZIP 未改写。旧汇总缺 execution hash、逐条原始输出、数据／标签版本时，已记录为缺失并缩小为“保存的历史汇总”，未将复跑结果当成旧运行的逐条证据。文献及个人决策归属不在本次数值复核的重新审阅范围内。
