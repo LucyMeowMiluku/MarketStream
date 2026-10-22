@@ -40,6 +40,7 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
     for index in range(24):
         kind = "anomaly" if index < 12 else "normal"
         ticker = tickers[index % len(tickers)]
+        context = "SPY" if ticker != "SPY" else "QQQ"
         start = START + timedelta(days=index * 7)
         interval_id = f"{kind}-{index:02d}"
         interval = ReviewedInterval(
@@ -56,7 +57,7 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
             approval_status="approved",
             reviewed_by="reviewer",
             reviewed_at=START,
-            context_tickers=(),
+            context_tickers=(context,),
         )
         intervals.append(interval)
         interval_dir = tmp_path / "dataset" / interval_id
@@ -65,36 +66,41 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
         evaluation_path = interval_dir / "evaluation.jsonl"
         local_start = start.astimezone(ZoneInfo("America/New_York"))
         # return_surprise needs one prior raw return before it is observed and
-        # then one day of its own history, so two baseline sessions are needed.
+        # then one day of its own history; a third session leaves post-warm-up
+        # snapshots for fitting Isolation Forest.
         baseline_times = [
             datetime.combine(
                 local_start.date() - timedelta(days=days), local_start.timetz()
             ).astimezone(timezone.utc)
-            for days in (14, 7)
+            for days in (21, 14, 7)
         ]
         _write_events(
             baseline_path,
             *(
                 _trade(
-                    f"alpaca-baseline-{index}-{position}",
-                    ticker,
-                    baseline_time,
+                    f"alpaca-baseline-{index}-{position}-{symbol}",
+                    symbol,
+                    baseline_time + timedelta(seconds=offset),
                     dataset_id,
                     interval_id,
                     "baseline",
                 )
                 for position, baseline_time in enumerate(baseline_times)
+                for offset, symbol in enumerate((ticker, context))
             ),
         )
         _write_events(
             evaluation_path,
-            _trade(
-                f"alpaca-evaluation-{index}",
-                ticker,
-                start,
-                dataset_id,
-                interval_id,
-                "evaluation",
+            *(
+                _trade(
+                    f"alpaca-evaluation-{index}-{symbol}",
+                    symbol,
+                    start + timedelta(seconds=offset),
+                    dataset_id,
+                    interval_id,
+                    "evaluation",
+                )
+                for offset, symbol in enumerate((ticker, context))
             ),
         )
         manifest_intervals.append(
@@ -103,12 +109,12 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
                 "baseline": {
                     "path": str(baseline_path),
                     "sha256": file_sha256(baseline_path),
-                    "events": 2,
+                    "events": 6,
                 },
                 "evaluation": {
                     "path": str(evaluation_path),
                     "sha256": file_sha256(evaluation_path),
-                    "events": 1,
+                    "events": 2,
                 },
                 "requests": [{"complete": True}],
             }
@@ -153,6 +159,9 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
     assert result["counts"]["reviewed_intervals"] == 24
     assert result["metrics"]["false_negatives"] == 12
     assert result["auxiliary"]["accuracy_reported"] is False
+    for run in result["interval_runs"]:
+        # Context-ticker snapshots feed features but are never scored.
+        assert 0 < run["scored_snapshots"] < run["snapshots"]
     for artifact in result["artifacts"].values():
         assert Path(artifact).exists()
     html = Path(result["artifacts"]["html"]).read_text()

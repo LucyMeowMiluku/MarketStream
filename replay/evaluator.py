@@ -353,10 +353,17 @@ class RealReplayEvaluator:
                 baseline_state,
                 dataset_id=manifest["dataset_id"],
             )
+            # CEP alerts are only scored for the reviewed ticker; context
+            # tickers (e.g. SPY/QQQ) only feed features.  Give Isolation Forest
+            # the same scope so its context alerts are not counted as FPs.
+            scored_snapshots = [
+                step.snapshot for step in steps if step.snapshot.ticker == interval.ticker
+            ]
             _, interval_if_detections = isolation_forest_detections(
-                training_snapshots,
-                [step.snapshot for step in steps],
+                [item for item in training_snapshots if item.ticker == interval.ticker],
+                scored_snapshots,
             )
+            interval_summary["scored_snapshots"] = len(scored_snapshots)
             if baseline_summary["events"] != interval_manifest["baseline"]["events"]:
                 raise ValueError(
                     f"interval {interval.interval_id}: baseline event count mismatch"
@@ -503,7 +510,11 @@ class RealReplayEvaluator:
                 "config": {
                     "contamination": 0.05,
                     "random_state": 42,
-                    "protocol": "per-interval baseline fit; shared evaluation snapshots",
+                    "protocol": (
+                        "per-interval fit on the reviewed ticker's post-warm-up "
+                        "baseline snapshots; both methods scored on the reviewed "
+                        "ticker's evaluation snapshots"
+                    ),
                 },
                 "methods": {
                     "factor_cep": metrics.to_dict(),

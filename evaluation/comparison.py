@@ -93,13 +93,20 @@ def isolation_forest_detections(
     contamination: float = 0.05,
     random_state: int = 42,
 ) -> tuple[IsolationForestBaseline, list[DetectedEvent]]:
-    """Fit on one interval's baseline phase and score its evaluation phase."""
+    """Fit on one interval's baseline phase and score its evaluation phase.
 
+    Warm-up snapshots are excluded from fitting: their factor values are
+    computed against immature baselines and would distort the scaler.
+    """
+
+    ready = [snapshot for snapshot in training if snapshot.warmup_status == "ready"]
+    if not ready:
+        raise ValueError("Isolation Forest requires post-warm-up training snapshots")
     baseline = IsolationForestBaseline(
         contamination=contamination,
         random_state=random_state,
     )
-    baseline.fit(training)
+    baseline.fit(ready)
     detections = []
     for snapshot in testing:
         prediction = baseline.predict(snapshot)

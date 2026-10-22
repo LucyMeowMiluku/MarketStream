@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 import numpy as np
 import pytest
 
-from evaluation.comparison import compare_detectors
+from evaluation.comparison import compare_detectors, isolation_forest_detections
 from evaluation.isolation_forest import FACTOR_COLUMNS, IsolationForestBaseline
 from evaluation.metrics import GroundTruthEvent
 from processing.event_models import FACTOR_GROUPS, FactorSnapshot
@@ -80,3 +80,20 @@ def test_both_methods_share_the_same_test_snapshots_and_event_metrics():
     assert result["config"]["testing_snapshots"] == 2
     assert set(result["methods"]) == {"factor_cep", "isolation_forest"}
     assert result["feature_contract"] == list(FACTOR_COLUMNS)
+
+
+def test_warmup_snapshots_are_excluded_from_isolation_forest_fit():
+    from dataclasses import replace
+
+    ready = [_snapshot(index) for index in range(30)]
+    # Warm-up factor values are computed against immature baselines.
+    warming = [
+        replace(_snapshot(100 + index, anomalous=True), warmup_status="warming_up")
+        for index in range(30)
+    ]
+    baseline, _ = isolation_forest_detections(warming + ready, [_snapshot(200)])
+    reference = IsolationForestBaseline(random_state=42)
+    reference.fit(ready)
+    assert np.array_equal(baseline._scaler.mean_, reference._scaler.mean_)
+    with pytest.raises(ValueError, match="post-warm-up"):
+        isolation_forest_detections(warming, [_snapshot(200)])
