@@ -355,26 +355,32 @@ class CrossAssetShockMachine:
     name = "cross_asset_shock"
 
     def __init__(self, max_frames: int = 256):
-        self._prices = deque(maxlen=max_frames)
+        # One cross-ticker buffer per cadence: 10s, 1m and 5m windows must not
+        # confirm each other.
+        self._prices = defaultdict(lambda: deque(maxlen=max_frames))
 
     def expire(self, snapshot):
+        prices = self._prices[snapshot.cadence]
         cutoff = snapshot.event_time - timedelta(seconds=60)
-        while self._prices and self._prices[0][0] < cutoff:
-            self._prices.popleft()
+        while prices and prices[0][0] < cutoff:
+            prices.popleft()
 
     def advance(self, snapshot, atoms):
         self.expire(snapshot)
         price = _by_factor(atoms).get("return_surprise")
-        if price:
-            self._prices.append((snapshot.event_time, snapshot.ticker, price))
+        if price is None:
+            # Only the ticker that has just moved can complete the shock.
+            return [], []
+        prices = self._prices[snapshot.cadence]
+        prices.append((snapshot.event_time, snapshot.ticker, price))
         completed: list[PatternMatch] = []
         for direction in ("up", "down"):
-            relevant = [item for item in self._prices if item[2].direction == direction]
+            relevant = [item for item in prices if item[2].direction == direction]
             tickers = {ticker for _, ticker, _ in relevant}
             if (
-                len(tickers) >= 3
+                price.direction == direction
+                and len(tickers) >= 3
                 and tickers.intersection({"SPY", "QQQ"})
-                and snapshot.ticker in tickers
             ):
                 completed.append(
                     _pattern(
@@ -391,14 +397,16 @@ class CrossAssetShockMachine:
         if ticker is None:
             self._prices.clear()
             return
-        self._prices = deque(
-            (item for item in self._prices if item[1] != ticker),
-            maxlen=self._prices.maxlen,
-        )
+        for cadence, prices in self._prices.items():
+            self._prices[cadence] = deque(
+                (item for item in prices if item[1] != ticker), maxlen=prices.maxlen
+            )
 
     @property
     def state_keys(self):
-        return len({ticker for _, ticker, _ in self._prices})
+        return len(
+            {ticker for prices in self._prices.values() for _, ticker, _ in prices}
+        )
 
 
 def build_state_machines(max_frames: int) -> list[PatternMachine]:

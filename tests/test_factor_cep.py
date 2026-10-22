@@ -113,3 +113,23 @@ def test_cep_ticker_state_has_a_fixed_upper_bound():
         detector.process(snapshot)
     assert detector.factor_state_size["tickers"] == 2
     assert detector.factor_state_size["histories"] <= 2
+
+
+def test_cross_asset_shock_needs_same_cadence_and_a_fresh_move():
+    from cep.state_machines import CrossAssetShockMachine
+
+    def completes(snapshots):
+        machine = CrossAssetShockMachine()
+        return [
+            bool(machine.advance(item, CEPDetector._atomic_events(item))[0])
+            for item in snapshots
+        ]
+
+    spy, aapl, tsla = generate_scenario("cross_asset_shock", seed=1, intensity="medium").snapshots
+    assert completes([spy, aapl, tsla]) == [False, False, True]
+    mixed = generate_scenario("cross_asset_shock", seed=1, intensity="medium").snapshots
+    mixed[2].cadence = "1m"
+    assert completes(mixed) == [False, False, False]
+    quiet = generate_scenario("high_volume_no_price_move", seed=1, intensity="medium").snapshots[0]
+    quiet.event_time = tsla.event_time + timedelta(seconds=10)
+    assert completes([spy, aapl, tsla, quiet]) == [False, False, True, False]
