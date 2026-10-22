@@ -56,7 +56,7 @@ scale  = max(spread, 0.01 / reference_price)
 | `mean_ad_tick_0.5/1/2/4` | 主方案及下限 ×0.5、×2、×4 |
 | `zero_when_mad_zero` | 备选：MAD = 0 时不给分（z = 0） |
 | `mean_ad_tick_1_factors_too` | 探索：分类阶段也用 MeanAD |
-| `bar_end_*` | 稳健性：分钟线时间戳改为分钟结束时 |
+| `bar_end_*` → `no_bars_*` | 稳健性：见 5a 修订 |
 
 每个变体都运行完整的生产链：质量门 → 因子引擎 → CEP（逐窗口原始检测）与按 ticker 拟合的
 Isolation Forest → 与正式评测相同的共享告警策略。
@@ -78,6 +78,17 @@ Isolation Forest → 与正式评测相同的共享告警策略。
 uv run python -m scripts.collect_calibration_events
 uv run python -m scripts.zero_mad_sensitivity --output report/ownership_evidence/reproduction_outputs/zero_mad_20261023
 ```
+
+## 5a. 协议修订（2026-10-23，仍在任何结果产生之前）
+
+分钟线时间语义已在生产代码中修正（`alpaca-market-event-v2`：bar 以区间结束为事件时间，
+payload 保存区间，窗口只使用区间完全落入的 bar）。因此：
+
+- 所有变体改用修正后的语义运行。采集时以旧语义保存的 bar，在载入时经生产转换器
+  `stock_row_to_event` 升级，并丢弃完成时间晚于时段结束的 bar；
+- 原稳健性变体 `bar_end_*`（把 bar 移到分钟结束）现已是生产语义，改为 `no_bars_*`
+  （完全不使用分钟线），用于检验结论对分钟线的依赖；
+- 主方案、其余变体、判据 C1–C4 与决策规则不变。
 
 ## 6. 结果
 

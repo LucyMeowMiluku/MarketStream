@@ -18,7 +18,7 @@ import statistics
 from collections import Counter, defaultdict
 from concurrent.futures import ProcessPoolExecutor
 from dataclasses import asdict, dataclass, replace
-from datetime import timedelta
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -32,6 +32,8 @@ from processing.data_quality import EventQualityGate
 from processing.event_models import EventType, FactorSnapshot, MarketEvent
 from processing.factor_engine import LightweightFactorEngine
 from processing.factor_state import NY
+from replay.alpaca_history import stock_row_to_event
+from scripts.collect_calibration_events import BLOCKS
 
 BASELINE_SESSIONS = 20
 GAUSSIAN_MAD = 1.4826
@@ -48,7 +50,7 @@ class Variant:
     floor_ticks: float | None = None  # lower bound in ticks / reference price
     zero_when_degenerate: bool = False  # alternative: no score without spread
     mean_ad_factors: bool = False  # exploratory: fallback in classification too
-    bar_end_time: bool = False  # robustness: timestamp bars at the minute end
+    exclude_bars: bool = False  # robustness: drop minute bars entirely
 
 
 def _spread(values, median, mad, *, mean_ad: bool) -> tuple[float, str]:
@@ -106,21 +108,39 @@ def variants() -> list[Variant]:
         Variant("mean_ad_tick_4", mean_ad=True, floor_ticks=4),
         Variant("zero_when_mad_zero", mean_ad=False, floor_ticks=1, zero_when_degenerate=True),
         Variant("mean_ad_tick_1_factors_too", mean_ad=True, floor_ticks=1, mean_ad_factors=True),
-        Variant("bar_end_legacy", mean_ad=False, floor_fixed=1e-6, bar_end_time=True),
-        Variant("bar_end_mean_ad_tick_1", mean_ad=True, floor_ticks=1, bar_end_time=True),
+        Variant("no_bars_legacy", mean_ad=False, floor_fixed=1e-6, exclude_bars=True),
+        Variant("no_bars_mean_ad_tick_1", mean_ad=True, floor_ticks=1, exclude_bars=True),
     ]
 
 
-def _load_session(path: Path, bar_end_time: bool) -> list[MarketEvent]:
-    events = [MarketEvent.from_dict(json.loads(line)) for line in path.read_text().splitlines()]
-    if bar_end_time:
-        events = [
-            replace(event, event_time=event.event_time + timedelta(minutes=1))
-            if event.event_type == EventType.BAR
-            else event
-            for event in events
-        ]
-        events.sort(key=lambda event: (event.event_time, event.event_id))
+def _upgrade_bar(event: MarketEvent) -> MarketEvent:
+    """Convert a bar stored with the v1 (interval-start) semantics to v2."""
+
+    if "interval_start" in event.bar:
+        return event
+    bar = event.bar
+    row = {"t": event.event_time.isoformat(), "o": bar["open"], "h": bar["high"],
+           "l": bar["low"], "c": bar["close"], "v": bar["volume"],
+           "n": bar.get("trade_count"), "vw": bar.get("vwap")}
+    upgraded = stock_row_to_event(
+        "bar", event.ticker, row, dataset_id=event.dataset_id,
+        interval_id=event.provenance["interval_id"], phase=event.provenance["phase"],
+    )
+    return replace(upgraded, event_id=event.event_id)
+
+
+def _load_session(path: Path, block_end, exclude_bars: bool) -> list[MarketEvent]:
+    events = []
+    for line in path.read_text().splitlines():
+        event = MarketEvent.from_dict(json.loads(line))
+        if event.event_type == EventType.BAR:
+            if exclude_bars:
+                continue
+            event = _upgrade_bar(event)
+            if event.event_time > block_end:  # completes after the block window
+                continue
+        events.append(event)
+    events.sort(key=lambda event: (event.event_time, event.event_id))
     return events
 
 
@@ -138,7 +158,11 @@ def run_block(variant: Variant, block_dir: Path, sessions: list[str]) -> dict:
     quality = EventQualityGate()
     by_session: dict[str, list[FactorSnapshot]] = defaultdict(list)
     for session in sessions:
-        for event in _load_session(block_dir / f"{session}.events.jsonl", variant.bar_end_time):
+        block_end = datetime.combine(
+            date.fromisoformat(session), BLOCKS[block_dir.name][1], NY
+        ).astimezone(timezone.utc)
+        path = block_dir / f"{session}.events.jsonl"
+        for event in _load_session(path, block_end, variant.exclude_bars):
             assessed = quality.assess(event, mode="replay", now=event.event_time)
             for snapshot in engine.process(assessed):
                 by_session[_session_of(snapshot)].append(snapshot)

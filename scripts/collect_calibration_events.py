@@ -74,12 +74,14 @@ def _collect_ticker(client, session, block, ticker, part: Path) -> dict:
             rows.extend(page)
             pages += 1
         stats[plural] = {"rows": len(rows), "pages": pages}
-        events.extend(
+        converted = (
             stock_row_to_event(
                 kind, ticker, row, dataset_id=DATASET_ID, interval_id=interval_id, phase="calibration"
             )
             for row in rows
         )
+        # Bars completing after the window end were not available inside it.
+        events.extend(event for event in converted if event.event_time <= end)
     last_per_second: dict[int, dict] = {}
     seen, pages = 0, 0
     for page, _ in client.iter_pages(
