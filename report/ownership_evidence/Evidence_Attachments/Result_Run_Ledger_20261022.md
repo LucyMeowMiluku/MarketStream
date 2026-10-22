@@ -101,7 +101,7 @@ Precision=360/480=0.750，Recall=360/360=1.000，F1=0.857143；正确匹配的�
 - 代码版本：同上；命令 `uv run python -m report.tools.audit_results --output report/ownership_evidence/reproduction_outputs/audit_20261023 --run-id audit-synthetic-20261023`。
 - 数据与标签：与 SYN-*-20261022 相同的生成器、种子、强度与匹配规则（20 seeds × low/medium/high，cooldown=0）。
 - 结果：TP/FP/FN = 360/0/0，Precision/Recall/F1 = 1.000/1.000/1.000，负对照 0/240；首次检测延迟 p50/p95/p99 = 10/30/30 s；1.815 alerts/ticker-hour（分母口径同上，随参与 ticker 集合变化）；trace pass CEP 计时 p50/p95/p99 = 0.0132/0.0178/0.0259 ms，suite pass 为 0.0126/0.0173/0.0210 ms。消融 F1：activity 1.000，liquidity 与 microstructure 0.800，market context 与 news 0.909，price 0，各单一模式 0.909。
-- 结论范围：删除单因子极端价格例外（预先声明的唯一一次规则修订）之后的**样本内**实现检查；负对照正是该修订的依据，生成协议已饱和，不代表检测能力。SYN-*-20261022 保留为修订前对照。
+- 结论范围：删除单因子极端价格例外（项目计划第 4 项“依据负对照误报做一次预先声明的规则改动”）之后的**样本内**实现检查；负对照正是该修订的依据，生成协议已饱和，不代表检测能力。SYN-*-20261022 保留为修订前对照。
 
 ### ZMAD-20261023：零 MAD 敏感性检验
 
