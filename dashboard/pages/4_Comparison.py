@@ -11,7 +11,13 @@ st.set_page_config(page_title="Method Comparison — MarketStream", page_icon=":
 st.title("CEP vs Isolation Forest")
 st.caption("Both methods must use the same factor snapshots, test interval and event-level metrics.")
 
-default_path = Path("data/evaluation/detector_comparison.json")
+# replay.evaluator writes data/replay/runs/<run_id>/detector_comparison.json;
+# default to the most recently written run.
+runs = sorted(
+    Path("data/replay/runs").glob("*/detector_comparison.json"),
+    key=lambda item: item.stat().st_mtime,
+)
+default_path = runs[-1] if runs else Path("data/replay/runs/<run_id>/detector_comparison.json")
 path_text = st.text_input("Frozen comparison JSON", str(default_path))
 path = Path(path_text)
 

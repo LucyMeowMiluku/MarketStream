@@ -53,11 +53,23 @@ def fetch_price_data(ticker: str, lookback: int) -> pd.DataFrame:
 
 @st.cache_data(ttl=30)
 def fetch_sentiment_data(ticker: str, limit: int) -> pd.DataFrame:
+    # News is persisted as MarketEvent rows; the legacy sentiment_scores table
+    # is no longer written by the pipeline.
     query = """
-        SELECT time, ticker, headline, source, sentiment_score, sentiment_label
-        FROM sentiment_scores
-        WHERE ticker = %(ticker)s
-        ORDER BY time DESC
+        SELECT
+            event_time AS time,
+            ticker,
+            payload->>'headline' AS headline,
+            COALESCE(payload->>'source', feed) AS source,
+            (payload->>'sentiment_score')::float AS sentiment_score,
+            CASE
+                WHEN (payload->>'sentiment_score')::float > 0 THEN 'positive'
+                WHEN (payload->>'sentiment_score')::float < 0 THEN 'negative'
+                ELSE 'neutral'
+            END AS sentiment_label
+        FROM market_events
+        WHERE event_type = 'news' AND ticker = %(ticker)s
+        ORDER BY event_time DESC
         LIMIT %(limit)s
     """
     return pd.read_sql(query, engine(), params={"ticker": ticker, "limit": limit})
