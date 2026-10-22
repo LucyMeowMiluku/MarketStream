@@ -1,8 +1,9 @@
 # Labeling criteria for the reviewed real-market intervals
 
-**Status: PROPOSED — awaiting approval by the project lead (XI LU).** Nothing in this file
-may be changed after approval except through a dated amendment written before any interval is
-labelled. No interval may be labelled until the status line reads *APPROVED*.
+**Status: APPROVED (2026-10-23), volume option 2 — approved by the project lead (XI LU).**
+Nothing in this file may be changed after approval except through a dated amendment written
+before any interval is labelled. Approval was given before any candidate-interval data was
+shown to the approver.
 
 ## 0. Independence
 
@@ -46,13 +47,13 @@ values. Each ratio is `today / typical`, e.g. `r_M = |M| / median(|M| over 20 se
 minutes are always busier than the afternoon. Comparing a stock with itself at the same time
 of day removes both effects. The median ignores a few unusual days in the reference period.
 
-## 3. Anomaly — all of A1–A5 must hold
+## 3. Anomaly — A1, A3, A4 and A5 must hold; A2 is supporting evidence
 
 | Rule | Requirement | Plain-language reason |
 |---|---|---|
 | A1 magnitude | `r_M ≥ 4` **and** `|M| ≥ 1.0%` (single stocks) or `≥ 0.5%` (SPY, QQQ) | At least four times the usual move for this time slot. If moves were bell-shaped this is about 2.7 standard deviations (roughly 1 day in 150); real markets have fatter tails, so Section 7 reports the actual rate. The floor stops a very calm reference month from turning a small move into an "anomaly". |
-| A2 participation | `r_V ≥ 2` | Real news brings in more trading. Doubling the usual volume is a common "unusual volume" screen. |
-| A3 documented cause | at least one https source describing a catalyst that became public **after the reference time and before the window end** | Makes the label checkable by anyone, and is required by the label schema. A headline alone is not enough; A1 and A2 must also hold. Preferred sources: company IR / SEC filings, Federal Reserve, BLS/BEA, exchange notices; then major news outlets. |
+| A2 participation (supporting, not required) | `r_V ≥ 2` is recorded and needed for 0.9 confidence | Real news usually brings in more trading, but after overnight news much of it happens before the open (Section 8), so volume corroborates rather than decides. |
+| A3 documented cause | at least one https source describing a catalyst that became public **after the reference time and before the window end** | Makes the label checkable by anyone, and is required by the label schema. A headline alone is not enough; A1 must also hold. Any documented public cause counts, including a major analyst rating change. Preferred sources: company IR / SEC filings, Federal Reserve, BLS/BEA, exchange notices; then major news outlets. |
 | A4 clear direction | not (gap and in-window move have opposite signs **and** `|W| ≥ 0.5·|G|`) | If the price jumps at the open and then gives back half or more of the jump, the event has no single direction. |
 | A5 complete data | at least 95% of window minutes present for the ticker, SPY and QQQ; no trading halt in the window | Missing data cannot support a label. |
 
@@ -91,7 +92,8 @@ ones. Thresholds are never relaxed to reach 12 + 12.
 ## 6. Recording and replacements
 
 - **Confidence:** 0.9 when every applicable threshold is met with at least a 25% margin
-  (e.g. `r_M ≥ 5`, `r_V ≥ 2.5`; for normals `r_M ≤ 1.2`); otherwise 0.7.
+  (e.g. `r_M ≥ 5`; for normals `r_M ≤ 1.2` and `r_V ≤ 1.2`) and, for anomalies, volume is at
+  least 2× typical (`r_V ≥ 2`); otherwise 0.7.
 - For every interval record the measured values, each rule's result, the sources checked
   (with publication times), the decision and a short reason. The review tool does this.
 - **Replacements:** a rejected candidate is replaced from the candidate pool, or with a new
@@ -147,8 +149,8 @@ Clarification proposed with either option: A3 accepts any documented public caus
 major analyst rating change, provided it became public after the reference time; N4 still
 ignores routine analyst notes, because a move large enough to matter already fails N1.
 
-The project lead chooses an option; the chosen text then replaces Section 3 and the status
-line becomes *APPROVED* with the date.
+**Decision (2026-10-23): Option 2**, together with the A3/N4 clarification above. Section 3
+and the confidence rule in Section 6 were updated accordingly when the criteria were approved.
 
 ## 9. Review tool
 
