@@ -93,6 +93,10 @@ def main() -> None:
         if message.error():
             log.error("consumer_error", error=str(message.error()))
             continue
+        if ("marketstream-mode", b"live") in (message.headers() or []):
+            # Live and replay share the raw topic; live events belong to the
+            # durable runner and must not enter this ephemeral engine.
+            continue
         try:
             event = MarketEvent.from_dict(json.loads(message.value().decode()))
             event = replace(event, mode=event.mode or "replay")
