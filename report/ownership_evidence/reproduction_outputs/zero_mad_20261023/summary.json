@@ -1,0 +1,1124 @@
+{
+  "calibration_manifest_sha256": "bdc5f9344a343a6dd31f5730977cc8471ae026893ceb63f9cba1e16cc7f1175c",
+  "variants": {
+    "legacy_fixed_1e-06": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.5609156296803062,
+          "floor_bound_share": 0.5609156296803062
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.3390482470601165,
+          "floor_bound_share": 0.3390482470601165
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.02512594657963943,
+        "mad_zero_windows": 0.1115453460620525,
+        "ratio": 4.439448508277981
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.52286952,
+          "99": 26.581258328000025,
+          "99.9": 94.77223496400269,
+          "100": 1754.29653515
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 2158.5738563940954,
+          "99.9": 14093.621730405885,
+          "100": 83065.00301872
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2843,
+          "policy_alerts": 834,
+          "policy_alerts_per_ticker_hour": 5.56,
+          "alerts_floor_bound_share": 0.8045563549160671,
+          "alerts_mad_zero_share": 0.8045563549160671,
+          "alerts_by_pattern": {
+            "flash_reversal": 201,
+            "cross_asset_shock": 203,
+            "liquidity_pressure_move": 64,
+            "sustained_pressure": 128,
+            "stock_specific_dislocation": 232,
+            "news_confirmed_move": 6
+          },
+          "jaccard_vs_primary": 0.6325536062378168,
+          "alert_count_change_vs_primary": -0.008323424494649179
+        },
+        "if": {
+          "raw_detections": 3150,
+          "policy_alerts": 877,
+          "policy_alerts_per_ticker_hour": 5.846666666666667,
+          "alerts_floor_bound_share": 0.2919042189281642,
+          "alerts_mad_zero_share": 0.2919042189281642,
+          "alerts_by_pattern": {
+            "point_anomaly": 877
+          },
+          "jaccard_vs_primary": 0.8229813664596274,
+          "alert_count_change_vs_primary": -0.007918552036199067
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "fixed_1e-05": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.5609156296803062,
+          "floor_bound_share": 0.5640774365327367
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.3390482470601165,
+          "floor_bound_share": 0.3401472689306517
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.02880136877792212,
+        "mad_zero_windows": 0.10701073985680191,
+        "ratio": 3.715474104092987
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.52286952,
+          "99": 26.208993012000033,
+          "99.9": 92.84638996800017,
+          "100": 1754.29653515
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 215.85738563659953,
+          "99.9": 1409.3621730431453,
+          "100": 8306.50030187
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2853,
+          "policy_alerts": 826,
+          "policy_alerts_per_ticker_hour": 5.506666666666667,
+          "alerts_floor_bound_share": 0.7905569007263923,
+          "alerts_mad_zero_share": 0.7857142857142857,
+          "alerts_by_pattern": {
+            "flash_reversal": 196,
+            "cross_asset_shock": 203,
+            "stock_specific_dislocation": 234,
+            "liquidity_pressure_move": 61,
+            "sustained_pressure": 126,
+            "news_confirmed_move": 6
+          },
+          "jaccard_vs_primary": 0.6570576540755467,
+          "alert_count_change_vs_primary": -0.017835909631391256
+        },
+        "if": {
+          "raw_detections": 3158,
+          "policy_alerts": 871,
+          "policy_alerts_per_ticker_hour": 5.806666666666667,
+          "alerts_floor_bound_share": 0.27324913892078073,
+          "alerts_mad_zero_share": 0.2663605051664753,
+          "alerts_by_pattern": {
+            "point_anomaly": 871
+          },
+          "jaccard_vs_primary": 0.839622641509434,
+          "alert_count_change_vs_primary": -0.014705882352941124
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "fixed_5e-05": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.5609156296803062,
+          "floor_bound_share": 0.6519054046558068
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.3390482470601165,
+          "floor_bound_share": 0.38487745906143533
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.03602547447799499,
+        "mad_zero_windows": 0.09916467780429594,
+        "ratio": 2.7526265577672686
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.51641641,
+          "99": 14.852906214000035,
+          "99.9": 58.92705168280295,
+          "100": 557.75434101
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 43.17147712969991,
+          "99.9": 281.87243460759106,
+          "100": 1661.30006037
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2916,
+          "policy_alerts": 839,
+          "policy_alerts_per_ticker_hour": 5.593333333333334,
+          "alerts_floor_bound_share": 0.8379022646007152,
+          "alerts_mad_zero_share": 0.7139451728247914,
+          "alerts_by_pattern": {
+            "flash_reversal": 192,
+            "cross_asset_shock": 222,
+            "stock_specific_dislocation": 241,
+            "liquidity_pressure_move": 61,
+            "sustained_pressure": 117,
+            "news_confirmed_move": 6
+          },
+          "jaccard_vs_primary": 0.7355371900826446,
+          "alert_count_change_vs_primary": -0.0023781212841854638
+        },
+        "if": {
+          "raw_detections": 3106,
+          "policy_alerts": 870,
+          "policy_alerts_per_ticker_hour": 5.8,
+          "alerts_floor_bound_share": 0.49770114942528737,
+          "alerts_mad_zero_share": 0.23448275862068965,
+          "alerts_by_pattern": {
+            "point_anomaly": 870
+          },
+          "jaccard_vs_primary": 0.871931696905016,
+          "alert_count_change_vs_primary": -0.015837104072398245
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "fixed_1e-04": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.5609156296803062,
+          "floor_bound_share": 0.7642882236562321
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.3390482470601165,
+          "floor_bound_share": 0.434882954170788
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.0361522131744875,
+        "mad_zero_windows": 0.0967183770883055,
+        "ratio": 2.675309990608247
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.47810488,
+          "99": 9.50556726800001,
+          "99.9": 37.91963602800017,
+          "100": 278.87717051
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 21.585738560799953,
+          "99.9": 140.93621730398553,
+          "100": 830.65003019
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2888,
+          "policy_alerts": 827,
+          "policy_alerts_per_ticker_hour": 5.513333333333334,
+          "alerts_floor_bound_share": 0.9214026602176542,
+          "alerts_mad_zero_share": 0.7049576783555018,
+          "alerts_by_pattern": {
+            "flash_reversal": 182,
+            "cross_asset_shock": 203,
+            "stock_specific_dislocation": 258,
+            "liquidity_pressure_move": 58,
+            "sustained_pressure": 121,
+            "news_confirmed_move": 5
+          },
+          "jaccard_vs_primary": 0.6951219512195121,
+          "alert_count_change_vs_primary": -0.01664684898929847
+        },
+        "if": {
+          "raw_detections": 3123,
+          "policy_alerts": 878,
+          "policy_alerts_per_ticker_hour": 5.8533333333333335,
+          "alerts_floor_bound_share": 0.6548974943052391,
+          "alerts_mad_zero_share": 0.22095671981776766,
+          "alerts_by_pattern": {
+            "point_anomaly": 878
+          },
+          "jaccard_vs_primary": 0.8450261780104712,
+          "alert_count_change_vs_primary": -0.006787330316742057
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "tick_1_no_mean_ad": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.5609156296803062,
+          "floor_bound_share": 0.6286078804800029
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.3390482470601165,
+          "floor_bound_share": 0.3739971425431366
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.03555020436614809,
+        "mad_zero_windows": 0.10334128878281623,
+        "ratio": 2.9069112435601276
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.5139307,
+          "99": 18.0,
+          "99.9": 68.58113007480307,
+          "100": 1220.5
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 61.0,
+          "99.9": 325.4620000000141,
+          "100": 1651.0
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2940,
+          "policy_alerts": 840,
+          "policy_alerts_per_ticker_hour": 5.6,
+          "alerts_floor_bound_share": 0.830952380952381,
+          "alerts_mad_zero_share": 0.736904761904762,
+          "alerts_by_pattern": {
+            "flash_reversal": 195,
+            "cross_asset_shock": 215,
+            "stock_specific_dislocation": 233,
+            "liquidity_pressure_move": 65,
+            "sustained_pressure": 127,
+            "news_confirmed_move": 5
+          },
+          "jaccard_vs_primary": 0.7241025641025641,
+          "alert_count_change_vs_primary": -0.0011890606420927874
+        },
+        "if": {
+          "raw_detections": 3106,
+          "policy_alerts": 874,
+          "policy_alerts_per_ticker_hour": 5.826666666666667,
+          "alerts_floor_bound_share": 0.4473684210526316,
+          "alerts_mad_zero_share": 0.2322654462242563,
+          "alerts_by_pattern": {
+            "point_anomaly": 874
+          },
+          "jaccard_vs_primary": 0.8923573735199138,
+          "alert_count_change_vs_primary": -0.011312217194570096
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "mean_ad_fixed_1e-06": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.0021078712349536823,
+          "floor_bound_share": 0.002144851432058133
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.010880316518298714,
+          "floor_bound_share": 0.010880316518298714
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.05858496245366116,
+        "mad_zero_windows": 0.0795346062052506,
+        "ratio": 1.3575942165732366
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.52286952,
+          "99": 26.581258328000025,
+          "99.9": 94.77223496400269,
+          "100": 1754.29653515
+        },
+        "mean_ad": {
+          "50": 0.0,
+          "99": 12.288171033600005,
+          "99.9": 61.1185787314728,
+          "100": 763.62467178
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 0.0,
+          "99.9": 385.5877927436152,
+          "100": 461.04195482
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2711,
+          "policy_alerts": 853,
+          "policy_alerts_per_ticker_hour": 5.6866666666666665,
+          "alerts_floor_bound_share": 0.0023446658851113715,
+          "alerts_mad_zero_share": 0.5767878077373975,
+          "alerts_by_pattern": {
+            "flash_reversal": 207,
+            "cross_asset_shock": 209,
+            "stock_specific_dislocation": 224,
+            "sustained_pressure": 136,
+            "liquidity_pressure_move": 71,
+            "news_confirmed_move": 6
+          },
+          "jaccard_vs_primary": 0.8780487804878049,
+          "alert_count_change_vs_primary": 0.014268727705113005
+        },
+        "if": {
+          "raw_detections": 3149,
+          "policy_alerts": 891,
+          "policy_alerts_per_ticker_hour": 5.94,
+          "alerts_floor_bound_share": 0.001122334455667789,
+          "alerts_mad_zero_share": 0.186307519640853,
+          "alerts_by_pattern": {
+            "point_anomaly": 891
+          },
+          "jaccard_vs_primary": 0.9230769230769231,
+          "alert_count_change_vs_primary": 0.007918552036199067
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "mean_ad_tick_0.5": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.0021078712349536823,
+          "floor_bound_share": 0.03213579128376754
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.010880316518298714,
+          "floor_bound_share": 0.021211122101329815
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.05763442222996736,
+        "mad_zero_windows": 0.08013126491646778,
+        "ratio": 1.3903369170031006
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.52278887,
+          "99": 24.004681330000004,
+          "99.9": 87.45872503680734,
+          "100": 1754.29653515
+        },
+        "mean_ad": {
+          "50": 0.0,
+          "99": 12.051708003600002,
+          "99.9": 53.96204914061793,
+          "100": 422.08001178
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 0.0,
+          "99.9": 27.024000000000342,
+          "100": 32.0
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2715,
+          "policy_alerts": 853,
+          "policy_alerts_per_ticker_hour": 5.6866666666666665,
+          "alerts_floor_bound_share": 0.10082063305978899,
+          "alerts_mad_zero_share": 0.5838218053927315,
+          "alerts_by_pattern": {
+            "flash_reversal": 205,
+            "cross_asset_shock": 210,
+            "stock_specific_dislocation": 222,
+            "sustained_pressure": 135,
+            "liquidity_pressure_move": 76,
+            "news_confirmed_move": 5
+          },
+          "jaccard_vs_primary": 0.9076576576576577,
+          "alert_count_change_vs_primary": 0.014268727705113005
+        },
+        "if": {
+          "raw_detections": 3160,
+          "policy_alerts": 896,
+          "policy_alerts_per_ticker_hour": 5.973333333333334,
+          "alerts_floor_bound_share": 0.11049107142857142,
+          "alerts_mad_zero_share": 0.18973214285714285,
+          "alerts_by_pattern": {
+            "point_anomaly": 896
+          },
+          "jaccard_vs_primary": 0.93058568329718,
+          "alert_count_change_vs_primary": 0.013574660633484115
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "mean_ad_tick_1": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.0021078712349536823,
+          "floor_bound_share": 0.09672170552669046
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.010880316518298714,
+          "floor_bound_share": 0.04593911418837235
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.0535154145939609,
+        "mad_zero_windows": 0.08257756563245823,
+        "ratio": 1.5430613078306774
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.5139307,
+          "99": 18.0,
+          "99.9": 68.58113007480307,
+          "100": 1220.5
+        },
+        "mean_ad": {
+          "50": 0.0,
+          "99": 11.465155130000001,
+          "99.9": 52.540842858893235,
+          "100": 422.08001178
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 0.0,
+          "99.9": 13.512000000000171,
+          "100": 16.0
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2708,
+          "policy_alerts": 841,
+          "policy_alerts_per_ticker_hour": 5.6066666666666665,
+          "alerts_floor_bound_share": 0.2259215219976219,
+          "alerts_mad_zero_share": 0.6028537455410226,
+          "alerts_by_pattern": {
+            "flash_reversal": 196,
+            "cross_asset_shock": 206,
+            "stock_specific_dislocation": 228,
+            "sustained_pressure": 135,
+            "liquidity_pressure_move": 71,
+            "news_confirmed_move": 5
+          },
+          "jaccard_vs_primary": 1.0,
+          "alert_count_change_vs_primary": 0.0
+        },
+        "if": {
+          "raw_detections": 3114,
+          "policy_alerts": 884,
+          "policy_alerts_per_ticker_hour": 5.8933333333333335,
+          "alerts_floor_bound_share": 0.24321266968325791,
+          "alerts_mad_zero_share": 0.19117647058823528,
+          "alerts_by_pattern": {
+            "point_anomaly": 884
+          },
+          "jaccard_vs_primary": 1.0,
+          "alert_count_change_vs_primary": 0.0
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "mean_ad_tick_2": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.0021078712349536823,
+          "floor_bound_share": 0.27910803764584063
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.010880316518298714,
+          "floor_bound_share": 0.0923178371249588
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.04730521846582808,
+        "mad_zero_windows": 0.08890214797136038,
+        "ratio": 1.8793306712150737
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.5,
+          "99": 11.75,
+          "99.9": 42.25125242800623,
+          "100": 610.25
+        },
+        "mean_ad": {
+          "50": 0.0,
+          "99": 9.5,
+          "99.9": 47.85542112676338,
+          "100": 380.5
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 0.0,
+          "99.9": 6.7560000000000855,
+          "100": 8.0
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2784,
+          "policy_alerts": 834,
+          "policy_alerts_per_ticker_hour": 5.56,
+          "alerts_floor_bound_share": 0.42565947242206237,
+          "alerts_mad_zero_share": 0.6486810551558753,
+          "alerts_by_pattern": {
+            "flash_reversal": 182,
+            "cross_asset_shock": 217,
+            "stock_specific_dislocation": 242,
+            "sustained_pressure": 131,
+            "liquidity_pressure_move": 57,
+            "news_confirmed_move": 5
+          },
+          "jaccard_vs_primary": 0.850828729281768,
+          "alert_count_change_vs_primary": -0.008323424494649179
+        },
+        "if": {
+          "raw_detections": 3113,
+          "policy_alerts": 882,
+          "policy_alerts_per_ticker_hour": 5.88,
+          "alerts_floor_bound_share": 0.41383219954648526,
+          "alerts_mad_zero_share": 0.20521541950113378,
+          "alerts_by_pattern": {
+            "point_anomaly": 882
+          },
+          "jaccard_vs_primary": 0.8767268862911796,
+          "alert_count_change_vs_primary": -0.002262443438914019
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "mean_ad_tick_4": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.0021078712349536823,
+          "floor_bound_share": 0.5477136993140174
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.010880316518298714,
+          "floor_bound_share": 0.18397626112759644
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.04080986027058712,
+        "mad_zero_windows": 0.09460023866348449,
+        "ratio": 2.3180730842067034
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.44458222,
+          "99": 7.75,
+          "99.9": 30.34736785680316,
+          "100": 305.125
+        },
+        "mean_ad": {
+          "50": 0.0,
+          "99": 7.560023585500001,
+          "99.9": 41.34912500000064,
+          "100": 372.36111261
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 0.0,
+          "99.9": 3.3780000000000427,
+          "100": 4.0
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2902,
+          "policy_alerts": 854,
+          "policy_alerts_per_ticker_hour": 5.693333333333333,
+          "alerts_floor_bound_share": 0.7259953161592506,
+          "alerts_mad_zero_share": 0.6943793911007026,
+          "alerts_by_pattern": {
+            "flash_reversal": 177,
+            "cross_asset_shock": 220,
+            "stock_specific_dislocation": 256,
+            "sustained_pressure": 132,
+            "liquidity_pressure_move": 64,
+            "news_confirmed_move": 5
+          },
+          "jaccard_vs_primary": 0.7349027635619243,
+          "alert_count_change_vs_primary": 0.015457788347205792
+        },
+        "if": {
+          "raw_detections": 3058,
+          "policy_alerts": 874,
+          "policy_alerts_per_ticker_hour": 5.826666666666667,
+          "alerts_floor_bound_share": 0.6109839816933639,
+          "alerts_mad_zero_share": 0.2036613272311213,
+          "alerts_by_pattern": {
+            "point_anomaly": 874
+          },
+          "jaccard_vs_primary": 0.8544303797468354,
+          "alert_count_change_vs_primary": -0.011312217194570096
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "zero_when_mad_zero": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.5609156296803062,
+          "floor_bound_share": 0.6286078804800029
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.3390482470601165,
+          "floor_bound_share": 0.3739971425431366
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.08073254966572668,
+        "mad_zero_windows": 0.0,
+        "ratio": 0.0
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.5139307,
+          "99": 18.0,
+          "99.9": 68.58113007480307,
+          "100": 1220.5
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 0.0,
+          "99.9": 0.0,
+          "100": 0.0
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 1072,
+          "policy_alerts": 488,
+          "policy_alerts_per_ticker_hour": 3.2533333333333334,
+          "alerts_floor_bound_share": 0.430327868852459,
+          "alerts_mad_zero_share": 0.0,
+          "alerts_by_pattern": {
+            "stock_specific_dislocation": 117,
+            "flash_reversal": 161,
+            "liquidity_pressure_move": 48,
+            "sustained_pressure": 53,
+            "cross_asset_shock": 105,
+            "news_confirmed_move": 4
+          },
+          "jaccard_vs_primary": 0.349238578680203,
+          "alert_count_change_vs_primary": -0.4197384066587396
+        },
+        "if": {
+          "raw_detections": 3142,
+          "policy_alerts": 893,
+          "policy_alerts_per_ticker_hour": 5.953333333333333,
+          "alerts_floor_bound_share": 0.3617021276595745,
+          "alerts_mad_zero_share": 0.11758118701007839,
+          "alerts_by_pattern": {
+            "point_anomaly": 893
+          },
+          "jaccard_vs_primary": 0.7967644084934277,
+          "alert_count_change_vs_primary": 0.010180995475113086
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "mean_ad_tick_1_factors_too": {
+      "not_ready_windows": 12,
+      "windows": 65081,
+      "per_cadence": {
+        "10s": {
+          "windows": 54083,
+          "mad_zero_share": 0.5609156296803062,
+          "degenerate_share": 0.0021078712349536823,
+          "floor_bound_share": 0.09672170552669046
+        },
+        "1m": {
+          "windows": 9099,
+          "mad_zero_share": 0.3390482470601165,
+          "degenerate_share": 0.010880316518298714,
+          "floor_bound_share": 0.04593911418837235
+        },
+        "5m": {
+          "windows": 1899,
+          "mad_zero_share": 0.052132701421800945,
+          "degenerate_share": 0.052132701421800945,
+          "floor_bound_share": 0.052132701421800945
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.052881721111498366,
+        "mad_zero_windows": 0.05104415274463007,
+        "ratio": 0.9652513509726002
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.5139307,
+          "99": 18.0,
+          "99.9": 68.58113007480307,
+          "100": 1220.5
+        },
+        "mean_ad": {
+          "50": 0.0,
+          "99": 11.465155130000001,
+          "99.9": 52.540842858893235,
+          "100": 422.08001178
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 0.0,
+          "99.9": 13.512000000000171,
+          "100": 16.0
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 1752,
+          "policy_alerts": 653,
+          "policy_alerts_per_ticker_hour": 4.3533333333333335,
+          "alerts_floor_bound_share": 0.25267993874425726,
+          "alerts_mad_zero_share": 0.5222052067381318,
+          "alerts_by_pattern": {
+            "flash_reversal": 166,
+            "stock_specific_dislocation": 276,
+            "liquidity_pressure_move": 45,
+            "news_confirmed_move": 5,
+            "cross_asset_shock": 147,
+            "sustained_pressure": 14
+          },
+          "jaccard_vs_primary": 0.6786516853932584,
+          "alert_count_change_vs_primary": -0.22354340071343637
+        },
+        "if": {
+          "raw_detections": 3114,
+          "policy_alerts": 884,
+          "policy_alerts_per_ticker_hour": 5.8933333333333335,
+          "alerts_floor_bound_share": 0.24321266968325791,
+          "alerts_mad_zero_share": 0.19117647058823528,
+          "alerts_by_pattern": {
+            "point_anomaly": 884
+          },
+          "jaccard_vs_primary": 1.0,
+          "alert_count_change_vs_primary": 0.0
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "no_bars_legacy": {
+      "not_ready_windows": 12,
+      "windows": 64781,
+      "per_cadence": {
+        "10s": {
+          "windows": 53981,
+          "mad_zero_share": 0.5702376762194106,
+          "degenerate_share": 0.5702376762194106,
+          "floor_bound_share": 0.5702376762194106
+        },
+        "1m": {
+          "windows": 9000,
+          "mad_zero_share": 0.3362222222222222,
+          "degenerate_share": 0.3362222222222222,
+          "floor_bound_share": 0.3362222222222222
+        },
+        "5m": {
+          "windows": 1800,
+          "mad_zero_share": 0.1272222222222222,
+          "degenerate_share": 0.1272222222222222,
+          "floor_bound_share": 0.1272222222222222
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.02592375748113453,
+        "mad_zero_windows": 0.10591415224608514,
+        "ratio": 4.085601877859023
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.51415487,
+          "99": 27.650454764499997,
+          "99.9": 106.18553424251219,
+          "100": 1754.29653515
+        },
+        "degenerate": {
+          "50": 0.0,
+          "99": 2204.994915001196,
+          "99.9": 14703.74714075952,
+          "100": 32892.48520999
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2756,
+          "policy_alerts": 808,
+          "policy_alerts_per_ticker_hour": 5.386666666666667,
+          "alerts_floor_bound_share": 0.8007425742574258,
+          "alerts_mad_zero_share": 0.8007425742574258,
+          "alerts_by_pattern": {
+            "flash_reversal": 176,
+            "cross_asset_shock": 188,
+            "sustained_pressure": 128,
+            "liquidity_pressure_move": 66,
+            "stock_specific_dislocation": 244,
+            "news_confirmed_move": 6
+          },
+          "jaccard_vs_primary": 0.4775985663082437,
+          "alert_count_change_vs_primary": -0.03923900118906065
+        },
+        "if": {
+          "raw_detections": 3088,
+          "policy_alerts": 889,
+          "policy_alerts_per_ticker_hour": 5.926666666666667,
+          "alerts_floor_bound_share": 0.32395950506186727,
+          "alerts_mad_zero_share": 0.32395950506186727,
+          "alerts_by_pattern": {
+            "point_anomaly": 889
+          },
+          "jaccard_vs_primary": 0.6462395543175488,
+          "alert_count_change_vs_primary": 0.005656108597285048
+        }
+      },
+      "measured_ticker_hours": 150.0
+    },
+    "no_bars_mean_ad_tick_1": {
+      "not_ready_windows": 12,
+      "windows": 64781,
+      "per_cadence": {
+        "10s": {
+          "windows": 53981,
+          "mad_zero_share": 0.5702376762194106,
+          "degenerate_share": 0.0,
+          "floor_bound_share": 0.09268075804449714
+        },
+        "1m": {
+          "windows": 9000,
+          "mad_zero_share": 0.3362222222222222,
+          "degenerate_share": 0.0,
+          "floor_bound_share": 0.043222222222222224
+        },
+        "5m": {
+          "windows": 1800,
+          "mad_zero_share": 0.1272222222222222,
+          "degenerate_share": 0.0,
+          "floor_bound_share": 0.008888888888888889
+        }
+      },
+      "return_surprise_atom_rate": {
+        "mad_windows": 0.05477491543065314,
+        "mad_zero_windows": 0.0772394746893087,
+        "ratio": 1.4101249464656214
+      },
+      "abs_return_surprise_by_source": {
+        "mad": {
+          "50": 0.50525765,
+          "99": 18.832928555999985,
+          "99.9": 81.0094250680199,
+          "100": 1220.5
+        },
+        "mean_ad": {
+          "50": 0.0,
+          "99": 10.770485789999995,
+          "99.9": 53.257318384164385,
+          "100": 422.08001178
+        }
+      },
+      "methods": {
+        "cep": {
+          "raw_detections": 2601,
+          "policy_alerts": 801,
+          "policy_alerts_per_ticker_hour": 5.34,
+          "alerts_floor_bound_share": 0.23096129837702872,
+          "alerts_mad_zero_share": 0.6042446941323346,
+          "alerts_by_pattern": {
+            "flash_reversal": 177,
+            "stock_specific_dislocation": 237,
+            "sustained_pressure": 107,
+            "cross_asset_shock": 197,
+            "liquidity_pressure_move": 78,
+            "news_confirmed_move": 5
+          },
+          "jaccard_vs_primary": 0.6738022426095821,
+          "alert_count_change_vs_primary": -0.04756242568370983
+        },
+        "if": {
+          "raw_detections": 3103,
+          "policy_alerts": 906,
+          "policy_alerts_per_ticker_hour": 6.04,
+          "alerts_floor_bound_share": 0.22847682119205298,
+          "alerts_mad_zero_share": 0.22958057395143489,
+          "alerts_by_pattern": {
+            "point_anomaly": 906
+          },
+          "jaccard_vs_primary": 0.6776007497656982,
+          "alert_count_change_vs_primary": 0.02488687782805421
+        }
+      },
+      "measured_ticker_hours": 150.0
+    }
+  },
+  "primary": "mean_ad_tick_1",
+  "criteria": {
+    "C2_floor_dominance_cep": 0.2259215219976219,
+    "C2_floor_dominance_if": 0.24321266968325791,
+    "C3_stability": {
+      "mean_ad_tick_0.5": {
+        "cep": {
+          "count_change": 0.014268727705113005,
+          "jaccard": 0.9076576576576577
+        },
+        "if": {
+          "count_change": 0.013574660633484115,
+          "jaccard": 0.93058568329718
+        }
+      },
+      "mean_ad_tick_2": {
+        "cep": {
+          "count_change": -0.008323424494649179,
+          "jaccard": 0.850828729281768
+        },
+        "if": {
+          "count_change": -0.002262443438914019,
+          "jaccard": 0.8767268862911796
+        }
+      }
+    },
+    "C4_atom_rate_ratio": 1.5430613078306774
+  },
+  "passed": {
+    "C2": false,
+    "C3": true,
+    "C4": true
+  }
+}
