@@ -125,7 +125,7 @@ def test_exported_thresholds_can_be_frozen_before_test_replay():
     after = testing.export_baseline_state()["baselines"]
     assert before == after
     assert testing.frozen_baselines
-    assert snapshots[0].baseline_version.startswith("frozen-mad-v3:")
+    assert snapshots[0].baseline_version.startswith("frozen-mad-v4:")
 
 
 def test_baseline_series_overwrites_same_day_and_keeps_latest_twenty():
@@ -234,3 +234,34 @@ def test_late_live_bar_lands_in_the_same_window_as_in_replay():
     # Replay sorts by event_time; live receives the bar a few seconds after the
     # trade that followed its completion.  Both keep the same window contents.
     assert run([bar, trade]) == run([trade, bar])
+
+
+def test_return_scale_falls_back_to_mean_absolute_deviation_and_one_tick():
+    from processing.factor_state import return_scale
+
+    import pytest
+
+    # MAD defined: the usual robust scale.
+    assert return_scale([-0.002, 0.0, 0.002], 0.0, 0.002, 100.0) == pytest.approx(1.4826 * 0.002)
+    # Most returns exactly zero: MAD is 0, so the mean absolute deviation is used.
+    values = [0.0] * 15 + [0.001] * 5
+    assert return_scale(values, 0.0, 0.0, 100.0) == pytest.approx(1.2533 * 0.00025)
+    # Every return identical: the scale is one price tick as a return.
+    assert return_scale([0.0] * 20, 0.0, 0.0, 200.0) == pytest.approx(0.01 / 200.0)
+    # A tiny but positive spread is still never below one tick.
+    assert return_scale([0.0, 1e-7, -1e-7], 0.0, 1e-7, 100.0) == pytest.approx(1e-4)
+
+
+def test_mostly_flat_slot_does_not_inflate_return_surprise():
+    engine = LightweightFactorEngine(cadences=(300,), min_history_days=5)
+    emitted = []
+    for day in range(13):
+        when = BASE + timedelta(days=day)
+        # The slot's close is unchanged on most days, as in thin 10 s windows.
+        price = 100.0 if day % 4 else 100.05
+        emitted.extend(engine.process(_trade("AAPL", when, price, 100, f"d{day}")))
+    emitted.extend(engine.process(_trade("AAPL", BASE + timedelta(days=13), 100.06, 100, "move")))
+    emitted.extend(engine.flush())
+    assert emitted[-1].window_start.date() == (BASE + timedelta(days=13)).date()
+    # A 1 bp move is a handful of typical moves, not the ~100 a 1e-6 floor gave.
+    assert abs(emitted[-1].factor_values["return_surprise"]) < 20

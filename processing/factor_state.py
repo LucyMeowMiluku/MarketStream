@@ -42,6 +42,26 @@ def floor_time(value: datetime, seconds: int) -> datetime:
     return datetime.fromtimestamp(epoch - epoch % seconds, tz=timezone.utc)
 
 
+GAUSSIAN_MAD = 1.4826  # MAD -> standard deviation under normality
+GAUSSIAN_MEAN_AD = 1.2533  # sqrt(pi / 2): mean absolute deviation -> standard deviation
+PRICE_TICK = 0.01  # Reg NMS minimum increment for stocks above $1
+
+
+def return_scale(values: list[float], median: float, mad: float, reference_price: float) -> float:
+    """Robust scale of raw returns (docs/ZERO_MAD_SENSITIVITY_CN.md).
+
+    1.4826 x MAD; when MAD is zero (most returns in the slot were exactly 0),
+    1.2533 x mean absolute deviation; never below one price tick as a return,
+    because smaller price changes cannot be observed.
+    """
+
+    spread = GAUSSIAN_MAD * mad
+    if spread == 0 and values:
+        spread = GAUSSIAN_MEAN_AD * statistics.fmean(abs(value - median) for value in values)
+    floor = PRICE_TICK / reference_price if reference_price > 0 else 1e-6
+    return max(spread, floor)
+
+
 def safe_float(value: Any, default: float = 0.0) -> float:
     try:
         result = float(value)

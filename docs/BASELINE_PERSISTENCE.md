@@ -24,7 +24,7 @@ live 事件会进入该 epoch。每个 cell 独立累计历史；当前窗口不
 因子都拥有至少五个严格在先交易日后，snapshot 才是 `ready`。`return_surprise` 是对原始
 收益的二阶标准化：原始收益历史不足五日时其 robust scale 尚未建立，该因子不计值、不写入
 自身 baseline，因此它在第 6 个交易日开始积累，约第 11 个交易日才 `ready`。
-`rolling-mad-v3` 起采用此规则；v2 epoch 的 baseline 含暖机期放大值，需重新 COLD_START。
+`rolling-mad-v3` 起采用此规则；`rolling-mad-v4` 起原始收益尺度在 MAD = 0 时改用 1.2533 × 平均绝对偏差，并不低于一跳（0.01 / 参考价），依据见 `docs/ZERO_MAD_SENSITIVITY_CN.md`。v3 未用于任何 epoch；v2 epoch 的 baseline 含暖机期放大值，需重新 COLD_START。
 
 若旧 epoch 已变成 CORRUPT 且没有可信历史，可显式创建恢复型 cold start：
 
@@ -43,7 +43,7 @@ FACTOR_BASELINE_RECOVERY_REASON="checkpoint and raw history unavailable"
 ```bash
 FACTOR_BASELINE_STARTUP_MODE=RESTORE
 FACTOR_BASELINE_EPOCH_ID=<active-epoch-uuid>
-FACTOR_BASELINE_ALGORITHM_VERSION=rolling-mad-v3
+FACTOR_BASELINE_ALGORITHM_VERSION=rolling-mad-v4
 ```
 
 协调器在订阅 Kafka 前核对 registry、配置 hash、factor schema hash、行数、逐行 checksum、

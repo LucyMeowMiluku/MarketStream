@@ -157,8 +157,8 @@ def coordinate_startup(
     )
     if not config.checkpoint_dir.is_absolute():
         raise ValueError("FACTOR_CHECKPOINT_DIR must be an absolute persistent path")
-    if config.baseline_algorithm_version != "rolling-mad-v3":
-        raise ValueError("this engine only supports rolling-mad-v3 durable baselines")
+    if config.baseline_algorithm_version != "rolling-mad-v4":
+        raise ValueError("this engine only supports rolling-mad-v4 durable baselines")
     if not config.engine_version.strip():
         raise ValueError("FACTOR_ENGINE_VERSION must be non-empty")
     if not config.cadences or any(cadence <= 0 for cadence in config.cadences):

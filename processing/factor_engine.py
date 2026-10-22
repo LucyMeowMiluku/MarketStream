@@ -28,6 +28,7 @@ from processing.factor_state import (
     WindowAccumulator,
     floor_time,
     market_session,
+    return_scale,
 )
 
 
@@ -53,7 +54,7 @@ class LightweightFactorEngine:
         self.epoch_id = epoch_id
         self._track_state_updates = track_state_updates
         self._pending_updates = StateUpdateBatch()
-        self._baseline_version = "rolling-mad-v3"
+        self._baseline_version = "rolling-mad-v4"
         self._windows: OrderedDict[tuple[str, int], WindowAccumulator] = OrderedDict()
         self._baselines: dict[tuple[str, int, str, int, str], BaselineSeries] = {}
         self._previous_close: dict[tuple[str, int], float] = {}
@@ -186,7 +187,7 @@ class LightweightFactorEngine:
         self._frozen_baselines = freeze
         canonical = json.dumps(state, sort_keys=True, separators=(",", ":"))
         digest = hashlib.sha256(canonical.encode()).hexdigest()[:12]
-        self._baseline_version = f"frozen-mad-v3:{digest}" if freeze else "rolling-mad-v3"
+        self._baseline_version = f"frozen-mad-v4:{digest}" if freeze else "rolling-mad-v4"
 
     def restore_observations(
         self, observations: list[BaselineObservation], *, clear: bool = True
@@ -385,8 +386,8 @@ class LightweightFactorEngine:
     def _return_scale(
         self, series: BaselineSeries, session_date: date, reference_price: float
     ) -> float:
-        _, mad, _, _ = series.summary(before=session_date)
-        return max(1.4826 * mad, 1e-6)
+        median, mad, _, _ = series.summary(before=session_date)
+        return return_scale(series.samples_before(session_date), median, mad, reference_price)
 
     def _factor_scale(self, series, session_date, median: float, mad: float) -> float:
         return max(1.4826 * mad, 1e-6)
