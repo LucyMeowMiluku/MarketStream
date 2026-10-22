@@ -59,6 +59,18 @@ class QualityFlag(StrEnum):
     FEED_GAP = "feed_gap"  # 数据缺失
 
 
+# 窗口质量为 degraded 且 CEP 抑制正式告警的关键标记；factor 与 CEP 共用同一定义。
+# out_of_order/duplicate 事件本身已不进入窗口累计，duplicate 仍保守地视为关键问题。
+CRITICAL_QUALITY_FLAGS = frozenset(
+    {
+        QualityFlag.DUPLICATE.value,
+        QualityFlag.STALE.value,
+        QualityFlag.INVALID_PRICE.value,
+        QualityFlag.CROSSED_QUOTE.value,
+    }
+)
+
+
 # 目标：让 MarketEvent 成为唯一的原始事件入口，使 live 和 replay 在进入质量门后不再分叉。
 # 关键设计：一条事件只允许携带一种 typed payload，但共享身份、来源、时间和 provenance 字段。
 # 参考内容：[R02：Alpaca Real-time Stock Data] 仅参考 trade、quote、bar 等上游字段语义；

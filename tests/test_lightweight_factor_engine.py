@@ -165,3 +165,15 @@ def test_quote_only_window_persists_retained_previous_close():
     engine.process(_quote("AAPL", BASE + timedelta(seconds=20), "quote-2"))
     updates = engine.drain_state_updates()
     assert updates.runtime[-1].previous_close == 100.0
+
+
+def test_out_of_order_window_is_not_degraded():
+    # Out-of-order events are not accumulated, so they do not corrupt the
+    # window; only CRITICAL_QUALITY_FLAGS degrade it (and suppress CEP alerts).
+    engine = LightweightFactorEngine(cadences=(10,), min_history_days=1)
+    engine.process(_trade("AAPL", BASE + timedelta(seconds=5), 100, 1, "first"))
+    late = _trade("AAPL", BASE + timedelta(seconds=1), 99, 1, "late")
+    engine.process(MarketEvent.from_dict({**late.to_dict(), "quality_flags": ["out_of_order"]}))
+    snapshot = engine.process(_trade("AAPL", BASE + timedelta(seconds=10), 101, 1, "next"))[0]
+    assert snapshot.data_quality["flags"] == ["out_of_order"]
+    assert snapshot.data_quality["status"] == "good"

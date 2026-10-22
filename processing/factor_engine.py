@@ -12,7 +12,13 @@ from datetime import date, datetime, timedelta, timezone
 from typing import Any
 
 from baseline.contracts import BaselineObservation, RuntimeStateUpdate, StateUpdateBatch
-from processing.event_models import FACTOR_GROUPS, FactorSnapshot, MarketEvent, as_utc
+from processing.event_models import (
+    CRITICAL_QUALITY_FLAGS,
+    FACTOR_GROUPS,
+    FactorSnapshot,
+    MarketEvent,
+    as_utc,
+)
 from processing.factor_calculations import calculate_factors, summarize_window
 from processing.factor_state import (
     CADENCE_NAMES,
@@ -418,10 +424,9 @@ class LightweightFactorEngine:
 
     @staticmethod
     def _quality_summary(window, session):
-        severe = {"duplicate", "out_of_order", "stale", "invalid_price", "crossed_quote"}
         flags = sorted(window.quality_flags)
         return {
-            "status": "degraded" if severe.intersection(flags) else "good",
+            "status": "degraded" if CRITICAL_QUALITY_FLAGS.intersection(flags) else "good",
             "flags": flags,
             "session": session,
             "feed_event_count": window.event_count,

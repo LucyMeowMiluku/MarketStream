@@ -16,7 +16,13 @@ from datetime import datetime, timedelta, timezone
 
 from cep.state_machines import build_state_machines
 from config.settings import settings
-from processing.event_models import AtomicEvent, DetectionResult, FactorSnapshot, PatternMatch
+from processing.event_models import (
+    CRITICAL_QUALITY_FLAGS,
+    AtomicEvent,
+    DetectionResult,
+    FactorSnapshot,
+    PatternMatch,
+)
 
 PATTERN_SEVERITY = {
     "stock_specific_dislocation": 0.82,
@@ -26,8 +32,6 @@ PATTERN_SEVERITY = {
     "sustained_pressure": 0.92,
     "cross_asset_shock": 0.95,
 }
-
-CRITICAL_QUALITY_FLAGS = {"duplicate", "stale", "invalid_price", "crossed_quote"}
 
 
 class CEPDetector:
