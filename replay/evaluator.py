@@ -21,12 +21,18 @@ import argparse
 import json
 from collections import Counter, OrderedDict
 from dataclasses import replace
-from datetime import timedelta
 from pathlib import Path
 from typing import Any
 
 from cep.cep_detector import CEPDetector, PATTERN_SEVERITY
-from evaluation.comparison import isolation_forest_detections
+from evaluation.comparison import (
+    SHARED_ALERT_COOLDOWN,
+    WindowDetection,
+    apply_shared_alert_policy,
+    isolation_forest_detections,
+    raw_detections,
+    shared_alert_policy_description,
+)
 from evaluation.metrics import (
     DetectedEvent,
     GroundTruthEvent,
@@ -166,7 +172,8 @@ class RealReplayEvaluator:
         # 问题：evaluation 窗口若继续更新 baseline，会在测试过程中改变阈值
         # 解决方法：测试引擎导入训练状态后立即冻结，后续窗口只能读取阈值。
         engine.import_baseline_state(baseline_state, freeze=True)
-        detector = CEPDetector()  # 每个审阅区间使用独立 detector 状态
+        # 每个审阅区间使用独立 detector 状态；cooldown 由两种方法共用的告警策略统一施加
+        detector = CEPDetector(cooldown_seconds=0)
         snapshots: list[FactorSnapshot] = []  # 按事件时间产生的因子窗口
         # snapshot 对象 ID → (引用总数, 能在本次输入中解析的引用数)
         trace_resolution: dict[int, tuple[int, int]] = {}
@@ -252,7 +259,7 @@ class RealReplayEvaluator:
         traces_resolved = 0
         traced_ids = 0
         steps: list[ReplayStep] = []
-        detections: list[DetectedEvent] = []
+        cep_windows: list[WindowDetection] = []  # 审阅标的的逐窗口原始检测
         quality_good = 0
         # 目标：让每条告警都能从结果追踪到因子和原始输入
         # 关键设计：每个 ReplayStep 保存snapshot、CEP 结果、truth 上下文和原始事件引用
@@ -264,22 +271,20 @@ class RealReplayEvaluator:
             traces_resolved += resolved
             quality_good += snapshot.data_quality.get("status") == "good"
             detection_id = None
-            if result.is_alert:
+            if result.ticker == interval.ticker:
+                # 原始检测：本窗口完成了主模式，尚未经过质量门和 cooldown
                 primary = _primary_pattern(result)
-                if primary is None:
-                    # 正式告警必须能够指出一个已经完成的主模式。
-                    raise ValueError("alert result has no completed primary pattern")
-                detection_id = _detection_id(interval.interval_id, result)
-                if result.ticker == interval.ticker:
-                    detections.append(
-                        DetectedEvent(
-                            detection_id=detection_id,
-                            ticker=result.ticker,
-                            pattern=primary.name,
-                            direction=primary.direction,
-                            detected_at=result.event_time,
-                        )
+                detection = None
+                if primary is not None:
+                    detection_id = _detection_id(interval.interval_id, result)
+                    detection = DetectedEvent(
+                        detection_id=detection_id,
+                        ticker=result.ticker,
+                        pattern=primary.name,
+                        direction=primary.direction,
+                        detected_at=result.event_time,
                     )
+                cep_windows.append(WindowDetection(snapshot, detection, -result.score))
             steps.append(
                 ReplayStep(
                     run_id=self.config.run_id,
@@ -288,9 +293,7 @@ class RealReplayEvaluator:
                     detection=result,
                     truth_kind=interval.kind,
                     truth_event_id=interval.event_id,
-                    detection_id=detection_id
-                    if result.ticker == interval.ticker
-                    else None,
+                    detection_id=detection_id,
                     match_status="context_alert"
                     if result.is_alert and result.ticker != interval.ticker
                     else "none",
@@ -298,7 +301,7 @@ class RealReplayEvaluator:
             )
         return (
             steps,
-            detections,
+            cep_windows,
             {
                 "events": sum(counts.values()),
                 "event_types": dict(sorted(counts.items())),
@@ -317,6 +320,11 @@ class RealReplayEvaluator:
         all_steps: list[ReplayStep] = []
         detections: list[DetectedEvent] = []
         isolation_forest_results: list[DetectedEvent] = []
+        raw_by_method: dict[str, list[DetectedEvent]] = {
+            "factor_cep": [],
+            "isolation_forest": [],
+        }
+        window_rows: list[dict[str, Any]] = []
         baseline_summaries = []
         interval_summaries = []
         for interval in registry.intervals:
@@ -347,7 +355,7 @@ class RealReplayEvaluator:
                 dataset_id=manifest["dataset_id"],
                 interval_id=interval.interval_id,
             )
-            steps, interval_detections, interval_summary = self._evaluate_interval(
+            steps, cep_windows, interval_summary = self._evaluate_interval(
                 interval,
                 evaluation_path,
                 baseline_state,
@@ -356,14 +364,46 @@ class RealReplayEvaluator:
             # CEP alerts are only scored for the reviewed ticker; context
             # tickers (e.g. SPY/QQQ) only feed features.  Give Isolation Forest
             # the same scope so its context alerts are not counted as FPs.
-            scored_snapshots = [
-                step.snapshot for step in steps if step.snapshot.ticker == interval.ticker
-            ]
-            _, interval_if_detections = isolation_forest_detections(
+            scored_snapshots = [item.snapshot for item in cep_windows]
+            _, if_windows = isolation_forest_detections(
                 [item for item in training_snapshots if item.ticker == interval.ticker],
                 scored_snapshots,
             )
             interval_summary["scored_snapshots"] = len(scored_snapshots)
+            # 两种方法的原始逐窗口检测经过同一告警策略（暖机/质量门 + ticker/方向 cooldown）
+            interval_detections, cep_outcomes = apply_shared_alert_policy(cep_windows)
+            interval_if_detections, if_outcomes = apply_shared_alert_policy(if_windows)
+            alert_ids = {item.detection_id for item in interval_detections}
+            for step in steps:
+                if step.detection_id not in alert_ids:
+                    step.detection_id = None
+            for method, windows, outcomes in (
+                ("factor_cep", cep_windows, cep_outcomes),
+                ("isolation_forest", if_windows, if_outcomes),
+            ):
+                raw_by_method[method].extend(raw_detections(windows))
+                for item in windows:
+                    detection = item.detection
+                    window_rows.append(
+                        {
+                            "method": method,
+                            "interval_id": interval.interval_id,
+                            "ticker": item.snapshot.ticker,
+                            "cadence": item.snapshot.cadence,
+                            "window_start": item.snapshot.window_start.isoformat()
+                            if item.snapshot.window_start
+                            else None,
+                            "event_time": item.snapshot.event_time.isoformat(),
+                            "score": item.score,
+                            "fired": detection is not None,
+                            "detection_id": detection.detection_id if detection else None,
+                            "pattern": detection.pattern if detection else None,
+                            "direction": detection.direction if detection else None,
+                            "policy_outcome": outcomes.get(detection.detection_id)
+                            if detection
+                            else None,
+                        }
+                    )
             if baseline_summary["events"] != interval_manifest["baseline"]["events"]:
                 raise ValueError(
                     f"interval {interval.interval_id}: baseline event count mismatch"
@@ -396,13 +436,13 @@ class RealReplayEvaluator:
             truth,
             detections,
             require_pattern=False,
-            cooldown=timedelta(minutes=5),
+            cooldown=SHARED_ALERT_COOLDOWN,
         )
         isolation_forest_metrics = compute_event_metrics(
             truth,
             isolation_forest_results,
             require_pattern=False,
-            cooldown=timedelta(minutes=5),
+            cooldown=SHARED_ALERT_COOLDOWN,
         )
         confidence = bootstrap_confidence_intervals(
             truth,
@@ -420,6 +460,28 @@ class RealReplayEvaluator:
         isolation_forest_metrics.alerts_per_ticker_hour = (
             len(isolation_forest_results) / reviewed_hours if reviewed_hours else 0.0
         )
+        # 原始逐窗口检测的事件级指标：不经过质量门与 cooldown，反映底层检测能力
+        raw_metrics = {}
+        window_matches: dict[tuple[str, str], dict[str, str]] = {}
+        for method, raw, alerts in (
+            ("factor_cep", raw_by_method["factor_cep"], detections),
+            ("isolation_forest", raw_by_method["isolation_forest"], isolation_forest_results),
+        ):
+            raw_metrics[method] = compute_event_metrics(
+                truth, raw, require_pattern=False, cooldown=SHARED_ALERT_COOLDOWN
+            )
+            raw_metrics[method].alerts_per_ticker_hour = (
+                len(raw) / reviewed_hours if reviewed_hours else 0.0
+            )
+            for kind, items in (("raw_match", raw), ("alert_match", alerts)):
+                tp, fp, _ = match_events(truth, items, require_pattern=False)
+                window_matches[(method, kind)] = {
+                    **{item.detection.detection_id: "tp" for item in tp},
+                    **{item.detection_id: "fp" for item in fp},
+                }
+        for row in window_rows:
+            for kind in ("raw_match", "alert_match"):
+                row[kind] = window_matches[(row["method"], kind)].get(row["detection_id"])
         matched_detection_ids = {item.detection.detection_id for item in matches}
         false_detection_ids = {item.detection_id for item in false_positives}
         missed_event_ids = {item.event_id for item in missed}
@@ -510,6 +572,7 @@ class RealReplayEvaluator:
                 "config": {
                     "contamination": 0.05,
                     "random_state": 42,
+                    "alert_policy": shared_alert_policy_description(),
                     "protocol": (
                         "per-interval fit on the reviewed ticker's post-warm-up "
                         "baseline snapshots; both methods scored on the reviewed "
@@ -519,6 +582,9 @@ class RealReplayEvaluator:
                 "methods": {
                     "factor_cep": metrics.to_dict(),
                     "isolation_forest": isolation_forest_metrics.to_dict(),
+                },
+                "raw_per_window_methods": {
+                    method: value.to_dict() for method, value in raw_metrics.items()
                 },
             },
             "bootstrap_95_ci": {
@@ -547,6 +613,10 @@ class RealReplayEvaluator:
                 ),
                 "snapshots": total_snapshots,
                 "detections": len(detections),
+                "isolation_forest_alerts": len(isolation_forest_results),
+                "raw_window_detections": {
+                    method: len(items) for method, items in raw_by_method.items()
+                },
             },
             "events": sorted(
                 event_rows,
@@ -566,6 +636,7 @@ class RealReplayEvaluator:
         comparison_path = output_dir / "detector_comparison.json"
         run_manifest_path = output_dir / "run_manifest.json"
         html_path = output_dir / "replay_report.html"
+        windows_path = output_dir / "window_detections.jsonl"
         metrics_path.write_text(json.dumps(result, indent=2) + "\n")
         comparison_path.write_text(json.dumps(result["comparison"], indent=2) + "\n")
         with trace_path.open("w") as destination:
@@ -573,6 +644,9 @@ class RealReplayEvaluator:
                 destination.write(
                     json.dumps(step.to_dict(), separators=(",", ":")) + "\n"
                 )
+        with windows_path.open("w") as destination:
+            for row in window_rows:
+                destination.write(json.dumps(row, separators=(",", ":")) + "\n")
         run_manifest = {
             "schema_version": "marketstream-real-replay-run-v1",
             "run_id": self.config.run_id,
@@ -586,6 +660,10 @@ class RealReplayEvaluator:
                     "sha256": file_sha256(metrics_path),
                 },
                 "trace": {"path": str(trace_path), "sha256": file_sha256(trace_path)},
+                "window_detections": {
+                    "path": str(windows_path),
+                    "sha256": file_sha256(windows_path),
+                },
                 "comparison": {
                     "path": str(comparison_path),
                     "sha256": file_sha256(comparison_path),
@@ -600,6 +678,7 @@ class RealReplayEvaluator:
             "run_manifest": str(run_manifest_path),
             "metrics": str(metrics_path),
             "trace": str(trace_path),
+            "window_detections": str(windows_path),
             "comparison": str(comparison_path),
             "html": str(html_path),
         }

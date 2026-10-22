@@ -162,6 +162,21 @@ def test_strict_real_replay_writes_recomputable_offline_artifacts(tmp_path):
     for run in result["interval_runs"]:
         # Context-ticker snapshots feed features but are never scored.
         assert 0 < run["scored_snapshots"] < run["snapshots"]
+    comparison = result["comparison"]
+    assert comparison["config"]["alert_policy"]["applies_to"] == ["factor_cep", "isolation_forest"]
+    assert set(comparison["raw_per_window_methods"]) == {"factor_cep", "isolation_forest"}
+    rows = [
+        json.loads(line)
+        for line in Path(result["artifacts"]["window_detections"]).read_text().splitlines()
+    ]
+    scored = sum(run["scored_snapshots"] for run in result["interval_runs"])
+    # Every scored window is recorded once per method, fired or not.
+    for method in ("factor_cep", "isolation_forest"):
+        method_rows = [row for row in rows if row["method"] == method]
+        assert len(method_rows) == scored
+        assert all(
+            (row["policy_outcome"] is None) == (not row["fired"]) for row in method_rows
+        )
     for artifact in result["artifacts"].values():
         assert Path(artifact).exists()
     html = Path(result["artifacts"]["html"]).read_text()
