@@ -228,11 +228,11 @@ def main() -> None:
             if ratio is not None:
                 column.caption(f"{_x(ratio)} the typical value")
         left, right = st.columns(2)
-        left.plotly_chart(_price_chart(item), use_container_width=True)
-        right.plotly_chart(_volume_chart(item), use_container_width=True)
+        left.plotly_chart(_price_chart(item), width="stretch")
+        right.plotly_chart(_volume_chart(item), width="stretch")
         st.subheader("Criteria (market data)")
         st.dataframe(_criteria_rows(rules, item["ticker"], volume_required), hide_index=True,
-                     use_container_width=True)
+                     width="stretch")
         excess = item["measurement"].get("excess_vs_qqq")
         if excess:
             st.caption(f"Excess move vs QQQ {_pct(excess['today'])} ({_x(excess['ratio'])} typical): "
@@ -246,12 +246,12 @@ def main() -> None:
                     for name in ("total", "gap", "in_window", "range", "volume")}}
                 for symbol, value in item["measurement"]["symbols"].items()
                 if (typical := value.get("typical"))
-            ], hide_index=True, use_container_width=True)
+            ], hide_index=True, width="stretch")
 
     st.subheader("News for the ticker (A3 cause / N4 company news)")
     st.caption("Counts only if published after the reference time and before the window end. "
                "Open primary sources where possible (company IR, SEC, Fed, BLS/BEA).")
-    st.dataframe(_news_rows(item), hide_index=True, use_container_width=True,
+    st.dataframe(_news_rows(item), hide_index=True, width="stretch",
                  column_config={"url": st.column_config.LinkColumn("url")})
     st.markdown(
         f"**Macro calendar (N5):** [BLS schedule {start:%Y-%m}](https://www.bls.gov/schedule/{start:%Y}/{start:%m}_sched.htm) · "
