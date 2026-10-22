@@ -177,3 +177,60 @@ def test_out_of_order_window_is_not_degraded():
     snapshot = engine.process(_trade("AAPL", BASE + timedelta(seconds=10), 101, 1, "next"))[0]
     assert snapshot.data_quality["flags"] == ["out_of_order"]
     assert snapshot.data_quality["status"] == "good"
+
+
+def _bar(interval_start: datetime, high: float, event_id: str):
+    from processing.event_models import bar_timing
+
+    timing = bar_timing(interval_start)
+    return MarketEvent.create(
+        event_id=event_id,
+        source="test",
+        feed="iex",
+        event_type="bar",
+        ticker="AAPL",
+        event_time=timing["completed_at"],
+        received_at=timing["completed_at"],
+        bar={**timing["payload"], "open": 100, "high": high, "low": 99, "close": high, "volume": 50},
+    )
+
+
+def test_minute_bar_never_leaks_into_shorter_or_earlier_windows():
+    engine = LightweightFactorEngine(cadences=(10, 60, 300), min_history_days=1)
+    snapshots = []
+    for event in (
+        _trade("AAPL", BASE, 100, 1, "t0"),
+        # The bar for [BASE, BASE+60s) has a high no trade reached; it completes
+        # at BASE+60s, after the first 10 s window and exactly at the 1 m end.
+        _bar(BASE, 150, "bar-0"),
+        _trade("AAPL", BASE + timedelta(seconds=61), 100, 1, "t1"),
+        _trade("AAPL", BASE + timedelta(seconds=75), 100, 1, "t2"),
+    ):
+        snapshots += engine.process(event)
+    snapshots += engine.flush(BASE + timedelta(minutes=5))
+    by_window = {(s.cadence, s.window_start): s for s in snapshots}
+    assert by_window[("1m", BASE)].input_summary["bar_volume"] == 0
+    # The bar is keyed into the windows that contain its completion time, but
+    # neither the 10 s nor the 1 m window contains its whole interval.
+    for key in (("10s", BASE + timedelta(seconds=60)), ("1m", BASE + timedelta(seconds=60))):
+        summary = by_window[key].input_summary
+        assert summary["event_type_counts"].get("bar") == 1
+        assert summary["bar_volume"] == 0
+        assert summary["first_price"] == 100  # the bar's close of 150 is not used
+    # A 5 m window contains the whole minute, so the bar's range is used there.
+    five_minutes = by_window[("5m", BASE)]
+    assert five_minutes.input_summary["bar_volume"] == 50
+
+
+def test_late_live_bar_lands_in_the_same_window_as_in_replay():
+    def run(order):
+        engine = LightweightFactorEngine(cadences=(300,), min_history_days=1)
+        for event in order:
+            engine.process(event)
+        return engine.flush()[0].input_summary
+
+    bar = _bar(BASE, 150, "bar-0")
+    trade = _trade("AAPL", BASE + timedelta(seconds=61), 100, 1, "t1")
+    # Replay sorts by event_time; live receives the bar a few seconds after the
+    # trade that followed its completion.  Both keep the same window contents.
+    assert run([bar, trade]) == run([trade, bar])

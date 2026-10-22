@@ -60,31 +60,28 @@ def test_crossed_quote_and_feed_gap_are_explicit():
     assert "feed_gap" in gate.assess(second, now=second.event_time).quality_flags
 
 
-def test_live_minute_bar_uses_window_close_grace_for_staleness():
-    gate = EventQualityGate(stale_after=timedelta(seconds=5))
-    recent_bar = MarketEvent.create(
-        event_id="bar-recent",
-        source="alpaca",
-        feed="iex",
-        event_type="bar",
-        ticker="AAPL",
-        event_time=NOW - timedelta(seconds=60),
-        received_at=NOW,
-        bar={"open": 100, "high": 101, "low": 99, "close": 100.5, "volume": 10},
-    )
-    assert "stale" not in gate.assess(recent_bar, now=NOW).quality_flags
+def test_live_minute_bar_staleness_is_measured_from_completion():
+    from processing.event_models import bar_timing
 
-    old_bar = MarketEvent.create(
-        event_id="bar-old",
-        source="alpaca",
-        feed="iex",
-        event_type="bar",
-        ticker="AAPL",
-        event_time=NOW - timedelta(seconds=70),
-        received_at=NOW,
-        bar={"open": 100, "high": 101, "low": 99, "close": 100.5, "volume": 10},
-    )
-    assert "stale" in gate.assess(old_bar, now=NOW).quality_flags
+    gate = EventQualityGate(stale_after=timedelta(seconds=5))
+
+    def bar(event_id, interval_start):
+        timing = bar_timing(interval_start)
+        return MarketEvent.create(
+            event_id=event_id,
+            source="alpaca",
+            feed="iex",
+            event_type="bar",
+            ticker="AAPL",
+            event_time=timing["completed_at"],
+            received_at=NOW,
+            bar={**timing["payload"], "open": 100, "high": 101, "low": 99, "close": 100.5, "volume": 10},
+        )
+
+    # The minute [NOW-62s, NOW-2s) completed 2 s ago: fresh, not stale.
+    assert "stale" not in gate.assess(bar("bar-recent", NOW - timedelta(seconds=62)), now=NOW).quality_flags
+    # Completed 10 s ago with a 5 s limit: stale, with no extra bar grace.
+    assert "stale" in gate.assess(bar("bar-old", NOW - timedelta(seconds=70)), now=NOW).quality_flags
 
 
 def test_seen_id_memory_is_bounded():

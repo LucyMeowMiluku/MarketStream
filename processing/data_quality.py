@@ -9,7 +9,7 @@
 # 参考边界：行情字段和 minute bar 时间语义参考 Alpaca 官方文档。[R02][R03]
 # 关键设计：先标记问题，不静默修复或丢弃，再由因子和 CEP 按严重程度处理。
 # 需要解决的问题：重复/乱序事件污染窗口、坏价格进入计算、正常 minute bar 被误判为 stale。
-# 解决方法：使用有界 ID/时间状态检查事件，并按 Alpaca bar 时间语义增加独立的结束宽限。
+# 解决方法：使用有界 ID/时间状态检查事件；bar 以完成时间为 event_time，与逐笔事件共用 stale 阈值。
 # =============================================================================
 """Bounded, explicit data-quality checks for live and replay market events."""
 
@@ -32,13 +32,11 @@ class EventQualityGate:
         max_state_keys: int = 10_000,
         stale_after: timedelta = timedelta(seconds=30),
         gap_after: timedelta = timedelta(seconds=90),
-        bar_close_grace: timedelta = timedelta(seconds=60),
     ) -> None:
         self.max_seen_ids = max_seen_ids  # 最多保留多少个近期事件 ID
         self.max_state_keys = max_state_keys  # 最多跟踪多少 ticker/type 组合
         self.stale_after = stale_after  # 逐笔事件允许的最大年龄
         self.gap_after = gap_after  # 超过该间隔即标记 feed gap
-        self.bar_close_grace = bar_close_grace  # bar 等待窗口结束的额外时间
         self._seen: OrderedDict[str, None] = OrderedDict()  # 有界去重集合
         self._last_event_time: OrderedDict[tuple[str, str], datetime] = OrderedDict()
 
@@ -83,11 +81,9 @@ class EventQualityGate:
         stale_limit = self.stale_after
 
         # 参考：[R02：Alpaca Real-time Stock Data；R03：Alpaca Market Data FAQ]
-        # Alpaca minute bar的t是一分钟区间左端，而bar在区间结束后才发布
-        # 解决的问题：若与逐笔事件共用 30 秒阈值，正常 bar 也会被标记为 stale；
-        # 解决方法：只为 bar 增加一个明确的窗口结束限制
-        if event.event_type.value == "bar":
-            stale_limit += self.bar_close_grace
+        # Alpaca minute bar 的 t 是一分钟区间左端，bar 在区间结束后才发布。
+        # 解决方法：MarketEvent 的 bar event_time 已是区间结束（完成）时间，
+        # 因此 bar 与逐笔事件使用同一 stale 阈值，不再需要单独的窗口结束宽限。
         if mode == "live" and current - event.event_time > stale_limit:
             # replay 使用历史事件时间，不应用真实时钟判断 stale。
             flags.add(QualityFlag.STALE.value)

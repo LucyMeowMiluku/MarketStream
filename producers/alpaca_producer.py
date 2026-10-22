@@ -14,7 +14,7 @@ from confluent_kafka import Producer
 
 from config.logging_config import get_logger
 from config.settings import settings
-from processing.event_models import EventType, MarketEvent
+from processing.event_models import EventType, MarketEvent, bar_timing
 
 log = get_logger("alpaca_producer")
 running = True
@@ -109,11 +109,17 @@ def _stock_event(message: dict[str, Any]) -> MarketEvent | None:
                 "ask_exchange": message.get("ax"),
             },
         )
-    if kind in {"b", "u", "d"}:
+    if kind == "b":
+        # Same bar semantics as the historical converter: keyed by completion,
+        # interval kept in the payload, received_at is the observed arrival.
+        # updatedBars/dailyBars are not subscribed: daily bars are still
+        # forming intraday and corrections cannot be reproduced in replay.
+        timing = bar_timing(event_time)
         return MarketEvent.create(
-            **common,
+            **{**common, "event_time": timing["completed_at"]},
             event_type=EventType.BAR,
             bar={
+                **timing["payload"],
                 "open": message.get("o"),
                 "high": message.get("h"),
                 "low": message.get("l"),

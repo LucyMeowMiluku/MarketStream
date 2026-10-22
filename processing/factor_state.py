@@ -13,7 +13,7 @@ from datetime import date, datetime, time, timezone
 from typing import Any
 from zoneinfo import ZoneInfo
 
-from processing.event_models import MarketEvent
+from processing.event_models import MarketEvent, as_utc
 
 NY = ZoneInfo("America/New_York")
 CADENCE_NAMES = {10: "10s", 60: "1m", 300: "5m"}
@@ -119,6 +119,10 @@ class WindowAccumulator:
     end: datetime
     first_price: float | None = None
     last_price: float | None = None
+    # Observation times of first/last price, so a late-arriving bar cannot
+    # displace a later trade (live arrival order differs from replay order).
+    first_price_at: datetime | None = None
+    last_price_at: datetime | None = None
     high: float | None = None
     low: float | None = None
     price_sum: float = 0.0
@@ -144,12 +148,16 @@ class WindowAccumulator:
     mode: str | None = None
     provenance: dict[str, Any] = field(default_factory=dict)
 
-    def _record_price(self, price: float) -> None:
+    def _record_price(self, price: float, at: datetime | None = None) -> None:
+        """Record one price; ``at`` is its observation time (None: extreme only)."""
+
         if price <= 0:
             return
-        if self.first_price is None:
-            self.first_price = price
-        self.last_price = price
+        if at is not None:
+            if self.first_price_at is None or at < self.first_price_at:
+                self.first_price, self.first_price_at = price, at
+            if self.last_price_at is None or at >= self.last_price_at:
+                self.last_price, self.last_price_at = price, at
         self.high = price if self.high is None else max(self.high, price)
         self.low = price if self.low is None else min(self.low, price)
         self.price_sum += price
@@ -172,7 +180,7 @@ class WindowAccumulator:
         if {"duplicate", "out_of_order"}.intersection(event.quality_flags):
             return
         if kind == "trade":
-            self._update_trade(payload)
+            self._update_trade(payload, event.event_time)
         elif kind == "bar":
             self._update_bar(payload)
         elif kind == "quote":
@@ -180,10 +188,10 @@ class WindowAccumulator:
         elif kind == "news":
             self._update_news(payload)
 
-    def _update_trade(self, payload: dict[str, Any]) -> None:
+    def _update_trade(self, payload: dict[str, Any], at: datetime) -> None:
         price = safe_float(payload.get("price"))
         size = max(0.0, safe_float(payload.get("size")))
-        self._record_price(price)
+        self._record_price(price, at)
         self.trade_volume += size
         midpoint = (
             (self.bid_price + self.ask_price) / 2
@@ -197,8 +205,18 @@ class WindowAccumulator:
             self.sell_volume += size
 
     def _update_bar(self, payload: dict[str, Any]) -> None:
-        for name in ("open", "high", "low", "close"):
-            self._record_price(safe_float(payload.get(name)))
+        # A bar only describes a window that contains its whole interval: a
+        # minute's OHLC must not enter a 10 s window, and a bar completing at
+        # the window end arrives after that window has closed in live mode.
+        start, end = payload.get("interval_start"), payload.get("interval_end")
+        if not start or not end or as_utc(start) < self.start or as_utc(end) > self.end:
+            return
+        # Open is observed at the interval start and close at its end; high
+        # and low are extremes without a known time inside the interval.
+        self._record_price(safe_float(payload.get("open")), as_utc(start))
+        self._record_price(safe_float(payload.get("high")))
+        self._record_price(safe_float(payload.get("low")))
+        self._record_price(safe_float(payload.get("close")), as_utc(end))
         self.bar_volume += max(0.0, safe_float(payload.get("volume")))
 
     def _update_quote(self, payload: dict[str, Any]) -> None:

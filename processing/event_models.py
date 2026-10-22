@@ -23,7 +23,7 @@ from __future__ import annotations
 import hashlib
 import json
 from dataclasses import asdict, dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from enum import StrEnum
 from typing import Any
 
@@ -57,6 +57,33 @@ class QualityFlag(StrEnum):
     CROSSED_QUOTE = "crossed_quote"  # 交叉报价
     INVALID_PRICE = "invalid_price"  # 无效价格
     FEED_GAP = "feed_gap"  # 数据缺失
+
+
+# 分钟线（bar）的时间语义，live producer 与历史 replay converter 共用：
+# - 区间：payload 的 interval_start/interval_end，即 provider 的 t 与 t + timeframe；
+# - 完成时间：event_time = interval_end，bar 在此之前不可知，窗口按它归属；
+# - 到达时间：received_at，live 为实际收到时间；历史接口不提供发布时间，取完成时间并在
+#   provenance 中注明。
+# 解决的问题：按区间起点归属会把整分钟的 OHLC 提前放入该分钟第一个 10 秒窗口（未来信息），
+# 且 live 中 bar 晚到而 replay 中提前，二者行为不一致。
+BAR_TIMEFRAMES = {"1Min": timedelta(minutes=1)}
+
+
+def bar_timing(interval_start: datetime | str, timeframe: str = "1Min") -> dict[str, Any]:
+    """Return the interval fields and completion time for one provider bar."""
+
+    if timeframe not in BAR_TIMEFRAMES:
+        raise ValueError(f"unsupported bar timeframe: {timeframe}")
+    start = as_utc(interval_start)
+    end = start + BAR_TIMEFRAMES[timeframe]
+    return {
+        "completed_at": end,
+        "payload": {
+            "interval_start": start.isoformat(),
+            "interval_end": end.isoformat(),
+            "timeframe": timeframe,
+        },
+    }
 
 
 # 窗口质量为 degraded 且 CEP 抑制正式告警的关键标记；factor 与 CEP 共用同一定义。

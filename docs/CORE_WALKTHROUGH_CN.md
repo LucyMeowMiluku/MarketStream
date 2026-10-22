@@ -170,7 +170,7 @@ stateDiagram-v2
 | payload必须与事件类型一致 | trade消息被当成quote计算 | `test_event_models.py` |
 | duplicate/out-of-order | 成交量重复累计或last price倒退 | `test_data_quality.py`、`test_lightweight_factor_engine.py` |
 | stale/invalid/crossed quote | 坏数据制造虚假价格或价差异常 | `test_data_quality.py` |
-| minute bar宽限 | bar时间戳是窗口起点，被误判过期 | `test_data_quality.py` |
+| minute bar时间语义 | bar按区间起点归属，整分钟OHLC提前进入10秒窗口（未来信息），live与replay顺序不一致 | `test_alpaca_history.py`、`test_lightweight_factor_engine.py`、`test_data_quality.py` |
 | warm-up | 历史不足却生成正式告警 | `test_factor_cep.py` |
 | baseline冻结 | 测试数据改变正常定义 | `test_lightweight_factor_engine.py` |
 | cooldown/dedupe | 一个事件连续多个窗口重复告警 | `test_factor_cep.py` |

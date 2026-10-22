@@ -19,13 +19,14 @@ from typing import Any, Callable, Iterator
 from zoneinfo import ZoneInfo
 
 from config.settings import settings
-from processing.event_models import EventType, MarketEvent, as_utc
+from processing.event_models import EventType, MarketEvent, as_utc, bar_timing
 from producers.alpaca_producer import headline_sentiment
 from replay.labels import LabelRegistry, load_label_registry
 from replay.models import ReviewedInterval, file_sha256
 
 API_BASE = "https://data.alpaca.markets"
-CONVERTER_VERSION = "alpaca-market-event-v1"
+# v2: bars are keyed by completion time and carry their interval explicitly.
+CONVERTER_VERSION = "alpaca-market-event-v2"
 
 
 class AlpacaHistoricalClient:
@@ -154,6 +155,7 @@ def stock_row_to_event(
     dataset_id: str,
     interval_id: str,
     phase: str,
+    timeframe: str = "1Min",
 ) -> MarketEvent:
     event_time = as_utc(row["t"])
     fallback = f"{ticker}:{kind}:{event_time.isoformat()}:{json.dumps(row, sort_keys=True)}"
@@ -203,10 +205,23 @@ def stock_row_to_event(
             },
         )
     if kind == "bar":
+        # Bars are keyed by completion, not by the provider's interval start;
+        # the historical API exposes no publication time, so arrival is
+        # assumed to coincide with completion.
+        timing = bar_timing(row["t"], timeframe)
         return MarketEvent.create(
-            **common,
+            **{
+                **common,
+                "event_time": timing["completed_at"],
+                "received_at": timing["completed_at"],
+                "provenance": {
+                    **common["provenance"],
+                    "received_at_basis": "assumed_at_completion",
+                },
+            },
             event_type=EventType.BAR,
             bar={
+                **timing["payload"],
                 "open": row.get("o"),
                 "high": row.get("h"),
                 "low": row.get("l"),
@@ -416,15 +431,21 @@ class AlpacaReplayCollector:
                 conversion = _convert_rows(
                     raw_path,
                     event_path,
+                    # A bar that completes after the window end was not yet
+                    # available inside the window, so it is not part of it.
                     lambda row, kind=kind, ticker=ticker: [
-                        stock_row_to_event(
-                            kind,
-                            ticker,
-                            row,
-                            dataset_id=registry.dataset_id,
-                            interval_id=interval.interval_id,
-                            phase=phase,
-                        )
+                        event
+                        for event in [
+                            stock_row_to_event(
+                                kind,
+                                ticker,
+                                row,
+                                dataset_id=registry.dataset_id,
+                                interval_id=interval.interval_id,
+                                phase=phase,
+                            )
+                        ]
+                        if event.event_time <= ended_at
                     ],
                 )
                 parts.append(event_path)
